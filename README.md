@@ -1,1 +1,1 @@
-# GymSistema
+# Sistema Administracion de Gimnasio
