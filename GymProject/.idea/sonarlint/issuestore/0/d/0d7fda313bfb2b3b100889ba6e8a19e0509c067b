@@ -1,0 +1,60 @@
+
+j
+java:S1604ù"(Make this anonymous inner class a lambda(¨í¡§úÿÿÿÿJ$09d084ce-1a94-49e2-8c89-e06531db461f
+Š
+java:S11927"ODefine a constant instead of duplicating this literal "Roboto Medium" 10 times.(Ûºõ}J$e7dd6ca9-8e25-43f6-8439-91bac34245c5
+•	java:S116"YRename this field "JPanelOpciones" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰ Ç×J$3871dea2-5b03-4cf3-a647-be3dd59ca14b
+š
+java:S1450"]Remove the "JPanelOpciones" field and declare it as a local variable in the relevant methods.(‰ Ç×J$5c289291-86f7-4912-88fd-a95d20abf18b
+˜
+java:S1450‚"VRemove the "jLabel1" field and declare it as a local variable in the relevant methods.(°ãÉ¸ÿÿÿÿÿJ$35586d98-d289-438f-bcf9-5e5d6dda1c11
+™
+java:S1450ƒ"WRemove the "jLabel10" field and declare it as a local variable in the relevant methods.(¼õò†şÿÿÿÿJ$64d7cacb-40df-4a3a-aeb4-f75d3373fde3
+™
+java:S1450„"WRemove the "jLabel11" field and declare it as a local variable in the relevant methods.(‰Ó‚©øÿÿÿÿJ$b4d33099-d80b-47de-8793-3e0a65e06201
+˜
+java:S1450…"VRemove the "jLabel2" field and declare it as a local variable in the relevant methods.(™úòˆüÿÿÿÿJ$58258e56-72e5-49e8-a1b5-414b895e9612
+˜
+java:S1450†"VRemove the "jLabel3" field and declare it as a local variable in the relevant methods.(Îä€øÿÿÿÿJ$129116d0-0a19-4647-a4b3-2f7f4a074108
+“
+java:S1450‡"VRemove the "jLabel4" field and declare it as a local variable in the relevant methods.(«¢•ãJ$826386d2-ba94-45a8-81ec-47a6e73b750f
+“
+java:S1450ˆ"VRemove the "jLabel5" field and declare it as a local variable in the relevant methods.(ó Ù®J$7ef09758-9c79-46c7-af96-6b83fc32141e
+˜
+java:S1450‰"VRemove the "jLabel6" field and declare it as a local variable in the relevant methods.(¸ôÂøÿÿÿÿJ$5d043b40-6a4d-49b0-a4b1-07c7f03ba3f7
+“
+java:S1450Š"VRemove the "jLabel7" field and declare it as a local variable in the relevant methods.(×ê˜ŸJ$a0c52601-65d4-4416-91b4-7de4f119b9c0
+“
+java:S1450‹"VRemove the "jLabel8" field and declare it as a local variable in the relevant methods.(å»«¢J$a3982989-bf6b-41f5-91f7-a832a1d274b4
+˜
+java:S1450Œ"VRemove the "jLabel9" field and declare it as a local variable in the relevant methods.(Ì’óĞşÿÿÿÿJ$41fb5cf8-1ab1-4d82-93e6-bfc58898bae9
+˜
+java:S1450"VRemove the "jPanel1" field and declare it as a local variable in the relevant methods.(´œ½ÿÿÿÿÿJ$e91d3b21-46da-47d0-ad5d-d7bd2964b2d8
+”
+java:S1450"WRemove the "jPanel10" field and declare it as a local variable in the relevant methods.( ˆ¥£J$f11183ed-e211-4c3d-82f9-d6df1771cb33
+™
+java:S1450"WRemove the "jPanel11" field and declare it as a local variable in the relevant methods.(æÌÍÒüÿÿÿÿJ$0ec9aded-ebbb-42c8-8caa-bd34059bccb1
+™
+java:S1450"WRemove the "jPanel12" field and declare it as a local variable in the relevant methods.(¿‘Ô†úÿÿÿÿJ$f56bd9bd-f1b4-406a-a5df-b036cb8c2f7b
+“
+java:S1450‘"VRemove the "jPanel3" field and declare it as a local variable in the relevant methods.(Œ³èÈJ$2a89752a-143c-4977-8ffc-3440423b3f79
+˜
+java:S1450’"VRemove the "jPanel4" field and declare it as a local variable in the relevant methods.(§É†¬şÿÿÿÿJ$3622da17-3070-4347-8118-37e7d043298d
+“
+java:S1450“"VRemove the "jPanel5" field and declare it as a local variable in the relevant methods.(³¡©úJ$b1f741d6-7b6f-4d4b-b0d0-7a38ea799f9f
+’
+java:S1450”"VRemove the "jPanel6" field and declare it as a local variable in the relevant methods.(í›åvJ$cb287750-bb06-45f5-bc72-704fa9d26bcb
+“
+java:S1450•"VRemove the "jPanel7" field and declare it as a local variable in the relevant methods.(…‘ï°J$191b7fee-29d8-49bb-9b31-d74d5fadfd6a
+“
+java:S1450–"VRemove the "jPanel8" field and declare it as a local variable in the relevant methods.(î¥³¶J$41106b29-b8ce-4a7d-8d2a-ceded9c81074
+“
+java:S1450—"VRemove the "jPanel9" field and declare it as a local variable in the relevant methods.(öÒˆÑJ$abedc1f4-0cbd-498d-a34c-5fcbee173f09
+l
+java:S1197à"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿJ$36f559f8-28e7-4b8d-b840-12ed517dc581
+‚
+java:S2147ï"ECombine this catch with the one at line 365, which has the same body.(¨¦Š½J$1c937709-4906-4e60-b135-3776cc4e3bbf
+‚
+java:S2147ñ"ECombine this catch with the one at line 367, which has the same body.(ã€ J$f8378e51-ebd1-43d1-ba21-e550ca90bf8a
+
+java:S2147ó"ECombine this catch with the one at line 369, which has the same body.(ñÎ¯%J$2a2f28ac-5798-4ace-b0ed-613e2c8c6064

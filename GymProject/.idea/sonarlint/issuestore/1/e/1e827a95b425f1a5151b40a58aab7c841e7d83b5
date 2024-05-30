@@ -1,0 +1,53 @@
+
+C
+java:S1604L"(Make this anonymous inner class a lambda(£À¿Óüÿÿÿÿ
+C
+java:S1604W"(Make this anonymous inner class a lambda(‡¤ã¯øÿÿÿÿ
+D
+java:S1604Ö"(Make this anonymous inner class a lambda(¨í¡§úÿÿÿÿ
+]
+java:S1192A"GDefine a constant instead of duplicating this literal "Roboto" 6 times.(¦‡¤­
+c
+java:S1192H"HDefine a constant instead of duplicating this literal "Usuario" 3 times.(ç—Ç¡ûÿÿÿÿ
+j
+java:S1192 "ODefine a constant instead of duplicating this literal "Iniciar Sesion" 3 times.(‰ßÒ²ûÿÿÿÿ
+O
+java:S2387Ş"3"background" is the name of a field in "Component".(Êèªãşÿÿÿÿ
+u
+java:S1450Ş"YRemove the "background" field and declare it as a local variable in the relevant methods.(Êèªãşÿÿÿÿ
+n
+java:S1450ß"WRemove the "jButton1" field and declare it as a local variable in the relevant methods.(å……¶
+r
+java:S1450à"VRemove the "jLabel1" field and declare it as a local variable in the relevant methods.(°ãÉ¸ÿÿÿÿÿ
+r
+java:S1450á"VRemove the "jLabel2" field and declare it as a local variable in the relevant methods.(™úòˆüÿÿÿÿ
+r
+java:S1450â"VRemove the "jLabel3" field and declare it as a local variable in the relevant methods.(Îä€øÿÿÿÿ
+m
+java:S1450ã"VRemove the "jLabel4" field and declare it as a local variable in the relevant methods.(«¢•ã
+r
+java:S1450ä"VRemove the "jLabel6" field and declare it as a local variable in the relevant methods.(¸ôÂøÿÿÿÿ
+r
+java:S1450å"VRemove the "jPanel1" field and declare it as a local variable in the relevant methods.(´œ½ÿÿÿÿÿ
+r
+java:S1450æ"VRemove the "jPanel2" field and declare it as a local variable in the relevant methods.(õ òçüÿÿÿÿ
+q
+java:S1450ç"ZRemove the "jTextField1" field and declare it as a local variable in the relevant methods.(’É´š
+v
+java:S1450è"ZRemove the "jTextField3" field and declare it as a local variable in the relevant methods.(ˆ‘ó©ÿÿÿÿÿ
+F
+java:S1172²"*Remove this unused method parameter "evt".(ÊÈèÂüÿÿÿÿ
+N
+java:S1135³"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ
+F
+java:S1172¶"*Remove this unused method parameter "evt".(ëÆ£´ÿÿÿÿÿ
+N
+java:S1135·"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ
+F
+java:S1197½"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ
+\
+java:S2147Ì"ECombine this catch with the one at line 202, which has the same body.(¨¦Š½
+\
+java:S2147Î"ECombine this catch with the one at line 204, which has the same body.(ã€ 
+[
+java:S2147Ğ"ECombine this catch with the one at line 206, which has the same body.(ñÎ¯%
