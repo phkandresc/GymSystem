@@ -1,5 +1,13 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
+ */
 package view;
 
+/**
+ *
+ * @author kacor
+ */
 public class PaginaPrincipalView extends javax.swing.JFrame {
 
     /**
@@ -87,7 +95,7 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
 
         jLabel3.setBackground(new java.awt.Color(0, 0, 0));
         jLabel3.setFont(new java.awt.Font("Roboto Medium", 0, 14)); // NOI18N
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/iconoHomeMancuerna.png"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconoHomeMancuerna.png"))); // NOI18N
         jLabel3.setText("Pagina Principal");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
@@ -114,7 +122,7 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
 
         jLabel4.setBackground(new java.awt.Color(0, 0, 0));
         jLabel4.setFont(new java.awt.Font("Roboto Medium", 0, 14)); // NOI18N
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/iconoSocioNegro.png"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconoSocioNegro.png"))); // NOI18N
         jLabel4.setText("Socios");
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
@@ -141,7 +149,7 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
 
         jLabel5.setBackground(new java.awt.Color(0, 0, 0));
         jLabel5.setFont(new java.awt.Font("Roboto Medium", 0, 14)); // NOI18N
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/iconoHombreMancuerna.png"))); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconoHombreMancuerna.png"))); // NOI18N
         jLabel5.setText("Clases");
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
@@ -168,7 +176,7 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
 
         jLabel6.setBackground(new java.awt.Color(0, 0, 0));
         jLabel6.setFont(new java.awt.Font("Roboto Medium", 0, 14)); // NOI18N
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/iconoMembresiaNegro.png"))); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconoMembresiaNegro.png"))); // NOI18N
         jLabel6.setText("Pagos");
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
@@ -195,7 +203,7 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
 
         jLabel7.setBackground(new java.awt.Color(0, 0, 0));
         jLabel7.setFont(new java.awt.Font("Roboto Medium", 0, 14)); // NOI18N
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/iconoParejaNegro.png"))); // NOI18N
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconoParejaNegro.png"))); // NOI18N
         jLabel7.setText("Actividades");
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
@@ -222,7 +230,7 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
 
         jLabel8.setBackground(new java.awt.Color(0, 0, 0));
         jLabel8.setFont(new java.awt.Font("Roboto Medium", 0, 14)); // NOI18N
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/iconoEspacios.png"))); // NOI18N
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconoEspacios.png"))); // NOI18N
         jLabel8.setText("Espacios");
 
         javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
@@ -249,7 +257,7 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
 
         jLabel9.setBackground(new java.awt.Color(0, 0, 0));
         jLabel9.setFont(new java.awt.Font("Roboto Medium", 0, 14)); // NOI18N
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/iconoMaquinas.png"))); // NOI18N
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconoMaquinas.png"))); // NOI18N
         jLabel9.setText("Maquinas");
 
         javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
@@ -276,7 +284,7 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
 
         jLabel10.setBackground(new java.awt.Color(0, 0, 0));
         jLabel10.setFont(new java.awt.Font("Roboto Medium", 0, 14)); // NOI18N
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/iconoInformes.png"))); // NOI18N
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconoInformes.png"))); // NOI18N
         jLabel10.setText("Informes y analisis");
 
         javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
@@ -303,7 +311,7 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
 
         jLabel11.setBackground(new java.awt.Color(0, 0, 0));
         jLabel11.setFont(new java.awt.Font("Roboto Medium", 0, 14)); // NOI18N
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/iconoCerrarSesion.png"))); // NOI18N
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconoCerrarSesion.png"))); // NOI18N
         jLabel11.setText("Cerrar Sesion");
 
         javax.swing.GroupLayout jPanel12Layout = new javax.swing.GroupLayout(jPanel12);
