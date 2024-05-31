@@ -5,10 +5,6 @@ O
 src/view/IniciarSesionView.java,1\e\1e827a95b425f1a5151b40a58aab7c841e7d83b5
 Q
 !src/view/PaginaPrincipalView.java,0\d\0d7fda313bfb2b3b100889ba6e8a19e0509c067b
-G
-src/AbsoluteLayout.java,0\d\0d162ca260848e9e6e0b586cd25d2cd2ef57e388
-Å
-Q.idea/sonarlint/securityhotspotstore/0/d/0d162ca260848e9e6e0b586cd25d2cd2ef57e388,f\e\fe522abec0b7562d6e2b5629444037d25c33cad6
 S
 #.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
 ]
