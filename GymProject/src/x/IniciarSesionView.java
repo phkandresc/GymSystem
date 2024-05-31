@@ -4,9 +4,6 @@
  */
 package x;
 
-import java.awt.Image;
-import java.awt.Toolkit;
-
 /**
  *
  * @author kacor
@@ -18,6 +15,7 @@ public class IniciarSesionView extends javax.swing.JFrame {
      */
     public IniciarSesionView() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -30,180 +28,105 @@ public class IniciarSesionView extends javax.swing.JFrame {
     private void initComponents() {
 
         background = new javax.swing.JPanel();
-        panelMancuerna = new javax.swing.JPanel();
-        lblMancuerna = new javax.swing.JLabel();
-        panelInicioSesion = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
+        panelIniciarSesion = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        txtUsuario = new javax.swing.JTextField();
-        txtContrasena = new javax.swing.JTextField();
-        btnIniciarSesion = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jSeparator1 = new javax.swing.JSeparator();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jTextField2 = new javax.swing.JTextField();
+        jSeparator2 = new javax.swing.JSeparator();
+        btnIniciarSesion = new javax.swing.JPanel();
+        jLabel8 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Iniciar Sesion");
-        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        setLocation(new java.awt.Point(0, 0));
         setResizable(false);
-        setSize(new java.awt.Dimension(800, 600));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         background.setBackground(new java.awt.Color(255, 255, 255));
-        background.setName(""); // NOI18N
+        background.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        panelMancuerna.setBackground(new java.awt.Color(242, 68, 5));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/background.png"))); // NOI18N
+        jLabel1.setPreferredSize(new java.awt.Dimension(775, 680));
+        background.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 680));
 
-        lblMancuerna.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/pngPesaNegro2.png"))); // NOI18N
+        panelIniciarSesion.setBackground(new java.awt.Color(255, 255, 255));
+        panelIniciarSesion.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        javax.swing.GroupLayout panelMancuernaLayout = new javax.swing.GroupLayout(panelMancuerna);
-        panelMancuerna.setLayout(panelMancuernaLayout);
-        panelMancuernaLayout.setHorizontalGroup(
-            panelMancuernaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelMancuernaLayout.createSequentialGroup()
-                .addContainerGap(76, Short.MAX_VALUE)
-                .addComponent(lblMancuerna)
-                .addGap(69, 69, 69))
-        );
-        panelMancuernaLayout.setVerticalGroup(
-            panelMancuernaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelMancuernaLayout.createSequentialGroup()
-                .addGap(127, 127, 127)
-                .addComponent(lblMancuerna)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+        jLabel2.setText("jLabel2");
+        panelIniciarSesion.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 90, -1, -1));
 
-        panelInicioSesion.setBackground(new java.awt.Color(208, 207, 212));
+        jLabel4.setFont(new java.awt.Font("Poppins Medium", 0, 26)); // NOI18N
+        jLabel4.setText("Iniciar Sesion");
+        panelIniciarSesion.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 180, 40));
 
-        jLabel1.setFont(new java.awt.Font("Roboto", 1, 24)); // NOI18N
-        jLabel1.setText("Bienvenido");
+        jLabel3.setFont(new java.awt.Font("Poppins Medium", 0, 12)); // NOI18N
+        jLabel3.setText("Contrasena");
+        panelIniciarSesion.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 210, -1, -1));
 
-        jLabel2.setFont(new java.awt.Font("Roboto Medium", 0, 18)); // NOI18N
-        jLabel2.setText("Iniciar Sesion");
-
-        txtUsuario.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        txtUsuario.setToolTipText("Usuario");
-        txtUsuario.setBorder(null);
-        txtUsuario.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
-        txtUsuario.setMargin(new java.awt.Insets(2, 4, 2, 2));
-        txtUsuario.addActionListener(new java.awt.event.ActionListener() {
+        jTextField1.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
+        jTextField1.setText("Ingrese su contrasena");
+        jTextField1.setBorder(null);
+        jTextField1.setPreferredSize(new java.awt.Dimension(127, 25));
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtUsuarioActionPerformed(evt);
+                jTextField1ActionPerformed(evt);
             }
         });
+        panelIniciarSesion.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, 300, -1));
+        panelIniciarSesion.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 270, 360, 10));
 
-        txtContrasena.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        txtContrasena.setToolTipText("Usuario");
-        txtContrasena.setBorder(null);
-        txtContrasena.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
-        txtContrasena.setMargin(new java.awt.Insets(2, 4, 2, 2));
-        txtContrasena.addActionListener(new java.awt.event.ActionListener() {
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconoContrasena.png"))); // NOI18N
+        panelIniciarSesion.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, -1, -1));
+
+        jLabel6.setFont(new java.awt.Font("Poppins Medium", 0, 12)); // NOI18N
+        jLabel6.setText("Usuario");
+        panelIniciarSesion.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, -1, -1));
+
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconoMail.png"))); // NOI18N
+        panelIniciarSesion.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 160, -1, -1));
+
+        jTextField2.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
+        jTextField2.setText("Ingrese su usuario");
+        jTextField2.setBorder(null);
+        jTextField2.setPreferredSize(new java.awt.Dimension(127, 25));
+        jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtContrasenaActionPerformed(evt);
+                jTextField2ActionPerformed(evt);
             }
         });
+        panelIniciarSesion.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, 300, -1));
+        panelIniciarSesion.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 360, 10));
 
-        btnIniciarSesion.setBackground(new java.awt.Color(0, 0, 0));
-        btnIniciarSesion.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
-        btnIniciarSesion.setForeground(new java.awt.Color(255, 255, 255));
-        btnIniciarSesion.setText("Iniciar Sesion");
-        btnIniciarSesion.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnIniciarSesionActionPerformed(evt);
-            }
-        });
+        btnIniciarSesion.setBackground(new java.awt.Color(242, 68, 5));
+        btnIniciarSesion.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel3.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
-        jLabel3.setText("Usuario");
+        jLabel8.setFont(new java.awt.Font("Poppins Medium", 0, 15)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel8.setText("Iniciar Sesion");
+        btnIniciarSesion.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 10, -1, 20));
 
-        jLabel4.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
-        jLabel4.setText("Contrasena");
+        panelIniciarSesion.add(btnIniciarSesion, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 490, 360, 40));
 
-        javax.swing.GroupLayout panelInicioSesionLayout = new javax.swing.GroupLayout(panelInicioSesion);
-        panelInicioSesion.setLayout(panelInicioSesionLayout);
-        panelInicioSesionLayout.setHorizontalGroup(
-            panelInicioSesionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelInicioSesionLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnIniciarSesion, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(25, 25, 25))
-            .addGroup(panelInicioSesionLayout.createSequentialGroup()
-                .addGap(22, 22, 22)
-                .addGroup(panelInicioSesionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel3)
-                    .addComponent(txtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel4)
-                    .addComponent(txtContrasena, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        panelInicioSesionLayout.setVerticalGroup(
-            panelInicioSesionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelInicioSesionLayout.createSequentialGroup()
-                .addGap(54, 54, 54)
-                .addComponent(jLabel1)
-                .addGap(38, 38, 38)
-                .addComponent(jLabel2)
-                .addGap(39, 39, 39)
-                .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(txtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(txtContrasena, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 82, Short.MAX_VALUE)
-                .addComponent(btnIniciarSesion)
-                .addGap(34, 34, 34))
-        );
+        background.add(panelIniciarSesion, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 60, 380, 560));
 
-        javax.swing.GroupLayout backgroundLayout = new javax.swing.GroupLayout(background);
-        background.setLayout(backgroundLayout);
-        backgroundLayout.setHorizontalGroup(
-            backgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(backgroundLayout.createSequentialGroup()
-                .addComponent(panelMancuerna, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(panelInicioSesion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(18, Short.MAX_VALUE))
-        );
-        backgroundLayout.setVerticalGroup(
-            backgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panelMancuerna, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, backgroundLayout.createSequentialGroup()
-                .addContainerGap(14, Short.MAX_VALUE)
-                .addComponent(panelInicioSesion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(21, 21, 21))
-        );
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(background, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(background, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-
-        background.getAccessibleContext().setAccessibleName("");
+        getContentPane().add(background, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 680));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtUsuarioActionPerformed
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtUsuarioActionPerformed
+    }//GEN-LAST:event_jTextField1ActionPerformed
 
-    private void txtContrasenaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtContrasenaActionPerformed
+    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtContrasenaActionPerformed
+    }//GEN-LAST:event_jTextField2ActionPerformed
 
-    private void btnIniciarSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIniciarSesionActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnIniciarSesionActionPerformed
-    
     /**
      * @param args the command line arguments
      */
@@ -241,15 +164,19 @@ public class IniciarSesionView extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel background;
-    private javax.swing.JButton btnIniciarSesion;
+    private javax.swing.JPanel btnIniciarSesion;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel lblMancuerna;
-    private javax.swing.JPanel panelInicioSesion;
-    private javax.swing.JPanel panelMancuerna;
-    private javax.swing.JTextField txtContrasena;
-    private javax.swing.JTextField txtUsuario;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSeparator jSeparator2;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JPanel panelIniciarSesion;
     // End of variables declaration//GEN-END:variables
 }

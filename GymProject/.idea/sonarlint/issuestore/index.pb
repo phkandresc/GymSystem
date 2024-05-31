@@ -11,3 +11,5 @@ S
 -.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
 >
 GymProject.iml,e\0\e037824ae97043c84c5d921b64bf06d69a9c9436
+L
+src/x/IniciarSesionView.java,c\1\c1843e1deac5ad97b109c8a391a2da6b4c2a91dd
