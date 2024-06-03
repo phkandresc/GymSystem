@@ -1,0 +1,53 @@
+
+i
+java:S1604L"(Make this anonymous inner class a lambda(£À¿ÓüÿÿÿÿJ$0c7843e9-3bd4-4625-9e42-506ce7eb19ac
+i
+java:S1604W"(Make this anonymous inner class a lambda(‡¤ã¯øÿÿÿÿJ$dda4ab83-c3b5-4205-99bf-503aec04e531
+j
+java:S1604Ö"(Make this anonymous inner class a lambda(¨í¡§úÿÿÿÿJ$b9facbe1-9d88-4071-a3ae-4725117ead1e
+‰
+java:S1192H"HDefine a constant instead of duplicating this literal "Usuario" 3 times.(ç—Ç¡ûÿÿÿÿJ$c015bd16-2d8e-428e-9f57-63f80ac4b8a3
+ƒ
+java:S1192A"GDefine a constant instead of duplicating this literal "Roboto" 6 times.(¦‡¤­J$a5194fa8-55bb-4b20-9d2c-324f4e2babd5
+
+java:S1192 "ODefine a constant instead of duplicating this literal "Iniciar Sesion" 3 times.(‰ßÒ²ûÿÿÿÿJ$19e1a4a4-52ed-40d9-bb82-0f5029dc8496
+u
+java:S2387Ş"3"background" is the name of a field in "Component".(ÊèªãşÿÿÿÿJ$cf2caec9-5df2-44f3-9462-e55182f8e330
+›
+java:S1450Ş"YRemove the "background" field and declare it as a local variable in the relevant methods.(ÊèªãşÿÿÿÿJ$05c9ed79-919d-44d1-a073-de3cab59dd49
+”
+java:S1450ß"WRemove the "jButton1" field and declare it as a local variable in the relevant methods.(å……¶J$bb2a635c-ca3e-4ecf-be00-10b892080080
+˜
+java:S1450à"VRemove the "jLabel1" field and declare it as a local variable in the relevant methods.(°ãÉ¸ÿÿÿÿÿJ$c4b6c6bf-ebb9-498f-a77e-e3b90b7c7de2
+˜
+java:S1450á"VRemove the "jLabel2" field and declare it as a local variable in the relevant methods.(™úòˆüÿÿÿÿJ$bc468fb4-4cdc-4da1-bf5b-eb8bd98f481e
+˜
+java:S1450â"VRemove the "jLabel3" field and declare it as a local variable in the relevant methods.(Îä€øÿÿÿÿJ$52d606c7-4ffa-46a7-8301-e4e799646648
+“
+java:S1450ã"VRemove the "jLabel4" field and declare it as a local variable in the relevant methods.(«¢•ãJ$2a7d1b4d-f9ce-47c9-b2b1-58efecbf3009
+˜
+java:S1450ä"VRemove the "jLabel6" field and declare it as a local variable in the relevant methods.(¸ôÂøÿÿÿÿJ$bfcf7b9b-202a-4b79-8b49-9c9225a4bbd5
+˜
+java:S1450å"VRemove the "jPanel1" field and declare it as a local variable in the relevant methods.(´œ½ÿÿÿÿÿJ$7de87a78-ec70-4df9-bb9d-1957dc273921
+˜
+java:S1450æ"VRemove the "jPanel2" field and declare it as a local variable in the relevant methods.(õ òçüÿÿÿÿJ$c714694d-011e-42c1-bc9b-47d462b29d5e
+—
+java:S1450ç"ZRemove the "jTextField1" field and declare it as a local variable in the relevant methods.(’É´šJ$619db3f3-3333-4e2b-ba34-cd7b66324ae0
+œ
+java:S1450è"ZRemove the "jTextField3" field and declare it as a local variable in the relevant methods.(ˆ‘ó©ÿÿÿÿÿJ$fdb65ddc-71cf-44e8-ac40-e8dae8e1a5e9
+l
+java:S1172²"*Remove this unused method parameter "evt".(ÊÈèÂüÿÿÿÿJ$a50837f9-f635-4db6-bc22-e4ee91af1d55
+t
+java:S1135³"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿJ$a73f1bb8-3b35-4185-bf98-2bf6f914adf0
+l
+java:S1172¶"*Remove this unused method parameter "evt".(ëÆ£´ÿÿÿÿÿJ$b71f0241-814f-4a71-8c1c-a1c0a1566879
+t
+java:S1135·"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿJ$c69b1136-9827-46ca-8cb0-742852ee6aaf
+l
+java:S1197½"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿJ$a9cbdc42-f307-4485-8ccf-40b49dea0392
+‚
+java:S2147Ì"ECombine this catch with the one at line 202, which has the same body.(¨¦Š½J$717851c4-a821-43b3-be3b-898957ff0f86
+‚
+java:S2147Î"ECombine this catch with the one at line 204, which has the same body.(ã€ J$782d8eda-74a1-47f5-b0aa-15f3dea250a5
+
+java:S2147Ğ"ECombine this catch with the one at line 206, which has the same body.(ñÎ¯%J$2bc7ca94-3fe3-4378-a7b8-2974676d84df
