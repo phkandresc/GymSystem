@@ -8,64 +8,18 @@ public class Membresia {
     private double costo;
     private String estado;
 
-    public Membresia(int id, String tipo, String fechaInicio, String fechaFin, double costo, String estado) {
-        this.id = id;
-        this.tipo = tipo;
-        this.fechaInicio = fechaInicio;
-        this.fechaFin = fechaFin;
-        this.costo = costo;
-        this.estado = estado;
+    private Membresia(MembresiaBuilder membresiaBuilder) {
+        this.id = membresiaBuilder.id;
+        this.tipo = membresiaBuilder.tipo;
+        this.fechaInicio = membresiaBuilder.fechaInicio;
+        this.fechaFin = membresiaBuilder.fechaFin;
+        this.costo = membresiaBuilder.costo;
+        this.estado = membresiaBuilder.estado;
     }
 
-    public int getId() {
-        return id;
-    }
 
-    public void setId(int id) {
-        this.id = id;
-    }
 
-    public String getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
-
-    public String getFechaInicio() {
-        return fechaInicio;
-    }
-
-    public void setFechaInicio(String fechaInicio) {
-        this.fechaInicio = fechaInicio;
-    }
-
-    public String getFechaFin() {
-        return fechaFin;
-    }
-
-    public void setFechaFin(String fechaFin) {
-        this.fechaFin = fechaFin;
-    }
-
-    public double getCosto() {
-        return costo;
-    }
-
-    public void setCosto(double costo) {
-        this.costo = costo;
-    }
-
-    public String getEstado() {
-        return estado;
-    }
-
-    public void setEstado(String estado) {
-        this.estado = estado;
-    }
-
-    public static class MembresiaBuilder{
+    public static class MembresiaBuilder {
         private int id;
         private String tipo;
         private String fechaInicio;
@@ -103,9 +57,8 @@ public class Membresia {
             return this;
         }
 
-        public Membresia build(){
-            return new Membresia(id, tipo, fechaInicio, fechaFin, costo, estado);
+        public Membresia build() {
+            return new Membresia(this);
         }
-
     }
 }

@@ -10,13 +10,13 @@ import java.awt.Color;
  *
  * @author kacor
  */
-public class PaginaPrincipalView2 extends javax.swing.JFrame {
+public class PaginaPrincipalView extends javax.swing.JFrame {
     Color naranjaOscuro = new Color(242,68,5);
     Color naranja = new Color(242,98,15);
     /**
      * Creates new form PaginaPrincipalView2
      */
-    public PaginaPrincipalView2() {
+    public PaginaPrincipalView() {
         initComponents();
         this.setLocationRelativeTo(null);
     }
@@ -610,20 +610,20 @@ public class PaginaPrincipalView2 extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(PaginaPrincipalView2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PaginaPrincipalView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(PaginaPrincipalView2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PaginaPrincipalView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(PaginaPrincipalView2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PaginaPrincipalView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(PaginaPrincipalView2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PaginaPrincipalView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new PaginaPrincipalView2().setVisible(true);
+                new PaginaPrincipalView().setVisible(true);
             }
         });
     }

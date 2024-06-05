@@ -1,146 +1,296 @@
 
+K
+java:S1604Š"(Make this anonymous inner class a lambda(…æ©âÿÿÿÿÿ8Î”å°ş1
+F
+java:S1604—"(Make this anonymous inner class a lambda(ÿóÎ×8Ğ”å°ş1
+E
+java:S1604²"(Make this anonymous inner class a lambda(¥Šîj8Ñ”å°ş1
 q
-java:S1604­"(Make this anonymous inner class a lambda(¨í¡§úÿÿÿÿ8õĞÓèü1J$096e61e4-e69e-4a02-a1f2-0870c7a06cf1
-—
-java:S1192U"ODefine a constant instead of duplicating this literal "Roboto Medium" 10 times.(¾Ãœ®üÿÿÿÿ8’ÑÓèü1J$25db54e2-afd3-4dec-87ce-6affa1276a25
-¦
-java:S1450µ"]Remove the "btnActividades" field and declare it as a local variable in the relevant methods.(Ş†ûÿÿÿÿ8­ÑÓèü1J$b199a8fe-c334-465a-880b-eb0be6155779
-§
-java:S1450¶"^Remove the "btnCerrarSesion" field and declare it as a local variable in the relevant methods.(ß„è¯úÿÿÿÿ8¯ÑÓèü1J$48e1882d-11f9-4cb4-85c3-0f7fd9a16a79
-¡
-java:S1450·"XRemove the "btnClases" field and declare it as a local variable in the relevant methods.(¥öŒøÿÿÿÿ8±ÑÓèü1J$9aa6da5a-e47a-47af-8dde-08f4bcd5415b
-£
-java:S1450¸"ZRemove the "btnEspacios" field and declare it as a local variable in the relevant methods.(ıÕÓ”ùÿÿÿÿ8²ÑÓèü1J$fee448a0-f472-4228-9288-e6abd057e355
-£
-java:S1450¹"ZRemove the "btnInformes" field and declare it as a local variable in the relevant methods.(ªÀµŞüÿÿÿÿ8³ÑÓèü1J$16fb8f2a-f8be-4ace-86ed-ebe08458b83a
-
-java:S1450º"ZRemove the "btnMaquinas" field and declare it as a local variable in the relevant methods.(™ù™¼8µÑÓèü1J$77d453a8-7c1d-4bca-9475-f36c393645eb
-Ÿ
-java:S1450¾"VRemove the "jLabel1" field and declare it as a local variable in the relevant methods.(°ãÉ¸ÿÿÿÿÿ8¶ÑÓèü1J$b31471dc-a445-4bf8-b394-b6c61b7bc377
- 
-java:S1450¿"WRemove the "jLabel10" field and declare it as a local variable in the relevant methods.(¼õò†şÿÿÿÿ8·ÑÓèü1J$2d5ccca3-73ca-4a4c-8ce5-73e94095fbff
- 
-java:S1450À"WRemove the "jLabel11" field and declare it as a local variable in the relevant methods.(‰Ó‚©øÿÿÿÿ8¸ÑÓèü1J$af1540cc-7556-4f7c-9e00-2001238fbc7f
-›
-java:S1450Á"WRemove the "jLabel12" field and declare it as a local variable in the relevant methods.(¶“¡8¹ÑÓèü1J$4cd4e994-9a40-4988-b324-0da6e81b3cbe
- 
-java:S1450Â"WRemove the "jLabel13" field and declare it as a local variable in the relevant methods.(ÑİĞİıÿÿÿÿ8¹ÑÓèü1J$2905dbab-7213-464a-b5fb-235da4ad0972
- 
-java:S1450Ã"WRemove the "jLabel14" field and declare it as a local variable in the relevant methods.(ÖóœÍıÿÿÿÿ8ºÑÓèü1J$0fc80475-0744-418a-a244-bd6879f7c088
- 
-java:S1450Ä"WRemove the "jLabel15" field and declare it as a local variable in the relevant methods.(³şâçøÿÿÿÿ8»ÑÓèü1J$281baaab-c802-4908-b835-e15502bad592
- 
-java:S1450Å"WRemove the "jLabel16" field and declare it as a local variable in the relevant methods.(š¼ª¯üÿÿÿÿ8»ÑÓèü1J$dc706847-3d53-4b6f-8ef6-074dde0134c2
-›
-java:S1450Æ"WRemove the "jLabel17" field and declare it as a local variable in the relevant methods.(„Ç›Ä8»ÑÓèü1J$c8eb750d-0e58-4d5b-8744-b6af0d6a5319
-Ÿ
-java:S1450Ç"VRemove the "jLabel2" field and declare it as a local variable in the relevant methods.(™úòˆüÿÿÿÿ8¼ÑÓèü1J$08c60706-0207-47fc-bc00-32b22dc417ad
-Ÿ
-java:S1450È"VRemove the "jLabel3" field and declare it as a local variable in the relevant methods.(Îä€øÿÿÿÿ8½ÑÓèü1J$3f3a7713-9a48-412a-a901-4aaa8eb1e3de
-š
-java:S1450É"VRemove the "jLabel4" field and declare it as a local variable in the relevant methods.(«¢•ã8½ÑÓèü1J$a122e87c-d8c8-40df-9e9e-782e0f07819f
-š
-java:S1450Ê"VRemove the "jLabel5" field and declare it as a local variable in the relevant methods.(ó Ù®8½ÑÓèü1J$01412724-afd8-4715-9a48-751a5bfc494f
-Ÿ
-java:S1450Ë"VRemove the "jLabel6" field and declare it as a local variable in the relevant methods.(¸ôÂøÿÿÿÿ8ÁÑÓèü1J$6150f84f-93b0-41f6-a663-ca753ce8af9f
-š
-java:S1450Ì"VRemove the "jLabel7" field and declare it as a local variable in the relevant methods.(×ê˜Ÿ8ÁÑÓèü1J$a3754416-fcc8-4db9-a6ca-35aece5c3125
-š
-java:S1450Í"VRemove the "jLabel8" field and declare it as a local variable in the relevant methods.(å»«¢8ÂÑÓèü1J$63c19e47-4c07-4623-a2b0-2844f272371b
-Ÿ
-java:S1450Î"VRemove the "jLabel9" field and declare it as a local variable in the relevant methods.(Ì’óĞşÿÿÿÿ8ÂÑÓèü1J$7c82816d-ea32-4841-8055-2c3bb8e24f6e
-Ÿ
-java:S1450Ï"VRemove the "jPanel1" field and declare it as a local variable in the relevant methods.(´œ½ÿÿÿÿÿ8ÂÑÓèü1J$24457bd8-8ba3-4c91-9101-bb7ffd717680
-Ÿ
-java:S1450Ğ"VRemove the "jPanel2" field and declare it as a local variable in the relevant methods.(õ òçüÿÿÿÿ8ÃÑÓèü1J$98fa75ff-5189-46e5-84ba-9293e491e264
-š
-java:S1450Ñ"VRemove the "jPanel3" field and declare it as a local variable in the relevant methods.(Œ³èÈ8ÃÑÓèü1J$0dc0a9c2-dd27-4643-bf36-a017faaba2e5
-Ÿ
-java:S1450Ò"VRemove the "jPanel4" field and declare it as a local variable in the relevant methods.(§É†¬şÿÿÿÿ8ÄÑÓèü1J$70cf7232-92c5-4a16-9513-8df8c0a77405
-š
-java:S1450Ó"VRemove the "jPanel5" field and declare it as a local variable in the relevant methods.(³¡©ú8ÄÑÓèü1J$3ceb428d-3327-41ac-bc03-decae872f018
-™
-java:S1450Ô"VRemove the "jPanel6" field and declare it as a local variable in the relevant methods.(í›åv8ÆÑÓèü1J$c3140728-a9f2-4788-a002-572c02f7ff40
-š
-java:S1450Õ"VRemove the "jPanel7" field and declare it as a local variable in the relevant methods.(…‘ï°8ÇÑÓèü1J$da8100b0-6761-408f-8191-a1f376683b84
-š
-java:S1450Ö"VRemove the "jPanel8" field and declare it as a local variable in the relevant methods.(î¥³¶8ÇÑÓèü1J$e5c68b73-8700-4f0f-b388-101dd97d50ab
-¤
-java:S1450×"[Remove the "jTabbedPane1" field and declare it as a local variable in the relevant methods.(†¦§Íÿÿÿÿÿ8ÈÑÓèü1J$a059c6a3-48ee-4dc7-accb-4e8cdef5bacc
-¡
-java:S1450Ø"XRemove the "lblTitulo" field and declare it as a local variable in the relevant methods.(¢â›üÿÿÿÿ8ÉÑÓèü1J$28ec2409-fd9b-4975-abd0-a802ea567879
-¢
-java:S1450Ù"YRemove the "lblUsuario" field and declare it as a local variable in the relevant methods.(¶‹ÔÅøÿÿÿÿ8ËÑÓèü1J$a88abae0-a523-42a2-bb6c-d8e8b5bc0c01
-£
-java:S1450Ú"ZRemove the "panelHeader" field and declare it as a local variable in the relevant methods.(‚ÄÛ—ùÿÿÿÿ8ÌÑÓèü1J$17ebbb37-7ae0-4afa-b69f-f703162a8938
- 
-java:S1450Û"\Remove the "panelOpciones" field and declare it as a local variable in the relevant methods.(ñ˜Õ–8ÌÑÓèü1J$e3961d79-a4cc-4c83-9824-9b96b9c900e1
-}
-java:S1161w":Add the "@Override" annotation above this method signature(†ŒË³8’ÒÓèü1J$eb584f64-dc2b-491f-9228-d26b218b532a
-}
-java:S1161z":Add the "@Override" annotation above this method signature(ö¦óş8–ÒÓèü1J$588cde89-82b5-4079-9cc1-68762bb97dbd
-‚
-java:S1161}":Add the "@Override" annotation above this method signature(Œïêûÿÿÿÿ8šÒÓèü1J$0a4fda66-5f39-4a14-a975-9251dfd9be1a
-~
-java:S1161Ÿ":Add the "@Override" annotation above this method signature(ö¦óş8§ÒÓèü1J$028c2c5f-5f00-44e9-bda3-d5e9ed7dc8f1
-ƒ
-java:S1161¢":Add the "@Override" annotation above this method signature(Œïêûÿÿÿÿ8©ÒÓèü1J$71b1685b-7afb-4789-a767-2e3eec7e8260
-~
-java:S1161Ä":Add the "@Override" annotation above this method signature(ö¦óş8µÒÓèü1J$0f624759-19ae-447b-9339-8c794fe9731e
-ƒ
-java:S1161Ç":Add the "@Override" annotation above this method signature(Œïêûÿÿÿÿ8·ÒÓèü1J$433b1c56-6ff8-4988-a365-0787b794611e
-~
-java:S1161é":Add the "@Override" annotation above this method signature(ö¦óş8ÅÒÓèü1J$f0ae0d35-2025-4027-8e5e-b5c6f42eabb9
-ƒ
-java:S1161ì":Add the "@Override" annotation above this method signature(Œïêûÿÿÿÿ8ÈÒÓèü1J$8e707898-e051-408c-9f08-be80e2ad8a94
-n
-java:S1172ã"*Remove this unused method parameter "evt".(„†úï8ûÒÓèü1J$e4d464fd-1a93-44e5-bee6-1a14c0cd1fc9
-v
-java:S1135ä"2Complete the task associated to this TODO comment.(ßêöã8£ÎÄÙü1J$b5c62972-dab1-49f8-9a53-d77ff81bcd2a
-s
-java:S1172ç"*Remove this unused method parameter "evt".(ğËÑüÿÿÿÿ8şÒÓèü1J$db260f8e-60c3-4637-853d-6e6d0f403045
-{
-java:S1135è"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8£ÎÄÙü1J$abba699b-2cba-4e41-9055-01e8e59c70ed
-n
-java:S1172ì"*Remove this unused method parameter "evt".(ÙáÎÏ8€ÓÓèü1J$dacb3ae7-d323-4c5e-9b50-cbdc095057d7
-{
-java:S1135í"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8¤ÎÄÙü1J$7c75f6c9-8646-455b-af15-d30f47fd5147
-n
-java:S1172ñ"*Remove this unused method parameter "evt".(ĞœÏ³8ƒÓÓèü1J$f843ef3d-4c94-446b-a992-2e6c7a26e72c
-{
-java:S1135ò"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8¦ÎÄÙü1J$a1081f24-177e-446c-9e11-8901d1e035dc
-s
-java:S1172ö"*Remove this unused method parameter "evt".(à¬€ƒıÿÿÿÿ8…ÓÓèü1J$7be7381f-3437-4710-bf1e-2d598e23de72
-{
-java:S1135÷"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8§ÎÄÙü1J$232fdc76-28ea-45dc-a233-59e2ad70e970
-s
-java:S1172û"*Remove this unused method parameter "evt".(ä¯¥üúÿÿÿÿ8‰ÓÓèü1J$edec49e9-a25b-464f-9504-e742abe7cffb
-{
-java:S1135ü"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8­¸Íáü1J$3e802ca0-af56-4a54-905a-09749cb7bb88
+java:S1604ğ"(Make this anonymous inner class a lambda(¨í¡§úÿÿÿÿ8õĞÓèü1J$096e61e4-e69e-4a02-a1f2-0870c7a06cf1
+j
+java:S1192f"HDefine a constant instead of duplicating this literal "Poppins" 4 times.(·§ò«úÿÿÿÿ8è–å°ş1
 m
-java:S1172€"*Remove this unused method parameter "evt".(Ÿô˜8ŒÓÓèü1J$0e76fa1b-cbf8-413b-b50f-29cdf0368cbb
-{
-java:S1135"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8Ã¸Íáü1J$2b6c70ce-aacf-4ea0-a197-951a91fd0a5f
+java:S1192n"PDefine a constant instead of duplicating this literal "Poppins Medium" 10 times.(å¸Ã£8ü–å°ş1
 n
-java:S1172…"*Remove this unused method parameter "evt".(şÀ­ì8ÓÓèü1J$a5cb37c6-92a5-4f90-ba3d-8d90c9d95dee
-{
-java:S1135†"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8Ä¸Íáü1J$8f7cc078-750d-415f-b638-f9ebc8508f26
-n
-java:S1172Š"*Remove this unused method parameter "evt".(ĞæÀà8“ÓÓèü1J$318e6e85-2cd0-423d-ad04-e2bdbb756038
-{
-java:S1135‹"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8Ä¸Íáü1J$a3e73091-0da4-4700-a52d-e0617778c406
-s
-java:S1197”"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ8œšÌÙü1J$8ed84283-688a-47e4-92e8-ae0a1edd21bf
-‰
-java:S2147£"ECombine this catch with the one at line 545, which has the same body.(¨¦Š½8šÌÙü1J$4a34d070-d6a0-48ac-a2ab-b50da1bd3979
-‰
-java:S2147¥"ECombine this catch with the one at line 547, which has the same body.(ã€ 8šÌÙü1J$ec5bfb60-1cc9-4f7c-a563-bbf076fd43f0
+java:S1192]"QDefine a constant instead of duplicating this literal "Pagina Principal" 3 times.(©œ 8ş–å°ş1
+
+java:S1192"\Define a constant instead of duplicating this literal "/images/Rectangle 2 (1).png" 3 times.(ÃöÆ²ùÿÿÿÿ8ÿ–å°ş1
+v	java:S116ø"YRename this field "GrupoDePaneles" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÈøÌ™8€—å°ş1
+u
+java:S1450ù"WRemove the "jButton1" field and declare it as a local variable in the relevant methods.(å……¶8›—å°ş1
+u
+java:S1450ú"WRemove the "jButton2" field and declare it as a local variable in the relevant methods.(¤½ÃÜ8 —å°ş1
+z
+java:S1450û"WRemove the "jButton3" field and declare it as a local variable in the relevant methods.(ĞäğËıÿÿÿÿ8£—å°ş1
+Ÿ
+java:S1450ü"VRemove the "jLabel1" field and declare it as a local variable in the relevant methods.(°ãÉ¸ÿÿÿÿÿ8¶ÑÓèü1J$b31471dc-a445-4bf8-b394-b6c61b7bc377
+ 
+java:S1450ı"WRemove the "jLabel10" field and declare it as a local variable in the relevant methods.(¼õò†şÿÿÿÿ8·ÑÓèü1J$2d5ccca3-73ca-4a4c-8ce5-73e94095fbff
+ 
+java:S1450ş"WRemove the "jLabel11" field and declare it as a local variable in the relevant methods.(‰Ó‚©øÿÿÿÿ8¸ÑÓèü1J$af1540cc-7556-4f7c-9e00-2001238fbc7f
+›
+java:S1450ÿ"WRemove the "jLabel12" field and declare it as a local variable in the relevant methods.(¶“¡8¹ÑÓèü1J$4cd4e994-9a40-4988-b324-0da6e81b3cbe
+ 
+java:S1450€"WRemove the "jLabel13" field and declare it as a local variable in the relevant methods.(ÑİĞİıÿÿÿÿ8¹ÑÓèü1J$2905dbab-7213-464a-b5fb-235da4ad0972
+ 
+java:S1450"WRemove the "jLabel14" field and declare it as a local variable in the relevant methods.(ÖóœÍıÿÿÿÿ8ºÑÓèü1J$0fc80475-0744-418a-a244-bd6879f7c088
+ 
+java:S1450‚"WRemove the "jLabel15" field and declare it as a local variable in the relevant methods.(³şâçøÿÿÿÿ8»ÑÓèü1J$281baaab-c802-4908-b835-e15502bad592
+ 
+java:S1450ƒ"WRemove the "jLabel16" field and declare it as a local variable in the relevant methods.(š¼ª¯üÿÿÿÿ8»ÑÓèü1J$dc706847-3d53-4b6f-8ef6-074dde0134c2
+›
+java:S1450„"WRemove the "jLabel17" field and declare it as a local variable in the relevant methods.(„Ç›Ä8»ÑÓèü1J$c8eb750d-0e58-4d5b-8744-b6af0d6a5319
+t
+java:S1450…"WRemove the "jLabel18" field and declare it as a local variable in the relevant methods.(†«=8´—å°ş1
+z
+java:S1450†"WRemove the "jLabel19" field and declare it as a local variable in the relevant methods.(Şù’±ıÿÿÿÿ8µ—å°ş1
+Ÿ
+java:S1450‡"VRemove the "jLabel2" field and declare it as a local variable in the relevant methods.(™úòˆüÿÿÿÿ8¼ÑÓèü1J$08c60706-0207-47fc-bc00-32b22dc417ad
+z
+java:S1450ˆ"WRemove the "jLabel20" field and declare it as a local variable in the relevant methods.(ëƒß›úÿÿÿÿ8¸—å°ş1
+z
+java:S1450‰"WRemove the "jLabel21" field and declare it as a local variable in the relevant methods.(Üœäÿûÿÿÿÿ8º—å°ş1
+z
+java:S1450Š"WRemove the "jLabel22" field and declare it as a local variable in the relevant methods.(šíŒÒúÿÿÿÿ8»—å°ş1
+u
+java:S1450‹"WRemove the "jLabel23" field and declare it as a local variable in the relevant methods.(õöäò8¼—å°ş1
+z
+java:S1450Œ"WRemove the "jLabel24" field and declare it as a local variable in the relevant methods.(¢×µæúÿÿÿÿ8½—å°ş1
+z
+java:S1450"WRemove the "jLabel26" field and declare it as a local variable in the relevant methods.(ÄšÔÃıÿÿÿÿ8¾—å°ş1
+u
+java:S1450"WRemove the "jLabel27" field and declare it as a local variable in the relevant methods.(åõ„ß8À—å°ş1
+u
+java:S1450"WRemove the "jLabel28" field and declare it as a local variable in the relevant methods.(ŒÄöı8Á—å°ş1
+z
+java:S1450"WRemove the "jLabel29" field and declare it as a local variable in the relevant methods.(ùôÜ®şÿÿÿÿ8Â—å°ş1
+Ÿ
+java:S1450‘"VRemove the "jLabel3" field and declare it as a local variable in the relevant methods.(Îä€øÿÿÿÿ8½ÑÓèü1J$3f3a7713-9a48-412a-a901-4aaa8eb1e3de
+z
+java:S1450’"WRemove the "jLabel30" field and declare it as a local variable in the relevant methods.(‰ˆã›ÿÿÿÿÿ8Â—å°ş1
+u
+java:S1450“"WRemove the "jLabel31" field and declare it as a local variable in the relevant methods.(ÀÇöô8Â—å°ş1
+z
+java:S1450”"WRemove the "jLabel32" field and declare it as a local variable in the relevant methods.(ğ¶Œ¸úÿÿÿÿ8Å—å°ş1
+u
+java:S1450•"WRemove the "jLabel33" field and declare it as a local variable in the relevant methods.(½ë¤¨8Å—å°ş1
+z
+java:S1450–"WRemove the "jLabel34" field and declare it as a local variable in the relevant methods.(ÏË×ãùÿÿÿÿ8Å—å°ş1
+z
+java:S1450—"WRemove the "jLabel35" field and declare it as a local variable in the relevant methods.(›ª‘Ïÿÿÿÿÿ8Æ—å°ş1
+š
+java:S1450˜"VRemove the "jLabel4" field and declare it as a local variable in the relevant methods.(«¢•ã8½ÑÓèü1J$a122e87c-d8c8-40df-9e9e-782e0f07819f
+š
+java:S1450™"VRemove the "jLabel5" field and declare it as a local variable in the relevant methods.(ó Ù®8½ÑÓèü1J$01412724-afd8-4715-9a48-751a5bfc494f
+Ÿ
+java:S1450š"VRemove the "jLabel6" field and declare it as a local variable in the relevant methods.(¸ôÂøÿÿÿÿ8ÁÑÓèü1J$6150f84f-93b0-41f6-a663-ca753ce8af9f
+š
+java:S1450›"VRemove the "jLabel7" field and declare it as a local variable in the relevant methods.(×ê˜Ÿ8ÁÑÓèü1J$a3754416-fcc8-4db9-a6ca-35aece5c3125
+š
+java:S1450œ"VRemove the "jLabel8" field and declare it as a local variable in the relevant methods.(å»«¢8ÂÑÓèü1J$63c19e47-4c07-4623-a2b0-2844f272371b
+Ÿ
+java:S1450"VRemove the "jLabel9" field and declare it as a local variable in the relevant methods.(Ì’óĞşÿÿÿÿ8ÂÑÓèü1J$7c82816d-ea32-4841-8055-2c3bb8e24f6e
+Ÿ
+java:S1450"VRemove the "jPanel1" field and declare it as a local variable in the relevant methods.(´œ½ÿÿÿÿÿ8ÂÑÓèü1J$24457bd8-8ba3-4c91-9101-bb7ffd717680
+u
+java:S1450Ÿ"WRemove the "jPanel10" field and declare it as a local variable in the relevant methods.( ˆ¥£8È—å°ş1
+x
+java:S1450©"ZRemove the "menuLateral" field and declare it as a local variable in the relevant methods.(ÕÖ»¿8É—å°ş1
 ˆ
-java:S2147§"ECombine this catch with the one at line 549, which has the same body.(ñÎ¯%8šÓÓèü1J$4a46555c-fc63-4ee4-8a53-f3c14a52e0ad
+java:S1450ª"eRemove the "paginaActividadesPanel" field and declare it as a local variable in the relevant methods.(—¦ÇÃıÿÿÿÿ8Ê—å°ş1
+~
+java:S1450«"`Remove the "paginaClasesPanel" field and declare it as a local variable in the relevant methods.(Û½¢8Ê—å°ş1
 €
-java:S1128"8Remove this unused import 'java.awt.event.MouseAdapter'.( ÜÍÁûÿÿÿÿ8©ÓÓèü1J$b181f9a5-12be-42c3-af4a-11e49e49ccba
-y
-java:S1128	"6Remove this unused import 'java.awt.event.MouseEvent'.(›õ8©ÓÓèü1J$4752971b-4186-4e78-a642-1bb424cc90dc
-p
-java:S1128
-"(Remove this unused import 'javax.swing'.(Ìí¿Üüÿÿÿÿ8ªÓÓèü1J$05aee803-7bba-4036-ad28-0de513bbc3a3
+java:S1450¬"bRemove the "paginaEspaciosPanel" field and declare it as a local variable in the relevant methods.(ÈˆŸ†8Ë—å°ş1
+€
+java:S1450­"bRemove the "paginaInformesPanel" field and declare it as a local variable in the relevant methods.(€¢† 8Ë—å°ş1
+…
+java:S1450®"bRemove the "paginaMaquinasPanel" field and declare it as a local variable in the relevant methods.(²ƒÑ°úÿÿÿÿ8Ó—å°ş1
+‚
+java:S1450¯"_Remove the "paginaPagosPanel" field and declare it as a local variable in the relevant methods.(œŞÿ·şÿÿÿÿ8ä—å°ş1
+
+java:S1450°"cRemove the "paginaPrincipalPanel" field and declare it as a local variable in the relevant methods.(Ÿ¨…Ö8å—å°ş1
+~
+java:S1450±"`Remove the "paginaSociosPanel" field and declare it as a local variable in the relevant methods.(ç—´£8å—å°ş1
+~
+java:S1161í":Add the "@Override" annotation above this method signature(†ŒË³8’ÒÓèü1J$eb584f64-dc2b-491f-9228-d26b218b532a
+X
+java:S1161ğ":Add the "@Override" annotation above this method signature(—¶Ğé8Ñ˜å°ş1
+]
+java:S1161ó":Add the "@Override" annotation above this method signature(™ÅšÊûÿÿÿÿ8â˜å°ş1
+X
+java:S1161„":Add the "@Override" annotation above this method signature(†ŒË³8â˜å°ş1
+X
+java:S1161‡":Add the "@Override" annotation above this method signature(—¶Ğé8ã˜å°ş1
+]
+java:S1161Š":Add the "@Override" annotation above this method signature(™ÅšÊûÿÿÿÿ8ã˜å°ş1
+X
+java:S1161›":Add the "@Override" annotation above this method signature(†ŒË³8ä˜å°ş1
+X
+java:S1161":Add the "@Override" annotation above this method signature(—¶Ğé8ä˜å°ş1
+]
+java:S1161¡":Add the "@Override" annotation above this method signature(™ÅšÊûÿÿÿÿ8ò˜å°ş1
+X
+java:S1161²":Add the "@Override" annotation above this method signature(†ŒË³8‚™å°ş1
+X
+java:S1161µ":Add the "@Override" annotation above this method signature(—¶Ğé8“™å°ş1
+]
+java:S1161¸":Add the "@Override" annotation above this method signature(™ÅšÊûÿÿÿÿ8•™å°ş1
+X
+java:S1161É":Add the "@Override" annotation above this method signature(†ŒË³8–™å°ş1
+X
+java:S1161Ì":Add the "@Override" annotation above this method signature(—¶Ğé8–™å°ş1
+]
+java:S1161Ï":Add the "@Override" annotation above this method signature(™ÅšÊûÿÿÿÿ8—™å°ş1
+X
+java:S1161à":Add the "@Override" annotation above this method signature(†ŒË³8—™å°ş1
+X
+java:S1161ã":Add the "@Override" annotation above this method signature(—¶Ğé8˜™å°ş1
+]
+java:S1161æ":Add the "@Override" annotation above this method signature(™ÅšÊûÿÿÿÿ8˜™å°ş1
+X
+java:S1161÷":Add the "@Override" annotation above this method signature(†ŒË³8˜™å°ş1
+X
+java:S1161ú":Add the "@Override" annotation above this method signature(—¶Ğé8™™å°ş1
+]
+java:S1161ı":Add the "@Override" annotation above this method signature(™ÅšÊûÿÿÿÿ8™™å°ş1
+X
+java:S1161":Add the "@Override" annotation above this method signature(†ŒË³8™™å°ş1
+X
+java:S1161‘":Add the "@Override" annotation above this method signature(—¶Ğé8š™å°ş1
+]
+java:S1161”":Add the "@Override" annotation above this method signature(™ÅšÊûÿÿÿÿ8š™å°ş1
+X
+java:S1161¥":Add the "@Override" annotation above this method signature(†ŒË³8›™å°ş1
+X
+java:S1161¨":Add the "@Override" annotation above this method signature(—¶Ğé8›™å°ş1
+]
+java:S1161«":Add the "@Override" annotation above this method signature(™ÅšÊûÿÿÿÿ8›™å°ş1
+M
+java:S1172Á"*Remove this unused method parameter "evt".(í’è¯ıÿÿÿÿ8°™å°ş1
+{
+java:S1135Â"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8£ÎÄÙü1J$abba699b-2cba-4e41-9055-01e8e59c70ed
+M
+java:S1172Æ"*Remove this unused method parameter "evt".(©Ã«şÿÿÿÿ8Ô™å°ş1
+{
+java:S1135Ç"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8¤ÎÄÙü1J$7c75f6c9-8646-455b-af15-d30f47fd5147
+M
+java:S1172Ë"*Remove this unused method parameter "evt".(ÿûàúÿÿÿÿ8û™å°ş1
+{
+java:S1135Ì"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8¦ÎÄÙü1J$a1081f24-177e-446c-9e11-8901d1e035dc
+G
+java:S1172Ğ"*Remove this unused method parameter "evt".(¦Ñ68ş™å°ş1
+{
+java:S1135Ñ"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8§ÎÄÙü1J$232fdc76-28ea-45dc-a233-59e2ad70e970
+H
+java:S1172Õ"*Remove this unused method parameter "evt".(÷Ä–ä8ÿ™å°ş1
+{
+java:S1135Ö"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8­¸Íáü1J$3e802ca0-af56-4a54-905a-09749cb7bb88
+G
+java:S1172Ú"*Remove this unused method parameter "evt".(´ò¡#8ÿ™å°ş1
+{
+java:S1135Û"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8Ã¸Íáü1J$2b6c70ce-aacf-4ea0-a197-951a91fd0a5f
+H
+java:S1172ß"*Remove this unused method parameter "evt".(ğ·ış8€šå°ş1
+{
+java:S1135à"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8Ä¸Íáü1J$8f7cc078-750d-415f-b638-f9ebc8508f26
+H
+java:S1172ä"*Remove this unused method parameter "evt".(ÊÊ½„8šå°ş1
+{
+java:S1135å"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8Ä¸Íáü1J$a3e73091-0da4-4700-a52d-e0617778c406
+M
+java:S1172é"*Remove this unused method parameter "evt".(î§¹øøÿÿÿÿ8šå°ş1
+U
+java:S1135ê"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8šå°ş1
+M
+java:S1172î"*Remove this unused method parameter "evt".(¨ÂÑæÿÿÿÿÿ8‚šå°ş1
+U
+java:S1135ï"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8‚šå°ş1
+H
+java:S1172ó"*Remove this unused method parameter "evt".(ºŠ‹„8‚šå°ş1
+U
+java:S1135ô"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8‚šå°ş1
+H
+java:S1172ø"*Remove this unused method parameter "evt".(õŠä¶8ƒšå°ş1
+U
+java:S1135ù"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8ƒšå°ş1
+M
+java:S1172ı"*Remove this unused method parameter "evt".(—ëó£úÿÿÿÿ8šå°ş1
+U
+java:S1135ş"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8šå°ş1
+H
+java:S1172‚"*Remove this unused method parameter "evt".(ÇßÉç8šå°ş1
+U
+java:S1135ƒ"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8šå°ş1
+G
+java:S1172‡"*Remove this unused method parameter "evt".(Ï­©8‘šå°ş1
+U
+java:S1135ˆ"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8‘šå°ş1
+H
+java:S1172Œ"*Remove this unused method parameter "evt".(µÙõ8‘šå°ş1
+U
+java:S1135"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8‘šå°ş1
+H
+java:S1172‘"*Remove this unused method parameter "evt".(¢É¡ó8’šå°ş1
+U
+java:S1135’"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8’šå°ş1
+H
+java:S1172–"*Remove this unused method parameter "evt".(ãáñŒ8’šå°ş1
+U
+java:S1135—"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8“šå°ş1
+M
+java:S1172›"*Remove this unused method parameter "evt".(ÄÔşÿÿÿÿ8“šå°ş1
+U
+java:S1135œ"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8“šå°ş1
+H
+java:S1172 "*Remove this unused method parameter "evt".(ˆ£ Ü8šå°ş1
+U
+java:S1135¡"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8¢šå°ş1
+M
+java:S1172¥"*Remove this unused method parameter "evt".(Ìò¾­üÿÿÿÿ8¤šå°ş1
+U
+java:S1135¦"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8­šå°ş1
+M
+java:S1172ª"*Remove this unused method parameter "evt".(ĞÈ½«şÿÿÿÿ8½šå°ş1
+U
+java:S1135«"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8½šå°ş1
+H
+java:S1172¯"*Remove this unused method parameter "evt".(ğâ¿8½šå°ş1
+U
+java:S1135°"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8¾šå°ş1
+M
+java:S1172´"*Remove this unused method parameter "evt".(Çàƒ€ıÿÿÿÿ8¾šå°ş1
+U
+java:S1135µ"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8¾šå°ş1
+H
+java:S1172¹"*Remove this unused method parameter "evt".(äşë8¿šå°ş1
+U
+java:S1135º"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8¿šå°ş1
+M
+java:S1172¾"*Remove this unused method parameter "evt".(¾˜‘©şÿÿÿÿ8Àšå°ş1
+U
+java:S1135¿"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8Àšå°ş1
+H
+java:S1172Ã"*Remove this unused method parameter "evt".(ôÜØ¤8àšå°ş1
+U
+java:S1135Ä"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8ášå°ş1
+H
+java:S1172È"*Remove this unused method parameter "evt".(‚À‡ä8îšå°ş1
+U
+java:S1135É"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8ıšå°ş1
+M
+java:S1172Ì"*Remove this unused method parameter "evt".(¹¾ûüÿÿÿÿ8œ›å°ş1
+U
+java:S1135Í"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8›å°ş1
+G
+java:S1172Ğ"*Remove this unused method parameter "evt".(Š–ÿG8›å°ş1
+U
+java:S1135Ñ"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8›å°ş1
+s
+java:S1197×"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ8œšÌÙü1J$8ed84283-688a-47e4-92e8-ae0a1edd21bf
+‰
+java:S2147æ"ECombine this catch with the one at line 612, which has the same body.(¨¦Š½8šÌÙü1J$4a34d070-d6a0-48ac-a2ab-b50da1bd3979
+‰
+java:S2147è"ECombine this catch with the one at line 614, which has the same body.(ã€ 8šÌÙü1J$ec5bfb60-1cc9-4f7c-a563-bbf076fd43f0
+ˆ
+java:S2147ê"ECombine this catch with the one at line 616, which has the same body.(ñÎ¯%8šÓÓèü1J$4a46555c-fc63-4ee4-8a53-f3c14a52e0ad

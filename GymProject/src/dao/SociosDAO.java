@@ -13,9 +13,16 @@ public class SociosDAO {
     private static final Logger LOGGER = Logger.getLogger(SociosDAO.class.getName());
 
     public void insertarSocio(Socio socio) {
-        String sql = "INSERT INTO socios (id, membresia_id, tarjeta_rfid_id) VALUES (?, ?, ?)";
+        String sql = "INSERT INTO socios (nombre, apellido, cedula, direccion, email, numeroTelefono, fechaNacimiento) VALUES (?, ?, ?, ?, ?, ?, ?)";
         try (Connection conn = DBConexion.getConnection();
              PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setString(1, socio.getNombre());
+            pstmt.setString(2, socio.getApellido());
+            pstmt.setString(3, socio.getCedula());
+            pstmt.setString(4, socio.getDireccion());
+            pstmt.setString(5, socio.getEmail());
+            pstmt.setString(6, socio.getNumeroTelefono());
+            pstmt.setDate(7, new java.sql.Date(socio.getFechaNacimiento().getTime()));
             pstmt.executeUpdate();
 
         } catch (SQLException e) {

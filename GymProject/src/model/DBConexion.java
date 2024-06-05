@@ -7,9 +7,9 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class DBConexion {
-    private static final String DATABASE_URL = "jdbc:mysql://localhost:3306/db_gimnasio";
-    private static final String DATABASE_USER = "root";
-    private static final String DATABASE_PASSWORD = "andresdomenica";
+    private static final String DATABASE_URL = "jdbc:mysql://192.168.0.100:3306/db_gimnasio";
+    private static final String DATABASE_USER = "AccesoRemoto";
+    private static final String DATABASE_PASSWORD = "kevinandres123";
 
     private static Connection conexion = null;
     private static final Logger LOGGER = Logger.getLogger(DBConexion.class.getName());
