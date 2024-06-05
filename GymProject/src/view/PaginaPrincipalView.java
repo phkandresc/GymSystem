@@ -10,13 +10,13 @@ import java.awt.Color;
  *
  * @author kacor
  */
-public class PaginaPrincipalView extends javax.swing.JFrame {
+public class PaginaPrincipalView2 extends javax.swing.JFrame {
     Color naranjaOscuro = new Color(242,68,5);
     Color naranja = new Color(242,98,15);
     /**
      * Creates new form PaginaPrincipalView2
      */
-    public PaginaPrincipalView() {
+    public PaginaPrincipalView2() {
         initComponents();
         this.setLocationRelativeTo(null);
     }
@@ -94,13 +94,13 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new Color(255, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel10.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel22.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
-        jLabel22.setForeground(new Color(255, 255, 255));
+        jLabel22.setForeground(new java.awt.Color(255, 255, 255));
         jLabel22.setText("Bienvenido Admin");
         jPanel10.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(1080, 10, -1, 40));
 
@@ -108,7 +108,7 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
         jPanel10.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 10, -1, -1));
 
         jLabel17.setFont(new java.awt.Font("Poppins Medium", 0, 20)); // NOI18N
-        jLabel17.setForeground(new Color(255, 255, 255));
+        jLabel17.setForeground(new java.awt.Color(255, 255, 255));
         jLabel17.setText("Gimnasio");
         jPanel10.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 10, -1, 40));
 
@@ -119,9 +119,9 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
 
         jPanel1.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 60));
 
-        GrupoDePaneles.setBackground(new Color(255, 255, 255));
+        GrupoDePaneles.setBackground(new java.awt.Color(255, 255, 255));
 
-        paginaPrincipalPanel.setBackground(new Color(255, 255, 255));
+        paginaPrincipalPanel.setBackground(new java.awt.Color(255, 255, 255));
         paginaPrincipalPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel23.setText("Pagina Principal");
@@ -129,10 +129,10 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
 
         GrupoDePaneles.addTab("tab1", paginaPrincipalPanel);
 
-        paginaSociosPanel.setBackground(new Color(255, 255, 255));
+        paginaSociosPanel.setBackground(new java.awt.Color(255, 255, 255));
         paginaSociosPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setBackground(new Color(255, 153, 102));
+        jButton1.setBackground(new java.awt.Color(255, 153, 102));
         jButton1.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
         jButton1.setText("Registrar un nuevo socio");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -145,7 +145,7 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
         jLabel24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/image 1.jpg"))); // NOI18N
         paginaSociosPanel.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 100, -1, -1));
 
-        jButton2.setBackground(new Color(255, 153, 102));
+        jButton2.setBackground(new java.awt.Color(255, 153, 102));
         jButton2.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
         jButton2.setText("Ver socios existentes");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -166,13 +166,13 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
 
         GrupoDePaneles.addTab("tab2", paginaSociosPanel);
 
-        paginaPagosPanel.setBackground(new Color(255, 255, 255));
+        paginaPagosPanel.setBackground(new java.awt.Color(255, 255, 255));
         paginaPagosPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/image 1.jpg"))); // NOI18N
         paginaPagosPanel.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 100, -1, -1));
 
-        jButton3.setBackground(new Color(255, 153, 102));
+        jButton3.setBackground(new java.awt.Color(255, 153, 102));
         jButton3.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
         jButton3.setText("Registrar un pago");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -187,7 +187,7 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
 
         GrupoDePaneles.addTab("tab3", paginaPagosPanel);
 
-        paginaClasesPanel.setBackground(new Color(255, 255, 255));
+        paginaClasesPanel.setBackground(new java.awt.Color(255, 255, 255));
         paginaClasesPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel26.setText("Clases");
@@ -195,7 +195,7 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
 
         GrupoDePaneles.addTab("tab4", paginaClasesPanel);
 
-        paginaActividadesPanel.setBackground(new Color(255, 255, 255));
+        paginaActividadesPanel.setBackground(new java.awt.Color(255, 255, 255));
         paginaActividadesPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel27.setText("Actividades");
@@ -203,7 +203,7 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
 
         GrupoDePaneles.addTab("tab5", paginaActividadesPanel);
 
-        paginaEspaciosPanel.setBackground(new Color(255, 255, 255));
+        paginaEspaciosPanel.setBackground(new java.awt.Color(255, 255, 255));
         paginaEspaciosPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel28.setText("Espacios");
@@ -211,7 +211,7 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
 
         GrupoDePaneles.addTab("tab6", paginaEspaciosPanel);
 
-        paginaMaquinasPanel.setBackground(new Color(255, 255, 255));
+        paginaMaquinasPanel.setBackground(new java.awt.Color(255, 255, 255));
         paginaMaquinasPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel29.setText("Maquinas");
@@ -219,7 +219,7 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
 
         GrupoDePaneles.addTab("tab7", paginaMaquinasPanel);
 
-        paginaInformesPanel.setBackground(new Color(255, 255, 255));
+        paginaInformesPanel.setBackground(new java.awt.Color(255, 255, 255));
         paginaInformesPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel30.setText("Infromes y analisis");
@@ -229,10 +229,10 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
 
         jPanel1.add(GrupoDePaneles, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 30, 1010, 650));
 
-        menuLateral.setBackground(new Color(242, 98, 15));
+        menuLateral.setBackground(new java.awt.Color(242, 98, 15));
         menuLateral.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel2.setBackground(new Color(242, 98, 15));
+        jPanel2.setBackground(new java.awt.Color(242, 98, 15));
         jPanel2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jPanel2MouseClicked(evt);
@@ -255,7 +255,7 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
 
         menuLateral.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 270, 50));
 
-        jPanel3.setBackground(new Color(242, 98, 15));
+        jPanel3.setBackground(new java.awt.Color(242, 98, 15));
         jPanel3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jPanel3MouseClicked(evt);
@@ -278,7 +278,7 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
 
         menuLateral.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 520, 270, 50));
 
-        jPanel4.setBackground(new Color(242, 98, 15));
+        jPanel4.setBackground(new java.awt.Color(242, 98, 15));
         jPanel4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jPanel4MouseClicked(evt);
@@ -301,7 +301,7 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
 
         menuLateral.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 170, 270, 50));
 
-        jPanel5.setBackground(new Color(242, 98, 15));
+        jPanel5.setBackground(new java.awt.Color(242, 98, 15));
         jPanel5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jPanel5MouseClicked(evt);
@@ -324,7 +324,7 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
 
         menuLateral.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 220, 270, 50));
 
-        jPanel6.setBackground(new Color(242, 98, 15));
+        jPanel6.setBackground(new java.awt.Color(242, 98, 15));
         jPanel6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jPanel6MouseClicked(evt);
@@ -347,7 +347,7 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
 
         menuLateral.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 270, 270, 50));
 
-        jPanel7.setBackground(new Color(242, 98, 15));
+        jPanel7.setBackground(new java.awt.Color(242, 98, 15));
         jPanel7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jPanel7MouseClicked(evt);
@@ -370,7 +370,7 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
 
         menuLateral.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 320, 270, 50));
 
-        jPanel8.setBackground(new Color(242, 98, 15));
+        jPanel8.setBackground(new java.awt.Color(242, 98, 15));
         jPanel8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jPanel8MouseClicked(evt);
@@ -393,7 +393,7 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
 
         menuLateral.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 370, 270, 50));
 
-        jPanel9.setBackground(new Color(242, 98, 15));
+        jPanel9.setBackground(new java.awt.Color(242, 98, 15));
         jPanel9.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jPanel9MouseClicked(evt);
@@ -416,7 +416,7 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
 
         menuLateral.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 420, 270, 50));
 
-        jPanel11.setBackground(new Color(242, 98, 15));
+        jPanel11.setBackground(new java.awt.Color(242, 98, 15));
         jPanel11.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jPanel11MouseClicked(evt);
@@ -610,20 +610,20 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(PaginaPrincipalView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PaginaPrincipalView2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(PaginaPrincipalView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PaginaPrincipalView2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(PaginaPrincipalView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PaginaPrincipalView2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(PaginaPrincipalView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PaginaPrincipalView2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new PaginaPrincipalView().setVisible(true);
+                new PaginaPrincipalView2().setVisible(true);
             }
         });
     }

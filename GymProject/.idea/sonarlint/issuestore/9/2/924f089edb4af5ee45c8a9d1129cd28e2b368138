@@ -1,6 +1,6 @@
 
-V
-java:S1220""Move this file to a named package.J$42517eb4-57e8-4b05-8021-a92dcfe2f696
-H
-java:S1172"+Remove this unused method parameter "args".(Î½ºğ8ÔÜë€ü1
-L	java:S106"+Replace this use of System.out by a logger.(ùÄûšşÿÿÿÿ8íÜë€ü1
+€
+java:S1854"=Remove this useless assignment to local variable "dbManager".(åÄ¯Ì8¶Ù ş1J$4488ff30-3c0b-4ed5-98a9-73d89cba1f92
+q
+java:S1481".Remove this unused "dbManager" local variable.(åÄ¯Ì8¶Ù ş1J$f0ac517c-6eb1-4906-a4c1-35505beb1a15
+m	java:S106%"+Replace this use of System.out by a logger.(˜áÕÓ8ÆÙ ş1J$0bba607e-e7cb-440d-b4be-fa4727408785
