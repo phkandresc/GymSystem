@@ -14,27 +14,41 @@ import java.util.logging.Logger;
 public class AdminDAO {
     private static final Logger LOGGER = Logger.getLogger(AdminDAO.class.getName());
 
-    public Admin buscarPorUsuario(String usuario) {
+    public boolean iniciarSesion(Admin admin) throws SQLException {
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+        Connection conexion = DBConexion.getConnection();
 
-        String sql = "SELECT * FROM administradores WHERE usuario = ?";
+        String sql = "SELECT id, usuario, contrasena FROM administradores WHERE usuario = ?";
 
-        try (Connection conn = DBConexion.getConnection();
-             PreparedStatement pstmt = conn.prepareStatement(sql)) {
-            pstmt.setString(1, usuario);
-            ResultSet rs = pstmt.executeQuery();
+        try{
+            ps = conexion.prepareStatement(sql);
+            ps.setString(1, admin.getUsuario());
+            rs = ps.executeQuery();
 
             if (rs.next()) {
-                Admin admin = new Admin();
-                admin.setUsuario(rs.getString("usuario"));
-                admin.setContrasena(rs.getString("contrasena"));
-                return admin;
-            } else {
-                return null;
+                if(admin.getContrasena().equals(rs.getString("contrasena"))) {
+                    return true;
+                }else {
+                    return false;
+                }
             }
+            return false;
         } catch (SQLException e) {
-            LOGGER.log(Level.SEVERE, "Error al buscar admin: " + e.getMessage(), e);
-            return null;
+            LOGGER.log(Level.SEVERE, e.getMessage());
+            return false;
+        } finally {
+            if (rs != null) {
+                rs.close();
+            }
+
+            if (ps != null) {
+                ps.close();
+            }
+
+            if (conexion != null) {
+                conexion.close();
+            }
         }
     }
-
 }

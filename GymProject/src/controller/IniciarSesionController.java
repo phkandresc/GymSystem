@@ -3,13 +3,12 @@ package controller;
 import dao.AdminDAO;
 import view.IniciarSesionView;
 import model.Admin;
+import view.PaginaPrincipalView;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
+import javax.swing.*;
+import java.awt.event.*;
 
-public class IniciarSesionController implements ActionListener, MouseListener {
+public class IniciarSesionController implements ActionListener, MouseListener, FocusListener{
     private IniciarSesionView iniciarSesionView;
     private AdminDAO adminDAO;
 
@@ -17,32 +16,47 @@ public class IniciarSesionController implements ActionListener, MouseListener {
         this.iniciarSesionView = iniciarSesionView;
         this.adminDAO = adminDAO;
         iniciarSesionView.btnIniciarSesion.addMouseListener(this);
+        iniciarSesionView.txtUsuario.addFocusListener(this);
+        iniciarSesionView.txtContrasena.addFocusListener(this);
+        iniciarSesionView.txtUsuario.addActionListener(this);
+        iniciarSesionView.txtContrasena.addActionListener(this);
         iniciarSesionView.setVisible(true);
     }
 
-    public void iniciarSesion(String usuario, String contrasena) {
-        Admin admin = adminDAO.buscarPorUsuario(usuario);
-        if (admin != null && admin.getContrasena().equals(contrasena)) {
-            // Inicio de sesión exitoso
-            // Aquí puedes cambiar a la vista principal de tu aplicación
-        } else {
-            // Inicio de sesión fallido
-            // Aquí puedes mostrar un mensaje de error en tu vista
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        if (e.getSource() == iniciarSesionView.txtUsuario || e.getSource() == iniciarSesionView.txtContrasena){
+            iniciarSesion();
+        }
+    }
+
+    private void iniciarSesion() {
+        Admin admin = new Admin();
+        admin.setUsuario(iniciarSesionView.txtUsuario.getText());
+        admin.setContrasena(iniciarSesionView.txtContrasena.getText());
+
+        try {
+            if (adminDAO.iniciarSesion(admin)) {
+                JOptionPane.showMessageDialog(null, "Sesion iniciada");
+                System.out.println("Sesion iniciada");
+                PaginaPrincipalView paginaPricipal = new PaginaPrincipalView();
+                iniciarSesionView.dispose();
+                paginaPricipal.setVisible(true);
+            } else {
+                JOptionPane.showMessageDialog(null, "Usuario o contraseña incorrectos");
+                System.out.println("Usuario o contraseña incorrectos");
+            }
+        } catch (Exception ex) {
+            JOptionPane.showMessageDialog(null, "Error al iniciar sesion");
+            System.out.println("Error al iniciar sesion");
         }
     }
 
     @Override
-    public void actionPerformed(ActionEvent e) {
-
-    }
-
-    @Override
     public void mouseClicked(MouseEvent e) {
-        if (e.getSource() == iniciarSesionView.btnIniciarSesion) {
-            System.out.println("Iniciar sesión");
-            String usuario = iniciarSesionView.txtContrasena.getText();
-            String contrasena = new String(iniciarSesionView.txtUsuario.getText());
-            iniciarSesion(usuario, contrasena);
+        if (e.getSource() == iniciarSesionView.btnIniciarSesion){
+            iniciarSesion();
         }
     }
 
@@ -64,5 +78,23 @@ public class IniciarSesionController implements ActionListener, MouseListener {
     @Override
     public void mouseExited(MouseEvent e) {
 
+    }
+
+    @Override
+    public void focusGained(FocusEvent e) {
+        if (e.getSource() == iniciarSesionView.txtUsuario) {
+            iniciarSesionView.txtUsuario.setText("");
+        } else if (e.getSource() == iniciarSesionView.txtContrasena) {
+            iniciarSesionView.txtContrasena.setText("");
+        }
+    }
+
+    @Override
+    public void focusLost(FocusEvent e) {
+        if (e.getSource() == iniciarSesionView.txtUsuario && iniciarSesionView.txtUsuario.getText().equals("")) {
+            iniciarSesionView.txtUsuario.setText("Usuario");
+        } else if (e.getSource() == iniciarSesionView.txtContrasena && iniciarSesionView.txtContrasena.getText().equals("")) {
+            iniciarSesionView.txtContrasena.setText("Contraseña");
+        }
     }
 }

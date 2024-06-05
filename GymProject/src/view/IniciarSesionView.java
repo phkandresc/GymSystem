@@ -16,7 +16,7 @@ public class IniciarSesionView extends JFrame {
     public javax.swing.JLabel jLabel8;
     public javax.swing.JSeparator jSeparator1;
     public javax.swing.JSeparator jSeparator2;
-    public javax.swing.JTextField txtContrasena;
+    public javax.swing.JPasswordField txtContrasena;
     public javax.swing.JTextField txtUsuario;
     public javax.swing.JPanel panelIniciarSesion;
 
@@ -27,7 +27,7 @@ public class IniciarSesionView extends JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        txtContrasena = new javax.swing.JTextField();
+        txtContrasena = new javax.swing.JPasswordField();
         jSeparator1 = new javax.swing.JSeparator();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
@@ -37,6 +37,7 @@ public class IniciarSesionView extends JFrame {
         btnIniciarSesion = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
 
+        setLocationRelativeTo(null);
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -114,7 +115,7 @@ public class IniciarSesionView extends JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        txtContrasena = new javax.swing.JTextField();
+        txtContrasena = new javax.swing.JPasswordField();
         jSeparator1 = new javax.swing.JSeparator();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();

@@ -23,11 +23,7 @@ H
 src/model/Membresia.java,b\f\bf2a8f6eebca2f1b587b40a644a181ad32812e97
 I
 src/dao/MembresiaDAO.java,e\3\e3623b662a0773639df04109a2af18583979f5a3
-N
-src/model/DatabaseManager.java,b\e\be4577d4af41ac2790e8dded6b1e4fbbc2281e5c
 D
 src/model/Admin.java,c\f\cf6347e0dbd22e7fa2666be0cbd26c48ce4c94f9
-M
-src/model/GestorDeSocios.java,a\9\a92a3fcd8390492c348f619f07d529aa80994fd0
 E
 src/dao/AdminDAO.java,c\c\ccc66819f9ce5905c82d63dbd036c1651ffaf9c5
