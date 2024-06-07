@@ -27,3 +27,5 @@ D
 src/model/Admin.java,c\f\cf6347e0dbd22e7fa2666be0cbd26c48ce4c94f9
 E
 src/dao/AdminDAO.java,c\c\ccc66819f9ce5905c82d63dbd036c1651ffaf9c5
+G
+src/model/IBuilder.java,4\9\49fc20e101ba1249f339ffb0b822083d52f5447d
