@@ -1,6 +1,10 @@
 
-œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ä”òª8êìº„€2J$ef85505a-f60e-45d7-a2c6-71d5c72684e1
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ä”òª8êìº„€2J$cc2b2ebb-8435-49c4-8c79-e88fa302e07f
+
+java:S25894"7Remove this expression which always evaluates to "true"(ÿ«„¦øÿÿÿÿ8ò¸Ä…€2J$c5d49d7a-711d-4a59-a8ee-e43caf937255
 œ
-java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ØÅéŸ8íìº„€2J$0c963a4f-0ac5-488f-b05d-cd745fd7b2f0
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ØÅéŸ8íìº„€2J$93e1d64c-09ed-450c-8e7c-5ed80096233c
+—
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(×ÿš™üÿÿÿÿ8ó¸Ä…€2J$37b9c0c5-6e5a-4817-88ea-c49b3bab546e
 g
-java:S6905"Don't use the query "SELECT *".(£¨Œüùÿÿÿÿ8ªå¿„€2J$6524cc72-e577-4cac-a44d-1a227d3ad031
+java:S6905"Don't use the query "SELECT *".(£¨Œüùÿÿÿÿ8ªå¿„€2J$2dc39e34-5a27-43bf-bd8d-31cb2570a55b

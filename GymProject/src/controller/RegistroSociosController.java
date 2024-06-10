@@ -39,7 +39,6 @@ public class RegistroSociosController implements ActionListener, MouseListener, 
 
     @Override
     public void actionPerformed(ActionEvent e) {
-
     }
 
     @Override

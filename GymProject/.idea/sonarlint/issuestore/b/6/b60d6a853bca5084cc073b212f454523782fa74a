@@ -1,27 +1,27 @@
 
+£
+java:S1186)"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¼ Òþüÿÿÿÿ8âæí…€2
 É
-java:S1186)"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¼ Òþüÿÿÿÿ8Ùìž…€2J$ebb3d134-c88b-47d9-a01e-ef8870acfe7c
-É
-java:S1186."€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¿˜œÔþÿÿÿÿ8Ùìž…€2J$56a8bef5-5f03-4b06-b094-97efa2f08240
+java:S1186-"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¿˜œÔþÿÿÿÿ8û“ë…€2J$e3c6b29c-c17d-4899-a645-86c184eb41a6
 Ä
-java:S11863"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(›™¥…8Úìž…€2J$04086f83-ef7d-4d01-902c-c6259aed645d
+java:S11862"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(›™¥…8ü“ë…€2J$f0b4eb83-588c-4fa6-8ed7-00cb2134b016
 É
-java:S11868"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ä Ïúüÿÿÿÿ8Úìž…€2J$ccf0d2d5-cbe7-4c59-899a-cc93d23722fd
+java:S11867"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ä Ïúüÿÿÿÿ8ü“ë…€2J$ecb7f314-f1fe-40d4-80e2-85c2eea7ef05
 É
-java:S1186="€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(®î’×üÿÿÿÿ8Úìž…€2J$73f94307-3128-4c63-8bf6-0739bf691154
+java:S1186<"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(®î’×üÿÿÿÿ8ü“ë…€2J$2d827c15-c53b-44fa-96ce-28a3171982fd
 Ä
-java:S1186B"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ãÆÐÂ8Úìž…€2J$a12d5ed4-faab-42fc-b00e-0cd65b54e764
+java:S1186A"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ãÆÐÂ8ü“ë…€2J$eb2c4a54-cfee-46b1-935b-cb2ae9a5a05c
 É
-java:S1186G"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ö„˜þúÿÿÿÿ8Úìž…€2J$4fc69fb0-230a-4b64-9274-2985cc8bc56a
+java:S1186F"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ö„˜þúÿÿÿÿ8ü“ë…€2J$226b98ab-8c4f-4f2d-a177-394066a2b684
 É
-java:S1186L"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•ßçùÿÿÿÿ8Úìž…€2J$4e5d68f9-f72a-4cea-bdb4-be07ec4e4919
-ž
-java:S1450"\Remove the "tipoMembresia" field and declare it as a local variable in the relevant methods.(„ªà8Úìž…€2J$f6d3715a-5b9c-489c-a7d9-0c2629cd1922
+java:S1186K"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•ßçùÿÿÿÿ8ü“ë…€2J$53dfa937-9611-4a3a-920d-1e9882ef929d
+x
+java:S1450"\Remove the "tipoMembresia" field and declare it as a local variable in the relevant methods.(„ªà8âæí…€2
 ¢
-java:S1450"_Remove the "tipoMembresiaDAO" field and declare it as a local variable in the relevant methods.(œµœ8Úìž…€2J$babb10b7-2530-40cf-8c9f-66d834118841
+java:S1450"_Remove the "tipoMembresiaDAO" field and declare it as a local variable in the relevant methods.(œµœ8Úìž…€2J$c9ca0518-1ae3-482a-94af-828051bfd7b7
 „
-java:S1117 "ARename "tipoMembresia" which hides the field declared at line 17.(Ìõþ8Ýìž…€2J$0297fbef-a452-4226-9c01-0277da268ecf
-o
-java:S1068",Remove this unused "socioDAO" private field.(«’Á±8ßìž…€2J$8b5e655a-d58b-4c11-b114-f33bf2c7dff9
-l
-java:S1068")Remove this unused "socio" private field.(È½ù‹8ßìž…€2J$9f3a2c65-006f-4bdb-8334-918b95741117
+java:S1117 "ARename "tipoMembresia" which hides the field declared at line 17.(Ìõþ8Ýìž…€2J$2286b696-58ff-41e7-9208-202f3a1eb298
+I
+java:S1068",Remove this unused "socioDAO" private field.(«’Á±8ææí…€2
+F
+java:S1068")Remove this unused "socio" private field.(È½ù‹8ææí…€2

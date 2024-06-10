@@ -1,0 +1,94 @@
+
+d
+java:S1604è"(Make this anonymous inner class a lambda(ş¼óJJ$ad86e4cb-1112-4fdf-a217-a927f93e63ee
+d
+java:S1604"(Make this anonymous inner class a lambda(ş¼óJJ$0e7c52e0-f7fd-4ad9-bc05-687e242056dc
+j
+java:S1604¿"(Make this anonymous inner class a lambda(Şı…œùÿÿÿÿJ$d859a20b-1a9d-4ba9-8947-48c11eb012c0
+j
+java:S1604ß"(Make this anonymous inner class a lambda(í™“ÚúÿÿÿÿJ$d5d75eb2-feb5-481d-8026-38d83c262fdf
+e
+java:S1604ù"(Make this anonymous inner class a lambda(¯ÖÓ·J$7dd8a737-4823-4ae9-8dd9-71dddbe0162f
+d
+java:S1604Ÿ"(Make this anonymous inner class a lambda(ş¼óJJ$95e08257-628e-4b9f-92a1-88dfdeeb5daa
+e
+java:S1604É"(Make this anonymous inner class a lambda(¯ÖÓ·J$7ee777e3-89f1-44f5-b7c5-16688346a7db
+d
+java:S1604å"(Make this anonymous inner class a lambda(ş¼óJJ$4a961f99-b04c-44c2-8a68-e6b2b158e4a8
+q
+java:S1066"/Merge this if statement with the enclosing one.(›‹ùÿÿÿÿJ$5c9f3f1f-4933-4d71-9581-20e5445ac6fc
+”	java:S127Ò"XRefactor the code in order to not assign to this loop counter from within the loop body.(Ö¨îƒJ$fc231347-0a11-4241-b749-f4746a3000f1
+w
+java:S1141Õ"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿJ$60c9c8ce-6941-4400-83a1-dd49dbac7bc8
+w
+java:S1141‰"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿJ$92fec7da-2848-440e-8715-33b9e28e807d
+w
+java:S1141—"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿJ$33382d7b-c6a9-4054-8301-d2848e66abc1
+w
+java:S1141¾"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿJ$5f92c884-f633-4cfe-a7b7-5f2fd5d81a47
+w
+java:S1141ß"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿJ$2d6f1d0a-669b-456f-8c8f-a205aaea8207
+Š
+java:S2259à"HA "NullPointerException" could be thrown; "readMethod" is nullable here.(ŒÉÉûÿÿÿÿJ$749d7a16-9387-4d92-96c6-0a13f50e1a38
+Š
+java:S2259Š"HA "NullPointerException" could be thrown; "readMethod" is nullable here.(‘„»ÉúÿÿÿÿJ$4d1b69ce-e102-4ed4-91f8-136369d4947a
+Š
+java:S2259˜"HA "NullPointerException" could be thrown; "readMethod" is nullable here.(Â¡ï»ùÿÿÿÿJ$5390b948-c96d-4cec-8561-02c250d6f874
+Š
+java:S2259¿"HA "NullPointerException" could be thrown; "readMethod" is nullable here.(Ó¨áşÿÿÿÿJ$fbc0425c-8525-4458-953a-847bea4727fa
+…
+java:S2259Ö"HA "NullPointerException" could be thrown; "readMethod" is nullable here.(Şƒ¶J$6090a756-f610-4b34-ad86-7ca6176ff194
+^
+java:S1643¢"Use a StringBuilder instead.(Ó×š‡úÿÿÿÿJ$98005f95-5a5a-4ff1-812f-ab6c9ff2113f
+X
+java:S1643¤"Use a StringBuilder instead.(ÜèÚ&J$e84fec25-7814-42a1-8af0-a63e963667ea
+Š
+java:S1192—"HDefine a constant instead of duplicating this literal "images/" 4 times.(ƒ„ŒŞÿÿÿÿÿJ$eb5978b7-d860-48ea-b38f-32e496c5a76e
+
+java:S1192—"LDefine a constant instead of duplicating this literal "Color16.gif" 5 times.(ƒ„ŒŞÿÿÿÿÿJ$0513e63e-309a-4d6a-8a26-e7a4d5cf866d
+™
+java:S1192¾"WDefine a constant instead of duplicating this literal "class java.util.Locale" 3 times.(¾Ó¾„úÿÿÿÿJ$dc271fd8-49a4-4206-a5dc-ff674d2e2598
+
+java:S1450g"aRemove the "propertyTitlePanel" field and declare it as a local variable in the relevant methods.(÷¼Ú¥J$5de2be60-cf55-46b3-90a4-8b44e171dc0b
+ˆ
+java:S5738a"GRemove this call to a deprecated class, it has been marked for removal.(‰¯×…üÿÿÿÿJ$30852396-ef0e-4f7d-8d78-fd689f5e3af8
+v
+java:S1161o":Add the "@Override" annotation above this method signature( ÜóJ$40beb751-d41e-4357-9440-ae67ce6fd9ef
+
+java:S3776€"RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(ü†¤²J$f8a958e2-44f2-4cfe-ac1a-eb3445121aba
+o
+java:S1874ò"-Remove this use of "Event"; it is deprecated.(ğòƒåşÿÿÿÿJ$0b49b1f8-0ab1-4c3a-afce-fe4b107d646f
+}	java:S125‚"<This block of commented-out lines of code should be removed.(¥ºø†şÿÿÿÿJ$9a0c623d-e1ed-4012-8a54-09de63613567
+|
+java:S1161’":Add the "@Override" annotation above this method signature(†§şıÿÿÿÿJ$ad7d8f21-e081-4bfe-97b0-c4421008d559
+
+java:S3776ª"SRefactor this method to reduce its Cognitive Complexity from 110 to the 15 allowed.(×¸ƒæJ$d602dc3b-50c5-4456-a94f-a0495fcf413d
+g
+java:S1481¼"*Remove this unused "count" local variable.(æÕ¿¼J$5db0932b-23f2-4418-a9c7-638b1d05533e
+…
+java:S3878æ"CDisambiguate this call by either casting as "Object" or "Object[]".(œ“ ÖüÿÿÿÿJ$0fed1cb8-f3cd-4e36-8c20-ea212e5964e2
+c
+java:S2129æ"!Remove this "Boolean" constructor(œ“ ÖüÿÿÿÿJ$30314cc1-f435-47db-8025-fe29f81bf04c
+Š
+java:S5738æ"HRemove this call to a deprecated method, it has been marked for removal.(œ“ ÖüÿÿÿÿJ$b6a7a4c3-2b9f-457a-804a-a340993cf459
+…
+java:S3878ë"CDisambiguate this call by either casting as "Object" or "Object[]".(œ“ ÖüÿÿÿÿJ$923bd2c8-c346-4f2e-b723-83b5601839f7
+c
+java:S2129ë"!Remove this "Boolean" constructor(œ“ ÖüÿÿÿÿJ$831cca0d-f2ba-430d-a497-09a90e0c3961
+Š
+java:S5738ë"HRemove this call to a deprecated method, it has been marked for removal.(œ“ ÖüÿÿÿÿJ$76aa5a5c-d685-4b03-a746-e1d6ad8c979c
+…
+java:S3878"CDisambiguate this call by either casting as "Object" or "Object[]".(ø³â¤şÿÿÿÿJ$bdf2e89a-ba0b-4bb6-8a03-652e1c9fc368
+e	java:S108„")Either remove or fill this block of code.(”ı¾J$0b718661-2c64-4cfd-9eea-a0967f48a80a
+…
+java:S3878¤"CDisambiguate this call by either casting as "Object" or "Object[]".(†ô°íûÿÿÿÿJ$236291ea-09da-4961-9e33-c36f74262a61
+j	java:S108¦")Either remove or fill this block of code.(±Ÿ—±ÿÿÿÿÿJ$5b1ad979-f38f-48e8-a3ac-693b8584b076
+…
+java:S3878Ñ"CDisambiguate this call by either casting as "Object" or "Object[]".(ø³â¤şÿÿÿÿJ$ab7ec0d7-fe1a-4fcc-8228-5b7a87cf8c35
+e	java:S108Ô")Either remove or fill this block of code.(”ı¾J$92452c22-ee1a-4129-b2f0-c29930098cca
+…
+java:S3878ò"CDisambiguate this call by either casting as "Object" or "Object[]".(¸€¶šÿÿÿÿÿJ$7e099e49-3a64-4e43-b45c-17a12cf108ef
+}
+java:S3252¨"@Use static access with "javax.swing.SwingConstants" for "RIGHT".(óö¶åJ$1ae774ab-f0d4-491a-bab4-93b0663a9ac9
+|
+java:S1161µ":Add the "@Override" annotation above this method signature(Ú„ÎÕşÿÿÿÿJ$cdd64886-fbf2-4355-8f59-892b75b3f358

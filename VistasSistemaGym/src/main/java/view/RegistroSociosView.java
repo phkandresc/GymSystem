@@ -50,6 +50,7 @@ public class RegistroSociosView extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         jComboBox1 = new javax.swing.JComboBox<>();
         jLabel9 = new javax.swing.JLabel();
+        jDateChooser2 = new com.toedter.calendar.JDateChooser();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -59,7 +60,7 @@ public class RegistroSociosView extends javax.swing.JFrame {
 
         lblDescripcionMembresia.setFont(new java.awt.Font("Poppins Light", 0, 16)); // NOI18N
         lblDescripcionMembresia.setText("Descripcion de la membresia");
-        jPanel1.add(lblDescripcionMembresia, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 160, 250, -1));
+        jPanel1.add(lblDescripcionMembresia, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 240, 250, -1));
 
         jLabel3.setFont(new java.awt.Font("Poppins Light", 1, 16)); // NOI18N
         jLabel3.setText("Telefono:");
@@ -71,7 +72,7 @@ public class RegistroSociosView extends javax.swing.JFrame {
 
         jLabel5.setFont(new java.awt.Font("Poppins Light", 1, 16)); // NOI18N
         jLabel5.setText("Fecha de nacimiento:");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 480, 210, 30));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 80, 210, 30));
 
         jLabel6.setFont(new java.awt.Font("Poppins Light", 1, 16)); // NOI18N
         jLabel6.setText("Apellidos:");
@@ -146,11 +147,16 @@ public class RegistroSociosView extends javax.swing.JFrame {
                 jComboBox1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 110, 220, 30));
+        jPanel1.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 190, 220, 30));
 
         jLabel9.setFont(new java.awt.Font("Poppins Light", 1, 16)); // NOI18N
         jLabel9.setText("Elegir tipo de membresia:");
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 80, 220, -1));
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 160, 220, -1));
+
+        jDateChooser2.setDateFormatString("yyyy-MM-dd");
+        jDateChooser2.setFont(new java.awt.Font("Poppins Light", 0, 12)); // NOI18N
+        jDateChooser2.setPreferredSize(new java.awt.Dimension(28, 27));
+        jPanel1.add(jDateChooser2, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 110, 240, 30));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 790, 590));
 
@@ -206,6 +212,7 @@ public class RegistroSociosView extends javax.swing.JFrame {
     private javax.swing.JTextField TextFieldNombre3;
     private javax.swing.JTextField TextFieldNombre4;
     private javax.swing.JComboBox<String> jComboBox1;
+    private com.toedter.calendar.JDateChooser jDateChooser2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel3;
