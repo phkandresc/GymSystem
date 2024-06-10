@@ -1,5 +1,9 @@
+import controller.IniciarSesionController;
+import view.IniciarSesionView;
+import dao.AdminDAO;
+
 public class Main {
-    public void main(String[] args) {
-        System.out.println("Hello World");
-    }
+    public static void main(String[] args) {
+        IniciarSesionController iniciarSesionController = new IniciarSesionController(new IniciarSesionView(), new AdminDAO());
+    }   
 }
