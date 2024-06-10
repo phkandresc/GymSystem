@@ -1,6 +1,10 @@
 
-V
-java:S1220""Move this file to a named package.J$42517eb4-57e8-4b05-8021-a92dcfe2f696
-H
-java:S1172"+Remove this unused method parameter "args".(Ξ½Ίπ8Τάλ€ό1
-L	java:S106"+Replace this use of System.out by a logger.(ωΔϋώÿÿÿÿ8νάλ€ό1
+<<<<<<< HEAD
+n
+java:S1172"+Remove this unused method parameter "args".(Ξ½Ίπ8Τάλ€ό1J$a6adf439-7012-42c9-8efc-37a697b9a752
+=======
+
+java:S1854"KRemove this useless assignment to local variable "iniciarSesionController".(“εω8»ΐ³ώ1J$ca6d33e8-f8ae-4e44-800d-448ddebc38de
+
+java:S1481"<Remove this unused "iniciarSesionController" local variable.(“εω8½ΐ³ώ1J$1c364314-7c6e-4956-97ae-35820e4dbbea
+>>>>>>> ramaKevin

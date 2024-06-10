@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package x;
+package view;
 
 /**
  *
@@ -33,12 +33,12 @@ public class IniciarSesionView extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        txtContrasena = new javax.swing.JTextField();
         jSeparator1 = new javax.swing.JSeparator();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
+        txtUsuario = new javax.swing.JTextField();
         jSeparator2 = new javax.swing.JSeparator();
         btnIniciarSesion = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
@@ -48,6 +48,11 @@ public class IniciarSesionView extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         background.setBackground(new java.awt.Color(255, 255, 255));
+        background.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                backgroundKeyPressed(evt);
+            }
+        });
         background.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/background.png"))); // NOI18N
@@ -68,16 +73,16 @@ public class IniciarSesionView extends javax.swing.JFrame {
         jLabel3.setText("Contrasena");
         panelIniciarSesion.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 210, -1, -1));
 
-        jTextField1.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
-        jTextField1.setText("Ingrese su contrasena");
-        jTextField1.setBorder(null);
-        jTextField1.setPreferredSize(new java.awt.Dimension(127, 25));
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        txtContrasena.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
+        txtContrasena.setText("Ingrese su contrasena");
+        txtContrasena.setBorder(null);
+        txtContrasena.setPreferredSize(new java.awt.Dimension(127, 25));
+        txtContrasena.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                txtContrasenaActionPerformed(evt);
             }
         });
-        panelIniciarSesion.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, 300, -1));
+        panelIniciarSesion.add(txtContrasena, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, 300, -1));
         panelIniciarSesion.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 270, 360, 10));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconoContrasena.png"))); // NOI18N
@@ -90,19 +95,34 @@ public class IniciarSesionView extends javax.swing.JFrame {
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconoMail.png"))); // NOI18N
         panelIniciarSesion.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 160, -1, -1));
 
-        jTextField2.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
-        jTextField2.setText("Ingrese su usuario");
-        jTextField2.setBorder(null);
-        jTextField2.setPreferredSize(new java.awt.Dimension(127, 25));
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
+        txtUsuario.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
+        txtUsuario.setText("Ingrese su usuario");
+        txtUsuario.setBorder(null);
+        txtUsuario.setPreferredSize(new java.awt.Dimension(127, 25));
+        txtUsuario.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                txtUsuarioFocusGained(evt);
             }
         });
-        panelIniciarSesion.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, 300, -1));
+        txtUsuario.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                txtUsuarioMouseClicked(evt);
+            }
+        });
+        txtUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtUsuarioActionPerformed(evt);
+            }
+        });
+        panelIniciarSesion.add(txtUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, 300, -1));
         panelIniciarSesion.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 360, 10));
 
         btnIniciarSesion.setBackground(new java.awt.Color(242, 68, 5));
+        btnIniciarSesion.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnIniciarSesionMouseClicked(evt);
+            }
+        });
         btnIniciarSesion.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel8.setFont(new java.awt.Font("Poppins Medium", 0, 15)); // NOI18N
@@ -119,13 +139,31 @@ public class IniciarSesionView extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void txtContrasenaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtContrasenaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_txtContrasenaActionPerformed
 
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+    private void txtUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtUsuarioActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
+    }//GEN-LAST:event_txtUsuarioActionPerformed
+
+    private void btnIniciarSesionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnIniciarSesionMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnIniciarSesionMouseClicked
+
+    private void txtUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtUsuarioMouseClicked
+        // TODO add your handling code here:
+        txtUsuario.setText("");
+    }//GEN-LAST:event_txtUsuarioMouseClicked
+
+    private void txtUsuarioFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtUsuarioFocusGained
+        // TODO add your handling code here:
+        txtUsuario.setText("");
+    }//GEN-LAST:event_txtUsuarioFocusGained
+
+    private void backgroundKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_backgroundKeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_backgroundKeyPressed
 
     /**
      * @param args the command line arguments
@@ -175,8 +213,8 @@ public class IniciarSesionView extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
     private javax.swing.JPanel panelIniciarSesion;
+    private javax.swing.JTextField txtContrasena;
+    private javax.swing.JTextField txtUsuario;
     // End of variables declaration//GEN-END:variables
 }
