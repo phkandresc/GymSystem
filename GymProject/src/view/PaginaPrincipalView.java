@@ -132,7 +132,7 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
         paginaSociosPanel.setBackground(new java.awt.Color(255, 255, 255));
         paginaSociosPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setBackground(new java.awt.Color(255, 153, 102));
+        jButton1.setBackground(naranja);
         jButton1.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
         jButton1.setText("Registrar un nuevo socio");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -145,7 +145,7 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
         jLabel24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/image 1.jpg"))); // NOI18N
         paginaSociosPanel.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 100, -1, -1));
 
-        jButton2.setBackground(new java.awt.Color(255, 153, 102));
+        jButton2.setBackground(naranja);
         jButton2.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
         jButton2.setText("Ver socios existentes");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -172,7 +172,7 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
         jLabel35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/image 1.jpg"))); // NOI18N
         paginaPagosPanel.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 100, -1, -1));
 
-        jButton3.setBackground(new java.awt.Color(255, 153, 102));
+        jButton3.setBackground(new Color(242,98,15));
         jButton3.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
         jButton3.setText("Registrar un pago");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -222,7 +222,7 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
         paginaInformesPanel.setBackground(new java.awt.Color(255, 255, 255));
         paginaInformesPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel30.setText("Infromes y analisis");
+        jLabel30.setText("Informes y analisis");
         paginaInformesPanel.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 80, -1, -1));
 
         GrupoDePaneles.addTab("tab8", paginaInformesPanel);
