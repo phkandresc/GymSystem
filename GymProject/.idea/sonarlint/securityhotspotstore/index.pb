@@ -11,6 +11,10 @@ S
 -.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
 >
 GymProject.iml,e\0\e037824ae97043c84c5d921b64bf06d69a9c9436
+<<<<<<< HEAD
+R
+"src/view/PaginaPrincipalView2.java,3\e\3e08dddfbffddd742f95c5b240f4acf59fc10f93
+=======
 I
 src/model/DBConexion.java,d\4\d468dc0a943924e8e2e4efe4544d5fc6532b9871
 [
@@ -29,3 +33,4 @@ E
 src/dao/AdminDAO.java,c\c\ccc66819f9ce5905c82d63dbd036c1651ffaf9c5
 G
 src/model/IBuilder.java,4\9\49fc20e101ba1249f339ffb0b822083d52f5447d
+>>>>>>> ramaKevin
