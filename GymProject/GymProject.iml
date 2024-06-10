@@ -16,11 +16,6 @@
         <SOURCES />
       </library>
     </orderEntry>
-<<<<<<< HEAD
-    <orderEntry type="library" name="src" level="project" />
-    <orderEntry type="library" name="swing-layout-1.0.4.jar" level="project" />
-=======
->>>>>>> ramaKevin
     <orderEntry type="module-library">
       <library>
         <CLASSES>
@@ -30,8 +25,6 @@
         <SOURCES />
       </library>
     </orderEntry>
-<<<<<<< HEAD
-=======
     <orderEntry type="module-library">
       <library>
         <CLASSES>
@@ -41,6 +34,5 @@
         <SOURCES />
       </library>
     </orderEntry>
->>>>>>> ramaKevin
   </component>
 </module>
