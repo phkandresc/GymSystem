@@ -1,0 +1,27 @@
+
+É
+java:S1186)"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¼ Òşüÿÿÿÿ8Ùì…€2J$ebb3d134-c88b-47d9-a01e-ef8870acfe7c
+É
+java:S1186."€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¿˜œÔşÿÿÿÿ8Ùì…€2J$56a8bef5-5f03-4b06-b094-97efa2f08240
+Ä
+java:S11863"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(›™¥…8Úì…€2J$04086f83-ef7d-4d01-902c-c6259aed645d
+É
+java:S11868"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ä Ïúüÿÿÿÿ8Úì…€2J$ccf0d2d5-cbe7-4c59-899a-cc93d23722fd
+É
+java:S1186="€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(®î’×üÿÿÿÿ8Úì…€2J$73f94307-3128-4c63-8bf6-0739bf691154
+Ä
+java:S1186B"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ãÆĞÂ8Úì…€2J$a12d5ed4-faab-42fc-b00e-0cd65b54e764
+É
+java:S1186G"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ö„˜şúÿÿÿÿ8Úì…€2J$4fc69fb0-230a-4b64-9274-2985cc8bc56a
+É
+java:S1186L"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•ßçùÿÿÿÿ8Úì…€2J$4e5d68f9-f72a-4cea-bdb4-be07ec4e4919
+
+java:S1450"\Remove the "tipoMembresia" field and declare it as a local variable in the relevant methods.(„ªà8Úì…€2J$f6d3715a-5b9c-489c-a7d9-0c2629cd1922
+¢
+java:S1450"_Remove the "tipoMembresiaDAO" field and declare it as a local variable in the relevant methods.(œµœ8Úì…€2J$babb10b7-2530-40cf-8c9f-66d834118841
+„
+java:S1117 "ARename "tipoMembresia" which hides the field declared at line 17.(Ìõş8İì…€2J$0297fbef-a452-4226-9c01-0277da268ecf
+o
+java:S1068",Remove this unused "socioDAO" private field.(«’Á±8ßì…€2J$8b5e655a-d58b-4c11-b114-f33bf2c7dff9
+l
+java:S1068")Remove this unused "socio" private field.(È½ù‹8ßì…€2J$9f3a2c65-006f-4bdb-8334-918b95741117

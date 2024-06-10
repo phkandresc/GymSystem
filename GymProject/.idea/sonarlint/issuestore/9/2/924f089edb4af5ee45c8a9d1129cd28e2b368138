@@ -1,10 +1,7 @@
 
-<<<<<<< HEAD
-n
-java:S1172"+Remove this unused method parameter "args".(Î½ºð8ÔÜë€ü1J$a6adf439-7012-42c9-8efc-37a697b9a752
-=======
 Ž
-java:S1854"KRemove this useless assignment to local variable "iniciarSesionController".(“Žåù8»À³þ1J$ca6d33e8-f8ae-4e44-800d-448ddebc38de
+java:S1854"KRemove this useless assignment to local variable "iniciarSesionController".(©¡‘8Ó±±‚€2J$3d2eb797-9334-4571-bd61-247cdc9ac97e
 
-java:S1481"<Remove this unused "iniciarSesionController" local variable.(“Žåù8½À³þ1J$1c364314-7c6e-4956-97ae-35820e4dbbea
->>>>>>> ramaKevin
+java:S1481"<Remove this unused "iniciarSesionController" local variable.(©¡‘8Ø±±‚€2J$25c90649-e785-4092-bad5-6d4c17c2f5fe
+=
+java:S1128" Remove this unused import 'DAO'.(‰¨æÞ8ÚŽ„…€2

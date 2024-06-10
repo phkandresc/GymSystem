@@ -1,8 +1,8 @@
 package controller;
 
-import dao.AdminDAO;
+import DAO.AdministradorDAO;
+import model.Administrador;
 import view.IniciarSesionView;
-import model.Admin;
 import view.PaginaPrincipalView;
 
 import javax.swing.*;
@@ -10,11 +10,11 @@ import java.awt.event.*;
 
 public class IniciarSesionController implements ActionListener, MouseListener, FocusListener{
     private IniciarSesionView iniciarSesionView;
-    private AdminDAO adminDAO;
+    private AdministradorDAO administradorDAO;
 
-    public IniciarSesionController(IniciarSesionView iniciarSesionView, AdminDAO adminDAO){
+    public IniciarSesionController(IniciarSesionView iniciarSesionView, AdministradorDAO administradorDAO){
         this.iniciarSesionView = iniciarSesionView;
-        this.adminDAO = adminDAO;
+        this.administradorDAO = administradorDAO;
         iniciarSesionView.btnIniciarSesion.addMouseListener(this);
         iniciarSesionView.txtUsuario.addFocusListener(this);
         iniciarSesionView.txtContrasena.addFocusListener(this);
@@ -32,17 +32,16 @@ public class IniciarSesionController implements ActionListener, MouseListener, F
     }
 
     private void iniciarSesion() {
-        Admin admin = new Admin();
-        admin.setUsuario(iniciarSesionView.txtUsuario.getText());
-        admin.setContrasena(iniciarSesionView.txtContrasena.getText());
+        Administrador administrador = new Administrador();
+        administrador.setUsuario(iniciarSesionView.txtUsuario.getText());
+        administrador.setContrasena(iniciarSesionView.txtContrasena.getText());
 
         try {
-            if (adminDAO.iniciarSesion(admin)) {
+            if (administradorDAO.iniciarSesion(administrador)) {
                 JOptionPane.showMessageDialog(null, "Sesion iniciada");
                 System.out.println("Sesion iniciada");
-                PaginaPrincipalView paginaPricipal = new PaginaPrincipalView();
                 iniciarSesionView.dispose();
-                paginaPricipal.setVisible(true);
+                PaginaPrincipalController paginaPricipal = new PaginaPrincipalController(new PaginaPrincipalView());
             } else {
                 JOptionPane.showMessageDialog(null, "Usuario o contraseña incorrectos");
                 System.out.println("Usuario o contraseña incorrectos");

@@ -1,0 +1,13 @@
+
+	java:S117="QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(χθΚύÿÿÿÿ8­λω‚€2J$ab3d6c1b-5cf3-4398-99aa-c734d72d9e4d
+	java:S117E"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(γΕΩϋÿÿÿÿ8®λω‚€2J$8a3ff148-aa47-43e9-a848-edb6c5ed04b6
+“	java:S117M"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»Βε8®λω‚€2J$ec1ca69a-06af-4867-b270-aad8c0d26348
+	java:S116"[Rename this field "horario_apertura" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿΞ€σ8Δ‘ψ‚€2J$85c5fa4f-49e0-4315-aab9-611f0c678255
+›	java:S116"YRename this field "horario_cierre" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ή²„8Δ‘ψ‚€2J$bbe18d23-948d-4ea1-9c9f-cb447c76787c
+ 	java:S116"YRename this field "fecha_apertura" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•Òÿªόÿÿÿÿ8υψ‚€2J$3d047a6d-f524-4838-97da-e3a134fa1312
+•	java:S1009"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(δΪ›ϋÿÿÿÿ8²λω‚€2J$28deed4d-9f87-4495-b826-6dd1a2d7c08d
+•	java:S100="NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(χθΚύÿÿÿÿ8²λω‚€2J$dc0febe2-60c1-462f-997d-7c588e4d880f
+•	java:S100A"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ξ΄³’ϋÿÿÿÿ8²λω‚€2J$25137623-65c7-4489-932a-b15c4cc46906
+•	java:S100E"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(γΕΩϋÿÿÿÿ8³λω‚€2J$f32d1b49-ad40-4c9e-9e8d-35db8ee8cd95
+	java:S100I"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªφ‹Φ8³λω‚€2J$04456841-7e09-445b-b2f2-85a4b76d22d5
+	java:S100M"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»Βε8³λω‚€2J$570d1037-2969-4da2-93ca-d5bf0bcbddaa

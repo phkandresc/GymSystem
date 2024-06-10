@@ -1,0 +1,16 @@
+
+w
+java:S6437"6Revoke and change this password, as it is compromised.(êºûÿÿÿÿJ$3e808c61-9e3c-4cf8-aaef-5666836a01cc
+”
+java:S2139"XEither log this exception and handle it, or rethrow it with some contextual information.(É®£J$c18a5f37-fea0-47fd-beba-58846d2b7a10
+p
+java:S3457"4Lambda should be used to defer string concatenation.(ìù¶úJ$429480ab-ac40-4b3f-98ad-550189209002
+u
+java:S3457)"4Lambda should be used to defer string concatenation.(×ã‚ĞüÿÿÿÿJ$8db6d1e8-a963-4801-9ea0-6fdce35f1757
+l
+java:S1068
+"0Remove this unused "DATABASE_URL" private field.(…”›ŒJ$151bda76-86de-4d9d-b2e3-e1e238dbba7a
+r
+java:S1068"1Remove this unused "DATABASE_USER" private field.(¦ûŒÕúÿÿÿÿJ$d721eec6-9fb1-48ba-a3ca-211bee60a305
+v
+java:S1068"5Remove this unused "DATABASE_PASSWORD" private field.(òÍæÂøÿÿÿÿJ$d19938ba-c99c-4755-a270-80d298db478d

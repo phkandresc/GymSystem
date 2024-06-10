@@ -1,64 +1,69 @@
 package model;
 
+import java.sql.Date;
+
 public class Membresia {
     private int id;
-    private String tipo;
-    private String fechaInicio;
-    private String fechaFin;
-    private double costo;
+    private int idSocio;
+    private int idTipoMembresia;
+    private int idGimnasio;
+    private Date fechaInicio;
+    private Date fechaFin;
     private String estado;
 
-    private Membresia(MembresiaBuilder membresiaBuilder) {
-        this.id = membresiaBuilder.id;
-        this.tipo = membresiaBuilder.tipo;
-        this.fechaInicio = membresiaBuilder.fechaInicio;
-        this.fechaFin = membresiaBuilder.fechaFin;
-        this.costo = membresiaBuilder.costo;
-        this.estado = membresiaBuilder.estado;
+    public int getId() {
+        return id;
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
 
+    public int getIdSocio() {
+        return idSocio;
+    }
 
-    public static class MembresiaBuilder {
-        private int id;
-        private String tipo;
-        private String fechaInicio;
-        private String fechaFin;
-        private double costo;
-        private String estado;
+    public void setIdSocio(int idSocio) {
+        this.idSocio = idSocio;
+    }
 
-        public MembresiaBuilder setId(int id) {
-            this.id = id;
-            return this;
-        }
+    public int getIdTipoMembresia() {
+        return idTipoMembresia;
+    }
 
-        public MembresiaBuilder setTipo(String tipo) {
-            this.tipo = tipo;
-            return this;
-        }
+    public void setIdTipoMembresia(int idTipoMembresia) {
+        this.idTipoMembresia = idTipoMembresia;
+    }
 
-        public MembresiaBuilder setFechaInicio(String fechaInicio) {
-            this.fechaInicio = fechaInicio;
-            return this;
-        }
+    public int getIdGimnasio() {
+        return idGimnasio;
+    }
 
-        public MembresiaBuilder setFechaFin(String fechaFin) {
-            this.fechaFin = fechaFin;
-            return this;
-        }
+    public void setIdGimnasio(int idGimnasio) {
+        this.idGimnasio = idGimnasio;
+    }
 
-        public MembresiaBuilder setCosto(double costo) {
-            this.costo = costo;
-            return this;
-        }
+    public Date getFechaInicio() {
+        return fechaInicio;
+    }
 
-        public MembresiaBuilder setEstado(String estado) {
-            this.estado = estado;
-            return this;
-        }
+    public void setFechaInicio(Date fechaInicio) {
+        this.fechaInicio = fechaInicio;
+    }
 
-        public Membresia build() {
-            return new Membresia(this);
-        }
+    public Date getFechaFin() {
+        return fechaFin;
+    }
+
+    public void setFechaFin(Date fechaFin) {
+        this.fechaFin = fechaFin;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
     }
 }

@@ -1,0 +1,70 @@
+
+j
+java:S1604¸"(Make this anonymous inner class a lambda(¨í¡§úÿÿÿÿJ$77c19120-2ae2-4d2d-960e-adf4adb0b444
+¥
+java:S1104Ç"\Make cmbTipoMembresia a static final constant or non-public and provide accessors if needed.(åÔý¹øÿÿÿÿ8ˆÒí„€2J$df32c29e-340e-4a5a-a168-83dc4a27bd41
+§
+java:S1104×"cMake lblDescripcionMembresia a static final constant or non-public and provide accessors if needed.(§ž–‰8ƒÃž…€2J$3803ab90-f78e-416d-a1c4-e27d71d0d75c
+‹
+java:S1192<"ODefine a constant instead of duplicating this literal "Poppins Light" 14 times.(÷ôÉÚJ$8eb0c047-dce2-4b03-9321-b948353a53a0
+
+java:S1192U"ODefine a constant instead of duplicating this literal "Poppins Medium" 3 times.(ÞœúüûÿÿÿÿJ$b3d055c6-d174-45f9-9cc0-fb01eec9a25f
+š	java:S116À"YRename this field "ButtonCancelar" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åÝô¶üÿÿÿÿJ$647bdaa4-ced2-41e6-9475-f56e5fc841a7
+›	java:S116Á"ZRename this field "ButtonRegistrar" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡Ñ¶½üÿÿÿÿJ$bb5a169a-b010-485c-907f-c85b72b5392f
+–	java:S116Â"ZRename this field "TextFieldNombre" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ý«ôÌJ$b77d07b8-daf7-44b7-bc81-5ae7bc30f8ae
+—	java:S116Ã"[Rename this field "TextFieldNombre1" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãËÐ­J$7c616276-a8a0-4ab8-8f9e-89cb7d8df9e4
+—	java:S116Ä"[Rename this field "TextFieldNombre2" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ëÿÈÌJ$e965ab96-b87a-4fe3-8622-598e71e87f8a
+—	java:S116Å"[Rename this field "TextFieldNombre3" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÚÕ…ÌJ$23de548a-b9bf-4566-9ff5-f4985fb4460d
+œ	java:S116Æ"[Rename this field "TextFieldNombre4" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ç®‹ÈüÿÿÿÿJ$a524c886-0a2a-47df-ada0-47066e740b7b
+Ÿ
+java:S1450À"]Remove the "ButtonCancelar" field and declare it as a local variable in the relevant methods.(åÝô¶üÿÿÿÿJ$e002a58f-286c-48fa-bb73-fd315a572714
+ 
+java:S1450Á"^Remove the "ButtonRegistrar" field and declare it as a local variable in the relevant methods.(‡Ñ¶½üÿÿÿÿJ$0c86e484-c9fc-417b-8e39-f4f7af066123
+›
+java:S1450Â"^Remove the "TextFieldNombre" field and declare it as a local variable in the relevant methods.(ý«ôÌJ$ac418cb1-bd92-4e06-b3dd-86e9059a317c
+œ
+java:S1450Ã"_Remove the "TextFieldNombre1" field and declare it as a local variable in the relevant methods.(ãËÐ­J$1b9ac999-7481-456f-8475-1a434fd34b40
+œ
+java:S1450Ä"_Remove the "TextFieldNombre2" field and declare it as a local variable in the relevant methods.(ëÿÈÌJ$152ddcd0-43eb-494f-89f6-07881cdf38f2
+œ
+java:S1450Å"_Remove the "TextFieldNombre3" field and declare it as a local variable in the relevant methods.(ÚÕ…ÌJ$b2d3e183-31fa-454b-b120-9697dba48861
+¡
+java:S1450Æ"_Remove the "TextFieldNombre4" field and declare it as a local variable in the relevant methods.(Ç®‹ÈüÿÿÿÿJ$4bd75dbb-1470-4871-92f3-07ca52933fa6
+˜
+java:S1450È"VRemove the "jLabel1" field and declare it as a local variable in the relevant methods.(°ãÉ¸ÿÿÿÿÿJ$bb37dced-22ec-4447-beb2-b9f5b6a914b1
+™
+java:S1450É"WRemove the "jLabel10" field and declare it as a local variable in the relevant methods.(¼õò†þÿÿÿÿJ$a743f4e0-d64e-4298-8248-50f59bd3eb3a
+˜
+java:S1450Ê"VRemove the "jLabel3" field and declare it as a local variable in the relevant methods.(Îä€øÿÿÿÿJ$d22cdd66-2059-4662-8ce6-a5645a81059e
+“
+java:S1450Ë"VRemove the "jLabel4" field and declare it as a local variable in the relevant methods.(«¢•ãJ$a766cb0e-7a03-47ee-87f1-c8baad4e5fcf
+“
+java:S1450Ì"VRemove the "jLabel5" field and declare it as a local variable in the relevant methods.(ó Ù®J$51996ba2-b27d-4561-9016-7965d7f56d4d
+˜
+java:S1450Í"VRemove the "jLabel6" field and declare it as a local variable in the relevant methods.(¸ôÂøÿÿÿÿJ$803cb602-0c2e-4a5b-9ed0-3ae3801261d0
+“
+java:S1450Î"VRemove the "jLabel7" field and declare it as a local variable in the relevant methods.(×ê˜ŸJ$4a6600d9-a014-49b0-8bf4-7e37f33fcf73
+“
+java:S1450Ï"VRemove the "jLabel8" field and declare it as a local variable in the relevant methods.(å»«¢J$ee42c75f-96a2-42e8-8ea5-8cc8c5261c64
+˜
+java:S1450Ð"VRemove the "jLabel9" field and declare it as a local variable in the relevant methods.(Ì’óÐþÿÿÿÿJ$018562a5-cde4-4b23-b5ba-98b0f3c49922
+˜
+java:S1450Ñ"VRemove the "jPanel1" field and declare it as a local variable in the relevant methods.(´œ½ÿÿÿÿÿJ$dce47561-a60c-431e-be07-e204a27948d6
+—
+java:S1450Ò"ZRemove the "jSeparator1" field and declare it as a local variable in the relevant methods.(’©ìÉJ$a79c0437-6d02-4722-b92c-b6eb041412d8
+—
+java:S1450Ó"ZRemove the "jSeparator2" field and declare it as a local variable in the relevant methods.(èÅÐøJ$1988e0ec-0d25-4adf-8d73-c68a63e26de5
+œ
+java:S1450Ô"ZRemove the "jSeparator3" field and declare it as a local variable in the relevant methods.(Éø¹ÊÿÿÿÿÿJ$d72526c7-64bc-4f85-b741-8b3622240532
+œ
+java:S1450Õ"ZRemove the "jSeparator4" field and declare it as a local variable in the relevant methods.(¡¼äÐúÿÿÿÿJ$bbec21bb-3cd9-4769-a715-fd648c7531e3
+—
+java:S1450Ö"ZRemove the "jSeparator5" field and declare it as a local variable in the relevant methods.(‚ô…J$c4066b0e-90b3-456d-80d3-4d77a97f194b
+l
+java:S1197ž"*Move the array designators [] to the type.(¡þÏÖøÿÿÿÿJ$a79aa727-e969-4a1a-9a1d-5b09b3d8008e
+‚
+java:S2147­"ECombine this catch with the one at line 171, which has the same body.(¨¦Š½J$009270ff-4863-40bb-a7ae-9c981817e5f7
+‚
+java:S2147¯"ECombine this catch with the one at line 173, which has the same body.(ã€ J$c0bea667-95ce-44a8-8482-017f94605450
+
+java:S2147±"ECombine this catch with the one at line 175, which has the same body.(ñÎ¯%J$09a45045-001b-45b1-9fe9-57d4a80237c1

@@ -1,6 +1,6 @@
-package dao;
+package DAO;
 
-import model.Admin;
+import model.Administrador;
 import model.DBConexion;
 
 import java.sql.Connection;
@@ -11,10 +11,10 @@ import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class AdminDAO {
-    private static final Logger LOGGER = Logger.getLogger(AdminDAO.class.getName());
+public class AdministradorDAO {
+    private static final Logger LOGGER = Logger.getLogger(AdministradorDAO.class.getName());
 
-    public boolean iniciarSesion(Admin admin) throws SQLException {
+    public boolean iniciarSesion(Administrador admin) throws SQLException {
         PreparedStatement ps = null;
         ResultSet rs = null;
         Connection conexion = DBConexion.getConnection();
@@ -49,6 +49,7 @@ public class AdminDAO {
             if (conexion != null) {
                 conexion.close();
             }
+            DBConexion.closeConnection();
         }
     }
 }

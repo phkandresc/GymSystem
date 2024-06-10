@@ -38,14 +38,44 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
         jLabel18 = new javax.swing.JLabel();
         GrupoDePaneles = new javax.swing.JTabbedPane();
         paginaPrincipalPanel = new javax.swing.JPanel();
-        jLabel23 = new javax.swing.JLabel();
+        jSeparator1 = new javax.swing.JSeparator();
+        panelGananciasTotales = new javax.swing.JPanel();
+        jLabel37 = new javax.swing.JLabel();
+        lblNumGanancias = new javax.swing.JLabel();
+        jLabel41 = new javax.swing.JLabel();
+        lblNombreGimnasio = new javax.swing.JLabel();
+        lblTelefono = new javax.swing.JLabel();
+        lblCorreoElectronico = new javax.swing.JLabel();
+        panelMembresias = new javax.swing.JPanel();
+        jLabel39 = new javax.swing.JLabel();
+        lblNumMembresias = new javax.swing.JLabel();
+        jLabel51 = new javax.swing.JLabel();
+        panelSocios = new javax.swing.JPanel();
+        jLabel42 = new javax.swing.JLabel();
+        lblNumSocios = new javax.swing.JLabel();
+        jLabel44 = new javax.swing.JLabel();
+        panelMaquinas = new javax.swing.JPanel();
+        jLabel45 = new javax.swing.JLabel();
+        lblNumMaquinas = new javax.swing.JLabel();
+        jLabel47 = new javax.swing.JLabel();
+        panelEntrenadores = new javax.swing.JPanel();
+        jLabel48 = new javax.swing.JLabel();
+        lblNumEntrenadores = new javax.swing.JLabel();
+        jLabel50 = new javax.swing.JLabel();
+        panelClasesActividades = new javax.swing.JPanel();
+        jLabel52 = new javax.swing.JLabel();
+        lblNumClases = new javax.swing.JLabel();
+        jLabel54 = new javax.swing.JLabel();
+        lblDireccion = new javax.swing.JLabel();
         paginaSociosPanel = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
+        btnRegistrarNuevoSocio = new javax.swing.JButton();
         jLabel24 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
         jLabel31 = new javax.swing.JLabel();
         jLabel32 = new javax.swing.JLabel();
         jLabel33 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        jSeparator2 = new javax.swing.JSeparator();
         paginaPagosPanel = new javax.swing.JPanel();
         jLabel35 = new javax.swing.JLabel();
         jButton3 = new javax.swing.JButton();
@@ -123,29 +153,168 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
 
         paginaPrincipalPanel.setBackground(new java.awt.Color(255, 255, 255));
         paginaPrincipalPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        paginaPrincipalPanel.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 90, 440, 10));
 
-        jLabel23.setText("Pagina Principal");
-        paginaPrincipalPanel.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 80, -1, -1));
+        panelGananciasTotales.setBorder(javax.swing.BorderFactory.createMatteBorder(10, 0, 0, 0, new java.awt.Color(0, 204, 51)));
+        panelGananciasTotales.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel37.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        jLabel37.setText("Totales");
+        jLabel37.setToolTipText("");
+        jLabel37.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        panelGananciasTotales.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 120, 20));
+
+        lblNumGanancias.setFont(new java.awt.Font("Poppins SemiBold", 0, 30)); // NOI18N
+        lblNumGanancias.setText("0");
+        panelGananciasTotales.add(lblNumGanancias, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 20, 20, 50));
+
+        jLabel41.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        jLabel41.setText("Ganancias");
+        jLabel41.setToolTipText("");
+        jLabel41.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        panelGananciasTotales.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 130, 30));
+
+        paginaPrincipalPanel.add(panelGananciasTotales, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 60, 200, 80));
+
+        lblNombreGimnasio.setFont(new java.awt.Font("Poppins SemiBold", 0, 36)); // NOI18N
+        lblNombreGimnasio.setText("Nombre del Gimnasio");
+        paginaPrincipalPanel.add(lblNombreGimnasio, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, -1, -1));
+
+        lblTelefono.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        lblTelefono.setText("Telefono");
+        paginaPrincipalPanel.add(lblTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, 110, -1));
+
+        lblCorreoElectronico.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        lblCorreoElectronico.setText("Correo electronico");
+        paginaPrincipalPanel.add(lblCorreoElectronico, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 250, -1));
+
+        panelMembresias.setBorder(javax.swing.BorderFactory.createMatteBorder(10, 0, 0, 0, javax.swing.UIManager.getDefaults().getColor("nb.errorForeground")));
+        panelMembresias.setForeground(new java.awt.Color(255, 102, 0));
+        panelMembresias.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel39.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        jLabel39.setText("Membresias");
+        panelMembresias.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, -1, 20));
+
+        lblNumMembresias.setFont(new java.awt.Font("Poppins SemiBold", 0, 30)); // NOI18N
+        lblNumMembresias.setText("0");
+        panelMembresias.add(lblNumMembresias, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 20, 20, 50));
+
+        jLabel51.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        jLabel51.setText("Registrados");
+        jLabel51.setToolTipText("");
+        jLabel51.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        panelMembresias.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 120, 30));
+
+        paginaPrincipalPanel.add(panelMembresias, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 60, 200, 80));
+
+        panelSocios.setBorder(javax.swing.BorderFactory.createMatteBorder(10, 0, 0, 0, new java.awt.Color(255, 51, 51)));
+        panelSocios.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel42.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        jLabel42.setText("Registrados");
+        jLabel42.setToolTipText("");
+        jLabel42.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        panelSocios.add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 120, 30));
+
+        lblNumSocios.setFont(new java.awt.Font("Poppins SemiBold", 0, 30)); // NOI18N
+        lblNumSocios.setText("0");
+        panelSocios.add(lblNumSocios, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 20, 20, 50));
+
+        jLabel44.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        jLabel44.setText("Socios");
+        jLabel44.setToolTipText("");
+        jLabel44.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        panelSocios.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 60, 20));
+
+        paginaPrincipalPanel.add(panelSocios, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 160, 200, 80));
+
+        panelMaquinas.setBorder(javax.swing.BorderFactory.createMatteBorder(10, 0, 0, 0, new java.awt.Color(255, 51, 0)));
+        panelMaquinas.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel45.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        jLabel45.setText("Activas");
+        jLabel45.setToolTipText("");
+        jLabel45.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        panelMaquinas.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 120, 20));
+
+        lblNumMaquinas.setFont(new java.awt.Font("Poppins SemiBold", 0, 30)); // NOI18N
+        lblNumMaquinas.setText("0");
+        panelMaquinas.add(lblNumMaquinas, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 20, 20, 50));
+
+        jLabel47.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        jLabel47.setText("Maquinas");
+        jLabel47.setToolTipText("");
+        jLabel47.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        panelMaquinas.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 90, 30));
+
+        paginaPrincipalPanel.add(panelMaquinas, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 270, 200, 80));
+
+        panelEntrenadores.setBorder(javax.swing.BorderFactory.createMatteBorder(10, 0, 0, 0, new java.awt.Color(255, 51, 0)));
+        panelEntrenadores.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel48.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        jLabel48.setText("Activos");
+        jLabel48.setToolTipText("");
+        jLabel48.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        panelEntrenadores.add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 120, 20));
+
+        lblNumEntrenadores.setFont(new java.awt.Font("Poppins SemiBold", 0, 30)); // NOI18N
+        lblNumEntrenadores.setText("0");
+        panelEntrenadores.add(lblNumEntrenadores, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 20, 20, 50));
+
+        jLabel50.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        jLabel50.setText("Entrenadores");
+        jLabel50.setToolTipText("");
+        jLabel50.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        panelEntrenadores.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 130, 30));
+
+        paginaPrincipalPanel.add(panelEntrenadores, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 370, 200, 80));
+
+        panelClasesActividades.setBorder(javax.swing.BorderFactory.createMatteBorder(10, 0, 0, 0, new java.awt.Color(255, 51, 0)));
+        panelClasesActividades.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel52.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        jLabel52.setText("Actividades");
+        jLabel52.setToolTipText("");
+        jLabel52.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        panelClasesActividades.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 120, 20));
+
+        lblNumClases.setFont(new java.awt.Font("Poppins SemiBold", 0, 30)); // NOI18N
+        lblNumClases.setText("0");
+        panelClasesActividades.add(lblNumClases, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 20, 20, 50));
+
+        jLabel54.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        jLabel54.setText("Clases y");
+        jLabel54.setToolTipText("");
+        jLabel54.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        panelClasesActividades.add(jLabel54, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 130, 30));
+
+        paginaPrincipalPanel.add(panelClasesActividades, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 470, 200, 80));
+
+        lblDireccion.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        lblDireccion.setText("Direccion");
+        paginaPrincipalPanel.add(lblDireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 110, 250, -1));
 
         GrupoDePaneles.addTab("tab1", paginaPrincipalPanel);
 
         paginaSociosPanel.setBackground(new java.awt.Color(255, 255, 255));
         paginaSociosPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setBackground(naranja);
-        jButton1.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
-        jButton1.setText("Registrar un nuevo socio");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnRegistrarNuevoSocio.setBackground(new java.awt.Color(255, 153, 102));
+        btnRegistrarNuevoSocio.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
+        btnRegistrarNuevoSocio.setText("Registrar un nuevo socio");
+        btnRegistrarNuevoSocio.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        paginaSociosPanel.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 450, -1, 40));
+        paginaSociosPanel.add(btnRegistrarNuevoSocio, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 450, -1, 40));
 
         jLabel24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/image 1.jpg"))); // NOI18N
         paginaSociosPanel.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 100, -1, -1));
 
-        jButton2.setBackground(naranja);
+        jButton2.setBackground(new java.awt.Color(255, 153, 102));
         jButton2.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
         jButton2.setText("Ver socios existentes");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -164,6 +333,11 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
         jLabel33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Rectangle 2 (1).png"))); // NOI18N
         paginaSociosPanel.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 100, 270, -1));
 
+        jLabel25.setFont(new java.awt.Font("Poppins SemiBold", 0, 36)); // NOI18N
+        jLabel25.setText("Socios");
+        paginaSociosPanel.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
+        paginaSociosPanel.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, 350, 10));
+
         GrupoDePaneles.addTab("tab2", paginaSociosPanel);
 
         paginaPagosPanel.setBackground(new java.awt.Color(255, 255, 255));
@@ -172,7 +346,7 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
         jLabel35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/image 1.jpg"))); // NOI18N
         paginaPagosPanel.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 100, -1, -1));
 
-        jButton3.setBackground(new Color(242,98,15));
+        jButton3.setBackground(new java.awt.Color(255, 153, 102));
         jButton3.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
         jButton3.setText("Registrar un pago");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -222,7 +396,7 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
         paginaInformesPanel.setBackground(new java.awt.Color(255, 255, 255));
         paginaInformesPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel30.setText("Informes y analisis");
+        jLabel30.setText("Infromes y analisis");
         paginaInformesPanel.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 80, -1, -1));
 
         GrupoDePaneles.addTab("tab8", paginaInformesPanel);
@@ -630,7 +804,7 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTabbedPane GrupoDePaneles;
-    private javax.swing.JButton jButton1;
+    public javax.swing.JButton btnRegistrarNuevoSocio;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
@@ -648,8 +822,8 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
@@ -661,8 +835,20 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel47;
+    private javax.swing.JLabel jLabel48;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel50;
+    private javax.swing.JLabel jLabel51;
+    private javax.swing.JLabel jLabel52;
+    private javax.swing.JLabel jLabel54;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
@@ -678,6 +864,18 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
+    private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSeparator jSeparator2;
+    public javax.swing.JLabel lblCorreoElectronico;
+    public javax.swing.JLabel lblDireccion;
+    public javax.swing.JLabel lblNombreGimnasio;
+    private javax.swing.JLabel lblNumClases;
+    private javax.swing.JLabel lblNumEntrenadores;
+    private javax.swing.JLabel lblNumGanancias;
+    private javax.swing.JLabel lblNumMaquinas;
+    private javax.swing.JLabel lblNumMembresias;
+    private javax.swing.JLabel lblNumSocios;
+    public javax.swing.JLabel lblTelefono;
     private javax.swing.JPanel menuLateral;
     private javax.swing.JPanel paginaActividadesPanel;
     private javax.swing.JPanel paginaClasesPanel;
@@ -687,5 +885,11 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
     private javax.swing.JPanel paginaPagosPanel;
     private javax.swing.JPanel paginaPrincipalPanel;
     private javax.swing.JPanel paginaSociosPanel;
+    private javax.swing.JPanel panelClasesActividades;
+    private javax.swing.JPanel panelEntrenadores;
+    private javax.swing.JPanel panelGananciasTotales;
+    private javax.swing.JPanel panelMaquinas;
+    private javax.swing.JPanel panelMembresias;
+    private javax.swing.JPanel panelSocios;
     // End of variables declaration//GEN-END:variables
 }
