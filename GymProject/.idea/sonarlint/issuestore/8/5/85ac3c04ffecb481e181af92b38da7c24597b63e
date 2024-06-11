@@ -1,8 +1,8 @@
 
-œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ä”òª8ÈÐœ®€2J$6defba05-0d74-480a-8601-5be178c5e775
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ä”òª8ÈÐœ®€2J$5213a757-b5c6-4a01-bf7f-d66410c98467
 œ
-java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÎÓ§Ú8Ä¢¡®€2J$b12e1442-48dc-431d-9b91-8750eb68198e
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÎÓ§Ú8Ä¢¡®€2J$1466f020-c9f8-4be7-8900-febd2a16e54c
 g
-java:S6905("Don't use the query "SELECT *".(Å€®¹ùÿÿÿÿ8ÐÐœ®€2J$e163b08a-f9cd-44d6-af03-0f96ddb7c104
+java:S6905("Don't use the query "SELECT *".(Å€®¹ùÿÿÿÿ8ÐÐœ®€2J$bf84c82b-3b3d-46e6-88d6-02828dc34511
 g
-java:S6905b"Don't use the query "SELECT *".(Öêÿ˜þÿÿÿÿ8ÿÇ¤®€2J$4595186b-1049-4165-9dd5-6144e6daa3a1
+java:S6905b"Don't use the query "SELECT *".(Öêÿ˜þÿÿÿÿ8ÿÇ¤®€2J$aaea114f-4f10-44c2-9199-1e47119401b3

@@ -1,16 +1,17 @@
 
-~
-java:S6437"6Revoke and change this password, as it is compromised.(êºûÿÿÿÿ8×ôŞ”€2J$f9415d95-dc3b-4c69-9a04-42b027b8cbac
+y
+java:S6437"6Revoke and change this password, as it is compromised.(³¡…ù8×ôŞ”€2J$f082adaa-b6cb-4c54-b22a-222bba78ae0a
+l	java:S106"+Replace this use of System.out by a logger.(‰—Üp8¹¿º€2J$ba7b41b1-9778-4632-a6ac-8d692d68df30
 ›
-java:S2139"XEither log this exception and handle it, or rethrow it with some contextual information.(É®£8çôŞ”€2J$2c2c5f35-9607-418e-a93a-24ab27fe7f85
+java:S2139"XEither log this exception and handle it, or rethrow it with some contextual information.(É®£8çôŞ”€2J$1d989d88-a916-4606-b90e-f25990879db7
 w
-java:S3457"4Lambda should be used to defer string concatenation.(ìù¶ú8çôŞ”€2J$8a9994b2-cf74-4813-b4c7-554eb091fd7d
+java:S3457"4Lambda should be used to defer string concatenation.(ìù¶ú8çôŞ”€2J$de873e4d-b274-4476-aed0-81dd6f5c6465
+r	java:S106)"+Replace this use of System.out by a logger.(Ò™‰ ûÿÿÿÿ8¹¿º€2J$2332762b-d4a7-4509-9fdb-4bcc4eb54690
 |
-java:S3457+"4Lambda should be used to defer string concatenation.(×ã‚Ğüÿÿÿÿ8çôŞ”€2J$57fc517e-72db-4d43-952c-ed1ea219363f
-s
-java:S1068
-"0Remove this unused "DATABASE_URL" private field.(…”›Œ8Øäº©€2J$f0f2c4e5-8ad9-4e7b-9f44-2e5a63ed551b
-S
-java:S1068"1Remove this unused "DATABASE_USER" private field.(¦ûŒÕúÿÿÿÿ8è¼»©€2
-R
-java:S1068"5Remove this unused "DATABASE_PASSWORD" private field.(‹Ì¿Ø8è¼»©€2
+java:S3457+"4Lambda should be used to defer string concatenation.(×ã‚Ğüÿÿÿÿ8çôŞ”€2J$dc2b8e8e-ddee-48ab-901e-a8af96b5e211
+Q
+java:S1068"4Remove this unused "ACCESOREMOTO_URL" private field.(ÿ™ÏĞ8İº€2
+Q
+java:S1068"5Remove this unused "ACCESOREMOTO_USER" private field.(ÅÏ‹X8İº€2
+[
+java:S1068"9Remove this unused "ACCESOREMOTO_PASSWORD" private field.(™ËÚûÿÿÿÿ8İº€2

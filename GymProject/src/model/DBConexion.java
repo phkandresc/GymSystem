@@ -23,7 +23,7 @@ public class DBConexion {
     public static synchronized Connection getConnection() throws SQLException {
         if (conexion == null || conexion.isClosed()) {
             try {
-                conexion = DriverManager.getConnection(ACCESOREMOTO_URL, ACCESOREMOTO_USER, ACCESOREMOTO_PASSWORD);
+                conexion = DriverManager.getConnection(DATABASE_URL, DATABASE_USER, DATABASE_PASSWORD);
                 System.out.println("Conectado a BDD");
             } catch (SQLException e) {
                 LOGGER.log(Level.SEVERE, "Error al conectar con la base de datos: " + e.getMessage(), e);

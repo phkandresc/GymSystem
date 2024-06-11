@@ -1,17 +1,18 @@
 
 É
-java:S1186H"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ä Ïúüÿÿÿÿ8ĞÁı¬€2J$058b6944-7753-4449-ba4b-d0d102223452
+java:S1186H"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ä Ïúüÿÿÿÿ8ĞÁı¬€2J$0dfee7f9-4e42-46b7-98d0-eb8a27cc67fc
 É
-java:S1186M"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(®î’×üÿÿÿÿ8ĞÁı¬€2J$df0c4a43-7463-4540-a76a-30cdd4a0f09c
+java:S1186M"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(®î’×üÿÿÿÿ8ĞÁı¬€2J$fc284202-22ae-4f82-bb36-68fa15e96c88
 Ä
-java:S1186R"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ãÆĞÂ8ĞÁı¬€2J$99c6ae5d-7482-45a5-ab81-eb0c19a78b57
+java:S1186R"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ãÆĞÂ8ĞÁı¬€2J$dee474ca-b272-41bc-87f6-54ad39ce5512
 É
-java:S1186W"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ö„˜şúÿÿÿÿ8ĞÁı¬€2J$73662b5a-6e5b-48ef-8683-4bb1bfa2ebf7
+java:S1186W"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ö„˜şúÿÿÿÿ8ĞÁı¬€2J$12a4be36-8eeb-4c3f-bd3b-1466a56a60fe
 É
-java:S1186\"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•ßçùÿÿÿÿ8ĞÁı¬€2J$3d048a99-0dfb-4516-8bd3-7d16ca6ddb6c
+java:S1186\"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•ßçùÿÿÿÿ8ĞÁı¬€2J$c3088d24-c46d-434f-85d5-8eba11f81a0e
+r	java:S1066"+Replace this use of System.out by a logger.(ı™øøÿÿÿÿ8¼ô÷®€2J$8a78c6a7-10c5-4b83-98a2-60f1cd3ce186
 „
-java:S1117c"ARename "tipoMembresia" which hides the field declared at line 23.(Ìõş8ÔÁı¬€2J$03897d52-5113-46a6-9366-1ce412599e7a
-y
-java:S1128"1Remove this unused import 'DAO.TipoMembresiaDAO'.(«êƒ…ùÿÿÿÿ8ÕÁı¬€2J$211af8d6-beac-4093-8bf1-66559246c754
-m
-java:S1128"*Remove this unused import 'java.sql.Date'.(ÙÀ½Ê8ÕÁı¬€2J$e012cfad-300c-4712-bb6d-1b52a78e9221
+java:S1117c"ARename "tipoMembresia" which hides the field declared at line 23.(Ìõş8ÔÁı¬€2J$ae444a74-a834-448a-a6a5-730b5f804c1c
+S
+java:S1128"1Remove this unused import 'DAO.TipoMembresiaDAO'.(«êƒ…ùÿÿÿÿ8şÏ¹º€2
+G
+java:S1128"*Remove this unused import 'java.sql.Date'.(ÙÀ½Ê8Ğ¹º€2
