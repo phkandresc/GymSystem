@@ -1,6 +1,5 @@
 package controller;
 
-import DAO.TipoMembresiaDAO;
 import model.Socio;
 import model.TipoMembresia;
 import service.MembresiaService;
@@ -10,7 +9,6 @@ import view.RegistroSociosView;
 
 import javax.swing.*;
 import java.awt.event.*;
-import java.sql.Date;
 import java.util.List;
 
 public class RegistroSociosController implements ActionListener, ItemListener, MouseListener {
@@ -45,7 +43,7 @@ public class RegistroSociosController implements ActionListener, ItemListener, M
                 if(socio != null){
                     socioService.registrarSocio(socio);
                     JOptionPane.showMessageDialog(null, "Socio registrado correctamente");
-                    socio = socioService.buscarSocio(socio.getCedula());
+                    socio = socioService.buscarSocioPorCedula(socio.getCedula());
                     membresiaService.registrarMembresia(socio, listaTiposMembresia.get(registroSociosView.cmbTipoMembresia.getSelectedIndex()));
                     JOptionPane.showMessageDialog(null, "Membresia registrada correctamente");
                     vaciarCampos();

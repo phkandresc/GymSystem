@@ -47,3 +47,7 @@ M
 src/view/ListaSociosView.java,5\c\5c1ae68aae9dd82484fb11ed1bba955aae99e2a8
 Y
 )src/controller/ListaSociosController.java,3\7\3708201caef725c5b9651cea89ecb1f9de788ae7
+N
+src/view/NumericTextField.java,6\e\6e80ba89d57c7cf6ddd92a07c18464c981cab2be
+R
+"src/DataAccessObject/SocioDAO.java,a\2\a20d8560b0b370c00f0575fc69b0e37c619708ba

@@ -1,6 +1,6 @@
 package service;
 
-import DAO.SocioDAO;
+import DataAccessObject.SocioDAO;
 import model.Socio;
 import view.RegistroSociosView;
 
@@ -27,8 +27,16 @@ public class SocioService {
         socioDAO.eliminarSocio(cedula);
     }
 
-    public Socio buscarSocio(String cedula) throws Exception {
-        return socioDAO.buscarSocio(cedula);
+    public Socio buscarSocioPorCedula(String cedula) throws Exception {
+        return socioDAO.buscarSocioPorCedula(cedula);
+    }
+
+    public Socio buscarSocioPorId(int id) throws Exception {
+        return socioDAO.buscarSocioPorId(id);
+    }
+
+    public Socio buscarSocioPorApellido(String nombre) throws Exception {
+        return socioDAO.buscarSocioPorApellido(nombre);
     }
 
     public List<Socio> obtenerTodosSocios() throws Exception {

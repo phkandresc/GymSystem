@@ -1,6 +1,6 @@
 package controller;
 
-import DAO.AdministradorDAO;
+import DataAccessObject.AdministradorDAO;
 import model.Administrador;
 import view.IniciarSesionView;
 import view.PaginaPrincipalView;

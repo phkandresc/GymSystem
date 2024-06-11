@@ -1,4 +1,4 @@
-package DAO;
+package DataAccessObject;
 
 import model.Administrador;
 import model.DBConexion;

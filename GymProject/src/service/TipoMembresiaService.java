@@ -1,6 +1,6 @@
 package service;
 
-import DAO.TipoMembresiaDAO;
+import DataAccessObject.TipoMembresiaDAO;
 import model.TipoMembresia;
 
 import java.util.List;

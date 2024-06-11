@@ -1,6 +1,6 @@
 package controller;
 
-import DAO.GimnasioDAO;
+import DataAccessObject.GimnasioDAO;
 import model.Gimnasio;
 import view.PaginaPrincipalView;
 import view.RegistroSociosView;

@@ -1,4 +1,4 @@
-package DAO;
+package DataAccessObject;
 
 import model.DBConexion;
 import model.Gimnasio;

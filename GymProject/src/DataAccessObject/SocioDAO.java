@@ -1,4 +1,4 @@
-package DAO;
+package DataAccessObject;
 
 import model.DBConexion;
 import model.Socio;
@@ -35,7 +35,7 @@ public class SocioDAO {
         }
     }
 
-    public Socio buscarSocio(String cedula) {
+    public Socio buscarSocioPorCedula(String cedula) {
         Socio socio = new Socio();
         String sql = "SELECT * FROM socios WHERE cedula = ?";
         try (Connection connection = DBConexion.getConnection();
@@ -117,5 +117,55 @@ public class SocioDAO {
             DBConexion.closeConnection();
         }
         return listaSocios;
+    }
+
+    public Socio buscarSocioPorId(int id) {
+        Socio socio = new Socio();
+        String sql = "SELECT * FROM socios WHERE id = ?";
+        try (Connection connection = DBConexion.getConnection();
+             PreparedStatement statement = connection.prepareStatement(sql)) {
+            statement.setInt(1, id);
+            ResultSet resultSet = statement.executeQuery();
+            while (resultSet.next()) {
+                socio.setId(resultSet.getInt("id"));
+                socio.setCedula(resultSet.getString("cedula"));
+                socio.setNombre(resultSet.getString("nombre"));
+                socio.setApellido(resultSet.getString("apellido"));
+                socio.setEmail(resultSet.getString("email"));
+                socio.setNumeroTelefono(resultSet.getString("numero_telefono"));
+                socio.setDireccion(resultSet.getString("direccion"));
+                socio.setFechaNacimiento(resultSet.getDate("fecha_nacimiento"));
+            }
+        } catch (SQLException e) {
+            LOGGER.severe(e.getMessage());
+        } finally {
+            DBConexion.closeConnection();
+        }
+        return socio;
+    }
+
+    public Socio buscarSocioPorApellido(String apellido){
+        Socio socio = new Socio();
+        String sql = "SELECT * FROM socios WHERE apellido = ?";
+        try (Connection connection = DBConexion.getConnection();
+             PreparedStatement statement = connection.prepareStatement(sql)) {
+            statement.setString(1, apellido);
+            ResultSet resultSet = statement.executeQuery();
+            while (resultSet.next()) {
+                socio.setId(resultSet.getInt("id"));
+                socio.setCedula(resultSet.getString("cedula"));
+                socio.setNombre(resultSet.getString("nombre"));
+                socio.setApellido(resultSet.getString("apellido"));
+                socio.setEmail(resultSet.getString("email"));
+                socio.setNumeroTelefono(resultSet.getString("numero_telefono"));
+                socio.setDireccion(resultSet.getString("direccion"));
+                socio.setFechaNacimiento(resultSet.getDate("fecha_nacimiento"));
+            }
+        } catch (SQLException e) {
+            LOGGER.severe(e.getMessage());
+        } finally {
+            DBConexion.closeConnection();
+        }
+        return socio;
     }
 }
