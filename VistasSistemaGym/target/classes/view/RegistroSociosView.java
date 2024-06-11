@@ -35,22 +35,25 @@ public class RegistroSociosView extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         ButtonRegistrar = new javax.swing.JButton();
         ButtonCancelar = new javax.swing.JButton();
-        TextFieldNombre = new javax.swing.JTextField();
+        txtCedula = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         jSeparator2 = new javax.swing.JSeparator();
-        TextFieldNombre1 = new javax.swing.JTextField();
         jSeparator3 = new javax.swing.JSeparator();
-        TextFieldNombre2 = new javax.swing.JTextField();
+        txtApellidos = new javax.swing.JTextField();
         jSeparator4 = new javax.swing.JSeparator();
-        TextFieldNombre3 = new javax.swing.JTextField();
+        txtEmail = new javax.swing.JTextField();
         jSeparator5 = new javax.swing.JSeparator();
-        TextFieldNombre4 = new javax.swing.JTextField();
+        txtTelefono = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        cmbTipoMembresia = new javax.swing.JComboBox<>();
         jLabel9 = new javax.swing.JLabel();
-        jDateChooser2 = new com.toedter.calendar.JDateChooser();
+        dcFechaNacimiento = new com.toedter.calendar.JDateChooser();
+        jLabel11 = new javax.swing.JLabel();
+        txtNombres = new javax.swing.JTextField();
+        txtDireccion = new javax.swing.JTextField();
+        jSeparator6 = new javax.swing.JSeparator();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -60,7 +63,7 @@ public class RegistroSociosView extends javax.swing.JFrame {
 
         lblDescripcionMembresia.setFont(new java.awt.Font("Poppins Light", 0, 16)); // NOI18N
         lblDescripcionMembresia.setText("Descripcion de la membresia");
-        jPanel1.add(lblDescripcionMembresia, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 240, 250, -1));
+        jPanel1.add(lblDescripcionMembresia, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 340, 250, -1));
 
         jLabel3.setFont(new java.awt.Font("Poppins Light", 1, 16)); // NOI18N
         jLabel3.setText("Telefono:");
@@ -71,8 +74,8 @@ public class RegistroSociosView extends javax.swing.JFrame {
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, 108, 30));
 
         jLabel5.setFont(new java.awt.Font("Poppins Light", 1, 16)); // NOI18N
-        jLabel5.setText("Fecha de nacimiento:");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 80, 210, 30));
+        jLabel5.setText("Direccion:");
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 160, 210, 30));
 
         jLabel6.setFont(new java.awt.Font("Poppins Light", 1, 16)); // NOI18N
         jLabel6.setText("Apellidos:");
@@ -96,10 +99,10 @@ public class RegistroSociosView extends javax.swing.JFrame {
         ButtonCancelar.setBorder(null);
         jPanel1.add(ButtonCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 490, 153, 38));
 
-        TextFieldNombre.setFont(new java.awt.Font("Poppins Light", 0, 14)); // NOI18N
-        TextFieldNombre.setBorder(null);
-        TextFieldNombre.setPreferredSize(new java.awt.Dimension(645, 22));
-        jPanel1.add(TextFieldNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, 240, 30));
+        txtCedula.setFont(new java.awt.Font("Poppins Light", 0, 14)); // NOI18N
+        txtCedula.setBorder(null);
+        txtCedula.setPreferredSize(new java.awt.Dimension(645, 22));
+        jPanel1.add(txtCedula, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, 240, 30));
 
         jLabel10.setFont(new java.awt.Font("Poppins Medium", 0, 24)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
@@ -111,60 +114,69 @@ public class RegistroSociosView extends javax.swing.JFrame {
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 790, 60));
         jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 240, -1));
         jPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 220, 240, -1));
-
-        TextFieldNombre1.setFont(new java.awt.Font("Poppins Light", 0, 14)); // NOI18N
-        TextFieldNombre1.setBorder(null);
-        TextFieldNombre1.setPreferredSize(new java.awt.Dimension(645, 22));
-        jPanel1.add(TextFieldNombre1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, 240, 30));
         jPanel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, 240, -1));
 
-        TextFieldNombre2.setFont(new java.awt.Font("Poppins Light", 0, 14)); // NOI18N
-        TextFieldNombre2.setBorder(null);
-        TextFieldNombre2.setPreferredSize(new java.awt.Dimension(645, 22));
-        jPanel1.add(TextFieldNombre2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 270, 240, 30));
+        txtApellidos.setFont(new java.awt.Font("Poppins Light", 0, 14)); // NOI18N
+        txtApellidos.setBorder(null);
+        txtApellidos.setPreferredSize(new java.awt.Dimension(645, 22));
+        jPanel1.add(txtApellidos, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 270, 240, 30));
         jPanel1.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 380, 240, -1));
 
-        TextFieldNombre3.setFont(new java.awt.Font("Poppins Light", 0, 14)); // NOI18N
-        TextFieldNombre3.setBorder(null);
-        TextFieldNombre3.setPreferredSize(new java.awt.Dimension(645, 22));
-        jPanel1.add(TextFieldNombre3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 350, 240, 30));
+        txtEmail.setFont(new java.awt.Font("Poppins Light", 0, 14)); // NOI18N
+        txtEmail.setBorder(null);
+        txtEmail.setPreferredSize(new java.awt.Dimension(645, 22));
+        jPanel1.add(txtEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 350, 240, 30));
         jPanel1.add(jSeparator5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 460, 240, -1));
 
-        TextFieldNombre4.setFont(new java.awt.Font("Poppins Light", 0, 14)); // NOI18N
-        TextFieldNombre4.setBorder(null);
-        TextFieldNombre4.setPreferredSize(new java.awt.Dimension(645, 22));
-        jPanel1.add(TextFieldNombre4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 430, 240, 30));
+        txtTelefono.setFont(new java.awt.Font("Poppins Light", 0, 14)); // NOI18N
+        txtTelefono.setBorder(null);
+        txtTelefono.setPreferredSize(new java.awt.Dimension(645, 22));
+        jPanel1.add(txtTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 430, 240, 30));
 
         jLabel7.setFont(new java.awt.Font("Poppins Light", 1, 16)); // NOI18N
         jLabel7.setText("Cedula:");
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 80, 135, -1));
 
-        jComboBox1.setFont(new java.awt.Font("Poppins Light", 0, 14)); // NOI18N
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1" }));
-        jComboBox1.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(0, 0, 0)));
-        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+        cmbTipoMembresia.setFont(new java.awt.Font("Poppins Light", 0, 14)); // NOI18N
+        cmbTipoMembresia.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(0, 0, 0)));
+        cmbTipoMembresia.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox1ActionPerformed(evt);
+                cmbTipoMembresiaActionPerformed(evt);
             }
         });
-        jPanel1.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 190, 220, 30));
+        jPanel1.add(cmbTipoMembresia, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 290, 220, 30));
 
         jLabel9.setFont(new java.awt.Font("Poppins Light", 1, 16)); // NOI18N
         jLabel9.setText("Elegir tipo de membresia:");
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 160, 220, -1));
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 260, 220, -1));
 
-        jDateChooser2.setDateFormatString("yyyy-MM-dd");
-        jDateChooser2.setFont(new java.awt.Font("Poppins Light", 0, 12)); // NOI18N
-        jPanel1.add(jDateChooser2, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 110, 240, 30));
+        dcFechaNacimiento.setDateFormatString("yyyy-MM-dd");
+        dcFechaNacimiento.setFont(new java.awt.Font("Poppins Light", 0, 12)); // NOI18N
+        jPanel1.add(dcFechaNacimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 110, 240, 30));
+
+        jLabel11.setFont(new java.awt.Font("Poppins Light", 1, 16)); // NOI18N
+        jLabel11.setText("Fecha de nacimiento:");
+        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 80, 210, 30));
+
+        txtNombres.setFont(new java.awt.Font("Poppins Light", 0, 14)); // NOI18N
+        txtNombres.setBorder(null);
+        txtNombres.setPreferredSize(new java.awt.Dimension(645, 22));
+        jPanel1.add(txtNombres, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, 240, 30));
+
+        txtDireccion.setFont(new java.awt.Font("Poppins Light", 0, 14)); // NOI18N
+        txtDireccion.setBorder(null);
+        txtDireccion.setPreferredSize(new java.awt.Dimension(645, 22));
+        jPanel1.add(txtDireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 190, 240, 30));
+        jPanel1.add(jSeparator6, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 220, 240, -1));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 790, 590));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+    private void cmbTipoMembresiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbTipoMembresiaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox1ActionPerformed
+    }//GEN-LAST:event_cmbTipoMembresiaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -205,15 +217,11 @@ public class RegistroSociosView extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton ButtonCancelar;
     private javax.swing.JButton ButtonRegistrar;
-    private javax.swing.JTextField TextFieldNombre;
-    private javax.swing.JTextField TextFieldNombre1;
-    private javax.swing.JTextField TextFieldNombre2;
-    private javax.swing.JTextField TextFieldNombre3;
-    private javax.swing.JTextField TextFieldNombre4;
-    private javax.swing.JComboBox<String> jComboBox1;
-    private com.toedter.calendar.JDateChooser jDateChooser2;
+    public javax.swing.JComboBox<String> cmbTipoMembresia;
+    public com.toedter.calendar.JDateChooser dcFechaNacimiento;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -227,6 +235,13 @@ public class RegistroSociosView extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
     private javax.swing.JSeparator jSeparator5;
+    private javax.swing.JSeparator jSeparator6;
     private javax.swing.JLabel lblDescripcionMembresia;
+    public javax.swing.JTextField txtApellidos;
+    public javax.swing.JTextField txtCedula;
+    public javax.swing.JTextField txtDireccion;
+    public javax.swing.JTextField txtEmail;
+    public javax.swing.JTextField txtNombres;
+    public javax.swing.JTextField txtTelefono;
     // End of variables declaration//GEN-END:variables
 }

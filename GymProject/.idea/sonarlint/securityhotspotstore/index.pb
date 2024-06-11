@@ -35,5 +35,15 @@ I
 src/DAO/MembresiaDAO.java,8\9\89490339d52407d15a397e9bf5b9ae1859ed7837
 O
 src/view/IniciarSesionView.java,1\e\1e827a95b425f1a5151b40a58aab7c841e7d83b5
-O
-src/model/NumericTextField.java,8\8\881182f47d6de8e352e4be6ce79400fed389f919
+M
+src/service/SocioService.java,3\8\38e1fb3473b8086bbd0d886b7f5447db93f50af2
+Q
+!src/service/MembresiaService.java,5\1\517319422887f165f67108f7a4b01c458aae7485
+U
+%src/service/TipoMembresiaService.java,a\3\a396e2d341c722a6815bcdd85d28b660667bcbbb
+N
+src/model/IGestorDeSocios.java,b\2\b2f0d449f4c56a8c6355478a5bfcddebf66f39b2
+M
+src/view/ListaSociosView.java,5\c\5c1ae68aae9dd82484fb11ed1bba955aae99e2a8
+Y
+)src/controller/ListaSociosController.java,3\7\3708201caef725c5b9651cea89ecb1f9de788ae7

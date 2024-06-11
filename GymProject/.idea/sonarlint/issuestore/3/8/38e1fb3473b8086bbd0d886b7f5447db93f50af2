@@ -1,0 +1,29 @@
+
+w
+java:S1066("/Merge this if statement with the enclosing one.(Ö‰ÅÄþÿÿÿÿ8ß‚’«€2J$1c2273c3-6317-4473-b8cc-02e1ab731709
+r
+java:S1066."/Merge this if statement with the enclosing one.(ÝŒ÷¡8ß‚’«€2J$e802de48-4bbf-44db-9978-aff648c9e0bf
+w
+java:S10665"/Merge this if statement with the enclosing one.(¨´§“þÿÿÿÿ8ß‚’«€2J$4fb047fc-f046-4f3d-81ef-ab08756bf930
+r
+java:S1066<"/Merge this if statement with the enclosing one.(éûÏ•8ß‚’«€2J$1668b6ed-6501-435f-92a5-9d474bcde7c9
+r
+java:S1066C"/Merge this if statement with the enclosing one.(Š³÷ä8Âç˜«€2J$93cc1cb6-c574-46f5-9073-eac40f6c219e
+w
+java:S1066J"/Merge this if statement with the enclosing one.(ÆÄÑ“üÿÿÿÿ8Âç˜«€2J$eae62a1d-66d1-4be2-aafe-4f2c5b620852
+ˆ	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Åìä’8ÕÔõª€2J$8953d0c7-9a21-464a-b435-34ac11b75701
+‡	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(õˆ’u8ÖÔõª€2J$218321e0-fb3b-4042-8801-b4e1b36702d6
+ˆ	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(”Œ¿Ž8ñŠÇ¬€2J$77c7c653-bd3d-4e58-97b8-f798cf08ec4a
+ˆ	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(›Ä²à8ñŠÇ¬€2J$b6649e2f-1826-4a62-ba68-9a93ec902dc6
+¯
+java:S1130"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(Åìä’8ØÔõª€2J$6eb10b10-b9a4-4a00-89a1-0eb399991e3f
+®
+java:S1130"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(õˆ’u8ÙÔõª€2J$f6d59624-f920-4628-8360-b1458f3ce3c3
+¯
+java:S1130"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(”Œ¿Ž8õŠÇ¬€2J$bbd49770-29a8-482e-abc6-4d0937857c07
+¯
+java:S1130"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(›Ä²à8õŠÇ¬€2J$a0ddcfd3-7013-4869-90b8-01214e4707e6
+š
+java:S3776&"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(ŠÒáãûÿÿÿÿ8ä‚’«€2J$6d0a3651-fa44-4794-98a4-706cd65d525e
+Ž
+java:S5998`"LRefactor this repetition that can lead to a stack overflow for large inputs.(õæˆB8Çæ«€2J$77f3c781-71fb-43a3-881a-3469b6274d78

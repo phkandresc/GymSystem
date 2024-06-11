@@ -5,6 +5,7 @@ import DAO.*;
 
 public class Main {
     public static void main(String[] args) {
-        RegistroSociosController registroSociosController = new RegistroSociosController(new RegistroSociosView());
+        ListaSociosController listaSociosController = new ListaSociosController(new ListaSociosView());
+        //RegistroSociosController registroSociosController = new RegistroSociosController(new RegistroSociosView());
     }
 }
