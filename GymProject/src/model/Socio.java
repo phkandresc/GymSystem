@@ -13,6 +13,7 @@ public class Socio {
     private String direccion;
     private Date fechaNacimiento;
 
+
     public int getId() {
         return id;
     }

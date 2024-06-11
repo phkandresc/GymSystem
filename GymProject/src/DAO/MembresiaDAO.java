@@ -40,4 +40,59 @@ public class MembresiaDAO {
             DBConexion.closeConnection();
         }
     }
+
+    public void eliminarMembresia(int id) throws SQLException {
+        PreparedStatement ps = null;
+        Connection conexion = DBConexion.getConnection();
+
+        String sql = "DELETE FROM membresias WHERE id = ?";
+
+        try {
+            ps = conexion.prepareStatement(sql);
+            ps.setInt(1, id);
+            ps.executeUpdate();
+        } catch (SQLException e) {
+            LOGGER.severe(e.getMessage());
+        } finally {
+            if (ps != null) {
+                ps.close();
+            }
+
+            if (conexion != null) {
+                conexion.close();
+            }
+            DBConexion.closeConnection();
+        }
+    }
+
+    public void eliminarTodasMembresias() throws SQLException {
+        PreparedStatement ps = null;
+        Connection conexion = DBConexion.getConnection();
+
+        String sql = "DELETE FROM membresias";
+
+        try {
+            ps = conexion.prepareStatement(sql);
+            ps.executeUpdate();
+        } catch (SQLException e) {
+            LOGGER.severe(e.getMessage());
+        } finally {
+            if (ps != null) {
+                try {
+                    ps.close();
+                } catch (SQLException e) {
+                    LOGGER.severe(e.getMessage());
+                }
+            }
+
+            if (conexion != null) {
+                try {
+                    conexion.close();
+                } catch (SQLException e) {
+                    LOGGER.severe(e.getMessage());
+                }
+            }
+            DBConexion.closeConnection();
+        }
+    }
 }

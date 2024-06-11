@@ -1,27 +1,39 @@
 
-£
-java:S1186)"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¼ Òþüÿÿÿÿ8âæí…€2
-É
-java:S1186-"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¿˜œÔþÿÿÿÿ8û“ë…€2J$e3c6b29c-c17d-4899-a645-86c184eb41a6
-Ä
-java:S11862"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(›™¥…8ü“ë…€2J$f0b4eb83-588c-4fa6-8ed7-00cb2134b016
-É
-java:S11867"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ä Ïúüÿÿÿÿ8ü“ë…€2J$ecb7f314-f1fe-40d4-80e2-85c2eea7ef05
-É
-java:S1186<"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(®î’×üÿÿÿÿ8ü“ë…€2J$2d827c15-c53b-44fa-96ce-28a3171982fd
-Ä
-java:S1186A"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ãÆÐÂ8ü“ë…€2J$eb2c4a54-cfee-46b1-935b-cb2ae9a5a05c
-É
-java:S1186F"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ö„˜þúÿÿÿÿ8ü“ë…€2J$226b98ab-8c4f-4f2d-a177-394066a2b684
-É
-java:S1186K"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•ßçùÿÿÿÿ8ü“ë…€2J$53dfa937-9611-4a3a-920d-1e9882ef929d
 x
-java:S1450"\Remove the "tipoMembresia" field and declare it as a local variable in the relevant methods.(„ªà8âæí…€2
+java:S1066‘"/Merge this if statement with the enclosing one.(èƒ¸’ûÿÿÿÿ8£Ê‘š€2J$a3093de8-eb31-4e5b-ab2e-e1814c8e2348
+“
+java:S1192k"KDefine a constant instead of duplicating this literal "0105627806" 3 times.(œÜºþÿÿÿÿ8¿Çš€2J$f1ddd126-1463-4a22-9f02-b3b5e3a3161b
+É
+java:S11862"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¿˜œÔþÿÿÿÿ8¿Çš€2J$ebe0c80d-4c84-468a-ac3b-75e287b8d3f3
+Ä
+java:S11867"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(›™¥…8¿Çš€2J$2a93b133-ac36-4332-acbb-1bcb73f16d94
+É
+java:S1186<"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ä Ïúüÿÿÿÿ8¿Çš€2J$655868b5-8cdd-4732-b183-b1fbf5a44311
+É
+java:S1186A"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(®î’×üÿÿÿÿ8¿Çš€2J$626a28e3-4bc1-4021-97a9-0deba5a7d345
+Ä
+java:S1186F"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ãÆÐÂ8¿Çš€2J$ee042c61-3ec2-44e2-9575-cf6fe50dcb53
+É
+java:S1186K"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ö„˜þúÿÿÿÿ8¿Çš€2J$d111fa08-3285-4d42-971a-c190b2203979
+É
+java:S1186P"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•ßçùÿÿÿÿ8ÎÇš€2J$31586655-5221-4f7c-8154-49c7b9dc9e02
+ 
+java:S1450"XRemove the "membresia" field and declare it as a local variable in the relevant methods.(ÂÞÄ¾ÿÿÿÿÿ8ÎÇš€2J$14d56562-d101-4d44-b69b-3f918300b78f
+£
+java:S1450"[Remove the "membresiaDAO" field and declare it as a local variable in the relevant methods.(™°ÚŽúÿÿÿÿ8ÎÇš€2J$f3963ede-abea-4772-91c5-f16588b18a12
+—
+java:S1450"TRemove the "socio" field and declare it as a local variable in the relevant methods.(È½ù‹8ÎÇš€2J$bdb65ee6-fd9d-43dc-8d70-604dae43eaef
+š
+java:S1450"WRemove the "socioDAO" field and declare it as a local variable in the relevant methods.(«’Á±8ÎÇš€2J$3b2c57ce-fa85-4fed-b7a6-8f97cc59f15e
+ž
+java:S1450"\Remove the "tipoMembresia" field and declare it as a local variable in the relevant methods.(„ªà8ÎÇš€2J$2ad182df-c05f-41a8-8a0e-3032f04e0278
 ¢
-java:S1450"_Remove the "tipoMembresiaDAO" field and declare it as a local variable in the relevant methods.(œµœ8Úìž…€2J$c9ca0518-1ae3-482a-94af-828051bfd7b7
+java:S1450"_Remove the "tipoMembresiaDAO" field and declare it as a local variable in the relevant methods.(œµœ8ÎÇš€2J$ab66c2d0-872e-4ed2-9d72-5cc018e0d822
 „
-java:S1117 "ARename "tipoMembresia" which hides the field declared at line 17.(Ìõþ8Ýìž…€2J$2286b696-58ff-41e7-9208-202f3a1eb298
-I
-java:S1068",Remove this unused "socioDAO" private field.(«’Á±8ææí…€2
-F
-java:S1068")Remove this unused "socio" private field.(È½ù‹8ææí…€2
+java:S1117`"ARename "tipoMembresia" which hides the field declared at line 23.(Ìõþ8®Èš€2J$981a2bc4-4a17-4fe3-af66-8e8708bf2d8a
+„
+java:S1117r"<Rename "socioDAO" which hides the field declared at line 21.(©“òþÿÿÿÿ8®Èš€2J$35025d49-ce87-49c6-bb79-56a21f6350fa
+ˆ
+java:S1117v"@Rename "membresiaDAO" which hides the field declared at line 27.(¿¡ƒÌøÿÿÿÿ8½Èš€2J$861897e4-ad44-4d91-acd1-cf6926673c06
+
+java:S5998¢"LRefactor this repetition that can lead to a stack overflow for large inputs.(õæˆB8÷ò’š€2J$dd9da046-53ed-4888-95e8-615bdd77e500

@@ -18,7 +18,6 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
      */
     public PaginaPrincipalView() {
         initComponents();
-        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -294,7 +293,7 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
 
         lblDireccion.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
         lblDireccion.setText("Direccion");
-        paginaPrincipalPanel.add(lblDireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 110, 250, -1));
+        paginaPrincipalPanel.add(lblDireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 110, 390, -1));
 
         GrupoDePaneles.addTab("tab1", paginaPrincipalPanel);
 
@@ -792,6 +791,7 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(PaginaPrincipalView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */

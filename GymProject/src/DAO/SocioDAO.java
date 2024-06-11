@@ -31,4 +31,43 @@ public class SocioDAO {
             DBConexion.closeConnection();
         }
     }
+
+    public Socio seleccionarSocio(String cedula){
+        Socio socio = new Socio();
+        String sql = "SELECT * FROM socios WHERE cedula = ?";
+        try (Connection connection = DBConexion.getConnection();
+             PreparedStatement statement = connection.prepareStatement(sql)) {
+            statement.setString(1, cedula);
+            ResultSet resultSet = statement.executeQuery();
+            while (resultSet.next()) {
+                socio.setId(resultSet.getInt("id"));
+                socio.setCedula(resultSet.getString("cedula"));
+                socio.setNombre(resultSet.getString("nombre"));
+                socio.setApellido(resultSet.getString("apellido"));
+                socio.setEmail(resultSet.getString("email"));
+                socio.setNumeroTelefono(resultSet.getString("numero_telefono"));
+                socio.setDireccion(resultSet.getString("direccion"));
+                socio.setFechaNacimiento(resultSet.getDate("fecha_nacimiento"));
+            }
+        } catch (SQLException e) {
+            LOGGER.severe(e.getMessage());
+        }finally {
+            DBConexion.closeConnection();
+        }
+        return socio;
+
+    }
+
+    public void eliminarSocio(String cedula){
+        String sql = "DELETE FROM socios WHERE cedula = ?";
+        try (Connection connection = DBConexion.getConnection();
+             PreparedStatement statement = connection.prepareStatement(sql)) {
+            statement.setString(1, cedula);
+            statement.executeUpdate();
+        } catch (SQLException e) {
+            LOGGER.severe(e.getMessage());
+        }finally {
+            DBConexion.closeConnection();
+        }
+    }
 }

@@ -15,6 +15,7 @@ public class PaginaPrincipalController implements ActionListener, MouseListener,
     public PaginaPrincipalController(PaginaPrincipalView paginaPrincipalView) {
         this.paginaPrincipalView = paginaPrincipalView;
         paginaPrincipalView.btnRegistrarNuevoSocio.addActionListener(this);
+        paginaPrincipalView.setLocationRelativeTo(null);
         paginaPrincipalView.setVisible(true);
         setInformacionGimnasio();
     }
@@ -25,7 +26,7 @@ public class PaginaPrincipalController implements ActionListener, MouseListener,
             gimnasioDAO = new GimnasioDAO();
             gimnasio = gimnasioDAO.obtenerGimnasioPorId(1);
             paginaPrincipalView.lblNombreGimnasio.setText(gimnasio.getNombre());
-            paginaPrincipalView.lblDireccion.setText(gimnasio.getDireccion());
+            paginaPrincipalView.lblDireccion.setText("<html>"+gimnasio.getDireccion()+"</html>");
             paginaPrincipalView.lblTelefono.setText(gimnasio.getTelefono());
             paginaPrincipalView.lblCorreoElectronico.setText(gimnasio.getEmail());
         } catch (Exception e) {

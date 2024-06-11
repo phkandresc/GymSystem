@@ -17,8 +17,8 @@ public class PaginaPrincipalView2 extends javax.swing.JFrame {
      * Creates new form PaginaPrincipalView2
      */
     public PaginaPrincipalView2() {
-        initComponents();
         this.setLocationRelativeTo(null);
+        initComponents();
     }
 
     /**
@@ -31,6 +31,11 @@ public class PaginaPrincipalView2 extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        jPanel10 = new javax.swing.JPanel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
         GrupoDePaneles = new javax.swing.JTabbedPane();
         paginaPrincipalPanel = new javax.swing.JPanel();
         jSeparator1 = new javax.swing.JSeparator();
@@ -39,7 +44,8 @@ public class PaginaPrincipalView2 extends javax.swing.JFrame {
         lblNumGanancias = new javax.swing.JLabel();
         jLabel41 = new javax.swing.JLabel();
         lblNombreGimnasio = new javax.swing.JLabel();
-        lblTipoGimnasio = new javax.swing.JLabel();
+        lblTelefono = new javax.swing.JLabel();
+        lblCorreoElectronico = new javax.swing.JLabel();
         panelMembresias = new javax.swing.JPanel();
         jLabel39 = new javax.swing.JLabel();
         lblNumMembresias = new javax.swing.JLabel();
@@ -69,6 +75,7 @@ public class PaginaPrincipalView2 extends javax.swing.JFrame {
         jLabel32 = new javax.swing.JLabel();
         jLabel33 = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
+        jSeparator2 = new javax.swing.JSeparator();
         paginaPagosPanel = new javax.swing.JPanel();
         jLabel35 = new javax.swing.JLabel();
         jButton3 = new javax.swing.JButton();
@@ -83,11 +90,6 @@ public class PaginaPrincipalView2 extends javax.swing.JFrame {
         jLabel29 = new javax.swing.JLabel();
         paginaInformesPanel = new javax.swing.JPanel();
         jLabel30 = new javax.swing.JLabel();
-        jPanel10 = new javax.swing.JPanel();
-        jLabel22 = new javax.swing.JLabel();
-        jLabel21 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
         menuLateral = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
@@ -125,6 +127,28 @@ public class PaginaPrincipalView2 extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jPanel10.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel22.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
+        jLabel22.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel22.setText("Bienvenido Admin");
+        jPanel10.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(1080, 10, -1, 40));
+
+        jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconoBarraBlanco.png"))); // NOI18N
+        jPanel10.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 10, -1, -1));
+
+        jLabel17.setFont(new java.awt.Font("Poppins Medium", 0, 20)); // NOI18N
+        jLabel17.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel17.setText("Gimnasio");
+        jPanel10.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 10, -1, 40));
+
+        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/barraTitulo.png"))); // NOI18N
+        jLabel18.setText("jLabel18");
+        jLabel18.setPreferredSize(new java.awt.Dimension(1280, 100));
+        jPanel10.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 60));
+
+        jPanel1.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 60));
+
         GrupoDePaneles.setBackground(new java.awt.Color(255, 255, 255));
 
         paginaPrincipalPanel.setBackground(new java.awt.Color(255, 255, 255));
@@ -156,9 +180,13 @@ public class PaginaPrincipalView2 extends javax.swing.JFrame {
         lblNombreGimnasio.setText("Nombre del Gimnasio");
         paginaPrincipalPanel.add(lblNombreGimnasio, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, -1, -1));
 
-        lblTipoGimnasio.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
-        lblTipoGimnasio.setText("Tipo de gimnasio");
-        paginaPrincipalPanel.add(lblTipoGimnasio, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, -1, -1));
+        lblTelefono.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        lblTelefono.setText("Telefono");
+        paginaPrincipalPanel.add(lblTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, 110, -1));
+
+        lblCorreoElectronico.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        lblCorreoElectronico.setText("Correo electronico");
+        paginaPrincipalPanel.add(lblCorreoElectronico, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 250, -1));
 
         panelMembresias.setBorder(javax.swing.BorderFactory.createMatteBorder(10, 0, 0, 0, javax.swing.UIManager.getDefaults().getColor("nb.errorForeground")));
         panelMembresias.setForeground(new java.awt.Color(255, 102, 0));
@@ -266,7 +294,7 @@ public class PaginaPrincipalView2 extends javax.swing.JFrame {
 
         lblDireccion.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
         lblDireccion.setText("Direccion");
-        paginaPrincipalPanel.add(lblDireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 110, 250, -1));
+        paginaPrincipalPanel.add(lblDireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 110, 250, -1));
 
         GrupoDePaneles.addTab("tab1", paginaPrincipalPanel);
 
@@ -305,9 +333,10 @@ public class PaginaPrincipalView2 extends javax.swing.JFrame {
         jLabel33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Rectangle 2 (1).png"))); // NOI18N
         paginaSociosPanel.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 100, 270, -1));
 
-        jLabel25.setFont(new java.awt.Font("Poppins SemiBold", 0, 18)); // NOI18N
+        jLabel25.setFont(new java.awt.Font("Poppins SemiBold", 0, 36)); // NOI18N
         jLabel25.setText("Socios");
-        paginaSociosPanel.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 40, -1, -1));
+        paginaSociosPanel.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
+        paginaSociosPanel.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, 350, 10));
 
         GrupoDePaneles.addTab("tab2", paginaSociosPanel);
 
@@ -373,28 +402,6 @@ public class PaginaPrincipalView2 extends javax.swing.JFrame {
         GrupoDePaneles.addTab("tab8", paginaInformesPanel);
 
         jPanel1.add(GrupoDePaneles, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 30, 1010, 650));
-
-        jPanel10.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel22.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
-        jLabel22.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel22.setText("Bienvenido Admin");
-        jPanel10.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(1080, 10, -1, 40));
-
-        jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconoBarraBlanco.png"))); // NOI18N
-        jPanel10.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 10, -1, -1));
-
-        jLabel17.setFont(new java.awt.Font("Poppins Medium", 0, 20)); // NOI18N
-        jLabel17.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel17.setText("Gimnasio");
-        jPanel10.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 10, -1, 40));
-
-        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/barraTitulo.png"))); // NOI18N
-        jLabel18.setText("jLabel18");
-        jLabel18.setPreferredSize(new java.awt.Dimension(1280, 100));
-        jPanel10.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 60));
-
-        jPanel1.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 60));
 
         menuLateral.setBackground(new java.awt.Color(242, 98, 15));
         menuLateral.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -858,6 +865,8 @@ public class PaginaPrincipalView2 extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
     private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSeparator jSeparator2;
+    private javax.swing.JLabel lblCorreoElectronico;
     private javax.swing.JLabel lblDireccion;
     private javax.swing.JLabel lblNombreGimnasio;
     private javax.swing.JLabel lblNumClases;
@@ -866,7 +875,7 @@ public class PaginaPrincipalView2 extends javax.swing.JFrame {
     private javax.swing.JLabel lblNumMaquinas;
     private javax.swing.JLabel lblNumMembresias;
     private javax.swing.JLabel lblNumSocios;
-    private javax.swing.JLabel lblTipoGimnasio;
+    private javax.swing.JLabel lblTelefono;
     private javax.swing.JPanel menuLateral;
     private javax.swing.JPanel paginaActividadesPanel;
     private javax.swing.JPanel paginaClasesPanel;

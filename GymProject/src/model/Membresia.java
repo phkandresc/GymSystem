@@ -11,6 +11,14 @@ public class Membresia {
     private Date fechaFin;
     private String estado;
 
+    public Membresia (int idSocio, int idTipoMembresia, int idGimnasio, Date fechaInicio, Date fechaFin) {
+        this.idSocio = idSocio;
+        this.idTipoMembresia = idTipoMembresia;
+        this.idGimnasio = idGimnasio;
+        this.fechaInicio = fechaInicio;
+        this.fechaFin = fechaFin;
+    }
+
     public int getId() {
         return id;
     }

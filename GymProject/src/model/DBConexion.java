@@ -9,7 +9,7 @@ import java.util.logging.Logger;
 public class DBConexion {
     private static final String DATABASE_URL = "jdbc:mysql://localhost:3306/db_gimnasio";
     private static final String DATABASE_USER = "root";
-    private static final String DATABASE_PASSWORD = "andresdomenica";
+    private static final String DATABASE_PASSWORD = "kevinandres123";
     private static final String ACCESOREMOTO_URL = "jdbc:mysql://192.168.0.104:3306/db_gimnasio";
     private static final String ACCESOREMOTO_USER = "AccesoRemoto";
     private static final String ACCESOREMOTO_PASSWORD = "kevinandres123";
@@ -23,7 +23,8 @@ public class DBConexion {
     public static synchronized Connection getConnection() throws SQLException {
         if (conexion == null || conexion.isClosed()) {
             try {
-                conexion = DriverManager.getConnection(ACCESOREMOTO_URL, ACCESOREMOTO_USER, ACCESOREMOTO_PASSWORD);
+                conexion = DriverManager.getConnection(DATABASE_URL, DATABASE_USER, DATABASE_PASSWORD);
+                System.out.println("Conectado a BDD");
             } catch (SQLException e) {
                 LOGGER.log(Level.SEVERE, "Error al conectar con la base de datos: " + e.getMessage(), e);
                 throw e;
@@ -37,6 +38,7 @@ public class DBConexion {
             try {
                 conexion.close();
                 conexion = null;
+                System.out.println("Desconectado a BDD");
             } catch (SQLException e) {
                 LOGGER.log(Level.SEVERE, "Error al cerrar la conexión con la base de datos: " + e.getMessage(), e);
             }

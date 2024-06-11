@@ -4,21 +4,20 @@
  */
 package view;
 
-import java.awt.*;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
-import javax.swing.*;
+import java.awt.Color;
 
 /**
  *
  * @author kacor
  */
 public class PaginaPrincipalView extends javax.swing.JFrame {
-
+    Color naranjaOscuro = new Color(242,68,5);
+    Color naranja = new Color(242,98,15);
     /**
-     * Creates new form PaginaPrincipalView
+     * Creates new form PaginaPrincipalView2
      */
     public PaginaPrincipalView() {
+        this.setLocationRelativeTo(null);
         initComponents();
     }
 
@@ -31,501 +30,743 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        panelHeader = new javax.swing.JPanel();
-        lblTitulo = new javax.swing.JLabel();
-        lblUsuario = new javax.swing.JLabel();
-        panelOpciones = new javax.swing.JPanel();
-        btnPaginaPrincipal = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
-        btnSocios = new javax.swing.JPanel();
-        jLabel4 = new javax.swing.JLabel();
-        btnClases = new javax.swing.JPanel();
-        jLabel5 = new javax.swing.JLabel();
-        btnPagos = new javax.swing.JPanel();
-        jLabel6 = new javax.swing.JLabel();
-        btnActividades = new javax.swing.JPanel();
-        jLabel7 = new javax.swing.JLabel();
-        btnEspacios = new javax.swing.JPanel();
-        jLabel8 = new javax.swing.JLabel();
-        btnMaquinas = new javax.swing.JPanel();
-        jLabel9 = new javax.swing.JLabel();
-        btnInformes = new javax.swing.JPanel();
-        jLabel10 = new javax.swing.JLabel();
-        btnCerrarSesion = new javax.swing.JPanel();
-        jLabel11 = new javax.swing.JLabel();
-        jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel1 = new javax.swing.JPanel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        jPanel10 = new javax.swing.JPanel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        GrupoDePaneles = new javax.swing.JTabbedPane();
+        paginaPrincipalPanel = new javax.swing.JPanel();
+        jSeparator1 = new javax.swing.JSeparator();
+        panelGananciasTotales = new javax.swing.JPanel();
+        jLabel37 = new javax.swing.JLabel();
+        lblNumGanancias = new javax.swing.JLabel();
+        jLabel41 = new javax.swing.JLabel();
+        lblNombreGimnasio = new javax.swing.JLabel();
+        lblTelefono = new javax.swing.JLabel();
+        lblCorreoElectronico = new javax.swing.JLabel();
+        panelMembresias = new javax.swing.JPanel();
+        jLabel39 = new javax.swing.JLabel();
+        lblNumMembresias = new javax.swing.JLabel();
+        jLabel51 = new javax.swing.JLabel();
+        panelSocios = new javax.swing.JPanel();
+        jLabel42 = new javax.swing.JLabel();
+        lblNumSocios = new javax.swing.JLabel();
+        jLabel44 = new javax.swing.JLabel();
+        panelMaquinas = new javax.swing.JPanel();
+        jLabel45 = new javax.swing.JLabel();
+        lblNumMaquinas = new javax.swing.JLabel();
+        jLabel47 = new javax.swing.JLabel();
+        panelEntrenadores = new javax.swing.JPanel();
+        jLabel48 = new javax.swing.JLabel();
+        lblNumEntrenadores = new javax.swing.JLabel();
+        jLabel50 = new javax.swing.JLabel();
+        panelClasesActividades = new javax.swing.JPanel();
+        jLabel52 = new javax.swing.JLabel();
+        lblNumClases = new javax.swing.JLabel();
+        jLabel54 = new javax.swing.JLabel();
+        lblDireccion = new javax.swing.JLabel();
+        paginaSociosPanel = new javax.swing.JPanel();
+        jButton1 = new javax.swing.JButton();
+        jLabel24 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
+        jLabel31 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        jLabel33 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        jSeparator2 = new javax.swing.JSeparator();
+        paginaPagosPanel = new javax.swing.JPanel();
+        jLabel35 = new javax.swing.JLabel();
+        jButton3 = new javax.swing.JButton();
+        jLabel34 = new javax.swing.JLabel();
+        paginaClasesPanel = new javax.swing.JPanel();
+        jLabel26 = new javax.swing.JLabel();
+        paginaActividadesPanel = new javax.swing.JPanel();
+        jLabel27 = new javax.swing.JLabel();
+        paginaEspaciosPanel = new javax.swing.JPanel();
+        jLabel28 = new javax.swing.JLabel();
+        paginaMaquinasPanel = new javax.swing.JPanel();
+        jLabel29 = new javax.swing.JLabel();
+        paginaInformesPanel = new javax.swing.JPanel();
+        jLabel30 = new javax.swing.JLabel();
+        menuLateral = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
-        jLabel13 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
-        jLabel14 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
-        jLabel15 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
         jPanel6 = new javax.swing.JPanel();
-        jLabel16 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
         jPanel7 = new javax.swing.JPanel();
-        jLabel17 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
         jPanel8 = new javax.swing.JPanel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jPanel9 = new javax.swing.JPanel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jPanel11 = new javax.swing.JPanel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Sistema de Administracion");
+        setTitle("Pagina Principal");
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        panelHeader.setBackground(new java.awt.Color(242, 68, 5));
-
-        lblTitulo.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
-        lblTitulo.setForeground(new java.awt.Color(255, 255, 255));
-        lblTitulo.setText("Bienvenido, Admin");
-
-        lblUsuario.setFont(new java.awt.Font("Roboto Medium", 0, 24)); // NOI18N
-        lblUsuario.setForeground(new java.awt.Color(255, 255, 255));
-        lblUsuario.setText("Sistema de Administracion de Gimnasio");
-
-        javax.swing.GroupLayout panelHeaderLayout = new javax.swing.GroupLayout(panelHeader);
-        panelHeader.setLayout(panelHeaderLayout);
-        panelHeaderLayout.setHorizontalGroup(
-            panelHeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelHeaderLayout.createSequentialGroup()
-                .addGap(22, 22, 22)
-                .addComponent(lblUsuario)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 584, Short.MAX_VALUE)
-                .addComponent(lblTitulo)
-                .addGap(97, 97, 97))
-        );
-        panelHeaderLayout.setVerticalGroup(
-            panelHeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelHeaderLayout.createSequentialGroup()
-                .addContainerGap(30, Short.MAX_VALUE)
-                .addGroup(panelHeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblUsuario)
-                    .addComponent(lblTitulo))
-                .addGap(21, 21, 21))
-        );
-
-        getContentPane().add(panelHeader, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 80));
-
-        panelOpciones.setBackground(new java.awt.Color(0, 0, 0));
-        panelOpciones.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        btnPaginaPrincipal.setBackground(new java.awt.Color(242, 98, 15));
-        btnPaginaPrincipal.setForeground(new java.awt.Color(255, 255, 255));
-        btnPaginaPrincipal.setMaximumSize(new java.awt.Dimension(310, 60));
-        btnPaginaPrincipal.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnPaginaPrincipalMouseClicked(evt);
-            }
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                btnPaginaPrincipalMousePressed(evt);
-            }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                btnPaginaPrincipalMouseReleased(evt);
-            }
-        });
-
-        jLabel3.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel3.setFont(new java.awt.Font("Roboto Medium", 0, 14)); // NOI18N
-        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconoHomeMancuerna.png"))); // NOI18N
-        jLabel3.setText("Pagina Principal");
-
-        javax.swing.GroupLayout btnPaginaPrincipalLayout = new javax.swing.GroupLayout(btnPaginaPrincipal);
-        btnPaginaPrincipal.setLayout(btnPaginaPrincipalLayout);
-        btnPaginaPrincipalLayout.setHorizontalGroup(
-            btnPaginaPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(btnPaginaPrincipalLayout.createSequentialGroup()
-                .addGap(86, 86, 86)
-                .addComponent(jLabel3)
-                .addContainerGap(85, Short.MAX_VALUE))
-        );
-        btnPaginaPrincipalLayout.setVerticalGroup(
-            btnPaginaPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, btnPaginaPrincipalLayout.createSequentialGroup()
-                .addContainerGap(19, Short.MAX_VALUE)
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(19, 19, 19))
-        );
-
-        panelOpciones.add(btnPaginaPrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 310, 60));
-
-        btnSocios.setBackground(new java.awt.Color(242, 98, 15));
-        btnSocios.setForeground(new java.awt.Color(255, 255, 255));
-        btnSocios.setMaximumSize(new java.awt.Dimension(310, 60));
-        btnSocios.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                btnSociosMousePressed(evt);
-            }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                btnSociosMouseReleased(evt);
-            }
-        });
-
-        jLabel4.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel4.setFont(new java.awt.Font("Roboto Medium", 0, 14)); // NOI18N
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconoSocioNegro.png"))); // NOI18N
-        jLabel4.setText("Socios");
-
-        javax.swing.GroupLayout btnSociosLayout = new javax.swing.GroupLayout(btnSocios);
-        btnSocios.setLayout(btnSociosLayout);
-        btnSociosLayout.setHorizontalGroup(
-            btnSociosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(btnSociosLayout.createSequentialGroup()
-                .addGap(87, 87, 87)
-                .addComponent(jLabel4)
-                .addContainerGap(147, Short.MAX_VALUE))
-        );
-        btnSociosLayout.setVerticalGroup(
-            btnSociosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, btnSociosLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel4)
-                .addGap(18, 18, 18))
-        );
-
-        panelOpciones.add(btnSocios, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 310, 60));
-
-        btnClases.setBackground(new java.awt.Color(242, 98, 15));
-        btnClases.setForeground(new java.awt.Color(255, 255, 255));
-        btnClases.setMaximumSize(new java.awt.Dimension(310, 60));
-        btnClases.setPreferredSize(new java.awt.Dimension(310, 60));
-        btnClases.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                btnClasesMousePressed(evt);
-            }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                btnClasesMouseReleased(evt);
-            }
-        });
-
-        jLabel5.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel5.setFont(new java.awt.Font("Roboto Medium", 0, 14)); // NOI18N
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconoHombreMancuerna.png"))); // NOI18N
-        jLabel5.setText("Clases");
-
-        javax.swing.GroupLayout btnClasesLayout = new javax.swing.GroupLayout(btnClases);
-        btnClases.setLayout(btnClasesLayout);
-        btnClasesLayout.setHorizontalGroup(
-            btnClasesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(btnClasesLayout.createSequentialGroup()
-                .addGap(85, 85, 85)
-                .addComponent(jLabel5)
-                .addContainerGap(148, Short.MAX_VALUE))
-        );
-        btnClasesLayout.setVerticalGroup(
-            btnClasesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, btnClasesLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-
-        panelOpciones.add(btnClases, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 180, -1, -1));
-
-        btnPagos.setBackground(new java.awt.Color(242, 98, 15));
-        btnPagos.setForeground(new java.awt.Color(255, 255, 255));
-        btnPagos.setMaximumSize(new java.awt.Dimension(310, 60));
-        btnPagos.setPreferredSize(new java.awt.Dimension(310, 60));
-        btnPagos.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                btnPagosMousePressed(evt);
-            }
-            public void mouseReleased(java.awt.event.MouseEvent evt) {
-                btnPagosMouseReleased(evt);
-            }
-        });
-
-        jLabel6.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel6.setFont(new java.awt.Font("Roboto Medium", 0, 14)); // NOI18N
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconoMembresiaNegro.png"))); // NOI18N
-        jLabel6.setText("Pagos");
-
-        javax.swing.GroupLayout btnPagosLayout = new javax.swing.GroupLayout(btnPagos);
-        btnPagos.setLayout(btnPagosLayout);
-        btnPagosLayout.setHorizontalGroup(
-            btnPagosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(btnPagosLayout.createSequentialGroup()
-                .addGap(89, 89, 89)
-                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-        btnPagosLayout.setVerticalGroup(
-            btnPagosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(btnPagosLayout.createSequentialGroup()
-                .addGap(13, 13, 13)
-                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-
-        panelOpciones.add(btnPagos, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 310, 60));
-
-        btnActividades.setBackground(new java.awt.Color(242, 98, 15));
-        btnActividades.setForeground(new java.awt.Color(255, 255, 255));
-        btnActividades.setMaximumSize(new java.awt.Dimension(310, 60));
-        btnActividades.setPreferredSize(new java.awt.Dimension(310, 60));
-
-        jLabel7.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel7.setFont(new java.awt.Font("Roboto Medium", 0, 14)); // NOI18N
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconoParejaNegro.png"))); // NOI18N
-        jLabel7.setText("Actividades");
-
-        javax.swing.GroupLayout btnActividadesLayout = new javax.swing.GroupLayout(btnActividades);
-        btnActividades.setLayout(btnActividadesLayout);
-        btnActividadesLayout.setHorizontalGroup(
-            btnActividadesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(btnActividadesLayout.createSequentialGroup()
-                .addGap(91, 91, 91)
-                .addComponent(jLabel7)
-                .addContainerGap(110, Short.MAX_VALUE))
-        );
-        btnActividadesLayout.setVerticalGroup(
-            btnActividadesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, btnActividadesLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-
-        panelOpciones.add(btnActividades, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 240, -1, -1));
-
-        btnEspacios.setBackground(new java.awt.Color(242, 98, 15));
-        btnEspacios.setForeground(new java.awt.Color(255, 255, 255));
-        btnEspacios.setMaximumSize(new java.awt.Dimension(310, 60));
-        btnEspacios.setPreferredSize(new java.awt.Dimension(310, 60));
-
-        jLabel8.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel8.setFont(new java.awt.Font("Roboto Medium", 0, 14)); // NOI18N
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconoEspacios.png"))); // NOI18N
-        jLabel8.setText("Espacios");
-
-        javax.swing.GroupLayout btnEspaciosLayout = new javax.swing.GroupLayout(btnEspacios);
-        btnEspacios.setLayout(btnEspaciosLayout);
-        btnEspaciosLayout.setHorizontalGroup(
-            btnEspaciosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(btnEspaciosLayout.createSequentialGroup()
-                .addGap(84, 84, 84)
-                .addComponent(jLabel8)
-                .addContainerGap(132, Short.MAX_VALUE))
-        );
-        btnEspaciosLayout.setVerticalGroup(
-            btnEspaciosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, btnEspaciosLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-
-        panelOpciones.add(btnEspacios, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 300, -1, -1));
-
-        btnMaquinas.setBackground(new java.awt.Color(242, 98, 15));
-        btnMaquinas.setForeground(new java.awt.Color(255, 255, 255));
-        btnMaquinas.setMaximumSize(new java.awt.Dimension(310, 60));
-        btnMaquinas.setPreferredSize(new java.awt.Dimension(310, 60));
-
-        jLabel9.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel9.setFont(new java.awt.Font("Roboto Medium", 0, 14)); // NOI18N
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconoMaquinas.png"))); // NOI18N
-        jLabel9.setText("Maquinas");
-
-        javax.swing.GroupLayout btnMaquinasLayout = new javax.swing.GroupLayout(btnMaquinas);
-        btnMaquinas.setLayout(btnMaquinasLayout);
-        btnMaquinasLayout.setHorizontalGroup(
-            btnMaquinasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(btnMaquinasLayout.createSequentialGroup()
-                .addGap(84, 84, 84)
-                .addComponent(jLabel9)
-                .addContainerGap(129, Short.MAX_VALUE))
-        );
-        btnMaquinasLayout.setVerticalGroup(
-            btnMaquinasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, btnMaquinasLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-
-        panelOpciones.add(btnMaquinas, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 360, -1, -1));
-
-        btnInformes.setBackground(new java.awt.Color(242, 98, 15));
-        btnInformes.setForeground(new java.awt.Color(255, 255, 255));
-        btnInformes.setMaximumSize(new java.awt.Dimension(310, 60));
-        btnInformes.setPreferredSize(new java.awt.Dimension(310, 60));
-
-        jLabel10.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel10.setFont(new java.awt.Font("Roboto Medium", 0, 14)); // NOI18N
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconoInformes.png"))); // NOI18N
-        jLabel10.setText("Informes y analisis");
-
-        javax.swing.GroupLayout btnInformesLayout = new javax.swing.GroupLayout(btnInformes);
-        btnInformes.setLayout(btnInformesLayout);
-        btnInformesLayout.setHorizontalGroup(
-            btnInformesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, btnInformesLayout.createSequentialGroup()
-                .addContainerGap(84, Short.MAX_VALUE)
-                .addComponent(jLabel10)
-                .addGap(72, 72, 72))
-        );
-        btnInformesLayout.setVerticalGroup(
-            btnInformesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(btnInformesLayout.createSequentialGroup()
-                .addGap(16, 16, 16)
-                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        panelOpciones.add(btnInformes, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 420, -1, -1));
-
-        btnCerrarSesion.setBackground(new java.awt.Color(242, 98, 15));
-        btnCerrarSesion.setForeground(new java.awt.Color(255, 255, 255));
-        btnCerrarSesion.setMaximumSize(new java.awt.Dimension(310, 60));
-        btnCerrarSesion.setPreferredSize(new java.awt.Dimension(310, 60));
-
-        jLabel11.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel11.setFont(new java.awt.Font("Roboto Medium", 0, 14)); // NOI18N
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconoCerrarSesion.png"))); // NOI18N
-        jLabel11.setText("Cerrar Sesion");
-
-        javax.swing.GroupLayout btnCerrarSesionLayout = new javax.swing.GroupLayout(btnCerrarSesion);
-        btnCerrarSesion.setLayout(btnCerrarSesionLayout);
-        btnCerrarSesionLayout.setHorizontalGroup(
-            btnCerrarSesionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(btnCerrarSesionLayout.createSequentialGroup()
-                .addGap(87, 87, 87)
-                .addComponent(jLabel11)
-                .addContainerGap(103, Short.MAX_VALUE))
-        );
-        btnCerrarSesionLayout.setVerticalGroup(
-            btnCerrarSesionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(btnCerrarSesionLayout.createSequentialGroup()
-                .addGap(16, 16, 16)
-                .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        panelOpciones.add(btnCerrarSesion, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 480, -1, -1));
-
-        getContentPane().add(panelOpciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 310, 540));
-
-        jTabbedPane1.setBackground(new java.awt.Color(255, 255, 255));
-
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/registrarSocio.png"))); // NOI18N
-        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 10, 290, -1));
+        jPanel10.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/administrarSocios.png"))); // NOI18N
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 10, -1, -1));
+        jLabel22.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
+        jLabel22.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel22.setText("Bienvenido Admin");
+        jPanel10.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(1080, 10, -1, 40));
 
-        jTabbedPane1.addTab("tab1", jPanel1);
+        jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconoBarraBlanco.png"))); // NOI18N
+        jPanel10.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 10, -1, -1));
 
+        jLabel17.setFont(new java.awt.Font("Poppins Medium", 0, 20)); // NOI18N
+        jLabel17.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel17.setText("Gimnasio");
+        jPanel10.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 10, -1, 40));
+
+        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/barraTitulo.png"))); // NOI18N
+        jLabel18.setText("jLabel18");
+        jLabel18.setPreferredSize(new java.awt.Dimension(1280, 100));
+        jPanel10.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 60));
+
+        jPanel1.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 60));
+
+        GrupoDePaneles.setBackground(new java.awt.Color(255, 255, 255));
+
+        paginaPrincipalPanel.setBackground(new java.awt.Color(255, 255, 255));
+        paginaPrincipalPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        paginaPrincipalPanel.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 90, 440, 10));
+
+        panelGananciasTotales.setBorder(javax.swing.BorderFactory.createMatteBorder(10, 0, 0, 0, new java.awt.Color(0, 204, 51)));
+        panelGananciasTotales.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel37.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        jLabel37.setText("Totales");
+        jLabel37.setToolTipText("");
+        jLabel37.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        panelGananciasTotales.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 120, 20));
+
+        lblNumGanancias.setFont(new java.awt.Font("Poppins SemiBold", 0, 30)); // NOI18N
+        lblNumGanancias.setText("0");
+        panelGananciasTotales.add(lblNumGanancias, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 20, 20, 50));
+
+        jLabel41.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        jLabel41.setText("Ganancias");
+        jLabel41.setToolTipText("");
+        jLabel41.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        panelGananciasTotales.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 130, 30));
+
+        paginaPrincipalPanel.add(panelGananciasTotales, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 60, 200, 80));
+
+        lblNombreGimnasio.setFont(new java.awt.Font("Poppins SemiBold", 0, 36)); // NOI18N
+        lblNombreGimnasio.setText("Nombre del Gimnasio");
+        paginaPrincipalPanel.add(lblNombreGimnasio, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, -1, -1));
+
+        lblTelefono.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        lblTelefono.setText("Telefono");
+        paginaPrincipalPanel.add(lblTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, 110, -1));
+
+        lblCorreoElectronico.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        lblCorreoElectronico.setText("Correo electronico");
+        paginaPrincipalPanel.add(lblCorreoElectronico, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 250, -1));
+
+        panelMembresias.setBorder(javax.swing.BorderFactory.createMatteBorder(10, 0, 0, 0, javax.swing.UIManager.getDefaults().getColor("nb.errorForeground")));
+        panelMembresias.setForeground(new java.awt.Color(255, 102, 0));
+        panelMembresias.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel39.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        jLabel39.setText("Membresias");
+        panelMembresias.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, -1, 20));
+
+        lblNumMembresias.setFont(new java.awt.Font("Poppins SemiBold", 0, 30)); // NOI18N
+        lblNumMembresias.setText("0");
+        panelMembresias.add(lblNumMembresias, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 20, 20, 50));
+
+        jLabel51.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        jLabel51.setText("Registrados");
+        jLabel51.setToolTipText("");
+        jLabel51.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        panelMembresias.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 120, 30));
+
+        paginaPrincipalPanel.add(panelMembresias, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 60, 200, 80));
+
+        panelSocios.setBorder(javax.swing.BorderFactory.createMatteBorder(10, 0, 0, 0, new java.awt.Color(255, 51, 51)));
+        panelSocios.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel42.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        jLabel42.setText("Registrados");
+        jLabel42.setToolTipText("");
+        jLabel42.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        panelSocios.add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 120, 30));
+
+        lblNumSocios.setFont(new java.awt.Font("Poppins SemiBold", 0, 30)); // NOI18N
+        lblNumSocios.setText("0");
+        panelSocios.add(lblNumSocios, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 20, 20, 50));
+
+        jLabel44.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        jLabel44.setText("Socios");
+        jLabel44.setToolTipText("");
+        jLabel44.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        panelSocios.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 60, 20));
+
+        paginaPrincipalPanel.add(panelSocios, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 160, 200, 80));
+
+        panelMaquinas.setBorder(javax.swing.BorderFactory.createMatteBorder(10, 0, 0, 0, new java.awt.Color(255, 51, 0)));
+        panelMaquinas.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel45.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        jLabel45.setText("Activas");
+        jLabel45.setToolTipText("");
+        jLabel45.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        panelMaquinas.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 120, 20));
+
+        lblNumMaquinas.setFont(new java.awt.Font("Poppins SemiBold", 0, 30)); // NOI18N
+        lblNumMaquinas.setText("0");
+        panelMaquinas.add(lblNumMaquinas, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 20, 20, 50));
+
+        jLabel47.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        jLabel47.setText("Maquinas");
+        jLabel47.setToolTipText("");
+        jLabel47.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        panelMaquinas.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 90, 30));
+
+        paginaPrincipalPanel.add(panelMaquinas, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 270, 200, 80));
+
+        panelEntrenadores.setBorder(javax.swing.BorderFactory.createMatteBorder(10, 0, 0, 0, new java.awt.Color(255, 51, 0)));
+        panelEntrenadores.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel48.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        jLabel48.setText("Activos");
+        jLabel48.setToolTipText("");
+        jLabel48.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        panelEntrenadores.add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 120, 20));
+
+        lblNumEntrenadores.setFont(new java.awt.Font("Poppins SemiBold", 0, 30)); // NOI18N
+        lblNumEntrenadores.setText("0");
+        panelEntrenadores.add(lblNumEntrenadores, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 20, 20, 50));
+
+        jLabel50.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        jLabel50.setText("Entrenadores");
+        jLabel50.setToolTipText("");
+        jLabel50.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        panelEntrenadores.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 130, 30));
+
+        paginaPrincipalPanel.add(panelEntrenadores, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 370, 200, 80));
+
+        panelClasesActividades.setBorder(javax.swing.BorderFactory.createMatteBorder(10, 0, 0, 0, new java.awt.Color(255, 51, 0)));
+        panelClasesActividades.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel52.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        jLabel52.setText("Actividades");
+        jLabel52.setToolTipText("");
+        jLabel52.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        panelClasesActividades.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 120, 20));
+
+        lblNumClases.setFont(new java.awt.Font("Poppins SemiBold", 0, 30)); // NOI18N
+        lblNumClases.setText("0");
+        panelClasesActividades.add(lblNumClases, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 20, 20, 50));
+
+        jLabel54.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        jLabel54.setText("Clases y");
+        jLabel54.setToolTipText("");
+        jLabel54.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        panelClasesActividades.add(jLabel54, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 130, 30));
+
+        paginaPrincipalPanel.add(panelClasesActividades, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 470, 200, 80));
+
+        lblDireccion.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        lblDireccion.setText("Direccion");
+        paginaPrincipalPanel.add(lblDireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 110, 390, -1));
+
+        GrupoDePaneles.addTab("tab1", paginaPrincipalPanel);
+
+        paginaSociosPanel.setBackground(new java.awt.Color(255, 255, 255));
+        paginaSociosPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jButton1.setBackground(new java.awt.Color(255, 153, 102));
+        jButton1.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
+        jButton1.setText("Registrar un nuevo socio");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        paginaSociosPanel.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 450, -1, 40));
+
+        jLabel24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/image 1.jpg"))); // NOI18N
+        paginaSociosPanel.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 100, -1, -1));
+
+        jButton2.setBackground(new java.awt.Color(255, 153, 102));
+        jButton2.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
+        jButton2.setText("Ver socios existentes");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        paginaSociosPanel.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 450, 200, 40));
+
+        jLabel31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Rectangle 2 (1).png"))); // NOI18N
+        paginaSociosPanel.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(155, 100, 270, -1));
+
+        jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/1366_2000.jpeg"))); // NOI18N
+        paginaSociosPanel.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 100, 260, 300));
+
+        jLabel33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Rectangle 2 (1).png"))); // NOI18N
+        paginaSociosPanel.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 100, 270, -1));
+
+        jLabel25.setFont(new java.awt.Font("Poppins SemiBold", 0, 36)); // NOI18N
+        jLabel25.setText("Socios");
+        paginaSociosPanel.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
+        paginaSociosPanel.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, 350, 10));
+
+        GrupoDePaneles.addTab("tab2", paginaSociosPanel);
+
+        paginaPagosPanel.setBackground(new java.awt.Color(255, 255, 255));
+        paginaPagosPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/image 1.jpg"))); // NOI18N
+        paginaPagosPanel.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 100, -1, -1));
+
+        jButton3.setBackground(new java.awt.Color(255, 153, 102));
+        jButton3.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
+        jButton3.setText("Registrar un pago");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        paginaPagosPanel.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 450, -1, 40));
+
+        jLabel34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Rectangle 2 (1).png"))); // NOI18N
+        paginaPagosPanel.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(155, 100, 270, -1));
+
+        GrupoDePaneles.addTab("tab3", paginaPagosPanel);
+
+        paginaClasesPanel.setBackground(new java.awt.Color(255, 255, 255));
+        paginaClasesPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel26.setText("Clases");
+        paginaClasesPanel.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 30, -1, -1));
+
+        GrupoDePaneles.addTab("tab4", paginaClasesPanel);
+
+        paginaActividadesPanel.setBackground(new java.awt.Color(255, 255, 255));
+        paginaActividadesPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel27.setText("Actividades");
+        paginaActividadesPanel.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 100, -1, -1));
+
+        GrupoDePaneles.addTab("tab5", paginaActividadesPanel);
+
+        paginaEspaciosPanel.setBackground(new java.awt.Color(255, 255, 255));
+        paginaEspaciosPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel28.setText("Espacios");
+        paginaEspaciosPanel.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 80, -1, -1));
+
+        GrupoDePaneles.addTab("tab6", paginaEspaciosPanel);
+
+        paginaMaquinasPanel.setBackground(new java.awt.Color(255, 255, 255));
+        paginaMaquinasPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel29.setText("Maquinas");
+        paginaMaquinasPanel.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 40, -1, -1));
+
+        GrupoDePaneles.addTab("tab7", paginaMaquinasPanel);
+
+        paginaInformesPanel.setBackground(new java.awt.Color(255, 255, 255));
+        paginaInformesPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel30.setText("Infromes y analisis");
+        paginaInformesPanel.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 80, -1, -1));
+
+        GrupoDePaneles.addTab("tab8", paginaInformesPanel);
+
+        jPanel1.add(GrupoDePaneles, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 30, 1010, 650));
+
+        menuLateral.setBackground(new java.awt.Color(242, 98, 15));
+        menuLateral.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel2.setBackground(new java.awt.Color(242, 98, 15));
+        jPanel2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel2MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jPanel2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jPanel2MouseExited(evt);
+            }
+        });
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/registrarPago.png"))); // NOI18N
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 60, 290, 380));
+        jLabel1.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        jLabel1.setText("Pagina Principal");
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, -1, 30));
 
-        jTabbedPane1.addTab("tab2", jPanel2);
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconoHomeMancuerna.png"))); // NOI18N
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, -1, -1));
 
+        menuLateral.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 270, 50));
+
+        jPanel3.setBackground(new java.awt.Color(242, 98, 15));
+        jPanel3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel3MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jPanel3MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jPanel3MouseExited(evt);
+            }
+        });
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/agregarClase.png"))); // NOI18N
-        jPanel3.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 60, -1, -1));
+        jLabel3.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        jLabel3.setText("Cerrar Sesion");
+        jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, -1, 30));
 
-        jTabbedPane1.addTab("tab3", jPanel3);
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconoCerrarSesion.png"))); // NOI18N
+        jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, -1, -1));
 
+        menuLateral.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 520, 270, 50));
+
+        jPanel4.setBackground(new java.awt.Color(242, 98, 15));
+        jPanel4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel4MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jPanel4MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jPanel4MouseExited(evt);
+            }
+        });
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/agregarActividad.png"))); // NOI18N
-        jPanel4.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 50, -1, -1));
+        jLabel5.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        jLabel5.setText("Socios");
+        jPanel4.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, -1, 30));
 
-        jTabbedPane1.addTab("tab4", jPanel4);
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconoSocioNegro.png"))); // NOI18N
+        jPanel4.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, -1, -1));
 
+        menuLateral.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 170, 270, 50));
+
+        jPanel5.setBackground(new java.awt.Color(242, 98, 15));
+        jPanel5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel5MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jPanel5MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jPanel5MouseExited(evt);
+            }
+        });
         jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/agregarEspacio.png"))); // NOI18N
-        jPanel5.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 60, -1, -1));
+        jLabel7.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        jLabel7.setText("Pagos");
+        jPanel5.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, -1, 30));
 
-        jTabbedPane1.addTab("tab5", jPanel5);
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconoMembresiaNegro.png"))); // NOI18N
+        jPanel5.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, -1, -1));
 
+        menuLateral.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 220, 270, 50));
+
+        jPanel6.setBackground(new java.awt.Color(242, 98, 15));
+        jPanel6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel6MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jPanel6MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jPanel6MouseExited(evt);
+            }
+        });
         jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/agregarMaquina.png"))); // NOI18N
-        jPanel6.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 70, -1, -1));
+        jLabel9.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        jLabel9.setText("Clases");
+        jPanel6.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, -1, 30));
 
-        jTabbedPane1.addTab("tab6", jPanel6);
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconoHombreMancuerna.png"))); // NOI18N
+        jPanel6.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, -1, -1));
 
+        menuLateral.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 270, 270, 50));
+
+        jPanel7.setBackground(new java.awt.Color(242, 98, 15));
+        jPanel7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel7MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jPanel7MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jPanel7MouseExited(evt);
+            }
+        });
         jPanel7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/generarInforme.png"))); // NOI18N
-        jPanel7.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 50, -1, -1));
+        jLabel11.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        jLabel11.setText("Actividades");
+        jPanel7.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, -1, 30));
 
-        jTabbedPane1.addTab("tab7", jPanel7);
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconoParejaNegro.png"))); // NOI18N
+        jPanel7.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, -1, -1));
 
-        javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
-        jPanel8.setLayout(jPanel8Layout);
-        jPanel8Layout.setHorizontalGroup(
-            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 965, Short.MAX_VALUE)
-        );
-        jPanel8Layout.setVerticalGroup(
-            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 520, Short.MAX_VALUE)
-        );
+        menuLateral.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 320, 270, 50));
 
-        jTabbedPane1.addTab("tab8", jPanel8);
+        jPanel8.setBackground(new java.awt.Color(242, 98, 15));
+        jPanel8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel8MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jPanel8MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jPanel8MouseExited(evt);
+            }
+        });
+        jPanel8.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        getContentPane().add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 70, 970, 550));
+        jLabel13.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        jLabel13.setText("Espacios");
+        jPanel8.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, -1, 30));
+
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconoEspacios.png"))); // NOI18N
+        jPanel8.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, -1, -1));
+
+        menuLateral.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 370, 270, 50));
+
+        jPanel9.setBackground(new java.awt.Color(242, 98, 15));
+        jPanel9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel9MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jPanel9MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jPanel9MouseExited(evt);
+            }
+        });
+        jPanel9.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel15.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        jLabel15.setText("Maquinas");
+        jPanel9.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, -1, 30));
+
+        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconoMaquinas.png"))); // NOI18N
+        jPanel9.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, -1, -1));
+
+        menuLateral.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 420, 270, 50));
+
+        jPanel11.setBackground(new java.awt.Color(242, 98, 15));
+        jPanel11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel11MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jPanel11MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jPanel11MouseExited(evt);
+            }
+        });
+        jPanel11.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel19.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
+        jLabel19.setText("Informes y analisis");
+        jPanel11.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, -1, 30));
+
+        jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconoInformes.png"))); // NOI18N
+        jPanel11.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, -1, -1));
+
+        menuLateral.add(jPanel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 470, 270, 50));
+
+        jPanel1.add(menuLateral, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 270, 680));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 680));
 
         pack();
-        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnPaginaPrincipalMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPaginaPrincipalMouseClicked
-        // TODO add your handling code here
-    }//GEN-LAST:event_btnPaginaPrincipalMouseClicked
-
-    private void btnPaginaPrincipalMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPaginaPrincipalMouseReleased
+    private void jPanel2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel2MouseEntered
         // TODO add your handling code here:
-        btnPaginaPrincipal.setBackground(new Color(242,98,15));
-    }//GEN-LAST:event_btnPaginaPrincipalMouseReleased
+        jPanel2.setBackground(naranjaOscuro);
+    }//GEN-LAST:event_jPanel2MouseEntered
 
-    private void btnPaginaPrincipalMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPaginaPrincipalMousePressed
+    private void jPanel2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel2MouseExited
         // TODO add your handling code here:
-        btnPaginaPrincipal.setBackground(new Color(166, 37,8));
-    }//GEN-LAST:event_btnPaginaPrincipalMousePressed
+        jPanel2.setBackground(naranja);
+    }//GEN-LAST:event_jPanel2MouseExited
 
-    private void btnSociosMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSociosMousePressed
+    private void jPanel4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel4MouseEntered
         // TODO add your handling code here:
-        btnSocios.setBackground(new Color(166, 37,8));
-    }//GEN-LAST:event_btnSociosMousePressed
+        jPanel4.setBackground(naranjaOscuro);
+    }//GEN-LAST:event_jPanel4MouseEntered
 
-    private void btnSociosMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSociosMouseReleased
+    private void jPanel4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel4MouseExited
         // TODO add your handling code here:
-        btnSocios.setBackground(new Color(242,98,15));
-    }//GEN-LAST:event_btnSociosMouseReleased
+        jPanel4.setBackground(naranja);
+    }//GEN-LAST:event_jPanel4MouseExited
 
-    private void btnPagosMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPagosMousePressed
+    private void jPanel5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel5MouseEntered
         // TODO add your handling code here:
-        btnPagos.setBackground(new Color(166, 37,8));
-    }//GEN-LAST:event_btnPagosMousePressed
+        jPanel5.setBackground(naranjaOscuro);
+    }//GEN-LAST:event_jPanel5MouseEntered
 
-    private void btnPagosMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPagosMouseReleased
+    private void jPanel5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel5MouseExited
         // TODO add your handling code here:
-        btnPagos.setBackground(new Color(242,98,15));
-    }//GEN-LAST:event_btnPagosMouseReleased
+        jPanel5.setBackground(naranja);
+    }//GEN-LAST:event_jPanel5MouseExited
 
-    private void btnClasesMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnClasesMousePressed
+    private void jPanel6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel6MouseEntered
         // TODO add your handling code here:
-        btnPagos.setBackground(new Color(166, 37,8));
-    }//GEN-LAST:event_btnClasesMousePressed
+        jPanel6.setBackground(naranjaOscuro);
+    }//GEN-LAST:event_jPanel6MouseEntered
 
-    private void btnClasesMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnClasesMouseReleased
+    private void jPanel6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel6MouseExited
         // TODO add your handling code here:
-        btnPagos.setBackground(new Color(242,98,15));
-    }//GEN-LAST:event_btnClasesMouseReleased
-    
-    
-    
+        jPanel6.setBackground(naranja);
+    }//GEN-LAST:event_jPanel6MouseExited
+
+    private void jPanel7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel7MouseEntered
+        // TODO add your handling code here:
+        jPanel7.setBackground(naranjaOscuro);
+    }//GEN-LAST:event_jPanel7MouseEntered
+
+    private void jPanel7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel7MouseExited
+        // TODO add your handling code here:
+        jPanel7.setBackground(naranja);
+    }//GEN-LAST:event_jPanel7MouseExited
+
+    private void jPanel8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel8MouseEntered
+        // TODO add your handling code here:
+        jPanel8.setBackground(naranjaOscuro);
+    }//GEN-LAST:event_jPanel8MouseEntered
+
+    private void jPanel8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel8MouseExited
+        // TODO add your handling code here:
+        jPanel8.setBackground(naranja);
+    }//GEN-LAST:event_jPanel8MouseExited
+
+    private void jPanel9MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel9MouseEntered
+        // TODO add your handling code here:
+        jPanel9.setBackground(naranjaOscuro);
+    }//GEN-LAST:event_jPanel9MouseEntered
+
+    private void jPanel9MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel9MouseExited
+        // TODO add your handling code here:
+        jPanel9.setBackground(naranja);
+    }//GEN-LAST:event_jPanel9MouseExited
+
+    private void jPanel11MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel11MouseEntered
+        // TODO add your handling code here:
+        jPanel11.setBackground(naranjaOscuro);
+    }//GEN-LAST:event_jPanel11MouseEntered
+
+    private void jPanel11MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel11MouseExited
+        // TODO add your handling code here:
+        jPanel11.setBackground(naranja);
+    }//GEN-LAST:event_jPanel11MouseExited
+
+    private void jPanel3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel3MouseEntered
+        // TODO add your handling code here:
+        jPanel3.setBackground(naranjaOscuro);
+    }//GEN-LAST:event_jPanel3MouseEntered
+
+    private void jPanel3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel3MouseExited
+        // TODO add your handling code here:
+        jPanel3.setBackground(naranja);
+    }//GEN-LAST:event_jPanel3MouseExited
+
+    private void jPanel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel3MouseClicked
+        // TODO add your handling code here:
+        System.exit(0);
+    }//GEN-LAST:event_jPanel3MouseClicked
+
+    private void jPanel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel2MouseClicked
+        // TODO add your handling code here:
+        GrupoDePaneles.setSelectedIndex(0);
+    }//GEN-LAST:event_jPanel2MouseClicked
+
+    private void jPanel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel4MouseClicked
+        // TODO add your handling code here:
+        GrupoDePaneles.setSelectedIndex(1);
+    }//GEN-LAST:event_jPanel4MouseClicked
+
+    private void jPanel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel5MouseClicked
+        // TODO add your handling code here:
+        GrupoDePaneles.setSelectedIndex(2);
+    }//GEN-LAST:event_jPanel5MouseClicked
+
+    private void jPanel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel6MouseClicked
+        // TODO add your handling code here:
+        GrupoDePaneles.setSelectedIndex(3);
+    }//GEN-LAST:event_jPanel6MouseClicked
+
+    private void jPanel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel7MouseClicked
+        // TODO add your handling code here:
+        GrupoDePaneles.setSelectedIndex(4);
+    }//GEN-LAST:event_jPanel7MouseClicked
+
+    private void jPanel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel8MouseClicked
+        // TODO add your handling code here:
+        GrupoDePaneles.setSelectedIndex(5);
+    }//GEN-LAST:event_jPanel8MouseClicked
+
+    private void jPanel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel9MouseClicked
+        // TODO add your handling code here:
+        GrupoDePaneles.setSelectedIndex(6);
+    }//GEN-LAST:event_jPanel9MouseClicked
+
+    private void jPanel11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel11MouseClicked
+        // TODO add your handling code here:
+        GrupoDePaneles.setSelectedIndex(7);
+    }//GEN-LAST:event_jPanel11MouseClicked
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton3ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -552,6 +793,7 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(PaginaPrincipalView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -562,15 +804,10 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel btnActividades;
-    private javax.swing.JPanel btnCerrarSesion;
-    private javax.swing.JPanel btnClases;
-    private javax.swing.JPanel btnEspacios;
-    private javax.swing.JPanel btnInformes;
-    private javax.swing.JPanel btnMaquinas;
-    private javax.swing.JPanel btnPaginaPrincipal;
-    private javax.swing.JPanel btnPagos;
-    private javax.swing.JPanel btnSocios;
+    private javax.swing.JTabbedPane GrupoDePaneles;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -580,15 +817,46 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel47;
+    private javax.swing.JLabel jLabel48;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel50;
+    private javax.swing.JLabel jLabel51;
+    private javax.swing.JLabel jLabel52;
+    private javax.swing.JLabel jLabel54;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel10;
+    private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
@@ -596,10 +864,33 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
-    private javax.swing.JTabbedPane jTabbedPane1;
-    private javax.swing.JLabel lblTitulo;
-    private javax.swing.JLabel lblUsuario;
-    private javax.swing.JPanel panelHeader;
-    private javax.swing.JPanel panelOpciones;
+    private javax.swing.JPanel jPanel9;
+    private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSeparator jSeparator2;
+    private javax.swing.JLabel lblCorreoElectronico;
+    private javax.swing.JLabel lblDireccion;
+    private javax.swing.JLabel lblNombreGimnasio;
+    private javax.swing.JLabel lblNumClases;
+    private javax.swing.JLabel lblNumEntrenadores;
+    private javax.swing.JLabel lblNumGanancias;
+    private javax.swing.JLabel lblNumMaquinas;
+    private javax.swing.JLabel lblNumMembresias;
+    private javax.swing.JLabel lblNumSocios;
+    private javax.swing.JLabel lblTelefono;
+    private javax.swing.JPanel menuLateral;
+    private javax.swing.JPanel paginaActividadesPanel;
+    private javax.swing.JPanel paginaClasesPanel;
+    private javax.swing.JPanel paginaEspaciosPanel;
+    private javax.swing.JPanel paginaInformesPanel;
+    private javax.swing.JPanel paginaMaquinasPanel;
+    private javax.swing.JPanel paginaPagosPanel;
+    private javax.swing.JPanel paginaPrincipalPanel;
+    private javax.swing.JPanel paginaSociosPanel;
+    private javax.swing.JPanel panelClasesActividades;
+    private javax.swing.JPanel panelEntrenadores;
+    private javax.swing.JPanel panelGananciasTotales;
+    private javax.swing.JPanel panelMaquinas;
+    private javax.swing.JPanel panelMembresias;
+    private javax.swing.JPanel panelSocios;
     // End of variables declaration//GEN-END:variables
 }
