@@ -32,6 +32,24 @@ public class ListaSociosView extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jtSocios = new javax.swing.JTable();
+        jLabel3 = new javax.swing.JLabel();
+        ComboBoxCriterioBusqueda = new javax.swing.JComboBox<>();
+        TextFieldBusqueda = new javax.swing.JTextField();
+        ButtonBuscar = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        Cedula = new javax.swing.JTextField();
+        Nombre = new javax.swing.JTextField();
+        Apellido = new javax.swing.JTextField();
+        Email = new javax.swing.JTextField();
+        Telefono = new javax.swing.JTextField();
+        Direccion = new javax.swing.JTextField();
+        ButtonModificar = new javax.swing.JButton();
+        ButtonEliminar = new javax.swing.JButton();
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/barraTitulo.png"))); // NOI18N
         jLabel1.setText("jLabel1");
@@ -81,12 +99,51 @@ public class ListaSociosView extends javax.swing.JFrame {
         });
         jtSocios.setGridColor(new java.awt.Color(0, 0, 0));
         jtSocios.setName(""); // NOI18N
-        jtSocios.setRowHeight(20);
         jtSocios.setShowGrid(false);
         jtSocios.setShowHorizontalLines(true);
         jScrollPane1.setViewportView(jtSocios);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 330, 680, 120));
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 290, 680, 120));
+
+        jLabel3.setText("Buscar socio por:");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, -1, -1));
+
+        ComboBoxCriterioBusqueda.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "ID", "Nombre", "Cedula" }));
+        jPanel1.add(ComboBoxCriterioBusqueda, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 80, 140, 30));
+        jPanel1.add(TextFieldBusqueda, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 140, 160, 30));
+
+        ButtonBuscar.setText("Buscar");
+        jPanel1.add(ButtonBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 140, 120, 30));
+
+        jLabel4.setText("Cedula");
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 210, -1, -1));
+
+        jLabel5.setText("Nombre");
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 210, -1, -1));
+
+        jLabel6.setText("Apellido");
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 210, -1, -1));
+
+        jLabel7.setText("Email");
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 210, -1, -1));
+
+        jLabel8.setText("Telefono");
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 210, -1, -1));
+
+        jLabel9.setText("Direccion");
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 210, -1, -1));
+        jPanel1.add(Cedula, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 250, 110, -1));
+        jPanel1.add(Nombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 250, 100, 20));
+        jPanel1.add(Apellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 250, 100, -1));
+        jPanel1.add(Email, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 250, 110, 20));
+        jPanel1.add(Telefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 250, 120, 20));
+        jPanel1.add(Direccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 250, 110, 20));
+
+        ButtonModificar.setText("Modificar");
+        jPanel1.add(ButtonModificar, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 440, 120, 30));
+
+        ButtonEliminar.setText("Eliminar");
+        jPanel1.add(ButtonEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 440, 100, 30));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -138,9 +195,27 @@ public class ListaSociosView extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JTextField Apellido;
+    public javax.swing.JButton ButtonBuscar;
+    public javax.swing.JButton ButtonEliminar;
+    public javax.swing.JButton ButtonModificar;
+    public javax.swing.JTextField Cedula;
+    public javax.swing.JComboBox<String> ComboBoxCriterioBusqueda;
+    public javax.swing.JTextField Direccion;
+    public javax.swing.JTextField Email;
+    public javax.swing.JTextField Nombre;
+    public javax.swing.JTextField Telefono;
+    public javax.swing.JTextField TextFieldBusqueda;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     public javax.swing.JTable jtSocios;
