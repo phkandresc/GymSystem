@@ -1,38 +1,17 @@
 
 w
-java:S10660"/Merge this if statement with the enclosing one.(Ö‰ÅÄşÿÿÿÿ8•—ùº€2J$9e553031-1d65-46b8-9221-78368e3e6f17
+java:S10660"/Merge this if statement with the enclosing one.(Ö‰ÅÄşÿÿÿÿ8ß‚’«€2J$ec9a60a9-1e82-4113-9713-de49724a308c
 r
-java:S10666"/Merge this if statement with the enclosing one.(İŒ÷¡8•—ùº€2J$15a9390c-d9c4-42f7-a9c7-6fddb2e1f1e1
+java:S10666"/Merge this if statement with the enclosing one.(İŒ÷¡8ß‚’«€2J$4db55d85-da85-4468-a305-26380d740abf
 w
-java:S1066="/Merge this if statement with the enclosing one.(¨´§“şÿÿÿÿ8•—ùº€2J$ac005bbb-ff6a-4aa4-9aaf-d185393b91bd
+java:S1066="/Merge this if statement with the enclosing one.(¨´§“şÿÿÿÿ8ß‚’«€2J$8834283b-4c8f-4872-aadb-94d1af06884b
 r
-java:S1066D"/Merge this if statement with the enclosing one.(éûÏ•8•—ùº€2J$feaa3695-ca4b-4f34-bc34-d561df7536fa
+java:S1066D"/Merge this if statement with the enclosing one.(éûÏ•8ß‚’«€2J$d53cfd37-00fa-4867-a531-dde2b22ec517
 r
-java:S1066K"/Merge this if statement with the enclosing one.(Š³÷ä8•—ùº€2J$d185ec3d-c773-47f3-bbf2-576d9894a5ce
+java:S1066K"/Merge this if statement with the enclosing one.(Š³÷ä8Âç˜«€2J$87c0d590-fa7d-4339-91ac-2b8de7fb3dd5
 w
-java:S1066R"/Merge this if statement with the enclosing one.(ÆÄÑ“üÿÿÿÿ8•—ùº€2J$6a51d7ac-00ba-4b18-b390-063a32d27d40
-ˆ	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Åìä’8ÕÔõª€2J$b982c376-c733-4d7d-92ca-1b2ef5593f81
-‡	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(õˆ’u8ÖÔõª€2J$8c388b47-6e86-4cad-895e-1363297a137a
-ˆ	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(”Œ¿8ñŠÇ¬€2J$32ccb75c-adc9-4694-882d-28b8d043a88f
-g	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(â‘¥óüÿÿÿÿ8óµš»€2
-b	java:S112""FDefine and throw a dedicated exception instead of using a generic one.(ÈƒâÀ8óµš»€2
-b	java:S112&"FDefine and throw a dedicated exception instead of using a generic one.(Ô§Ş÷8óµš»€2
-ˆ	java:S112*"FDefine and throw a dedicated exception instead of using a generic one.(®€íÇ8¤—ùº€2J$7c41b4c6-663e-499b-9a2b-308fd60c26bd
-¯
-java:S1130"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(Åìä’8ØÔõª€2J$f0ebea46-59d3-4dce-9ee9-326f099f485c
-®
-java:S1130"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(õˆ’u8ÙÔõª€2J$1811bc66-3302-42ba-a478-67504410a83e
-¯
-java:S1130"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(”Œ¿8õŠÇ¬€2J$17fb2970-ccd5-44c7-a214-79d6379b1b2a
-
-java:S1130"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(â‘¥óüÿÿÿÿ8ğ¶š»€2
-‰
-java:S1130""lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(ÈƒâÀ8·š»€2
-‰
-java:S1130&"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(Ô§Ş÷8·š»€2
-¯
-java:S1130*"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(®€íÇ8´—ùº€2J$6d559610-df3f-4e8f-90ad-23b25aff79f1
+java:S1066R"/Merge this if statement with the enclosing one.(ÆÄÑ“üÿÿÿÿ8Âç˜«€2J$f49c7680-3926-473d-b8ca-d41ef26d122d
 š
-java:S3776."RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(ŠÒáãûÿÿÿÿ8´—ùº€2J$6abf578b-08bc-45db-ad4a-77aac99b522f
+java:S3776."RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(ŠÒáãûÿÿÿÿ8ä‚’«€2J$74af7fb7-d6a9-434a-9b21-235d610d68c2
 
-java:S5998h"LRefactor this repetition that can lead to a stack overflow for large inputs.(õæˆB8Ã—ùº€2J$48bf02ac-a307-434f-a3c6-ef9eed032707
+java:S5998h"LRefactor this repetition that can lead to a stack overflow for large inputs.(õæˆB8Çæ«€2J$17865112-35be-442e-ba5c-d801dbe454c3
