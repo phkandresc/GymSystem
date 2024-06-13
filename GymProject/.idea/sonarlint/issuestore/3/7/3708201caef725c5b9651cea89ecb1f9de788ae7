@@ -1,0 +1,16 @@
+
+	java:S112‡"FDefine and throw a dedicated exception instead of using a generic one.(¼ÿ¾¹ÿÿÿÿÿ8¢«éÙ€2J$bf5cbf1d-5680-4887-99c0-649490f1a10e
+Ê
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(®î’×üÿÿÿÿ8£«éÙ€2J$de6d5405-bd85-40ff-9f12-3f0a32a148e8
+Å
+java:S1186“"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ãÆĞÂ8£«éÙ€2J$2e38749e-2d71-47f2-8f3d-6af977b613e2
+Ê
+java:S1186˜"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ö„˜şúÿÿÿÿ8£«éÙ€2J$ecd7bfee-9719-440c-a7da-1e2fa52d93c0
+Ê
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•ßçùÿÿÿÿ8£«éÙ€2J$07cff4d5-2211-4a13-8f5e-ac9f014cdbb0
+š
+java:S3776?"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(¼ Òşüÿÿÿÿ8©«éÙ€2J$c17fc288-c6b0-4790-a4ed-1e5534555a04
+^
+java:S3626g"Remove this redundant jump.(ûÁİ…8««éÙ€2J$53b455a2-daab-43e2-b5f1-40c5c9c17a85
+M
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8äø•Ú€2

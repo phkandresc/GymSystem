@@ -1,7 +1,9 @@
 package model;
 
+import com.zaxxer.hikari.HikariConfig;
+import com.zaxxer.hikari.HikariDataSource;
+
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -14,33 +16,37 @@ public class DBConexion {
     private static final String ACCESOREMOTO_USER = "AccesoRemoto";
     private static final String ACCESOREMOTO_PASSWORD = "kevinandres123";
 
-    private static Connection conexion = null;
+    private static HikariConfig config = new HikariConfig();
+    private static HikariDataSource ds;
     private static final Logger LOGGER = Logger.getLogger(DBConexion.class.getName());
 
-    private DBConexion() {
+    static {
+        config.setJdbcUrl(ACCESOREMOTO_URL);
+        config.setUsername(ACCESOREMOTO_USER);
+        config.setPassword(ACCESOREMOTO_PASSWORD);
+        config.addDataSourceProperty("cachePrepStmts", "true");
+        config.addDataSourceProperty("prepStmtCacheSize", "250");
+        config.addDataSourceProperty("prepStmtCacheSqlLimit", "2048");
+        ds = new HikariDataSource(config);
     }
 
-    public static synchronized Connection getConnection() throws SQLException {
-        if (conexion == null || conexion.isClosed()) {
-            try {
-                conexion = DriverManager.getConnection(DATABASE_URL, DATABASE_USER, DATABASE_PASSWORD);
-                System.out.println("Conectado a BDD");
-            } catch (SQLException e) {
-                LOGGER.log(Level.SEVERE, "Error al conectar con la base de datos: " + e.getMessage(), e);
-                throw e;
-            }
+    private DBConexion() {}
+
+    public static Connection getConnection() throws SQLException {
+        try {
+            return ds.getConnection();
+        } catch (SQLException e) {
+            LOGGER.log(Level.SEVERE, "Error al obtener la conexión: " + e.getMessage(), e);
+            throw e;
         }
-        return conexion;
     }
 
-    public static void closeConnection() {
-        if (conexion != null) {
+    public static void closeConnection(Connection connection) {
+        if (connection != null) {
             try {
-                conexion.close();
-                conexion = null;
-                System.out.println("Desconectado a BDD");
+                connection.close();
             } catch (SQLException e) {
-                LOGGER.log(Level.SEVERE, "Error al cerrar la conexión con la base de datos: " + e.getMessage(), e);
+                LOGGER.log(Level.SEVERE, "Error al cerrar la conexión: " + e.getMessage(), e);
             }
         }
     }

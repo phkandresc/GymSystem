@@ -1,20 +1,15 @@
 
-Â
-java:S1186?"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(®î’×üÿÿÿÿJ$5ce56390-2311-4e75-8b21-e3b4933481a4
-½
-java:S1186D"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ãÆĞÂJ$0dbf094a-dd08-4af0-8c5f-8fa71dc03480
-Â
-java:S1186I"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ö„˜şúÿÿÿÿJ$d37c1abf-4b97-455a-ba9d-53be61dcafc5
-Â
-java:S1186N"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•ßçùÿÿÿÿJ$73341a66-c498-470e-b8d3-0c2357028814
-…
-java:S1854,"BRemove this useless assignment to local variable "paginaPricipal".(¥÷ú¦8©Êã‚€2J$6292942d-6af3-4be2-acfa-88a303587bcf
-p
-java:S1874%"/Remove this use of "getText"; it is deprecated.(Ş¯É°úÿÿÿÿJ$03b9f51f-ff9c-4d9c-a26e-0f2f2b83bf4d
-L	java:S106*"+Replace this use of System.out by a logger.(©¡µğùÿÿÿÿ8“³î˜€2
-v
-java:S1481,"3Remove this unused "paginaPricipal" local variable.(¥÷ú¦8«Êã‚€2J$63e706c1-8baa-41e3-b805-d0f7376da0e1
-L	java:S106/"+Replace this use of System.out by a logger.(’¢ÑÄûÿÿÿÿ8“³î˜€2
-L	java:S1063"+Replace this use of System.out by a logger.(Èò ÷ùÿÿÿÿ8“³î˜€2
-p
-java:S1874_"/Remove this use of "getText"; it is deprecated.(Ç”œåüÿÿÿÿJ$fea0dd58-16e3-42c9-9c33-5b0c52aefc84
+É
+java:S1186?"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(®î’×üÿÿÿÿ8ó‚Œ€2J$7c38793e-a90a-497e-b23c-1b2ee71765bb
+Ä
+java:S1186D"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ãÆĞÂ8ó‚Œ€2J$b27a846b-ff0f-4471-9a8d-821b97641061
+É
+java:S1186I"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ö„˜şúÿÿÿÿ8ó‚Œ€2J$018dce6e-abd3-40ca-aed0-c14f90dea6da
+É
+java:S1186N"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•ßçùÿÿÿÿ8ó‚Œ€2J$6ccf22b8-a39a-443f-9597-b55bbf8e2015
+w
+java:S1874%"/Remove this use of "getText"; it is deprecated.(Ş¯É°úÿÿÿÿ8÷‚Œ€2J$5560df14-df39-4597-9d91-a3ae487c9542
+w
+java:S1874_"/Remove this use of "getText"; it is deprecated.(Ç”œåüÿÿÿÿ8û‚Œ€2J$eed21a83-8112-4fc4-8a37-c7d0a5a9c1f3
+œ
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(“™ÓÀøÿÿÿÿ8ÏİÉ€2J$f6995f68-f443-4b1b-aa69-2a5343420b21

@@ -3,7 +3,7 @@ package controller;
 import DataAccessObject.AdministradorDAO;
 import model.Administrador;
 import view.IniciarSesionView;
-import view.PaginaPrincipalView;
+import controller.AppController;
 
 import javax.swing.*;
 import java.awt.event.*;
@@ -12,9 +12,9 @@ public class IniciarSesionController implements ActionListener, MouseListener, F
     private IniciarSesionView iniciarSesionView;
     private AdministradorDAO administradorDAO;
 
-    public IniciarSesionController(IniciarSesionView iniciarSesionView, AdministradorDAO administradorDAO){
-        this.iniciarSesionView = iniciarSesionView;
-        this.administradorDAO = administradorDAO;
+    public IniciarSesionController(){
+        this.iniciarSesionView =  new IniciarSesionView();
+        this.administradorDAO = new AdministradorDAO();
         iniciarSesionView.btnIniciarSesion.addMouseListener(this);
         iniciarSesionView.txtUsuario.addFocusListener(this);
         iniciarSesionView.txtContrasena.addFocusListener(this);
@@ -41,7 +41,7 @@ public class IniciarSesionController implements ActionListener, MouseListener, F
                 JOptionPane.showMessageDialog(null, "Sesion iniciada");
                 System.out.println("Sesion iniciada");
                 iniciarSesionView.dispose();
-                PaginaPrincipalController paginaPricipal = new PaginaPrincipalController(new PaginaPrincipalView());
+                new AppController();
             } else {
                 JOptionPane.showMessageDialog(null, "Usuario o contraseña incorrectos");
                 System.out.println("Usuario o contraseña incorrectos");

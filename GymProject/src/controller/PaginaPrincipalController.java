@@ -9,11 +9,9 @@ import java.awt.event.*;
 
 public class PaginaPrincipalController implements ActionListener, MouseListener, FocusListener {
     private PaginaPrincipalView paginaPrincipalView;
-    private GimnasioDAO gimnasioDAO;
-    private Gimnasio gimnasio;
 
-    public PaginaPrincipalController(PaginaPrincipalView paginaPrincipalView) {
-        this.paginaPrincipalView = paginaPrincipalView;
+    public PaginaPrincipalController() {
+        this.paginaPrincipalView = new PaginaPrincipalView();
         paginaPrincipalView.btnRegistrarNuevoSocio.addActionListener(this);
         paginaPrincipalView.setLocationRelativeTo(null);
         paginaPrincipalView.setVisible(true);
@@ -21,12 +19,13 @@ public class PaginaPrincipalController implements ActionListener, MouseListener,
     }
 
     public void setInformacionGimnasio() {
+        GimnasioDAO gimnasioDAO;
 
         try {
             gimnasioDAO = new GimnasioDAO();
-            gimnasio = gimnasioDAO.obtenerGimnasioPorId(1);
+            Gimnasio gimnasio = gimnasioDAO.obtenerGimnasioPorId(1);
             paginaPrincipalView.lblNombreGimnasio.setText(gimnasio.getNombre());
-            paginaPrincipalView.lblDireccion.setText("<html>"+gimnasio.getDireccion()+"</html>");
+            paginaPrincipalView.lblDireccion.setText("<html>"+ gimnasio.getDireccion()+"</html>");
             paginaPrincipalView.lblTelefono.setText(gimnasio.getTelefono());
             paginaPrincipalView.lblCorreoElectronico.setText(gimnasio.getEmail());
         } catch (Exception e) {

@@ -1,14 +1,20 @@
 
 É
-java:S1186F"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ä Ïúüÿÿÿÿ8ĞÁı¬€2J$1394da34-a008-4ec3-9d41-5b5f30a0b3b2
+java:S1186h"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ä Ïúüÿÿÿÿ8–ß‹ÿ€2J$6b704590-f343-49a7-a5c6-e6010840c58e
 É
-java:S1186K"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(®î’×üÿÿÿÿ8ĞÁı¬€2J$eb1a07d1-376e-49a1-8da8-4235036d9f6a
+java:S1186m"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(®î’×üÿÿÿÿ8–ß‹ÿ€2J$39229983-686b-4eea-9d81-06180d75c446
 Ä
-java:S1186P"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ãÆĞÂ8ĞÁı¬€2J$adb72deb-a1ab-4b74-9edb-c654cb37d9ba
+java:S1186r"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ãÆĞÂ8—ß‹ÿ€2J$82be2ece-336b-4dff-85a2-5a1c0292badd
 É
-java:S1186U"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ö„˜şúÿÿÿÿ8ĞÁı¬€2J$26229ee0-7709-4d39-a2ef-f756841a6b4d
+java:S1186w"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ö„˜şúÿÿÿÿ8—ß‹ÿ€2J$f1c0416c-07f6-468c-8f46-84a1b3fc771a
 É
-java:S1186Z"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•ßçùÿÿÿÿ8ĞÁı¬€2J$8a7b5ef8-ee02-464a-b4fe-a4cf616a89fd
-r	java:S1064"+Replace this use of System.out by a logger.(ı™øøÿÿÿÿ8¼ô÷®€2J$122ec987-94d2-4479-9b7c-06b51a4198f6
+java:S1186|"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•ßçùÿÿÿÿ8—ß‹ÿ€2J$b2df55f0-7ca4-408e-bf34-c59eaf8fe667
 „
-java:S1117a"ARename "tipoMembresia" which hides the field declared at line 21.(Ìõş8ÔÁı¬€2J$6ef4cd64-a136-4eb3-9592-85a54f09b1a8
+java:S1117S"ARename "tipoMembresia" which hides the field declared at line 23.(Ìõş8à¨‹ÿ€2J$2c0ab375-3ca2-41be-8518-9ac6f326020b
+R
+java:S1128"5Remove this unused import 'view.PaginaPrincipalView'.(äÉØŒ8˜­™ÿ€2
+œ
+java:S1128
+"TRemove this unnecessary import: same package classes are always implicitly imported.(ßùµËùÿÿÿÿ8Ÿ§Œÿ€2J$5074373e-0f9a-4737-aeb1-514196601ad2
+€
+java:S1068"=Remove this unused "paginaPrincipalController" private field.(®Ó8Ÿ§Œÿ€2J$116bfd98-c774-4a8e-a57a-889fe18b80c0

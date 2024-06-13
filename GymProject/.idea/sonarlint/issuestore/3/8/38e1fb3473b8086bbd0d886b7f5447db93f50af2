@@ -1,17 +1,42 @@
 
 w
-java:S10660"/Merge this if statement with the enclosing one.(Ö‰ÅÄşÿÿÿÿ8ß‚’«€2J$ec9a60a9-1e82-4113-9713-de49724a308c
+java:S10661"/Merge this if statement with the enclosing one.(Ö‰ÅÄşÿÿÿÿ8ãŒØ€2J$6f76d85e-866e-4f0d-8615-6e4ef894c139
 r
-java:S10666"/Merge this if statement with the enclosing one.(İŒ÷¡8ß‚’«€2J$4db55d85-da85-4468-a305-26380d740abf
+java:S10667"/Merge this if statement with the enclosing one.(İŒ÷¡8ãŒØ€2J$060cb7dc-0793-4391-ac1a-4269065fab66
 w
-java:S1066="/Merge this if statement with the enclosing one.(¨´§“şÿÿÿÿ8ß‚’«€2J$8834283b-4c8f-4872-aadb-94d1af06884b
+java:S1066>"/Merge this if statement with the enclosing one.(¨´§“şÿÿÿÿ8ãŒØ€2J$0750c5e3-98a9-40ff-9bf4-75eb027a7924
 r
-java:S1066D"/Merge this if statement with the enclosing one.(éûÏ•8ß‚’«€2J$d53cfd37-00fa-4867-a531-dde2b22ec517
+java:S1066E"/Merge this if statement with the enclosing one.(éûÏ•8ãŒØ€2J$685e09f3-9f7f-47cd-b42b-c819739daef9
 r
-java:S1066K"/Merge this if statement with the enclosing one.(Š³÷ä8Âç˜«€2J$87c0d590-fa7d-4339-91ac-2b8de7fb3dd5
+java:S1066L"/Merge this if statement with the enclosing one.(Š³÷ä8ãŒØ€2J$a8cc7939-8977-4682-a3fd-e1fe7781336c
 w
-java:S1066R"/Merge this if statement with the enclosing one.(ÆÄÑ“üÿÿÿÿ8Âç˜«€2J$f49c7680-3926-473d-b8ca-d41ef26d122d
+java:S1066S"/Merge this if statement with the enclosing one.(ÆÄÑ“üÿÿÿÿ8ãŒØ€2J$94abdb20-7d91-4d22-b7e1-9d29320118b9
+ˆ	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Åìä’8äŒØ€2J$e382ff83-1711-496e-bf51-986e7660ae5c
+‡	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(õˆ’u8äŒØ€2J$0e69ed36-3580-4b31-947b-71be3d5dbd90
+‡	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(¬ÂÓ8äŒØ€2J$5a82136b-ad8e-4255-b5ba-4a2aff4effb0
+	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(â‘¥óüÿÿÿÿ8äŒØ€2J$2e133c82-1476-409c-b8f7-6d64ef36e2da
+ˆ	java:S112#"FDefine and throw a dedicated exception instead of using a generic one.(ÈƒâÀ8äŒØ€2J$6ccdf22f-f963-4182-8ae4-22e54a79ba0f
+ˆ	java:S112'"FDefine and throw a dedicated exception instead of using a generic one.(Ô§Ş÷8äŒØ€2J$8a646506-6532-400d-9c6c-9c282ca5cb59
+ˆ	java:S112+"FDefine and throw a dedicated exception instead of using a generic one.(®€íÇ8äŒØ€2J$8ffb045d-7f14-4e23-b7b3-f7feaae75c22
+¯
+java:S1130"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(Åìä’8æŒØ€2J$7fcf3dc5-8d56-4209-b9c0-12861139a5b0
+®
+java:S1130"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(õˆ’u8æŒØ€2J$799ae64d-00de-4a2d-a364-6a92885d777a
+®
+java:S1130"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(¬ÂÓ8çŒØ€2J$4e0fca10-83a3-41b6-941e-1241bb6b1834
+´
+java:S1130"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(â‘¥óüÿÿÿÿ8çŒØ€2J$b1a4172f-b395-4eef-978d-7e0ea176a8e4
+¯
+java:S1130#"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(ÈƒâÀ8çŒØ€2J$9d73fbd3-0f77-46ae-8ecd-3dc97a39ca63
+¯
+java:S1130'"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(Ô§Ş÷8çŒØ€2J$15c6f597-69f3-4554-b090-10e44248afac
+¯
+java:S1130+"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(®€íÇ8èŒØ€2J$bce65ca8-4021-4a77-bc4f-7697a41758d5
 š
-java:S3776."RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(ŠÒáãûÿÿÿÿ8ä‚’«€2J$74af7fb7-d6a9-434a-9b21-235d610d68c2
+java:S3776/"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(ŠÒáãûÿÿÿÿ8èŒØ€2J$dcb591eb-d018-4766-ab41-87f191ab4cc4
 
-java:S5998h"LRefactor this repetition that can lead to a stack overflow for large inputs.(õæˆB8Çæ«€2J$17865112-35be-442e-ba5c-d801dbe454c3
+java:S5998i"LRefactor this repetition that can lead to a stack overflow for large inputs.(õæˆB8ëŒØ€2J$026d2620-7ce4-4f20-91af-a9a82b4fa95e
+š
+java:S3776u"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(ÎÓ‚øÿÿÿÿ8ëŒØ€2J$0d4d0c93-e8fb-4181-91dc-ba3027ef06b2
+
+java:S6353{"<Use concise character class syntax '\\d' instead of '[0-9]'.(Á±â8ìŒØ€2J$aa3a3e03-0095-4ec0-832d-b9decbc1e45e

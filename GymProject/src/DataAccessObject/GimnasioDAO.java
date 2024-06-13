@@ -13,9 +13,9 @@ public class GimnasioDAO {
     public Gimnasio obtenerGimnasioPorId(int id) throws SQLException {
         Gimnasio gimnasio = null;
         String sql = "SELECT * FROM gimnasios WHERE id = ?";
+        Connection connection = DBConexion.getConnection();
 
-        try (Connection connection = DBConexion.getConnection();
-             PreparedStatement statement = connection.prepareStatement(sql)) {
+        try (PreparedStatement statement = connection.prepareStatement(sql)) {
             statement.setInt(1, id);
             try (ResultSet resultSet = statement.executeQuery()) {
                 if (resultSet.next()) {
@@ -30,7 +30,7 @@ public class GimnasioDAO {
                 }
             }
         }
-        DBConexion.closeConnection();
+        DBConexion.closeConnection(connection);
         return gimnasio;
     }
 }

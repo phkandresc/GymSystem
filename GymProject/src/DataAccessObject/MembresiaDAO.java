@@ -15,7 +15,6 @@ public class MembresiaDAO {
     public void registrarMembresia(Membresia membresia) throws SQLException {
         PreparedStatement ps = null;
         Connection conexion = DBConexion.getConnection();
-
         String sql = "INSERT INTO membresias (id_socio, id_tipomembresia, id_gimnasio, fecha_inicio, fecha_fin) VALUES (?, ?, ?, ?, ?)";
 
         try {
@@ -36,14 +35,13 @@ public class MembresiaDAO {
             if (conexion != null) {
                 conexion.close();
             }
-            DBConexion.closeConnection();
+            DBConexion.closeConnection(conexion);
         }
     }
 
     public void eliminarMembresia(int id) throws SQLException {
         PreparedStatement ps = null;
         Connection conexion = DBConexion.getConnection();
-
         String sql = "DELETE FROM membresias WHERE id = ?";
 
         try {
@@ -60,7 +58,7 @@ public class MembresiaDAO {
             if (conexion != null) {
                 conexion.close();
             }
-            DBConexion.closeConnection();
+            DBConexion.closeConnection(conexion);
         }
     }
 
@@ -91,7 +89,7 @@ public class MembresiaDAO {
                     LOGGER.severe(e.getMessage());
                 }
             }
-            DBConexion.closeConnection();
+            DBConexion.closeConnection(conexion);
         }
     }
 }

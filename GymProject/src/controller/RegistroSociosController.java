@@ -5,7 +5,9 @@ import model.TipoMembresia;
 import service.MembresiaService;
 import service.SocioService;
 import service.TipoMembresiaService;
+import view.PaginaPrincipalView;
 import view.RegistroSociosView;
+import controller.PaginaPrincipalController;
 
 import javax.swing.*;
 import java.awt.event.*;
@@ -19,6 +21,7 @@ public class RegistroSociosController implements ActionListener, ItemListener, M
     private Socio socio;
     private List<TipoMembresia> listaTiposMembresia;
     private TipoMembresia tipoMembresia;
+    private PaginaPrincipalController paginaPrincipalController;
 
     public RegistroSociosController(RegistroSociosView view) {
         this.registroSociosView = view;
@@ -38,23 +41,30 @@ public class RegistroSociosController implements ActionListener, ItemListener, M
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == registroSociosView.ButtonRegistrar) {
-            try {
-                socio = socioService.validarSocio(registroSociosView);
-                if(socio != null){
-                    socioService.registrarSocio(socio);
-                    JOptionPane.showMessageDialog(null, "Socio registrado correctamente");
-                    socio = socioService.buscarSocioPorCedula(socio.getCedula());
-                    membresiaService.registrarMembresia(socio, listaTiposMembresia.get(registroSociosView.cmbTipoMembresia.getSelectedIndex()));
-                    JOptionPane.showMessageDialog(null, "Membresia registrada correctamente");
-                    vaciarCampos();
-                }
-            } catch (Exception ex) {
-                System.out.println(ex.getMessage());
-                JOptionPane.showMessageDialog(null, "Error al registrar el socio");
-            }
+            registrarSocio();
         } else if (e.getSource() == registroSociosView.ButtonCancelar) {
-            registroSociosView.dispose();
+            cancelarRegistro();
         }
+    }
+
+    private void registrarSocio() {
+        try {
+            socio = socioService.validarSocio(registroSociosView);
+            if(socio != null){
+                socioService.registrarSocio(socio);
+                JOptionPane.showMessageDialog(null, "Socio registrado correctamente");
+                socio = socioService.buscarSocioPorCedula(socio.getCedula());
+                membresiaService.registrarMembresia(socio, listaTiposMembresia.get(registroSociosView.cmbTipoMembresia.getSelectedIndex()));
+                JOptionPane.showMessageDialog(null, "Membresia registrada correctamente");
+                vaciarCampos();
+            }
+        } catch (Exception ex) {
+            JOptionPane.showMessageDialog(null, "Error al registrar el socio: " + ex.getMessage());
+        }
+    }
+
+    private void cancelarRegistro() {
+        registroSociosView.dispose();
     }
 
     @Override
@@ -63,7 +73,31 @@ public class RegistroSociosController implements ActionListener, ItemListener, M
             tipoMembresia = listaTiposMembresia.get(registroSociosView.cmbTipoMembresia.getSelectedIndex());
             registroSociosView.lblDescripcionMembresia.setText(String.valueOf("<html>"+tipoMembresia.getDescripcion()+"</html>"));
         }
+    }
 
+    // Implementación de los métodos de MouseListener...
+
+    private void cargarTiposMembresia() {
+        try {
+            listaTiposMembresia = tipoMembresiaService.obtenerTiposMembresia();
+            for (TipoMembresia tipoMembresia : listaTiposMembresia) {
+                registroSociosView.cmbTipoMembresia.addItem(tipoMembresia.getNombre());
+            }
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "Error al cargar los tipos de membresia: " + e.getMessage());
+        }
+    }
+
+    private void vaciarCampos() {
+        registroSociosView.txtCedula.setText("");
+        registroSociosView.txtNombres.setText("");
+        registroSociosView.txtApellidos.setText("");
+        registroSociosView.txtEmail.setText("");
+        registroSociosView.txtTelefono.setText("");
+        registroSociosView.txtDireccion.setText("");
+        registroSociosView.dcFechaNacimiento.setDate(null);
+        registroSociosView.cmbTipoMembresia.setSelectedIndex(0);
+        // Agrega aquí todos los demás campos de texto que quieras vaciar
     }
 
     @Override
@@ -89,28 +123,5 @@ public class RegistroSociosController implements ActionListener, ItemListener, M
     @Override
     public void mouseExited(MouseEvent e) {
 
-    }
-
-    public void cargarTiposMembresia() {
-        try {
-            listaTiposMembresia = tipoMembresiaService.obtenerTiposMembresia();
-            for (TipoMembresia tipoMembresia : listaTiposMembresia) {
-                registroSociosView.cmbTipoMembresia.addItem(tipoMembresia.getNombre());
-            }
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, "Error al cargar los tipos de membresia: " + e.getMessage());
-        }
-    }
-
-    public void vaciarCampos() {
-        registroSociosView.txtCedula.setText("");
-        registroSociosView.txtNombres.setText("");
-        registroSociosView.txtApellidos.setText("");
-        registroSociosView.txtEmail.setText("");
-        registroSociosView.txtTelefono.setText("");
-        registroSociosView.txtDireccion.setText("");
-        registroSociosView.dcFechaNacimiento.setDate(null);
-        registroSociosView.cmbTipoMembresia.setSelectedIndex(0);
-        // Agrega aquí todos los demás campos de texto que quieras vaciar
     }
 }

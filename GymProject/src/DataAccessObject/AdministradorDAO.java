@@ -49,7 +49,7 @@ public class AdministradorDAO {
             if (conexion != null) {
                 conexion.close();
             }
-            DBConexion.closeConnection();
+            DBConexion.closeConnection(conexion);
         }
     }
 }

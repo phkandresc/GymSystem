@@ -35,7 +35,7 @@ public class ListaSociosView extends javax.swing.JFrame {
         jtSocios = new javax.swing.JTable();
         jLabel3 = new javax.swing.JLabel();
         cmbCriterioBusqueda = new javax.swing.JComboBox<>();
-        TextFieldBusqueda = new javax.swing.JTextField();
+        txtBusqueda = new javax.swing.JTextField();
         ButtonBuscar = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
@@ -115,8 +115,8 @@ public class ListaSociosView extends javax.swing.JFrame {
         cmbCriterioBusqueda.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "ID", "Cedula", "Apellido" }));
         jPanel1.add(cmbCriterioBusqueda, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 80, 90, 30));
 
-        TextFieldBusqueda.setFont(new java.awt.Font("Poppins Light", 0, 14)); // NOI18N
-        jPanel1.add(TextFieldBusqueda, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 80, 160, 30));
+        txtBusqueda.setFont(new java.awt.Font("Poppins Light", 0, 14)); // NOI18N
+        jPanel1.add(txtBusqueda, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 80, 160, 30));
 
         ButtonBuscar.setBackground(new java.awt.Color(242, 98, 15));
         ButtonBuscar.setFont(new java.awt.Font("Poppins Medium", 0, 14)); // NOI18N
@@ -235,7 +235,7 @@ public class ListaSociosView extends javax.swing.JFrame {
     public javax.swing.JButton ButtonBuscar;
     public javax.swing.JButton ButtonEliminar;
     public javax.swing.JButton ButtonModificar;
-    public javax.swing.JTextField TextFieldBusqueda;
+    public javax.swing.JTextField txtBusqueda;
     public javax.swing.JComboBox<String> cmbCriterioBusqueda;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;

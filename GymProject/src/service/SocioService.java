@@ -3,6 +3,7 @@ package service;
 import DataAccessObject.SocioDAO;
 import model.Socio;
 import view.RegistroSociosView;
+import view.ListaSociosView;
 
 import javax.swing.*;
 import java.util.List;
@@ -23,8 +24,8 @@ public class SocioService {
         socioDAO.actualizarSocio(socio);
     }
 
-    public void eliminarSocio(String cedula) throws Exception {
-        socioDAO.eliminarSocio(cedula);
+    public void eliminarSocio(Socio socio) throws Exception {
+        socioDAO.eliminarSocio(socio);
     }
 
     public Socio buscarSocioPorCedula(String cedula) throws Exception {
@@ -113,4 +114,33 @@ public class SocioService {
         return !textField.getText().trim().isEmpty();
     }
 
+    public boolean validarBusqueda(ListaSociosView view) {
+        if(!validarTextField(view.txtBusqueda)) {
+            JOptionPane.showMessageDialog(null, "El campo de búsqueda no puede estar vacío");
+            return false;
+        }else {
+            if(view.cmbCriterioBusqueda.getSelectedIndex() == 0) {
+                if(!view.txtBusqueda.getText().matches("[0-9]*")) {
+                    JOptionPane.showMessageDialog(null, "El ID debe ser un número entero");
+                    return false;
+                }
+            } else if (view.cmbCriterioBusqueda.getSelectedIndex() == 1) {
+                if(view.txtBusqueda.getText().length() != 10) {
+                    JOptionPane.showMessageDialog(null, "La cédula debe tener 10 dígitos");
+                    return false;
+                }
+
+            } else if (view.cmbCriterioBusqueda.getSelectedIndex() == 2){
+                if(view.txtBusqueda.getText().length() < 3) {
+                    JOptionPane.showMessageDialog(null, "El apellido debe tener al menos 3 caracteres");
+                    return false;
+                }else if(!view.txtBusqueda.getText().matches("[a-zA-Z]*")) {
+                    JOptionPane.showMessageDialog(null, "El apellido debe contener solo letras");
+                    return false;
+                }
+            }
+        }
+
+        return true;
+    }
 }

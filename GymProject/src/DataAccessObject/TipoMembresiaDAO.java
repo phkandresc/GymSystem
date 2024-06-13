@@ -52,7 +52,7 @@ public class TipoMembresiaDAO {
             if (conexion != null) {
                 conexion.close();
             }
-            DBConexion.closeConnection();
+            DBConexion.closeConnection(conexion);
         }
         return tiposMembresia;
     }

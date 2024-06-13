@@ -1,8 +1,0 @@
-
-•	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ä”òªJ$ba319ca2-5578-4026-8131-fa88cb290a37
-
-java:S25891"7Remove this expression which always evaluates to "true"(ÿ«„¦øÿÿÿÿ8Î‰Ä‚€2J$1a461073-1466-40bc-a07e-2b8d80cd4452
-—
-java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(×ÿš™üÿÿÿÿ8Ð‰Ä‚€2J$e1d3ab03-9c3c-47f9-95c5-a033acff7a8f
-}
-java:S1126"AReplace this if-then-else statement by a single return statement.(ªŠÐ J$2d34a433-5bd1-4a22-b741-1dfb9222ae5c
