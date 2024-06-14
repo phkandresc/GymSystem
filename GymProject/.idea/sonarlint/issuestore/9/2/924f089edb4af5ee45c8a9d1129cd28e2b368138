@@ -1,5 +1,9 @@
 
-I
-java:S1128"'Remove this unused import 'controller'.(êôİÖùÿÿÿÿ8õğë€2
-Z
-java:S1128">Remove this unused import 'DataAccessObject.AdministradorDAO'.(¾Å—I8õğë€2
+k
+java:S1854	"IRemove this useless assignment to local variable "listaSociosController".(Áê†’øÿÿÿÿ8‹õ­¢2
+\
+java:S1481	":Remove this unused "listaSociosController" local variable.(Áê†’øÿÿÿÿ8õ­¢2
+€
+java:S1128">Remove this unused import 'DataAccessObject.AdministradorDAO'.(¾Å—I8õğë€2J$66fe022b-4bf3-4606-b151-5fe24c14c4f2
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8õ­¢2
