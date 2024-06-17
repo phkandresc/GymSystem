@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienvenido</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Open Sans', Arial, sans-serif;
             background-color: #f4f4f4;
             margin: 0;
             padding: 0;
@@ -15,41 +16,26 @@
             max-width: 600px;
             margin: 20px auto;
             background-color: #ffffff;
-            padding: 0;
+            padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
+            border-radius: 10px; /* Bordes redondeados */
             overflow: hidden;
         }
         .header {
-            position: relative;
             background-image: url('https://t4.ftcdn.net/jpg/06/45/83/07/360_F_645830782_M553WbwU6YGhIfRrIV39yo3feZcBVSSU.jpg'); /* Reemplaza con una URL válida */
             background-size: cover;
             background-position: center;
             color: #ffffff;
             text-align: center;
             padding: 40px 20px;
-        }
-        .header::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-        }
-        .header h1 {
-            position: relative;
-            margin: 0;
             font-size: 2em;
-            z-index: 1;
+            font-weight: bold;
+            border-radius: 10px 10px 0 0; /* Bordes redondeados */
         }
         .content {
             padding: 20px;
-        }
-        .content p {
             color: #333333;
-            line-height: 1.6;
+            border-radius: 0 0 10px 10px; /* Bordes redondeados */
         }
         .member-id {
             font-weight: bold;
@@ -60,6 +46,19 @@
             margin-bottom: 20px;
             font-size: 1.2em;
         }
+        .benefits {
+            margin-bottom: 20px;
+        }
+        .benefits h2 {
+            color: #e74c3c;
+            font-size: 1.2em;
+            margin-top: 0;
+        }
+        .benefits ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
         .signature {
             margin-top: 30px;
             color: #2c3e50;
@@ -69,14 +68,8 @@
             text-align: center;
             padding: 10px;
             background-color: #ecf0f1;
-            margin-top: 20px;
             border-top: 1px solid #bdc3c7;
-        }
-        .footer p {
-            margin: 5px 0;
-        }
-        .social-icons {
-            margin-top: 10px;
+            border-radius: 0 0 10px 10px; /* Bordes redondeados */
         }
         .social-icons img {
             width: 24px;
@@ -88,15 +81,22 @@
 <body>
 <div class="container">
     <div class="header">
-        <h1>Bienvenido a nuestro gimnasio</h1>
+        Bienvenido a nuestro gimnasio
     </div>
     <div class="content">
         <p class="greeting">Hola <strong>{nombre} {apellido}</strong>,</p>
-        <p>Bienvenido a nuestro gimnasio. Estamos emocionados de tenerte con nosotros. Tu salud y bienestar son nuestra prioridad.</p>
-        <br>
-        <br>
+        <p>Bienvenido al gimnasio. Estamos emocionados de tenerte con nosotros y ayudarte en tu camino hacia una vida más saludable y en forma.</p>
+        <div class="benefits">
+            <h2>Beneficios de ser miembro:</h2>
+            <ul>
+                <li>Acceso ilimitado a nuestras instalaciones modernas.</li>
+                <li>Clases de fitness variadas y entrenamiento personalizado.</li>
+                <li>Asesoramiento nutricional para alcanzar tus metas.</li>
+                <li>Descuentos exclusivos en productos y servicios.</li>
+            </ul>
+        </div>
         <p>Tu número de socio es: <span class="member-id">{id}</span></p>
-        <p class="signature">Saludos cordiales,<br>Equipo del Gimnasio</p>
+        <p class="signature">Esperamos que disfrutes tu experiencia con nosotros.<br>Saludos cordiales,<br>Equipo del Gimnasio</p>
     </div>
     <div class="footer">
         <p>Gimnasio | Tel: 123-456-7890 | Email: info@gimnasio.com</p>
@@ -105,7 +105,6 @@
             <a href="https://facebook.com/gimnasio"><img src="https://cdn.icon-icons.com/icons2/832/PNG/512/fb_icon-icons.com_66689.png" alt="Facebook"></a>
             <a href="https://twitter.com/gimnasio"><img src="https://cdn-icons-png.flaticon.com/512/3938/3938028.png" alt="Twitter"></a>
             <a href="https://instagram.com/gimnasio"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" alt="Instagram"></a>
-
         </div>
     </div>
 </div>
