@@ -16,6 +16,7 @@ public class ListaSociosView extends javax.swing.JFrame {
     public ListaSociosView() {
         initComponents();
         this.setLocationRelativeTo(null);
+        addWindowListener(new controller.WindowController());
     }
 
     /**
@@ -56,7 +57,7 @@ public class ListaSociosView extends javax.swing.JFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/barraTitulo.png"))); // NOI18N
         jLabel1.setText("jLabel1");
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());

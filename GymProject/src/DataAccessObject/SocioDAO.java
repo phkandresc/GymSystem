@@ -14,6 +14,23 @@ import java.util.logging.Logger;
 public class SocioDAO {
     public static final Logger LOGGER = Logger.getLogger(SocioDAO.class.getName());
 
+    public static int obtenerNumeroSocios() throws SQLException {
+        int numeroSocios = 0;
+        String sql = "SELECT COUNT(*) FROM socios";
+        Connection connection = DBConexion.getConnection();
+        try (PreparedStatement statement = connection.prepareStatement(sql);
+             ResultSet resultSet = statement.executeQuery()) {
+            while (resultSet.next()) {
+                numeroSocios = resultSet.getInt(1);
+            }
+        } catch (SQLException e) {
+            LOGGER.severe(e.getMessage());
+        } finally {
+            DBConexion.closeConnection(connection);
+        }
+        return numeroSocios;
+    }
+
     public void registrarSocio(Socio socio) throws SQLException {
         String sql = "INSERT INTO socios (cedula, nombre, apellido, email, numero_telefono, direccion, fecha_nacimiento) VALUES (?, ?, ?, ?, ?, ?, ?)";
         Connection connection = DBConexion.getConnection();

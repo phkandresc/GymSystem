@@ -6,6 +6,7 @@ import view.RegistroSociosView;
 import view.ListaSociosView;
 
 import javax.swing.*;
+import java.sql.Date;
 import java.util.List;
 import java.util.regex.Pattern;
 
@@ -21,6 +22,7 @@ public class SocioService {
     }
 
     public void actualizarSocio(Socio socio) throws Exception {
+        validarSocio(socio);
         socioDAO.actualizarSocio(socio);
     }
 
@@ -44,61 +46,30 @@ public class SocioService {
         return socioDAO.obtenerTodosSocios();
     }
 
-    public Socio validarSocio(RegistroSociosView view) {
-        if (validarTextField(view.txtCedula)) {
-            if (view.txtCedula.getText().length() != 10) {
-                JOptionPane.showMessageDialog(null, "La cédula debe tener 10 dígitos");
-                return null;
-            }
+    public boolean validarSocio(Socio socio) {
+        if (!validarCedula(socio.getCedula())) {
+            JOptionPane.showMessageDialog(null, "La cédula debe tener 10 dígitos");
+            return false;
+        } else if (socio.getNombre() == null || socio.getNombre().trim().isEmpty()) {
+            JOptionPane.showMessageDialog(null, "El nombre no puede estar vacío");
+            return false;
+        } else if (socio.getApellido() == null || socio.getApellido().trim().isEmpty()) {
+            JOptionPane.showMessageDialog(null, "El apellido no puede estar vacío");
+            return false;
+        } else if (!validarEmail(socio.getEmail())) {
+            JOptionPane.showMessageDialog(null, "El email no es válido");
+            return false;
+        } else if (!validarTelefono(socio.getNumeroTelefono())) {
+            JOptionPane.showMessageDialog(null, "El teléfono debe tener 10 dígitos");
+            return false;
+        } else if (!validarDireccion(socio.getDireccion())) {
+            JOptionPane.showMessageDialog(null, "La dirección debe tener al menos 10 caracteres");
+            return false;
+        } else if (!validarFechaNacimiento(socio.getFechaNacimiento())) {
+            JOptionPane.showMessageDialog(null, "Ingrese una fecha de nacimiento válida");
+            return false;
         }
-        if (validarTextField(view.txtNombres)) {
-            if (view.txtNombres.getText().length() < 3) {
-                JOptionPane.showMessageDialog(null, "El nombre debe tener al menos 3 caracteres");
-                return null;
-            }
-        }
-
-        if (validarTextField(view.txtApellidos)) {
-            if (view.txtApellidos.getText().length() < 3) {
-                JOptionPane.showMessageDialog(null, "El apellido debe tener al menos 3 caracteres");
-                return null;
-            }
-        }
-
-        if (validarTextField(view.txtEmail)) {
-            if (!validarEmail(view.txtEmail.getText())) {
-                JOptionPane.showMessageDialog(null, "El email ingresado no es válido");
-                return null;
-            }
-        }
-
-        if (validarTextField(view.txtTelefono)) {
-            if (view.txtTelefono.getText().length() != 10) {
-                JOptionPane.showMessageDialog(null, "El número de teléfono debe tener 10 dígitos");
-                return null;
-            }
-        }
-
-        if (validarTextField(view.txtDireccion)) {
-            if (view.txtDireccion.getText().length() < 10) {
-                JOptionPane.showMessageDialog(null, "La dirección debe tener al menos 10 caracteres");
-                return null;
-            }
-        }
-        if (view.dcFechaNacimiento.getDate() == null) {
-            JOptionPane.showMessageDialog(null, "La fecha de nacimiento no puede estar vacía");
-            return null;
-        }
-
-        Socio socio = new Socio();
-        socio.setCedula(view.txtCedula.getText());
-        socio.setNombre(view.txtNombres.getText());
-        socio.setApellido(view.txtApellidos.getText());
-        socio.setEmail(view.txtEmail.getText());
-        socio.setNumeroTelefono(view.txtTelefono.getText());
-        socio.setDireccion(view.txtDireccion.getText());
-        socio.setFechaNacimiento(new java.sql.Date(view.dcFechaNacimiento.getDate().getTime()));
-        return socio;
+        return true;
     }
 
     private boolean validarEmail(String email) {
@@ -112,6 +83,23 @@ public class SocioService {
 
     private boolean validarTextField(JTextField textField) {
         return !textField.getText().trim().isEmpty();
+    }
+
+    private boolean validarCedula(String cedula) {
+
+        return cedula.length() == 10 && cedula.matches("[0-9]*");
+    }
+
+    private boolean validarTelefono(String telefono) {
+        return telefono.length() == 10;
+    }
+
+    private boolean validarDireccion(String direccion) {
+        return direccion.length() >= 10;
+    }
+
+    private boolean validarFechaNacimiento(Date fechaNacimiento) {
+        return fechaNacimiento != null;
     }
 
     public boolean validarBusqueda(ListaSociosView view) {

@@ -11,18 +11,21 @@ import java.awt.event.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ListaSociosController implements ActionListener, ItemListener, MouseListener {
+public class ListaSociosController extends WindowController implements ActionListener, ItemListener, MouseListener, WindowListener {
     private ListaSociosView view;
     private SocioService service;
     private Socio socioSeleccionado;
+    private PaginaPrincipalController paginaPrincipalController;
 
-    public ListaSociosController(ListaSociosView view) {
-        this.view = view;
+    public ListaSociosController() {
+        this.view = new ListaSociosView();
         this.service = new SocioService();
+        paginaPrincipalController = PaginaPrincipalController.getInstance();
         view.ButtonBuscar.addActionListener(this);
         view.cmbCriterioBusqueda.addItemListener(this);
         view.jtSocios.addMouseListener(this);
         view.ButtonEliminar.addActionListener(this);
+        view.ButtonModificar.addActionListener(this);
         view.setVisible(true);
         cargarLista();
     }
@@ -94,6 +97,28 @@ public class ListaSociosController implements ActionListener, ItemListener, Mous
             } finally {
                 cargarLista();
             }
+        }else if (e.getSource() == view.ButtonModificar) {
+            try {
+                int confirmacion = JOptionPane.showConfirmDialog(null, "¿Está seguro de modificar el socio?", "Modificar Socio", JOptionPane.YES_NO_OPTION);
+                if (socioSeleccionado != null && confirmacion == JOptionPane.YES_OPTION) {
+                    socioSeleccionado.setCedula(view.txtCedula.getText());
+                    socioSeleccionado.setNombre(view.txtNombre.getText());
+                    socioSeleccionado.setApellido(view.txtApellido.getText());
+                    socioSeleccionado.setEmail(view.txtEmail.getText());
+                    socioSeleccionado.setNumeroTelefono(view.txtTelefono.getText());
+                    socioSeleccionado.setDireccion(view.txtDireccion.getText());
+                    if(service.validarSocio(socioSeleccionado) == true){
+                        service.actualizarSocio(socioSeleccionado);
+                        JOptionPane.showMessageDialog(null, "Socio modificado correctamente");
+                    }
+                } else {
+                    JOptionPane.showMessageDialog(null, "No se ha seleccionado ningún socio");
+                }
+            } catch (Exception ex) {
+                JOptionPane.showMessageDialog(null, "Error al modificar el socio: " + ex.getMessage());
+            } finally {
+                cargarLista();
+            }
         }
     }
 
@@ -158,4 +183,7 @@ public class ListaSociosController implements ActionListener, ItemListener, Mous
 
     }
 
+    public static void main(String[] args) {
+        new ListaSociosController();
+    }
 }

@@ -1,38 +1,38 @@
 
 ™
-java:S1104"VMake background a static final constant or non-public and provide accessors if needed.(¡Ïª8üüŞÈş1J$e8c91ba4-9e13-48f0-b2a7-d1bd1cef3e75
+java:S1104"VMake background a static final constant or non-public and provide accessors if needed.(¡Ïª8üüŞÈş1J$a9af9081-0530-436c-8343-ca9dcbb8f576
 ¤
-java:S1104"\Make btnIniciarSesion a static final constant or non-public and provide accessors if needed.(îşßùÿÿÿÿ8ŒıŞÈş1J$5664fcad-4dad-4998-8f65-f61c2975225d
+java:S1104	"\Make btnIniciarSesion a static final constant or non-public and provide accessors if needed.(îşßùÿÿÿÿ8ŒıŞÈş1J$e89cfb1e-5b61-4bc3-a017-c2951aaf55a6
 •
-java:S1104	"SMake jLabel1 a static final constant or non-public and provide accessors if needed.(€œ¿s8ŒıŞÈş1J$e65b9888-0fa7-4c89-ac6f-fc7f451da3a0
-›
 java:S1104
-"SMake jLabel2 a static final constant or non-public and provide accessors if needed.(“¹Õäÿÿÿÿÿ8ŒıŞÈş1J$b6532fcd-ac55-4903-9d13-fcb8fda0465d
-–
-java:S1104"SMake jLabel3 a static final constant or non-public and provide accessors if needed.(Åşù´8ŒıŞÈş1J$20a8204f-63a0-4cca-a9d0-84e4e5466230
-–
-java:S1104"SMake jLabel4 a static final constant or non-public and provide accessors if needed.(ü’ü³8ŒıŞÈş1J$24840841-2fd0-4f7f-bc64-5809bbbfeab5
-–
-java:S1104"SMake jLabel5 a static final constant or non-public and provide accessors if needed.(şôó8ŒıŞÈş1J$35e7a49e-f078-4cfe-ae95-45f98d46489e
+"SMake jLabel1 a static final constant or non-public and provide accessors if needed.(€œ¿s8ŒıŞÈş1J$cb8d2876-da71-4721-9b1c-8955187603cf
 ›
-java:S1104"SMake jLabel6 a static final constant or non-public and provide accessors if needed.(ıÿÖúÿÿÿÿ8ŒıŞÈş1J$77da77a8-9ab1-4d89-8693-49b174f71de5
+java:S1104"SMake jLabel2 a static final constant or non-public and provide accessors if needed.(“¹Õäÿÿÿÿÿ8ŒıŞÈş1J$4c4805a0-82a2-4432-9f8b-04283009570f
+–
+java:S1104"SMake jLabel3 a static final constant or non-public and provide accessors if needed.(Åşù´8ŒıŞÈş1J$c87525ea-bee1-49dc-831e-acd637bc92fe
+–
+java:S1104"SMake jLabel4 a static final constant or non-public and provide accessors if needed.(ü’ü³8ŒıŞÈş1J$0787f33e-d34c-4ce8-9b0a-27fcc89339c5
+–
+java:S1104"SMake jLabel5 a static final constant or non-public and provide accessors if needed.(şôó8ŒıŞÈş1J$6c3b537f-dc82-4f22-a60a-491a18251468
 ›
-java:S1104"SMake jLabel7 a static final constant or non-public and provide accessors if needed.(‡ú×Éùÿÿÿÿ8ŒıŞÈş1J$a0a93d4e-4145-4c3f-b564-12a456f2328c
+java:S1104"SMake jLabel6 a static final constant or non-public and provide accessors if needed.(ıÿÖúÿÿÿÿ8ŒıŞÈş1J$e03d0da4-6fd2-48fe-a872-584d60cf6cc3
 ›
-java:S1104"SMake jLabel8 a static final constant or non-public and provide accessors if needed.(ÜØ¦ïüÿÿÿÿ8ŒıŞÈş1J$f61c119c-6c47-425c-a6c0-6b4d80a658a0
+java:S1104"SMake jLabel7 a static final constant or non-public and provide accessors if needed.(‡ú×Éùÿÿÿÿ8ŒıŞÈş1J$0aae3948-a8f2-4d73-9366-643b9444ea5c
+›
+java:S1104"SMake jLabel8 a static final constant or non-public and provide accessors if needed.(ÜØ¦ïüÿÿÿÿ8ŒıŞÈş1J$6ea77b62-f81b-4dc0-bdd9-e6d56cc25da5
 Ÿ
-java:S1104"WMake jSeparator1 a static final constant or non-public and provide accessors if needed.(Ğ¶¡Âøÿÿÿÿ8ŒıŞÈş1J$79b16a59-d526-4135-8cbb-fafc448a61bb
+java:S1104"WMake jSeparator1 a static final constant or non-public and provide accessors if needed.(Ğ¶¡Âøÿÿÿÿ8ŒıŞÈş1J$2d61343e-dba1-4f3a-b377-b60f7824be3c
 š
-java:S1104"WMake jSeparator2 a static final constant or non-public and provide accessors if needed.(ó×¡8œıŞÈş1J$5a85d7b1-abf1-4095-9e63-921cbd6cbaf9
+java:S1104"WMake jSeparator2 a static final constant or non-public and provide accessors if needed.(ó×¡8œıŞÈş1J$aa895216-231c-4d23-875f-19f63245b69f
 ¡
-java:S1104"YMake txtContrasena a static final constant or non-public and provide accessors if needed.(ê²ŒÂÿÿÿÿÿ8œıŞÈş1J$cb014cb9-363e-4df0-b52d-6f307487d9a5
+java:S1104"YMake txtContrasena a static final constant or non-public and provide accessors if needed.(ê²ŒÂÿÿÿÿÿ8œıŞÈş1J$7deb1a46-c72a-4b75-a0e7-10d326c5ad7b
 ™
-java:S1104"VMake txtUsuario a static final constant or non-public and provide accessors if needed.(Š’²8œıŞÈş1J$398bf6c3-2a52-4250-a1b7-f47c9bff37d7
+java:S1104"VMake txtUsuario a static final constant or non-public and provide accessors if needed.(Š’²8œıŞÈş1J$d82c2a0d-4632-4c38-a43f-d68e6f68aaae
 ¦
-java:S1104"^Make panelIniciarSesion a static final constant or non-public and provide accessors if needed.(ùóÎşúÿÿÿÿ8œıŞÈş1J$cd08c1d3-abce-4726-8e50-af339c83dfcf
+java:S1104"^Make panelIniciarSesion a static final constant or non-public and provide accessors if needed.(ùóÎşúÿÿÿÿ8œıŞÈş1J$1f8139b6-971a-4009-8a9e-6ee443b08f64
 —
-java:S1192>"ODefine a constant instead of duplicating this literal "Poppins Medium" 4 times.(›€çôúÿÿÿÿ8¢Ş€2J$04ddc060-3f0e-4e2c-bde5-72fda8e3c028
+java:S1192F"ODefine a constant instead of duplicating this literal "Poppins Medium" 4 times.(›€çôúÿÿÿÿ8¢Ş€2J$c7bc040f-4ce4-45a4-96a4-78299b0dfc2a
 v
-java:S2387"3"background" is the name of a field in "Component".(¡Ïª8»ıŞÈş1J$4ece913a-621d-45b3-97b1-78fa94feec0d
-Ä
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.( ï¶™8¦…ß€2J$8cae79e5-003c-4180-8d25-966df4304aad
+java:S2387"3"background" is the name of a field in "Component".(¡Ïª8»ıŞÈş1J$05ce73b8-c019-413b-99f1-d1429b9b1932
+Ü
+java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(¤¶½µ8©¸é¥2J$5847ff50-4a14-413d-b598-94c3b0a039f1

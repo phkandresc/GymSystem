@@ -1,15 +1,13 @@
 
-É
-java:S1186?"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(®î’×üÿÿÿÿ8ó‚Œ€2J$7c38793e-a90a-497e-b23c-1b2ee71765bb
-Ä
-java:S1186D"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ãÆĞÂ8ó‚Œ€2J$b27a846b-ff0f-4471-9a8d-821b97641061
-É
-java:S1186I"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ö„˜şúÿÿÿÿ8ó‚Œ€2J$018dce6e-abd3-40ca-aed0-c14f90dea6da
-É
-java:S1186N"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•ßçùÿÿÿÿ8ó‚Œ€2J$6ccf22b8-a39a-443f-9597-b55bbf8e2015
-w
-java:S1874%"/Remove this use of "getText"; it is deprecated.(Ş¯É°úÿÿÿÿ8÷‚Œ€2J$5560df14-df39-4597-9d91-a3ae487c9542
-w
-java:S1874_"/Remove this use of "getText"; it is deprecated.(Ç”œåüÿÿÿÿ8û‚Œ€2J$eed21a83-8112-4fc4-8a37-c7d0a5a9c1f3
-œ
-java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(“™ÓÀøÿÿÿÿ8ÏİÉ€2J$f6995f68-f443-4b1b-aa69-2a5343420b21
+£
+java:S1186@"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(®î’×üÿÿÿÿ8›íò¯2
+
+java:S1186E"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ãÆĞÂ8œíò¯2
+£
+java:S1186J"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ö„˜şúÿÿÿÿ8œíò¯2
+£
+java:S1186O"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•ßçùÿÿÿÿ8œíò¯2
+Q
+java:S1874%"/Remove this use of "getText"; it is deprecated.(Ş¯É°úÿÿÿÿ8Ÿíò¯2
+Q
+java:S1874`"/Remove this use of "getText"; it is deprecated.(Ç”œåüÿÿÿÿ8¡íò¯2

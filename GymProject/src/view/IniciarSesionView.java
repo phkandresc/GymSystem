@@ -21,8 +21,9 @@ public class IniciarSesionView extends JFrame {
     public javax.swing.JPanel panelIniciarSesion;
 
     public IniciarSesionView() {
-
+        initComponents();
     }
+
 
     public void initComponents() {
 
@@ -109,5 +110,6 @@ public class IniciarSesionView extends JFrame {
 
         pack();
     }
+
 
 }

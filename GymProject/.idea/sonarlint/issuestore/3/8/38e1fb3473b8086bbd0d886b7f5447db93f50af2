@@ -1,42 +1,18 @@
 
-w
-java:S10661"/Merge this if statement with the enclosing one.(Ö‰ÅÄşÿÿÿÿ8ãŒØ€2J$6f76d85e-866e-4f0d-8615-6e4ef894c139
-r
-java:S10667"/Merge this if statement with the enclosing one.(İŒ÷¡8ãŒØ€2J$060cb7dc-0793-4391-ac1a-4269065fab66
-w
-java:S1066>"/Merge this if statement with the enclosing one.(¨´§“şÿÿÿÿ8ãŒØ€2J$0750c5e3-98a9-40ff-9bf4-75eb027a7924
-r
-java:S1066E"/Merge this if statement with the enclosing one.(éûÏ•8ãŒØ€2J$685e09f3-9f7f-47cd-b42b-c819739daef9
-r
-java:S1066L"/Merge this if statement with the enclosing one.(Š³÷ä8ãŒØ€2J$a8cc7939-8977-4682-a3fd-e1fe7781336c
-w
-java:S1066S"/Merge this if statement with the enclosing one.(ÆÄÑ“üÿÿÿÿ8ãŒØ€2J$94abdb20-7d91-4d22-b7e1-9d29320118b9
-ˆ	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Åìä’8äŒØ€2J$e382ff83-1711-496e-bf51-986e7660ae5c
-‡	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(õˆ’u8äŒØ€2J$0e69ed36-3580-4b31-947b-71be3d5dbd90
-‡	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(¬ÂÓ8äŒØ€2J$5a82136b-ad8e-4255-b5ba-4a2aff4effb0
-	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(â‘¥óüÿÿÿÿ8äŒØ€2J$2e133c82-1476-409c-b8f7-6d64ef36e2da
-ˆ	java:S112#"FDefine and throw a dedicated exception instead of using a generic one.(ÈƒâÀ8äŒØ€2J$6ccdf22f-f963-4182-8ae4-22e54a79ba0f
-ˆ	java:S112'"FDefine and throw a dedicated exception instead of using a generic one.(Ô§Ş÷8äŒØ€2J$8a646506-6532-400d-9c6c-9c282ca5cb59
-ˆ	java:S112+"FDefine and throw a dedicated exception instead of using a generic one.(®€íÇ8äŒØ€2J$8ffb045d-7f14-4e23-b7b3-f7feaae75c22
-¯
-java:S1130"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(Åìä’8æŒØ€2J$7fcf3dc5-8d56-4209-b9c0-12861139a5b0
-®
-java:S1130"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(õˆ’u8æŒØ€2J$799ae64d-00de-4a2d-a364-6a92885d777a
-®
-java:S1130"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(¬ÂÓ8çŒØ€2J$4e0fca10-83a3-41b6-941e-1241bb6b1834
-´
-java:S1130"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(â‘¥óüÿÿÿÿ8çŒØ€2J$b1a4172f-b395-4eef-978d-7e0ea176a8e4
-¯
-java:S1130#"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(ÈƒâÀ8çŒØ€2J$9d73fbd3-0f77-46ae-8ecd-3dc97a39ca63
-¯
-java:S1130'"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(Ô§Ş÷8çŒØ€2J$15c6f597-69f3-4554-b090-10e44248afac
-¯
-java:S1130+"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(®€íÇ8èŒØ€2J$bce65ca8-4021-4a77-bc4f-7697a41758d5
-š
-java:S3776/"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(ŠÒáãûÿÿÿÿ8èŒØ€2J$dcb591eb-d018-4766-ab41-87f191ab4cc4
+ˆ	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Åìä’8™••°2J$394828ac-9f8d-4da5-a2c9-e31993940ac7
+‡	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(õˆ’u8™••°2J$d35da7e6-ce74-4bac-baba-71e6bcead8ce
+‡	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(¬ÂÓ8™••°2J$17c75357-1294-4a94-a41f-760c000ae949
+	java:S112!"FDefine and throw a dedicated exception instead of using a generic one.(â‘¥óüÿÿÿÿ8™••°2J$e8049c5c-b6dc-4ad5-a640-0acfc8d89412
+ˆ	java:S112%"FDefine and throw a dedicated exception instead of using a generic one.(ÈƒâÀ8™••°2J$39067f8c-066a-4551-8082-bf0ff25a07c4
+ˆ	java:S112)"FDefine and throw a dedicated exception instead of using a generic one.(Ô§Ş÷8™••°2J$0903598f-54c6-4a98-829e-b3264c28b27f
+ˆ	java:S112-"FDefine and throw a dedicated exception instead of using a generic one.(®€íÇ8™••°2J$7fd3159d-f4a2-4156-8a2f-67766541f49e
 
-java:S5998i"LRefactor this repetition that can lead to a stack overflow for large inputs.(õæˆB8ëŒØ€2J$026d2620-7ce4-4f20-91af-a9a82b4fa95e
+java:S5998L"LRefactor this repetition that can lead to a stack overflow for large inputs.(õæˆB8••°2J$808377b1-90d5-4395-919c-73f2dfbe550b
+„
+java:S6353Z"<Use concise character class syntax '\\d' instead of '[0-9]'.(üÀŠşÿÿÿÿ8Ÿ••°2J$6d74064e-6aa4-482e-a233-49148896a8c0
 š
-java:S3776u"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(ÎÓ‚øÿÿÿÿ8ëŒØ€2J$0d4d0c93-e8fb-4181-91dc-ba3027ef06b2
+java:S3776i"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(ÎÓ‚øÿÿÿÿ8Ÿ••°2J$36a12120-dbb1-4da1-a341-d9ef392de1b4
 
-java:S6353{"<Use concise character class syntax '\\d' instead of '[0-9]'.(Á±â8ìŒØ€2J$aa3a3e03-0095-4ec0-832d-b9decbc1e45e
+java:S6353o"<Use concise character class syntax '\\d' instead of '[0-9]'.(Á±â8 ••°2J$7abeaee9-8f1d-439b-ac30-9a3d7d6095de
+|
+java:S1128"4Remove this unused import 'view.RegistroSociosView'.( Şœáüÿÿÿÿ8Û‹–°2J$19571238-0605-423b-af40-706476ce9385

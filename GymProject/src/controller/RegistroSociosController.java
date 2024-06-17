@@ -2,19 +2,18 @@ package controller;
 
 import model.Socio;
 import model.TipoMembresia;
+import service.EmailService;
 import service.MembresiaService;
 import service.SocioService;
 import service.TipoMembresiaService;
-import view.PaginaPrincipalView;
 import view.RegistroSociosView;
-import controller.PaginaPrincipalController;
 
 import javax.swing.*;
 import java.awt.event.*;
 import java.util.List;
 
-public class RegistroSociosController implements ActionListener, ItemListener, MouseListener {
-    private RegistroSociosView registroSociosView;
+public class RegistroSociosController extends WindowController implements ActionListener, ItemListener, MouseListener{
+    private RegistroSociosView view;
     private SocioService socioService;
     private MembresiaService membresiaService;
     private TipoMembresiaService tipoMembresiaService;
@@ -23,40 +22,57 @@ public class RegistroSociosController implements ActionListener, ItemListener, M
     private TipoMembresia tipoMembresia;
     private PaginaPrincipalController paginaPrincipalController;
 
-    public RegistroSociosController(RegistroSociosView view) {
-        this.registroSociosView = view;
+    public RegistroSociosController() {
+        this.view = new RegistroSociosView();
+        this.paginaPrincipalController = PaginaPrincipalController.getInstance();
         this.socioService = new SocioService();
         this.membresiaService = new MembresiaService();
         this.tipoMembresiaService = new TipoMembresiaService();
         this.socio = new Socio();
         this.tipoMembresia = new TipoMembresia();
-        registroSociosView.setLocationRelativeTo(null);
-        registroSociosView.setVisible(true);
-        registroSociosView.cmbTipoMembresia.addItemListener(this);
-        registroSociosView.ButtonRegistrar.addActionListener(this);
-        registroSociosView.ButtonCancelar.addActionListener(this);
+        view.setLocationRelativeTo(null);
+        view.setVisible(true);
+        view.cmbTipoMembresia.addItemListener(this);
+        view.ButtonRegistrar.addActionListener(this);
+        view.ButtonCancelar.addActionListener(this);
         cargarTiposMembresia();
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        if (e.getSource() == registroSociosView.ButtonRegistrar) {
-            registrarSocio();
-        } else if (e.getSource() == registroSociosView.ButtonCancelar) {
+        if (e.getSource() == view.ButtonRegistrar) {
+            JTextField[] textFields = {view.txtCedula, view.txtNombres, view.txtApellidos, view.txtTelefono, view.txtDireccion, view.txtEmail};
+            if (validarTextFields(textFields)) {
+                registrarSocio();
+            }
+        } else if (e.getSource() == view.ButtonCancelar) {
             cancelarRegistro();
         }
     }
 
     private void registrarSocio() {
         try {
-            socio = socioService.validarSocio(registroSociosView);
-            if(socio != null){
-                socioService.registrarSocio(socio);
-                JOptionPane.showMessageDialog(null, "Socio registrado correctamente");
-                socio = socioService.buscarSocioPorCedula(socio.getCedula());
-                membresiaService.registrarMembresia(socio, listaTiposMembresia.get(registroSociosView.cmbTipoMembresia.getSelectedIndex()));
-                JOptionPane.showMessageDialog(null, "Membresia registrada correctamente");
-                vaciarCampos();
+            if(validarTextFields(new JTextField[]{view.txtCedula, view.txtNombres, view.txtApellidos, view.txtTelefono, view.txtDireccion, view.txtEmail})){
+                socio = new Socio();
+                socio.setCedula(view.txtCedula.getText());
+                socio.setNombre(view.txtNombres.getText());
+                socio.setApellido(view.txtApellidos.getText());
+                socio.setEmail(view.txtEmail.getText());
+                socio.setNumeroTelefono(view.txtTelefono.getText());
+                socio.setDireccion(view.txtDireccion.getText());
+                socio.setFechaNacimiento(new java.sql.Date(view.dcFechaNacimiento.getDate().getTime()));
+                if(socioService.validarSocio(socio)){
+                    socioService.registrarSocio(socio);
+                    JOptionPane.showMessageDialog(null, "Socio registrado correctamente");
+                    socio = socioService.buscarSocioPorCedula(socio.getCedula());
+                    membresiaService.registrarMembresia(socio, listaTiposMembresia.get(view.cmbTipoMembresia.getSelectedIndex()));
+                    JOptionPane.showMessageDialog(null, "Membresia registrada correctamente");
+                    EmailService emailService = new EmailService();
+                    emailService.enviarCorreoNuevoSocio(socio.getEmail(), socio.getNombre(), socio.getApellido(), String.valueOf(socio.getId()));
+                    vaciarCampos();
+                } else {
+                    JOptionPane.showMessageDialog(null, "Ingrese correctamente los datos del socio");
+                }
             }
         } catch (Exception ex) {
             JOptionPane.showMessageDialog(null, "Error al registrar el socio: " + ex.getMessage());
@@ -64,14 +80,15 @@ public class RegistroSociosController implements ActionListener, ItemListener, M
     }
 
     private void cancelarRegistro() {
-        registroSociosView.dispose();
+        view.dispose();
+        paginaPrincipalController.mostrarPaginaPrincipal();
     }
 
     @Override
     public void itemStateChanged(ItemEvent e) {
         if (e.getStateChange() == ItemEvent.SELECTED) {
-            tipoMembresia = listaTiposMembresia.get(registroSociosView.cmbTipoMembresia.getSelectedIndex());
-            registroSociosView.lblDescripcionMembresia.setText(String.valueOf("<html>"+tipoMembresia.getDescripcion()+"</html>"));
+            tipoMembresia = listaTiposMembresia.get(view.cmbTipoMembresia.getSelectedIndex());
+            view.lblDescripcionMembresia.setText(String.valueOf("<html>"+tipoMembresia.getDescripcion()+"</html>"));
         }
     }
 
@@ -81,7 +98,7 @@ public class RegistroSociosController implements ActionListener, ItemListener, M
         try {
             listaTiposMembresia = tipoMembresiaService.obtenerTiposMembresia();
             for (TipoMembresia tipoMembresia : listaTiposMembresia) {
-                registroSociosView.cmbTipoMembresia.addItem(tipoMembresia.getNombre());
+                view.cmbTipoMembresia.addItem(tipoMembresia.getNombre());
             }
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "Error al cargar los tipos de membresia: " + e.getMessage());
@@ -89,14 +106,14 @@ public class RegistroSociosController implements ActionListener, ItemListener, M
     }
 
     private void vaciarCampos() {
-        registroSociosView.txtCedula.setText("");
-        registroSociosView.txtNombres.setText("");
-        registroSociosView.txtApellidos.setText("");
-        registroSociosView.txtEmail.setText("");
-        registroSociosView.txtTelefono.setText("");
-        registroSociosView.txtDireccion.setText("");
-        registroSociosView.dcFechaNacimiento.setDate(null);
-        registroSociosView.cmbTipoMembresia.setSelectedIndex(0);
+        view.txtCedula.setText("");
+        view.txtNombres.setText("");
+        view.txtApellidos.setText("");
+        view.txtEmail.setText("");
+        view.txtTelefono.setText("");
+        view.txtDireccion.setText("");
+        view.dcFechaNacimiento.setDate(null);
+        view.cmbTipoMembresia.setSelectedIndex(0);
         // Agrega aquí todos los demás campos de texto que quieras vaciar
     }
 
@@ -123,5 +140,20 @@ public class RegistroSociosController implements ActionListener, ItemListener, M
     @Override
     public void mouseExited(MouseEvent e) {
 
+    }
+
+
+    public boolean validarTextFields(JTextField[] textFields) {
+        for (JTextField textField : textFields) {
+            if (textField.getText().trim().isEmpty()) {
+                JOptionPane.showMessageDialog(null, "Por favor, llene todos los campos correctamente");
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public static void main(String[] args) {
+        new RegistroSociosController();
     }
 }
