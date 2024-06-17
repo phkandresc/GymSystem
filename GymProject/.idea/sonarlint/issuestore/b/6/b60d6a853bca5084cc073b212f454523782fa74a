@@ -1,15 +1,16 @@
 
 Œ
-java:S2387"I"paginaPrincipalController" is the name of a field in "WindowController".(®Ó8ù¥ß ‚2J$2c9c2e44-1fb1-462d-b869-6034206e50b2
+java:S2387"I"paginaPrincipalController" is the name of a field in "WindowController".(®Ó8ëÙ±ª‚2J$0078e2cd-b2d2-42ba-b212-feae6cca717a
 É
-java:S1186y"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ä Ïúüÿÿÿÿ8ù¥ß ‚2J$ae008cb1-c926-4cff-a617-c49f16b2cff7
+java:S1186U"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ä Ïúüÿÿÿÿ8ëÙ±ª‚2J$ea8f978e-b07d-4c00-b4f0-211b26cced1a
 É
-java:S1186~"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(®î’×üÿÿÿÿ8ù¥ß ‚2J$8ef9ec13-097c-41aa-83e9-039ebead1566
-Å
-java:S1186ƒ"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ãÆĞÂ8ù¥ß ‚2J$6e81dfe8-8f03-4e80-9f69-7cf214dc1612
-Ê
-java:S1186ˆ"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ö„˜şúÿÿÿÿ8ú¥ß ‚2J$b4fc69f4-0df4-49d1-93ac-2afc5dff483e
-Ê
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•ßçùÿÿÿÿ8ú¥ß ‚2J$73f6f540-d6da-4ad3-8fc5-5b1eb342d3f1
-„
-java:S1117d"ARename "tipoMembresia" which hides the field declared at line 22.(Ìõş8‚¦ß ‚2J$92be04bc-29b1-4182-8f4f-8b301ba636c1
+java:S1186Z"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(®î’×üÿÿÿÿ8ëÙ±ª‚2J$cb417cfe-3a18-4767-a4cc-9b01ed01ab70
+Ä
+java:S1186_"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ãÆĞÂ8ìÙ±ª‚2J$098ca812-6bf4-4242-bbf8-019f33061d27
+É
+java:S1186d"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ö„˜şúÿÿÿÿ8ìÙ±ª‚2J$a59014df-bbe1-48ee-95fc-518a3b92b139
+É
+java:S1186i"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•ßçùÿÿÿÿ8ìÙ±ª‚2J$2f48774b-f215-47ad-925a-669e792efdaf
+s
+java:S1128
+"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8‚Ú±ª‚2J$6cd7d89f-6440-4928-9312-9b42d4393e36

@@ -1,41 +1,29 @@
 package controller;
 
 import model.Socio;
-import model.TipoMembresia;
 import service.EmailService;
-import service.MembresiaService;
 import service.SocioService;
-import service.TipoMembresiaService;
 import view.RegistroSociosView;
 
 import javax.swing.*;
 import java.awt.event.*;
 import java.util.List;
 
-public class RegistroSociosController extends WindowController implements ActionListener, ItemListener, MouseListener{
+public class RegistroSociosController extends WindowController implements ActionListener, MouseListener{
     private RegistroSociosView view;
     private SocioService socioService;
-    private MembresiaService membresiaService;
-    private TipoMembresiaService tipoMembresiaService;
     private Socio socio;
-    private List<TipoMembresia> listaTiposMembresia;
-    private TipoMembresia tipoMembresia;
     private PaginaPrincipalController paginaPrincipalController;
 
     public RegistroSociosController() {
         this.view = new RegistroSociosView();
         this.paginaPrincipalController = PaginaPrincipalController.getInstance();
         this.socioService = new SocioService();
-        this.membresiaService = new MembresiaService();
-        this.tipoMembresiaService = new TipoMembresiaService();
         this.socio = new Socio();
-        this.tipoMembresia = new TipoMembresia();
         view.setLocationRelativeTo(null);
         view.setVisible(true);
-        view.cmbTipoMembresia.addItemListener(this);
         view.ButtonRegistrar.addActionListener(this);
         view.ButtonCancelar.addActionListener(this);
-        cargarTiposMembresia();
     }
 
     @Override
@@ -63,10 +51,8 @@ public class RegistroSociosController extends WindowController implements Action
                 socio.setFechaNacimiento(new java.sql.Date(view.dcFechaNacimiento.getDate().getTime()));
                 if(socioService.validarSocio(socio)){
                     socioService.registrarSocio(socio);
-                    JOptionPane.showMessageDialog(null, "Socio registrado correctamente");
                     socio = socioService.buscarSocioPorCedula(socio.getCedula());
-                    membresiaService.registrarMembresia(socio, listaTiposMembresia.get(view.cmbTipoMembresia.getSelectedIndex()));
-                    JOptionPane.showMessageDialog(null, "Membresia registrada correctamente");
+                    JOptionPane.showMessageDialog(null, "Socio registrado correctamente");
                     EmailService emailService = new EmailService();
                     emailService.enviarCorreoNuevoSocio(socio.getEmail(), socio.getNombre(), socio.getApellido(), String.valueOf(socio.getId()));
                     vaciarCampos();
@@ -84,26 +70,6 @@ public class RegistroSociosController extends WindowController implements Action
         paginaPrincipalController.mostrarPaginaPrincipal();
     }
 
-    @Override
-    public void itemStateChanged(ItemEvent e) {
-        if (e.getStateChange() == ItemEvent.SELECTED) {
-            tipoMembresia = listaTiposMembresia.get(view.cmbTipoMembresia.getSelectedIndex());
-            view.lblDescripcionMembresia.setText(String.valueOf("<html>"+tipoMembresia.getDescripcion()+"</html>"));
-        }
-    }
-
-    // Implementación de los métodos de MouseListener...
-
-    private void cargarTiposMembresia() {
-        try {
-            listaTiposMembresia = tipoMembresiaService.obtenerTiposMembresia();
-            for (TipoMembresia tipoMembresia : listaTiposMembresia) {
-                view.cmbTipoMembresia.addItem(tipoMembresia.getNombre());
-            }
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, "Error al cargar los tipos de membresia: " + e.getMessage());
-        }
-    }
 
     private void vaciarCampos() {
         view.txtCedula.setText("");
@@ -113,8 +79,6 @@ public class RegistroSociosController extends WindowController implements Action
         view.txtTelefono.setText("");
         view.txtDireccion.setText("");
         view.dcFechaNacimiento.setDate(null);
-        view.cmbTipoMembresia.setSelectedIndex(0);
-        // Agrega aquí todos los demás campos de texto que quieras vaciar
     }
 
     @Override

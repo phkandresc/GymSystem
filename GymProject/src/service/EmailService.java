@@ -3,6 +3,9 @@ package service;
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.Properties;
 
 public class EmailService {
@@ -29,20 +32,34 @@ public class EmailService {
             message.setFrom(new InternetAddress("tuCorreo@gmail.com"));
             message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(to));
             message.setSubject(subject);
-            message.setText(content);
-
+            message.setContent(content, "text/html");
             Transport.send(message);
         } catch (MessagingException e) {
             throw new RuntimeException(e);
         }
     }
 
+    private String readHtmlFile(String filePath) {
+        String content = "";
+        try {
+            content = new String(Files.readAllBytes(Paths.get(filePath)));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return content;
+    }
+
     public void enviarCorreoNuevoSocio(String to, String nombre, String apellido, String id) {
         String subject = "Bienvenido a nuestro gimnasio";
-        String content = "Hola " + nombre + " " + apellido + ",\n\n" +
-                "Bienvenido a nuestro gimnasio. Tu número de socio es: " + id + "\n\n" +
-                "Saludos,\n" +
-                "Gimnasio";
+        String content = readHtmlFile("src/html/CorreoNuevoSocio.html");
+        content = content.replace("{nombre}", nombre);
+        content = content.replace("{apellido}", apellido);
+        content = content.replace("{id}", id);
         sendEmail(to, subject, content);
+    }
+
+    public static void main(String[] args) {
+        EmailService emailService = new EmailService();
+        emailService.enviarCorreoNuevoSocio("kacoraizaca@gmail.com", "Katherine", "Caizaca", "1");
     }
 }
