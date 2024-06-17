@@ -1,22 +1,22 @@
 
-	java:S112 "FDefine and throw a dedicated exception instead of using a generic one.(¼ÿ¾¹ÿÿÿÿÿ8¯«°°2J$d2a83e1c-108c-4c45-8896-89faea768a54
+	java:S112 "FDefine and throw a dedicated exception instead of using a generic one.(¼ÿ¾¹ÿÿÿÿÿ8¯«°°2J$6cd0c2a9-d90a-466f-bfd2-857f23d85399
 Œ
-java:S2387"I"paginaPrincipalController" is the name of a field in "WindowController".(®Ó8çÿ¤‚2J$58821029-f7ed-4c12-bde3-abbe87aedb59
+java:S2387"I"paginaPrincipalController" is the name of a field in "WindowController".(®Ó8çÿ¤‚2J$e671fa56-c730-443f-9f11-e7cc01747827
 Ê
-java:S1186§"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(®î’×üÿÿÿÿ8°«°°2J$d2b08e57-3312-4e4c-ab13-d04db58fe573
+java:S1186§"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(®î’×üÿÿÿÿ8°«°°2J$ba34ae20-bb4f-420a-8354-918d5fbaba1b
 Å
-java:S1186¬"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ãÆĞÂ8±«°°2J$28d57c4e-ca34-41fc-a21e-15d2df84abc3
+java:S1186¬"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ãÆĞÂ8±«°°2J$b19fff99-b226-45fa-b865-edb430ad6a63
 Ê
-java:S1186±"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ö„˜şúÿÿÿÿ8±«°°2J$520873ae-4710-4914-864f-12c7306a1bf5
+java:S1186±"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ö„˜şúÿÿÿÿ8±«°°2J$3e22ae1b-0a3a-4ce9-946d-3f23de9db4b8
 Ê
-java:S1186¶"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•ßçùÿÿÿÿ8±«°°2J$3c0b3f29-1322-4619-839f-03140e743920
+java:S1186¶"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•ßçùÿÿÿÿ8±«°°2J$0133e09f-c6f7-4a6b-93b7-d157ec184fd6
 š
-java:S3776B"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(¼ Òşüÿÿÿÿ8¸«°°2J$cfc9a4cb-e211-4eba-8ebb-e86f8bab71df
+java:S3776B"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(¼ Òşüÿÿÿÿ8¸«°°2J$93bfb373-fe8e-45b6-a72e-9de9449f79b9
 j
-java:S1125n"'Remove the unnecessary boolean literal.(ÎÅü‚8¼«°°2J$ff6ec43c-fa6b-4ba6-b05e-93f2af8272ff
+java:S1125n"'Remove the unnecessary boolean literal.(ÎÅü‚8¼«°°2J$aa63e4a6-c66b-460f-a992-69e247ff821b
 _
-java:S3626€"Remove this redundant jump.(ûÁİ…8¸—¿‚2J$fd574552-abfc-42e9-b81a-c4df65181a21
+java:S3626€"Remove this redundant jump.(ûÁİ…8¸—¿‚2J$5b95e523-5058-4bc8-8772-1c6999ba898a
 s
-java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8¼—¿‚2J$b6947143-7ce1-4aa3-acd8-a77c413bd312
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8¼—¿‚2J$68e6c4f4-455d-433a-b0a2-690f2ac4bbeb
 €
-java:S1068"=Remove this unused "paginaPrincipalController" private field.(®Ó8®‹…‚2J$6444b696-d613-408a-a1f7-4563645368bb
+java:S1068"=Remove this unused "paginaPrincipalController" private field.(®Ó8®‹…‚2J$8b46c597-6840-4c07-8dce-8ddcdc16a950

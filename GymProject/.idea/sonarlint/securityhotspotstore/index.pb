@@ -74,3 +74,5 @@ N
 src/html/CorreoNuevoSocio.html,6\4\64f65dc83ac2e1c13b772eb7b321199b20d1cecc
 C
 src/html/styles.css,a\d\ada19b060b2f48ffc42c446a986bb5e2975c78dc
+U
+%src/html/CorreoRegistroMembresia.html,4\b\4b06dd99858156081cd64d6c6ac8571c57b185cf

@@ -58,8 +58,17 @@ public class EmailService {
         sendEmail(to, subject, content);
     }
 
+    public void enviarCorreoRegistroMembresia(String to, String nombre, String apellido, String id) {
+        String subject = "Bienvenido a nuestro gimnasio";
+        String content = readHtmlFile("src/html/CorreoRegistroMembresia.html");
+        content = content.replace("{nombre}", nombre);
+        content = content.replace("{apellido}", apellido);
+        content = content.replace("{id}", id);
+        sendEmail(to, subject, content);
+    }
+
     public static void main(String[] args) {
         EmailService emailService = new EmailService();
-        emailService.enviarCorreoNuevoSocio("kacoraizaca@gmail.com", "Katherine", "Caizaca", "1");
+        emailService.enviarCorreoRegistroMembresia("kacoraizaca@gmail.com","Katherine", "Caizaca", "1");
     }
 }
