@@ -1,5 +1,9 @@
 package service;
 
+import model.Membresia;
+import model.Socio;
+import model.TipoMembresia;
+
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
@@ -58,17 +62,21 @@ public class EmailService {
         sendEmail(to, subject, content);
     }
 
-    public void enviarCorreoRegistroMembresia(String to, String nombre, String apellido, String id) {
+    public void enviarCorreoRegistroMembresia(Socio socio, Membresia membresia, TipoMembresia tipoMembresia) {
         String subject = "Bienvenido a nuestro gimnasio";
         String content = readHtmlFile("src/html/CorreoRegistroMembresia.html");
-        content = content.replace("{nombre}", nombre);
-        content = content.replace("{apellido}", apellido);
-        content = content.replace("{id}", id);
-        sendEmail(to, subject, content);
+        content = content.replace("{nombre}", socio.getNombre());
+        content = content.replace("{apellido}", socio.getApellido());
+        content = content.replace("{tipo_membresia}", tipoMembresia.getNombre());
+        content = content.replace("{duracion}", String.valueOf(tipoMembresia.getDuracion()));
+        content = content.replace("{descripcion}", tipoMembresia.getDescripcion());
+        content = content.replace("{precio}", String.valueOf(tipoMembresia.getPrecio()));
+        content = content.replace("{fecha_inicio}", membresia.getFechaInicio().toString());
+        content = content.replace("{fecha_fin}", membresia.getFechaFin().toString());
+        sendEmail(socio.getEmail(), subject, content);
     }
 
     public static void main(String[] args) {
         EmailService emailService = new EmailService();
-        emailService.enviarCorreoRegistroMembresia("kacoraizaca@gmail.com","Katherine", "Caizaca", "1");
     }
 }

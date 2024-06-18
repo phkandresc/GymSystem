@@ -1,15 +1,15 @@
 
 “
 java:S1854
-"KRemove this useless assignment to local variable "iniciarSesionController".(üúÆ¬ÿÿÿÿÿ8şà²¬2J$ac74da4a-9f0b-4f04-8204-7da07a703369
+"KRemove this useless assignment to local variable "iniciarSesionController".(üúÆ¬ÿÿÿÿÿ8şà²¬2J$4f11d2bd-d2a6-491d-85ac-df8e1eddf940
 „
 java:S1481
-"<Remove this unused "iniciarSesionController" local variable.(üúÆ¬ÿÿÿÿÿ8€á²¬2J$1ac60072-5e37-42d6-a68a-730be4aaf745
-s
-java:S1128"1Remove this unused import 'service.EmailService'.(‰¦Œ-8áó«¬2J$e9ce1761-1f5d-40ee-9784-a29593c47838
-d
-java:S1128"!Remove this unused import 'view'.(ïÖ¹â8áó«¬2J$203f092e-09a1-4eb5-9bad-6d360a7ec4c5
-€
-java:S1128">Remove this unused import 'DataAccessObject.AdministradorDAO'.(¾Å—I8áó«¬2J$90420a57-36cd-41da-ab0d-0953fe43661d
-s
-java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8áó«¬2J$5b0ca400-4dcf-4a8e-976a-4e994776b011
+"<Remove this unused "iniciarSesionController" local variable.(üúÆ¬ÿÿÿÿÿ8€á²¬2J$be35a74c-242b-4fec-aa04-ef3f5fdfd098
+M
+java:S1128"1Remove this unused import 'service.EmailService'.(‰¦Œ-8ê´‚2
+>
+java:S1128"!Remove this unused import 'view'.(ïÖ¹â8ê´‚2
+Z
+java:S1128">Remove this unused import 'DataAccessObject.AdministradorDAO'.(¾Å—I8ê´‚2
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ê´‚2

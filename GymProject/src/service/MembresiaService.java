@@ -16,7 +16,7 @@ public class MembresiaService {
         this.membresiaDAO = new MembresiaDAO();
     }
 
-    public void registrarMembresia(Socio socio, TipoMembresia tipoMembresia) throws Exception {
+    public Membresia registrarMembresia(Socio socio, TipoMembresia tipoMembresia) throws Exception {
         Calendar calendar = Calendar.getInstance();
         Date fechaInicio = new Date(calendar.getTimeInMillis());
         calendar.add(Calendar.DAY_OF_MONTH, tipoMembresia.getDuracion());
@@ -30,6 +30,7 @@ public class MembresiaService {
                 fechaFin
         );
         membresiaDAO.registrarMembresia(membresia);
+        return membresia;
     }
 
 }

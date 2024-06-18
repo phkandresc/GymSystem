@@ -1,0 +1,25 @@
+
+‰
+java:S2095!"FUse try-with-resources or close this "Document" in a "finally" clause.(¯ü¦8¥Ø“·‚2J$6e86859e-bdd9-47cd-a1cb-63d46d3ab505
+‘
+java:S2095 "IUse try-with-resources or close this "PdfDocument" in a "finally" clause.(…½ğêûÿÿÿÿ8¥Ø“·‚2J$3a2ce978-12e4-4fde-96c3-162881706abc
+‘
+java:S20958"IUse try-with-resources or close this "PdfDocument" in a "finally" clause.(…½ğêûÿÿÿÿ8¥Ø“·‚2J$ae47ad65-66b2-493f-af81-66e0d39d6614
+
+java:S20957"GUse try-with-resources or close this "PdfWriter" in a "finally" clause.(ä‹í­ıÿÿÿÿ8¥Ø“·‚2J$02414257-06a6-4e8e-a8cd-798d1ab15e21
+‰
+java:S20959"FUse try-with-resources or close this "Document" in a "finally" clause.(¯ü¦8¥Ø“·‚2J$15ad8903-4ace-4570-b528-1f787de4bb52
+
+java:S2095"GUse try-with-resources or close this "PdfWriter" in a "finally" clause.(ä‹í­ıÿÿÿÿ8¥Ø“·‚2J$21bceb58-03d1-4943-b44c-bb5103fa096a
+•
+java:S2095T"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(¤éÆÖùÿÿÿÿ8Óã”·‚2J$9447578f-d15e-4d00-9678-27bcea7d79da
+€
+java:S1128">Remove this unused import 'com.itextpdf.kernel.geom.PageSize'.(† ı:8‚ä”·‚2J$d0300c86-10b8-46c3-b998-1d567140a54b
+a
+java:S1128"Remove this duplicated import.(‘»®Ô8ÔØ“·‚2J$81b00010-4c4b-49ca-beae-6456efc174f3
+a
+java:S1128"Remove this duplicated import.(’ìÿä8ÔØ“·‚2J$a21a75fd-b990-4019-9bd8-a3b63727b299
+s
+java:S1128"0Remove this unused import 'java.nio.file.Files'.(‚ƒü8‚ä”·‚2J$45899d21-944b-47c6-972c-040c8ae2755b
+s
+java:S1128"0Remove this unused import 'java.nio.file.Paths'.(áè°¯8‚ä”·‚2J$6c424a00-48a8-4750-86ac-5d325f6cb3c0

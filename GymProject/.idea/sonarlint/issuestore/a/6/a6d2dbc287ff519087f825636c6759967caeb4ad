@@ -1,10 +1,14 @@
 
-	java:S112&"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ğš’«‚2J$93865a37-ab1f-4ee9-a034-1dd1cd6852f3
+	java:S112*"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8«¸Äµ‚2J$9407b722-2d2d-48c3-a23f-0ceb51fabde2
 i
-java:S1170"!Make this final field static too.(âúÏêüÿÿÿÿ8ñš’«‚2J$cd938bf6-c2dd-44f5-8152-7045029f23e2
+java:S1170"!Make this final field static too.(âúÏêüÿÿÿÿ8«¸Äµ‚2J$0971475a-02c4-427b-8a9b-5f94c6e55229
 i
-java:S1170"!Make this final field static too.(·¬•øÿÿÿÿ8ñš’«‚2J$1ac95c77-c1ee-41df-a370-5bb25507d18a
+java:S1170"!Make this final field static too.(·¬•øÿÿÿÿ8«¸Äµ‚2J$bb240ee7-7de0-440c-8965-ccdbc063d9d4
 }
-java:S1161":Add the "@Override" annotation above this method signature(‡èú×8õš’«‚2J$36d64597-3182-432a-9d72-4f28d3f86e87
+java:S1161":Add the "@Override" annotation above this method signature(‡èú×8«¸Äµ‚2J$3be4e444-2789-42f0-9e04-caad6a6b64bb
 y
-java:S6437"6Revoke and change this password, as it is compromised.(üÚãÛ8õš’«‚2J$d8d72253-f9de-40b8-a46e-6a86c43f513f
+java:S6437"6Revoke and change this password, as it is compromised.(üÚãÛ8«¸Äµ‚2J$203b19af-4d2a-4157-b232-2be960909718
+ƒ
+java:S1854P"@Remove this useless assignment to local variable "emailService".(±Æ¨œ8»¸Äµ‚2J$36a87ec0-1d3e-402d-ba54-55076a870f71
+t
+java:S1481P"1Remove this unused "emailService" local variable.(±Æ¨œ8»¸Äµ‚2J$34784aff-457a-4d86-b3c1-b92f5597d78b

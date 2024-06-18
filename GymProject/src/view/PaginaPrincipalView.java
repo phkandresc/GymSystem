@@ -11,22 +11,21 @@ import java.awt.Color;
  * @author kacor
  */
 public class PaginaPrincipalView extends javax.swing.JFrame {
-    private static PaginaPrincipalView instance;
     Color naranjaOscuro = new Color(242,68,5);
     Color naranja = new Color(242,98,15);
+    public static PaginaPrincipalView instance;
+
+    public static PaginaPrincipalView getInstance(){
+        if(instance == null){
+            instance = new PaginaPrincipalView();
+        }
+        return instance;
+    }
     /**
      * Creates new form PaginaPrincipalView2
      */
     private PaginaPrincipalView() {
-        this.setLocationRelativeTo(null);
         initComponents();
-    }
-
-    public static PaginaPrincipalView getInstance(){
-        if (instance == null) {
-            instance = new PaginaPrincipalView();
-        }
-        return instance;
     }
 
     /**
@@ -38,8 +37,8 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        jPanel10 = new javax.swing.JPanel();
+        background = new javax.swing.JPanel();
+        header = new javax.swing.JPanel();
         jLabel22 = new javax.swing.JLabel();
         jLabel21 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
@@ -86,7 +85,7 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
         jSeparator2 = new javax.swing.JSeparator();
         paginaPagosPanel = new javax.swing.JPanel();
         jLabel35 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
+        btnRegistrarMembresia = new javax.swing.JButton();
         jLabel34 = new javax.swing.JLabel();
         paginaClasesPanel = new javax.swing.JPanel();
         jLabel26 = new javax.swing.JLabel();
@@ -99,31 +98,31 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
         paginaInformesPanel = new javax.swing.JPanel();
         jLabel30 = new javax.swing.JLabel();
         menuLateral = new javax.swing.JPanel();
-        jPanel2 = new javax.swing.JPanel();
+        jpPaginaPrincipal = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jPanel3 = new javax.swing.JPanel();
+        jpCerrarSesion = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jPanel4 = new javax.swing.JPanel();
+        jpSocios = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jPanel5 = new javax.swing.JPanel();
+        jpPagos = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        jPanel6 = new javax.swing.JPanel();
+        jpClases = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
-        jPanel7 = new javax.swing.JPanel();
+        jpActividades = new javax.swing.JPanel();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
-        jPanel8 = new javax.swing.JPanel();
+        jpEspacios = new javax.swing.JPanel();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
-        jPanel9 = new javax.swing.JPanel();
+        jpMaquinas = new javax.swing.JPanel();
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
-        jPanel11 = new javax.swing.JPanel();
+        jpInformes = new javax.swing.JPanel();
         jLabel19 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
 
@@ -132,30 +131,30 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        background.setBackground(new java.awt.Color(255, 255, 255));
+        background.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel10.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        header.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel22.setFont(new java.awt.Font("Poppins", 0, 16)); // NOI18N
         jLabel22.setForeground(new java.awt.Color(255, 255, 255));
         jLabel22.setText("Bienvenido Admin");
-        jPanel10.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(1080, 10, -1, 40));
+        header.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(1080, 10, -1, 40));
 
         jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconoBarraBlanco.png"))); // NOI18N
-        jPanel10.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 10, -1, -1));
+        header.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 10, -1, -1));
 
         jLabel17.setFont(new java.awt.Font("Poppins Medium", 0, 20)); // NOI18N
         jLabel17.setForeground(new java.awt.Color(255, 255, 255));
         jLabel17.setText("Gimnasio");
-        jPanel10.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 10, -1, 40));
+        header.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 10, -1, 40));
 
         jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/barraTitulo.png"))); // NOI18N
         jLabel18.setText("jLabel18");
         jLabel18.setPreferredSize(new java.awt.Dimension(1280, 100));
-        jPanel10.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 60));
+        header.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 60));
 
-        jPanel1.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 60));
+        background.add(header, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 60));
 
         GrupoDePaneles.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -197,8 +196,8 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
         lblCorreoElectronico.setText("Correo electronico");
         paginaPrincipalPanel.add(lblCorreoElectronico, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 250, -1));
 
-        panelMembresias.setBorder(javax.swing.BorderFactory.createMatteBorder(10, 0, 0, 0, javax.swing.UIManager.getDefaults().getColor("nb.errorForeground")));
-        panelMembresias.setForeground(new java.awt.Color(255, 102, 0));
+        panelMembresias.setBorder(javax.swing.BorderFactory.createMatteBorder(10, 0, 0, 0, new java.awt.Color(102, 255, 0)));
+        panelMembresias.setForeground(new java.awt.Color(153, 255, 153));
         panelMembresias.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel39.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
@@ -360,15 +359,15 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
         jLabel35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/image 1.jpg"))); // NOI18N
         paginaPagosPanel.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 100, -1, -1));
 
-        jButton3.setBackground(new java.awt.Color(255, 153, 102));
-        jButton3.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
-        jButton3.setText("Registrar un pago");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        btnRegistrarMembresia.setBackground(new java.awt.Color(255, 153, 102));
+        btnRegistrarMembresia.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
+        btnRegistrarMembresia.setText("Registrar membresia");
+        btnRegistrarMembresia.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                btnRegistrarMembresiaActionPerformed(evt);
             }
         });
-        paginaPagosPanel.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 450, -1, 40));
+        paginaPagosPanel.add(btnRegistrarMembresia, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 450, -1, 40));
 
         jLabel34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Rectangle 2 (1).png"))); // NOI18N
         paginaPagosPanel.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(155, 100, 270, -1));
@@ -415,359 +414,359 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
 
         GrupoDePaneles.addTab("tab8", paginaInformesPanel);
 
-        jPanel1.add(GrupoDePaneles, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 30, 1010, 650));
+        background.add(GrupoDePaneles, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 30, 1010, 650));
 
         menuLateral.setBackground(new java.awt.Color(242, 98, 15));
         menuLateral.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel2.setBackground(new java.awt.Color(242, 98, 15));
-        jPanel2.addMouseListener(new java.awt.event.MouseAdapter() {
+        jpPaginaPrincipal.setBackground(new java.awt.Color(242, 98, 15));
+        jpPaginaPrincipal.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jPanel2MouseClicked(evt);
+                jpPaginaPrincipalMouseClicked(evt);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jPanel2MouseEntered(evt);
+                jpPaginaPrincipalMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jPanel2MouseExited(evt);
+                jpPaginaPrincipalMouseExited(evt);
             }
         });
-        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jpPaginaPrincipal.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
         jLabel1.setText("Pagina Principal");
-        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, -1, 30));
+        jpPaginaPrincipal.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, -1, 30));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconoHomeMancuerna.png"))); // NOI18N
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, -1, -1));
+        jpPaginaPrincipal.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, -1, -1));
 
-        menuLateral.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 270, 50));
+        menuLateral.add(jpPaginaPrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 270, 50));
 
-        jPanel3.setBackground(new java.awt.Color(242, 98, 15));
-        jPanel3.addMouseListener(new java.awt.event.MouseAdapter() {
+        jpCerrarSesion.setBackground(new java.awt.Color(242, 98, 15));
+        jpCerrarSesion.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jPanel3MouseClicked(evt);
+                jpCerrarSesionMouseClicked(evt);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jPanel3MouseEntered(evt);
+                jpCerrarSesionMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jPanel3MouseExited(evt);
+                jpCerrarSesionMouseExited(evt);
             }
         });
-        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jpCerrarSesion.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel3.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
         jLabel3.setText("Cerrar Sesion");
-        jPanel3.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, -1, 30));
+        jpCerrarSesion.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, -1, 30));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconoCerrarSesion.png"))); // NOI18N
-        jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, -1, -1));
+        jpCerrarSesion.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, -1, -1));
 
-        menuLateral.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 520, 270, 50));
+        menuLateral.add(jpCerrarSesion, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 520, 270, 50));
 
-        jPanel4.setBackground(new java.awt.Color(242, 98, 15));
-        jPanel4.addMouseListener(new java.awt.event.MouseAdapter() {
+        jpSocios.setBackground(new java.awt.Color(242, 98, 15));
+        jpSocios.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jPanel4MouseClicked(evt);
+                jpSociosMouseClicked(evt);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jPanel4MouseEntered(evt);
+                jpSociosMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jPanel4MouseExited(evt);
+                jpSociosMouseExited(evt);
             }
         });
-        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jpSocios.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel5.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
         jLabel5.setText("Socios");
-        jPanel4.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, -1, 30));
+        jpSocios.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, -1, 30));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconoSocioNegro.png"))); // NOI18N
-        jPanel4.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, -1, -1));
+        jpSocios.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, -1, -1));
 
-        menuLateral.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 170, 270, 50));
+        menuLateral.add(jpSocios, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 170, 270, 50));
 
-        jPanel5.setBackground(new java.awt.Color(242, 98, 15));
-        jPanel5.addMouseListener(new java.awt.event.MouseAdapter() {
+        jpPagos.setBackground(new java.awt.Color(242, 98, 15));
+        jpPagos.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jPanel5MouseClicked(evt);
+                jpPagosMouseClicked(evt);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jPanel5MouseEntered(evt);
+                jpPagosMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jPanel5MouseExited(evt);
+                jpPagosMouseExited(evt);
             }
         });
-        jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jpPagos.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel7.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
         jLabel7.setText("Pagos");
-        jPanel5.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, -1, 30));
+        jpPagos.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, -1, 30));
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconoMembresiaNegro.png"))); // NOI18N
-        jPanel5.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, -1, -1));
+        jpPagos.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, -1, -1));
 
-        menuLateral.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 220, 270, 50));
+        menuLateral.add(jpPagos, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 220, 270, 50));
 
-        jPanel6.setBackground(new java.awt.Color(242, 98, 15));
-        jPanel6.addMouseListener(new java.awt.event.MouseAdapter() {
+        jpClases.setBackground(new java.awt.Color(242, 98, 15));
+        jpClases.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jPanel6MouseClicked(evt);
+                jpClasesMouseClicked(evt);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jPanel6MouseEntered(evt);
+                jpClasesMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jPanel6MouseExited(evt);
+                jpClasesMouseExited(evt);
             }
         });
-        jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jpClases.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel9.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
         jLabel9.setText("Clases");
-        jPanel6.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, -1, 30));
+        jpClases.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, -1, 30));
 
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconoHombreMancuerna.png"))); // NOI18N
-        jPanel6.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, -1, -1));
+        jpClases.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, -1, -1));
 
-        menuLateral.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 270, 270, 50));
+        menuLateral.add(jpClases, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 270, 270, 50));
 
-        jPanel7.setBackground(new java.awt.Color(242, 98, 15));
-        jPanel7.addMouseListener(new java.awt.event.MouseAdapter() {
+        jpActividades.setBackground(new java.awt.Color(242, 98, 15));
+        jpActividades.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jPanel7MouseClicked(evt);
+                jpActividadesMouseClicked(evt);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jPanel7MouseEntered(evt);
+                jpActividadesMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jPanel7MouseExited(evt);
+                jpActividadesMouseExited(evt);
             }
         });
-        jPanel7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jpActividades.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel11.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
         jLabel11.setText("Actividades");
-        jPanel7.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, -1, 30));
+        jpActividades.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, -1, 30));
 
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconoParejaNegro.png"))); // NOI18N
-        jPanel7.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, -1, -1));
+        jpActividades.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, -1, -1));
 
-        menuLateral.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 320, 270, 50));
+        menuLateral.add(jpActividades, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 320, 270, 50));
 
-        jPanel8.setBackground(new java.awt.Color(242, 98, 15));
-        jPanel8.addMouseListener(new java.awt.event.MouseAdapter() {
+        jpEspacios.setBackground(new java.awt.Color(242, 98, 15));
+        jpEspacios.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jPanel8MouseClicked(evt);
+                jpEspaciosMouseClicked(evt);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jPanel8MouseEntered(evt);
+                jpEspaciosMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jPanel8MouseExited(evt);
+                jpEspaciosMouseExited(evt);
             }
         });
-        jPanel8.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jpEspacios.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel13.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
         jLabel13.setText("Espacios");
-        jPanel8.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, -1, 30));
+        jpEspacios.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, -1, 30));
 
         jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconoEspacios.png"))); // NOI18N
-        jPanel8.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, -1, -1));
+        jpEspacios.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, -1, -1));
 
-        menuLateral.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 370, 270, 50));
+        menuLateral.add(jpEspacios, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 370, 270, 50));
 
-        jPanel9.setBackground(new java.awt.Color(242, 98, 15));
-        jPanel9.addMouseListener(new java.awt.event.MouseAdapter() {
+        jpMaquinas.setBackground(new java.awt.Color(242, 98, 15));
+        jpMaquinas.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jPanel9MouseClicked(evt);
+                jpMaquinasMouseClicked(evt);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jPanel9MouseEntered(evt);
+                jpMaquinasMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jPanel9MouseExited(evt);
+                jpMaquinasMouseExited(evt);
             }
         });
-        jPanel9.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jpMaquinas.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel15.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
         jLabel15.setText("Maquinas");
-        jPanel9.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, -1, 30));
+        jpMaquinas.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, -1, 30));
 
         jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconoMaquinas.png"))); // NOI18N
-        jPanel9.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, -1, -1));
+        jpMaquinas.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, -1, -1));
 
-        menuLateral.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 420, 270, 50));
+        menuLateral.add(jpMaquinas, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 420, 270, 50));
 
-        jPanel11.setBackground(new java.awt.Color(242, 98, 15));
-        jPanel11.addMouseListener(new java.awt.event.MouseAdapter() {
+        jpInformes.setBackground(new java.awt.Color(242, 98, 15));
+        jpInformes.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jPanel11MouseClicked(evt);
+                jpInformesMouseClicked(evt);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jPanel11MouseEntered(evt);
+                jpInformesMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                jPanel11MouseExited(evt);
+                jpInformesMouseExited(evt);
             }
         });
-        jPanel11.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jpInformes.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel19.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
         jLabel19.setText("Informes y analisis");
-        jPanel11.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, -1, 30));
+        jpInformes.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, -1, 30));
 
         jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconoInformes.png"))); // NOI18N
-        jPanel11.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, -1, -1));
+        jpInformes.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, -1, -1));
 
-        menuLateral.add(jPanel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 470, 270, 50));
+        menuLateral.add(jpInformes, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 470, 270, 50));
 
-        jPanel1.add(menuLateral, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 270, 680));
+        background.add(menuLateral, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 270, 680));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 680));
+        getContentPane().add(background, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 680));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jPanel2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel2MouseEntered
+    private void jpPaginaPrincipalMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jpPaginaPrincipalMouseEntered
         // TODO add your handling code here:
-        jPanel2.setBackground(naranjaOscuro);
-    }//GEN-LAST:event_jPanel2MouseEntered
+        jpPaginaPrincipal.setBackground(naranjaOscuro);
+    }//GEN-LAST:event_jpPaginaPrincipalMouseEntered
 
-    private void jPanel2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel2MouseExited
+    private void jpPaginaPrincipalMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jpPaginaPrincipalMouseExited
         // TODO add your handling code here:
-        jPanel2.setBackground(naranja);
-    }//GEN-LAST:event_jPanel2MouseExited
+        jpPaginaPrincipal.setBackground(naranja);
+    }//GEN-LAST:event_jpPaginaPrincipalMouseExited
 
-    private void jPanel4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel4MouseEntered
+    private void jpSociosMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jpSociosMouseEntered
         // TODO add your handling code here:
-        jPanel4.setBackground(naranjaOscuro);
-    }//GEN-LAST:event_jPanel4MouseEntered
+        jpSocios.setBackground(naranjaOscuro);
+    }//GEN-LAST:event_jpSociosMouseEntered
 
-    private void jPanel4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel4MouseExited
+    private void jpSociosMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jpSociosMouseExited
         // TODO add your handling code here:
-        jPanel4.setBackground(naranja);
-    }//GEN-LAST:event_jPanel4MouseExited
+        jpSocios.setBackground(naranja);
+    }//GEN-LAST:event_jpSociosMouseExited
 
-    private void jPanel5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel5MouseEntered
+    private void jpPagosMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jpPagosMouseEntered
         // TODO add your handling code here:
-        jPanel5.setBackground(naranjaOscuro);
-    }//GEN-LAST:event_jPanel5MouseEntered
+        jpPagos.setBackground(naranjaOscuro);
+    }//GEN-LAST:event_jpPagosMouseEntered
 
-    private void jPanel5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel5MouseExited
+    private void jpPagosMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jpPagosMouseExited
         // TODO add your handling code here:
-        jPanel5.setBackground(naranja);
-    }//GEN-LAST:event_jPanel5MouseExited
+        jpPagos.setBackground(naranja);
+    }//GEN-LAST:event_jpPagosMouseExited
 
-    private void jPanel6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel6MouseEntered
+    private void jpClasesMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jpClasesMouseEntered
         // TODO add your handling code here:
-        jPanel6.setBackground(naranjaOscuro);
-    }//GEN-LAST:event_jPanel6MouseEntered
+        jpClases.setBackground(naranjaOscuro);
+    }//GEN-LAST:event_jpClasesMouseEntered
 
-    private void jPanel6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel6MouseExited
+    private void jpClasesMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jpClasesMouseExited
         // TODO add your handling code here:
-        jPanel6.setBackground(naranja);
-    }//GEN-LAST:event_jPanel6MouseExited
+        jpClases.setBackground(naranja);
+    }//GEN-LAST:event_jpClasesMouseExited
 
-    private void jPanel7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel7MouseEntered
+    private void jpActividadesMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jpActividadesMouseEntered
         // TODO add your handling code here:
-        jPanel7.setBackground(naranjaOscuro);
-    }//GEN-LAST:event_jPanel7MouseEntered
+        jpActividades.setBackground(naranjaOscuro);
+    }//GEN-LAST:event_jpActividadesMouseEntered
 
-    private void jPanel7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel7MouseExited
+    private void jpActividadesMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jpActividadesMouseExited
         // TODO add your handling code here:
-        jPanel7.setBackground(naranja);
-    }//GEN-LAST:event_jPanel7MouseExited
+        jpActividades.setBackground(naranja);
+    }//GEN-LAST:event_jpActividadesMouseExited
 
-    private void jPanel8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel8MouseEntered
+    private void jpEspaciosMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jpEspaciosMouseEntered
         // TODO add your handling code here:
-        jPanel8.setBackground(naranjaOscuro);
-    }//GEN-LAST:event_jPanel8MouseEntered
+        jpEspacios.setBackground(naranjaOscuro);
+    }//GEN-LAST:event_jpEspaciosMouseEntered
 
-    private void jPanel8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel8MouseExited
+    private void jpEspaciosMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jpEspaciosMouseExited
         // TODO add your handling code here:
-        jPanel8.setBackground(naranja);
-    }//GEN-LAST:event_jPanel8MouseExited
+        jpEspacios.setBackground(naranja);
+    }//GEN-LAST:event_jpEspaciosMouseExited
 
-    private void jPanel9MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel9MouseEntered
+    private void jpMaquinasMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jpMaquinasMouseEntered
         // TODO add your handling code here:
-        jPanel9.setBackground(naranjaOscuro);
-    }//GEN-LAST:event_jPanel9MouseEntered
+        jpMaquinas.setBackground(naranjaOscuro);
+    }//GEN-LAST:event_jpMaquinasMouseEntered
 
-    private void jPanel9MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel9MouseExited
+    private void jpMaquinasMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jpMaquinasMouseExited
         // TODO add your handling code here:
-        jPanel9.setBackground(naranja);
-    }//GEN-LAST:event_jPanel9MouseExited
+        jpMaquinas.setBackground(naranja);
+    }//GEN-LAST:event_jpMaquinasMouseExited
 
-    private void jPanel11MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel11MouseEntered
+    private void jpInformesMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jpInformesMouseEntered
         // TODO add your handling code here:
-        jPanel11.setBackground(naranjaOscuro);
-    }//GEN-LAST:event_jPanel11MouseEntered
+        jpInformes.setBackground(naranjaOscuro);
+    }//GEN-LAST:event_jpInformesMouseEntered
 
-    private void jPanel11MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel11MouseExited
+    private void jpInformesMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jpInformesMouseExited
         // TODO add your handling code here:
-        jPanel11.setBackground(naranja);
-    }//GEN-LAST:event_jPanel11MouseExited
+        jpInformes.setBackground(naranja);
+    }//GEN-LAST:event_jpInformesMouseExited
 
-    private void jPanel3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel3MouseEntered
+    private void jpCerrarSesionMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jpCerrarSesionMouseEntered
         // TODO add your handling code here:
-        jPanel3.setBackground(naranjaOscuro);
-    }//GEN-LAST:event_jPanel3MouseEntered
+        jpCerrarSesion.setBackground(naranjaOscuro);
+    }//GEN-LAST:event_jpCerrarSesionMouseEntered
 
-    private void jPanel3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel3MouseExited
+    private void jpCerrarSesionMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jpCerrarSesionMouseExited
         // TODO add your handling code here:
-        jPanel3.setBackground(naranja);
-    }//GEN-LAST:event_jPanel3MouseExited
+        jpCerrarSesion.setBackground(naranja);
+    }//GEN-LAST:event_jpCerrarSesionMouseExited
 
-    private void jPanel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel3MouseClicked
+    private void jpCerrarSesionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jpCerrarSesionMouseClicked
         // TODO add your handling code here:
         System.exit(0);
-    }//GEN-LAST:event_jPanel3MouseClicked
+    }//GEN-LAST:event_jpCerrarSesionMouseClicked
 
-    private void jPanel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel2MouseClicked
+    private void jpPaginaPrincipalMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jpPaginaPrincipalMouseClicked
         // TODO add your handling code here:
         GrupoDePaneles.setSelectedIndex(0);
-    }//GEN-LAST:event_jPanel2MouseClicked
+    }//GEN-LAST:event_jpPaginaPrincipalMouseClicked
 
-    private void jPanel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel4MouseClicked
+    private void jpSociosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jpSociosMouseClicked
         // TODO add your handling code here:
         GrupoDePaneles.setSelectedIndex(1);
-    }//GEN-LAST:event_jPanel4MouseClicked
+    }//GEN-LAST:event_jpSociosMouseClicked
 
-    private void jPanel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel5MouseClicked
+    private void jpPagosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jpPagosMouseClicked
         // TODO add your handling code here:
         GrupoDePaneles.setSelectedIndex(2);
-    }//GEN-LAST:event_jPanel5MouseClicked
+    }//GEN-LAST:event_jpPagosMouseClicked
 
-    private void jPanel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel6MouseClicked
+    private void jpClasesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jpClasesMouseClicked
         // TODO add your handling code here:
         GrupoDePaneles.setSelectedIndex(3);
-    }//GEN-LAST:event_jPanel6MouseClicked
+    }//GEN-LAST:event_jpClasesMouseClicked
 
-    private void jPanel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel7MouseClicked
+    private void jpActividadesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jpActividadesMouseClicked
         // TODO add your handling code here:
         GrupoDePaneles.setSelectedIndex(4);
-    }//GEN-LAST:event_jPanel7MouseClicked
+    }//GEN-LAST:event_jpActividadesMouseClicked
 
-    private void jPanel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel8MouseClicked
+    private void jpEspaciosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jpEspaciosMouseClicked
         // TODO add your handling code here:
         GrupoDePaneles.setSelectedIndex(5);
-    }//GEN-LAST:event_jPanel8MouseClicked
+    }//GEN-LAST:event_jpEspaciosMouseClicked
 
-    private void jPanel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel9MouseClicked
+    private void jpMaquinasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jpMaquinasMouseClicked
         // TODO add your handling code here:
         GrupoDePaneles.setSelectedIndex(6);
-    }//GEN-LAST:event_jPanel9MouseClicked
+    }//GEN-LAST:event_jpMaquinasMouseClicked
 
-    private void jPanel11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel11MouseClicked
+    private void jpInformesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jpInformesMouseClicked
         // TODO add your handling code here:
         GrupoDePaneles.setSelectedIndex(7);
-    }//GEN-LAST:event_jPanel11MouseClicked
+    }//GEN-LAST:event_jpInformesMouseClicked
 
     private void btnRegistrarNuevoSocioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistrarNuevoSocioActionPerformed
         // TODO add your handling code here:
@@ -777,9 +776,9 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnVerSociosActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void btnRegistrarMembresiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistrarMembresiaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_btnRegistrarMembresiaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -819,9 +818,11 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTabbedPane GrupoDePaneles;
+    private javax.swing.JPanel background;
+    public javax.swing.JButton btnRegistrarMembresia;
     public javax.swing.JButton btnRegistrarNuevoSocio;
     public javax.swing.JButton btnVerSocios;
-    private javax.swing.JButton jButton3;
+    private javax.swing.JPanel header;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -868,19 +869,17 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel10;
-    private javax.swing.JPanel jPanel11;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
-    private javax.swing.JPanel jPanel6;
-    private javax.swing.JPanel jPanel7;
-    private javax.swing.JPanel jPanel8;
-    private javax.swing.JPanel jPanel9;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
+    private javax.swing.JPanel jpActividades;
+    private javax.swing.JPanel jpCerrarSesion;
+    private javax.swing.JPanel jpClases;
+    private javax.swing.JPanel jpEspacios;
+    private javax.swing.JPanel jpInformes;
+    private javax.swing.JPanel jpMaquinas;
+    private javax.swing.JPanel jpPaginaPrincipal;
+    private javax.swing.JPanel jpPagos;
+    private javax.swing.JPanel jpSocios;
     public javax.swing.JLabel lblCorreoElectronico;
     public javax.swing.JLabel lblDireccion;
     public javax.swing.JLabel lblNombreGimnasio;

@@ -1,7 +1,9 @@
 package controller;
 
+import model.Membresia;
 import model.Socio;
 import model.TipoMembresia;
+import service.EmailService;
 import service.SocioService;
 import service.TipoMembresiaService;
 import view.RegistroMembresiaView;
@@ -135,9 +137,11 @@ public class RegistroMembresiaController extends WindowController implements Act
                     JOptionPane.showMessageDialog(null, "El efectivo ingresado es menor al total a pagar");
                     return;
                 }else if(Double.parseDouble(view.txtEfectivo.getText()) == Double.parseDouble(view.txtTotalPagar.getText())) {
-                    serviceMembresia.registrarMembresia(socioSeleccionado, listaTiposMembresia.get(view.cmbTipoMembresia.getSelectedIndex()));
+                    Membresia membresia = serviceMembresia.registrarMembresia(socioSeleccionado, listaTiposMembresia.get(view.cmbTipoMembresia.getSelectedIndex()));
+                    EmailService emailService = new EmailService();
+                    emailService.enviarCorreoRegistroMembresia(socioSeleccionado, membresia, listaTiposMembresia.get(view.cmbTipoMembresia.getSelectedIndex()));
                     JOptionPane.showMessageDialog(null, "Membresia registrada correctamente");
-                }
+                    }
             }
         } catch (Exception ex) {
             JOptionPane.showMessageDialog(null, "Error al registrar la membresia: " + ex.getMessage());

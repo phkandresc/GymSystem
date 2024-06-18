@@ -1,26 +1,26 @@
 
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ã¬Ú®ûÿÿÿÿ8´›‚Û€2J$1fe36842-097f-404d-a838-1f447de528d4
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ã¬Ú®ûÿÿÿÿ8´›‚Û€2J$05aa1f40-a83d-4724-9ed9-de8d062217b4
 ¡
-java:S2293z"YReplace the type specification in this constructor call with the diamond operator ("<>").(ùş…êøÿÿÿÿ8´›‚Û€2J$4de89a83-e86b-4b8e-ae8d-b0df996eb91f
+java:S2293z"YReplace the type specification in this constructor call with the diamond operator ("<>").(ùş…êøÿÿÿÿ8´›‚Û€2J$d5967b8b-6c0b-47e2-96c5-eaac50991483
 Š
-java:S1192A"GDefine a constant instead of duplicating this literal "cedula" 4 times.(Ö¨­È8·›‚Û€2J$5b4c031a-1783-4ba1-a3ea-a426bc3331eb
+java:S1192A"GDefine a constant instead of duplicating this literal "cedula" 4 times.(Ö¨­È8·›‚Û€2J$8479fa8d-9e63-435e-9e04-da2ca95432bb
 ™
-java:S1192G"QDefine a constant instead of duplicating this literal "fecha_nacimiento" 4 times.(¡·—øÿÿÿÿ8·›‚Û€2J$3654f1a2-7557-4fdb-90eb-7ee83f1d3722
+java:S1192G"QDefine a constant instead of duplicating this literal "fecha_nacimiento" 4 times.(¡·—øÿÿÿÿ8·›‚Û€2J$9bcf5837-7802-4b3d-be97-222a0d58ae52
 
-java:S1192F"JDefine a constant instead of duplicating this literal "direccion" 4 times.(Ó’º8·›‚Û€2J$c5dc6cb1-cc78-44a6-9110-926a89d2230a
+java:S1192F"JDefine a constant instead of duplicating this literal "direccion" 4 times.(Ó’º8·›‚Û€2J$acab0a68-76ce-4306-adfd-9c031d5c301e
 Š
-java:S1192B"GDefine a constant instead of duplicating this literal "nombre" 4 times.(Üå€ù8·›‚Û€2J$e51cbc25-ef01-4238-ad7b-2ddc9d4946c7
+java:S1192B"GDefine a constant instead of duplicating this literal "nombre" 4 times.(Üå€ù8·›‚Û€2J$72b8c90e-259b-4857-ad56-2cf584f198dc
 ˜
-java:S1192E"PDefine a constant instead of duplicating this literal "numero_telefono" 4 times.(›ãÄşÿÿÿÿ8·›‚Û€2J$15df6d30-6611-44ac-9be2-d1448156a1dd
+java:S1192E"PDefine a constant instead of duplicating this literal "numero_telefono" 4 times.(›ãÄşÿÿÿÿ8·›‚Û€2J$9ca825d8-cb21-4376-ae60-9875d5018310
 ‘
-java:S1192C"IDefine a constant instead of duplicating this literal "apellido" 4 times.(–òááÿÿÿÿÿ8·›‚Û€2J$a3f11dcd-32d4-4085-bc78-fc07eb4cec6f
+java:S1192C"IDefine a constant instead of duplicating this literal "apellido" 4 times.(–òááÿÿÿÿÿ8·›‚Û€2J$2e207bb0-cb17-45c8-aac3-2e32bd9a51fb
 ‰
-java:S1192D"FDefine a constant instead of duplicating this literal "email" 4 times.(œ²Ğæ8·›‚Û€2J$c4718417-bff1-4ab7-9730-27c123d642c2
+java:S1192D"FDefine a constant instead of duplicating this literal "email" 4 times.(œ²Ğæ8·›‚Û€2J$9056f63e-d17f-4ed8-8b28-c9943823b776
 g
-java:S69058"Don't use the query "SELECT *".(Å€®¹ùÿÿÿÿ8¼›‚Û€2J$354dad02-93e7-4450-9ec0-0bbe6eff56f1
+java:S69058"Don't use the query "SELECT *".(Å€®¹ùÿÿÿÿ8¼›‚Û€2J$0946939e-da2e-4b0c-885e-510bfe7f8ccd
 g
-java:S6905{"Don't use the query "SELECT *".(Öêÿ˜şÿÿÿÿ8Á›‚Û€2J$cef81058-e645-4c32-a8cf-4291c355f956
+java:S6905{"Don't use the query "SELECT *".(Öêÿ˜şÿÿÿÿ8Á›‚Û€2J$e8f97e34-eabf-4790-aec6-69ea691ed0a9
 c
-java:S6905•"Don't use the query "SELECT *".(éº§á8Â›‚Û€2J$fb4f34da-c8a6-4c71-ae44-b2a4fe995c12
+java:S6905•"Don't use the query "SELECT *".(éº§á8Â›‚Û€2J$ea2efae3-93be-4dc3-ad72-ee671b8a6ef7
 h
-java:S6905¯"Don't use the query "SELECT *".(ûğ€ªüÿÿÿÿ8Ã›‚Û€2J$f6da0dfb-c94f-4704-8f69-b02f12fb859a
+java:S6905¯"Don't use the query "SELECT *".(ûğ€ªüÿÿÿÿ8Ã›‚Û€2J$99730387-26ef-4224-bc12-ee1e5c369f89

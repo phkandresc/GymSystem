@@ -1,18 +1,18 @@
 
-ˆ	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Åìä’8™••°2J$394828ac-9f8d-4da5-a2c9-e31993940ac7
-‡	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(õˆ’u8™••°2J$d35da7e6-ce74-4bac-baba-71e6bcead8ce
-‡	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(¬ÂÓ8™••°2J$17c75357-1294-4a94-a41f-760c000ae949
-	java:S112!"FDefine and throw a dedicated exception instead of using a generic one.(â‘¥óüÿÿÿÿ8™••°2J$e8049c5c-b6dc-4ad5-a640-0acfc8d89412
-ˆ	java:S112%"FDefine and throw a dedicated exception instead of using a generic one.(ÈƒâÀ8™••°2J$39067f8c-066a-4551-8082-bf0ff25a07c4
-ˆ	java:S112)"FDefine and throw a dedicated exception instead of using a generic one.(Ô§Ş÷8™••°2J$0903598f-54c6-4a98-829e-b3264c28b27f
-ˆ	java:S112-"FDefine and throw a dedicated exception instead of using a generic one.(®€íÇ8™••°2J$7fd3159d-f4a2-4156-8a2f-67766541f49e
+ˆ	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Åìä’8™••°2J$737efbe7-1b2c-4399-9284-10e97fe8acc1
+‡	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(õˆ’u8™••°2J$1d79d9e1-a1db-46f4-8103-aebaa8d147d1
+‡	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(¬ÂÓ8™••°2J$db72ec66-5d01-4ea2-abf2-e2c8b19c69e1
+	java:S112!"FDefine and throw a dedicated exception instead of using a generic one.(â‘¥óüÿÿÿÿ8™••°2J$dda80f3c-151c-430f-8af1-136b9759b32d
+ˆ	java:S112%"FDefine and throw a dedicated exception instead of using a generic one.(ÈƒâÀ8™••°2J$2e3e5bd5-b6a7-40b9-90a3-9593bfefcf43
+ˆ	java:S112)"FDefine and throw a dedicated exception instead of using a generic one.(Ô§Ş÷8™••°2J$32c545cf-719f-4cc4-94ad-bbe7b139b045
+ˆ	java:S112-"FDefine and throw a dedicated exception instead of using a generic one.(®€íÇ8™••°2J$31d968b9-414f-46a4-bb35-39ebe6ef1f53
 
-java:S5998L"LRefactor this repetition that can lead to a stack overflow for large inputs.(õæˆB8••°2J$808377b1-90d5-4395-919c-73f2dfbe550b
+java:S5998L"LRefactor this repetition that can lead to a stack overflow for large inputs.(õæˆB8••°2J$4d2daa4e-f4fc-4488-b917-77725b386c42
 „
-java:S6353Z"<Use concise character class syntax '\\d' instead of '[0-9]'.(üÀŠşÿÿÿÿ8Ÿ••°2J$6d74064e-6aa4-482e-a233-49148896a8c0
+java:S6353Z"<Use concise character class syntax '\\d' instead of '[0-9]'.(üÀŠşÿÿÿÿ8Ÿ••°2J$1fdc4a5a-f6ad-4414-954a-6903693909ec
 š
-java:S3776i"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(ÎÓ‚øÿÿÿÿ8Ÿ••°2J$36a12120-dbb1-4da1-a341-d9ef392de1b4
+java:S3776i"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(ÎÓ‚øÿÿÿÿ8Ÿ••°2J$3d66ce63-38ee-4258-bd0c-98ccbf388008
 
-java:S6353o"<Use concise character class syntax '\\d' instead of '[0-9]'.(Á±â8 ••°2J$7abeaee9-8f1d-439b-ac30-9a3d7d6095de
+java:S6353o"<Use concise character class syntax '\\d' instead of '[0-9]'.(Á±â8 ••°2J$4a3a32ce-5369-49c0-99bd-73029c0af17a
 |
-java:S1128"4Remove this unused import 'view.RegistroSociosView'.( Şœáüÿÿÿÿ8Û‹–°2J$19571238-0605-423b-af40-706476ce9385
+java:S1128"4Remove this unused import 'view.RegistroSociosView'.( Şœáüÿÿÿÿ8Û‹–°2J$af887524-3aed-497f-8922-973232873196

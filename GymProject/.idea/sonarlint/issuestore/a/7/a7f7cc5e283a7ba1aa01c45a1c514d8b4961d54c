@@ -16,6 +16,7 @@ java:S1186V"€Add a nested comment explaining why this method is empty, throw a
 Ü
 java:S6548
 "˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(Ï‡š­8êÃÏ¯2J$5169068b-ff4a-4a58-be62-f2f5758ee503
+G	java:S106'"+Replace this use of System.out by a logger.(©òµë8¨‡µ‚2
 ”
 java:S18540"LRemove this useless assignment to local variable "registroSociosController".(Ä–ü½ûÿÿÿÿ8îÃÏ¯2J$484ef2a9-6148-4e24-bf42-7fb8bd863078
 Œ

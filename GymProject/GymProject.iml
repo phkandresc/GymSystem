@@ -110,5 +110,6 @@
     <orderEntry type="library" name="sun.mail.javax" level="project" />
     <orderEntry type="library" name="twilio.sdk" level="project" />
     <orderEntry type="library" name="barcodes-8.0.4" level="project" />
+    <orderEntry type="library" name="itextpdf.html2pdf" level="project" />
   </component>
 </module>
