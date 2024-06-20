@@ -15,6 +15,7 @@ public class PaginaPrincipalController implements ActionListener, MouseListener,
         paginaPrincipalView.setLocationRelativeTo(null);
         paginaPrincipalView.btnRegistrarNuevoSocio.addActionListener(this);
         paginaPrincipalView.btnVerSocios.addActionListener(this);
+        paginaPrincipalView.btnRegistrarMembresia.addActionListener(this);
     }
 
     public static PaginaPrincipalController getInstance() {
@@ -49,6 +50,9 @@ public class PaginaPrincipalController implements ActionListener, MouseListener,
         } else if (e.getSource() == paginaPrincipalView.btnVerSocios) {
             paginaPrincipalView.dispose();
             ListaSociosController listaSociosController = new ListaSociosController();
+        } else if (e.getSource() == paginaPrincipalView.btnRegistrarMembresia) {
+            paginaPrincipalView.dispose();
+            RegistroMembresiaController registroMembresiaController = new RegistroMembresiaController();
         }
     }
 

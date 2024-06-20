@@ -1,27 +1,30 @@
 
-É
-java:S11868"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¿˜œÔşÿÿÿÿ8éÃÏ¯2J$e98f577b-b2c5-4420-b3ba-94cefccdaf11
-Ä
-java:S1186="€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(›™¥…8êÃÏ¯2J$a30bc829-7d4b-489e-b728-d381872aace3
-É
-java:S1186B"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ä Ïúüÿÿÿÿ8êÃÏ¯2J$d024a79d-51db-4b8b-a219-700f3b57e1e5
-É
-java:S1186G"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(®î’×üÿÿÿÿ8êÃÏ¯2J$c031c339-a748-4b8a-8e40-78543557f096
-Ä
-java:S1186L"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ãÆĞÂ8êÃÏ¯2J$7b3163be-056f-4d07-b9f3-b1e3a84ccdb2
-É
-java:S1186Q"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ö„˜şúÿÿÿÿ8êÃÏ¯2J$fd80b632-9653-4f88-9a66-70dbaf91db4f
-É
-java:S1186V"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•ßçùÿÿÿÿ8êÃÏ¯2J$89932bc0-77b1-4ce2-85be-4f743ad72a77
-Ü
+£
+java:S1186<"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¿˜œÔşÿÿÿÿ8«Ğ­Ê‚2
+
+java:S1186A"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(›™¥…8¬Ğ­Ê‚2
+£
+java:S1186F"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ä Ïúüÿÿÿÿ8¬Ğ­Ê‚2
+£
+java:S1186K"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(®î’×üÿÿÿÿ8¬Ğ­Ê‚2
+
+java:S1186P"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ãÆĞÂ8¬Ğ­Ê‚2
+£
+java:S1186U"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ö„˜şúÿÿÿÿ8¬Ğ­Ê‚2
+£
+java:S1186Z"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•ßçùÿÿÿÿ8¬Ğ­Ê‚2
+¶
 java:S6548
-"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(Ï‡š­8êÃÏ¯2J$5169068b-ff4a-4a58-be62-f2f5758ee503
-G	java:S106'"+Replace this use of System.out by a logger.(©òµë8¨‡µ‚2
-”
-java:S18540"LRemove this useless assignment to local variable "registroSociosController".(Ä–ü½ûÿÿÿÿ8îÃÏ¯2J$484ef2a9-6148-4e24-bf42-7fb8bd863078
-Œ
-java:S18543"IRemove this useless assignment to local variable "listaSociosController".(—î«Ö8îÃÏ¯2J$8c953342-791d-4722-94a6-40119daf5dc9
-…
-java:S14810"=Remove this unused "registroSociosController" local variable.(Ä–ü½ûÿÿÿÿ8ğÃÏ¯2J$686fbdea-0975-4d7a-ad2d-4277443ecc4d
-}
-java:S14813":Remove this unused "listaSociosController" local variable.(—î«Ö8ñÃÏ¯2J$33313dc0-b661-49ec-abd1-6deab6ac515a
+"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(Ï‡š­8¬Ğ­Ê‚2
+n
+java:S18541"LRemove this useless assignment to local variable "registroSociosController".(Ä–ü½ûÿÿÿÿ8µĞ­Ê‚2
+f
+java:S18544"IRemove this useless assignment to local variable "listaSociosController".(—î«Ö8µĞ­Ê‚2
+l
+java:S18547"ORemove this useless assignment to local variable "registroMembresiaController".(×¯Ú8µĞ­Ê‚2
+_
+java:S14811"=Remove this unused "registroSociosController" local variable.(Ä–ü½ûÿÿÿÿ8¸Ğ­Ê‚2
+W
+java:S14814":Remove this unused "listaSociosController" local variable.(—î«Ö8»Ğ­Ê‚2
+]
+java:S14817"@Remove this unused "registroMembresiaController" local variable.(×¯Ú8½Ğ­Ê‚2
