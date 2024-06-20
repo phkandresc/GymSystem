@@ -1,22 +1,17 @@
 
 Œ
-java:S2387"I"paginaPrincipalController" is the name of a field in "WindowController".(®Ó8’ÏÆµ‚2J$bfed2e27-09b4-4f69-8ed5-fdb0f822a1fb
+java:S2387"I"paginaPrincipalController" is the name of a field in "WindowController".(®Ó8’ÏÆµ‚2J$09b8cb52-0b14-429f-9dad-c5ee5c679ce2
 Å
-java:S1186­"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(÷—8’ÏÆµ‚2J$e5aa841d-8c5e-44a3-a734-87b167b4f893
+java:S1186­"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(÷—8’ÏÆµ‚2J$2fa9524d-a561-4efc-85ff-acf19dcc1be5
 Ä
-java:S1186²"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(İ¼õA8’ÏÆµ‚2J$753015f5-fb22-4656-a95f-61cf7b847dc1
+java:S1186²"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(İ¼õA8’ÏÆµ‚2J$58e367ce-52e6-43bb-bf14-74d1ae887f69
 
-java:S1144¡";Remove this unused private "imprimirTiposMembresia" method.(ø”Ï„8¢ÏÆµ‚2J$7aa093ca-8a21-4049-866c-c17078591175
-m	java:S106i"+Replace this use of System.out by a logger.(îı™ø8áÏÆµ‚2J$fb0f34df-7637-46f7-8920-f843a81496cc
-r	java:S106n"+Replace this use of System.out by a logger.(şÁÃÍıÿÿÿÿ8áÏÆµ‚2J$d94c01e4-07c0-45db-8680-f523c489ea5f
-l	java:S106s"+Replace this use of System.out by a logger.(ÀÃ‘q8ğÏÆµ‚2J$23f2a941-6734-4390-a1d6-6aee4fde4b93
+java:S1144¡";Remove this unused private "imprimirTiposMembresia" method.(ø”Ï„8¢ÏÆµ‚2J$aa0a054d-917d-4727-a15c-c871f815f7df
 _
-java:S3626‡"Remove this redundant jump.(ûÁİ…8ğÏÆµ‚2J$ec798c40-77fa-484c-837d-5173046fb382
+java:S3626‡"Remove this redundant jump.(ûÁİ…8ğÏÆµ‚2J$9bf609e6-3eee-4fc9-869b-c41d9e707341
 _
-java:S3626Š"Remove this redundant jump.(ûÁİ…8ğÏÆµ‚2J$90c993e9-4141-4091-8347-9ab684c952f6
-s	java:S106£"+Replace this use of System.out by a logger.(¢û¦†ùÿÿÿÿ8€ĞÆµ‚2J$dff7dec1-5096-44a0-9414-68928ff0a883
-n	java:S106¥"+Replace this use of System.out by a logger.(¸Ø©À8ĞÆµ‚2J$6ece60e5-7d27-484f-ad02-74d681ac654b
+java:S3626Š"Remove this redundant jump.(ûÁİ…8ğÏÆµ‚2J$36afadb2-1019-4b8e-8bae-d17124ea6b4d
 _
-java:S3626»"Remove this redundant jump.(ûÁİ…8ĞÆµ‚2J$cd150aec-3125-487f-ac97-b785fd3873b7
+java:S3626»"Remove this redundant jump.(ûÁİ…8ĞÆµ‚2J$dce34337-cd30-4d75-bd00-47a17ea9abda
 €
-java:S1068"=Remove this unused "paginaPrincipalController" private field.(®Ó8ĞÆµ‚2J$94375bed-298c-4df9-9c31-343e1af784ca
+java:S1068"=Remove this unused "paginaPrincipalController" private field.(®Ó8ĞÆµ‚2J$4c1af8e4-42e0-48ee-b56e-957388a14410
