@@ -1,20 +1,20 @@
 
-‡	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(¼ÿ¾¹ÿÿÿÿÿJ$ba222001-d98b-4a41-9010-ab3e10c29847
-f
-java:S2387"I"paginaPrincipalController" is the name of a field in "WindowController".(®Ó8ÈğØ…2
+‡	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(¼ÿ¾¹ÿÿÿÿÿJ$ff773d5a-afe7-45e0-84ce-f3afd64be3f7
+Œ
+java:S2387"I"paginaPrincipalController" is the name of a field in "WindowController".(®Ó8ÈğØ…2J$9f0de08d-95d9-4e73-bbb0-7c4fcda8fcf8
 Ã
-java:S1186¥"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(®î’×üÿÿÿÿJ$8499ae2e-246f-4ea2-a5f5-90b830d2479c
+java:S1186¥"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(®î’×üÿÿÿÿJ$b2e3788d-1cc3-4d2a-a74a-f5b41d2062c3
 ¾
-java:S1186ª"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ãÆĞÂJ$66bf1e5d-13ea-40fb-8270-598c2c1f9406
+java:S1186ª"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ãÆĞÂJ$82f49e85-efff-4db6-b4b3-c4d7411d738d
 Ã
-java:S1186¯"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ö„˜şúÿÿÿÿJ$b9cf1354-526f-40fd-b8e0-76394dd1e16a
+java:S1186¯"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ö„˜şúÿÿÿÿJ$a58e2098-c260-4c0a-8434-68477458c9ca
 Ã
-java:S1186´"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•ßçùÿÿÿÿJ$ca57d617-487c-4285-a458-49019f61bbfa
+java:S1186´"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•ßçùÿÿÿÿJ$89169cd3-83ec-4571-b727-e61957a34856
 “
-java:S3776@"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(¼ ÒşüÿÿÿÿJ$dcf114e0-063b-47ec-8f05-3460fdb6eb18
+java:S3776@"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(¼ ÒşüÿÿÿÿJ$3f29f7fd-f9c9-426e-8786-7c26e061a430
 c
-java:S1125l"'Remove the unnecessary boolean literal.(ÎÅü‚J$bce5aeac-9aa5-4ccb-9524-3ddfd0c695f7
+java:S1125l"'Remove the unnecessary boolean literal.(ÎÅü‚J$e14a36a6-d874-4815-abc1-93b2624e53bb
 W
-java:S3626~"Remove this redundant jump.(ûÁİ…J$4cc730ca-b06d-4e63-b99f-c441cbe6f901
+java:S3626~"Remove this redundant jump.(ûÁİ…J$06148007-80fd-4c26-b020-1b5b8f2cf631
 y
-java:S1068"=Remove this unused "paginaPrincipalController" private field.(®ÓJ$8ddb2796-f9cf-481e-9c6a-5bf6e5174290
+java:S1068"=Remove this unused "paginaPrincipalController" private field.(®ÓJ$03f21ed5-0c22-4f34-aa0a-042f46f281a4

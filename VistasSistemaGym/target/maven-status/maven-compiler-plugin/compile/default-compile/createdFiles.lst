@@ -11,7 +11,6 @@ view\PaginaPrincipalView.class
 view\RegistroMembresiaView.class
 view\RegistroMembresiaView$4.class
 view\PaginaPrincipalView$1.class
-view\Huffman$2.class
 view\ListaSociosView.class
 view\PaginaPrincipalView$7.class
 view\PaginaPrincipalView$10.class
@@ -26,15 +25,12 @@ view\IniciarSesionView$2.class
 view\PaginaPrincipalView$11.class
 view\IniciarSesionView$6.class
 view\PaginaPrincipalView$8.class
-view\Huffman$1.class
 view\RegistroSociosView$1.class
 view\PaginaPrincipalView$12.class
 view\PaginaPrincipalView$6.class
 view\PaginaPrincipalView$2.class
-view\Huffman$3.class
 view\FacturarVista$1.class
 view\RegistroMembresiaView$3.class
 view\PaginaPrincipalView$9.class
 view\ListaSociosView$2.class
-view\Huffman.class
 view\IniciarSesionView$5.class

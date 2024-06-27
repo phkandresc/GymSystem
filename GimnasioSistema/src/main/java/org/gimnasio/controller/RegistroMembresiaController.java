@@ -1,8 +1,6 @@
 package org.gimnasio.controller;
 
-import org.gimnasio.model.Membresia;
-import org.gimnasio.model.Socio;
-import org.gimnasio.model.TipoMembresia;
+import org.gimnasio.model.*;
 import org.gimnasio.service.EmailService;
 import org.gimnasio.service.MembresiaService;
 import org.gimnasio.service.SocioService;
@@ -12,6 +10,7 @@ import org.gimnasio.view.RegistroMembresiaView;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.event.*;
+import java.sql.Date;
 import java.text.DecimalFormat;
 import java.util.List;
 
@@ -24,10 +23,8 @@ public class RegistroMembresiaController extends WindowController implements Act
     private Socio socioSeleccionado;
     private TipoMembresia tipoMembresiaSeleccionado;
     private List<TipoMembresia> listaTiposMembresia;
-    private DecimalFormat df;
 
     public RegistroMembresiaController() {
-        df = new DecimalFormat("#.##");
         this.view = new RegistroMembresiaView();
         this.serviceMembresia = new MembresiaService();
         this.serviceSocio = new SocioService();
@@ -37,136 +34,86 @@ public class RegistroMembresiaController extends WindowController implements Act
         this.socioSeleccionado = new Socio();
         view.btnBuscar.addActionListener(this);
         view.cmbTipoMembresia.addItemListener(this);
-        view.txtEfectivo.addKeyListener(this);
         view.btnCobrar.addActionListener(this);
         view.setVisible(true);
         cargarTiposMembresia();
     }
 
-
-
-    public void vaciarFormulario() {
-        view.txtCedula.setText("");
-        view.txtNombre.setText("");
-        view.txtApellido.setText("");
-        view.txtEmail.setText("");
-        view.txtTelefono.setText("");
-        view.txtDireccion.setText("");
-    }
-
-    public void cargarSocioEnFormulario(Socio socio) {
-        if (socio == null) {
-            JOptionPane.showMessageDialog(null, "No se encontró el socio");
-        } else {
-            JOptionPane.showMessageDialog(null, "Socio encontrado");
-            view.txtCedula.setText(socio.getCedula());
-            view.txtNombre.setText(socio.getNombre());
-            view.txtApellido.setText(socio.getApellido());
-            view.txtEmail.setText(socio.getEmail());
-            view.txtTelefono.setText(socio.getNumeroTelefono());
-            view.txtDireccion.setText(socio.getDireccion());
-        }
-    }
-
-    private void cargarTiposMembresia() {
-        try {
+    public void cargarTiposMembresia(){
+        try{
             listaTiposMembresia = serviceTipoMembresia.obtenerTiposMembresia();
             for (TipoMembresia tipoMembresia : listaTiposMembresia) {
                 view.cmbTipoMembresia.addItem(tipoMembresia.getNombre());
             }
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, "Error al cargar los tipos de membresia: " + e.getMessage());
+        }catch (Exception e){
+            e.printStackTrace();
         }
     }
-
-    private void cargarMembresiaEnTabla(TipoMembresia tipoMembresiaSeleccionado) {
-        DefaultTableModel model = (DefaultTableModel) view.jtMembresia.getModel();
-        model.setRowCount(0);
-        model.addRow(new Object[]{
-                tipoMembresiaSeleccionado.getNombre(),
-                tipoMembresiaSeleccionado.getDescripcion(),
-                tipoMembresiaSeleccionado.getPrecio()
-        });
-    }
-
-    private void cargarMembresiaEnFormulario(){
-        view.txtSubtotal.setText(String.valueOf(df.format(tipoMembresiaSeleccionado.getPrecio()-tipoMembresiaSeleccionado.getPrecio()*0.12)));
-        view.txtIVA.setText(String.valueOf(df.format(tipoMembresiaSeleccionado.getPrecio()*0.12)));
-        view.txtTotalPagar.setText(String.valueOf(df.format(tipoMembresiaSeleccionado.getPrecio())));
-    }
-
-
 
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == view.btnBuscar) {
+            String textoBusqueda = view.txtBusqueda.getText();
             try {
                 if(view.cmbCriterioBusqueda.getSelectedIndex() == 0) {
-                    System.out.println("ID");
                     vaciarFormulario();
-                    socioSeleccionado = serviceSocio.buscarSocioPorId(Integer.parseInt(view.txtBusqueda.getText()));
+                    socioSeleccionado = serviceSocio.buscarSocioPorId(Integer.parseInt(textoBusqueda));
                     cargarSocioEnFormulario(socioSeleccionado);
                 } else if(view.cmbCriterioBusqueda.getSelectedIndex() == 1) {
-                    System.out.println("Cedula");
                     vaciarFormulario();
-                    socioSeleccionado = serviceSocio.buscarSocioPorCedula(view.txtBusqueda.getText());
+                    socioSeleccionado = serviceSocio.buscarSocioPorCedula(textoBusqueda);
                     cargarSocioEnFormulario(socioSeleccionado);
                 } else if(view.cmbCriterioBusqueda.getSelectedIndex() == 2){
-                    System.out.println("Apellido");
                     vaciarFormulario();
-                    socioSeleccionado = serviceSocio.buscarSocioPorApellido(view.txtBusqueda.getText());
+                    socioSeleccionado = serviceSocio.buscarSocioPorApellido(textoBusqueda);
                     cargarSocioEnFormulario(socioSeleccionado);
                 }
             } catch (Exception ex) {
                 JOptionPane.showMessageDialog(null, "Error al buscar el socio: " + ex.getMessage());
             }
         } else if (e.getSource() == view.btnCobrar) {
-            cobrarMembresia();
-        }
-    }
-
-    private void cobrarMembresia(){
-        try {
-            if (socioSeleccionado == null) {
-                JOptionPane.showMessageDialog(null, "Debe buscar un socio");
-            } else{
-                if(view.txtEfectivo.getText().isEmpty()){
-                    JOptionPane.showMessageDialog(null, "Debe ingresar el efectivo");
+            try {
+                if (socioSeleccionado.getId() == 0) {
+                    JOptionPane.showMessageDialog(null, "Debe seleccionar un socio");
                     return;
-                }else if(Double.parseDouble(view.txtEfectivo.getText()) < Double.parseDouble(view.txtTotalPagar.getText())){
-                    JOptionPane.showMessageDialog(null, "El efectivo ingresado es menor al total a pagar");
-                    return;
-                }else if(Double.parseDouble(view.txtEfectivo.getText()) == Double.parseDouble(view.txtTotalPagar.getText())) {
-                    Membresia membresia = serviceMembresia.registrarMembresia(socioSeleccionado, listaTiposMembresia.get(view.cmbTipoMembresia.getSelectedIndex()));
-                    EmailService emailService = new EmailService();
-                    emailService.enviarCorreoRegistroMembresia(socioSeleccionado, membresia, listaTiposMembresia.get(view.cmbTipoMembresia.getSelectedIndex()));
-                    JOptionPane.showMessageDialog(null, "Membresia registrada correctamente");
-                    }
+                }
+                Membresia membresia = serviceMembresia.registrarMembresia(socioSeleccionado, tipoMembresiaSeleccionado);
+                Pago pago = new Pago.Builder()
+                        .socio(socioSeleccionado)
+                        .membresia(membresia)
+                        .monto(tipoMembresiaSeleccionado.getPrecio())
+                        .fechaPago(new Date(System.currentTimeMillis()))
+                        .metodoPago("Efectivo")
+                        .tipoPago("membresia")
+                        .build();
+                Factura factura = new Factura.Builder()
+                        .pago(pago)
+                        .numeroFactura("F" + pago.getId())
+                        .fechaEmision(new Date(System.currentTimeMillis()))
+                        .detalle("Pago de membresía")
+                        .subtotal(pago.getMonto())
+                        .iva(15)
+                        .total(pago.getMonto())
+                        .build();
+                EmailService emailService = new EmailService();
+                emailService.enviarCorreoRegistroMembresia(socioSeleccionado, membresia, tipoMembresiaSeleccionado);
+                JOptionPane.showMessageDialog(null, "Membresía registrada con éxito");
+                //paginaPrincipalController.cargarMembresias();
+            } catch (Exception ex) {
+                JOptionPane.showMessageDialog(null, "Error al registrar la membresía: " + ex.getMessage());
             }
-        } catch (Exception ex) {
-            JOptionPane.showMessageDialog(null, "Error al registrar la membresia: " + ex.getMessage());
         }
     }
 
     @Override
     public void itemStateChanged(ItemEvent e) {
-        if (e.getStateChange() == ItemEvent.SELECTED) {
-            tipoMembresiaSeleccionado = listaTiposMembresia.get(view.cmbTipoMembresia.getSelectedIndex());
-            view.lblDescripcionMembresia.setText("<html>"+tipoMembresiaSeleccionado.getDescripcion()+"</html>");
-            cargarMembresiaEnTabla(tipoMembresiaSeleccionado);
-            cargarMembresiaEnFormulario();
+        if (e.getStateChange() == ItemEvent.SELECTED){
+            int index = view.cmbTipoMembresia.getSelectedIndex();
+            tipoMembresiaSeleccionado = listaTiposMembresia.get(index);
+            view.lblPrecioTotal.setText("$"+String.valueOf(tipoMembresiaSeleccionado.getPrecio()));
+            view.lblNombreMembresia.setText(tipoMembresiaSeleccionado.getNombre());
+            view.lblDescripcion.setText("<html>"+tipoMembresiaSeleccionado.getDescripcion()+"</html>");
         }
-    }
-
-    private void imprimirTiposMembresia() {
-        for (TipoMembresia tipoMembresia : listaTiposMembresia) {
-            System.out.println(tipoMembresia.getNombre()+" "+tipoMembresia.getDescripcion()+" "+tipoMembresia.getPrecio());
-        }
-        System.out.println(listaTiposMembresia.size());
-    }
-
-    public static void main(String[] args) {
-        new RegistroMembresiaController();
     }
 
     @Override
@@ -181,20 +128,33 @@ public class RegistroMembresiaController extends WindowController implements Act
 
     @Override
     public void keyReleased(KeyEvent e) {
-        if(e.getSource() == view.txtEfectivo){
-            if(view.txtEfectivo.getText().isEmpty()){
-                view.txtCambio.setText("");
-                return;
-            }else{
-                double efectivo = Double.parseDouble(view.txtEfectivo.getText());
-                double totalPagar = Double.parseDouble(view.txtTotalPagar.getText());
-                double cambio = efectivo - totalPagar;
 
-                String cambioFormateado = df.format(cambio);
+    }
 
-                view.txtCambio.setText(cambioFormateado);
-            }
+    public void vaciarFormulario(){
+        view.txtNombre.setText("");
+        view.txtApellido.setText("");
+        view.txtCedula.setText("");
+        view.txtDireccion.setText("");
+        view.txtEmail.setText("");
+        view.txtTelefono.setText("");
+    }
 
+    public void cargarSocioEnFormulario(Socio socio){
+        if (socio == null){
+            JOptionPane.showMessageDialog(null, "No se ha encontrado ningún socio con ese criterio de búsqueda");
+            return;
+        } else {
+            view.txtNombre.setText(socio.getNombre());
+            view.txtApellido.setText(socio.getApellido());
+            view.txtCedula.setText(socio.getCedula());
+            view.txtDireccion.setText(socio.getDireccion());
+            view.txtEmail.setText(socio.getEmail());
+            view.txtTelefono.setText(socio.getNumeroTelefono());
         }
+    }
+
+    public static void main(String[] args) {
+        new RegistroMembresiaController();
     }
 }

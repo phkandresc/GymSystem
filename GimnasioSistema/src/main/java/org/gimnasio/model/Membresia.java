@@ -4,16 +4,16 @@ import java.sql.Date;
 
 public class Membresia {
     private int id;
-    private int idSocio;
-    private int idTipoMembresia;
+    private Socio socio;
+    private TipoMembresia tipoMembresia;
     private int idGimnasio;
     private Date fechaInicio;
     private Date fechaFin;
     private String estado;
 
-    public Membresia (int idSocio, int idTipoMembresia, int idGimnasio, Date fechaInicio, Date fechaFin) {
-        this.idSocio = idSocio;
-        this.idTipoMembresia = idTipoMembresia;
+    public Membresia (Socio socio, TipoMembresia tipoMembresia, int idGimnasio, Date fechaInicio, Date fechaFin) {
+        this.socio = socio;
+        this.tipoMembresia = tipoMembresia;
         this.idGimnasio = idGimnasio;
         this.fechaInicio = fechaInicio;
         this.fechaFin = fechaFin;
@@ -25,22 +25,6 @@ public class Membresia {
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public int getIdSocio() {
-        return idSocio;
-    }
-
-    public void setIdSocio(int idSocio) {
-        this.idSocio = idSocio;
-    }
-
-    public int getIdTipoMembresia() {
-        return idTipoMembresia;
-    }
-
-    public void setIdTipoMembresia(int idTipoMembresia) {
-        this.idTipoMembresia = idTipoMembresia;
     }
 
     public int getIdGimnasio() {
@@ -73,5 +57,21 @@ public class Membresia {
 
     public void setEstado(String estado) {
         this.estado = estado;
+    }
+
+    public Socio getSocio() {
+        return socio;
+    }
+
+    public void setSocio(Socio socio) {
+        this.socio = socio;
+    }
+
+    public TipoMembresia getTipoMembresia() {
+        return tipoMembresia;
+    }
+
+    public void setTipoMembresia(TipoMembresia tipoMembresia) {
+        this.tipoMembresia = tipoMembresia;
     }
 }

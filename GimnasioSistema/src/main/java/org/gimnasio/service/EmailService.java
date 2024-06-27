@@ -55,7 +55,7 @@ public class EmailService {
 
     public void enviarCorreoNuevoSocio(String to, String nombre, String apellido, String id) {
         String subject = "Bienvenido a nuestro gimnasio";
-        String content = readHtmlFile("src/html/CorreoNuevoSocio.html");
+        String content = readHtmlFile("src/main/resources/templates/CorreoNuevoSocio.html");
         content = content.replace("{nombre}", nombre);
         content = content.replace("{apellido}", apellido);
         content = content.replace("{id}", id);
@@ -64,7 +64,7 @@ public class EmailService {
 
     public void enviarCorreoRegistroMembresia(Socio socio, Membresia membresia, TipoMembresia tipoMembresia) {
         String subject = "Bienvenido a nuestro gimnasio";
-        String content = readHtmlFile("src/html/CorreoRegistroMembresia.html");
+        String content = readHtmlFile("src/main/resources/templates/CorreoRegistroMembresia.html");
         content = content.replace("{nombre}", socio.getNombre());
         content = content.replace("{apellido}", socio.getApellido());
         content = content.replace("{tipo_membresia}", tipoMembresia.getNombre());
@@ -78,5 +78,6 @@ public class EmailService {
 
     public static void main(String[] args) {
         EmailService emailService = new EmailService();
+        emailService.enviarCorreoNuevoSocio("kacoraizaca@gmail.com", "Katherine", "Coraizaca", "1");
     }
 }

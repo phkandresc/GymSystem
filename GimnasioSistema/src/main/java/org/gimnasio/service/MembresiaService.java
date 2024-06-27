@@ -22,8 +22,8 @@ public class MembresiaService {
         Date fechaFin = new Date(calendar.getTimeInMillis());
 
         Membresia membresia = new Membresia(
-                socio.getId(),
-                tipoMembresia.getId(),
+                socio,
+                tipoMembresia,
                 1,
                 fechaInicio,
                 fechaFin

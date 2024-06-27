@@ -11,7 +11,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
-public class RegistroSociosController extends WindowController implements ActionListener, MouseListener{
+public class RegistroSociosController implements ActionListener, MouseListener{
     private RegistroSociosView view;
     private SocioService socioService;
     private Socio socio;

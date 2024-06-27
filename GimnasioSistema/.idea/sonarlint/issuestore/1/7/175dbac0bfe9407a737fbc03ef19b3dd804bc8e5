@@ -1,15 +1,11 @@
 
-f
-java:S2387"I"paginaPrincipalController" is the name of a field in "WindowController".(®Ó8í¥Ñ¹…2
-£
-java:S1186W"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ä Ïúüÿÿÿÿ8î¥Ñ¹…2
-£
-java:S1186\"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(®î’×üÿÿÿÿ8î¥Ñ¹…2
-
-java:S1186a"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ãÆĞÂ8î¥Ñ¹…2
-£
-java:S1186f"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ö„˜şúÿÿÿÿ8î¥Ñ¹…2
-£
-java:S1186k"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•ßçùÿÿÿÿ8î¥Ñ¹…2
-P
-java:S18745".Remove this use of "<init>"; it is deprecated.(Ô‡«ıÿÿÿÿ8ü¥Ñ¹…2
+É
+java:S1186W"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ä Ïúüÿÿÿÿ8î¥Ñ¹…2J$2ce4d139-e705-40e1-a91c-d26b50e7420a
+É
+java:S1186\"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(®î’×üÿÿÿÿ8î¥Ñ¹…2J$2670ff27-5eaa-40b3-a669-b135e2a6e60f
+Ä
+java:S1186a"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ãÆĞÂ8î¥Ñ¹…2J$fc336b8e-207a-4809-8af9-5000e5173a1c
+É
+java:S1186f"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ö„˜şúÿÿÿÿ8î¥Ñ¹…2J$c48fddab-cca5-49c0-9bf1-10aec2c13526
+É
+java:S1186k"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•ßçùÿÿÿÿ8¹ÿÿ¿…2J$a17138f5-7822-4a74-b730-ded7be08d620

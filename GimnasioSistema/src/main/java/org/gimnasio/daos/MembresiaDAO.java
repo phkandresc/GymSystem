@@ -19,8 +19,8 @@ public class MembresiaDAO {
 
         try {
             ps = conexion.prepareStatement(sql);
-            ps.setInt(1, membresia.getIdSocio());
-            ps.setInt(2, membresia.getIdTipoMembresia());
+            ps.setInt(1, membresia.getSocio().getId());
+            ps.setInt(2, membresia.getTipoMembresia().getId());
             ps.setInt(3, membresia.getIdGimnasio());
             ps.setDate(4, membresia.getFechaInicio());
             ps.setDate(5, membresia.getFechaFin());

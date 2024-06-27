@@ -10,8 +10,6 @@ f
 d
 4src/main/java/org/gimnasio/view/ListaSociosView.java,b\3\b3a575f7ec492f7a0d2d562c401b5ec7f5acf49e
 e
-5src/main/java/org/gimnasio/controller/FacturaPDF.java,2\2\22df86444fa3cd9842ba27ac312ff63850af50bd
-e
 5src/main/java/org/gimnasio/view/NumericTextField.java,a\f\af85c3b65b92bde51da5201fd52ace868b24bc30
 h
 8src/main/java/org/gimnasio/view/PaginaPrincipalView.java,b\d\bd7a43efed65ee7107fc0fd3343277adbedb61eb
@@ -63,3 +61,9 @@ k
 ;src/main/java/org/gimnasio/controller/WindowController.java,7\e\7ee18e88e9ac6b941ebf03cff8fb8366a6469509
 c
 3src/main/java/org/gimnasio/model/TipoMembresia.java,9\1\912a0c8a0161857074940d3c61b4cf3ef6f99264
+_
+/src/main/java/org/gimnasio/model/Membresia.java,3\6\361f8fdbb1398ac82ccf10da704259b3cbbbedc9
+g
+7src/main/java/org/gimnasio/controller/PdfGenerator.java,1\c\1c542d35ffc31a714be941e2dfde26d19f073160
+;
+factura.pdf,2\2\227608dd24e87d3322d8c7da006b2cd0f7d78f57
