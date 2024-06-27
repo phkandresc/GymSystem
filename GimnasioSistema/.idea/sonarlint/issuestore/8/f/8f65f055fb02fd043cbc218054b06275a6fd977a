@@ -1,0 +1,7 @@
+
+‡
+java:S5998K"LRefactor this repetition that can lead to a stack overflow for large inputs.(õæˆBJ$09fc8827-ff8a-45b8-8aee-b9fbe5a42a50
+}
+java:S6353Y"<Use concise character class syntax '\\d' instead of '[0-9]'.(üÀŠþÿÿÿÿJ$9d597991-4356-40ca-abcf-8f4508190b9d
+“
+java:S3776h"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(ÎÓŽ‚øÿÿÿÿJ$c4c1c786-9c23-43c2-9d73-f91b6fd15405

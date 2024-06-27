@@ -1,0 +1,25 @@
+
+š
+java:S2293z"YReplace the type specification in this constructor call with the diamond operator ("<>").(ùş…êøÿÿÿÿJ$e5c8d9c8-2494-4f90-a7af-f3893ae90cf5
+ƒ
+java:S1192A"GDefine a constant instead of duplicating this literal "cedula" 4 times.(Ö¨­ÈJ$34abf7fa-73eb-48d6-8507-95ddda7ada35
+’
+java:S1192G"QDefine a constant instead of duplicating this literal "fecha_nacimiento" 4 times.(¡·—øÿÿÿÿJ$dcc74057-cd65-44ad-8144-198e7a13345e
+†
+java:S1192F"JDefine a constant instead of duplicating this literal "direccion" 4 times.(Ó’ºJ$29540312-6b06-4af8-b113-a5396b348a9d
+ƒ
+java:S1192B"GDefine a constant instead of duplicating this literal "nombre" 4 times.(Üå€ùJ$503caabe-6cfd-42dc-9948-fe60cb0718f7
+‘
+java:S1192E"PDefine a constant instead of duplicating this literal "numero_telefono" 4 times.(›ãÄşÿÿÿÿJ$5a3d7b51-9c58-47b3-8967-2dfee293b94d
+Š
+java:S1192C"IDefine a constant instead of duplicating this literal "apellido" 4 times.(–òááÿÿÿÿÿJ$bf004f39-9c36-4601-86ba-ec9d81307314
+‚
+java:S1192D"FDefine a constant instead of duplicating this literal "email" 4 times.(œ²ĞæJ$a8788ff9-2b8e-4d54-adfb-dec1fb8e4bd0
+`
+java:S69058"Don't use the query "SELECT *".(Å€®¹ùÿÿÿÿJ$d6217c55-b9d1-47a3-b849-1389c51780be
+`
+java:S6905{"Don't use the query "SELECT *".(Öêÿ˜şÿÿÿÿJ$e8120c95-38b0-497d-9261-352e086f30b7
+\
+java:S6905•"Don't use the query "SELECT *".(éº§áJ$7d11c762-37e0-4009-885c-b566b4abe7c3
+a
+java:S6905¯"Don't use the query "SELECT *".(ûğ€ªüÿÿÿÿJ$461c7d37-681b-4f5f-952e-831ac44f210d

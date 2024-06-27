@@ -1,0 +1,72 @@
+
+j
+java:S1604ä"(Make this anonymous inner class a lambda(¨í¡§úÿÿÿÿJ$07e797a0-424d-4ba7-89cf-d39eee396fa8
+”
+java:S1104ì"XMake ButtonBuscar a static final constant or non-public and provide accessors if needed.(èÆÖIJ$b7a38a3b-e343-406e-9e4f-b217158eec9c
+œ
+java:S1104í"ZMake ButtonEliminar a static final constant or non-public and provide accessors if needed.(ù¯¤†ıÿÿÿÿJ$5c0fe970-834d-4a5d-8b73-cd60d94797ec
+—
+java:S1104î"[Make ButtonModificar a static final constant or non-public and provide accessors if needed.(î¦¬QJ$e9038dff-b0e1-4b7d-b33b-ce3ca85e31fd
+”
+java:S1104ï"WMake txtBusqueda a static final constant or non-public and provide accessors if needed.(Š•ˆJ$ff2e022f-60fe-43a4-b93d-70eddf3d7b8a
+¡
+java:S1104ğ"_Make cmbCriterioBusqueda a static final constant or non-public and provide accessors if needed.(ÏËÑûÿÿÿÿJ$022725a2-c994-4d48-9dc3-bffd499ad0d3
+
+java:S1104ş"TMake jtSocios a static final constant or non-public and provide accessors if needed.(õ“¯dJ$2786b24a-1134-4b50-9b46-aa8ae2840526
+™
+java:S1104ÿ"WMake txtApellido a static final constant or non-public and provide accessors if needed.(‚ÙûÚşÿÿÿÿJ$501e1c21-091b-4061-9b7b-84da333169c1
+—
+java:S1104€"UMake txtCedula a static final constant or non-public and provide accessors if needed.(À”¶øÿÿÿÿJ$cfec3ff8-404f-4831-a35f-bec55e1a90e4
+š
+java:S1104"XMake txtDireccion a static final constant or non-public and provide accessors if needed.(ÕåÈåùÿÿÿÿJ$26403a14-6488-4fcb-8ccf-b7db7340ad8b
+–
+java:S1104‚"TMake txtEmail a static final constant or non-public and provide accessors if needed.(£Ÿö¿ıÿÿÿÿJ$a0af6888-fd76-4891-8f20-1fec7deade18
+—
+java:S1104ƒ"UMake txtNombre a static final constant or non-public and provide accessors if needed.(Û©”ûÿÿÿÿJ$3c07d954-b3dd-4ee9-84a6-4e7a3ab91308
+™
+java:S1104„"WMake txtTelefono a static final constant or non-public and provide accessors if needed.(àÏâ­şÿÿÿÿJ$bc20008c-7771-4224-82c3-db27f0765a88
+
+java:S1192L"NDefine a constant instead of duplicating this literal "Poppins Light" 9 times.(ÀµÎ±şÿÿÿÿJ$7e81dc5e-bd13-46a4-afa7-ab55524fe9eb
+Œ
+java:S1192A"PDefine a constant instead of duplicating this literal "Poppins Medium" 11 times.(·¶ŸJ$c561b9e9-6d70-4c66-a4ce-13c10da79b1d
+’	java:S116ì"WRename this field "ButtonBuscar" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(èÆÖIJ$2dad9b3b-4df3-4acb-8ee8-a9767956184f
+š	java:S116í"YRename this field "ButtonEliminar" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ù¯¤†ıÿÿÿÿJ$9fddc52e-5689-4f28-854a-54231eb5746d
+•	java:S116î"ZRename this field "ButtonModificar" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(î¦¬QJ$b56cb548-9e62-4b62-bd19-08b55686b133
+˜
+java:S1450ñ"VRemove the "jLabel1" field and declare it as a local variable in the relevant methods.(°ãÉ¸ÿÿÿÿÿJ$0306914d-6c9e-456e-bbb6-0b69ee833bcf
+™
+java:S1450ò"WRemove the "jLabel10" field and declare it as a local variable in the relevant methods.(¼õò†şÿÿÿÿJ$7962b5db-94e5-4366-8d6a-4444c6606b16
+˜
+java:S1450ó"VRemove the "jLabel2" field and declare it as a local variable in the relevant methods.(™úòˆüÿÿÿÿJ$5379f77e-1ec2-4905-95e1-e1a1eac5a7e7
+˜
+java:S1450ô"VRemove the "jLabel3" field and declare it as a local variable in the relevant methods.(Îä€øÿÿÿÿJ$cb06e071-8aef-4367-bb6c-3c23853c5070
+“
+java:S1450õ"VRemove the "jLabel4" field and declare it as a local variable in the relevant methods.(«¢•ãJ$7f3fd9c1-f2b9-47a8-ad95-2f8eb2799625
+“
+java:S1450ö"VRemove the "jLabel5" field and declare it as a local variable in the relevant methods.(ó Ù®J$638cb617-8130-4610-a9ef-23fdbddca727
+˜
+java:S1450÷"VRemove the "jLabel6" field and declare it as a local variable in the relevant methods.(¸ôÂøÿÿÿÿJ$c2f0677d-aa4f-4fe6-ac32-3fb84a322d20
+“
+java:S1450ø"VRemove the "jLabel7" field and declare it as a local variable in the relevant methods.(×ê˜ŸJ$6b9f7d81-b3fd-4b89-89da-a89e966019aa
+“
+java:S1450ù"VRemove the "jLabel8" field and declare it as a local variable in the relevant methods.(å»«¢J$22946772-6561-47f7-b554-89baccb39bbb
+˜
+java:S1450ú"VRemove the "jLabel9" field and declare it as a local variable in the relevant methods.(Ì’óĞşÿÿÿÿJ$9fc10753-595b-4aa5-be2d-f8b45c475437
+˜
+java:S1450û"VRemove the "jPanel1" field and declare it as a local variable in the relevant methods.(´œ½ÿÿÿÿÿJ$668b4adf-d85b-4658-a74a-bacd59051591
+
+java:S1450ü"[Remove the "jScrollPane1" field and declare it as a local variable in the relevant methods.(¤á×ÿÿÿÿÿJ$9f87b242-9f32-42ea-a68b-df5d51bcf310
+—
+java:S1450ı"ZRemove the "jSeparator1" field and declare it as a local variable in the relevant methods.(’©ìÉJ$be271824-ca76-41e1-a92b-0c04ea66e853
+{
+java:S1161_":Add the "@Override" annotation above this method signature(ÍŸÏ†ùÿÿÿÿJ$f029ce23-e1f8-41ed-b35a-98be9a92e4b7
+v
+java:S1161c":Add the "@Override" annotation above this method signature(®¸ùJ$7bcf4dfc-7ca3-4d17-adee-244ebdf55309
+l
+java:S1197Ë"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿJ$d41fd8ac-9ad5-43e4-bbc0-41eda59fcdc6
+‚
+java:S2147Ú"ECombine this catch with the one at line 216, which has the same body.(¨¦Š½J$2f13ed52-3f7e-4cc7-9db4-16ea14ece458
+‚
+java:S2147Ü"ECombine this catch with the one at line 218, which has the same body.(ã€ J$407cdbf6-6a58-44cf-813e-33a522281a56
+
+java:S2147Ş"ECombine this catch with the one at line 220, which has the same body.(ñÎ¯%J$16e4c6a7-e491-46cb-b65a-cfa035e9f949

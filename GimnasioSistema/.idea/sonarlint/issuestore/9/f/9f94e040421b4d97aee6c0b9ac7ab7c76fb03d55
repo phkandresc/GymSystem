@@ -1,0 +1,30 @@
+
+Â
+java:S1186<"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¿˜œÔşÿÿÿÿJ$b99340eb-0af8-41fc-b26d-06abd6bceb3b
+½
+java:S1186A"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(›™¥…J$f421a29b-f768-4018-a6b2-b4ab8eb9bf7d
+Â
+java:S1186F"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ä ÏúüÿÿÿÿJ$e6aafd01-ce2c-461b-b2a6-36e21dcf3745
+Â
+java:S1186K"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(®î’×üÿÿÿÿJ$f3677c52-cd04-4522-abcf-fda025057a22
+½
+java:S1186P"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ãÆĞÂJ$87caa299-a6af-419e-af43-4f622f0a420f
+Â
+java:S1186U"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ö„˜şúÿÿÿÿJ$e0ce8951-4b9f-4f1c-9f18-a991780758c8
+Â
+java:S1186Z"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•ßçùÿÿÿÿJ$b1ceb032-8632-4175-9ba6-37d475e94fc8
+Õ
+java:S6548
+"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(Ï‡š­J$d7477063-dd0a-4f4e-b3c7-aa8579660a6d
+
+java:S18541"LRemove this useless assignment to local variable "registroSociosController".(Ä–ü½ûÿÿÿÿJ$ea681de2-75ba-49b8-b6ed-3d68f4443b08
+…
+java:S18544"IRemove this useless assignment to local variable "listaSociosController".(—î«ÖJ$f22fc579-62ff-4d79-9759-74412378ec6e
+‹
+java:S18547"ORemove this useless assignment to local variable "registroMembresiaController".(×¯ÚJ$f32f981f-05fe-4194-8c50-e4a0d57d6975
+~
+java:S14811"=Remove this unused "registroSociosController" local variable.(Ä–ü½ûÿÿÿÿJ$f2781bbf-3b64-49e1-bb20-c15afc9c56c6
+v
+java:S14814":Remove this unused "listaSociosController" local variable.(—î«ÖJ$cf17e95d-604f-4da5-a846-43c4aa93a198
+|
+java:S14817"@Remove this unused "registroMembresiaController" local variable.(×¯ÚJ$a327e450-7a72-4637-87a2-f6f0bab4dda5
