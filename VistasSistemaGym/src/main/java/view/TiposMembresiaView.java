@@ -253,8 +253,8 @@ public class TiposMembresiaView extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton ButtonCancelar;
-    private javax.swing.JButton ButtonRegistrar;
+    public javax.swing.JButton ButtonCancelar;
+    public javax.swing.JButton ButtonRegistrar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
