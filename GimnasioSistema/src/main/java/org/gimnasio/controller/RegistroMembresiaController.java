@@ -24,6 +24,13 @@ public class RegistroMembresiaController extends WindowController implements Act
     private TipoMembresia tipoMembresiaSeleccionado;
     private List<TipoMembresia> listaTiposMembresia;
 
+    private static final String ERROR_BUSCAR_SOCIO = "Error al buscar el socio: ";
+    private static final String ERROR_REGISTRAR_MEMBRESIA = "Error al registrar la membresía: ";
+    private static final String MEMBRESIA_REGISTRADA_EXITO = "Membresía registrada con éxito";
+    private static final String DEBE_SELECCIONAR_SOCIO = "Debe seleccionar un socio";
+
+
+
     /*Analiza esta clase necesito optimizarla al maximo, que quede codigo limpio, optimo y listo para futuros avances*/
 
     public RegistroMembresiaController() {
@@ -55,24 +62,8 @@ public class RegistroMembresiaController extends WindowController implements Act
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == view.btnBuscar) {
-            String textoBusqueda = view.txtBusqueda.getText();
-            try {
-                if(view.cmbCriterioBusqueda.getSelectedIndex() == 0) {
-                    vaciarFormulario();
-                    socioSeleccionado = serviceSocio.buscarSocioPorId(Integer.parseInt(textoBusqueda));
-                    cargarSocioEnFormulario(socioSeleccionado);
-                } else if(view.cmbCriterioBusqueda.getSelectedIndex() == 1) {
-                    vaciarFormulario();
-                    socioSeleccionado = serviceSocio.buscarSocioPorCedula(textoBusqueda);
-                    cargarSocioEnFormulario(socioSeleccionado);
-                } else if(view.cmbCriterioBusqueda.getSelectedIndex() == 2){
-                    vaciarFormulario();
-                    socioSeleccionado = serviceSocio.buscarSocioPorApellido(textoBusqueda);
-                    cargarSocioEnFormulario(socioSeleccionado);
-                }
-            } catch (Exception ex) {
-                JOptionPane.showMessageDialog(null, "Error al buscar el socio: " + ex.getMessage());
-            }
+            buscarSocio();
+
         } else if (e.getSource() == view.btnCobrar) {
             try {
                 if (socioSeleccionado.getId() == 0) {
@@ -105,6 +96,86 @@ public class RegistroMembresiaController extends WindowController implements Act
                 JOptionPane.showMessageDialog(null, "Error al registrar la membresía: " + ex.getMessage());
             }
         }
+    }
+
+    private void buscarSocio() {
+        String textoBusqueda = view.txtBusqueda.getText();
+        try {
+            if(view.cmbCriterioBusqueda.getSelectedIndex() == 0) {
+                vaciarFormulario();
+                socioSeleccionado = serviceSocio.buscarSocioPorId(Integer.parseInt(textoBusqueda));
+                cargarSocioEnFormulario(socioSeleccionado);
+            } else if(view.cmbCriterioBusqueda.getSelectedIndex() == 1) {
+                vaciarFormulario();
+                socioSeleccionado = serviceSocio.buscarSocioPorCedula(textoBusqueda);
+                cargarSocioEnFormulario(socioSeleccionado);
+            } else if(view.cmbCriterioBusqueda.getSelectedIndex() == 2){
+                vaciarFormulario();
+                socioSeleccionado = serviceSocio.buscarSocioPorApellido(textoBusqueda);
+                cargarSocioEnFormulario(socioSeleccionado);
+            }
+        } catch (Exception ex) {
+            JOptionPane.showMessageDialog(null, ERROR_BUSCAR_SOCIO + ex.getMessage());
+        }
+    }
+
+    private void cobrarMembresia() {
+        try {
+            validarSocioSeleccionado();
+            Membresia membresia = registrarMembresia();
+            Pago pago = generarPago(membresia);
+            Factura factura = generarFactura(pago);
+            enviarCorreoRegistroMembresia(membresia);
+            mostrarMensajeExito();
+        } catch (Exception ex) {
+            mostrarMensajeError(ex.getMessage());
+        }
+    }
+
+    private void validarSocioSeleccionado() throws Exception {
+        if (socioSeleccionado.getId() == 0) {
+            throw new Exception(DEBE_SELECCIONAR_SOCIO);
+        }
+    }
+
+    private Membresia registrarMembresia() throws Exception {
+        return serviceMembresia.registrarMembresia(socioSeleccionado, tipoMembresiaSeleccionado);
+    }
+
+    private Pago generarPago(Membresia membresia) {
+        return new Pago.Builder()
+                .socio(socioSeleccionado)
+                .membresia(membresia)
+                .monto(tipoMembresiaSeleccionado.getPrecio())
+                .fechaPago(new Date(System.currentTimeMillis()))
+                .metodoPago("Efectivo")
+                .tipoPago("membresia")
+                .build();
+    }
+
+    private Factura generarFactura(Pago pago) {
+        return new Factura.Builder()
+                .pago(pago)
+                .numeroFactura("F" + pago.getId())
+                .fechaEmision(new Date(System.currentTimeMillis()))
+                .detalle("Pago de membresía")
+                .subtotal(pago.getMonto())
+                .iva(15)
+                .total(pago.getMonto())
+                .build();
+    }
+
+    private void enviarCorreoRegistroMembresia(Membresia membresia) {
+        EmailService emailService = new EmailService();
+        emailService.enviarCorreoRegistroMembresia(socioSeleccionado, membresia, tipoMembresiaSeleccionado);
+    }
+
+    private void mostrarMensajeExito() {
+        JOptionPane.showMessageDialog(null, MEMBRESIA_REGISTRADA_EXITO);
+    }
+
+    private void mostrarMensajeError(String mensaje) {
+        JOptionPane.showMessageDialog(null, ERROR_REGISTRAR_MEMBRESIA + mensaje);
     }
 
     @Override

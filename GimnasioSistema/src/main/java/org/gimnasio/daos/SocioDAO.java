@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Logger;
 
-public class SocioDAO {
+public class SocioDAO implements CRUD<Socio> {
     public static final Logger LOGGER = Logger.getLogger(SocioDAO.class.getName());
 
     public static int obtenerNumeroSocios() throws SQLException {
@@ -119,8 +119,8 @@ public class SocioDAO {
     }
 
     public List<Socio> obtenerTodosSocios() throws SQLException {
-        List<Socio> listaSocios = new ArrayList<Socio>();
-        String sql = "SELECT * FROM socios";
+        List<Socio> listaSocios = new ArrayLi
+                \}{"}";
         Connection conexion = DBConexion.getConnection();
         try (PreparedStatement statement = conexion.prepareStatement(sql);
              ResultSet resultSet = statement.executeQuery()) {
@@ -195,5 +195,31 @@ public class SocioDAO {
             DBConexion.closeConnection(connection);
         }
         return socio;
+    }
+
+    @Override
+    public List<Socio> obtenerListaDeDatos() throws SQLException {
+
+        return List.of();
+    }
+
+    @Override
+    public boolean agregarDato(Socio dato) throws SQLException {
+        return false;
+    }
+
+    @Override
+    public boolean actualizarDato(Socio dato) throws SQLException {
+        return false;
+    }
+
+    @Override
+    public boolean eliminarDato(Socio dato) throws SQLException {
+        return false;
+    }
+
+    @Override
+    public Socio buscarDatoPorId(int id) throws SQLException {
+        return null;
     }
 }

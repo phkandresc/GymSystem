@@ -5,13 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a848a49-25a3-4bd1-aaf9-2883439fc442" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/daos/CRUD.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/f/0fcd5a2b5f891c40066823ba30f946c5036efac7" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/f/0fcd5a2b5f891c40066823ba30f946c5036efac7" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/7/175dbac0bfe9407a737fbc03ef19b3dd804bc8e5" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/7/175dbac0bfe9407a737fbc03ef19b3dd804bc8e5" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/c/9c8b5ff94fce7c112305524938d01050ca4b754b" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/c/9c8b5ff94fce7c112305524938d01050ca4b754b" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/6/a6f82f2ca3962bd893d5e1e3c632473ed26a51ab" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/6/a6f82f2ca3962bd893d5e1e3c632473ed26a51ab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/factura.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/factura.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/gimnasio/controller/RegistroMembresiaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/controller/RegistroMembresiaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/gimnasio/daos/TipoMembresiaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/daos/TipoMembresiaDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/gimnasio/controller/RegistroSociosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/controller/RegistroSociosController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/gimnasio/daos/SocioDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/daos/SocioDAO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +25,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -48,40 +52,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.EmailService.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ListaSociosController.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ListaSociosView.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.PaginaPrincipalView.executor&quot;: &quot;Run&quot;,
-    &quot;Application.PdfGenerator.executor&quot;: &quot;Run&quot;,
-    &quot;Application.RegistroMembresiaController.executor&quot;: &quot;Run&quot;,
-    &quot;Application.RegistroMembresiaView.executor&quot;: &quot;Run&quot;,
-    &quot;Application.RegistroSociosController.executor&quot;: &quot;Run&quot;,
-    &quot;Application.org.gimnasio.view.RegistroMembresiaView.executor&quot;: &quot;Run&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;ramaTiposMembresia&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/kacor/Desktop/GymSystem/GimnasioSistema&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;D:/GymSystem/GimnasioSistema/src/main/java/org/gimnasio/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.intentionPowerPack&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.EmailService.executor": "Run",
+    "Application.ListaSociosController.executor": "Run",
+    "Application.ListaSociosView.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.PaginaPrincipalView.executor": "Run",
+    "Application.PdfGenerator.executor": "Run",
+    "Application.RegistroMembresiaController.executor": "Run",
+    "Application.RegistroMembresiaView.executor": "Run",
+    "Application.RegistroSociosController.executor": "Run",
+    "Application.org.gimnasio.view.RegistroMembresiaView.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "ramaTiposMembresia",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/kacor/Desktop/GymSystem/GimnasioSistema",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "D:/GymSystem/GimnasioSistema/src/main/java/org/gimnasio/Main.java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.updates",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\GymSystem\GimnasioSistema\src\main\resources" />
@@ -170,8 +174,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17011.79" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17011.79" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
       </set>
     </attachedChunks>
   </component>
@@ -194,10 +198,16 @@
       <workItem from="1719520399097" duration="14000" />
       <workItem from="1719541141703" duration="314000" />
       <workItem from="1719541512177" duration="31000" />
+      <workItem from="1719543280274" duration="658000" />
+      <workItem from="1719544283608" duration="2632000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

@@ -1,24 +1,38 @@
 
-y
-java:S1153s"1Directly append the argument of String.valueOf().(¶—êáúÿÿÿÿ8°©ÚÂ…2J$f43588d8-9614-4c53-9a67-d60331998b86
+z
+java:S1153º"1Directly append the argument of String.valueOf().(¶—êáúÿÿÿÿ8°©ÚÂ…2J$6116762f-ac31-49b6-b511-ae651c01a91a
+	java:S112‰"FDefine and throw a dedicated exception instead of using a generic one.(ç‹ÿûÿÿÿÿ8îÄâæ…2J$3f4bee45-bc87-48ad-8d77-b598b5a41130
+	java:S112‡"FDefine and throw a dedicated exception instead of using a generic one.(ÍÈ©¬ûÿÿÿÿ8îÄâæ…2J$c6275685-a32a-4a7d-998c-bdf2bdb963a2
+¢
+java:S1192`"_Use already-defined constant 'ERROR_REGISTRAR_MEMBRESIA' instead of duplicating its value here.(”ƒƒ°8ŞÎãæ…2J$1a3c10bb-2089-470a-b8f8-7e666e2cf56b
+£
+java:S1192]"`Use already-defined constant 'MEMBRESIA_REGISTRADA_EXITO' instead of duplicating its value here.(›®ñ­8ŞÎãæ…2J$b01593c4-a6f3-4601-b6f2-358ac4d7ee82
+Ÿ
+java:S1192F"\Use already-defined constant 'DEBE_SELECCIONAR_SOCIO' instead of duplicating its value here.(ù´¼Ã8ŞÎãæ…2J$910cfc16-0e9c-42b3-beac-a541b966017f
 Œ
-java:S2387"I"paginaPrincipalController" is the name of a field in "WindowController".(®Ó8´©ÚÂ…2J$2eb49a97-acdc-492d-9827-7b2c2ed3abe1
+java:S2387"I"paginaPrincipalController" is the name of a field in "WindowController".(®Ó8´©ÚÂ…2J$a448879c-70cb-4991-8319-0e00d4dda7cd
+Å
+java:S1186Á"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(÷—8´©ÚÂ…2J$0b531615-fdd7-4058-853e-c145ff55a420
 Ä
-java:S1186z"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(÷—8´©ÚÂ…2J$2a117de1-498a-4f88-96cd-068b338ad4fa
-Ã
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(İ¼õA8´©ÚÂ…2J$5d512e79-78a5-48c0-9514-957e53b2697d
+java:S1186Æ"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(İ¼õA8´©ÚÂ…2J$1cd3903b-be4d-489e-a650-18db0da4a88d
 Ê
-java:S1186„"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(˜Â½€øÿÿÿÿ8´©ÚÂ…2J$e22ddf28-f5b1-4459-b846-3bf4a49bf159
-~
-java:S1854[";Remove this useless assignment to local variable "factura".(…ğ‚¸8¹©ÚÂ…2J$93351635-4db7-4a8a-8df9-01d10f2da4f5
-o
-java:S1481[",Remove this unused "factura" local variable.(…ğ‚¸8¾©ÚÂ…2J$956e5a62-db97-40e7-935d-c18d9fd47d6c
-~	java:S125g"<This block of commented-out lines of code should be removed.(ûëöü8¾©ÚÂ…2J$a77b7c59-d721-415e-b103-04e0297ce4ed
-_
-java:S3626”"Remove this redundant jump.(ûÁİ…8Á©ÚÂ…2J$b13c4ef0-7494-4f63-aba0-c11db51d0f1d
-ˆ
-java:S1128"@Remove this unused import 'javax.swing.table.DefaultTableModel'.(è†åûÿÿÿÿ8€ÆÜÔ…2J$d9f226cd-503e-469d-b795-336a29eb28be
+java:S1186Ë"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(˜Â½€øÿÿÿÿ8´©ÚÂ…2J$6ef8e326-99bc-4452-a539-b1c69c8d7454
 w
-java:S1128"4Remove this unused import 'java.text.DecimalFormat'.(¤°Ó˜8ÆÜÔ…2J$1b744672-bb64-4d32-82c5-728a8fd42854
+java:S1144z"4Remove this unused private "cobrarMembresia" method.(»¿ó§8ôÄâæ…2J$4265f9f0-76da-4524-9906-4b9566317428
+~
+java:S1854R";Remove this useless assignment to local variable "factura".(…ğ‚¸8¹©ÚÂ…2J$4790c232-39cf-4442-9821-d6269d015452
+o
+java:S1481R",Remove this unused "factura" local variable.(…ğ‚¸8¾©ÚÂ…2J$6499ce32-b054-4425-a3a5-f735d3dc4c66
+~	java:S125^"<This block of commented-out lines of code should be removed.(ûëöü8¾©ÚÂ…2J$a2fd7406-1b51-480f-bf4f-d0a905c4ffee
+}
+java:S1854";Remove this useless assignment to local variable "factura".(ÿ©İ`8„Åâæ…2J$fbfeb9a1-d067-49b6-b79b-d36df9622c98
+n
+java:S1481",Remove this unused "factura" local variable.(ÿ©İ`8…Åâæ…2J$28149412-3a68-4cc3-a81b-c7d722dd0205
+_
+java:S3626Û"Remove this redundant jump.(ûÁİ…8Á©ÚÂ…2J$3bde6731-aaa3-469b-9862-ddd55335613a
+ˆ
+java:S1128"@Remove this unused import 'javax.swing.table.DefaultTableModel'.(è†åûÿÿÿÿ8‘Ïãæ…2J$ab16e316-76e7-4f2c-b161-3a0c6fe6c032
+w
+java:S1128"4Remove this unused import 'java.text.DecimalFormat'.(¤°Ó˜8‘Ïãæ…2J$c7c549a3-9e27-4da3-be30-f4976ee1be3d
 €
-java:S1068"=Remove this unused "paginaPrincipalController" private field.(®Ó8Ã©ÚÂ…2J$3e785bf5-9b0a-4f75-9634-f12d6d259747
+java:S1068"=Remove this unused "paginaPrincipalController" private field.(®Ó8Ã©ÚÂ…2J$c6a95fca-0aff-4a44-88ae-c816e5939438

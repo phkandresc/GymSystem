@@ -67,3 +67,5 @@ g
 7src/main/java/org/gimnasio/controller/PdfGenerator.java,1\c\1c542d35ffc31a714be941e2dfde26d19f073160
 ;
 factura.pdf,2\2\227608dd24e87d3322d8c7da006b2cd0f7d78f57
+Y
+)src/main/java/org/gimnasio/daos/CRUD.java,3\c\3c63c4faf136b0fa7244eaf96476cbe15c204f0b

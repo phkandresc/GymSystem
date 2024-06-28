@@ -119,7 +119,4 @@ public class RegistroSociosController implements ActionListener, MouseListener{
         return true;
     }
 
-    public static void main(String[] args) {
-        new RegistroSociosController();
-    }
 }
