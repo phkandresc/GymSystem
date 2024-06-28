@@ -56,4 +56,35 @@ public class TipoMembresiaDAO {
         return tiposMembresia;
     }
 
+    public boolean agregarTipoDeMembresia(TipoMembresia nuevoTipoMembresia) throws SQLException {
+        PreparedStatement ps = null;
+        Connection conexion = DBConexion.getConnection();
+        String sql = "INSERT INTO tipos_membresia (nombre, descripcion, duracion, precio) VALUES (?, ?, ?, ?)";
+
+        try {
+            ps = conexion.prepareStatement(sql);
+            ps.setString(1, nuevoTipoMembresia.getNombre());
+            ps.setString(2, nuevoTipoMembresia.getDescripcion());
+            ps.setInt(3, nuevoTipoMembresia.getDuracion());
+            ps.setDouble(4, nuevoTipoMembresia.getPrecio());
+            ps.executeUpdate();
+            return true;
+        } catch (SQLException e) {
+            LOGGER.log(Level.SEVERE, e.getMessage());
+            return false;
+        } finally {
+            try {
+                if (ps != null) {
+                    ps.close();
+                }
+                if (conexion != null) {
+                    conexion.close();
+                }
+                DBConexion.closeConnection(conexion);
+            } catch (SQLException e) {
+                LOGGER.log(Level.SEVERE, e.getMessage());
+            }
+        }
+    }
+
 }

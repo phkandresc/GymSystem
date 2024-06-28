@@ -1,24 +1,24 @@
 
 y
-java:S1153q"1Directly append the argument of String.valueOf().(¶—êáúÿÿÿÿ8°©ÚÂ…2J$040dc90c-cb07-4c5a-bc3d-a560b758e2e3
+java:S1153s"1Directly append the argument of String.valueOf().(¶—êáúÿÿÿÿ8°©ÚÂ…2J$f43588d8-9614-4c53-9a67-d60331998b86
 Œ
-java:S2387"I"paginaPrincipalController" is the name of a field in "WindowController".(®Ó8´©ÚÂ…2J$2908e327-7fe1-473c-aec5-7aaad8ac4cd1
+java:S2387"I"paginaPrincipalController" is the name of a field in "WindowController".(®Ó8´©ÚÂ…2J$2eb49a97-acdc-492d-9827-7b2c2ed3abe1
 Ä
-java:S1186x"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(÷—8´©ÚÂ…2J$97eafd83-4070-46d0-ae82-d464b4040a5d
+java:S1186z"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(÷—8´©ÚÂ…2J$2a117de1-498a-4f88-96cd-068b338ad4fa
 Ã
-java:S1186}"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(İ¼õA8´©ÚÂ…2J$06e5267f-0b3f-454e-bf56-cb17ac165238
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(İ¼õA8´©ÚÂ…2J$5d512e79-78a5-48c0-9514-957e53b2697d
 Ê
-java:S1186‚"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(˜Â½€øÿÿÿÿ8´©ÚÂ…2J$b0e7fca8-26f9-4f9e-a954-95ade296a68d
+java:S1186„"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(˜Â½€øÿÿÿÿ8´©ÚÂ…2J$e22ddf28-f5b1-4459-b846-3bf4a49bf159
 ~
-java:S1854Y";Remove this useless assignment to local variable "factura".(…ğ‚¸8¹©ÚÂ…2J$c735558a-96ec-412a-9255-83ed9c2d6203
+java:S1854[";Remove this useless assignment to local variable "factura".(…ğ‚¸8¹©ÚÂ…2J$93351635-4db7-4a8a-8df9-01d10f2da4f5
 o
-java:S1481Y",Remove this unused "factura" local variable.(…ğ‚¸8¾©ÚÂ…2J$5ae69a8e-591b-47d8-8ec2-aff342c4ce32
-~	java:S125e"<This block of commented-out lines of code should be removed.(ûëöü8¾©ÚÂ…2J$87200e5e-778a-44f1-aa82-cba9c1647c5b
+java:S1481[",Remove this unused "factura" local variable.(…ğ‚¸8¾©ÚÂ…2J$956e5a62-db97-40e7-935d-c18d9fd47d6c
+~	java:S125g"<This block of commented-out lines of code should be removed.(ûëöü8¾©ÚÂ…2J$a77b7c59-d721-415e-b103-04e0297ce4ed
 _
-java:S3626’"Remove this redundant jump.(ûÁİ…8Á©ÚÂ…2J$fd024d78-57eb-460b-baaa-f5370b692734
+java:S3626”"Remove this redundant jump.(ûÁİ…8Á©ÚÂ…2J$b13c4ef0-7494-4f63-aba0-c11db51d0f1d
 ˆ
-java:S1128"@Remove this unused import 'javax.swing.table.DefaultTableModel'.(è†åûÿÿÿÿ8€ÆÜÔ…2J$cc534802-bda6-4342-becb-597baed89df8
+java:S1128"@Remove this unused import 'javax.swing.table.DefaultTableModel'.(è†åûÿÿÿÿ8€ÆÜÔ…2J$d9f226cd-503e-469d-b795-336a29eb28be
 w
-java:S1128"4Remove this unused import 'java.text.DecimalFormat'.(¤°Ó˜8ÆÜÔ…2J$c4cbbe0b-fd50-480e-957a-89aa3d4fbf7c
+java:S1128"4Remove this unused import 'java.text.DecimalFormat'.(¤°Ó˜8ÆÜÔ…2J$1b744672-bb64-4d32-82c5-728a8fd42854
 €
-java:S1068"=Remove this unused "paginaPrincipalController" private field.(®Ó8Ã©ÚÂ…2J$2050ff71-2daf-409f-9207-a860e27a7bf2
+java:S1068"=Remove this unused "paginaPrincipalController" private field.(®Ó8Ã©ÚÂ…2J$3e785bf5-9b0a-4f75-9634-f12d6d259747

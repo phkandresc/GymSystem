@@ -24,6 +24,8 @@ public class RegistroMembresiaController extends WindowController implements Act
     private TipoMembresia tipoMembresiaSeleccionado;
     private List<TipoMembresia> listaTiposMembresia;
 
+    /*Analiza esta clase necesito optimizarla al maximo, que quede codigo limpio, optimo y listo para futuros avances*/
+
     public RegistroMembresiaController() {
         this.view = new RegistroMembresiaView();
         this.serviceMembresia = new MembresiaService();
