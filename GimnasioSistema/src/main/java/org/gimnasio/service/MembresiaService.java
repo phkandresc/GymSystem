@@ -28,7 +28,7 @@ public class MembresiaService {
                 fechaInicio,
                 fechaFin
         );
-        membresiaDAO.registrarMembresia(membresia);
+        membresiaDAO.agregarDato(membresia);
         return membresia;
     }
 

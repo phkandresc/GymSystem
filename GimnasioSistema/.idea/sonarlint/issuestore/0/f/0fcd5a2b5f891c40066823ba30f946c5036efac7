@@ -1,38 +1,38 @@
 
 z
-java:S1153º"1Directly append the argument of String.valueOf().(¶—êáúÿÿÿÿ8°©ÚÂ…2J$6116762f-ac31-49b6-b511-ae651c01a91a
-	java:S112‰"FDefine and throw a dedicated exception instead of using a generic one.(ç‹ÿûÿÿÿÿ8îÄâæ…2J$3f4bee45-bc87-48ad-8d77-b598b5a41130
-	java:S112‡"FDefine and throw a dedicated exception instead of using a generic one.(ÍÈ©¬ûÿÿÿÿ8îÄâæ…2J$c6275685-a32a-4a7d-998c-bdf2bdb963a2
+java:S1153¸"1Directly append the argument of String.valueOf().(¶—êáúÿÿÿÿ8öÏÊù…2J$2c5c611b-592e-4031-92a2-db7e8eb03752
+	java:S112‡"FDefine and throw a dedicated exception instead of using a generic one.(ç‹ÿûÿÿÿÿ8öÏÊù…2J$58e77341-8f69-4c2c-a34c-bb92b805a73c
+	java:S112…"FDefine and throw a dedicated exception instead of using a generic one.(ÍÈ©¬ûÿÿÿÿ8†ĞÊù…2J$3b37ddf6-1e9a-4b9d-a6bf-eb5007ec0984
 ¢
-java:S1192`"_Use already-defined constant 'ERROR_REGISTRAR_MEMBRESIA' instead of duplicating its value here.(”ƒƒ°8ŞÎãæ…2J$1a3c10bb-2089-470a-b8f8-7e666e2cf56b
+java:S1192^"_Use already-defined constant 'ERROR_REGISTRAR_MEMBRESIA' instead of duplicating its value here.(”ƒƒ°8†ĞÊù…2J$06d0bb55-684b-44c3-9494-b2b8f90526f7
 £
-java:S1192]"`Use already-defined constant 'MEMBRESIA_REGISTRADA_EXITO' instead of duplicating its value here.(›®ñ­8ŞÎãæ…2J$b01593c4-a6f3-4601-b6f2-358ac4d7ee82
+java:S1192["`Use already-defined constant 'MEMBRESIA_REGISTRADA_EXITO' instead of duplicating its value here.(›®ñ­8†ĞÊù…2J$1da8726f-7b95-4c23-bde2-4dbfc2268cad
 Ÿ
-java:S1192F"\Use already-defined constant 'DEBE_SELECCIONAR_SOCIO' instead of duplicating its value here.(ù´¼Ã8ŞÎãæ…2J$910cfc16-0e9c-42b3-beac-a541b966017f
+java:S1192D"\Use already-defined constant 'DEBE_SELECCIONAR_SOCIO' instead of duplicating its value here.(ù´¼Ã8†ĞÊù…2J$ecae63f8-273b-4b09-b647-640333a86051
 Œ
-java:S2387"I"paginaPrincipalController" is the name of a field in "WindowController".(®Ó8´©ÚÂ…2J$a448879c-70cb-4991-8319-0e00d4dda7cd
+java:S2387"I"paginaPrincipalController" is the name of a field in "WindowController".(®Ó8´©ÚÂ…2J$19442884-491d-43a4-a321-3c7c358b1b0e
 Å
-java:S1186Á"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(÷—8´©ÚÂ…2J$0b531615-fdd7-4058-853e-c145ff55a420
+java:S1186¿"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(÷—8†ĞÊù…2J$18e506e6-3c92-43c9-8fa3-f83344cbe87f
 Ä
-java:S1186Æ"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(İ¼õA8´©ÚÂ…2J$1cd3903b-be4d-489e-a650-18db0da4a88d
+java:S1186Ä"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(İ¼õA8†ĞÊù…2J$ac32d38b-f04e-4a92-b3e0-c4763f1ce774
 Ê
-java:S1186Ë"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(˜Â½€øÿÿÿÿ8´©ÚÂ…2J$6ef8e326-99bc-4452-a539-b1c69c8d7454
+java:S1186É"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(˜Â½€øÿÿÿÿ8†ĞÊù…2J$9200afab-79b5-4395-99c8-edac2db73324
 w
-java:S1144z"4Remove this unused private "cobrarMembresia" method.(»¿ó§8ôÄâæ…2J$4265f9f0-76da-4524-9906-4b9566317428
+java:S1144x"4Remove this unused private "cobrarMembresia" method.(»¿ó§8•ĞÊù…2J$82b306bc-8901-45a4-8eb7-9fe867210669
 ~
-java:S1854R";Remove this useless assignment to local variable "factura".(…ğ‚¸8¹©ÚÂ…2J$4790c232-39cf-4442-9821-d6269d015452
+java:S1854P";Remove this useless assignment to local variable "factura".(…ğ‚¸8ÉĞÊù…2J$b468cc9c-7b69-44ba-b8e6-701f1890e9f6
 o
-java:S1481R",Remove this unused "factura" local variable.(…ğ‚¸8¾©ÚÂ…2J$6499ce32-b054-4425-a3a5-f735d3dc4c66
-~	java:S125^"<This block of commented-out lines of code should be removed.(ûëöü8¾©ÚÂ…2J$a2fd7406-1b51-480f-bf4f-d0a905c4ffee
+java:S1481P",Remove this unused "factura" local variable.(…ğ‚¸8ÚĞÊù…2J$f305bc49-bd02-44c9-a99d-f294a707ab33
+~	java:S125\"<This block of commented-out lines of code should be removed.(ûëöü8ÚĞÊù…2J$5db9363a-fdf6-43f9-b4cf-20f0add314cf
 }
-java:S1854";Remove this useless assignment to local variable "factura".(ÿ©İ`8„Åâæ…2J$fbfeb9a1-d067-49b6-b79b-d36df9622c98
+java:S1854}";Remove this useless assignment to local variable "factura".(ÿ©İ`8êĞÊù…2J$a0b27c45-6117-4ecc-9a92-9207145d9c8d
 n
-java:S1481",Remove this unused "factura" local variable.(ÿ©İ`8…Åâæ…2J$28149412-3a68-4cc3-a81b-c7d722dd0205
+java:S1481}",Remove this unused "factura" local variable.(ÿ©İ`8üĞÊù…2J$3de54eaa-48a4-438f-86cc-9b7bab2df806
 _
-java:S3626Û"Remove this redundant jump.(ûÁİ…8Á©ÚÂ…2J$3bde6731-aaa3-469b-9862-ddd55335613a
+java:S3626Ù"Remove this redundant jump.(ûÁİ…8ãÑÊù…2J$8e18a9ab-3ecb-4555-8755-b38eb8bd8802
 ˆ
-java:S1128"@Remove this unused import 'javax.swing.table.DefaultTableModel'.(è†åûÿÿÿÿ8‘Ïãæ…2J$ab16e316-76e7-4f2c-b161-3a0c6fe6c032
+java:S1128"@Remove this unused import 'javax.swing.table.DefaultTableModel'.(è†åûÿÿÿÿ8‘Ïãæ…2J$07254a30-da1b-403a-951e-dd1ddd41af22
 w
-java:S1128"4Remove this unused import 'java.text.DecimalFormat'.(¤°Ó˜8‘Ïãæ…2J$c7c549a3-9e27-4da3-be30-f4976ee1be3d
+java:S1128"4Remove this unused import 'java.text.DecimalFormat'.(¤°Ó˜8‘Ïãæ…2J$c539e3e1-9b9e-456a-9df7-1cfb061ac523
 €
-java:S1068"=Remove this unused "paginaPrincipalController" private field.(®Ó8Ã©ÚÂ…2J$c6a95fca-0aff-4a44-88ae-c816e5939438
+java:S1068"=Remove this unused "paginaPrincipalController" private field.(®Ó8Ã©ÚÂ…2J$de68c8ad-3ce3-4c3c-95c9-12a76cabe50a

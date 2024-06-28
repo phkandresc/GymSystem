@@ -1,0 +1,48 @@
+
+Š
+java:S11925"GDefine a constant instead of duplicating this literal "cedula" 4 times.(Ö¨­È8ÛĞ£ú…2J$a82b5572-805f-45f7-9c34-7a6018837e18
+™
+java:S1192;"QDefine a constant instead of duplicating this literal "fecha_nacimiento" 4 times.(¡·—øÿÿÿÿ8üŞ£ú…2J$60847b73-4287-4b36-9066-aa084e9d73f0
+
+java:S1192:"JDefine a constant instead of duplicating this literal "direccion" 4 times.(Ó’º8ËĞ£ú…2J$39bd585f-8a46-43c7-9e24-f41ea7b79b42
+Š
+java:S11926"GDefine a constant instead of duplicating this literal "nombre" 4 times.(Üå€ù8ÛĞ£ú…2J$5e185509-bb5b-4432-8886-cc0ad137c521
+˜
+java:S11929"PDefine a constant instead of duplicating this literal "numero_telefono" 4 times.(›ãÄşÿÿÿÿ8ËĞ£ú…2J$3434624f-9e47-48e8-8c19-93f90f498bca
+‘
+java:S11927"IDefine a constant instead of duplicating this literal "apellido" 4 times.(–òááÿÿÿÿÿ8ÛĞ£ú…2J$aec52e38-0081-4ff8-a589-726990f7c2b5
+‰
+java:S11928"FDefine a constant instead of duplicating this literal "email" 4 times.(œ²Ğæ8ÛĞ£ú…2J$3b8e01ee-c16b-4e25-8b6d-f96b592f2134
+¥	java:S116"cRename this field "SELECCIONAR_TODOS_SOCIOS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ª±œ£8ÛĞ£ú…2J$79ade23f-1df2-4016-8502-c86093b1357c
+©	java:S116"bRename this field "BUSCARSOCIO_PORAPELLIDO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÁÁ¶ìşÿÿÿÿ8ÛĞ£ú…2J$7faed531-5faa-4c69-9254-85fd112b0d8a
+§	java:S116"`Rename this field "BUSCARSOCIO_PORCEDULA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÈÂÕ˜ùÿÿÿÿ8ÛĞ£ú…2J$ae5d2472-f8db-40e6-98e9-03c59e65ff26
+£	java:S116"\Rename this field "BUSCARSOCIO_PORID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÖèÍ üÿÿÿÿ8ÛĞ£ú…2J$663ccfbb-a276-45cf-8544-6cfcb545bc70
+ 	java:S116"YRename this field "ELIMINAR_SOCIO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šëúÿÿÿÿ8ÛĞ£ú…2J$0160cb77-842b-4252-a110-9a6e5694e206
+	java:S116"[Rename this field "ACTUALIZAR_SOCIO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÈÊÊ®8ÛĞ£ú…2J$0c1760f9-2ccf-40eb-b025-28cd1b91b484
+¡	java:S116"ZRename this field "REGISTRAR_SOCIO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®ëß×ùÿÿÿÿ8ÛĞ£ú…2J$328932bc-3d1b-4e5c-b2db-8607a57c7eb7
+d
+java:S1170"!Make this final field static too.(ª±œ£8Øıªú…2J$6a518ab6-1bf6-4043-981e-21c6c594c1df
+i
+java:S1170"!Make this final field static too.(ÁÁ¶ìşÿÿÿÿ8ÛĞ£ú…2J$b193c217-db2f-44bd-a8c4-723381c7a9bd
+i
+java:S1170"!Make this final field static too.(ÈÂÕ˜ùÿÿÿÿ8ÛĞ£ú…2J$edd9313b-9dd6-434a-af6e-99a63c3fd9d7
+i
+java:S1170"!Make this final field static too.(ÖèÍ üÿÿÿÿ8ÛĞ£ú…2J$ca33a638-146c-4c6f-b812-105e8163c4bd
+i
+java:S1170"!Make this final field static too.(šëúÿÿÿÿ8ÛĞ£ú…2J$bb7533fa-d199-46f3-bcde-25e2490a1371
+d
+java:S1170"!Make this final field static too.(ÈÊÊ®8ÛĞ£ú…2J$65dce8fa-4928-4e87-b8c0-18b0d179dd59
+i
+java:S1170"!Make this final field static too.(®ëß×ùÿÿÿÿ8ÛĞ£ú…2J$cd3f1b28-b31b-4829-8e60-beb633abc4e4
+g
+java:S6905,"Don't use the query "SELECT *".(Å€®¹ùÿÿÿÿ8‹ß£ú…2J$81d09c57-00af-42cd-9859-e27b06064a16
+g
+java:S6905H"Don't use the query "SELECT *".(ûğ€ªüÿÿÿÿ8›ß£ú…2J$c490fa07-3ae4-41dd-b1f9-dbd1d4b2a65d
+b
+java:S6905"Don't use the query "SELECT *".(ª±œ£8÷ıªú…2J$8515f514-fd52-46f8-a808-259434a2d066
+g
+java:S6905"Don't use the query "SELECT *".(ÖèÍ üÿÿÿÿ8ŠÑ£ú…2J$c3149d78-e260-4be2-843e-bd4a829b1c6a
+ƒ
+java:S1068";Remove this unused "BUSCARSOCIO_PORAPELLIDO" private field.(ÁÁ¶ìşÿÿÿÿ8ŠÑ£ú…2J$a91d1636-ef73-4763-a992-ca3a8dde791a
+
+java:S1068"9Remove this unused "BUSCARSOCIO_PORCEDULA" private field.(ÈÂÕ˜ùÿÿÿÿ8ŠÑ£ú…2J$5105d79d-7747-4521-a763-9a06c9e24244

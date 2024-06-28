@@ -12,22 +12,20 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class TipoMembresiaDAO {
+public class TipoMembresiaDAO implements CRUD<TipoMembresia>{
     private static final Logger LOGGER = Logger.getLogger(TipoMembresiaDAO.class.getName());
-    private List<TipoMembresia> tiposMembresia = new ArrayList<TipoMembresia>();
+    private final String BUSCAR_TIPOMEMBRESIA_POR_ID = "SELECT * FROM tipos_membresia WHERE id = ?";
+    private final String OBTENER_TIPOMEMBRESIAS = "SELECT * FROM tipos_membresia";
+    private final String AGREGAR_TIPOMEMBRESIA = "INSERT INTO tipos_membresia (nombre, descripcion, duracion, precio) VALUES (?, ?, ?, ?)";
 
-    //Obtener tipos de membresia
-    public List<TipoMembresia> obtenerTiposMembresia() throws SQLException {
+    @Override
+    public List<TipoMembresia> obtenerListaDeDatos() throws SQLException {
         PreparedStatement ps = null;
-        ResultSet rs = null;
         Connection conexion = DBConexion.getConnection();
-
-        String sql = "SELECT * FROM tipos_membresia";
-
+        List<TipoMembresia> tiposMembresia = new ArrayList<>();
         try {
-            ps = conexion.prepareStatement(sql);
-            rs = ps.executeQuery();
-
+            ps = conexion.prepareStatement(OBTENER_TIPOMEMBRESIAS);
+            ResultSet rs = ps.executeQuery();
             while (rs.next()) {
                 TipoMembresia tipoMembresia = new TipoMembresia();
                 tipoMembresia.setId(rs.getInt("id"));
@@ -40,10 +38,6 @@ public class TipoMembresiaDAO {
         } catch (SQLException e) {
             LOGGER.log(Level.SEVERE, e.getMessage());
         } finally {
-            if (rs != null) {
-                rs.close();
-            }
-
             if (ps != null) {
                 ps.close();
             }
@@ -56,35 +50,71 @@ public class TipoMembresiaDAO {
         return tiposMembresia;
     }
 
-    public boolean agregarTipoDeMembresia(TipoMembresia nuevoTipoMembresia) throws SQLException {
+    @Override
+    public boolean agregarDato(TipoMembresia dato) throws SQLException {
         PreparedStatement ps = null;
         Connection conexion = DBConexion.getConnection();
-        String sql = "INSERT INTO tipos_membresia (nombre, descripcion, duracion, precio) VALUES (?, ?, ?, ?)";
-
         try {
-            ps = conexion.prepareStatement(sql);
-            ps.setString(1, nuevoTipoMembresia.getNombre());
-            ps.setString(2, nuevoTipoMembresia.getDescripcion());
-            ps.setInt(3, nuevoTipoMembresia.getDuracion());
-            ps.setDouble(4, nuevoTipoMembresia.getPrecio());
+            ps = conexion.prepareStatement(AGREGAR_TIPOMEMBRESIA);
+            ps.setString(1, dato.getNombre());
+            ps.setString(2, dato.getDescripcion());
+            ps.setInt(3, dato.getDuracion());
+            ps.setDouble(4, dato.getPrecio());
             ps.executeUpdate();
             return true;
         } catch (SQLException e) {
             LOGGER.log(Level.SEVERE, e.getMessage());
-            return false;
         } finally {
-            try {
-                if (ps != null) {
-                    ps.close();
-                }
-                if (conexion != null) {
-                    conexion.close();
-                }
-                DBConexion.closeConnection(conexion);
-            } catch (SQLException e) {
-                LOGGER.log(Level.SEVERE, e.getMessage());
+            if (ps != null) {
+                ps.close();
             }
+
+            if (conexion != null) {
+                conexion.close();
+            }
+            DBConexion.closeConnection(conexion);
         }
+        return false;
     }
 
+    @Override
+    public boolean actualizarDato(TipoMembresia dato) throws SQLException {
+        return false;
+    }
+
+    @Override
+    public boolean eliminarDato(TipoMembresia dato) throws SQLException {
+        return false;
+    }
+
+    @Override
+    public TipoMembresia buscarDatoPorId(int id) throws SQLException {
+        PreparedStatement ps = null;
+        Connection conexion = DBConexion.getConnection();
+        TipoMembresia tipoMembresia = new TipoMembresia();
+        try {
+            ps = conexion.prepareStatement(BUSCAR_TIPOMEMBRESIA_POR_ID);
+            ps.setInt(1, id);
+            ResultSet rs = ps.executeQuery();
+            if (rs.next()) {
+                tipoMembresia.setId(rs.getInt("id"));
+                tipoMembresia.setNombre(rs.getString("nombre"));
+                tipoMembresia.setDescripcion(rs.getString("descripcion"));
+                tipoMembresia.setDuracion(rs.getInt("duracion"));
+                tipoMembresia.setPrecio(rs.getDouble("precio"));
+            }
+        } catch (SQLException e) {
+            LOGGER.log(Level.SEVERE, e.getMessage());
+        } finally {
+            if (ps != null) {
+                ps.close();
+            }
+
+            if (conexion != null) {
+                conexion.close();
+            }
+            DBConexion.closeConnection(conexion);
+        }
+        return tipoMembresia;
+    }
 }

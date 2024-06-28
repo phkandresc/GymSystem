@@ -5,16 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a848a49-25a3-4bd1-aaf9-2883439fc442" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/daos/CRUD.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/f/0fcd5a2b5f891c40066823ba30f946c5036efac7" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/f/0fcd5a2b5f891c40066823ba30f946c5036efac7" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/7/175dbac0bfe9407a737fbc03ef19b3dd804bc8e5" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/7/175dbac0bfe9407a737fbc03ef19b3dd804bc8e5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/b/5b57203830b7667112879c1eea962b67df74c513" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/b/5b57203830b7667112879c1eea962b67df74c513" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/3/83d6e5739fe2955f2fe7773e638a052ea8f7d1b1" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/3/83d6e5739fe2955f2fe7773e638a052ea8f7d1b1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/c/9c8b5ff94fce7c112305524938d01050ca4b754b" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/c/9c8b5ff94fce7c112305524938d01050ca4b754b" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/6/a6f82f2ca3962bd893d5e1e3c632473ed26a51ab" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/6/a6f82f2ca3962bd893d5e1e3c632473ed26a51ab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/7/d7b7430dc3365a25326303d3d101fa606a96b17e" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/7/d7b7430dc3365a25326303d3d101fa606a96b17e" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/gimnasio/controller/RegistroMembresiaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/controller/RegistroMembresiaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/gimnasio/controller/RegistroSociosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/controller/RegistroSociosController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/gimnasio/daos/CRUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/daos/CRUD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/gimnasio/daos/MembresiaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/daos/MembresiaDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/gimnasio/daos/SocioDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/daos/SocioDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/gimnasio/daos/TipoMembresiaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/daos/TipoMembresiaDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/gimnasio/model/Membresia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/model/Membresia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/gimnasio/service/MembresiaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/service/MembresiaService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +73,7 @@
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "extract.method.default.visibility": "private",
     "git-widget-placeholder": "ramaTiposMembresia",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
@@ -174,8 +179,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17011.79" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17011.79" />
       </set>
     </attachedChunks>
   </component>
@@ -200,6 +205,7 @@
       <workItem from="1719541512177" duration="31000" />
       <workItem from="1719543280274" duration="658000" />
       <workItem from="1719544283608" duration="2632000" />
+      <workItem from="1719584018416" duration="3416000" />
     </task>
     <servers />
   </component>

@@ -31,8 +31,6 @@ public class RegistroMembresiaController extends WindowController implements Act
 
 
 
-    /*Analiza esta clase necesito optimizarla al maximo, que quede codigo limpio, optimo y listo para futuros avances*/
-
     public RegistroMembresiaController() {
         this.view = new RegistroMembresiaView();
         this.serviceMembresia = new MembresiaService();

@@ -1,5 +1,25 @@
 
 
-java:S2589U"7Remove this expression which always evaluates to "true"(ÿ«„¦øÿÿÿÿ8ë³Ù…2J$96bd7b5d-d2a7-4460-a759-fb1cbd0610ed
+java:S2589t"7Remove this expression which always evaluates to "true"(ÿ«„¦øÿÿÿÿ8³¯çú…2J$0193b6f9-5379-4c2f-a8f9-43f51e58b926
 
-java:S2589:"7Remove this expression which always evaluates to "true"(ÿ«„¦øÿÿÿÿ8í³Ù…2J$cb519224-0f31-4e82-8e40-a4dfd8f2a70b
+java:S2589;"7Remove this expression which always evaluates to "true"(ÿ«„¦øÿÿÿÿ8³¯çú…2J$e5320103-bf14-465b-b91c-021ef130a98c
+
+java:S2589W"7Remove this expression which always evaluates to "true"(ÿ«„¦øÿÿÿÿ8­ñú…2J$a669e169-10c6-47e1-bd68-f4e3c26da70c
+
+java:S2589$"7Remove this expression which always evaluates to "true"(ÿ«„¦øÿÿÿÿ8Çğú…2J$7d28b878-9747-49ed-8f75-c874a75819df
+ 	java:S116"^Rename this field "REGISTRAR_MEMBRESIA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ö¤›¯8³¯çú…2J$34ef8956-4389-4d11-a622-d3e4869e95ad
+¤	java:S116"]Rename this field "ELIMINAR_MEMBRESIA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶˜ªîüÿÿÿÿ8³¯çú…2J$69669794-3524-4cc6-9a7e-09fd2e5abc29
+Ÿ	java:S116"]Rename this field "OBTENER_MEMBRESIAS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«¹¢·8³¯çú…2J$7242760a-55ed-4b33-a396-55210c7a1508
+¦	java:S116"dRename this field "OBTENERMEMBRESIA_PORSOCIO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×ì‹à8³¯çú…2J$21000ce5-50a2-4a88-9b3d-3f4f28ede754
+d
+java:S1170"!Make this final field static too.(ö¤›¯8³¯çú…2J$2d3973a5-0687-434c-9116-ae07e52acfac
+i
+java:S1170"!Make this final field static too.(¶˜ªîüÿÿÿÿ8³¯çú…2J$242db6cf-774c-4b80-93d8-0cef95ad73b8
+d
+java:S1170"!Make this final field static too.(«¹¢·8³¯çú…2J$891dca30-3698-46ec-9a11-939fcacb1bc9
+d
+java:S1170"!Make this final field static too.(×ì‹à8³¯çú…2J$c6767ead-0c8a-4a8c-aa7e-d1259fe023bb
+b
+java:S6905"Don't use the query "SELECT *".(×ì‹à8³¯çú…2J$2384720d-dfc4-4a4b-9914-02ca849d2600
+b
+java:S6905"Don't use the query "SELECT *".(«¹¢·8Ã¯çú…2J$1a354ba5-34e2-4300-af8c-5610cc8ae067

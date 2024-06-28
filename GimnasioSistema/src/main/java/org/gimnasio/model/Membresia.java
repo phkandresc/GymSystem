@@ -19,6 +19,9 @@ public class Membresia {
         this.fechaFin = fechaFin;
     }
 
+    public Membresia(){
+    }
+
     public int getId() {
         return id;
     }

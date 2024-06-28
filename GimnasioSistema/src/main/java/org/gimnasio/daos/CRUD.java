@@ -9,5 +9,4 @@ public interface CRUD<T>{
     boolean actualizarDato(T dato) throws SQLException;
     boolean eliminarDato(T dato) throws SQLException;
     T buscarDatoPorId(int id) throws SQLException;
-
 }

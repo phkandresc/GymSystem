@@ -1,9 +1,20 @@
 
 
-java:S25893"7Remove this expression which always evaluates to "true"(ÿ«„¦øÿÿÿÿ8Õ„Ú…2J$7abadce0-1942-49fb-a684-b747761d737a
+java:S2589-"7Remove this expression which always evaluates to "true"(ÿ«„¦øÿÿÿÿ8ÊöŠû…2J$4578b773-9bd0-4688-a412-5e21748c83d9
 
-java:S2589P"7Remove this expression which always evaluates to "true"(ÿ«„¦øÿÿÿÿ8¹©…Ú…2J$dbe05cd7-0366-431d-92e6-cafeef9b5789
-œ
-java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ØÅéŸ8Ü„Ú…2J$8fdd3cec-f64e-4ce6-98e2-aaba6783f551
+java:S2589q"7Remove this expression which always evaluates to "true"(ÿ«„¦øÿÿÿÿ8ÊöŠû…2J$b6516d6a-ac5f-4465-a9ac-d2e469f05d8c
+
+java:S2589H"7Remove this expression which always evaluates to "true"(ÿ«„¦øÿÿÿÿ8ÊöŠû…2J$69e3b2ca-da3f-43fd-9d6b-b4d855e6c3f7
+­	java:S116"fRename this field "BUSCAR_TIPOMEMBRESIA_POR_ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥ øÔÿÿÿÿÿ8ÙöŠû…2J$98dde6c2-457d-4e2c-8d57-142023f9499a
+¨	java:S116"aRename this field "OBTENER_TIPOMEMBRESIAS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ĞñÍ„ûÿÿÿÿ8ÙöŠû…2J$d430f4a2-c73e-40b9-9e44-bdb722318b23
+§	java:S116"`Rename this field "AGREGAR_TIPOMEMBRESIA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ô½Œøÿÿÿÿ8ÙöŠû…2J$fa656d6a-e7f9-40f6-94b4-a5980180308b
+i
+java:S1170"!Make this final field static too.(¥ øÔÿÿÿÿÿ8ÙöŠû…2J$becff4a2-367d-430c-b120-7e6d84d14524
+i
+java:S1170"!Make this final field static too.(ĞñÍ„ûÿÿÿÿ8ÙöŠû…2J$3d8d4f1a-674b-4acb-8dba-153906e1c630
+i
+java:S1170"!Make this final field static too.(Ô½Œøÿÿÿÿ8ÙöŠû…2J$7c835515-ea54-4c60-90f6-9292aa7cd21f
 g
-java:S6905"Don't use the query "SELECT *".(£¨Œüùÿÿÿÿ8ºŸ„Ú…2J$e312f2ec-f3f5-4b80-8b86-723756297cc0
+java:S6905"Don't use the query "SELECT *".(ĞñÍ„ûÿÿÿÿ8ÙöŠû…2J$5e23a055-38c9-456f-b940-f01a9a3aaf1f
+g
+java:S6905"Don't use the query "SELECT *".(¥ øÔÿÿÿÿÿ8éöŠû…2J$418570b4-b2f9-49e5-a766-e20bbd0c9f26
