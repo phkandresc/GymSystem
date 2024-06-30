@@ -1,0 +1,12 @@
+
+W
+java:S1118":Add a private constructor to hide the implicit public one.(’å¼8½Ù÷³†2
+w
+java:S1128
+"4Remove this unused import 'org.gimnasio.model.Pago'.(ØãóŞ8Ğıë³†2J$295baf59-ea64-43e7-afea-e17cff046080
+x
+java:S1128"5Remove this unused import 'org.gimnasio.model.Socio'.(íÖş8Ğıë³†2J$26c5731d-9658-4ebf-9ff3-0ec89589f6f3
+
+java:S1128"9Remove this unused import 'org.gimnasio.model.Membresia'.(á´Åàüÿÿÿÿ8Ğıë³†2J$8ed33e90-d01c-4549-81d1-f5b2a544a366
+m
+java:S1128"*Remove this unused import 'java.sql.Date'.(ÙÀ½Ê8Ğıë³†2J$de7b63a1-946a-462f-9ca7-cc678758b5d4

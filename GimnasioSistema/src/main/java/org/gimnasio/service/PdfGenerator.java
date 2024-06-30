@@ -1,9 +1,8 @@
-package org.gimnasio.controller;
+package org.gimnasio.service;
 
 import com.itextpdf.html2pdf.ConverterProperties;
 import com.itextpdf.html2pdf.HtmlConverter;
 import com.itextpdf.html2pdf.resolver.font.DefaultFontProvider;
-import com.itextpdf.kernel.font.PdfFont;
 import com.itextpdf.kernel.geom.PageSize;
 import com.itextpdf.kernel.pdf.PdfDocument;
 import com.itextpdf.kernel.pdf.PdfWriter;
@@ -22,7 +21,6 @@ import java.sql.Date;
 public class PdfGenerator {
 
     public static void generatePdf(Factura factura, String outputPath) throws IOException {
-        // Leer la plantilla HTML
         String htmlTemplate = new String(Files.readAllBytes(Paths.get("src/main/resources/templates/PlantillaFactura.html")));
 
         // Reemplazar los marcadores de posición con los datos de la factura
@@ -40,8 +38,7 @@ public class PdfGenerator {
         htmlTemplate = htmlTemplate.replace("{total_1}", String.valueOf(factura.getTotal()));
 
         htmlTemplate = htmlTemplate.replace("{subtotal}", String.valueOf(factura.getSubtotal()));
-        htmlTemplate = htmlTemplate.replace("{iva}", String.valueOf(factura.getIva()));
-        htmlTemplate = htmlTemplate.replace("{monto_iva}", String.valueOf(factura.getSubtotal() * (factura.getIva() / 100)));
+        htmlTemplate = htmlTemplate.replace("{monto_iva}", String.valueOf(factura.getIva()));
         htmlTemplate = htmlTemplate.replace("{total}", String.valueOf(factura.getTotal()));
 
         // Configurar el convertidor de HTML a PDF
@@ -66,45 +63,6 @@ public class PdfGenerator {
             try (FileOutputStream fos = new FileOutputStream(outputPath)) {
                 fos.write(baos.toByteArray());
             }
-        }
-    }
-
-    public static void main(String[] args) {
-        // Crear una factura de ejemplo
-        Socio socio = new Socio();
-        socio.setNombre("John Doe");
-        socio.setDireccion("123 Main St");
-        socio.setNumeroTelefono("123-456-7890");
-        socio.setEmail("fsadfdsa@fafdsa.com");
-        socio.setApellido("fssssss");
-
-        Membresia membresia = new Membresia(socio, null, 1, new Date(System.currentTimeMillis()), new Date(System.currentTimeMillis()));
-
-        Pago pago = new Pago.Builder()
-                .id(1)
-                .socio(socio)
-                .membresia(membresia)
-                .monto(100.0)
-                .fechaPago(new Date(System.currentTimeMillis()))
-                .metodoPago("Tarjeta de crédito")
-                .tipoPago("Mensual")
-                .build();
-
-        Factura factura = new Factura.Builder()
-                .id(1)
-                .pago(pago)
-                .numeroFactura("0001")
-                .fechaEmision(new Date(System.currentTimeMillis()))
-                .detalle("Pago de membresia")
-                .subtotal(100.0)
-                .iva(12.0)
-                .total(112.0)
-                .build();
-
-        try {
-            generatePdf(factura, "factura.pdf");
-        } catch (IOException e) {
-            e.printStackTrace();
         }
     }
 }

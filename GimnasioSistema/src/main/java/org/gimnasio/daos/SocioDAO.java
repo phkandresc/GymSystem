@@ -13,12 +13,13 @@ import java.util.logging.Logger;
 
 public class SocioDAO implements CRUD<Socio> {
     public static final Logger LOGGER = Logger.getLogger(SocioDAO.class.getName());
+
     private final String SELECCIONAR_TODOS_SOCIOS = "SELECT * FROM socios";
     private final String BUSCARSOCIO_PORAPELLIDO = "SELECT * FROM socios WHERE apellido = ?";
     private final String BUSCARSOCIO_PORCEDULA = "SELECT * FROM socios WHERE cedula = ?";
     private final String BUSCARSOCIO_PORID = "SELECT * FROM socios WHERE id = ?";
     private final String ELIMINAR_SOCIO = "DELETE FROM socios WHERE id = ?";
-    private final String ACTUALIZAR_SOCIO = "UPDATE socios SET nombre = ?, apellido = ?, email = ?, numero_telefono = ?, direccion = ?, fecha_nacimiento = ? WHERE id = ?";
+    private final String ACTUALIZAR_SOCIO = "UPDATE socios SET cedula= ?, nombre = ?, apellido = ?, email = ?, numero_telefono = ?, direccion = ? WHERE id = ?";
     private final String REGISTRAR_SOCIO = "INSERT INTO socios (cedula, nombre, apellido, email, numero_telefono, direccion, fecha_nacimiento) VALUES (?, ?, ?, ?, ?, ?, ?)";
 
 
@@ -48,15 +49,16 @@ public class SocioDAO implements CRUD<Socio> {
             statement.setString(1, cedula);
             ResultSet resultSet = statement.executeQuery();
             while (resultSet.next()) {
-                socio = new Socio();
-                socio.setId(resultSet.getInt("id"));
-                socio.setCedula(resultSet.getString("cedula"));
-                socio.setNombre(resultSet.getString("nombre"));
-                socio.setApellido(resultSet.getString("apellido"));
-                socio.setEmail(resultSet.getString("email"));
-                socio.setNumeroTelefono(resultSet.getString("numero_telefono"));
-                socio.setDireccion(resultSet.getString("direccion"));
-                socio.setFechaNacimiento(resultSet.getDate("fecha_nacimiento"));
+                socio = new Socio.SocioBuilder()
+                        .setId(resultSet.getInt("id"))
+                        .setCedula(resultSet.getString("cedula"))
+                        .setNombre(resultSet.getString("nombre"))
+                        .setApellido(resultSet.getString("apellido"))
+                        .setEmail(resultSet.getString("email"))
+                        .setNumeroTelefono(resultSet.getString("numero_telefono"))
+                        .setDireccion(resultSet.getString("direccion"))
+                        .setFechaNacimiento(resultSet.getDate("fecha_nacimiento"))
+                        .build();
             }
         } catch (SQLException e) {
             LOGGER.severe(e.getMessage());
@@ -76,16 +78,17 @@ public class SocioDAO implements CRUD<Socio> {
             statement.setString(1, apellido);
             ResultSet resultSet = statement.executeQuery();
             while (resultSet.next()) {
-                socio = new Socio();
-                socio.setId(resultSet.getInt("id"));
-                socio.setCedula(resultSet.getString("cedula"));
-                socio.setNombre(resultSet.getString("nombre"));
-                socio.setApellido(resultSet.getString("apellido"));
-                socio.setEmail(resultSet.getString("email"));
-                socio.setNumeroTelefono(resultSet.getString("numero_telefono"));
-                socio.setDireccion(resultSet.getString("direccion"));
-                socio.setFechaNacimiento(resultSet.getDate("fecha_nacimiento"));
-            }
+                socio = new Socio.SocioBuilder()
+                        .setId(resultSet.getInt("id"))
+                        .setCedula(resultSet.getString("cedula"))
+                        .setNombre(resultSet.getString("nombre"))
+                        .setApellido(resultSet.getString("apellido"))
+                        .setEmail(resultSet.getString("email"))
+                        .setNumeroTelefono(resultSet.getString("numero_telefono"))
+                        .setDireccion(resultSet.getString("direccion"))
+                        .setFechaNacimiento(resultSet.getDate("fecha_nacimiento"))
+                        .build();
+               }
         } catch (SQLException e) {
             LOGGER.severe(e.getMessage());
         } finally {
@@ -101,15 +104,16 @@ public class SocioDAO implements CRUD<Socio> {
         try (PreparedStatement statement = conexion.prepareStatement(SELECCIONAR_TODOS_SOCIOS);
              ResultSet resultSet = statement.executeQuery()) {
             while (resultSet.next()) {
-                Socio socio = new Socio();
-                socio.setId(resultSet.getInt("id"));
-                socio.setCedula(resultSet.getString("cedula"));
-                socio.setNombre(resultSet.getString("nombre"));
-                socio.setApellido(resultSet.getString("apellido"));
-                socio.setEmail(resultSet.getString("email"));
-                socio.setNumeroTelefono(resultSet.getString("numero_telefono"));
-                socio.setDireccion(resultSet.getString("direccion"));
-                socio.setFechaNacimiento(resultSet.getDate("fecha_nacimiento"));
+                Socio socio = new Socio.SocioBuilder()
+                        .setId(resultSet.getInt("id"))
+                        .setCedula(resultSet.getString("cedula"))
+                        .setNombre(resultSet.getString("nombre"))
+                        .setApellido(resultSet.getString("apellido"))
+                        .setEmail(resultSet.getString("email"))
+                        .setNumeroTelefono(resultSet.getString("numero_telefono"))
+                        .setDireccion(resultSet.getString("direccion"))
+                        .setFechaNacimiento(resultSet.getDate("fecha_nacimiento"))
+                        .build();
                 listaSocios.add(socio);
             }
         } catch (SQLException e) {
@@ -135,23 +139,23 @@ public class SocioDAO implements CRUD<Socio> {
             return true;
         } catch (SQLException e) {
             LOGGER.severe(e.getMessage());
+            return false;
         } finally {
             DBConexion.closeConnection(connection);
         }
-        return false;
     }
 
     @Override
     public boolean actualizarDato(Socio dato) throws SQLException {
         Connection connection = DBConexion.getConnection();
         try (PreparedStatement statement = connection.prepareStatement(ACTUALIZAR_SOCIO)) {
-            statement.setString(1, dato.getNombre());
-            statement.setString(2, dato.getApellido());
-            statement.setString(3, dato.getEmail());
-            statement.setString(4, dato.getNumeroTelefono());
-            statement.setString(5, dato.getDireccion());
-            statement.setDate(6, dato.getFechaNacimiento());
-            statement.setString(7, dato.getCedula());
+            statement.setString(1, dato.getCedula());
+            statement.setString(2, dato.getNombre());
+            statement.setString(3, dato.getApellido());
+            statement.setString(4, dato.getEmail());
+            statement.setString(5, dato.getNumeroTelefono());
+            statement.setString(6, dato.getDireccion());
+            statement.setInt(7, dato.getId());
             statement.executeUpdate();
             return true;
         } catch (SQLException e) {
@@ -187,15 +191,16 @@ public class SocioDAO implements CRUD<Socio> {
             statement.setInt(1, id);
             ResultSet resultSet = statement.executeQuery();
             while (resultSet.next()) {
-                socio = new Socio();
-                socio.setId(resultSet.getInt("id"));
-                socio.setCedula(resultSet.getString("cedula"));
-                socio.setNombre(resultSet.getString("nombre"));
-                socio.setApellido(resultSet.getString("apellido"));
-                socio.setEmail(resultSet.getString("email"));
-                socio.setNumeroTelefono(resultSet.getString("numero_telefono"));
-                socio.setDireccion(resultSet.getString("direccion"));
-                socio.setFechaNacimiento(resultSet.getDate("fecha_nacimiento"));
+                socio = new Socio.SocioBuilder()
+                        .setId(resultSet.getInt("id"))
+                        .setCedula(resultSet.getString("cedula"))
+                        .setNombre(resultSet.getString("nombre"))
+                        .setApellido(resultSet.getString("apellido"))
+                        .setEmail(resultSet.getString("email"))
+                        .setNumeroTelefono(resultSet.getString("numero_telefono"))
+                        .setDireccion(resultSet.getString("direccion"))
+                        .setFechaNacimiento(resultSet.getDate("fecha_nacimiento"))
+                        .build();
             }
         } catch (SQLException e) {
             LOGGER.severe(e.getMessage());

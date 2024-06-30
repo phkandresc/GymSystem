@@ -1,0 +1,59 @@
+
+i
+java:S1604X"(Make this anonymous inner class a lambda(áÄ€±üÿÿÿÿJ$c366f377-e5e4-401c-bbc0-567730f81847
+j
+java:S1604‚"(Make this anonymous inner class a lambda(¨í¡§úÿÿÿÿJ$04c4cb97-09c6-480e-8b00-bd303c10a986
+›
+java:S1104—"^Make txtAreaDescripcion a static final constant or non-public and provide accessors if needed.(ôª¾ËJ$db024b57-b4cd-4fa8-9c93-0b226f1db5b9
+
+java:S1104˜"`Make txtDuracionMembresia a static final constant or non-public and provide accessors if needed.(“ªõƒJ$8e03e61b-c5d1-4dfb-b9da-54afbb169926
+›
+java:S1104™"^Make txtNombreMembresia a static final constant or non-public and provide accessors if needed.(ËúÙâJ$3a16f460-b311-42d5-b7ef-df93d657d9fa
+›
+java:S1104š"^Make txtPrecioMembresia a static final constant or non-public and provide accessors if needed.(Ô¬—J$cb5811bb-1a6f-4519-b0a4-69edc98399d4
+
+java:S1192K"NDefine a constant instead of duplicating this literal "Poppins Light" 7 times.(ôôşÛøÿÿÿÿJ$9947c634-3968-42da-8584-67c93883a678
+‹
+java:S11926"ODefine a constant instead of duplicating this literal "Poppins Medium" 3 times.(›ø¯J$42912d0a-b0b7-4f98-b786-fa92f7c730f2
+š	java:S116Š"YRename this field "ButtonCancelar" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åİô¶üÿÿÿÿJ$3bf03652-5fd2-4a28-8f3e-c4226827fb87
+›	java:S116‹"ZRename this field "ButtonRegistrar" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡Ñ¶½üÿÿÿÿJ$0ccbd4a2-54f4-447c-b72d-76e6eeda997a
+Ÿ
+java:S1450Š"]Remove the "ButtonCancelar" field and declare it as a local variable in the relevant methods.(åİô¶üÿÿÿÿJ$19b9a8c6-10ad-4fd3-8c43-bef5691f3ace
+ 
+java:S1450‹"^Remove the "ButtonRegistrar" field and declare it as a local variable in the relevant methods.(‡Ñ¶½üÿÿÿÿJ$5aeb62db-0bef-45e4-8adc-babd2ffdbdd3
+˜
+java:S1450Œ"VRemove the "jLabel1" field and declare it as a local variable in the relevant methods.(°ãÉ¸ÿÿÿÿÿJ$c6f105de-bc16-46af-b0b0-afa4170fcce4
+˜
+java:S1450"VRemove the "jLabel2" field and declare it as a local variable in the relevant methods.(™úòˆüÿÿÿÿJ$b69d8fca-05f8-4398-97f6-f33506183ead
+˜
+java:S1450"VRemove the "jLabel3" field and declare it as a local variable in the relevant methods.(Îä€øÿÿÿÿJ$b7e920c3-7dfd-4169-9343-49cd7aa8cce8
+“
+java:S1450"VRemove the "jLabel4" field and declare it as a local variable in the relevant methods.(«¢•ãJ$40ee8995-0066-49f7-a84e-5f86c15d6b09
+“
+java:S1450"VRemove the "jLabel5" field and declare it as a local variable in the relevant methods.(ó Ù®J$c9c9e137-fba2-49f9-a0ed-4467c300ae4f
+˜
+java:S1450‘"VRemove the "jPanel1" field and declare it as a local variable in the relevant methods.(´œ½ÿÿÿÿÿJ$ecbe0901-7894-4938-ae03-67ebfbcb1f04
+˜
+java:S1450’"VRemove the "jPanel2" field and declare it as a local variable in the relevant methods.(õ òçüÿÿÿÿJ$04816b52-e4ec-4e66-8375-d3efd73031c1
+
+java:S1450“"[Remove the "jScrollPane1" field and declare it as a local variable in the relevant methods.(¤á×ÿÿÿÿÿJ$68662e81-f56d-4afd-ad92-8bfda434b55c
+—
+java:S1450”"ZRemove the "jSeparator1" field and declare it as a local variable in the relevant methods.(’©ìÉJ$fc61c211-ff2d-497b-8f40-039a9f787ccf
+—
+java:S1450•"ZRemove the "jSeparator2" field and declare it as a local variable in the relevant methods.(èÅĞøJ$b792b049-46c1-488f-8b9d-b25840ea5301
+œ
+java:S1450–"ZRemove the "jSeparator3" field and declare it as a local variable in the relevant methods.(Éø¹ÊÿÿÿÿÿJ$9b53a8e5-5e41-4806-b2e2-75a1727ab554
+v
+java:S1161f":Add the "@Override" annotation above this method signature(ñ—Ú–J$8771b479-bb25-4c73-8e19-50ee4f5522ea
+v
+java:S1161k":Add the "@Override" annotation above this method signature(±“‚ÆJ$f61a6e2d-3ceb-4357-a0a7-8437136b789c
+g
+java:S1172â"*Remove this unused method parameter "evt".(ÒŠşÄJ$edff821a-5454-4df4-a125-64ee816aee05
+t
+java:S1135ã"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿJ$82aec450-7e51-4eb6-aa27-a5973aff0354
+l
+java:S1197é"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿJ$a6419f9c-1569-4386-a321-bb3b369e4272
+‚
+java:S2147ú"ECombine this catch with the one at line 248, which has the same body.(ã€ J$f168ced2-ba9f-475e-bf07-c6278431ff26
+
+java:S2147ü"ECombine this catch with the one at line 250, which has the same body.(ñÎ¯%J$a6f7da38-8fe8-42a5-9a91-d5dd64f25d6d

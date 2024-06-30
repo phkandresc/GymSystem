@@ -109,4 +109,19 @@ public class Pago {
     public String getTipoPago() {
         return tipoPago;
     }
+
+    @Override
+    public String toString() {
+        return "Pago{" +
+                "id=" + id +
+                ", socio=" + socio +
+                ", membresia=" + membresia +
+                ", clase=" + clase +
+                ", monto=" + monto +
+                ", fechaPago=" + fechaPago +
+                ", metodoPago='" + metodoPago + '\'' +
+                ", tipoPago='" + tipoPago + '\'' +
+                '}';
+    }
+
 }

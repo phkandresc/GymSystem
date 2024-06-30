@@ -66,29 +66,6 @@ public class MembresiaDAO implements CRUD<Membresia>{
 
     @Override
     public boolean agregarDato(Membresia dato) throws SQLException {
-        PreparedStatement ps = null;
-        Connection conexion = DBConexion.getConnection();
-        try {
-            ps = conexion.prepareStatement(REGISTRAR_MEMBRESIA);
-            ps.setInt(1, dato.getSocio().getId());
-            ps.setInt(2, dato.getTipoMembresia().getId());
-            ps.setInt(3, dato.getIdGimnasio());
-            ps.setDate(4, dato.getFechaInicio());
-            ps.setDate(5, dato.getFechaFin());
-            ps.executeUpdate();
-            return true;
-        } catch (SQLException e) {
-            LOGGER.severe(e.getMessage());
-        } finally {
-            if (ps != null) {
-                ps.close();
-            }
-
-            if (conexion != null) {
-                conexion.close();
-            }
-            DBConexion.closeConnection(conexion);
-        }
         return false;
     }
 
@@ -123,25 +100,103 @@ public class MembresiaDAO implements CRUD<Membresia>{
 
     @Override
     public Membresia buscarDatoPorId(int id) throws SQLException {
+        try {
+            PreparedStatement ps = DBConexion.getConnection().prepareStatement("SELECT * FROM membresias WHERE id = ?");
+            ps.setInt(1, id);
+            ResultSet rs = ps.executeQuery();
+            while (rs.next()) {
+                return new Membresia.Builder()
+                        .id(rs.getInt("id"))
+                        .socio(new SocioDAO().buscarDatoPorId(rs.getInt("id_socio")))
+                        .tipoMembresia(new TipoMembresiaDAO().buscarDatoPorId(rs.getInt("id_tipomembresia")))
+                        .idGimnasio(rs.getInt("id_gimnasio"))
+                        .fechaInicio(rs.getDate("fecha_inicio"))
+                        .fechaFin(rs.getDate("fecha_fin"))
+                        .build();
+            }
+        } catch (SQLException e) {
+            LOGGER.severe(e.getMessage());
+        }
         return null;
     }
 
-    public List<Membresia> crearListaMembresias(ResultSet rs){
+    private List<Membresia> crearListaMembresias(ResultSet rs){
         List<Membresia> membresias = new ArrayList<>();
         try {
             while (rs.next()) {
-                Membresia membresia = new Membresia();
-                membresia.setId(rs.getInt("id"));
-                membresia.setSocio(new SocioDAO().buscarDatoPorId(rs.getInt("id_socio")));
-                membresia.setTipoMembresia(new TipoMembresiaDAO().buscarDatoPorId(rs.getInt("id_tipomembresia")));
-                membresia.setIdGimnasio(rs.getInt("id_gimnasio"));
-                membresia.setFechaInicio(rs.getDate("fecha_inicio"));
-                membresia.setFechaFin(rs.getDate("fecha_fin"));
+                Membresia membresia = new Membresia.Builder()
+                        .id(rs.getInt("id"))
+                        .socio(new SocioDAO().buscarDatoPorId(rs.getInt("id_socio")))
+                        .tipoMembresia(new TipoMembresiaDAO().buscarDatoPorId(rs.getInt("id_tipomembresia")))
+                        .idGimnasio(rs.getInt("id_gimnasio"))
+                        .fechaInicio(rs.getDate("fecha_inicio"))
+                        .fechaFin(rs.getDate("fecha_fin"))
+                        .build();
                 membresias.add(membresia);
             }
         } catch (SQLException e) {
             LOGGER.severe(e.getMessage());
         }
         return membresias;
+    }
+
+    //obtener Membresia recien agregada
+    public Membresia obtenerMembresiaRecienAgregada() throws SQLException {
+        Membresia membresia = null;
+        PreparedStatement ps = null;
+        Connection conexion = DBConexion.getConnection();
+        try {
+            ps = conexion.prepareStatement("SELECT * FROM membresias ORDER BY id DESC LIMIT 1");
+            ResultSet rs = ps.executeQuery();
+            while (rs.next()) {
+                membresia = new Membresia.Builder()
+                        .id(rs.getInt("id"))
+                        .socio(new SocioDAO().buscarDatoPorId(rs.getInt("id_socio")))
+                        .tipoMembresia(new TipoMembresiaDAO().buscarDatoPorId(rs.getInt("id_tipomembresia")))
+                        .idGimnasio(rs.getInt("id_gimnasio"))
+                        .fechaInicio(rs.getDate("fecha_inicio"))
+                        .fechaFin(rs.getDate("fecha_fin"))
+                        .build();
+            }
+        } catch (SQLException e) {
+            LOGGER.severe(e.getMessage());
+        } finally {
+            if (ps != null) {
+                ps.close();
+            }
+
+            if (conexion != null) {
+                conexion.close();
+            }
+            DBConexion.closeConnection(conexion);
+        }
+        return membresia;
+    }
+
+    public Membresia agregarMembresia(Membresia membresia) throws SQLException {
+        PreparedStatement ps = null;
+        Connection conexion = DBConexion.getConnection();
+        try {
+            ps = conexion.prepareStatement(REGISTRAR_MEMBRESIA);
+            ps.setInt(1, membresia.getSocio().getId());
+            ps.setInt(2, membresia.getTipoMembresia().getId());
+            ps.setInt(3, membresia.getIdGimnasio());
+            ps.setDate(4, membresia.getFechaInicio());
+            ps.setDate(5, membresia.getFechaFin());
+            ps.executeUpdate();
+            membresia = obtenerMembresiaRecienAgregada();
+        } catch (SQLException e) {
+            LOGGER.severe(e.getMessage());
+        } finally {
+            if (ps != null) {
+                ps.close();
+            }
+
+            if (conexion != null) {
+                conexion.close();
+            }
+            DBConexion.closeConnection(conexion);
+        }
+        return membresia;
     }
 }

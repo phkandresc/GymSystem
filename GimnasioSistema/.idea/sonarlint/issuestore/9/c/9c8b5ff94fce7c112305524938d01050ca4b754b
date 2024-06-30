@@ -1,20 +1,20 @@
 
 
-java:S2589-"7Remove this expression which always evaluates to "true"(ÿ«„¦øÿÿÿÿ8ÊöŠû…2J$4578b773-9bd0-4688-a412-5e21748c83d9
+java:S2589q"7Remove this expression which always evaluates to "true"(ÿ«„¦øÿÿÿÿ8ÊöŠû…2J$2a9c0e98-4797-4fc8-a7f0-9fc5cd120462
 
-java:S2589q"7Remove this expression which always evaluates to "true"(ÿ«„¦øÿÿÿÿ8ÊöŠû…2J$b6516d6a-ac5f-4465-a9ac-d2e469f05d8c
+java:S2589H"7Remove this expression which always evaluates to "true"(ÿ«„¦øÿÿÿÿ8ÊöŠû…2J$7d0e3d20-ea19-4806-a7e1-3f7790cc60e5
 
-java:S2589H"7Remove this expression which always evaluates to "true"(ÿ«„¦øÿÿÿÿ8ÊöŠû…2J$69e3b2ca-da3f-43fd-9d6b-b4d855e6c3f7
-­	java:S116"fRename this field "BUSCAR_TIPOMEMBRESIA_POR_ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥ øÔÿÿÿÿÿ8ÙöŠû…2J$98dde6c2-457d-4e2c-8d57-142023f9499a
-¨	java:S116"aRename this field "OBTENER_TIPOMEMBRESIAS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ĞñÍ„ûÿÿÿÿ8ÙöŠû…2J$d430f4a2-c73e-40b9-9e44-bdb722318b23
-§	java:S116"`Rename this field "AGREGAR_TIPOMEMBRESIA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ô½Œøÿÿÿÿ8ÙöŠû…2J$fa656d6a-e7f9-40f6-94b4-a5980180308b
+java:S2589-"7Remove this expression which always evaluates to "true"(ÿ«„¦øÿÿÿÿ8ÊöŠû…2J$2176b97c-113b-4f30-aa87-d200d4413730
+­	java:S116"fRename this field "BUSCAR_TIPOMEMBRESIA_POR_ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥ øÔÿÿÿÿÿ8ÙöŠû…2J$521a82f7-06df-4d27-b9a6-4b297372bef8
+¨	java:S116"aRename this field "OBTENER_TIPOMEMBRESIAS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ĞñÍ„ûÿÿÿÿ8ÙöŠû…2J$e739e468-d3fb-42fd-9113-b05c29c158b6
+§	java:S116"`Rename this field "AGREGAR_TIPOMEMBRESIA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ô½Œøÿÿÿÿ8ÙöŠû…2J$4f052384-0093-4395-afe7-7193fe5c0255
 i
-java:S1170"!Make this final field static too.(¥ øÔÿÿÿÿÿ8ÙöŠû…2J$becff4a2-367d-430c-b120-7e6d84d14524
+java:S1170"!Make this final field static too.(¥ øÔÿÿÿÿÿ8ÙöŠû…2J$c4c10c63-a172-407c-ba18-2c1ee9202bac
 i
-java:S1170"!Make this final field static too.(ĞñÍ„ûÿÿÿÿ8ÙöŠû…2J$3d8d4f1a-674b-4acb-8dba-153906e1c630
+java:S1170"!Make this final field static too.(ĞñÍ„ûÿÿÿÿ8ÙöŠû…2J$1a5cfd48-cb07-4ba5-8237-9b99d90a08a8
 i
-java:S1170"!Make this final field static too.(Ô½Œøÿÿÿÿ8ÙöŠû…2J$7c835515-ea54-4c60-90f6-9292aa7cd21f
+java:S1170"!Make this final field static too.(Ô½Œøÿÿÿÿ8ÙöŠû…2J$16cf4de1-f944-4c04-8c51-f615db124bb9
 g
-java:S6905"Don't use the query "SELECT *".(ĞñÍ„ûÿÿÿÿ8ÙöŠû…2J$5e23a055-38c9-456f-b940-f01a9a3aaf1f
+java:S6905"Don't use the query "SELECT *".(ĞñÍ„ûÿÿÿÿ8ÙöŠû…2J$ba4af645-cb17-4196-aa20-3736ad615c3e
 g
-java:S6905"Don't use the query "SELECT *".(¥ øÔÿÿÿÿÿ8éöŠû…2J$418570b4-b2f9-49e5-a766-e20bbd0c9f26
+java:S6905"Don't use the query "SELECT *".(¥ øÔÿÿÿÿÿ8éöŠû…2J$a97de635-6a03-4094-b469-af6b0cb324e8
