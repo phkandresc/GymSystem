@@ -17,7 +17,8 @@ public class MembresiaDAO implements CRUD<Membresia>{
     private final String ELIMINAR_MEMBRESIA = "DELETE FROM membresias WHERE id = ?";
     private final String OBTENER_MEMBRESIAS = "SELECT * FROM membresias";
     private final String OBTENERMEMBRESIA_PORSOCIO = "SELECT * FROM membresias WHERE id_socio = ?";
-
+    private final String REVISAR_ESTADO_MEMBRESIAS = "SELECT id, id_socio, fecha_fin FROM membresias WHERE estado = 'activo'";
+    private final String ACTUALIZAR_ESTADO_MEMBRESIA = "UPDATE membresias SET estado = ? WHERE id = ?";
     public List<Membresia> obtenerMembresiasPorIdSocio(int idSocio) throws SQLException {
         List<Membresia> membresias = new ArrayList<>();
         PreparedStatement ps = null;
@@ -199,4 +200,58 @@ public class MembresiaDAO implements CRUD<Membresia>{
         }
         return membresia;
     }
+
+    public List<Membresia> obtenerMembresiasActivas() throws SQLException {
+        PreparedStatement ps = null;
+        Connection conexion = DBConexion.getConnection();
+        List<Membresia> membresiasActivas = new ArrayList<>();
+        try {
+            ps = conexion.prepareStatement(REVISAR_ESTADO_MEMBRESIAS);
+            ResultSet rs = ps.executeQuery();
+            while (rs.next()) {
+                Membresia membresia = new Membresia.Builder()
+                        .id(rs.getInt("id"))
+                        .socio(new SocioDAO().buscarDatoPorId(rs.getInt("id_socio")))
+                        .fechaFin(rs.getDate("fecha_fin"))
+                        .build();
+                membresiasActivas.add(membresia);
+            }
+        } catch (SQLException e) {
+            LOGGER.severe(e.getMessage());
+        } finally {
+            if (ps != null) {
+                ps.close();
+            }
+
+            if (conexion != null) {
+                conexion.close();
+            }
+            DBConexion.closeConnection(conexion);
+        }
+        return membresiasActivas;
+    }
+
+    public void actualizarEstadoMembresia(int idMembresia, String estado) throws SQLException {
+        PreparedStatement ps = null;
+        Connection conexion = DBConexion.getConnection();
+        try {
+            ps = conexion.prepareStatement(ACTUALIZAR_ESTADO_MEMBRESIA);
+            ps.setString(1, estado);
+            ps.setInt(2, idMembresia);
+            ps.executeUpdate();
+        } catch (SQLException e) {
+            LOGGER.severe(e.getMessage());
+        } finally {
+            if (ps != null) {
+                ps.close();
+            }
+
+            if (conexion != null) {
+                conexion.close();
+            }
+            DBConexion.closeConnection(conexion);
+        }
+    }
+
+
 }

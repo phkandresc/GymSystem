@@ -15,6 +15,7 @@ public class PagosDAO implements CRUD<Pago>{
     private final String REGISTRAR_PAGOMEMBRESIA = "INSERT INTO pagos (id_socio, id_membresia, monto, fecha_pago, metodo_pago, tipo_pago) VALUES (?, ?, ?, ?, ?, ?)";
     private final String REGISTRAR_PAGOCLASE = "INSERT INTO pagos (id_socio, id_clase, monto, fecha_pago, metodo_pago, tipo_pago) VALUES (?, ?, ?, ?, ?, ?)";
     private final String BUSCAR_PAGO_POR_ID_MEMBRESIA = "SELECT * FROM pagos WHERE id_membresia = ?";
+    private final String BUSCAR_PAGO_POR_ID = "SELECT * FROM pagos WHERE id = ?";
 
     @Override
     public List<Pago> obtenerListaDeDatos() throws SQLException {
@@ -69,7 +70,35 @@ public class PagosDAO implements CRUD<Pago>{
 
     @Override
     public Pago buscarDatoPorId(int id) throws SQLException {
-        return null;
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+        Pago pago = null;
+        try {
+            ps = DBConexion.getConnection().prepareStatement(BUSCAR_PAGO_POR_ID);
+            ps.setInt(1, id);
+            rs = ps.executeQuery();
+            if (rs.next()) {
+                pago = new Pago.Builder()
+                        .id(rs.getInt("id"))
+                        .socio(new SocioDAO().buscarDatoPorId(rs.getInt("id_socio")))
+                        .membresia(new MembresiaDAO().buscarDatoPorId(rs.getInt("id_membresia")))
+                        .monto(rs.getDouble("monto"))
+                        .fechaPago(rs.getDate("fecha_pago"))
+                        .metodoPago(rs.getString("metodo_pago"))
+                        .tipoPago(rs.getString("tipo_pago"))
+                        .build();
+            }
+        } catch (SQLException e) {
+            LOGGER.severe(e.getMessage());
+        } finally {
+            if (rs != null) {
+                rs.close();
+            }
+            if (ps != null) {
+                ps.close();
+            }
+        }
+        return pago;
     }
 
     public Pago buscarPagoPorMembresia(int idMembresia) throws SQLException {

@@ -71,9 +71,13 @@ d
 4src/main/java/org/gimnasio/controller/Validator.java,a\7\a756810f0e321c2d5bb36c27434a11f5a1cd6bb9
 ]
 -src/main/java/org/gimnasio/daos/PagosDAO.java,8\c\8c418d665709cbe066a18247fde8d03b5ef3150e
-[
-+src/main/java/org/gimnasio/model/Pagos.java,a\2\a258e2c877e6ee54704cdf7ab098f6998dd86504
 _
 /src/main/java/org/gimnasio/daos/FacturaDAO.java,7\b\7bebd97fd766728a32273c3b0afbfb2e10ee2e5b
+s
+Csrc/main/java/org/gimnasio/controller/TiposMembresiaController.java,9\c\9c6c575bff3436fb9d52d9b239d19ad32550a506
+o
+?src/main/java/org/gimnasio/view/MultiLineTableCellRenderer.java,3\d\3dc8d8197d233f2e6621ffb607a52c1b251cafa0
+6
+F7.pdf,9\c\9c05504d08c9af86ba2ad9c1987e31a667abb9ca
 >
-F7-FACTURA.pdf,2\0\20c6729a54454525506458e02ed1c21ee82058c5
+F8-FACTURA.pdf,9\d\9d994b1f07472297955bfcc3ee76a5be90838cd0

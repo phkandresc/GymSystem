@@ -17,6 +17,8 @@ public class TipoMembresiaDAO implements CRUD<TipoMembresia>{
     private final String BUSCAR_TIPOMEMBRESIA_POR_ID = "SELECT * FROM tipos_membresia WHERE id = ?";
     private final String OBTENER_TIPOMEMBRESIAS = "SELECT * FROM tipos_membresia";
     private final String AGREGAR_TIPOMEMBRESIA = "INSERT INTO tipos_membresia (nombre, descripcion, duracion, precio) VALUES (?, ?, ?, ?)";
+    private final String ACTUALIZAR_TIPOMEMBRESIA = "UPDATE tipos_membresia SET nombre = ?, descripcion = ?, duracion = ?, precio = ? WHERE id = ?";
+    private final String ELIMINAR_TIPOMEMBRESIA = "DELETE FROM tipos_membresia WHERE id = ?";
 
     @Override
     public List<TipoMembresia> obtenerListaDeDatos() throws SQLException {
@@ -79,12 +81,40 @@ public class TipoMembresiaDAO implements CRUD<TipoMembresia>{
 
     @Override
     public boolean actualizarDato(TipoMembresia dato) throws SQLException {
-        return false;
+        try {
+            PreparedStatement ps = null;
+            Connection conexion = DBConexion.getConnection();
+            ps = conexion.prepareStatement(ACTUALIZAR_TIPOMEMBRESIA);
+            ps.setString(1, dato.getNombre());
+            ps.setString(2, dato.getDescripcion());
+            ps.setInt(3, dato.getDuracion());
+            ps.setDouble(4, dato.getPrecio());
+            ps.setInt(5, dato.getId());
+            ps.executeUpdate();
+            return true;
+        } catch (SQLException e) {
+            LOGGER.log(Level.SEVERE, e.getMessage());
+            return false;
+        } finally {
+            DBConexion.closeConnection(DBConexion.getConnection());
+        }
     }
 
     @Override
     public boolean eliminarDato(TipoMembresia dato) throws SQLException {
-        return false;
+        try {
+            PreparedStatement ps = null;
+            Connection conexion = DBConexion.getConnection();
+            ps = conexion.prepareStatement(ELIMINAR_TIPOMEMBRESIA);
+            ps.setInt(1, dato.getId());
+            ps.executeUpdate();
+            return true;
+        } catch (SQLException e) {
+            LOGGER.log(Level.SEVERE, e.getMessage());
+            return false;
+        } finally {
+            DBConexion.closeConnection(DBConexion.getConnection());
+        }
     }
 
     @Override

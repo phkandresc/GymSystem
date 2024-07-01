@@ -1,41 +1,51 @@
 
 
-java:S2589]"7Remove this expression which always evaluates to "true"(ÿ«„¦øÿÿÿÿ8§ûË³†2J$c41d8928-9ec6-4f6c-82f3-c35e474c6101
+java:S2589%"7Remove this expression which always evaluates to "true"(ÿ«„¦øÿÿÿÿ8ó¼õ´†2J$6cec6daa-fe2e-4fd1-8521-9163edc42a45
 
-java:S2589;"7Remove this expression which always evaluates to "true"(ÿ«„¦øÿÿÿÿ8§ûË³†2J$11af304c-21d0-4cce-a1f9-89b320689658
+java:S2589<"7Remove this expression which always evaluates to "true"(ÿ«„¦øÿÿÿÿ8ó¼õ´†2J$112032ca-dd2a-421d-94b6-d37f9d489a8a
 €
-java:S2589¨"7Remove this expression which always evaluates to "true"(ÿ«„¦øÿÿÿÿ8§ûË³†2J$afc66bda-2d07-40e3-bbf4-f0f39fec37b6
+java:S2589ù"7Remove this expression which always evaluates to "true"(ÿ«„¦øÿÿÿÿ8ñ¼õ´†2J$dc12edec-f506-40ad-9913-1b0d5e71982d
+€
+java:S2589Ä"7Remove this expression which always evaluates to "true"(ÿ«„¦øÿÿÿÿ8ó¼õ´†2J$1a1a5b1d-c8b5-4d8c-9736-dd4eaad738bb
 
-java:S2589$"7Remove this expression which always evaluates to "true"(ÿ«„¦øÿÿÿÿ8§ûË³†2J$0a324020-dd32-4f52-b3bd-087c4590435e
+java:S2589^"7Remove this expression which always evaluates to "true"(ÿ«„¦øÿÿÿÿ8ó¼õ´†2J$68e38c96-c7fc-4768-9608-303d4f45ee4b
 €
-java:S2589Ã"7Remove this expression which always evaluates to "true"(ÿ«„¦øÿÿÿÿ8§ûË³†2J$97199b7a-2d18-4a82-84c0-1255c607ae84
+java:S2589©"7Remove this expression which always evaluates to "true"(ÿ«„¦øÿÿÿÿ8ó¼õ´†2J$4a44bd12-234c-47cb-82cf-aa61f49ff7ec
+€
+java:S2589â"7Remove this expression which always evaluates to "true"(ÿ«„¦øÿÿÿÿ8ò¼õ´†2J$f96ff9c1-eb48-4d01-92b6-4aa26ab56b49
 
-java:S1192q"MDefine a constant instead of duplicating this literal "fecha_inicio" 3 times.(Ð’ƒ”8©ûË³†2J$02f51e53-8891-4b5b-b588-a8cf5266e43b
-’
-java:S1192r"JDefine a constant instead of duplicating this literal "fecha_fin" 3 times.(¢íþãøÿÿÿÿ8©ûË³†2J$d73137e0-7a59-44a8-8910-cdd1d051f940
+java:S1192r"MDefine a constant instead of duplicating this literal "fecha_inicio" 3 times.(Ð’ƒ”8÷¼õ´†2J$3df95cf9-70ab-4f07-ad5d-eb82414bc390
 Œ
-java:S1192n"IDefine a constant instead of duplicating this literal "id_socio" 3 times.(ù“¬ë8©ûË³†2J$7fd95772-61d4-4fe2-9ac8-1bd772a98d35
+java:S1192o"IDefine a constant instead of duplicating this literal "id_socio" 4 times.(ù“¬ë8÷¼õ´†2J$4af71b40-18b3-466e-ae79-2d21bf07b763
+’
+java:S1192s"JDefine a constant instead of duplicating this literal "fecha_fin" 4 times.(¢íþãøÿÿÿÿ8÷¼õ´†2J$f4906dda-c5bd-48fd-ac81-ea4d41782be3
 ”
-java:S1192o"QDefine a constant instead of duplicating this literal "id_tipomembresia" 3 times.(Úºˆá8©ûË³†2J$1c23c598-8b1d-4cd5-8486-8e39d56f3752
+java:S1192p"QDefine a constant instead of duplicating this literal "id_tipomembresia" 3 times.(Úºˆá8÷¼õ´†2J$6e8b8cea-7019-4757-8080-8b12dccc142e
 ”
-java:S1192p"LDefine a constant instead of duplicating this literal "id_gimnasio" 3 times.(ûµöÄüÿÿÿÿ8©ûË³†2J$ae8726c0-c134-4e20-bb9f-11db23a5e923
- 	java:S116"^Rename this field "REGISTRAR_MEMBRESIA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ö¤›¯8©ûË³†2J$f18d7852-0537-4b44-87da-0b223369f2ed
-¤	java:S116"]Rename this field "ELIMINAR_MEMBRESIA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶˜ªîüÿÿÿÿ8©ûË³†2J$a61d0b08-c15f-46cb-8f85-94cbaeefb4b9
-Ÿ	java:S116"]Rename this field "OBTENER_MEMBRESIAS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«¹¢·8©ûË³†2J$6ea6dc26-ef79-492a-875b-64ec3a05cb83
-¦	java:S116"dRename this field "OBTENERMEMBRESIA_PORSOCIO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×ì‹à8©ûË³†2J$fd500cb4-27d5-40f7-9a7b-f4b5a90e6e20
+java:S1192q"LDefine a constant instead of duplicating this literal "id_gimnasio" 3 times.(ûµöÄüÿÿÿÿ8÷¼õ´†2J$81dd275d-9a87-4751-afd5-7a593aa8531f
+ 	java:S116"^Rename this field "REGISTRAR_MEMBRESIA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ö¤›¯8ø¼õ´†2J$453603f9-4817-4627-9cca-eb2b71dd8f6f
+¤	java:S116"]Rename this field "ELIMINAR_MEMBRESIA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶˜ªîüÿÿÿÿ8ø¼õ´†2J$ef30ad00-a9df-428f-b8cf-c8c04abc83a5
+Ÿ	java:S116"]Rename this field "OBTENER_MEMBRESIAS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«¹¢·8ø¼õ´†2J$04c806b2-0037-4171-8b90-1015b650ad60
+¦	java:S116"dRename this field "OBTENERMEMBRESIA_PORSOCIO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×ì‹à8ø¼õ´†2J$7c246c9b-5439-450b-9a5a-4c6516fd3aef
+¦	java:S116"dRename this field "REVISAR_ESTADO_MEMBRESIAS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Õ˜Ÿ°8ø¼õ´†2J$be938cfe-5d2a-4c62-a152-dbeced29472f
+­	java:S116"fRename this field "ACTUALIZAR_ESTADO_MEMBRESIA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬¡º×þÿÿÿÿ8ø¼õ´†2J$ef428de7-ade2-4bf8-8d5a-a52338bd1ab1
 d
-java:S1170"!Make this final field static too.(ö¤›¯8©ûË³†2J$9e33ee69-79c3-4f46-9343-885c41a0cca2
+java:S1170"!Make this final field static too.(ö¤›¯8ø¼õ´†2J$a8ba6eb2-4279-489d-8f3b-884b430876fb
 i
-java:S1170"!Make this final field static too.(¶˜ªîüÿÿÿÿ8©ûË³†2J$c6257b41-71c6-49bf-9ba7-6de0620050f3
+java:S1170"!Make this final field static too.(¶˜ªîüÿÿÿÿ8ø¼õ´†2J$c68dc77a-3a03-4e39-bc54-c5e66d8f23e8
 d
-java:S1170"!Make this final field static too.(«¹¢·8©ûË³†2J$4301d5c5-65a5-42ce-bef3-69f00a4bec86
+java:S1170"!Make this final field static too.(«¹¢·8ø¼õ´†2J$c1815517-07ab-4419-b932-1693131f859a
 d
-java:S1170"!Make this final field static too.(×ì‹à8©ûË³†2J$6ef7d08a-ca4c-44be-ab4e-b26626e7a43f
+java:S1170"!Make this final field static too.(×ì‹à8ø¼õ´†2J$0e7c522b-411a-4131-ba60-7623fc803dba
+d
+java:S1170"!Make this final field static too.(Õ˜Ÿ°8ø¼õ´†2J$de0ec466-c19d-4d3a-a891-40ab809ad114
+i
+java:S1170"!Make this final field static too.(¬¡º×þÿÿÿÿ8ø¼õ´†2J$ab3e99c7-5062-4052-a8b6-ae06ed5ec08e
 b
-java:S6905"Don't use the query "SELECT *".(×ì‹à8­ûË³†2J$a9333c81-47af-46b7-8b37-22c1a4523741
+java:S6905"Don't use the query "SELECT *".(×ì‹à8ý¼õ´†2J$3005be67-1480-41b2-9ee9-8eb56f60ffd7
 b
-java:S6905"Don't use the query "SELECT *".(«¹¢·8®ûË³†2J$1b26daec-c490-4255-bfc3-b286777e8955
+java:S6905"Don't use the query "SELECT *".(«¹¢·8ÿ¼õ´†2J$09f64bbd-ef88-4fa4-bddb-b606b29d7f69
 g
-java:S6905h"Don't use the query "SELECT *".(Ã½óÛùÿÿÿÿ8¯ûË³†2J$1478a540-7ddb-42b2-9c4c-2a3fdbe86745
+java:S6905i"Don't use the query "SELECT *".(Ã½óÛùÿÿÿÿ8‚½õ´†2J$ce106c51-fc4c-4bae-8487-11f946d4f2fb
 c
-java:S6905•"Don't use the query "SELECT *".(É‡Ùà8²ûË³†2J$ed25a2f6-ee83-4558-8382-3172c0ce2139
+java:S6905–"Don't use the query "SELECT *".(É‡Ùà8ˆ½õ´†2J$448d6e45-b7ac-4e48-a522-6bc1a21444bd

@@ -3,19 +3,30 @@ package org.gimnasio.controller;
 import org.gimnasio.daos.GimnasioDAO;
 import org.gimnasio.daos.SocioDAO;
 import org.gimnasio.model.Gimnasio;
+import org.gimnasio.service.MembresiaService;
 import org.gimnasio.view.PaginaPrincipalView;
 
 import java.awt.event.*;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 
 public class PaginaPrincipalController implements ActionListener, MouseListener, FocusListener {
     private PaginaPrincipalView paginaPrincipalView = PaginaPrincipalView.getInstance();
     private static PaginaPrincipalController instance;
+    private MembresiaService membresiaService;
 
     private PaginaPrincipalController() {
         paginaPrincipalView.setLocationRelativeTo(null);
         paginaPrincipalView.btnRegistrarNuevoSocio.addActionListener(this);
         paginaPrincipalView.btnVerSocios.addActionListener(this);
         paginaPrincipalView.btnRegistrarMembresia.addActionListener(this);
+        this.membresiaService = new MembresiaService();
+        iniciarVerificacionDeMembresias();
+    }
+
+    private void iniciarVerificacionDeMembresias() {
+        membresiaService.verificarYEnviarAlertas();
     }
 
     public static PaginaPrincipalController getInstance() {

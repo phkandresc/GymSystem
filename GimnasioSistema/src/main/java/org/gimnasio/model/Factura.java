@@ -12,6 +12,7 @@ public class Factura {
     private double iva;
     private double total;
 
+
     private Factura(Builder builder) {
         this.id = builder.id;
         this.pago = builder.pago;
@@ -108,6 +109,38 @@ public class Factura {
 
     public double getTotal() {
         return total;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setPago(Pago pago) {
+        this.pago = pago;
+    }
+
+    public void setNumeroFactura(String numeroFactura) {
+        this.numeroFactura = numeroFactura;
+    }
+
+    public void setFechaEmision(Date fechaEmision) {
+        this.fechaEmision = fechaEmision;
+    }
+
+    public void setDetalle(String detalle) {
+        this.detalle = detalle;
+    }
+
+    public void setSubtotal(double subtotal) {
+        this.subtotal = subtotal;
+    }
+
+    public void setIva(double iva) {
+        this.iva = iva;
+    }
+
+    public void setTotal(double total) {
+        this.total = total;
     }
 }
 

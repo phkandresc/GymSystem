@@ -39,6 +39,34 @@ public class Membresia {
         return estado;
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setSocio(Socio socio) {
+        this.socio = socio;
+    }
+
+    public void setTipoMembresia(TipoMembresia tipoMembresia) {
+        this.tipoMembresia = tipoMembresia;
+    }
+
+    public void setIdGimnasio(int idGimnasio) {
+        this.idGimnasio = idGimnasio;
+    }
+
+    public void setFechaInicio(Date fechaInicio) {
+        this.fechaInicio = fechaInicio;
+    }
+
+    public void setFechaFin(Date fechaFin) {
+        this.fechaFin = fechaFin;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
+    }
+
     public static class Builder {
         private int id;
         private Socio socio;

@@ -63,8 +63,6 @@ public class RegistroMembresiaController extends WindowController implements Act
             }
             try {
                 if(serviceMembresia.registrarMembresia(socioSeleccionado, tipoMembresiaSeleccionado)){
-                    Membresia membresia = serviceMembresia.obtenerMembresiaRecienAgregada();
-                    enviarCorreoRegistroMembresia(socioSeleccionado, membresia, tipoMembresiaSeleccionado);
                     vaciarFormulario();
                 }
             } catch (SQLException ex) {
@@ -143,12 +141,4 @@ public class RegistroMembresiaController extends WindowController implements Act
         }
     }
 
-    private void enviarCorreoRegistroMembresia(Socio socio, Membresia membresia, TipoMembresia tipoMembresia) {
-        EmailService emailService = new EmailService();
-        emailService.enviarCorreoRegistroMembresia(socio, membresia, tipoMembresia);
-    }
-
-    public static void main(String[] args) {
-        new RegistroMembresiaController();
-    }
 }

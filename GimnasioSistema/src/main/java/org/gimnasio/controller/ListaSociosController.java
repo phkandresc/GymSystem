@@ -14,13 +14,10 @@ public class ListaSociosController extends WindowController implements ActionLis
     private final ListaSociosView view;
     private final SocioService socioService;
     private Socio socioSeleccionado;
-    private PaginaPrincipalController paginaPrincipalController;
 
     public ListaSociosController() {
         this.view = new ListaSociosView();
         this.socioService = new SocioService();
-        paginaPrincipalController = PaginaPrincipalController.getInstance();
-
         view.ButtonBuscar.addActionListener(this);
         view.cmbCriterioBusqueda.addItemListener(this);
         view.jtSocios.addMouseListener(this);

@@ -1,6 +1,7 @@
 view\RegistroSociosView.class
 view\FacturarVista.class
 view\IniciarSesionView$4.class
+view\TiposMembresiaView$4.class
 view\PaginaPrincipalView$3.class
 view\IniciarSesionView$7.class
 view\IniciarSesionView$1.class
@@ -9,12 +10,14 @@ view\IniciarSesionView$3.class
 view\RegistroMembresiaView$2.class
 view\PaginaPrincipalView.class
 view\RegistroMembresiaView.class
+view\TiposMembresiaView.class
 view\RegistroMembresiaView$4.class
 view\PaginaPrincipalView$1.class
 view\ListaSociosView.class
 view\PaginaPrincipalView$7.class
 view\PaginaPrincipalView$10.class
 view\PaginaPrincipalView$13.class
+view\TiposMembresiaView$2.class
 view\PaginaPrincipalView$4.class
 view\IniciarSesionView.class
 view\ListaSociosView$1.class
@@ -25,9 +28,11 @@ view\IniciarSesionView$2.class
 view\PaginaPrincipalView$11.class
 view\IniciarSesionView$6.class
 view\PaginaPrincipalView$8.class
+view\TiposMembresiaView$3.class
 view\RegistroSociosView$1.class
 view\PaginaPrincipalView$12.class
 view\PaginaPrincipalView$6.class
+view\TiposMembresiaView$1.class
 view\PaginaPrincipalView$2.class
 view\FacturarVista$1.class
 view\RegistroMembresiaView$3.class

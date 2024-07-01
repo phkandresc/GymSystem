@@ -1,12 +1,17 @@
 
-©	java:S116"bRename this field "REGISTRAR_PAGOMEMBRESIA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿€¨µÿÿÿÿÿ8œºã¯†2J$1e4d1919-d0e4-4260-8248-5e26d09aca80
-¥	java:S116"^Rename this field "REGISTRAR_PAGOCLASE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òãŸãÿÿÿÿÿ8œºã¯†2J$1b2f6da1-7149-4f1a-b60a-2ed84d80948b
-®	java:S116"gRename this field "BUSCAR_PAGO_POR_ID_MEMBRESIA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»Ü±¶úÿÿÿÿ8±İä¯†2J$c3defbc9-9e92-466e-b754-02c29687085d
+©	java:S116"bRename this field "REGISTRAR_PAGOMEMBRESIA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿€¨µÿÿÿÿÿ8Ñå£½†2J$1ff9cff1-6a47-4af0-adc3-c7f8e698165d
+¥	java:S116"^Rename this field "REGISTRAR_PAGOCLASE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òãŸãÿÿÿÿÿ8Ñå£½†2J$2c7dc860-9918-42c1-b4dc-67f506bdfb4f
+®	java:S116"gRename this field "BUSCAR_PAGO_POR_ID_MEMBRESIA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»Ü±¶úÿÿÿÿ8Ñå£½†2J$462f23cf-1643-453b-bd83-aad1682f1a95
+Ÿ	java:S116"]Rename this field "BUSCAR_PAGO_POR_ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿñæ8Ñå£½†2J$ad531cc3-0424-41d2-9b05-126e9e414740
 i
-java:S1170"!Make this final field static too.(¿€¨µÿÿÿÿÿ8œºã¯†2J$731afeef-797b-4505-956e-1c0064a58257
+java:S1170"!Make this final field static too.(¿€¨µÿÿÿÿÿ8Ñå£½†2J$d1286c8d-daef-4bd7-a2fa-561fae17997c
 i
-java:S1170"!Make this final field static too.(òãŸãÿÿÿÿÿ8œºã¯†2J$19d55f2d-8346-4801-b8df-525ed62ca985
+java:S1170"!Make this final field static too.(òãŸãÿÿÿÿÿ8Ñå£½†2J$f2e2d81f-4f69-43e3-b7a4-945bb1cae135
 i
-java:S1170"!Make this final field static too.(»Ü±¶úÿÿÿÿ8ºã¯†2J$d95e306f-db8a-4772-9438-6b8d024d9584
+java:S1170"!Make this final field static too.(»Ü±¶úÿÿÿÿ8Ñå£½†2J$f08e2e14-1b05-49a4-91b9-d620c7d59209
+d
+java:S1170"!Make this final field static too.(ÿñæ8Ñå£½†2J$eba77dff-d3e4-401e-b2c1-ee80a993fe89
+b
+java:S6905"Don't use the query "SELECT *".(ÿñæ8Ÿ•¥½†2J$78900f11-3f41-4ca2-9459-a078b6022e9c
 g
-java:S6905"Don't use the query "SELECT *".(»Ü±¶úÿÿÿÿ8Ãå¯†2J$adc389d2-58e9-42d8-bca3-929a657312a1
+java:S6905"Don't use the query "SELECT *".(»Ü±¶úÿÿÿÿ8Ùå£½†2J$0ecc772a-cf65-4ca0-94e0-a75537d12f71

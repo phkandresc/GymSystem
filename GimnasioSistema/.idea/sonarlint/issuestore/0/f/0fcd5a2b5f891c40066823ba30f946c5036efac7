@@ -1,23 +1,25 @@
 
 y
-java:S1153f"1Directly append the argument of String.valueOf().(¶—êáúÿÿÿÿ8Ñ„³°†2J$b6683205-d8ea-45e0-9b21-0f850f191902
+java:S1153d"1Directly append the argument of String.valueOf().(¶—êáúÿÿÿÿ8Ñ„³°†2J$18938dd3-34a2-4a53-b712-156f5c8cc6e5
 Ÿ
-java:S1192="\Use already-defined constant 'DEBE_SELECCIONAR_SOCIO' instead of duplicating its value here.(ù´¼Ã8Ó„³°†2J$87f8426b-a02c-4415-a864-2925267813a0
+java:S1192="\Use already-defined constant 'DEBE_SELECCIONAR_SOCIO' instead of duplicating its value here.(ù´¼Ã8Ó„³°†2J$f31deed0-1b68-4071-8a02-addfefe46fca
 Ä
-java:S1186m"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(÷—8Ô„³°†2J$d80207a1-74a4-4870-b4c7-ade94ee862e8
+java:S1186k"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(÷—8Ô„³°†2J$a42b295d-5414-4380-80df-68dce502d864
 Ã
-java:S1186r"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(İ¼õA8Ô„³°†2J$e3a1415c-e8aa-416c-9aa8-75fcc84a9685
+java:S1186p"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(İ¼õA8Ô„³°†2J$f0579b01-0b11-458d-87ee-7f8ccbfc2b44
 É
-java:S1186w"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(˜Â½€øÿÿÿÿ8Ô„³°†2J$4fe538df-223f-40bd-aed4-a7aa768188ca
+java:S1186u"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(˜Â½€øÿÿÿÿ8Ô„³°†2J$3587bd01-b6fe-4939-aeac-6d04f8a9aed0
 
-java:S1481"">Remove this unused "paginaPrincipalController" local variable.(Á›´8Ù„³°†2J$fd1dbecd-195f-47f2-8719-59c28b08740d
+java:S1481"">Remove this unused "paginaPrincipalController" local variable.(Á›´8Ù„³°†2J$c5343b13-c470-4d3f-a030-bd52d08c56bb
 _
-java:S3626‡"Remove this redundant jump.(ûÁİ…8á„³°†2J$211dd833-c11c-4f26-915f-448a417c9ed3
-m
-java:S1128"*Remove this unused import 'java.sql.Date'.(ÙÀ½Ê8ÅìÏ³†2J$3405b87b-5ba9-4295-a2d8-ebc2e864027c
-…
-java:S1068"=Remove this unused "ERROR_REGISTRAR_MEMBRESIA" private field.(Ê¦ÖÁşÿÿÿÿ8Ì¶Å°†2J$da564582-8a73-4db5-aa7b-e30c0852a664
+java:S3626…"Remove this redundant jump.(ûÁİ…8á„³°†2J$608d7310-b6a1-4be3-80b2-bfc55cbe2dd4
 †
-java:S1068">Remove this unused "MEMBRESIA_REGISTRADA_EXITO" private field.(÷êœûÿÿÿÿ8Ì¶Å°†2J$36949548-c565-4c2a-9e53-de6536c61bd0
+java:S1128">Remove this unused import 'org.gimnasio.service.EmailService'.(İ³×Ğıÿÿÿÿ8ÈêÎÖ†2J$42755e64-1cf7-47be-a133-911242ca20ce
+m
+java:S1128"*Remove this unused import 'java.sql.Date'.(ÙÀ½Ê8ÅìÏ³†2J$edbca2b4-7c9c-4f5a-ace8-c973085b8d54
+…
+java:S1068"=Remove this unused "ERROR_REGISTRAR_MEMBRESIA" private field.(Ê¦ÖÁşÿÿÿÿ8Ì¶Å°†2J$c27c167a-c4bd-41a3-b90c-9adedc0d85cd
+†
+java:S1068">Remove this unused "MEMBRESIA_REGISTRADA_EXITO" private field.(÷êœûÿÿÿÿ8Ì¶Å°†2J$89d0372f-ced8-410f-a56d-ab78dc69d91b
 }
-java:S1068":Remove this unused "DEBE_SELECCIONAR_SOCIO" private field.(êÖãÒ8…®½°†2J$59ffad55-b929-4b8a-a698-ab7b15239375
+java:S1068":Remove this unused "DEBE_SELECCIONAR_SOCIO" private field.(êÖãÒ8…®½°†2J$ba04664e-c19d-4ac7-9a9c-4f8a0d092b33

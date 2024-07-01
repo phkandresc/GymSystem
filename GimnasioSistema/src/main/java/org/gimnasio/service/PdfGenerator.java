@@ -6,6 +6,7 @@ import com.itextpdf.html2pdf.resolver.font.DefaultFontProvider;
 import com.itextpdf.kernel.geom.PageSize;
 import com.itextpdf.kernel.pdf.PdfDocument;
 import com.itextpdf.kernel.pdf.PdfWriter;
+import org.gimnasio.daos.FacturaDAO;
 import org.gimnasio.model.Factura;
 import org.gimnasio.model.Pago;
 import org.gimnasio.model.Socio;
@@ -17,11 +18,13 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.sql.Date;
+import java.sql.SQLException;
 
 public class PdfGenerator {
 
-    public static void generatePdf(Factura factura, String outputPath) throws IOException {
+    public static String generarFacturaPDF(Factura factura) throws IOException {
         String htmlTemplate = new String(Files.readAllBytes(Paths.get("src/main/resources/templates/PlantillaFactura.html")));
+        String OUTPUT_PATH = "src/main/resources/pdf/";
 
         // Reemplazar los marcadores de posición con los datos de la factura
         htmlTemplate = htmlTemplate.replace("{nombre_cliente}", factura.getPago().getSocio().getNombre());
@@ -60,8 +63,9 @@ public class PdfGenerator {
             pdfDocument.close();
 
             // Escribir el contenido a un archivo
-            try (FileOutputStream fos = new FileOutputStream(outputPath)) {
+            try (FileOutputStream fos = new FileOutputStream(OUTPUT_PATH + factura.getNumeroFactura() + "-FACTURA.pdf")) {
                 fos.write(baos.toByteArray());
+                return OUTPUT_PATH + factura.getNumeroFactura() + "-FACTURA.pdf";
             }
         }
     }
