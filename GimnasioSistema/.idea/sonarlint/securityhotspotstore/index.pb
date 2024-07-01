@@ -81,3 +81,11 @@ o
 F7.pdf,9\c\9c05504d08c9af86ba2ad9c1987e31a667abb9ca
 >
 F8-FACTURA.pdf,9\d\9d994b1f07472297955bfcc3ee76a5be90838cd0
+]
+-src/main/java/org/gimnasio/daos/ClaseDAO.java,3\8\38db3fee0ffe37d3a7b4804203246dc76df315e3
+e
+5src/main/java/org/gimnasio/service/ClasesService.java,6\7\6708aa9284f84c7f6867e4e9f69e11d815d30916
+`
+0src/main/java/org/gimnasio/daos/HorariosDAO.java,d\b\dbc2cb94936377ccca0fb8a386704c18b9514ca0
+]
+-src/main/java/org/gimnasio/model/Horario.java,9\c\9c27c253be914a569fb73849206cfd84e9862048

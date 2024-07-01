@@ -6,7 +6,7 @@ public class Clase {
     private String nombre;
     private String descripcion;
     private Double costo;
-    private int idInstrutor;
+    private int idInstructor;
 
     public int getId() {
         return id;
@@ -48,11 +48,11 @@ public class Clase {
         this.costo = costo;
     }
 
-    public int getIdInstrutor() {
-        return idInstrutor;
+    public int getIdInstructor() {
+        return idInstructor;
     }
 
-    public void setIdInstrutor(int idInstrutor) {
-        this.idInstrutor = idInstrutor;
+    public void setIdInstructor(int idInstrutor) {
+        this.idInstructor = idInstrutor;
     }
 }
