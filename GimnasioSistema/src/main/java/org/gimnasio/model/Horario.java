@@ -11,6 +11,7 @@ public class Horario {
     private Time horaFin;
     private Date fechaInicio;
     private Date fechaFin;
+    private Espacio espacio;
 
     public int getId() {
         return id;
@@ -66,5 +67,13 @@ public class Horario {
 
     public void setFechaFin(Date fechaFin) {
         this.fechaFin = fechaFin;
+    }
+
+    public Espacio getEspacio() {
+        return espacio;
+    }
+
+    public void setEspacio(Espacio espacio) {
+        this.espacio = espacio;
     }
 }

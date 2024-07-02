@@ -24,6 +24,7 @@ public class DBConexion {
         config.setJdbcUrl(ACCESOREMOTO_URL);
         config.setUsername(ACCESOREMOTO_USER);
         config.setPassword(ACCESOREMOTO_PASSWORD);
+        config.setMaximumPoolSize(20);
         config.addDataSourceProperty("cachePrepStmts", "true");
         config.addDataSourceProperty("prepStmtCacheSize", "250");
         config.addDataSourceProperty("prepStmtCacheSqlLimit", "2048");

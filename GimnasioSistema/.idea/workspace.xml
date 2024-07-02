@@ -5,15 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1a29e02-6545-4c69-8e18-d6e4b42e89d0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/daos/ClaseDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/daos/HorariosDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/model/Horario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/service/ClasesService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/d/7da9d36f6def1315864af38444a0267ae97b8dfe" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/d/7da9d36f6def1315864af38444a0267ae97b8dfe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/controller/AgregarClaseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/daos/EspaciosDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/daos/InstructorDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/daos/TipoClaseDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/model/Espacio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/model/Instructor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/model/TipoClase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/view/AgregarClaseView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/view/MultiLineCellRenderer2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/f/0fcd5a2b5f891c40066823ba30f946c5036efac7" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/f/0fcd5a2b5f891c40066823ba30f946c5036efac7" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/8/38db3fee0ffe37d3a7b4804203246dc76df315e3" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/8/38db3fee0ffe37d3a7b4804203246dc76df315e3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/d/3dc8d8197d233f2e6621ffb607a52c1b251cafa0" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/d/3dc8d8197d233f2e6621ffb607a52c1b251cafa0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/7/6708aa9284f84c7f6867e4e9f69e11d815d30916" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/7/6708aa9284f84c7f6867e4e9f69e11d815d30916" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/5/85ddb255c049cbf48ff40f1b56fb455de9c636f8" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/5/85ddb255c049cbf48ff40f1b56fb455de9c636f8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/c/9c6c575bff3436fb9d52d9b239d19ad32550a506" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/c/9c6c575bff3436fb9d52d9b239d19ad32550a506" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/b/dbc2cb94936377ccca0fb8a386704c18b9514ca0" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/b/dbc2cb94936377ccca0fb8a386704c18b9514ca0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/F7.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/F8-FACTURA.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/factura.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/gimnasio/daos/ClaseDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/daos/ClaseDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/gimnasio/daos/HorariosDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/daos/HorariosDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/gimnasio/model/Clase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/model/Clase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/gimnasio/model/DBConexion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/model/DBConexion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/gimnasio/model/Horario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/model/Horario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/gimnasio/service/ClasesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/service/ClasesService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +71,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Application.AgregarClaseController.executor&quot;: &quot;Run&quot;,
     &quot;Application.Main.executor&quot;: &quot;Run&quot;,
     &quot;Application.PdfGenerator.executor&quot;: &quot;Run&quot;,
     &quot;Application.RegistroMembresiaController.executor&quot;: &quot;Run&quot;,
@@ -71,10 +91,11 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.updates&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.PdfGenerator">
+  <component name="RunManager">
     <configuration name="PdfGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.gimnasio.service.PdfGenerator" />
       <module name="GimnasioSistema" />
@@ -111,8 +132,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17011.79" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17011.79" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
       </set>
     </attachedChunks>
   </component>
@@ -131,10 +152,30 @@
       <workItem from="1719844398608" duration="222000" />
       <workItem from="1719844880638" duration="1856000" />
       <workItem from="1719848721386" duration="130000" />
+      <workItem from="1719879520399" duration="743000" />
+      <workItem from="1719880853010" duration="10275000" />
+      <workItem from="1719940812191" duration="2746000" />
+      <workItem from="1719943642001" duration="3655000" />
+      <workItem from="1719947560373" duration="232000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/gimnasio/controller/AgregarClaseController.java</url>
+          <line>86</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

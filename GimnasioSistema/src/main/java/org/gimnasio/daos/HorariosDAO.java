@@ -44,7 +44,27 @@ public class HorariosDAO implements CRUD<Horario> {
 
     @Override
     public boolean agregarDato(Horario dato) throws SQLException {
-        return false;
+        PreparedStatement ps = null;
+        try {
+            Connection connection = DBConexion.getConnection();
+            ps = connection.prepareStatement("INSERT INTO horarios (id_clase_programada, dia_semana, hora_inicio, hora_fin, fecha_inicio, fecha_fin, id_espacio) VALUES (?, ?, ?, ?, ?, ?, ?)");
+            ps.setInt(1, dato.getClaseProgramada().getId());
+            ps.setString(2, dato.getDiaSemana());
+            ps.setTime(3, dato.getHoraInicio());
+            ps.setTime(4, dato.getHoraFin());
+            ps.setDate(5, dato.getFechaInicio());
+            ps.setDate(6, dato.getFechaFin());
+            ps.setInt(7, dato.getEspacio().getId());
+            ps.executeUpdate();
+            return true;
+        } catch (SQLException e){
+            e.printStackTrace();
+            return false;
+        } finally {
+            if (ps != null){
+                ps.close();
+            }
+        }
     }
 
     @Override
@@ -85,4 +105,7 @@ public class HorariosDAO implements CRUD<Horario> {
         }
         return horario;
     }
+
+
+
 }

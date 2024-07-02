@@ -2,11 +2,13 @@ package org.gimnasio.model;
 
 public class Clase {
     private int id;
-    private int idTipoClase;
+    private TipoClase tipoClase;
     private String nombre;
     private String descripcion;
     private Double costo;
-    private int idInstructor;
+    private int cupos;
+    private Instructor instructor;
+    private Espacio espacio;
 
     public int getId() {
         return id;
@@ -16,12 +18,12 @@ public class Clase {
         this.id = id;
     }
 
-    public int getIdTipoClase() {
-        return idTipoClase;
+    public TipoClase getTipoClase() {
+        return tipoClase;
     }
 
-    public void setIdTipoClase(int idTipoClase) {
-        this.idTipoClase = idTipoClase;
+    public void setTipoClase(TipoClase tipoClase) {
+        this.tipoClase = tipoClase;
     }
 
     public String getNombre() {
@@ -48,11 +50,41 @@ public class Clase {
         this.costo = costo;
     }
 
-    public int getIdInstructor() {
-        return idInstructor;
+    public int getCupos() {
+        return cupos;
     }
 
-    public void setIdInstructor(int idInstrutor) {
-        this.idInstructor = idInstrutor;
+    public void setCupos(int cupos) {
+        this.cupos = cupos;
+    }
+
+    public Instructor getInstructor() {
+        return instructor;
+    }
+
+    public void setInstructor(Instructor instructor) {
+        this.instructor = instructor;
+    }
+
+    public Espacio getEspacio() {
+        return espacio;
+    }
+
+    public void setEspacio(Espacio espacio) {
+        this.espacio = espacio;
+    }
+
+    @Override
+    public String toString() {
+        return "Clase{" +
+                "id=" + id +
+                ", tipoClase=" + tipoClase +
+                ", nombre='" + nombre + '\'' +
+                ", descripcion='" + descripcion + '\'' +
+                ", costo=" + costo +
+                ", cupos=" + cupos +
+                ", instructor=" + instructor +
+                ", espacio=" + espacio +
+                '}';
     }
 }
