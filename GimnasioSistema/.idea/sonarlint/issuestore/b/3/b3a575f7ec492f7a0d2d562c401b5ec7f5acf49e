@@ -1,27 +1,48 @@
 
 K
-java:S1604‡"(Make this anonymous inner class a lambda(¨í¡§úÿÿÿÿ8ıö×÷‡2
+java:S1604·"(Make this anonymous inner class a lambda(¨í¡§úÿÿÿÿ8Ş£Àş‡2
+}
+java:S1104¿"ZMake ButtonEliminar a static final constant or non-public and provide accessors if needed.(ù¯¤†ıÿÿÿÿ8ß£Àş‡2
+x
+java:S1104À"[Make ButtonModificar a static final constant or non-public and provide accessors if needed.(î¦¬Q8à£Àş‡2
+{
+java:S1104Á"]Make TextFieldBusqueda a static final constant or non-public and provide accessors if needed.(ÂÄ€—8à£Àş‡2
+y
+java:S1104Â"VMake btnFiltrar a static final constant or non-public and provide accessors if needed.(á± Åüÿÿÿÿ8à£Àş‡2
+‚
+java:S1104Ã"_Make cmbCriterioBusqueda a static final constant or non-public and provide accessors if needed.(ÏËÑûÿÿÿÿ8à£Àş‡2
 q
-java:S1104”"TMake jtSocios a static final constant or non-public and provide accessors if needed.(õ“¯d8ıö×÷‡2
+java:S1104È"SMake jPanel1 a static final constant or non-public and provide accessors if needed.(¼öÉ¥8à£Àş‡2
+q
+java:S1104Ê"TMake jtSocios a static final constant or non-public and provide accessors if needed.(õ“¯d8à£Àş‡2
+†
+java:S1104Ë"cMake lblRegistrosEncontrados a static final constant or non-public and provide accessors if needed.(ùî´Æşÿÿÿÿ8à£Àş‡2
+p
+java:S1192A"NDefine a constant instead of duplicating this literal "Poppins Light" 3 times.(ÀµÎ±şÿÿÿÿ8é£Àş‡2
+l
+java:S11925"ODefine a constant instead of duplicating this literal "Poppins Medium" 5 times.(·¶Ÿ8é£Àş‡2
+{	java:S116¿"YRename this field "ButtonEliminar" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ù¯¤†ıÿÿÿÿ8ê£Àş‡2
+v	java:S116À"ZRename this field "ButtonModificar" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(î¦¬Q8ê£Àş‡2
+y	java:S116Á"\Rename this field "TextFieldBusqueda" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÂÄ€—8ê£Àş‡2
 y
-java:S1450"VRemove the "jLabel1" field and declare it as a local variable in the relevant methods.(°ãÉ¸ÿÿÿÿÿ8÷×÷‡2
+java:S1450Ä"VRemove the "jLabel1" field and declare it as a local variable in the relevant methods.(°ãÉ¸ÿÿÿÿÿ8ò£Àş‡2
 z
-java:S1450"WRemove the "jLabel10" field and declare it as a local variable in the relevant methods.(¼õò†şÿÿÿÿ8÷×÷‡2
+java:S1450Å"WRemove the "jLabel10" field and declare it as a local variable in the relevant methods.(¼õò†şÿÿÿÿ8ò£Àş‡2
 y
-java:S1450‘"VRemove the "jLabel2" field and declare it as a local variable in the relevant methods.(™úòˆüÿÿÿÿ8÷×÷‡2
+java:S1450Æ"VRemove the "jLabel2" field and declare it as a local variable in the relevant methods.(™úòˆüÿÿÿÿ8ò£Àş‡2
 y
-java:S1450’"VRemove the "jPanel1" field and declare it as a local variable in the relevant methods.(´œ½ÿÿÿÿÿ8÷×÷‡2
+java:S1450Ç"VRemove the "jLabel3" field and declare it as a local variable in the relevant methods.(Îä€øÿÿÿÿ8ò£Àş‡2
 ~
-java:S1450“"[Remove the "jScrollPane1" field and declare it as a local variable in the relevant methods.(¤á×ÿÿÿÿÿ8÷×÷‡2
+java:S1450É"[Remove the "jScrollPane1" field and declare it as a local variable in the relevant methods.(¤á×ÿÿÿÿÿ8ó£Àş‡2
 \
-java:S1161L":Add the "@Override" annotation above this method signature(ÍŸÏ†ùÿÿÿÿ8Œ÷×÷‡2
+java:S1161T":Add the "@Override" annotation above this method signature(ÍŸÏ†ùÿÿÿÿ8‹¤Àş‡2
 W
-java:S1161P":Add the "@Override" annotation above this method signature(®¸ù8÷×÷‡2
-L
-java:S1197n"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ8÷×÷‡2
+java:S1161X":Add the "@Override" annotation above this method signature(®¸ù8‹¤Àş‡2
+M
+java:S1197"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ8›¤Àş‡2
+c
+java:S2147­"ECombine this catch with the one at line 171, which has the same body.(¨¦Š½8œ¤Àş‡2
+c
+java:S2147¯"ECombine this catch with the one at line 173, which has the same body.(ã€ 8œ¤Àş‡2
 b
-java:S2147}"ECombine this catch with the one at line 123, which has the same body.(¨¦Š½8÷×÷‡2
-b
-java:S2147"ECombine this catch with the one at line 125, which has the same body.(ã€ 8÷×÷‡2
-b
-java:S2147"ECombine this catch with the one at line 127, which has the same body.(ñÎ¯%8‘÷×÷‡2
+java:S2147±"ECombine this catch with the one at line 175, which has the same body.(ñÎ¯%8œ¤Àş‡2

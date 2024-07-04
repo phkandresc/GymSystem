@@ -210,4 +210,60 @@ public class SocioDAO implements CRUD<Socio> {
         }
         return socio;
     }
+
+    public List<Socio> obtenerSociosPorCriterio(String criterio, String valor) throws SQLException {
+        List<Socio> listaSocios = new ArrayList<>();
+        Connection connection = DBConexion.getConnection();
+        String sql = "SELECT * FROM socios WHERE " + criterio + " = ?";
+        try (PreparedStatement statement = connection.prepareStatement(sql)) {
+            statement.setString(1, valor);
+            ResultSet resultSet = statement.executeQuery();
+            while (resultSet.next()) {
+                Socio socio = new Socio.SocioBuilder()
+                        .setId(resultSet.getInt("id"))
+                        .setCedula(resultSet.getString("cedula"))
+                        .setNombre(resultSet.getString("nombre"))
+                        .setApellido(resultSet.getString("apellido"))
+                        .setEmail(resultSet.getString("email"))
+                        .setNumeroTelefono(resultSet.getString("numero_telefono"))
+                        .setDireccion(resultSet.getString("direccion"))
+                        .setFechaNacimiento(resultSet.getDate("fecha_nacimiento"))
+                        .build();
+                listaSocios.add(socio);
+            }
+        } catch (SQLException e) {
+            LOGGER.severe(e.getMessage());
+        } finally {
+            DBConexion.closeConnection(connection);
+        }
+        return listaSocios;
+    }
+
+    public List<Socio> obtenerSociosPorMesRegistro(String mes) throws SQLException {
+        List<Socio> listaSocios = new ArrayList<>();
+        Connection connection = DBConexion.getConnection();
+        String sql = "SELECT * FROM socios WHERE MONTH(fecha_creacion) = ?";
+        try (PreparedStatement statement = connection.prepareStatement(sql)) {
+            statement.setString(1, mes);
+            ResultSet resultSet = statement.executeQuery();
+            while (resultSet.next()) {
+                Socio socio = new Socio.SocioBuilder()
+                        .setId(resultSet.getInt("id"))
+                        .setCedula(resultSet.getString("cedula"))
+                        .setNombre(resultSet.getString("nombre"))
+                        .setApellido(resultSet.getString("apellido"))
+                        .setEmail(resultSet.getString("email"))
+                        .setNumeroTelefono(resultSet.getString("numero_telefono"))
+                        .setDireccion(resultSet.getString("direccion"))
+                        .setFechaNacimiento(resultSet.getDate("fecha_nacimiento"))
+                        .build();
+                listaSocios.add(socio);
+            }
+        } catch (SQLException e) {
+            LOGGER.severe(e.getMessage());
+        } finally {
+            DBConexion.closeConnection(connection);
+        }
+        return listaSocios;
+    }
 }

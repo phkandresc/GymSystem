@@ -58,6 +58,19 @@ public class SocioService {
         return socioDAO.obtenerListaDeDatos();
     }
 
+    public List<Socio> obtenerSociosPorCriterio(String criterio, String valor) throws Exception {
+        return socioDAO.obtenerSociosPorCriterio(criterio, valor);
+    }
+
+    public List<Socio> obtenerSociosPorMesRegistro(String mes) throws Exception {
+        try {
+            return socioDAO.obtenerSociosPorMesRegistro(mes);
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "Error al obtener los socios por mes de registro: " + e.getMessage());
+            return null;
+        }
+    }
+
     private void enviarEmailBienvenida(Socio socioNuevo) {
         EmailService emailService = new EmailService();
         emailService.enviarCorreoNuevoSocio(socioNuevo.getEmail(), socioNuevo.getNombre(), socioNuevo.getApellido(), String.valueOf(socioNuevo.getId()));

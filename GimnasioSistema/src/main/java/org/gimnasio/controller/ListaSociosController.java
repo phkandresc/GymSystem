@@ -22,12 +22,13 @@ public class ListaSociosController extends WindowController implements ActionLis
     public ListaSociosController() {
         this.view = new ListaSociosView();
         this.socioService = new SocioService();
-        //view.ButtonBuscar.addActionListener(this);
-        //view.cmbCriterioBusqueda.addItemListener(this);
+        view.btnFiltrar.addActionListener(this);
+        view.cmbCriterioBusqueda.addItemListener(this);
         view.jtSocios.addMouseListener(this);
         view.jtSocios.setDefaultRenderer(String.class, new MultiLineTableCellRenderer());
-        //view.ButtonEliminar.addActionListener(this);
-        //view.ButtonModificar.addActionListener(this);
+        view.ButtonEliminar.addActionListener(this);
+        view.ButtonModificar.addActionListener(this);
+        view.jPanel1.addMouseListener(this);
         view.setVisible(true);
         cargarLista();
     }
@@ -55,17 +56,21 @@ public class ListaSociosController extends WindowController implements ActionLis
                     socio.getFechaNacimiento().toString()
             });
         }
+        view.lblRegistrosEncontrados.setText("Registros encontrados: " + listaSocios.size());
     }
 
     @Override
     public void itemStateChanged(ItemEvent e) {
         if (e.getStateChange() == ItemEvent.SELECTED) {
-            //view.txtBusqueda.setText("");
+            view.TextFieldBusqueda.setText("");
         }
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        if(e.getSource() == view.ButtonEliminar) {
+            eliminarSocio();
+        }
         /*if (e.getSource() == view.ButtonBuscar) {
             buscarSocio();
         } else if (e.getSource() == view.ButtonEliminar) {
@@ -91,43 +96,24 @@ public class ListaSociosController extends WindowController implements ActionLis
 
     }
 
-    public void cargarSocioEnFormulario(Socio socio) {
-        /*if (socio == null) {
-            JOptionPane.showMessageDialog(null, "No se encontró el socio");
-            return;
-        } else {
-            JOptionPane.showMessageDialog(null, "Socio encontrado");
-            view.txtCedula.setText(socio.getCedula());
-            view.txtNombre.setText(socio.getNombre());
-            view.txtApellido.setText(socio.getApellido());
-            view.txtEmail.setText(socio.getEmail());
-            view.txtTelefono.setText(socio.getNumeroTelefono());
-            view.txtDireccion.setText(socio.getDireccion());
-        }*/
-    }
-
-    public void vaciarFormulario() {
-        /*view.txtCedula.setText("");
-        view.txtNombre.setText("");
-        view.txtApellido.setText("");
-        view.txtEmail.setText("");
-        view.txtTelefono.setText("");
-        view.txtDireccion.setText("");*/
-    }
-
     @Override
     public void mouseClicked(MouseEvent e) {
         if (e.getSource() == view.jtSocios) {
             int filaSeleccionada = view.jtSocios.getSelectedRow();
             if (filaSeleccionada != -1) {
                 try {
-                    vaciarFormulario();
                     socioSeleccionado = socioService.buscarSocioPorCedula(view.jtSocios.getValueAt(filaSeleccionada, 0).toString());
-                    cargarSocioEnFormulario(socioSeleccionado);
+                    view.ButtonEliminar.setEnabled(true);
+                    view.ButtonModificar.setEnabled(true);
+                    JOptionPane.showMessageDialog(null, "Socio seleccionado:\n" + socioSeleccionado.getNombre() + " " + socioSeleccionado.getApellido());
                 } catch (Exception ex) {
                     throw new RuntimeException(ex);
                 }
             }
+        }else if (e.getSource() == view.jPanel1){
+            view.ButtonEliminar.setEnabled(false);
+            view.ButtonModificar.setEnabled(false);
+            socioSeleccionado = null;
         }
     }
 
@@ -151,7 +137,25 @@ public class ListaSociosController extends WindowController implements ActionLis
 
     }
 
-    private void buscarSocio() {
+    private void filtrarSocios() {
+        try {
+            if (view.cmbCriterioBusqueda.getSelectedIndex() == 0) {
+                List<Socio> listaSocios = socioService.obtenerSociosPorCriterio("id", view.TextFieldBusqueda.getText());
+                cargarDatosTabla(listaSocios);
+            } else if (view.cmbCriterioBusqueda.getSelectedIndex() == 1) {
+                List<Socio> listaSocios = socioService.obtenerSociosPorCriterio("cedula", view.TextFieldBusqueda.getText());
+                cargarDatosTabla(listaSocios);
+            } else if (view.cmbCriterioBusqueda.getSelectedIndex() == 2) {
+                List<Socio> listaSocios = socioService.obtenerSociosPorCriterio("apellido", view.TextFieldBusqueda.getText());
+                cargarDatosTabla(listaSocios);
+            } else if (view.cmbCriterioBusqueda.getSelectedIndex() == 3) {
+                //obtener socios por mes de registro
+                List<Socio> listaSocios = socioService.obtenerSociosPorMesRegistro(obtenerMesDeBusqueda());
+                cargarDatosTabla(listaSocios);
+            }
+        } catch (Exception ex) {
+            JOptionPane.showMessageDialog(null, "Error al filtrar los socios: " + ex.getMessage());
+        }
         /*try {
             if (view.cmbCriterioBusqueda.getSelectedIndex() == 0) {
                 vaciarFormulario();
@@ -176,7 +180,6 @@ public class ListaSociosController extends WindowController implements ActionLis
             int confirmacion = JOptionPane.showConfirmDialog(null, "¿Está seguro de eliminar el socio y su membresía asociada?", "Eliminar Socio", JOptionPane.YES_NO_OPTION);
             if (confirmacion == JOptionPane.YES_OPTION && socioSeleccionado != null) {
                 socioService.eliminarSocio(socioSeleccionado);
-                vaciarFormulario();
                 JOptionPane.showMessageDialog(null, "Socio eliminado correctamente");
             } else {
                 JOptionPane.showMessageDialog(null, "No se ha seleccionado ningún socio");
@@ -192,9 +195,51 @@ public class ListaSociosController extends WindowController implements ActionLis
         int confirmacion = JOptionPane.showConfirmDialog(null, "¿Está seguro de modificar el socio?", "Modificar Socio", JOptionPane.YES_NO_OPTION);
         if (confirmacion == JOptionPane.YES_OPTION) {
             socioService.actualizarSocio(socioActualizado);
-            vaciarFormulario();
             cargarLista();
         }
+    }
+
+    private String obtenerMesDeBusqueda() {
+        String mes = "";
+        switch(view.TextFieldBusqueda.getText().toLowerCase()){
+            case "enero":
+                mes = "01";
+                break;
+            case "febrero":
+                mes = "02";
+                break;
+            case "marzo":
+                mes = "03";
+                break;
+            case "abril":
+                mes = "04";
+                break;
+            case "mayo":
+                mes = "05";
+                break;
+            case "junio":
+                mes = "06";
+                break;
+            case "julio":
+                mes = "07";
+                break;
+            case "agosto":
+                mes = "08";
+                break;
+            case "septiembre":
+                mes = "09";
+                break;
+            case "octubre":
+                mes = "10";
+                break;
+            case "noviembre":
+                mes = "11";
+                break;
+            case "diciembre":
+                mes = "12";
+                break;
+        }
+        return mes;
     }
 
     public static void main(String[] args) {

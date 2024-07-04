@@ -1,31 +1,17 @@
 
-	java:S112€"FDefine and throw a dedicated exception instead of using a generic one.(¼ÿ¾¹ÿÿÿÿÿ8äØ¢÷‡2J$5e420bd8-5621-4449-b505-3f2365289871
+	java:S112n"FDefine and throw a dedicated exception instead of using a generic one.(¼ÿ¾¹ÿÿÿÿÿ8Êçş‡2J$9454a3b1-c520-4a53-a1a4-f0e85133dfce
+É
+java:S1186y"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(®î’×üÿÿÿÿ8‘Êçş‡2J$52effb23-4617-4d97-a5eb-2a50f64bbf84
+Ä
+java:S1186~"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ãÆĞÂ8‘Êçş‡2J$67b0447b-d140-4abe-beb7-430c4303eab6
 Ê
-java:S1186‡"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(®î’×üÿÿÿÿ8æØ¢÷‡2J$42918dc1-29f6-413a-8521-753030688d93
-Å
-java:S1186Œ"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ãÆĞÂ8æØ¢÷‡2J$3f7a8b36-930f-4b59-bba5-25a3d678ccea
-¤
-java:S1186‘"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ö„˜şúÿÿÿÿ8ì¦ü‡2
+java:S1186ƒ"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ö„˜şúÿÿÿÿ8‘Êçş‡2J$5a2f5062-a74e-445a-8dad-a1bf3ec75975
 Ê
-java:S1186–"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•ßçùÿÿÿÿ8æØ¢÷‡2J$1c8808e3-8f40-423e-ab0b-684e322aba04
-t
-java:S1144š"0Remove this unused private "buscarSocio" method.(İ¥ÅÚ8èØ¢÷‡2J$39e81d5f-bfe2-402c-af4f-e7dd83ecfcd5
+java:S1186ˆ"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•ßçùÿÿÿÿ8‘Êçş‡2J$1ccd0176-b21d-4d2f-b9aa-e0f91cf5d87b
 {
-java:S1144®"2Remove this unused private "eliminarSocio" method.(·Ë€Ôşÿÿÿÿ8èØ¢÷‡2J$644789a9-ab21-4443-954a-95416d109c27
+java:S1144Œ"2Remove this unused private "filtrarSocios" method.(È ïŞúÿÿÿÿ8“Êçş‡2J$c8aaf588-ae3a-4165-ad1a-a42e2e633385
 w
-java:S1144¿"3Remove this unused private "modificarSocio" method.(ıŞ‰ë8èØ¢÷‡2J$a555fd2c-93f2-408b-80e6-c0128540e300
-~	java:S125"<This block of commented-out lines of code should be removed.(÷•´İ8êØ¢÷‡2J$ea9bc580-9e07-4511-8630-15535c118860
-ƒ	java:S125"<This block of commented-out lines of code should be removed.(˜İ—×üÿÿÿÿ8Ûíë÷‡2J$ffff8b71-f2e9-4ef1-8b86-35d51e985cab
-~	java:S125?"<This block of commented-out lines of code should be removed.(¬ıÆè8îØ¢÷‡2J$ce710e0e-28d3-4fd8-a84f-0e5b420ef2e6
-~	java:S125E"<This block of commented-out lines of code should be removed.(½åÜ€8ïØ¢÷‡2J$7a0379ef-018b-4423-9adb-a71246643b90
-~	java:S125_"<This block of commented-out lines of code should be removed.(«„á¥8ïØ¢÷‡2J$a752ed39-dfd8-4c84-824f-90ba14275f07
-ƒ	java:S125n"<This block of commented-out lines of code should be removed.(«»òÔøÿÿÿÿ8ïØ¢÷‡2J$88c7b0a7-0e73-4e6a-8bc8-c84c1a3ac37f
-	java:S125›"<This block of commented-out lines of code should be removed.(½‘Ñ³8òØ¢÷‡2J$c2a3e1f5-5376-4c2c-ab13-c3870c34eb30
-
-java:S1128"LRemove this unused import 'org.gimnasio.view.MultiLineAndColorCellRenderer'.(Í×¨å8÷ïŞ÷‡2J$dbd889cb-481f-4d04-ab2e-eb5f4578eea1
-‡
-java:S1128"ERemove this unused import 'org.gimnasio.view.MultiLineCellRenderer2'.(íªÑ-8ÙÂà÷‡2J$0727006a-455e-4842-917c-17217afd5054
-‡
-java:S1128"?Remove this unused import 'javax.swing.table.TableColumnModel'.(óßãêøÿÿÿÿ8ÙÂà÷‡2J$4f08b8f2-7e1d-4cbf-ad22-9513978eefe1
-u
-java:S1128"2Remove this unused import 'java.sql.SQLException'.(ÛïÆŸ8÷ïŞ÷‡2J$5242dd2f-1635-4584-a7c9-62b0c62eb157
+java:S1144Â"3Remove this unused private "modificarSocio" method.(ıŞ‰ë8“Êçş‡2J$b66ed816-7ad0-4296-94bd-9bbd3040cf52
+~	java:S125J"<This block of commented-out lines of code should be removed.(½åÜ€8—Êçş‡2J$ea5aa509-32f0-4fc5-9e49-d88076c57eae
+	java:S125Ÿ"<This block of commented-out lines of code should be removed.(½‘Ñ³8›Êçş‡2J$ed1758f5-7282-46a8-91bb-5dcea0c04ca0
+j	java:S131Ì""Add a default case to this switch.(úê›Ïşÿÿÿÿ8¥Êçş‡2J$f58f1047-db9a-473e-b707-6a517e2de8d0
