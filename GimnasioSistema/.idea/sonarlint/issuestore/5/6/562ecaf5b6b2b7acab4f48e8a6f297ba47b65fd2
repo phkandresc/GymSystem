@@ -1,0 +1,31 @@
+
+p
+java:S1604~"(Make this anonymous inner class a lambda(¨í¡§úÿÿÿÿ8˜ºõ®‡2J$6f4d2c93-becb-451a-b176-90bef5de2f30
+›
+java:S1104‡"WMake cmbEspacios a static final constant or non-public and provide accessors if needed.(¸ÈÈ8»–ö®‡2J$1b7bc0cc-7780-40b6-bf25-939e09b2f802
+š
+java:S1104Œ"VMake jtHorarios a static final constant or non-public and provide accessors if needed.(ñÙŒò8˜ºõ®‡2J$752ebafc-c44f-4187-b207-3978d0b7fa5f
+
+java:S1192)"HDefine a constant instead of duplicating this literal "Poppins" 3 times.(¯†ˆöÿÿÿÿÿ8œºõ®‡2J$26c2e725-f7e7-4538-9782-961a2ce77572
+š
+java:S1450†"QRemove the "bg" field and declare it as a local variable in the relevant methods.(êÉú”øÿÿÿÿ8¡ºõ®‡2J$726997fc-89d0-4aab-9a35-9767ea1d2c83
+Ÿ
+java:S1450ˆ"VRemove the "jLabel1" field and declare it as a local variable in the relevant methods.(°ãÉ¸ÿÿÿÿÿ8¢ºõ®‡2J$8d7f7581-f923-4394-ac44-4a4bcac24b8b
+ 
+java:S1450‰"WRemove the "jLabel10" field and declare it as a local variable in the relevant methods.(¼õò†şÿÿÿÿ8¢ºõ®‡2J$6a909f7a-baae-4836-9f7e-5291089b791a
+Ÿ
+java:S1450Š"VRemove the "jLabel2" field and declare it as a local variable in the relevant methods.(™úòˆüÿÿÿÿ8¢ºõ®‡2J$cea03f3c-878c-4f6b-bae8-4bb228984164
+¤
+java:S1450‹"[Remove the "jScrollPane1" field and declare it as a local variable in the relevant methods.(¤á×ÿÿÿÿÿ8£ºõ®‡2J$6aa1eb89-68a7-4e1d-b5cc-874dfd01e961
+‚
+java:S1161>":Add the "@Override" annotation above this method signature(ÍŸÏ†ùÿÿÿÿ8±ºõ®‡2J$158330c6-f92d-44da-afb4-3d5b0f06e990
+}
+java:S1161B":Add the "@Override" annotation above this method signature(®¸ù8±ºõ®‡2J$e5baf703-334f-4ff5-880a-34922f9d88d1
+r
+java:S1197e"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ8·ºõ®‡2J$d013d754-06fb-4662-8c7f-a34aa00f2d2f
+ˆ
+java:S2147t"ECombine this catch with the one at line 114, which has the same body.(¨¦Š½8·ºõ®‡2J$0ad50f21-ec04-4df6-b9d0-529607ccc889
+ˆ
+java:S2147v"ECombine this catch with the one at line 116, which has the same body.(ã€ 8¸ºõ®‡2J$b7a07d8f-5a2a-4448-ab2f-29dc6332c56b
+‡
+java:S2147x"ECombine this catch with the one at line 118, which has the same body.(ñÎ¯%8¸ºõ®‡2J$4b0c9410-5982-41c7-9b38-6384985d56bc

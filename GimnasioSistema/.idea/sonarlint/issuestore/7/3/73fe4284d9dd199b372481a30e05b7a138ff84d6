@@ -1,13 +1,17 @@
 
+
+java:S25890"7Remove this expression which always evaluates to "true"(ëº®×ıÿÿÿÿ8óÓŸ­‡2J$0e48445e-0416-48f3-96b4-96bec9297ae3
+Y
+java:S2589b"7Remove this expression which always evaluates to "true"(ëº®×ıÿÿÿÿ8äı ­‡2
 g
-java:S6905"Don't use the query "SELECT *".(üÓ³ùÿÿÿÿ8µéç£‡2J$ab38ce1a-db62-4002-8b23-1b5547ca5af2
+java:S6905"Don't use the query "SELECT *".(üÓ³ùÿÿÿÿ8øÓŸ­‡2J$5e504238-2a78-40f8-973c-3ca2aa29589f
 ›
-java:S2139%"XEither log this exception and handle it, or rethrow it with some contextual information.(À‹ø„8·éç£‡2J$abf5dcc9-b29f-40d8-8f75-ab36a62bed36
-A
-java:S6905G"Don't use the query "SELECT *".(Ï§‘¶şÿÿÿÿ8©õ¥‡2
-u
-java:S2139R"XEither log this exception and handle it, or rethrow it with some contextual information.(À‹ø„8©õ¥‡2
+java:S2139&"XEither log this exception and handle it, or rethrow it with some contextual information.(À‹ø„8ùÓŸ­‡2J$3c005b8b-434c-4851-be92-fcf25145d81d
+g
+java:S6905M"Don't use the query "SELECT *".(Ï§‘¶şÿÿÿÿ8€ÔŸ­‡2J$86707005-6aa9-4c27-a42f-abdd32b568e9
+›
+java:S2139X"XEither log this exception and handle it, or rethrow it with some contextual information.(À‹ø„8€ÔŸ­‡2J$c06b81e1-324f-4ec6-b169-da6227e5d94d
 a
-java:S1128"Remove this duplicated import.(ÛïÆŸ8ºéç£‡2J$aad8cc03-9b87-4672-8d15-2f12105cc5e7
+java:S1128"Remove this duplicated import.(ÛïÆŸ8€ÔŸ­‡2J$a6bef1c4-0aec-43ce-8fe5-166e9927eb42
 f
-java:S1128"Remove this duplicated import.(Õë±Äøÿÿÿÿ8»éç£‡2J$05eb5f23-3cf0-42d1-960b-a44363193a92
+java:S1128"Remove this duplicated import.(Õë±Äøÿÿÿÿ8€ÔŸ­‡2J$70536270-e493-49ba-a12b-8dfbdaa6d676

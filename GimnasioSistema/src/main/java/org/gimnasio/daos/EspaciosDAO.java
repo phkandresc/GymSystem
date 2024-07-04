@@ -16,8 +16,9 @@ public class EspaciosDAO implements CRUD<Espacio>{
     public List<Espacio> obtenerListaDeDatos() throws SQLException {
         PreparedStatement ps = null;
         List<Espacio> listaEspacios = new ArrayList<>();
+        Connection connection = DBConexion.getConnection();
+
         try {
-            Connection connection = DBConexion.getConnection();
             ps = connection.prepareStatement("SELECT * FROM espacios");
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {
@@ -36,6 +37,10 @@ public class EspaciosDAO implements CRUD<Espacio>{
             if (ps != null){
                 ps.close();
             }
+            if(connection != null){
+                connection.close();
+            }
+            DBConexion.closeConnection(connection);
         }
         return listaEspacios;
     }
@@ -43,8 +48,9 @@ public class EspaciosDAO implements CRUD<Espacio>{
     @Override
     public boolean agregarDato(Espacio dato) throws SQLException {
         PreparedStatement ps = null;
+        Connection connection = DBConexion.getConnection();
         try {
-            Connection connection = DBConexion.getConnection();
+
             ps = connection.prepareStatement("INSERT INTO espacios (nombre, descripcion, capacidad, ubicacion, id_gimnasio) VALUES (?, ?, ?, ?, ?)");
             ps.setString(1, dato.getNombre());
             ps.setString(2, dato.getDescripcion());
@@ -60,6 +66,10 @@ public class EspaciosDAO implements CRUD<Espacio>{
             if (ps != null){
                 ps.close();
             }
+            if(connection != null){
+                connection.close();
+            }
+            DBConexion.closeConnection(connection);
         }
     }
 
@@ -77,8 +87,9 @@ public class EspaciosDAO implements CRUD<Espacio>{
     public Espacio buscarDatoPorId(int id) throws SQLException {
         PreparedStatement ps = null;
         Espacio espacio = new Espacio();
+        Connection connection = DBConexion.getConnection();
         try {
-            Connection connection = DBConexion.getConnection();
+
             ps = connection.prepareStatement("SELECT * FROM espacios WHERE id = ?");
             ps.setInt(1, id);
             ResultSet rs = ps.executeQuery();
@@ -96,6 +107,10 @@ public class EspaciosDAO implements CRUD<Espacio>{
         if (ps != null){
             ps.close();
         }
+        if(connection != null){
+            connection.close();
+        }
+        DBConexion.closeConnection(connection);
     }
         return espacio;
     }

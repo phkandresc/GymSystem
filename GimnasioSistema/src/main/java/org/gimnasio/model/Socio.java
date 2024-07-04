@@ -11,6 +11,7 @@ public class Socio {
     private String numeroTelefono;
     private String direccion;
     private Date fechaNacimiento;
+    private String fotoPerfil;
 
     // Constructor privado para el Builder
     private Socio(SocioBuilder builder) {
@@ -22,6 +23,7 @@ public class Socio {
         this.numeroTelefono = builder.numeroTelefono;
         this.direccion = builder.direccion;
         this.fechaNacimiento = builder.fechaNacimiento;
+        this.fotoPerfil = builder.fotoPerfil;
     }
 
     // Getters
@@ -89,6 +91,13 @@ public class Socio {
         this.fechaNacimiento = fechaNacimiento;
     }
 
+    public String getFotoPerfil() {
+        return fotoPerfil;
+    }
+
+    public void setFotoPerfil(String fotoPerfil) {
+        this.fotoPerfil = fotoPerfil;
+    }
     // Builder class
     public static class SocioBuilder {
         private int id;
@@ -99,6 +108,7 @@ public class Socio {
         private String numeroTelefono;
         private String direccion;
         private Date fechaNacimiento;
+        private String fotoPerfil;
 
         public SocioBuilder setId(int id) {
             this.id = id;
@@ -137,6 +147,11 @@ public class Socio {
 
         public SocioBuilder setFechaNacimiento(Date fechaNacimiento) {
             this.fechaNacimiento = fechaNacimiento;
+            return this;
+        }
+
+        public SocioBuilder setFotoPerfil(String fotoPerfil) {
+            this.fotoPerfil = fotoPerfil;
             return this;
         }
 

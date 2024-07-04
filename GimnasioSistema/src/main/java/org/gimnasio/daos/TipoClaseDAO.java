@@ -21,8 +21,9 @@ public class TipoClaseDAO implements CRUD<TipoClase>{
     public List<TipoClase> obtenerListaDeDatos() throws SQLException {
         PreparedStatement ps = null;
         ResultSet rs = null;
+        Connection con = DBConexion.getConnection();
         try {
-            Connection con = DBConexion.getConnection();
+
             ps = con.prepareStatement("SELECT * FROM tipos_clase");
             rs = ps.executeQuery();
             List<TipoClase> lista = new ArrayList<>();
@@ -44,6 +45,10 @@ public class TipoClaseDAO implements CRUD<TipoClase>{
             if (ps != null) {
                 ps.close();
             }
+            if(con != null){
+                con.close();
+            }
+            DBConexion.closeConnection(con);
         }
     }
 
@@ -66,8 +71,9 @@ public class TipoClaseDAO implements CRUD<TipoClase>{
     public TipoClase buscarDatoPorId(int id) throws SQLException {
         PreparedStatement ps = null;
         ResultSet rs = null;
+        Connection con = DBConexion.getConnection();
+
         try {
-            Connection con = DBConexion.getConnection();
             ps = con.prepareStatement("SELECT * FROM tipos_clase WHERE id = ?");
             ps.setInt(1, id);
             rs = ps.executeQuery();
@@ -89,6 +95,10 @@ public class TipoClaseDAO implements CRUD<TipoClase>{
             if (ps != null) {
                 ps.close();
             }
+            if(con != null){
+                con.close();
+            }
+            DBConexion.closeConnection(con);
         }
     }
 }

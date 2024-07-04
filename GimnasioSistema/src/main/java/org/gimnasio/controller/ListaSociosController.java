@@ -3,9 +3,13 @@ package org.gimnasio.controller;
 import org.gimnasio.model.Socio;
 import org.gimnasio.service.SocioService;
 import org.gimnasio.view.ListaSociosView;
+import org.gimnasio.view.MultiLineAndColorCellRenderer;
+import org.gimnasio.view.MultiLineCellRenderer2;
+import org.gimnasio.view.MultiLineTableCellRenderer;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableColumnModel;
 import java.awt.event.*;
 import java.sql.SQLException;
 import java.util.List;
@@ -18,11 +22,12 @@ public class ListaSociosController extends WindowController implements ActionLis
     public ListaSociosController() {
         this.view = new ListaSociosView();
         this.socioService = new SocioService();
-        view.ButtonBuscar.addActionListener(this);
-        view.cmbCriterioBusqueda.addItemListener(this);
+        //view.ButtonBuscar.addActionListener(this);
+        //view.cmbCriterioBusqueda.addItemListener(this);
         view.jtSocios.addMouseListener(this);
-        view.ButtonEliminar.addActionListener(this);
-        view.ButtonModificar.addActionListener(this);
+        view.jtSocios.setDefaultRenderer(String.class, new MultiLineTableCellRenderer());
+        //view.ButtonEliminar.addActionListener(this);
+        //view.ButtonModificar.addActionListener(this);
         view.setVisible(true);
         cargarLista();
     }
@@ -47,7 +52,7 @@ public class ListaSociosController extends WindowController implements ActionLis
                     socio.getEmail(),
                     socio.getNumeroTelefono(),
                     socio.getDireccion(),
-                    socio.getFechaNacimiento()
+                    socio.getFechaNacimiento().toString()
             });
         }
     }
@@ -55,13 +60,13 @@ public class ListaSociosController extends WindowController implements ActionLis
     @Override
     public void itemStateChanged(ItemEvent e) {
         if (e.getStateChange() == ItemEvent.SELECTED) {
-            view.txtBusqueda.setText("");
+            //view.txtBusqueda.setText("");
         }
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        if (e.getSource() == view.ButtonBuscar) {
+        /*if (e.getSource() == view.ButtonBuscar) {
             buscarSocio();
         } else if (e.getSource() == view.ButtonEliminar) {
             eliminarSocio();
@@ -82,12 +87,12 @@ public class ListaSociosController extends WindowController implements ActionLis
                 }
             }
 
-        }
+        }*/
 
     }
 
     public void cargarSocioEnFormulario(Socio socio) {
-        if (socio == null) {
+        /*if (socio == null) {
             JOptionPane.showMessageDialog(null, "No se encontró el socio");
             return;
         } else {
@@ -98,16 +103,16 @@ public class ListaSociosController extends WindowController implements ActionLis
             view.txtEmail.setText(socio.getEmail());
             view.txtTelefono.setText(socio.getNumeroTelefono());
             view.txtDireccion.setText(socio.getDireccion());
-        }
+        }*/
     }
 
     public void vaciarFormulario() {
-        view.txtCedula.setText("");
+        /*view.txtCedula.setText("");
         view.txtNombre.setText("");
         view.txtApellido.setText("");
         view.txtEmail.setText("");
         view.txtTelefono.setText("");
-        view.txtDireccion.setText("");
+        view.txtDireccion.setText("");*/
     }
 
     @Override
@@ -147,7 +152,7 @@ public class ListaSociosController extends WindowController implements ActionLis
     }
 
     private void buscarSocio() {
-        try {
+        /*try {
             if (view.cmbCriterioBusqueda.getSelectedIndex() == 0) {
                 vaciarFormulario();
                 socioSeleccionado = socioService.buscarSocioPorId(Integer.parseInt(view.txtBusqueda.getText()));
@@ -163,7 +168,7 @@ public class ListaSociosController extends WindowController implements ActionLis
             }
         } catch (Exception ex) {
             JOptionPane.showMessageDialog(null, "Error al buscar el socio: " + ex.getMessage());
-        }
+        }*/
     }
 
     private void eliminarSocio() {
@@ -190,5 +195,9 @@ public class ListaSociosController extends WindowController implements ActionLis
             vaciarFormulario();
             cargarLista();
         }
+    }
+
+    public static void main(String[] args) {
+        new ListaSociosController();
     }
 }

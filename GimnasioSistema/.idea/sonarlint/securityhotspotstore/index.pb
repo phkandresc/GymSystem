@@ -59,8 +59,6 @@ c
 3src/main/java/org/gimnasio/model/TipoMembresia.java,9\1\912a0c8a0161857074940d3c61b4cf3ef6f99264
 _
 /src/main/java/org/gimnasio/model/Membresia.java,3\6\361f8fdbb1398ac82ccf10da704259b3cbbbedc9
-;
-factura.pdf,2\2\227608dd24e87d3322d8c7da006b2cd0f7d78f57
 Y
 )src/main/java/org/gimnasio/daos/CRUD.java,3\c\3c63c4faf136b0fa7244eaf96476cbe15c204f0b
 g
@@ -77,10 +75,6 @@ s
 Csrc/main/java/org/gimnasio/controller/TiposMembresiaController.java,9\c\9c6c575bff3436fb9d52d9b239d19ad32550a506
 o
 ?src/main/java/org/gimnasio/view/MultiLineTableCellRenderer.java,3\d\3dc8d8197d233f2e6621ffb607a52c1b251cafa0
-6
-F7.pdf,9\c\9c05504d08c9af86ba2ad9c1987e31a667abb9ca
->
-F8-FACTURA.pdf,9\d\9d994b1f07472297955bfcc3ee76a5be90838cd0
 ]
 -src/main/java/org/gimnasio/daos/ClaseDAO.java,3\8\38db3fee0ffe37d3a7b4804203246dc76df315e3
 e
@@ -109,3 +103,13 @@ _
 /src/main/java/org/gimnasio/model/TipoClase.java,d\2\d2cea5a0d86f88e0d94a7a9bbeeba25db856ef4b
 k
 ;src/main/java/org/gimnasio/view/MultiLineCellRenderer2.java,f\8\f8ec65e2cb3e6c2b4a3be3e37d008f030ffe768d
+f
+6src/main/java/org/gimnasio/service/HorarioService.java,5\9\5935240d9778f93dbb43d67bb4a09ec7801bc2f7
+l
+<src/main/java/org/gimnasio/view/AsignarHorarioClaseView.java,5\6\562ecaf5b6b2b7acab4f48e8a6f297ba47b65fd2
+x
+Hsrc/main/java/org/gimnasio/controller/AsignarHorarioClaseController.java,0\b\0b27832d156a75740b0550dec87dd87c7443ca99
+r
+Bsrc/main/java/org/gimnasio/view/MultiLineAndColorCellRenderer.java,b\9\b9a649ef55151551a1d3811110d820313ae8938c
+g
+7src/main/java/org/gimnasio/view/ProfilePictureForm.java,4\7\47fc72693560ce08512f7b5c3862ac519887c2b8

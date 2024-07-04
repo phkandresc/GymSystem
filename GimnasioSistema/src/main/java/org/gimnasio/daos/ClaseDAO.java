@@ -15,9 +15,8 @@ public class ClaseDAO implements CRUD<Clase>{
     public List<Clase> obtenerListaDeDatos() throws SQLException {
         List<Clase> listaClases = new ArrayList<>();
         PreparedStatement ps = null;
+        Connection connection = DBConexion.getConnection();ps = connection.prepareStatement("SELECT * FROM clases");
         try{
-            Connection connection = DBConexion.getConnection();
-            ps = connection.prepareStatement("SELECT * FROM clases");
             ResultSet rs = ps.executeQuery();
             while (rs.next()){
                 Clase clase = new Clase();
@@ -37,6 +36,10 @@ public class ClaseDAO implements CRUD<Clase>{
             if (ps != null){
                 ps.close();
             }
+            if(connection != null){
+                connection.close();
+            }
+            DBConexion.closeConnection(connection);
         }
         return listaClases;
     }
@@ -44,8 +47,9 @@ public class ClaseDAO implements CRUD<Clase>{
     @Override
     public boolean agregarDato(Clase dato) throws SQLException {
         PreparedStatement ps = null;
+        Connection connection = DBConexion.getConnection();
         try{
-            Connection connection = DBConexion.getConnection();
+
             ps = connection.prepareStatement("INSERT INTO clases (id_tipo_clase, nombre, descripcion, costo, cupos, id_instructor, id_espacio) VALUES (?, ?, ?, ?, ?, ?, ?)");
             ps.setInt(1, dato.getTipoClase().getId());
             ps.setString(2, dato.getNombre());
@@ -63,14 +67,19 @@ public class ClaseDAO implements CRUD<Clase>{
             if (ps != null){
                 ps.close();
             }
+            if(connection != null){
+                connection.close();
+            }
+            DBConexion.closeConnection(connection);
         }
     }
 
     @Override
     public boolean actualizarDato(Clase dato) throws SQLException {
         PreparedStatement ps = null;
+        Connection connection = DBConexion.getConnection();
         try{
-            Connection connection = DBConexion.getConnection();
+
             ps = connection.prepareStatement("UPDATE clases SET id_tipo_clase = ?, nombre = ?, descripcion = ?, costo = ?, cupos = ?, id_instructor = ?, id_espacio=? WHERE id = ?");
             ps.setInt(1, dato.getTipoClase().getId());
             ps.setString(2, dato.getNombre());
@@ -89,14 +98,18 @@ public class ClaseDAO implements CRUD<Clase>{
             if (ps != null){
                 ps.close();
             }
+            if(connection != null){
+                connection.close();
+            }
+            DBConexion.closeConnection(connection);
         }
     }
 
     @Override
     public boolean eliminarDato(Clase dato) throws SQLException {
         PreparedStatement ps = null;
+        Connection connection = DBConexion.getConnection();
         try{
-            Connection connection = DBConexion.getConnection();
             ps = connection.prepareStatement("DELETE FROM clases WHERE id = ?");
             ps.setInt(1, dato.getId());
             ps.executeUpdate();
@@ -108,6 +121,10 @@ public class ClaseDAO implements CRUD<Clase>{
             if (ps != null){
                 ps.close();
             }
+            if(connection != null){
+                connection.close();
+            }
+            DBConexion.closeConnection(connection);
         }
     }
 
@@ -115,8 +132,9 @@ public class ClaseDAO implements CRUD<Clase>{
     public Clase buscarDatoPorId(int id) throws SQLException{
         PreparedStatement ps = null;
         Clase clase = null;
+        Connection connection = DBConexion.getConnection();
+
         try{
-            Connection connection = DBConexion.getConnection();
             ps = connection.prepareStatement("SELECT * FROM clases WHERE id = ?");
             ps.setInt(1, id);
             ResultSet rs = ps.executeQuery();
@@ -137,6 +155,10 @@ public class ClaseDAO implements CRUD<Clase>{
             if (ps != null){
                 ps.close();
             }
+            if(connection != null){
+                connection.close();
+            }
+            DBConexion.closeConnection(connection);
         }
         return clase;
     }

@@ -13,11 +13,9 @@ import java.util.logging.Logger;
 public class ClasesService {
     public static final Logger LOGGER = Logger.getLogger(ClasesService.class.getName());
     private ClaseDAO claseDAO;
-    private HorariosDAO horariosDAO;
 
     public ClasesService() {
         this.claseDAO = new ClaseDAO();
-        this.horariosDAO = new HorariosDAO();
     }
 
     public boolean agregarClase(Clase clase) {

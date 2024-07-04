@@ -5,15 +5,21 @@ import org.gimnasio.service.SocioService;
 import org.gimnasio.view.RegistroSociosView;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+import java.io.File;
 
-public class RegistroSociosController implements ActionListener, MouseListener{
+public class RegistroSociosController extends WindowController implements ActionListener, MouseListener{
     private RegistroSociosView view;
     private SocioService socioService;
     private PaginaPrincipalController paginaPrincipalController;
+    private final String RUTA_IMAGENES = "src/main/resources/images/fotosdeperfil";
+    private final String EXTENSION_IMAGEN = ".jpg";
+    private File fotoSeleccionada;
+    private String nombreFoto;
 
     public RegistroSociosController() {
         this.view = new RegistroSociosView();
@@ -22,7 +28,7 @@ public class RegistroSociosController implements ActionListener, MouseListener{
         view.setLocationRelativeTo(null);
         view.setVisible(true);
         view.ButtonRegistrar.addActionListener(this);
-        view.ButtonCancelar.addActionListener(this);
+        view.btnCargarFoto.addActionListener(this);
     }
 
     @Override
@@ -31,10 +37,44 @@ public class RegistroSociosController implements ActionListener, MouseListener{
             JTextField[] textFields = {view.txtCedula, view.txtNombres, view.txtApellidos,
                     view.txtTelefono, view.txtDireccion, view.txtEmail};
             if (Validator.validarTextFields(textFields)) {
-                registrarSocio();
+                if(validarFoto()){
+                    registrarSocio();
+                }
             }
-        } else if (e.getSource() == view.ButtonCancelar) {
-            cancelarRegistro();
+        }else if(e.getSource() == view.btnCargarFoto){
+            cargarFoto();
+        }
+    }
+
+    private void cargarFoto() {
+        JFileChooser fileChooser = new JFileChooser();
+        try {
+            fileChooser.showOpenDialog(null);
+            fotoSeleccionada = fileChooser.getSelectedFile();
+            ImageIcon fotoPerfil = new ImageIcon(fotoSeleccionada.getAbsolutePath());
+            Image imagen = fotoPerfil.getImage().getScaledInstance(view.lblFotoPerfil.getWidth(), view.lblFotoPerfil.getHeight(), Image.SCALE_SMOOTH);
+            view.lblFotoPerfil.setIcon(new ImageIcon(imagen));
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "Error al cargar la foto: " + e.getMessage());
+        }
+    }
+
+    public boolean validarFoto() {
+        if (fotoSeleccionada != null) {
+            nombreFoto = view.txtCedula.getText() + EXTENSION_IMAGEN;
+            File fotoDestino = new File(RUTA_IMAGENES + "/" + nombreFoto);
+            if (fotoDestino.exists()) {
+                int respuesta = JOptionPane.showConfirmDialog(null, "Ya existe una foto con ese nombre, ¿Desea reemplazarla?");
+                if (respuesta == JOptionPane.YES_OPTION) {
+                    fotoSeleccionada.renameTo(fotoDestino);
+                }
+            } else {
+                fotoSeleccionada.renameTo(fotoDestino);
+            }
+            return true;
+        } else {
+            JOptionPane.showMessageDialog(null, "Debe seleccionar una foto de perfil");
+            return false;
         }
     }
 
@@ -48,6 +88,7 @@ public class RegistroSociosController implements ActionListener, MouseListener{
                         .setNumeroTelefono(view.txtTelefono.getText())
                         .setDireccion(view.txtDireccion.getText())
                         .setFechaNacimiento(new java.sql.Date(view.dcFechaNacimiento.getDate().getTime()))
+                        .setFotoPerfil(RUTA_IMAGENES+"/"+view.txtCedula.getText() + EXTENSION_IMAGEN)
                         .build();
                 if(Validator.validarSocio(socioNuevo)){
                     if(socioService.registrarSocio(socioNuevo)) {
@@ -74,6 +115,7 @@ public class RegistroSociosController implements ActionListener, MouseListener{
         view.txtTelefono.setText("");
         view.txtDireccion.setText("");
         view.dcFechaNacimiento.setDate(null);
+        view.lblFotoPerfil.setIcon(null);
     }
 
     @Override

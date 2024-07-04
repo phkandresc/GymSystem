@@ -1,5 +1,33 @@
 
-a
-java:S6905"Don't use the query "SELECT *".(áÄı8†Š¾ˆ‡2J$06268f3e-0103-4fdb-b43b-9a38e5baf3f5
-b
-java:S6905V"Don't use the query "SELECT *".(ŞãÁ÷8ŠŠ¾ˆ‡2J$2fbc44e3-a632-487e-9699-c84fea6f1257
+T
+java:S2589+"7Remove this expression which always evaluates to "true"(¤òª£8»Ü­‡2
+T
+java:S2589u"7Remove this expression which always evaluates to "true"(¤òª£8»Ü­‡2
+U
+java:S2589˜"7Remove this expression which always evaluates to "true"(¤òª£8»Ü­‡2
+U
+java:S2589½"7Remove this expression which always evaluates to "true"(¤òª£8»Ü­‡2
+T
+java:S2589J"7Remove this expression which always evaluates to "true"(¤òª£8»Ü­‡2
+i
+java:S1192 "MDefine a constant instead of duplicating this literal "fecha_inicio" 4 times.(…úéL8ƒ»Ü­‡2
+g
+java:S1192!"JDefine a constant instead of duplicating this literal "fecha_fin" 4 times.(éº¿à8ƒ»Ü­‡2
+i
+java:S1192"LDefine a constant instead of duplicating this literal "hora_inicio" 4 times.(Éã‡8ƒ»Ü­‡2
+k
+java:S1192"IDefine a constant instead of duplicating this literal "hora_fin" 4 times.(•ÄŞĞøÿÿÿÿ8ƒ»Ü­‡2
+h
+java:S1192"KDefine a constant instead of duplicating this literal "dia_semana" 4 times.(‹à¾û8ƒ»Ü­‡2
+v
+java:S1192"TDefine a constant instead of duplicating this literal "id_clase_programada" 4 times.(Ó¶ˆüÿÿÿÿ8ƒ»Ü­‡2
+;
+java:S6905"Don't use the query "SELECT *".(áÄı8‡»Ü­‡2
+<
+java:S6905b"Don't use the query "SELECT *".(ŞãÁ÷8‹»Ü­‡2
+<
+java:S6905ƒ"Don't use the query "SELECT *".(Ñ¥¼x8»Ü­‡2
+B
+java:S6905§"Don't use the query "SELECT *".(âô¹‡ùÿÿÿÿ8»Ü­‡2
+Y
+java:S1128"7Remove this unused import 'org.gimnasio.model.Espacio'.(–¾¥óøÿÿÿÿ8‘»Ü­‡2

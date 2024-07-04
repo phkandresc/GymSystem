@@ -36,22 +36,7 @@ public class ListaSociosView extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         cmbCriterioBusqueda = new javax.swing.JComboBox<>();
         TextFieldBusqueda = new javax.swing.JTextField();
-        ButtonBuscar = new javax.swing.JButton();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        txtCedula = new javax.swing.JTextField();
-        txtNombre = new javax.swing.JTextField();
-        txtApellido = new javax.swing.JTextField();
-        txtEmail = new javax.swing.JTextField();
-        txtTelefono = new javax.swing.JTextField();
-        txtDireccion = new javax.swing.JTextField();
-        ButtonModificar = new javax.swing.JButton();
-        ButtonEliminar = new javax.swing.JButton();
-        jSeparator1 = new javax.swing.JSeparator();
+        btnFiltrar = new javax.swing.JButton();
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/barraTitulo.png"))); // NOI18N
         jLabel1.setText("jLabel1");
@@ -63,32 +48,33 @@ public class ListaSociosView extends javax.swing.JFrame {
 
         jLabel10.setFont(new java.awt.Font("Poppins Medium", 0, 24)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel10.setText("Lista de Socios");
-        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 10, -1, 40));
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 870, 40));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/barraTitulo.png"))); // NOI18N
         jLabel2.setText("jLabel1");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 790, 60));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 890, 60));
 
         jScrollPane1.setBorder(new javax.swing.border.MatteBorder(null));
 
         jtSocios.setFont(new java.awt.Font("Poppins Light", 0, 14)); // NOI18N
         jtSocios.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null}
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null}
             },
             new String [] {
-                "Cedula", "Nombre", "Apellido", "Email", "Telefono", "Direccion"
+                "Cedula", "Nombre", "Apellido", "Email", "Telefono", "Direccion", "Fecha de nacimiento"
             }
         ) {
             Class[] types = new Class [] {
-                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
+                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
             };
             boolean[] canEdit = new boolean [] {
-                false, false, false, false, false, false
+                false, false, false, false, false, false, false
             };
 
             public Class getColumnClass(int columnIndex) {
@@ -99,94 +85,38 @@ public class ListaSociosView extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
+        jtSocios.setAutoResizeMode(javax.swing.JTable.AUTO_RESIZE_ALL_COLUMNS);
         jtSocios.setGridColor(new java.awt.Color(153, 153, 153));
         jtSocios.setName(""); // NOI18N
         jtSocios.setShowGrid(false);
         jtSocios.setShowHorizontalLines(true);
         jScrollPane1.setViewportView(jtSocios);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 330, 680, 120));
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 160, 730, 360));
 
         jLabel3.setFont(new java.awt.Font("Poppins Medium", 0, 14)); // NOI18N
-        jLabel3.setText("Buscar socio por:");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 82, -1, 30));
+        jLabel3.setText("Filtrar socios por:");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 90, -1, 30));
 
         cmbCriterioBusqueda.setFont(new java.awt.Font("Poppins Light", 0, 14)); // NOI18N
-        cmbCriterioBusqueda.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "ID", "Cedula", "Apellido" }));
-        jPanel1.add(cmbCriterioBusqueda, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 80, 90, 30));
+        cmbCriterioBusqueda.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "ID", "Cedula", "Apellido", "Mes de registro", "Año de nacimiento" }));
+        jPanel1.add(cmbCriterioBusqueda, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 90, 90, 30));
 
         TextFieldBusqueda.setFont(new java.awt.Font("Poppins Light", 0, 14)); // NOI18N
-        jPanel1.add(TextFieldBusqueda, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 80, 160, 30));
+        jPanel1.add(TextFieldBusqueda, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 90, 160, 30));
 
-        ButtonBuscar.setBackground(new java.awt.Color(242, 98, 15));
-        ButtonBuscar.setFont(new java.awt.Font("Poppins Medium", 0, 14)); // NOI18N
-        ButtonBuscar.setForeground(new java.awt.Color(255, 255, 255));
-        ButtonBuscar.setText("Buscar");
-        ButtonBuscar.setBorder(null);
-        jPanel1.add(ButtonBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 80, 120, 30));
-
-        jLabel4.setFont(new java.awt.Font("Poppins Medium", 0, 14)); // NOI18N
-        jLabel4.setText("Cedula:");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 170, -1, -1));
-
-        jLabel5.setFont(new java.awt.Font("Poppins Medium", 0, 14)); // NOI18N
-        jLabel5.setText("Nombre:");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 220, -1, -1));
-
-        jLabel6.setFont(new java.awt.Font("Poppins Medium", 0, 14)); // NOI18N
-        jLabel6.setText("Apellido:");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 270, -1, -1));
-
-        jLabel7.setFont(new java.awt.Font("Poppins Medium", 0, 14)); // NOI18N
-        jLabel7.setText("Email:");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 170, -1, -1));
-
-        jLabel8.setFont(new java.awt.Font("Poppins Medium", 0, 14)); // NOI18N
-        jLabel8.setText("Telefono:");
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 220, -1, -1));
-
-        jLabel9.setFont(new java.awt.Font("Poppins Medium", 0, 14)); // NOI18N
-        jLabel9.setText("Direccion:");
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 270, -1, -1));
-
-        txtCedula.setFont(new java.awt.Font("Poppins Light", 0, 14)); // NOI18N
-        jPanel1.add(txtCedula, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 170, 150, 27));
-
-        txtNombre.setFont(new java.awt.Font("Poppins Light", 0, 14)); // NOI18N
-        jPanel1.add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 220, 150, 27));
-
-        txtApellido.setFont(new java.awt.Font("Poppins Light", 0, 14)); // NOI18N
-        jPanel1.add(txtApellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 270, 150, 27));
-
-        txtEmail.setFont(new java.awt.Font("Poppins Light", 0, 14)); // NOI18N
-        jPanel1.add(txtEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 170, 150, 27));
-
-        txtTelefono.setFont(new java.awt.Font("Poppins Light", 0, 14)); // NOI18N
-        jPanel1.add(txtTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 220, 150, 27));
-
-        txtDireccion.setFont(new java.awt.Font("Poppins Light", 0, 14)); // NOI18N
-        jPanel1.add(txtDireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 270, 150, 27));
-
-        ButtonModificar.setBackground(new java.awt.Color(242, 98, 15));
-        ButtonModificar.setFont(new java.awt.Font("Poppins Medium", 0, 14)); // NOI18N
-        ButtonModificar.setForeground(new java.awt.Color(255, 255, 255));
-        ButtonModificar.setText("Modificar");
-        ButtonModificar.setBorder(null);
-        jPanel1.add(ButtonModificar, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 480, 120, 30));
-
-        ButtonEliminar.setBackground(new java.awt.Color(242, 98, 15));
-        ButtonEliminar.setFont(new java.awt.Font("Poppins Medium", 0, 14)); // NOI18N
-        ButtonEliminar.setForeground(new java.awt.Color(255, 255, 255));
-        ButtonEliminar.setText("Eliminar");
-        ButtonEliminar.setBorder(null);
-        jPanel1.add(ButtonEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 480, 120, 30));
-        jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, 760, 10));
+        btnFiltrar.setBackground(new java.awt.Color(242, 98, 15));
+        btnFiltrar.setFont(new java.awt.Font("Poppins Medium", 0, 14)); // NOI18N
+        btnFiltrar.setForeground(new java.awt.Color(255, 255, 255));
+        btnFiltrar.setText("Filtrar");
+        btnFiltrar.setBorder(null);
+        jPanel1.add(btnFiltrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 90, 120, 30));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -232,30 +162,15 @@ public class ListaSociosView extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JButton ButtonBuscar;
-    public javax.swing.JButton ButtonEliminar;
-    public javax.swing.JButton ButtonModificar;
     public javax.swing.JTextField TextFieldBusqueda;
+    public javax.swing.JButton btnFiltrar;
     public javax.swing.JComboBox<String> cmbCriterioBusqueda;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JSeparator jSeparator1;
     public javax.swing.JTable jtSocios;
-    public javax.swing.JTextField txtApellido;
-    public javax.swing.JTextField txtCedula;
-    public javax.swing.JTextField txtDireccion;
-    public javax.swing.JTextField txtEmail;
-    public javax.swing.JTextField txtNombre;
-    public javax.swing.JTextField txtTelefono;
     // End of variables declaration//GEN-END:variables
 }

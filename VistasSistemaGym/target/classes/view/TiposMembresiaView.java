@@ -29,16 +29,17 @@ public class TiposMembresiaView extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         txtNombreMembresia = new javax.swing.JTextField();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        txtDescripcion = new javax.swing.JTextArea();
         btnAgregar = new javax.swing.JButton();
-        btnCancelar = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jtTiposMembresia = new javax.swing.JTable();
         jspDuracion = new javax.swing.JSpinner();
         jspPrecio = new javax.swing.JSpinner();
         jSeparator1 = new javax.swing.JSeparator();
+        btnEliminar = new javax.swing.JButton();
+        btnModificar = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        txtDescripcion = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Tipos de Membresia");
@@ -51,7 +52,7 @@ public class TiposMembresiaView extends javax.swing.JFrame {
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel10.setText("Tipos de Membresia");
-        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 10, 670, 40));
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 10, 690, 40));
 
         jLabel2.setFont(new java.awt.Font("Poppins Light", 1, 14)); // NOI18N
         jLabel2.setText("Nombre:");
@@ -74,26 +75,6 @@ public class TiposMembresiaView extends javax.swing.JFrame {
         txtNombreMembresia.setPreferredSize(new java.awt.Dimension(645, 22));
         jPanel1.add(txtNombreMembresia, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, 200, 27));
 
-        txtDescripcion.setColumns(20);
-        txtDescripcion.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        txtDescripcion.setRows(5);
-        txtDescripcion.setText("Descripcion aqui....");
-        txtDescripcion.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                if (txtDescripcion.getText().equals("Descripcion aqui...")) {
-                    txtDescripcion.setText("");
-                }
-            }
-            public void focusLost(java.awt.event.FocusEvent evt) {
-                if (txtDescripcion.getText().isEmpty()) {
-                    txtDescripcion.setText("Descripcion aqui...");
-                }
-            }
-        });
-        jScrollPane1.setViewportView(txtDescripcion);
-
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, 280, 90));
-
         btnAgregar.setBackground(new java.awt.Color(242, 68, 5));
         btnAgregar.setFont(new java.awt.Font("Poppins Medium", 0, 15)); // NOI18N
         btnAgregar.setForeground(new java.awt.Color(255, 255, 255));
@@ -104,18 +85,11 @@ public class TiposMembresiaView extends javax.swing.JFrame {
                 btnAgregarActionPerformed(evt);
             }
         });
-        jPanel1.add(btnAgregar, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 430, 150, 37));
-
-        btnCancelar.setBackground(new java.awt.Color(242, 68, 5));
-        btnCancelar.setFont(new java.awt.Font("Poppins Medium", 0, 15)); // NOI18N
-        btnCancelar.setForeground(new java.awt.Color(255, 255, 255));
-        btnCancelar.setText("Cancelar");
-        btnCancelar.setBorder(null);
-        jPanel1.add(btnCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 430, 150, 37));
+        jPanel1.add(btnAgregar, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 480, 150, 37));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/barraTitulo.png"))); // NOI18N
         jLabel1.setText("jLabel1");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 690, 60));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 710, 60));
 
         jtTiposMembresia.setFont(new java.awt.Font("Poppins Light", 0, 14)); // NOI18N
         jtTiposMembresia.setModel(new javax.swing.table.DefaultTableModel(
@@ -132,19 +106,27 @@ public class TiposMembresiaView extends javax.swing.JFrame {
             Class[] types = new Class [] {
                 java.lang.String.class, java.lang.String.class, java.lang.Integer.class, java.lang.Double.class
             };
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false
+            };
 
             public Class getColumnClass(int columnIndex) {
                 return types [columnIndex];
             }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
         });
+        jtTiposMembresia.setAutoResizeMode(javax.swing.JTable.AUTO_RESIZE_ALL_COLUMNS);
         jtTiposMembresia.setShowVerticalLines(false);
         jScrollPane2.setViewportView(jtTiposMembresia);
 
-        jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 90, 350, 280));
+        jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 90, 360, 280));
 
         jspDuracion.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
         jspDuracion.setModel(new javax.swing.SpinnerNumberModel(1, 1, 666, 1));
-        jspDuracion.setBorder(null);
+        jspDuracion.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         jPanel1.add(jspDuracion, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, 170, 27));
 
         jspPrecio.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
@@ -152,7 +134,39 @@ public class TiposMembresiaView extends javax.swing.JFrame {
         jPanel1.add(jspPrecio, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 420, 160, 27));
         jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 150, 200, -1));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 690, 510));
+        btnEliminar.setBackground(new java.awt.Color(242, 68, 5));
+        btnEliminar.setFont(new java.awt.Font("Poppins Medium", 0, 15)); // NOI18N
+        btnEliminar.setForeground(new java.awt.Color(255, 255, 255));
+        btnEliminar.setText("Eliminar");
+        btnEliminar.setBorder(null);
+        btnEliminar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEliminarActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 480, 150, 37));
+
+        btnModificar.setBackground(new java.awt.Color(242, 68, 5));
+        btnModificar.setFont(new java.awt.Font("Poppins Medium", 0, 15)); // NOI18N
+        btnModificar.setForeground(new java.awt.Color(255, 255, 255));
+        btnModificar.setText("Modificar");
+        btnModificar.setBorder(null);
+        btnModificar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnModificarActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnModificar, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 480, 150, 37));
+
+        txtDescripcion.setColumns(20);
+        txtDescripcion.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
+        txtDescripcion.setLineWrap(true);
+        txtDescripcion.setRows(5);
+        jScrollPane1.setViewportView(txtDescripcion);
+
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, 280, 90));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 710, 540));
 
         pack();
         setLocationRelativeTo(null);
@@ -161,6 +175,14 @@ public class TiposMembresiaView extends javax.swing.JFrame {
     private void btnAgregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnAgregarActionPerformed
+
+    private void btnEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnEliminarActionPerformed
+
+    private void btnModificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModificarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnModificarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -199,7 +221,8 @@ public class TiposMembresiaView extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton btnAgregar;
-    public javax.swing.JButton btnCancelar;
+    public javax.swing.JButton btnEliminar;
+    public javax.swing.JButton btnModificar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;

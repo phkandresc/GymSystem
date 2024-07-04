@@ -20,7 +20,7 @@ public class SocioDAO implements CRUD<Socio> {
     private final String BUSCARSOCIO_PORID = "SELECT * FROM socios WHERE id = ?";
     private final String ELIMINAR_SOCIO = "DELETE FROM socios WHERE id = ?";
     private final String ACTUALIZAR_SOCIO = "UPDATE socios SET cedula= ?, nombre = ?, apellido = ?, email = ?, numero_telefono = ?, direccion = ? WHERE id = ?";
-    private final String REGISTRAR_SOCIO = "INSERT INTO socios (cedula, nombre, apellido, email, numero_telefono, direccion, fecha_nacimiento) VALUES (?, ?, ?, ?, ?, ?, ?)";
+    private final String REGISTRAR_SOCIO = "INSERT INTO socios (cedula, nombre, apellido, email, numero_telefono, direccion, fecha_nacimiento, foto_perfil) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
 
 
     public static int obtenerNumeroSocios() throws SQLException {
@@ -135,6 +135,7 @@ public class SocioDAO implements CRUD<Socio> {
             statement.setString(5, dato.getNumeroTelefono());
             statement.setString(6, dato.getDireccion());
             statement.setDate(7, dato.getFechaNacimiento());
+            statement.setString(8, dato.getFotoPerfil());
             statement.executeUpdate();
             return true;
         } catch (SQLException e) {

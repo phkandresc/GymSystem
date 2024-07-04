@@ -15,8 +15,9 @@ public class InstructorDAO implements CRUD<Instructor> {
     public List<Instructor> obtenerListaDeDatos() throws SQLException {
         PreparedStatement ps = null;
         List<Instructor> listaInstructores = new ArrayList<>();
+        Connection connection = DBConexion.getConnection();
         try {
-            Connection connection = DBConexion.getConnection();
+
             ps = connection.prepareStatement("SELECT * FROM instructores");
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {
@@ -28,6 +29,14 @@ public class InstructorDAO implements CRUD<Instructor> {
             }
         } catch (SQLException e) {
             e.printStackTrace();
+        }finally {
+            if (ps != null) {
+                ps.close();
+            }
+            if(connection != null){
+                connection.close();
+            }
+            DBConexion.closeConnection(connection);
         }
         return listaInstructores;
     }
@@ -50,8 +59,9 @@ public class InstructorDAO implements CRUD<Instructor> {
         @Override
         public Instructor buscarDatoPorId (int id) throws SQLException {
             PreparedStatement ps = null;
+            Connection connection = DBConexion.getConnection();
             try {
-                Connection connection = DBConexion.getConnection();
+
                 ps = connection.prepareStatement("SELECT * FROM instructores WHERE id = ?");
                 ps.setInt(1, id);
                 ResultSet rs = ps.executeQuery();
@@ -64,6 +74,14 @@ public class InstructorDAO implements CRUD<Instructor> {
                 }
             } catch (SQLException e) {
                 e.printStackTrace();
+            }finally {
+                if (ps != null) {
+                    ps.close();
+                }
+                if(connection != null){
+                    connection.close();
+                }
+                DBConexion.closeConnection(connection);
             }
             return null;
         }

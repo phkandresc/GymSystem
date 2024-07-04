@@ -1,13 +1,31 @@
 
 w
-java:S10665"/Merge this if statement with the enclosing one.(…€ÌÓûÿÿÿÿ8áÃñ’†2J$93db1db7-1bc9-4790-ab75-3ebc93cdbe25
+java:S1066("/Merge this if statement with the enclosing one.(Ç†ã±ıÿÿÿÿ8õéúò‡2J$28d198bb-4579-4c73-bb55-d1791cc322c8
+w
+java:S1066^"/Merge this if statement with the enclosing one.(…€ÌÓûÿÿÿÿ8õéúò‡2J$714f4d2f-013d-453d-95e0-9fd0982ee145
+š	java:S116"XRename this field "RUTA_IMAGENES" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰”…8øéúò‡2J$ec0c8697-d15a-46cf-9523-6f59196dfa4c
+	java:S116"[Rename this field "EXTENSION_IMAGEN" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›úñ´8øéúò‡2J$425cc7d9-7416-4b97-b983-352fd171da66
+f
+java:S2387"I"paginaPrincipalController" is the name of a field in "WindowController".(®Ó8¹°ó‡2
+d
+java:S1170"!Make this final field static too.(‰”…8øéúò‡2J$8106ea30-a210-4bcd-9474-feccf2c2c706
+d
+java:S1170"!Make this final field static too.(›úñ´8øéúò‡2J$94482553-2eff-4ea2-b506-2783d6d85f8d
 É
-java:S1186P"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ä Ïúüÿÿÿÿ8Ô“É’†2J$1f9cb0e4-bb11-4a15-bab5-e69ed4b33e93
+java:S1186z"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ä Ïúüÿÿÿÿ8ùéúò‡2J$cb787e58-a0b2-4a16-b8e6-ddd6b33e8840
 É
-java:S1186U"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(®î’×üÿÿÿÿ8Ô“É’†2J$5a9753f5-ba3b-46e0-8917-f641131c35e1
-Ä
-java:S1186Z"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ãÆĞÂ8Õ“É’†2J$68cb5c9f-c222-4cd2-97b5-7434c7eab1ff
-É
-java:S1186_"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ö„˜şúÿÿÿÿ8Õ“É’†2J$b63640ef-96e1-4ddb-b3c9-69263a8130c5
-É
-java:S1186d"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•ßçùÿÿÿÿ8Õ“É’†2J$d7f011e5-d340-4889-a733-32260fd58576
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(®î’×üÿÿÿÿ8ùéúò‡2J$bd730829-f230-4d9e-8121-dbf4e25acb2c
+Å
+java:S1186„"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ãÆĞÂ8ùéúò‡2J$5ac9d96c-a64f-4279-96be-4d759bb4026a
+Ê
+java:S1186‰"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ö„˜şúÿÿÿÿ8ùéúò‡2J$40f0731a-c512-4c24-a71b-25e28676adc3
+Ê
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•ßçùÿÿÿÿ8ùéúò‡2J$d2ef613f-c670-4860-8c73-7afe687cc5da
+¡
+java:S1450"YRemove the "nombreFoto" field and declare it as a local variable in the relevant methods.(¾ø¬¾ÿÿÿÿÿ8úéúò‡2J$bca615d5-621e-4fd0-94ae-66b54de3b3f8
+}
+java:S1144h"5Remove this unused private "cancelarRegistro" method.(ã­áßşÿÿÿÿ8ıéúò‡2J$cceb737c-4eef-4f51-9771-b10f57e67bf8
+i
+java:S1075A"&Remove this hard-coded path-delimiter.(ù¨Ú¾8Œêúò‡2J$73aa33f6-79ed-4d9b-b222-a98668ae9204
+	java:S899E"=Do something with the "boolean" value returned by "renameTo".(‹‡8–êúò‡2J$fc6c1494-c7d4-496f-bcd1-6a814a463c4f
+	java:S899H"=Do something with the "boolean" value returned by "renameTo".(‹‡8–êúò‡2J$f8c3ef55-97d0-4382-82d1-750e23e61240
