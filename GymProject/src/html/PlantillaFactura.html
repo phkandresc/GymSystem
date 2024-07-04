@@ -2,25 +2,19 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Factura</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        @page {
-            size: 210mm 297mm; /* A4 size */
-        }
         body {
-            font-family: 'Open Sans', Arial, sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f8f9fa;
-            width: 100%;
         }
         .container {
-            width: 210mm;
-            min-height: 297mm;
-            padding: 20mm;
-            margin: 10mm auto;
+            width: 210mm; /* Ajustado para márgenes */
+            min-height: 297mm; /* Ajustado para márgenes */
+            padding: 20mm; /* Ajustado para márgenes */
+            margin: 0 auto;
             border-radius: 5px;
             background: white;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -30,45 +24,45 @@
             justify-content: space-between;
             align-items: center;
             border-bottom: 2px solid #e74c3c;
-            padding-bottom: 20px;
-            margin-bottom: 20px;
+            padding-bottom: 10mm;
+            margin-bottom: 10mm;
         }
         .header h1 {
             margin: 0;
-            font-size: 2em;
+            font-size: 24pt;
             color: #e74c3c;
         }
         .header .logo {
-            width: 100px;
+            width: 30mm;
         }
         .details {
             display: flex;
             justify-content: space-between;
-            margin-bottom: 20px;
+            margin-bottom: 10mm;
         }
         .details .client-details,
         .details .invoice-details {
             width: 45%;
         }
         .details h2 {
-            margin: 0 0 10px 0;
-            font-size: 1.2em;
+            margin: 0 0 5mm 0;
+            font-size: 14pt;
             color: #333333;
         }
         .details p {
-            margin: 5px 0;
-            font-size: 1em;
+            margin: 2mm 0;
+            font-size: 11pt;
             color: #666666;
         }
         .table {
             width: 100%;
             border-collapse: collapse;
-            margin-bottom: 20px;
+            margin-bottom: 10mm;
         }
         .table th, .table td {
             border: 1px solid #dddddd;
             text-align: left;
-            padding: 8px;
+            padding: 4mm;
         }
         .table th {
             background-color: #f4f4f4;
@@ -77,7 +71,7 @@
         .total {
             display: flex;
             justify-content: flex-end;
-            margin-bottom: 20px;
+            margin-bottom: 10mm;
         }
         .total .total-details {
             width: 50%;
@@ -85,19 +79,19 @@
         .total .total-details p {
             display: flex;
             justify-content: space-between;
-            margin: 5px 0;
-            font-size: 1em;
+            margin: 2mm 0;
+            font-size: 11pt;
         }
         .total .total-details p.total-amount {
             font-weight: 600;
-            font-size: 1.2em;
+            font-size: 14pt;
         }
         .footer {
             text-align: center;
-            font-size: 0.8em;
+            font-size: 10pt;
             color: #999999;
             border-top: 1px solid #dddddd;
-            padding-top: 10px;
+            padding-top: 5mm;
         }
     </style>
 </head>
@@ -119,7 +113,6 @@
             <h2>Factura:</h2>
             <p><strong>Número:</strong> {numero_factura}</p>
             <p><strong>Fecha:</strong> {fecha_factura}</p>
-            <p><strong>Vencimiento:</strong> {fecha_vencimiento}</p>
         </div>
     </div>
     <table class="table">
@@ -162,3 +155,5 @@
 </div>
 </body>
 </html>
+
+

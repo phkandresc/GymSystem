@@ -1,0 +1,9 @@
+
+£	java:S116"\Rename this field "REGISTRAR_FACTURA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ý…ˆ¡ÿÿÿÿÿ8ú¾À½†2J$266130cd-f581-428d-aecc-2cedc81263e8
+§	java:S116"`Rename this field "BUSCAR_FACTURA_POR_ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»ÚÙÁþÿÿÿÿ8ú¾À½†2J$bde5f966-ba68-43f9-9c97-6df83e1e8370
+i
+java:S1170"!Make this final field static too.(ý…ˆ¡ÿÿÿÿÿ8ú¾À½†2J$a6aff25f-99af-4293-8a12-dd9675cae4b7
+i
+java:S1170"!Make this final field static too.(»ÚÙÁþÿÿÿÿ8ú¾À½†2J$ee5513ac-f55f-4cd0-94ee-ff74a6db2f22
+g
+java:S6905"Don't use the query "SELECT *".(»ÚÙÁþÿÿÿÿ8þ¾À½†2J$0da2f527-ae36-4304-98f4-42c24b1a3bcf

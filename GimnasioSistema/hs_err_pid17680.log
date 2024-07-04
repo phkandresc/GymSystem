@@ -1,0 +1,235 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 130023424 bytes. Error detail: G1 virtual space
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   This process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+#   JVM is running with Unscaled Compressed Oops mode in which the Java heap is
+#     placed in the first 4GB address space. The Java Heap base address is the
+#     maximum limit for the native heap growth. Please use -XX:HeapBaseMinAddress
+#     to set the Java Heap base and to place the Java Heap above 4GB virtual address.
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (os_windows.cpp:3631), pid=17680, tid=10848
+#
+# JRE version:  (22.0.1+8) (build )
+# Java VM: OpenJDK 64-Bit Server VM (22.0.1+8-16, mixed mode, sharing, tiered, compressed oops, compressed class ptrs, g1 gc, windows-amd64)
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2024.1.4\lib\idea_rt.jar=53204:C:\Program Files\JetBrains\IntelliJ IDEA 2024.1.4\bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 org.gimnasio.controller.TiposMembresiaController
+
+Host: 12th Gen Intel(R) Core(TM) i5-12400, 12 cores, 7G,  Windows 11 , 64 bit Build 22621 (10.0.22621.3672)
+Time: Sun Jun 30 15:34:38 2024 SA Pacific Standard Time elapsed time: 0.011647 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000002462e3e4be0):  JavaThread "Unknown thread" [_thread_in_vm, id=10848, stack(0x000000c933800000,0x000000c933900000) (1024K)]
+
+Stack: [0x000000c933800000,0x000000c933900000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x6e2279]  (no source info available)
+V  [jvm.dll+0x874e33]  (no source info available)
+V  [jvm.dll+0x87725e]  (no source info available)
+V  [jvm.dll+0x877933]  (no source info available)
+V  [jvm.dll+0x27fd76]  (no source info available)
+V  [jvm.dll+0x6de915]  (no source info available)
+V  [jvm.dll+0x6d341a]  (no source info available)
+V  [jvm.dll+0x3589da]  (no source info available)
+V  [jvm.dll+0x360f06]  (no source info available)
+V  [jvm.dll+0x3b3e2e]  (no source info available)
+V  [jvm.dll+0x3b40d8]  (no source info available)
+V  [jvm.dll+0x32c59c]  (no source info available)
+V  [jvm.dll+0x32d158]  (no source info available)
+V  [jvm.dll+0x83ccdc]  (no source info available)
+V  [jvm.dll+0x3c0d71]  (no source info available)
+V  [jvm.dll+0x825ccc]  (no source info available)
+V  [jvm.dll+0x45b8fe]  (no source info available)
+V  [jvm.dll+0x45d781]  (no source info available)
+C  [jli.dll+0x52a3]  (no source info available)
+C  [ucrtbase.dll+0x29333]  (no source info available)
+C  [KERNEL32.DLL+0x1257d]  (no source info available)
+C  [ntdll.dll+0x5af28]  (no source info available)
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x00007ffd2d33b1c8, length=0, elements={
+}
+
+Java Threads: ( => current thread )
+Total: 0
+
+Other Threads:
+  0x0000024630675630 WorkerThread "GC Thread#0"                     [id=9640, stack(0x000000c933900000,0x000000c933a00000) (1024K)]
+  0x0000024630685ee0 ConcurrentGCThread "G1 Main Marker"            [id=7408, stack(0x000000c933a00000,0x000000c933b00000) (1024K)]
+  0x0000024630686900 WorkerThread "G1 Conc#0"                       [id=1464, stack(0x000000c933b00000,0x000000c933c00000) (1024K)]
+
+[error occurred during error reporting (printing all threads), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffd2ca8f367]
+VM state: not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x00007ffd2d3bbcb8] Heap_lock - owner thread: 0x000002462e3e4be0
+
+Heap address: 0x0000000084000000, size: 1984 MB, Compressed Oops mode: 32-bit
+
+CDS archive(s) mapped at: [0x0000000000000000-0x0000000000000000-0x0000000000000000), size 0, SharedBaseAddress: 0x0000000800000000, ArchiveRelocationMode: 1.
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 0, Narrow klass range: 0x0
+
+GC Precious Log:
+ CardTable entry size: 512
+ Card Set container configuration: InlinePtr #cards 5 size 8 Array Of Cards #cards 12 size 40 Howl #buckets 4 coarsen threshold 1843 Howl Bitmap #cards 512 size 80 coarsen threshold 460 Card regions per heap region 1 cards per card region 2048
+
+Heap:
+ garbage-first heap   total reserved 2031616K, committed 0K, used 0K [0x0000000084000000, 0x0000000100000000)
+  region size 1024K, 0 young (0K), 0 survivors (0K)
+
+[error occurred during error reporting (printing heap information), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffd2ce8e429]
+GC Heap History (0 events):
+No events
+
+Dll operation events (1 events):
+Event: 0.009 Loaded shared library C:\Users\kacor\.jdks\openjdk-22.0.1\bin\java.dll
+
+Deoptimization events (0 events):
+No events
+
+Classes loaded (0 events):
+No events
+
+Classes unloaded (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+ZGC Phase Switch (0 events):
+No events
+
+VM Operations (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x00007ff6341a0000 - 0x00007ff6341ae000 	C:\Users\kacor\.jdks\openjdk-22.0.1\bin\java.exe
+0x00007ffd94110000 - 0x00007ffd94327000 	C:\Windows\SYSTEM32\ntdll.dll
+0x00007ffd93610000 - 0x00007ffd936d4000 	C:\Windows\System32\KERNEL32.DLL
+0x00007ffd91890000 - 0x00007ffd91c3c000 	C:\Windows\System32\KERNELBASE.dll
+0x00007ffd91440000 - 0x00007ffd91551000 	C:\Windows\System32\ucrtbase.dll
+0x00007ffd7e5f0000 - 0x00007ffd7e60b000 	C:\Users\kacor\.jdks\openjdk-22.0.1\bin\VCRUNTIME140.dll
+0x00007ffd8d860000 - 0x00007ffd8d877000 	C:\Users\kacor\.jdks\openjdk-22.0.1\bin\jli.dll
+0x00007ffd93f20000 - 0x00007ffd940ce000 	C:\Windows\System32\USER32.dll
+0x00007ffd78560000 - 0x00007ffd787f3000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.22621.3672_none_2713b9d173822955\COMCTL32.dll
+0x00007ffd91db0000 - 0x00007ffd91dd6000 	C:\Windows\System32\win32u.dll
+0x00007ffd937c0000 - 0x00007ffd93867000 	C:\Windows\System32\msvcrt.dll
+0x00007ffd93dd0000 - 0x00007ffd93df9000 	C:\Windows\System32\GDI32.dll
+0x00007ffd91560000 - 0x00007ffd91679000 	C:\Windows\System32\gdi32full.dll
+0x00007ffd917c0000 - 0x00007ffd9185a000 	C:\Windows\System32\msvcp_win.dll
+0x00007ffd92530000 - 0x00007ffd92561000 	C:\Windows\System32\IMM32.DLL
+0x00007ffd8e620000 - 0x00007ffd8e62c000 	C:\Users\kacor\.jdks\openjdk-22.0.1\bin\vcruntime140_1.dll
+0x00007ffd7a550000 - 0x00007ffd7a5de000 	C:\Users\kacor\.jdks\openjdk-22.0.1\bin\msvcp140.dll
+0x00007ffd2c750000 - 0x00007ffd2d497000 	C:\Users\kacor\.jdks\openjdk-22.0.1\bin\server\jvm.dll
+0x00007ffd91f80000 - 0x00007ffd92032000 	C:\Windows\System32\ADVAPI32.dll
+0x00007ffd91eb0000 - 0x00007ffd91f5a000 	C:\Windows\System32\sechost.dll
+0x00007ffd91860000 - 0x00007ffd91888000 	C:\Windows\System32\bcrypt.dll
+0x00007ffd93e00000 - 0x00007ffd93f15000 	C:\Windows\System32\RPCRT4.dll
+0x00007ffd92740000 - 0x00007ffd927b1000 	C:\Windows\System32\WS2_32.dll
+0x00007ffd90bb0000 - 0x00007ffd90bfd000 	C:\Windows\SYSTEM32\POWRPROF.dll
+0x00007ffd86640000 - 0x00007ffd86674000 	C:\Windows\SYSTEM32\WINMM.dll
+0x00007ffd85d50000 - 0x00007ffd85d5a000 	C:\Windows\SYSTEM32\VERSION.dll
+0x00007ffd90b90000 - 0x00007ffd90ba3000 	C:\Windows\SYSTEM32\UMPDC.dll
+0x00007ffd90390000 - 0x00007ffd903a8000 	C:\Windows\SYSTEM32\kernel.appcore.dll
+0x00007ffd7f810000 - 0x00007ffd7f81a000 	C:\Users\kacor\.jdks\openjdk-22.0.1\bin\jimage.dll
+0x00007ffd60f60000 - 0x00007ffd61192000 	C:\Windows\SYSTEM32\DBGHELP.DLL
+0x00007ffd92040000 - 0x00007ffd923c8000 	C:\Windows\System32\combase.dll
+0x00007ffd936e0000 - 0x00007ffd937b7000 	C:\Windows\System32\OLEAUT32.dll
+0x00007ffd66230000 - 0x00007ffd66262000 	C:\Windows\SYSTEM32\dbgcore.DLL
+0x00007ffd91680000 - 0x00007ffd916fb000 	C:\Windows\System32\bcryptPrimitives.dll
+0x00007ffd7ec80000 - 0x00007ffd7ec8f000 	C:\Users\kacor\.jdks\openjdk-22.0.1\bin\instrument.dll
+0x00007ffd7e580000 - 0x00007ffd7e59e000 	C:\Users\kacor\.jdks\openjdk-22.0.1\bin\java.dll
+0x00007ffd92a30000 - 0x00007ffd9328c000 	C:\Windows\System32\SHELL32.dll
+0x00007ffd932e0000 - 0x00007ffd93485000 	C:\Windows\System32\ole32.dll
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;C:\Users\kacor\.jdks\openjdk-22.0.1\bin;C:\Windows\SYSTEM32;C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.22621.3672_none_2713b9d173822955;C:\Users\kacor\.jdks\openjdk-22.0.1\bin\server
+
+VM Arguments:
+jvm_args: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2024.1.4\lib\idea_rt.jar=53204:C:\Program Files\JetBrains\IntelliJ IDEA 2024.1.4\bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 
+java_command: org.gimnasio.controller.TiposMembresiaController
+java_class_path (initial): D:\GymSystem\GimnasioSistema\target\classes;C:\Users\kacor\.m2\repository\com\mysql\mysql-connector-j\8.4.0\mysql-connector-j-8.4.0.jar;C:\Users\kacor\.m2\repository\com\google\protobuf\protobuf-java\3.25.1\protobuf-java-3.25.1.jar;C:\Users\kacor\.m2\repository\com\toedter\jcalendar\1.4\jcalendar-1.4.jar;C:\Users\kacor\.m2\repository\org\netbeans\external\AbsoluteLayout\RELEASE210\AbsoluteLayout-RELEASE210.jar;D:\GymSystem\GimnasioSistema\libs\jgoodies-looks-2.4.1.jar;D:\GymSystem\GimnasioSistema\libs\jgoodies-common-1.2.0.jar;C:\Users\kacor\.m2\repository\javax\mail\javax.mail-api\1.6.2\javax.mail-api-1.6.2.jar;C:\Users\kacor\.m2\repository\com\sun\mail\javax.mail\1.6.2\javax.mail-1.6.2.jar;C:\Users\kacor\.m2\repository\javax\activation\activation\1.1\activation-1.1.jar;C:\Users\kacor\.m2\repository\com\itextpdf\barcodes\8.0.4\barcodes-8.0.4.jar;C:\Users\kacor\.m2\repository\com\itextpdf\font-asian\8.0.4\font-asian-8.0.4.jar;C:\Users\kacor\.m2\repository\com\itextpdf\forms\8.0.4\forms-8.0.4.jar;C:\Users\kacor\.m2\repository\com\itextpdf\hyph\8.0.4\hyph-8.0.4.jar;C:\Users\kacor\.m2\repository\com\itextpdf\io\8.0.4\io-8.0.4.jar;C:\Users\kacor\.m2\repository\com\itextpdf\commons\8.0.4\commons-8.0.4.jar;C:\Users\kacor\.m2\repository\com\itextpdf\kernel\8.0.4\kernel-8.0.4.jar;C:\Users\kacor\.m2\repository\com\itextpdf\layout\8.0.4\layout-8.0.4.jar;C:\Users\kacor\.m2\repository\com\itextpdf\pdfa\8.0.4\pdfa-8.0.4.jar;C:\Users\kacor\.m2\repository\com\itextpdf\sign\8.0.4\sign-8.0.4.jar;C:\Users\kacor\.m2\repository\com\itextpdf\styled-xml-parser\8.0.4\styled-xml-parser-8.0.4.jar;C:\Users\kacor\.m2\repository\com\itextpdf\svg\8.0.4\svg-8.0.4.jar;C:\Users\kacor\.m2\repository\com\itextpdf\bouncy-castle-connector\8.0.4\bouncy-castle-connector-8.0.4.jar;C:\Users\kacor\.m2\repository\com\itextpdf\pdfua\8.0.4\pdfua-8.0.4.jar;C:\Users\kacor\.m2\repository\com\itextpdf\html2pdf\5.0.4\html2pdf-5.0.4.jar;C:\Users\kacor\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\kacor\.m2\repository\org\jsoup\jsoup\1.17.2\jsoup-1.17.2.jar;C:\Users\kacor\.m2\repository\com\zaxxer\HikariCP\5.1.0\HikariCP-5.1.0.jar
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     intx CICompilerCount                          = 4                                         {product} {ergonomic}
+     uint ConcGCThreads                            = 3                                         {product} {ergonomic}
+     uint G1ConcRefinementThreads                  = 10                                        {product} {ergonomic}
+   size_t G1HeapRegionSize                         = 1048576                                   {product} {ergonomic}
+   size_t InitialHeapSize                          = 130023424                                 {product} {ergonomic}
+   size_t MarkStackSize                            = 4194304                                   {product} {ergonomic}
+   size_t MaxHeapSize                              = 2080374784                                {product} {ergonomic}
+   size_t MinHeapDeltaBytes                        = 1048576                                   {product} {ergonomic}
+   size_t MinHeapSize                              = 8388608                                   {product} {ergonomic}
+    uintx NonNMethodCodeHeapSize                   = 5839372                                {pd product} {ergonomic}
+    uintx NonProfiledCodeHeapSize                  = 122909434                              {pd product} {ergonomic}
+    uintx ProfiledCodeHeapSize                     = 122909434                              {pd product} {ergonomic}
+    uintx ReservedCodeCacheSize                    = 251658240                              {pd product} {ergonomic}
+     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+   size_t SoftMaxHeapSize                          = 2080374784                             {manageable} {ergonomic}
+     bool UseCompressedOops                        = true                           {product lp64_product} {ergonomic}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags foldmultilines=false
+ #1: stderr all=off uptime,level,tags foldmultilines=false
+
+Environment Variables:
+PATH=C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\kacor\AppData\Local\Microsoft\WindowsApps;C:\Users\kacor\AppData\Local\Programs\Microsoft VS Code\bin;C:\msys64\ucrt64\bin;C:\Users\kacor\AppData\Local\GitHubDesktop\bin;C:\Users\kacor\AppData\Roaming\npm;C:\Program Files\JetBrains\IntelliJ IDEA 2023.3.4\bin;C:\Program Files\Java\jdk-21\bin;C:\Users\kacor\AppData\Local\Programs\oh-my-posh\bin;C:\Users\kacor\AppData\Local\JetBrains\Toolbox\scripts;;C:\Program Files\JetBrains\IntelliJ IDEA 2024.1.4\bin;
+USERNAME=kacor
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 151 Stepping 5, GenuineIntel
+TMP=C:\Users\kacor\AppData\Local\Temp
+TEMP=C:\Users\kacor\AppData\Local\Temp
+
+
+
+
+Periodic native trim disabled
+
+---------------  S Y S T E M  ---------------
+
+OS:
+ Windows 11 , 64 bit Build 22621 (10.0.22621.3672)
+OS uptime: 4 days 18:43 hours
+Hyper-V role detected
+
+CPU: total 12 (initial active 12) (6 cores per cpu, 2 threads per core) family 6 model 151 stepping 5 microcode 0x26, cx8, cmov, fxsr, ht, mmx, 3dnowpref, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, lzcnt, tsc, tscinvbit, avx, avx2, aes, erms, clmul, bmi1, bmi2, adx, sha, fma, vzeroupper, clflush, clflushopt, clwb, hv, serialize, rdtscp, rdpid, fsrm, f16c, cet_ibt, cet_ss
+Processor Information for all 12 processors :
+  Max Mhz: 2500, Current Mhz: 2500, Mhz Limit: 2500
+
+Memory: 4k page, system-wide physical 7933M (636M free)
+TotalPageFile size 32509M (AvailPageFile size 37M)
+current process WorkingSet (physical memory assigned to process): 12M, peak: 12M
+current process commit charge ("private bytes"): 65M, peak: 188M
+
+vm_info: OpenJDK 64-Bit Server VM (22.0.1+8-16) for windows-amd64 JRE (22.0.1+8-16), built on 2024-03-12T10:33:16Z by "mach5one" with MS VC++ 17.6 (VS2022)
+
+END.

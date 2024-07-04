@@ -75,9 +75,12 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
         jLabel33 = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
         jSeparator2 = new javax.swing.JSeparator();
+        btnAdministrarSocios = new javax.swing.JButton();
+        jLabel38 = new javax.swing.JLabel();
+        jLabel36 = new javax.swing.JLabel();
         paginaPagosPanel = new javax.swing.JPanel();
         jLabel35 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
+        btnRegistrarMembresia = new javax.swing.JButton();
         jLabel34 = new javax.swing.JLabel();
         paginaClasesPanel = new javax.swing.JPanel();
         jLabel26 = new javax.swing.JLabel();
@@ -314,10 +317,10 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
                 btnRegistrarNuevoSocioActionPerformed(evt);
             }
         });
-        paginaSociosPanel.add(btnRegistrarNuevoSocio, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 450, -1, 40));
+        paginaSociosPanel.add(btnRegistrarNuevoSocio, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 470, -1, 40));
 
         jLabel24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/image 1.jpg"))); // NOI18N
-        paginaSociosPanel.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 100, -1, -1));
+        paginaSociosPanel.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, -1, -1));
 
         btnVerSocios.setBackground(new java.awt.Color(255, 153, 102));
         btnVerSocios.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
@@ -327,21 +330,37 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
                 btnVerSociosActionPerformed(evt);
             }
         });
-        paginaSociosPanel.add(btnVerSocios, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 450, 200, 40));
+        paginaSociosPanel.add(btnVerSocios, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 470, 200, 40));
 
         jLabel31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Rectangle 2 (1).png"))); // NOI18N
-        paginaSociosPanel.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(155, 100, 270, -1));
+        paginaSociosPanel.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, 270, -1));
 
         jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/1366_2000.jpeg"))); // NOI18N
-        paginaSociosPanel.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 100, 260, 300));
+        paginaSociosPanel.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 120, 260, 300));
 
         jLabel33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Rectangle 2 (1).png"))); // NOI18N
-        paginaSociosPanel.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 100, 270, -1));
+        paginaSociosPanel.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 120, 270, -1));
 
         jLabel25.setFont(new java.awt.Font("Poppins SemiBold", 0, 36)); // NOI18N
         jLabel25.setText("Socios");
         paginaSociosPanel.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
         paginaSociosPanel.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, 350, 10));
+
+        btnAdministrarSocios.setBackground(new java.awt.Color(255, 153, 102));
+        btnAdministrarSocios.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
+        btnAdministrarSocios.setText("Administrar información");
+        btnAdministrarSocios.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAdministrarSociosActionPerformed(evt);
+            }
+        });
+        paginaSociosPanel.add(btnAdministrarSocios, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 470, 200, 40));
+
+        jLabel38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/slide-multifuerza-002.jpg"))); // NOI18N
+        paginaSociosPanel.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 120, 260, 300));
+
+        jLabel36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Rectangle 2 (1).png"))); // NOI18N
+        paginaSociosPanel.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 120, 270, -1));
 
         GrupoDePaneles.addTab("tab2", paginaSociosPanel);
 
@@ -351,15 +370,15 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
         jLabel35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/image 1.jpg"))); // NOI18N
         paginaPagosPanel.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 100, -1, -1));
 
-        jButton3.setBackground(new java.awt.Color(255, 153, 102));
-        jButton3.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
-        jButton3.setText("Registrar un pago");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        btnRegistrarMembresia.setBackground(new java.awt.Color(255, 153, 102));
+        btnRegistrarMembresia.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
+        btnRegistrarMembresia.setText("Registrar membresia");
+        btnRegistrarMembresia.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                btnRegistrarMembresiaActionPerformed(evt);
             }
         });
-        paginaPagosPanel.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 450, -1, 40));
+        paginaPagosPanel.add(btnRegistrarMembresia, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 450, -1, 40));
 
         jLabel34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Rectangle 2 (1).png"))); // NOI18N
         paginaPagosPanel.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(155, 100, 270, -1));
@@ -623,6 +642,7 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
         getContentPane().add(background, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 680));
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jpPaginaPrincipalMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jpPaginaPrincipalMouseEntered
@@ -768,9 +788,13 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnVerSociosActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void btnRegistrarMembresiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistrarMembresiaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_btnRegistrarMembresiaActionPerformed
+
+    private void btnAdministrarSociosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdministrarSociosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnAdministrarSociosActionPerformed
 
     /**
      * @param args the command line arguments
@@ -811,10 +835,11 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTabbedPane GrupoDePaneles;
     private javax.swing.JPanel background;
+    public javax.swing.JButton btnAdministrarSocios;
+    public javax.swing.JButton btnRegistrarMembresia;
     public javax.swing.JButton btnRegistrarNuevoSocio;
     public javax.swing.JButton btnVerSocios;
     private javax.swing.JPanel header;
-    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -843,7 +868,9 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
     private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel38;
     private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel41;

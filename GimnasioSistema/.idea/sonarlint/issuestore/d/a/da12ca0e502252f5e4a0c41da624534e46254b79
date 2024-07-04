@@ -1,0 +1,27 @@
+
+	java:S112."FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ä§ñÑ†2J$6331c6fc-5035-49bf-9320-6642d4a7ec70
+	java:S112r"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ä§ñÑ†2J$b3a07817-4d8e-4771-93e8-b2ea6aa1bb54
+œ
+java:S1192"TDefine a constant instead of duplicating this literal "ftbu wjjn ptpx odxx" 3 times.(·¬•øÿÿÿÿ8àêÍÖ†2J$7c6ed8a8-7a0d-44af-8192-4bb8633ac4d8
+
+java:S1192"VDefine a constant instead of duplicating this literal "kacoraizaca@gmail.com" 3 times.(âúÏêüÿÿÿÿ8ıÌÖ†2J$67a448d6-5c89-4d17-b2c6-30c8588f355e
+i
+java:S1170"!Make this final field static too.(âúÏêüÿÿÿÿ8ä§ñÑ†2J$dde54b74-0452-4e42-b709-2cae0512161f
+i
+java:S1170"!Make this final field static too.(·¬•øÿÿÿÿ8å§ñÑ†2J$e13f6ea0-3964-48d6-ae60-101b19e4be9e
+}
+java:S1161!":Add the "@Override" annotation above this method signature(‡èú×8û§ñÑ†2J$05f70838-9a1e-4342-803a-9cca8ab2c004
+~
+java:S6437""6Revoke and change this password, as it is compromised.(ˆÙı½øÿÿÿÿ8Š¨ñÑ†2J$ea9bc587-b273-4e9c-82f8-c691c9db8ec4
+}
+java:S1161Y":Add the "@Override" annotation above this method signature(‡èú×8Š¨ñÑ†2J$d62321cc-56e4-49fe-bdd7-109b081c1b6d
+~
+java:S6437Z"6Revoke and change this password, as it is compromised.(ˆÙı½øÿÿÿÿ8ñêÍÖ†2J$1c396a6c-d14c-48d8-b2e0-ea14e7287dc2
+|
+java:S1128"9Remove this unused import 'org.gimnasio.daos.FacturaDAO'.(÷ô¨È8ôêÍÖ†2J$7d43ef65-f795-420f-8ba1-ab701dcb01ae
+
+java:S1128"7Remove this unused import 'org.gimnasio.model.Factura'.(ä±Èÿÿÿÿÿ8ôêÍÖ†2J$98bfc3a6-f88b-4704-b86b-8f0133aa0d59
+t
+java:S1068",Remove this unused "username" private field.(âúÏêüÿÿÿÿ8ÁıÌÖ†2J$711b9109-7529-4a07-a7a3-3024adf7ebae
+t
+java:S1068",Remove this unused "password" private field.(·¬•øÿÿÿÿ8ôêÍÖ†2J$e5b14cea-ac09-4fb9-ace4-56741451d8f5

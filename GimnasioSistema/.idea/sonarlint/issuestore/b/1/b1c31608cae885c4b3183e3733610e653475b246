@@ -1,0 +1,69 @@
+
+q
+java:S1604Ñ"(Make this anonymous inner class a lambda(¨í¡§úÿÿÿÿ8Ğì‡¥‡2J$2f46511f-000b-4bca-8385-1a2880092160
+˜
+java:S1104Ú"TMake btnCrear a static final constant or non-public and provide accessors if needed.(è é8Ñì‡¥‡2J$5ace7105-f699-4fd5-95ed-5b38f982c160
+ 
+java:S1104Û"WMake btnEliminar a static final constant or non-public and provide accessors if needed.(šÄ·øşÿÿÿÿ8Ñì‡¥‡2J$cb738c94-bc0d-4a3a-9dd1-e8d98bd8fdde
+¡
+java:S1104Ü"XMake btnModificar a static final constant or non-public and provide accessors if needed.(æÑªÀøÿÿÿÿ8Ñì‡¥‡2J$e297d104-1d99-41dd-a1fe-84909bbcaa86
+Ÿ
+java:S1104İ"VMake cmbEspacio a static final constant or non-public and provide accessors if needed.(úŠ‘†øÿÿÿÿ8Ñì‡¥‡2J$d021f36b-1873-46aa-83c7-3b1c7a5310da
+
+java:S1104Ş"YMake cmbInstructor a static final constant or non-public and provide accessors if needed.(½¬Á“8Ñì‡¥‡2J$e949a8e6-1f20-4593-9fe7-763e37497a5a
+¡
+java:S1104ß"XMake cmbTipoClase a static final constant or non-public and provide accessors if needed.(ûº¸©üÿÿÿÿ8Ñì‡¥‡2J$dbefae9c-0984-4295-872f-c766a0fd48fc
+—
+java:S1104ë"SMake jsCosto a static final constant or non-public and provide accessors if needed.(Ÿ°èÀ8Ñì‡¥‡2J$548a3035-c4a5-4da7-a0b1-49c5683ce74f
+œ
+java:S1104ì"SMake jsCupos a static final constant or non-public and provide accessors if needed.(æè´Îıÿÿÿÿ8Ñì‡¥‡2J$164d0d7a-0621-409c-8244-9ce797254302
+˜
+java:S1104í"TMake jtClases a static final constant or non-public and provide accessors if needed.(òåØı8Ñì‡¥‡2J$15ba5af6-59a4-4d5a-b083-031e286da267
+
+java:S1104î"ZMake txtDescripcion a static final constant or non-public and provide accessors if needed.(­õ¤‚8Ñì‡¥‡2J$63f25ada-a9dc-416b-9a6b-06215e9e96f5
+
+java:S1104ï"UMake txtNombre a static final constant or non-public and provide accessors if needed.(Û©”ûÿÿÿÿ8Òì‡¥‡2J$30f8995a-fd04-4572-8a96-fe16ab76d1ac
+‹
+java:S1192G"HDefine a constant instead of duplicating this literal "Poppins" 8 times.(×¶Äœ8Öì‡¥‡2J$aa209cf5-5d2d-461b-aca9-5eb1d5b5063c
+’
+java:S1192="ODefine a constant instead of duplicating this literal "Poppins Medium" 4 times.(·¶Ÿ8Öì‡¥‡2J$df2fec56-4abb-40d9-afda-a493efcb9425
+™
+java:S1192g"QDefine a constant instead of duplicating this literal "Poppins SemiBold" 7 times.(Ë¦‘şÿÿÿÿ8Öì‡¥‡2J$45811bda-3e82-4b6e-81a9-1d77f02cd053
+š
+java:S1450Ù"QRemove the "bg" field and declare it as a local variable in the relevant methods.(êÉú”øÿÿÿÿ8Úì‡¥‡2J$fce31d02-26a9-447e-bf70-f2c805941903
+Ÿ
+java:S1450à"VRemove the "jLabel1" field and declare it as a local variable in the relevant methods.(°ãÉ¸ÿÿÿÿÿ8Úì‡¥‡2J$2aa60d9f-8223-4777-88d6-7dbf2b91f23f
+ 
+java:S1450á"WRemove the "jLabel10" field and declare it as a local variable in the relevant methods.(¼õò†şÿÿÿÿ8Ûì‡¥‡2J$c26bab77-92eb-4c8b-bed5-eff2e6873da0
+Ÿ
+java:S1450â"VRemove the "jLabel2" field and declare it as a local variable in the relevant methods.(™úòˆüÿÿÿÿ8Ûì‡¥‡2J$00a16d34-fe05-4ccb-9f7a-5065b73e30d8
+Ÿ
+java:S1450ã"VRemove the "jLabel3" field and declare it as a local variable in the relevant methods.(Îä€øÿÿÿÿ8Ûì‡¥‡2J$88fa0ed8-a0f9-40ae-95a2-4f3f44ec07a2
+š
+java:S1450ä"VRemove the "jLabel4" field and declare it as a local variable in the relevant methods.(«¢•ã8Ûì‡¥‡2J$4f9e9b29-91d4-4ec2-bf59-ca201e7102b7
+š
+java:S1450å"VRemove the "jLabel5" field and declare it as a local variable in the relevant methods.(ó Ù®8Üì‡¥‡2J$fc09d8c6-0250-448b-be0b-f9117aa1e30b
+Ÿ
+java:S1450æ"VRemove the "jLabel6" field and declare it as a local variable in the relevant methods.(¸ôÂøÿÿÿÿ8Üì‡¥‡2J$bc3f99f8-8c5c-4b21-8bb8-b8d37ccfaa35
+š
+java:S1450ç"VRemove the "jLabel7" field and declare it as a local variable in the relevant methods.(×ê˜Ÿ8Üì‡¥‡2J$d2966a0f-cc70-4066-a9f8-72aea2c248e9
+š
+java:S1450è"VRemove the "jLabel8" field and declare it as a local variable in the relevant methods.(å»«¢8Üì‡¥‡2J$5aceae15-da61-4baa-99b3-72e1af6f4d28
+
+java:S1450é"ZRemove the "jScrollBar1" field and declare it as a local variable in the relevant methods.(ìè¾º8Üì‡¥‡2J$b6c26387-154e-4344-9cb5-1ad59eaa2de7
+¤
+java:S1450ê"[Remove the "jScrollPane1" field and declare it as a local variable in the relevant methods.(¤á×ÿÿÿÿÿ8Üì‡¥‡2J$b92c1f85-9cc9-4d05-a8d0-7e44eaae5586
+‚
+java:S1161Z":Add the "@Override" annotation above this method signature(ÍŸÏ†ùÿÿÿÿ8ìì‡¥‡2J$ec0be193-61fd-4dca-9902-f5d9045e8e71
+}
+java:S1161^":Add the "@Override" annotation above this method signature(®¸ù8ìì‡¥‡2J$312ff754-fea4-45f3-8f23-8b0fde79b8cb
+s
+java:S1197¸"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ8‚í‡¥‡2J$ae62c06b-2082-494e-b71a-11abee45e1ff
+‰
+java:S2147Ç"ECombine this catch with the one at line 197, which has the same body.(¨¦Š½8‚í‡¥‡2J$10eb4ee0-c52a-433e-8705-a372c6d1d571
+‰
+java:S2147É"ECombine this catch with the one at line 199, which has the same body.(ã€ 8‚í‡¥‡2J$c19b6a02-a711-4365-a20c-d7efb0754a61
+ˆ
+java:S2147Ë"ECombine this catch with the one at line 201, which has the same body.(ñÎ¯%8ƒí‡¥‡2J$158a4ffa-34d8-435d-bc60-4e9f11773b09
+s
+java:S1068é"/Remove this unused "jScrollBar1" private field.(ìè¾º8‰í‡¥‡2J$db18d403-c97a-4fac-8c62-cd7134bf7cda

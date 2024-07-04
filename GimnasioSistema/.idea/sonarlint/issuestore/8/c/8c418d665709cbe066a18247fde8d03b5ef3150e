@@ -1,0 +1,17 @@
+
+©	java:S116"bRename this field "REGISTRAR_PAGOMEMBRESIA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿€¨µÿÿÿÿÿ8Ñå£½†2J$1ff9cff1-6a47-4af0-adc3-c7f8e698165d
+¥	java:S116"^Rename this field "REGISTRAR_PAGOCLASE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òãŸãÿÿÿÿÿ8Ñå£½†2J$2c7dc860-9918-42c1-b4dc-67f506bdfb4f
+®	java:S116"gRename this field "BUSCAR_PAGO_POR_ID_MEMBRESIA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»Ü±¶úÿÿÿÿ8Ñå£½†2J$462f23cf-1643-453b-bd83-aad1682f1a95
+Ÿ	java:S116"]Rename this field "BUSCAR_PAGO_POR_ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿñæž8Ñå£½†2J$ad531cc3-0424-41d2-9b05-126e9e414740
+i
+java:S1170"!Make this final field static too.(¿€¨µÿÿÿÿÿ8Ñå£½†2J$d1286c8d-daef-4bd7-a2fa-561fae17997c
+i
+java:S1170"!Make this final field static too.(òãŸãÿÿÿÿÿ8Ñå£½†2J$f2e2d81f-4f69-43e3-b7a4-945bb1cae135
+i
+java:S1170"!Make this final field static too.(»Ü±¶úÿÿÿÿ8Ñå£½†2J$f08e2e14-1b05-49a4-91b9-d620c7d59209
+d
+java:S1170"!Make this final field static too.(ÿñæž8Ñå£½†2J$eba77dff-d3e4-401e-b2c1-ee80a993fe89
+b
+java:S6905"Don't use the query "SELECT *".(ÿñæž8Ÿ•¥½†2J$78900f11-3f41-4ca2-9459-a078b6022e9c
+g
+java:S6905"Don't use the query "SELECT *".(»Ü±¶úÿÿÿÿ8Ùå£½†2J$0ecc772a-cf65-4ca0-94e0-a75537d12f71

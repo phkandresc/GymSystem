@@ -1,0 +1,26 @@
+
+
+java:S2589J"7Remove this expression which always evaluates to "true"(ÿ«„¦ψÿÿÿÿ8πω‡Έ†2J$c64441b8-69de-4e2b-af79-9d885c69b497
+
+java:S2589/"7Remove this expression which always evaluates to "true"(ÿ«„¦ψÿÿÿÿ8πω‡Έ†2J$c4408e7b-1b4c-4ab4-9d7f-9b6518db9a28
+€
+java:S2589"7Remove this expression which always evaluates to "true"(ÿ«„¦ψÿÿÿÿ8πω‡Έ†2J$512b5479-6d9d-49d2-bcd6-bf31179b1833
+­	java:S116"fRename this field "BUSCAR_TIPOMEMBRESIA_POR_ID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥ ψΤÿÿÿÿÿ8τω‡Έ†2J$179d0ae1-271d-4eba-944e-744fb0592194
+¨	java:S116"aRename this field "OBTENER_TIPOMEMBRESIAS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ΠρΝ„ϋÿÿÿÿ8τω‡Έ†2J$36a35917-482f-4192-84e6-44b59d274cf6
+§	java:S116"`Rename this field "AGREGAR_TIPOMEMBRESIA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Τ½ψÿÿÿÿ8τω‡Έ†2J$2a53e078-92bc-4239-85ff-67ea282060c9
+ª	java:S116"cRename this field "ACTUALIZAR_TIPOMEMBRESIA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ξ΄ίµÿÿÿÿÿ8τω‡Έ†2J$1781da3e-b7e8-4785-b05f-4ab6c7a25bef
+£	java:S116"aRename this field "ELIMINAR_TIPOMEMBRESIA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(έΈώ8τω‡Έ†2J$24efcd8e-0436-44ec-b34f-1b77f855eedc
+i
+java:S1170"!Make this final field static too.(¥ ψΤÿÿÿÿÿ8τω‡Έ†2J$8958407e-22ba-4141-af04-78a6b895f626
+i
+java:S1170"!Make this final field static too.(ΠρΝ„ϋÿÿÿÿ8τω‡Έ†2J$f49b69b9-d1c5-4df9-a5ac-cbe3e55d4bf8
+i
+java:S1170"!Make this final field static too.(Τ½ψÿÿÿÿ8τω‡Έ†2J$9df5837c-5a62-4072-a8f3-d83a71f0ca60
+i
+java:S1170"!Make this final field static too.(ξ΄ίµÿÿÿÿÿ8τω‡Έ†2J$8ca2d882-bc8c-4237-abe1-411c7b0ccd2b
+d
+java:S1170"!Make this final field static too.(έΈώ8τω‡Έ†2J$7095c863-8620-4002-bd49-f8211126d899
+g
+java:S6905"Don't use the query "SELECT *".(ΠρΝ„ϋÿÿÿÿ8ψω‡Έ†2J$ff216fc3-1f7f-47b7-89f9-6a6ac072ffb6
+g
+java:S6905"Don't use the query "SELECT *".(¥ ψΤÿÿÿÿÿ8όω‡Έ†2J$1610fd71-06e9-4d46-b029-8e16a2233508

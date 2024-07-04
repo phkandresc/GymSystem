@@ -66,14 +66,8 @@ $src/controller/WindowController.java,b\8\b8025bb98696a2145deb0caf9186d8d785ae9
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
 D
 src/HelloPdfApp.java,7\9\796168692f0c6a67e72c91239add26fc267f2fa0
-B
-hs_err_pid7192.log,5\c\5cc7f7f194124cbc44d44d8b9f41ae18508500d2
-C
-hs_err_pid20160.log,9\a\9a24276b2cb37adfcf80c1f27b891c2f4562e499
 N
 src/html/CorreoNuevoSocio.html,6\4\64f65dc83ac2e1c13b772eb7b321199b20d1cecc
-C
-src/html/styles.css,a\d\ada19b060b2f48ffc42c446a986bb5e2975c78dc
 U
 %src/html/CorreoRegistroMembresia.html,4\b\4b06dd99858156081cd64d6c6ac8571c57b185cf
 N
