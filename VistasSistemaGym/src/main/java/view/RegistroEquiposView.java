@@ -237,11 +237,11 @@ public class RegistroEquiposView extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton ButtonCancelar;
     public javax.swing.JButton ButtonRegistrar;
-    private javax.swing.JComboBox<String> CombBoxEspacioEquipo;
-    private javax.swing.JComboBox<String> CombBoxEstadoEquipo;
-    private javax.swing.JTextArea TxtDescripcion;
-    private javax.swing.JTextField TxtID;
-    private javax.swing.JTextField TxtNombreEquipo;
+    public javax.swing.JComboBox<String> CombBoxEspacioEquipo;
+    public javax.swing.JComboBox<String> CombBoxEstadoEquipo;
+    public javax.swing.JTextArea TxtDescripcion;
+    public javax.swing.JTextField TxtID;
+    public javax.swing.JTextField TxtNombreEquipo;
     public com.toedter.calendar.JDateChooser dcFechaAdquisicionEquipo;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
