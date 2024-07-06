@@ -132,6 +132,7 @@ public class MembresiaDAO implements CRUD<Membresia>{
                         .idGimnasio(rs.getInt("id_gimnasio"))
                         .fechaInicio(rs.getDate("fecha_inicio"))
                         .fechaFin(rs.getDate("fecha_fin"))
+                        .estado(rs.getString("estado"))
                         .build();
                 membresias.add(membresia);
             }
@@ -253,5 +254,39 @@ public class MembresiaDAO implements CRUD<Membresia>{
         }
     }
 
+    public List<Membresia> obtenerMembresiasPorEstado(String criterio) throws SQLException {
+        List<Membresia> membresias = new ArrayList<>();
+        PreparedStatement ps = null;
+        Connection conexion = DBConexion.getConnection();
+        ResultSet rs = null;
+        try {
+            ps = conexion.prepareStatement("SELECT * FROM membresias WHERE estado = ?");
+            ps.setString(1, criterio);
+            rs = ps.executeQuery();
+            while (rs.next()) {
+                Membresia membresia = new Membresia.Builder()
+                        .id(rs.getInt("id"))
+                        .socio(new SocioDAO().buscarDatoPorId(rs.getInt("id_socio")))
+                        .tipoMembresia(new TipoMembresiaDAO().buscarDatoPorId(rs.getInt("id_tipomembresia")))
+                        .idGimnasio(rs.getInt("id_gimnasio"))
+                        .fechaInicio(rs.getDate("fecha_inicio"))
+                        .fechaFin(rs.getDate("fecha_fin"))
+                        .estado(rs.getString("estado"))
+                        .build();
+                membresias.add(membresia);
+            }
+        } catch (SQLException e) {
+            LOGGER.severe(e.getMessage());
+        } finally {
+            if (ps != null) {
+                ps.close();
+            }
 
+            if (conexion != null) {
+                conexion.close();
+            }
+            DBConexion.closeConnection(conexion);
+        }
+        return membresias;
+    }
 }

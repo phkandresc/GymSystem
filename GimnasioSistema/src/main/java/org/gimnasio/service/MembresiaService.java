@@ -27,6 +27,7 @@ public class MembresiaService {
         this.tipoMembresiaDAO = new TipoMembresiaDAO();
         this.pagosDAO = new PagosDAO();
         this.facturaDAO = new FacturaDAO();
+
     }
 
     public boolean registrarMembresia(Socio socio, TipoMembresia tipoMembresia) throws SQLException {
@@ -137,11 +138,12 @@ public class MembresiaService {
                 long daysUntilExpiry = ChronoUnit.DAYS.between(today, membresia.getFechaFin().toLocalDate());
 
                 if (daysUntilExpiry <= 7 && daysUntilExpiry >= 0) {
-                    enviarAlerta(membresia.getSocio().getId(), "Tu membresía está por caducar en " + daysUntilExpiry + " días.");
+                    // Membresía por caducar
+                    enviarAlerta(membresia);
                     membresiaDAO.actualizarEstadoMembresia(membresia.getId(), "por caducar");
                 } else if (daysUntilExpiry < 0) {
                     // Membresía vencida
-                    enviarAlerta(membresia.getSocio().getId(), "Tu membresía ha vencido.");
+                    enviarAlerta(membresia);
                     membresiaDAO.actualizarEstadoMembresia(membresia.getId(), "inactivo");
                 }
             }
@@ -150,9 +152,9 @@ public class MembresiaService {
         }
     }
 
-    private void enviarAlerta(int idSocio, String mensaje) {
-        // Implementa el envío de la alerta (correo, notificación, etc.)
-        System.out.println("Enviando alerta a socio " + idSocio + ": " + mensaje);
+    private void enviarAlerta(Membresia membresiaPorCaducar) {
+        // Implementa el envío de la alerta por correo electrónico
+        EmailService.enviarCorreoAlertaMembresiaPorCaducar(membresiaPorCaducar);
     }
 
     public void agregarTipoMembresia(TipoMembresia tipoMembresia) throws SQLException {
@@ -182,6 +184,24 @@ public class MembresiaService {
             }
         } catch (SQLException e) {
             JOptionPane.showMessageDialog(null, "Error al eliminar el tipo de membresía: " + e.getMessage());
+        }
+    }
+
+    public List<Membresia> obtenerListaMembresias() throws SQLException {
+        try {
+            return membresiaDAO.obtenerListaDeDatos();
+        } catch (SQLException e) {
+            JOptionPane.showMessageDialog(null, "Error al obtener la lista de membresías: " + e.getMessage());
+            return null;
+        }
+    }
+
+    public List<Membresia> obtenerMembresiasPorEstado(String criterio) throws SQLException {
+        try {
+            return membresiaDAO.obtenerMembresiasPorEstado(criterio);
+        } catch (SQLException e) {
+            JOptionPane.showMessageDialog(null, "Error al buscar las membresías: " + e.getMessage());
+            return null;
         }
     }
 }

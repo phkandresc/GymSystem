@@ -10,12 +10,10 @@ package org.gimnasio.view;
  */
 public class RegistroMembresiaView extends javax.swing.JFrame {
 
-    /**
-     * Creates new form RegistroMembresiaView
-     */
     public RegistroMembresiaView() {
-        initComponents();
         addWindowListener(new org.gimnasio.controller.WindowController());
+        initComponents();
+        System.out.println("RegistroMembresiaView");
     }
 
     /**
@@ -101,11 +99,6 @@ public class RegistroMembresiaView extends javax.swing.JFrame {
 
         cmbTipoMembresia.setFont(new java.awt.Font("Poppins Light", 0, 14)); // NOI18N
         cmbTipoMembresia.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(0, 0, 0)));
-        cmbTipoMembresia.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cmbTipoMembresiaActionPerformed(evt);
-            }
-        });
         jPanel2.add(cmbTipoMembresia, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 30, 160, 30));
 
         lblNombreMembresia.setBackground(new java.awt.Color(255, 255, 204));
@@ -163,11 +156,7 @@ public class RegistroMembresiaView extends javax.swing.JFrame {
         txtCedula.setFont(new java.awt.Font("Poppins Light", 0, 14)); // NOI18N
         txtCedula.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         txtCedula.setEnabled(false);
-        txtCedula.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtCedulaActionPerformed(evt);
-            }
-        });
+
         jPanel3.add(txtCedula, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, 310, 27));
 
         jLabel12.setFont(new java.awt.Font("Poppins Medium", 0, 14)); // NOI18N
@@ -230,11 +219,7 @@ public class RegistroMembresiaView extends javax.swing.JFrame {
         btnCobrar.setForeground(new java.awt.Color(255, 255, 255));
         btnCobrar.setText("Registrar membresia");
         btnCobrar.setBorder(null);
-        btnCobrar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCobrarActionPerformed(evt);
-            }
-        });
+
         jPanel3.add(btnCobrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 400, 310, 30));
 
         bg.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 80, 350, 450));
@@ -245,52 +230,6 @@ public class RegistroMembresiaView extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void cmbTipoMembresiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbTipoMembresiaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cmbTipoMembresiaActionPerformed
-
-    private void btnCobrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCobrarActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnCobrarActionPerformed
-
-    private void txtCedulaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCedulaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtCedulaActionPerformed
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(RegistroMembresiaView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(RegistroMembresiaView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(RegistroMembresiaView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(RegistroMembresiaView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new RegistroMembresiaView().setVisible(true);
-            }
-        });
-    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel bg;

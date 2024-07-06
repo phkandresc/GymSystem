@@ -4,7 +4,6 @@
  */
 package org.gimnasio.view;
 
-
 /**
  *
  * @author kacor
@@ -17,6 +16,7 @@ public class ListaSociosView extends javax.swing.JFrame {
     public ListaSociosView() {
         initComponents();
         this.setLocationRelativeTo(null);
+        addWindowListener(new org.gimnasio.controller.WindowController());
     }
 
     /**
@@ -45,7 +45,8 @@ public class ListaSociosView extends javax.swing.JFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/barraTitulo.png"))); // NOI18N
         jLabel1.setText("jLabel1");
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Lista de Socios");
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -150,6 +151,7 @@ public class ListaSociosView extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>
 
     /**

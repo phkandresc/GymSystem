@@ -1,50 +1,56 @@
 
+”	java:S117“"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Å‡ä¾8“‚°€ˆ2J$2950c204-8d53-4e82-a597-c7bfc3d753ef
 
-java:S11926"GDefine a constant instead of duplicating this literal "cedula" 6 times.(´Ÿùıúÿÿÿÿ8šÎÜş‡2J$324fffd5-97f1-40e5-94cb-b339c68423a8
+java:S11926"GDefine a constant instead of duplicating this literal "cedula" 7 times.(´Ÿùıúÿÿÿÿ8–‚°€ˆ2J$25f876a4-5eb5-484a-b198-310dcc8e88c0
+”
+java:S1192="LDefine a constant instead of duplicating this literal "foto_perfil" 6 times.(­îê•úÿÿÿÿ8–‚°€ˆ2J$4c9e69ec-1af0-47b8-9dd0-3df1cfe9e773
 ™
-java:S1192<"QDefine a constant instead of duplicating this literal "fecha_nacimiento" 6 times.(Š¤îÒşÿÿÿÿ8šÎÜş‡2J$f42d5a3d-fb7a-434a-82e0-b6b9c017ebe9
+java:S1192<"QDefine a constant instead of duplicating this literal "fecha_nacimiento" 7 times.(Š¤îÒşÿÿÿÿ8–‚°€ˆ2J$ddcb4f8a-93a1-4dc4-b76c-3ad4593dc306
 
-java:S1192;"JDefine a constant instead of duplicating this literal "direccion" 6 times.(¬¿ş—8šÎÜş‡2J$5de88a5d-f6e9-4547-b12a-1a1173f0e12b
+java:S1192;"JDefine a constant instead of duplicating this literal "direccion" 7 times.(¬¿ş—8–‚°€ˆ2J$a01dd01d-6544-438c-98f5-95ffdbe99bd6
 Š
-java:S11927"GDefine a constant instead of duplicating this literal "nombre" 6 times.(—šæª8šÎÜş‡2J$8dff3ab4-add0-4c15-9dbc-92edc8686814
+java:S11927"GDefine a constant instead of duplicating this literal "nombre" 7 times.(—šæª8–‚°€ˆ2J$15ccb20c-625a-4b4a-aa77-450d00e1f785
 “
-java:S1192:"PDefine a constant instead of duplicating this literal "numero_telefono" 6 times.(äß¹8›ÎÜş‡2J$e34ec04e-2cf7-4cb6-85f2-4ba8e27bb616
+java:S1192:"PDefine a constant instead of duplicating this literal "numero_telefono" 7 times.(äß¹8—‚°€ˆ2J$f2dd2c99-80f6-4f19-becd-568bea428126
 ‘
-java:S11928"IDefine a constant instead of duplicating this literal "apellido" 6 times.(›Ü–ùÿÿÿÿ8›ÎÜş‡2J$955c1185-2658-437a-9bc4-bc5630645248
+java:S11928"IDefine a constant instead of duplicating this literal "apellido" 7 times.(›Ü–ùÿÿÿÿ8—‚°€ˆ2J$8a4be02f-544d-4e2a-926f-c838ab41b451
 
-java:S11929"FDefine a constant instead of duplicating this literal "email" 6 times.(İªßÛùÿÿÿÿ8›ÎÜş‡2J$7f0b338c-8121-4b6d-90b6-51534fa9cc63
-¥	java:S116"cRename this field "SELECCIONAR_TODOS_SOCIOS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ª±œ£8›ÎÜş‡2J$e399bc45-9aa7-4a2a-ba18-6f1d1e19f1a3
-©	java:S116"bRename this field "BUSCARSOCIO_PORAPELLIDO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÁÁ¶ìşÿÿÿÿ8›ÎÜş‡2J$f412fe3c-b104-4536-aec5-0d743aa05738
-§	java:S116"`Rename this field "BUSCARSOCIO_PORCEDULA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÈÂÕ˜ùÿÿÿÿ8›ÎÜş‡2J$7851de6b-b2f7-45d9-88a9-c84d7b73f342
-£	java:S116"\Rename this field "BUSCARSOCIO_PORID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÖèÍ üÿÿÿÿ8›ÎÜş‡2J$0f3b5b89-0465-41e4-b3ef-631a892708b4
- 	java:S116"YRename this field "ELIMINAR_SOCIO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šëúÿÿÿÿ8›ÎÜş‡2J$2379e5ce-09bd-41e7-9a0b-7991aeac5c4c
-	java:S116"[Rename this field "ACTUALIZAR_SOCIO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(çãúö8›ÎÜş‡2J$8a066d4b-8410-4533-b526-9538cc64b2e0
-œ	java:S116"ZRename this field "REGISTRAR_SOCIO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸Â›8›ÎÜş‡2J$9e83e8ed-2dfd-452b-814b-9e0ee8ce1f18
+java:S11929"FDefine a constant instead of duplicating this literal "email" 7 times.(İªßÛùÿÿÿÿ8—‚°€ˆ2J$b47c83bf-e548-488b-bb15-2b5c4f71adff
+¥	java:S116"cRename this field "SELECCIONAR_TODOS_SOCIOS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ª±œ£8—‚°€ˆ2J$5e0ec885-0768-45df-9673-0bee8775997b
+©	java:S116"bRename this field "BUSCARSOCIO_PORAPELLIDO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÁÁ¶ìşÿÿÿÿ8—‚°€ˆ2J$af4d714c-17ad-4c1f-8b6d-e72b030883e7
+§	java:S116"`Rename this field "BUSCARSOCIO_PORCEDULA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÈÂÕ˜ùÿÿÿÿ8—‚°€ˆ2J$e7fa5972-975b-4b6b-b3d9-477d9f605cd5
+£	java:S116"\Rename this field "BUSCARSOCIO_PORID" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÖèÍ üÿÿÿÿ8—‚°€ˆ2J$d6834f61-92ac-4550-9048-104bd3bee040
+ 	java:S116"YRename this field "ELIMINAR_SOCIO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šëúÿÿÿÿ8—‚°€ˆ2J$81aed3bb-e822-4adf-97d9-4e67f8e65650
+	java:S116"[Rename this field "ACTUALIZAR_SOCIO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(çãúö8—‚°€ˆ2J$71b63750-e2f7-406f-b30e-e57165bc973e
+œ	java:S116"ZRename this field "REGISTRAR_SOCIO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸Â›8—‚°€ˆ2J$5742ca03-9dc5-4a93-b304-497b8d0e27a0
 d
-java:S1170"!Make this final field static too.(ª±œ£8›ÎÜş‡2J$2bade9c8-ce9d-48d3-8aa2-1e1d3af19b7d
+java:S1170"!Make this final field static too.(ª±œ£8—‚°€ˆ2J$4ce35daf-fede-4c41-ad7b-49864b99df0e
 i
-java:S1170"!Make this final field static too.(ÁÁ¶ìşÿÿÿÿ8›ÎÜş‡2J$1708a3ba-459a-46d5-9c63-69c96b096031
+java:S1170"!Make this final field static too.(ÁÁ¶ìşÿÿÿÿ8—‚°€ˆ2J$76565145-c39c-4e9b-88bc-2e14467fee02
 i
-java:S1170"!Make this final field static too.(ÈÂÕ˜ùÿÿÿÿ8›ÎÜş‡2J$f76f76fa-32e3-40fd-8da6-412cb869eb5e
+java:S1170"!Make this final field static too.(ÈÂÕ˜ùÿÿÿÿ8—‚°€ˆ2J$c4a68a5f-fae6-4b52-a0b2-8360db55f418
 i
-java:S1170"!Make this final field static too.(ÖèÍ üÿÿÿÿ8›ÎÜş‡2J$4f01cc83-3fda-4a63-b519-c81a804ee7ad
+java:S1170"!Make this final field static too.(ÖèÍ üÿÿÿÿ8—‚°€ˆ2J$70094a31-bff9-4867-918f-b0f172600a79
 i
-java:S1170"!Make this final field static too.(šëúÿÿÿÿ8›ÎÜş‡2J$c3a7aada-7cce-4267-9980-f6806f7b9913
+java:S1170"!Make this final field static too.(šëúÿÿÿÿ8—‚°€ˆ2J$bb169b17-c484-415d-8da3-074c2bea11d2
 d
-java:S1170"!Make this final field static too.(çãúö8›ÎÜş‡2J$403d762b-6ad3-4d0a-af0d-82a9abe5513e
+java:S1170"!Make this final field static too.(çãúö8—‚°€ˆ2J$8843dd3f-ced9-4b7e-9255-71d6b9a80f52
 d
-java:S1170"!Make this final field static too.(¸Â›8›ÎÜş‡2J$466dc69a-6650-4469-8955-d51d5d7102f6
+java:S1170"!Make this final field static too.(¸Â›8—‚°€ˆ2J$c4554ae3-8d3f-4b1b-9e67-559981f78bb1
 g
-java:S6905-"Don't use the query "SELECT *".(Å€®¹ùÿÿÿÿ8£ÎÜş‡2J$d2d8154d-9e63-4f04-a131-e42ca3190d0c
+java:S6905-"Don't use the query "SELECT *".(Å€®¹ùÿÿÿÿ8œ‚°€ˆ2J$ae04c65b-ff3d-47d9-946c-e6d4be64e0bd
 g
-java:S6905J"Don't use the query "SELECT *".(ûğ€ªüÿÿÿÿ8¤ÎÜş‡2J$b97f1b5c-6079-48a3-a72a-d4b39a866364
+java:S6905K"Don't use the query "SELECT *".(ûğ€ªüÿÿÿÿ8Ÿ‚°€ˆ2J$22022b3a-7e1f-45f4-8725-56d1a81ea657
 b
-java:S6905"Don't use the query "SELECT *".(ª±œ£8§ÎÜş‡2J$bd2d2f94-2f0d-4a6d-ad43-5cd8099f0aa9
+java:S6905"Don't use the query "SELECT *".(ª±œ£8 ‚°€ˆ2J$b492948a-a29b-41ac-8001-458d55da122e
 g
-java:S6905"Don't use the query "SELECT *".(ÖèÍ üÿÿÿÿ8¬ÎÜş‡2J$f841405f-6d52-41e8-bf74-34699e6dd1f2
+java:S6905"Don't use the query "SELECT *".(ÖèÍ üÿÿÿÿ8¥‚°€ˆ2J$d9c8fa81-be2a-418e-8179-bcdffc0ed9a1
 h
-java:S6905õ"Don't use the query "SELECT *".(Ú‡‡İùÿÿÿÿ8°ÎÜş‡2J$cc7325e1-4259-4695-a842-0c1103c5bc48
+java:S6905ù"Don't use the query "SELECT *".(Ú‡‡İùÿÿÿÿ8¨‚°€ˆ2J$c103d6a5-f74d-41b0-a03c-b7762b5be4e4
+‘	java:S100“"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Å‡ä¾8©‚°€ˆ2J$28097474-88ed-4ddd-b8e9-ca96b94d8275
+h
+java:S6905–"Don't use the query "SELECT *".(æ’ë³ÿÿÿÿÿ8ª‚°€ˆ2J$8d4606ea-6331-4ed4-8f44-1c9835c58950
 ƒ
-java:S1068";Remove this unused "BUSCARSOCIO_PORAPELLIDO" private field.(ÁÁ¶ìşÿÿÿÿ8²ÎÜş‡2J$6bae7417-8805-40d6-8365-faf149fcf06f
+java:S1068";Remove this unused "BUSCARSOCIO_PORAPELLIDO" private field.(ÁÁ¶ìşÿÿÿÿ8ª‚°€ˆ2J$15fdcb91-9a14-46e2-93b5-7076c2bb1453
 
-java:S1068"9Remove this unused "BUSCARSOCIO_PORCEDULA" private field.(ÈÂÕ˜ùÿÿÿÿ8²ÎÜş‡2J$33fb5197-8689-49e6-9474-baeb97948d06
+java:S1068"9Remove this unused "BUSCARSOCIO_PORCEDULA" private field.(ÈÂÕ˜ùÿÿÿÿ8ª‚°€ˆ2J$91993808-f2ee-4650-8b9c-0e9484588721

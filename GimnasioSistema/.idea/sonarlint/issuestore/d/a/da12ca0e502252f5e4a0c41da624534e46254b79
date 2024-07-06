@@ -1,27 +1,34 @@
 
-	java:S112."FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ä§ñÑ†2J$6331c6fc-5035-49bf-9320-6642d4a7ec70
-	java:S112r"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ä§ñÑ†2J$b3a07817-4d8e-4771-93e8-b2ea6aa1bb54
+	java:S112/"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8Á¾¶‹ˆ2J$698feb4f-254a-4df2-b4c1-c822585cd2d1
+	java:S112s"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8Â¾¶‹ˆ2J$2826a790-cb27-4ab6-bb3e-f2f21efd5674
+Œ
+java:S1192A"IDefine a constant instead of duplicating this literal "{nombre}" 3 times.(Å·£ã8Â¾¶‹ˆ2J$4a057985-6710-407e-944a-86827079554b
 œ
-java:S1192"TDefine a constant instead of duplicating this literal "ftbu wjjn ptpx odxx" 3 times.(·¬•øÿÿÿÿ8àêÍÖ†2J$7c6ed8a8-7a0d-44af-8192-4bb8633ac4d8
+java:S1192"TDefine a constant instead of duplicating this literal "ftbu wjjn ptpx odxx" 3 times.(·¬•øÿÿÿÿ8Â¾¶‹ˆ2J$9ac42b4d-5649-4ded-9626-3fa079e48017
 
-java:S1192"VDefine a constant instead of duplicating this literal "kacoraizaca@gmail.com" 3 times.(âúÏêüÿÿÿÿ8ıÌÖ†2J$67a448d6-5c89-4d17-b2c6-30c8588f355e
+java:S1192"VDefine a constant instead of duplicating this literal "kacoraizaca@gmail.com" 3 times.(âúÏêüÿÿÿÿ8Â¾¶‹ˆ2J$39fe1689-85f0-4210-af47-563ec30fbbe7
+
+java:S1192B"KDefine a constant instead of duplicating this literal "{apellido}" 3 times.(ÍÆ·€8Â¾¶‹ˆ2J$60b3b344-33e5-4846-88ce-70827b42a338
 i
-java:S1170"!Make this final field static too.(âúÏêüÿÿÿÿ8ä§ñÑ†2J$dde54b74-0452-4e42-b709-2cae0512161f
+java:S1170"!Make this final field static too.(âúÏêüÿÿÿÿ8Ä¾¶‹ˆ2J$63bde8b2-87a6-4341-8316-26276cb42c83
 i
-java:S1170"!Make this final field static too.(·¬•øÿÿÿÿ8å§ñÑ†2J$e13f6ea0-3964-48d6-ae60-101b19e4be9e
+java:S1170"!Make this final field static too.(·¬•øÿÿÿÿ8Ä¾¶‹ˆ2J$8ff15674-81cc-41e0-ba53-c04c7101ae5f
 }
-java:S1161!":Add the "@Override" annotation above this method signature(‡èú×8û§ñÑ†2J$05f70838-9a1e-4342-803a-9cca8ab2c004
+java:S1161"":Add the "@Override" annotation above this method signature(‡èú×8Ê¾¶‹ˆ2J$7ffc0f30-515b-4d6c-9300-b1f119f8d1ae
 ~
-java:S6437""6Revoke and change this password, as it is compromised.(ˆÙı½øÿÿÿÿ8Š¨ñÑ†2J$ea9bc587-b273-4e9c-82f8-c691c9db8ec4
+java:S6437#"6Revoke and change this password, as it is compromised.(ˆÙı½øÿÿÿÿ8Ê¾¶‹ˆ2J$492164f2-79c4-4bc4-b48e-5b3a6a95fa87
 }
-java:S1161Y":Add the "@Override" annotation above this method signature(‡èú×8Š¨ñÑ†2J$d62321cc-56e4-49fe-bdd7-109b081c1b6d
+java:S1161Z":Add the "@Override" annotation above this method signature(‡èú×8Ñ¾¶‹ˆ2J$9dde33ad-05d9-47c9-994c-4215ba05b21e
 ~
-java:S6437Z"6Revoke and change this password, as it is compromised.(ˆÙı½øÿÿÿÿ8ñêÍÖ†2J$1c396a6c-d14c-48d8-b2e0-ea14e7287dc2
+java:S6437["6Revoke and change this password, as it is compromised.(ˆÙı½øÿÿÿÿ8Ñ¾¶‹ˆ2J$4e4287f1-7d08-4568-93c6-abc8683e5f9f
+Y	java:S125"<This block of commented-out lines of code should be removed.(Çµí‘8ù¤º‹ˆ2
 |
-java:S1128"9Remove this unused import 'org.gimnasio.daos.FacturaDAO'.(÷ô¨È8ôêÍÖ†2J$7d43ef65-f795-420f-8ba1-ab701dcb01ae
+java:S1128"9Remove this unused import 'org.gimnasio.daos.FacturaDAO'.(÷ô¨È8Ö¾¶‹ˆ2J$ee6305eb-b964-43d5-b9c7-76d2f64be017
 
-java:S1128"7Remove this unused import 'org.gimnasio.model.Factura'.(ä±Èÿÿÿÿÿ8ôêÍÖ†2J$98bfc3a6-f88b-4704-b86b-8f0133aa0d59
+java:S1128"7Remove this unused import 'org.gimnasio.model.Factura'.(ä±Èÿÿÿÿÿ8Ö¾¶‹ˆ2J$6bda4db5-2f5b-49a2-b947-cd4383a80cac
+G
+java:S1128"*Remove this unused import 'java.sql.Date'.(ÙÀ½Ê8ù¤º‹ˆ2
 t
-java:S1068",Remove this unused "username" private field.(âúÏêüÿÿÿÿ8ÁıÌÖ†2J$711b9109-7529-4a07-a7a3-3024adf7ebae
+java:S1068",Remove this unused "username" private field.(âúÏêüÿÿÿÿ8Ö¾¶‹ˆ2J$e05fcd8c-8746-43b9-bdf3-3fa4bfa89b44
 t
-java:S1068",Remove this unused "password" private field.(·¬•øÿÿÿÿ8ôêÍÖ†2J$e5b14cea-ac09-4fb9-ace4-56741451d8f5
+java:S1068",Remove this unused "password" private field.(·¬•øÿÿÿÿ8Ö¾¶‹ˆ2J$02d4bcc6-9c8e-4efd-a5b3-cd13b45019f4

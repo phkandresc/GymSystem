@@ -18,9 +18,14 @@ public class PaginaPrincipalController implements ActionListener, MouseListener,
 
     private PaginaPrincipalController() {
         paginaPrincipalView.setLocationRelativeTo(null);
+        //Gestion de socios
         paginaPrincipalView.btnRegistrarNuevoSocio.addActionListener(this);
         paginaPrincipalView.btnVerSocios.addActionListener(this);
+        paginaPrincipalView.btnAdministrarSocios.addActionListener(this);
+        //Gestion de membresias
         paginaPrincipalView.btnRegistrarMembresia.addActionListener(this);
+        paginaPrincipalView.btnAgregarTipoMembresia.addActionListener(this);
+        paginaPrincipalView.btnListaMembresias.addActionListener(this);
         this.membresiaService = new MembresiaService();
         iniciarVerificacionDeMembresias();
     }
@@ -57,13 +62,22 @@ public class PaginaPrincipalController implements ActionListener, MouseListener,
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == paginaPrincipalView.btnRegistrarNuevoSocio) {
             paginaPrincipalView.dispose();
-            RegistroSociosController registroSociosController = new RegistroSociosController();
+            new RegistroSociosController();
         } else if (e.getSource() == paginaPrincipalView.btnVerSocios) {
             paginaPrincipalView.dispose();
-            ListaSociosController listaSociosController = new ListaSociosController();
-        } else if (e.getSource() == paginaPrincipalView.btnRegistrarMembresia) {
+            new ListaSociosController();
+        }else if(e.getSource() == paginaPrincipalView.btnAdministrarSocios){
             paginaPrincipalView.dispose();
-            RegistroMembresiaController registroMembresiaController = new RegistroMembresiaController();
+            new AdministrarSociosController();
+        }else if(e.getSource() == paginaPrincipalView.btnAgregarTipoMembresia){
+            paginaPrincipalView.dispose();
+            new TiposMembresiaController();
+        }else if (e.getSource() == paginaPrincipalView.btnRegistrarMembresia) {
+            paginaPrincipalView.dispose();
+            new RegistroMembresiaController();
+        } else if (e.getSource() == paginaPrincipalView.btnListaMembresias) {
+            paginaPrincipalView.dispose();
+            new ListaMembresiasController();
         }
     }
 
@@ -110,4 +124,9 @@ public class PaginaPrincipalController implements ActionListener, MouseListener,
     public void cerrarPaginaPrincipal() {
         paginaPrincipalView.setVisible(false);
     }
+
+    public static void main(String[] args) {
+        PaginaPrincipalController.getInstance().mostrarPaginaPrincipal();
+    }
+
 }

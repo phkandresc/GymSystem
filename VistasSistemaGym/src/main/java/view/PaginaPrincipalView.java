@@ -78,10 +78,18 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
         btnAdministrarSocios = new javax.swing.JButton();
         jLabel38 = new javax.swing.JLabel();
         jLabel36 = new javax.swing.JLabel();
-        paginaPagosPanel = new javax.swing.JPanel();
+        paginaMembresiasPanel = new javax.swing.JPanel();
         jLabel35 = new javax.swing.JLabel();
         btnRegistrarMembresia = new javax.swing.JButton();
         jLabel34 = new javax.swing.JLabel();
+        jSeparator3 = new javax.swing.JSeparator();
+        jLabel40 = new javax.swing.JLabel();
+        jLabel46 = new javax.swing.JLabel();
+        btnAgregarTipoMembresia = new javax.swing.JButton();
+        jLabel53 = new javax.swing.JLabel();
+        jLabel43 = new javax.swing.JLabel();
+        btnListaMembresias = new javax.swing.JButton();
+        jLabel49 = new javax.swing.JLabel();
         paginaClasesPanel = new javax.swing.JPanel();
         jLabel26 = new javax.swing.JLabel();
         paginaActividadesPanel = new javax.swing.JPanel();
@@ -364,26 +372,63 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
 
         GrupoDePaneles.addTab("tab2", paginaSociosPanel);
 
-        paginaPagosPanel.setBackground(new java.awt.Color(255, 255, 255));
-        paginaPagosPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        paginaMembresiasPanel.setBackground(new java.awt.Color(255, 255, 255));
+        paginaMembresiasPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/image 1.jpg"))); // NOI18N
-        paginaPagosPanel.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 100, -1, -1));
+        paginaMembresiasPanel.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, -1, -1));
 
         btnRegistrarMembresia.setBackground(new java.awt.Color(255, 153, 102));
         btnRegistrarMembresia.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
-        btnRegistrarMembresia.setText("Registrar membresia");
+        btnRegistrarMembresia.setText("Registrar una membresia");
         btnRegistrarMembresia.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRegistrarMembresiaActionPerformed(evt);
             }
         });
-        paginaPagosPanel.add(btnRegistrarMembresia, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 450, -1, 40));
+        paginaMembresiasPanel.add(btnRegistrarMembresia, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 470, -1, 40));
 
         jLabel34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Rectangle 2 (1).png"))); // NOI18N
-        paginaPagosPanel.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(155, 100, 270, -1));
+        paginaMembresiasPanel.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, 270, -1));
+        paginaMembresiasPanel.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, 350, 10));
 
-        GrupoDePaneles.addTab("tab3", paginaPagosPanel);
+        jLabel40.setFont(new java.awt.Font("Poppins SemiBold", 0, 36)); // NOI18N
+        jLabel40.setText("Membresias");
+        paginaMembresiasPanel.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
+
+        jLabel46.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/slide-multifuerza-002.jpg"))); // NOI18N
+        paginaMembresiasPanel.add(jLabel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 130, 250, -1));
+
+        btnAgregarTipoMembresia.setBackground(new java.awt.Color(255, 153, 102));
+        btnAgregarTipoMembresia.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
+        btnAgregarTipoMembresia.setText("Agregar un tipo de membresia");
+        btnAgregarTipoMembresia.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAgregarTipoMembresiaActionPerformed(evt);
+            }
+        });
+        paginaMembresiasPanel.add(btnAgregarTipoMembresia, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 470, -1, 40));
+
+        jLabel53.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/1366_2000.jpeg"))); // NOI18N
+        paginaMembresiasPanel.add(jLabel53, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 120, 250, 300));
+
+        jLabel43.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Rectangle 2 (1).png"))); // NOI18N
+        paginaMembresiasPanel.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 120, 270, -1));
+
+        btnListaMembresias.setBackground(new java.awt.Color(255, 153, 102));
+        btnListaMembresias.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
+        btnListaMembresias.setText("Ver lista de membresias");
+        btnListaMembresias.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnListaMembresiasActionPerformed(evt);
+            }
+        });
+        paginaMembresiasPanel.add(btnListaMembresias, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 470, -1, 40));
+
+        jLabel49.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Rectangle 2 (1).png"))); // NOI18N
+        paginaMembresiasPanel.add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 120, 270, -1));
+
+        GrupoDePaneles.addTab("tab3", paginaMembresiasPanel);
 
         paginaClasesPanel.setBackground(new java.awt.Color(255, 255, 255));
         paginaClasesPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -514,7 +559,7 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
         jpPagos.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel7.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
-        jLabel7.setText("Pagos");
+        jLabel7.setText("Membresias");
         jpPagos.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, -1, 30));
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconoMembresiaNegro.png"))); // NOI18N
@@ -796,6 +841,14 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnAdministrarSociosActionPerformed
 
+    private void btnAgregarTipoMembresiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarTipoMembresiaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnAgregarTipoMembresiaActionPerformed
+
+    private void btnListaMembresiasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnListaMembresiasActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnListaMembresiasActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -836,6 +889,8 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
     private javax.swing.JTabbedPane GrupoDePaneles;
     private javax.swing.JPanel background;
     public javax.swing.JButton btnAdministrarSocios;
+    public javax.swing.JButton btnAgregarTipoMembresia;
+    public javax.swing.JButton btnListaMembresias;
     public javax.swing.JButton btnRegistrarMembresia;
     public javax.swing.JButton btnRegistrarNuevoSocio;
     public javax.swing.JButton btnVerSocios;
@@ -873,16 +928,21 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel38;
     private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel40;
     private javax.swing.JLabel jLabel41;
     private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel43;
     private javax.swing.JLabel jLabel44;
     private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel46;
     private javax.swing.JLabel jLabel47;
     private javax.swing.JLabel jLabel48;
+    private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel50;
     private javax.swing.JLabel jLabel51;
     private javax.swing.JLabel jLabel52;
+    private javax.swing.JLabel jLabel53;
     private javax.swing.JLabel jLabel54;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
@@ -890,6 +950,7 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
+    private javax.swing.JSeparator jSeparator3;
     private javax.swing.JPanel jpActividades;
     private javax.swing.JPanel jpCerrarSesion;
     private javax.swing.JPanel jpClases;
@@ -899,23 +960,23 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
     private javax.swing.JPanel jpPaginaPrincipal;
     private javax.swing.JPanel jpPagos;
     private javax.swing.JPanel jpSocios;
-    private javax.swing.JLabel lblCorreoElectronico;
-    private javax.swing.JLabel lblDireccion;
-    private javax.swing.JLabel lblNombreGimnasio;
+    public javax.swing.JLabel lblCorreoElectronico;
+    public javax.swing.JLabel lblDireccion;
+    public javax.swing.JLabel lblNombreGimnasio;
     private javax.swing.JLabel lblNumClases;
     private javax.swing.JLabel lblNumEntrenadores;
     private javax.swing.JLabel lblNumGanancias;
     private javax.swing.JLabel lblNumMaquinas;
-    private javax.swing.JLabel lblNumMembresias;
-    private javax.swing.JLabel lblNumSocios;
-    private javax.swing.JLabel lblTelefono;
+    public javax.swing.JLabel lblNumMembresias;
+    public javax.swing.JLabel lblNumSocios;
+    public javax.swing.JLabel lblTelefono;
     private javax.swing.JPanel menuLateral;
     private javax.swing.JPanel paginaActividadesPanel;
     private javax.swing.JPanel paginaClasesPanel;
     private javax.swing.JPanel paginaEspaciosPanel;
     private javax.swing.JPanel paginaInformesPanel;
     private javax.swing.JPanel paginaMaquinasPanel;
-    private javax.swing.JPanel paginaPagosPanel;
+    private javax.swing.JPanel paginaMembresiasPanel;
     private javax.swing.JPanel paginaPrincipalPanel;
     private javax.swing.JPanel paginaSociosPanel;
     private javax.swing.JPanel panelClasesActividades;

@@ -26,7 +26,7 @@ public class ClaseDAO implements CRUD<Clase>{
                 clase.setDescripcion(rs.getString("descripcion"));
                 clase.setCosto(rs.getDouble("costo"));
                 clase.setCupos(rs.getInt("cupos"));
-                clase.setInstructor(new InstructorDAO().buscarDatoPorId(rs.getInt("id_instructor")));
+                clase.setInstructor(new EntrenadoresDAO().buscarDatoPorId(rs.getInt("id_instructor")));
                 clase.setEspacio(new EspaciosDAO().buscarDatoPorId(rs.getInt("id_espacio")));
                 listaClases.add(clase);
             }
@@ -146,7 +146,7 @@ public class ClaseDAO implements CRUD<Clase>{
                 clase.setDescripcion(rs.getString("descripcion"));
                 clase.setCosto(rs.getDouble("costo"));
                 clase.setCupos(rs.getInt("cupos"));
-                clase.setInstructor(new InstructorDAO().buscarDatoPorId(rs.getInt("id_instructor")));
+                clase.setInstructor(new EntrenadoresDAO().buscarDatoPorId(rs.getInt("id_instructor")));
                 clase.setEspacio(new EspaciosDAO().buscarDatoPorId(rs.getInt("id_espacio")));
             }
         } catch (SQLException e){

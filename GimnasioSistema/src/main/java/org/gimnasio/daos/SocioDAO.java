@@ -58,6 +58,7 @@ public class SocioDAO implements CRUD<Socio> {
                         .setNumeroTelefono(resultSet.getString("numero_telefono"))
                         .setDireccion(resultSet.getString("direccion"))
                         .setFechaNacimiento(resultSet.getDate("fecha_nacimiento"))
+                        .setFotoPerfil(resultSet.getString("foto_perfil"))
                         .build();
             }
         } catch (SQLException e) {
@@ -113,6 +114,7 @@ public class SocioDAO implements CRUD<Socio> {
                         .setNumeroTelefono(resultSet.getString("numero_telefono"))
                         .setDireccion(resultSet.getString("direccion"))
                         .setFechaNacimiento(resultSet.getDate("fecha_nacimiento"))
+                        .setFotoPerfil(resultSet.getString("foto_perfil"))
                         .build();
                 listaSocios.add(socio);
             }
@@ -201,6 +203,7 @@ public class SocioDAO implements CRUD<Socio> {
                         .setNumeroTelefono(resultSet.getString("numero_telefono"))
                         .setDireccion(resultSet.getString("direccion"))
                         .setFechaNacimiento(resultSet.getDate("fecha_nacimiento"))
+                        .setFotoPerfil(resultSet.getString("foto_perfil"))
                         .build();
             }
         } catch (SQLException e) {
@@ -228,6 +231,7 @@ public class SocioDAO implements CRUD<Socio> {
                         .setNumeroTelefono(resultSet.getString("numero_telefono"))
                         .setDireccion(resultSet.getString("direccion"))
                         .setFechaNacimiento(resultSet.getDate("fecha_nacimiento"))
+                        .setFotoPerfil(resultSet.getString("foto_perfil"))
                         .build();
                 listaSocios.add(socio);
             }
@@ -256,6 +260,36 @@ public class SocioDAO implements CRUD<Socio> {
                         .setNumeroTelefono(resultSet.getString("numero_telefono"))
                         .setDireccion(resultSet.getString("direccion"))
                         .setFechaNacimiento(resultSet.getDate("fecha_nacimiento"))
+                        .setFotoPerfil(resultSet.getString("foto_perfil"))
+                        .build();
+                listaSocios.add(socio);
+            }
+        } catch (SQLException e) {
+            LOGGER.severe(e.getMessage());
+        } finally {
+            DBConexion.closeConnection(connection);
+        }
+        return listaSocios;
+    }
+
+    public List<Socio> obtenerSociosPorAñoNacimiento(String año) throws SQLException {
+        List<Socio> listaSocios = new ArrayList<>();
+        Connection connection = DBConexion.getConnection();
+        String sql = "SELECT * FROM socios WHERE YEAR(fecha_nacimiento) = ?";
+        try (PreparedStatement statement = connection.prepareStatement(sql)) {
+            statement.setString(1, año);
+            ResultSet resultSet = statement.executeQuery();
+            while (resultSet.next()) {
+                Socio socio = new Socio.SocioBuilder()
+                        .setId(resultSet.getInt("id"))
+                        .setCedula(resultSet.getString("cedula"))
+                        .setNombre(resultSet.getString("nombre"))
+                        .setApellido(resultSet.getString("apellido"))
+                        .setEmail(resultSet.getString("email"))
+                        .setNumeroTelefono(resultSet.getString("numero_telefono"))
+                        .setDireccion(resultSet.getString("direccion"))
+                        .setFechaNacimiento(resultSet.getDate("fecha_nacimiento"))
+                        .setFotoPerfil(resultSet.getString("foto_perfil"))
                         .build();
                 listaSocios.add(socio);
             }

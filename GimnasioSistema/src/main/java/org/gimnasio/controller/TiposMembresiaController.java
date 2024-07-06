@@ -2,7 +2,7 @@ package org.gimnasio.controller;
 
 import org.gimnasio.model.TipoMembresia;
 import org.gimnasio.service.MembresiaService;
-import org.gimnasio.view.MultiLineTableCellRenderer;
+import org.gimnasio.render.MultiLineTableCellRenderer;
 import org.gimnasio.view.TiposMembresiaView;
 
 import javax.swing.*;

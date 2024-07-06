@@ -7,7 +7,7 @@ public class Clase {
     private String descripcion;
     private Double costo;
     private int cupos;
-    private Instructor instructor;
+    private Entrenador instructor;
     private Espacio espacio;
 
     public int getId() {
@@ -58,11 +58,11 @@ public class Clase {
         this.cupos = cupos;
     }
 
-    public Instructor getInstructor() {
+    public Entrenador getInstructor() {
         return instructor;
     }
 
-    public void setInstructor(Instructor instructor) {
+    public void setInstructor(Entrenador instructor) {
         this.instructor = instructor;
     }
 

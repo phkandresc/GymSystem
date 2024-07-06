@@ -1,12 +1,19 @@
 
-a	java:S112)"FDefine and throw a dedicated exception instead of using a generic one.(¬ÂÓ8¹Îìş‡2
-b	java:S112-"FDefine and throw a dedicated exception instead of using a generic one.(·ãØ†8¹Îìş‡2
-b	java:S1121"FDefine and throw a dedicated exception instead of using a generic one.(ÈƒâÀ8¹Îìş‡2
-b	java:S1125"FDefine and throw a dedicated exception instead of using a generic one.(Ô§Ş÷8¹Îìş‡2
-b	java:S1129"FDefine and throw a dedicated exception instead of using a generic one.(®€íÇ8¹Îìş‡2
-a
-java:S2147"DCombine this catch with the one at line 23, which has the same body.(”ı¾8½Îìş‡2
-H
-java:S1168F"+Return an empty collection instead of null.(¥¹ï8ÉÎìş‡2
-Q
-java:S2209L"5Change this instance-reference to a static reference.(ıßú/8ËÎìş‡2
+’	java:S117J"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(â¬‘+8À€ˆÿ‡2J$06c64ef9-4104-4c06-a9af-ad64ff9b0630
+‡	java:S112)"FDefine and throw a dedicated exception instead of using a generic one.(¬ÂÓ8Â€ˆÿ‡2J$22df71e1-101d-4cd9-bca9-c124d377f7c5
+ˆ	java:S112-"FDefine and throw a dedicated exception instead of using a generic one.(·ãØ†8Â€ˆÿ‡2J$6d561c7d-6e75-47c6-b7a9-4810fb4969be
+ˆ	java:S1121"FDefine and throw a dedicated exception instead of using a generic one.(ÈƒâÀ8Â€ˆÿ‡2J$8c271afc-8d1a-4061-8c04-5ca918984a63
+ˆ	java:S1125"FDefine and throw a dedicated exception instead of using a generic one.(Ô§Ş÷8Â€ˆÿ‡2J$fe498990-7baf-41c8-9567-41e22462116b
+ˆ	java:S1129"FDefine and throw a dedicated exception instead of using a generic one.(®€íÇ8Â€ˆÿ‡2J$24ef697f-111d-4b36-9c58-aafb81b4d139
+ˆ	java:S112="FDefine and throw a dedicated exception instead of using a generic one.(¨Ğ8Â€ˆÿ‡2J$15781f8f-c4fd-4bbe-bfaa-20c92cfda608
+	java:S112A"FDefine and throw a dedicated exception instead of using a generic one.(ã¹Ñ•ûÿÿÿÿ8Â€ˆÿ‡2J$d8ab9cd3-9d4e-44b8-b65c-c2ec0bc5faed
+‡	java:S112J"FDefine and throw a dedicated exception instead of using a generic one.(â¬‘+8„Êÿ‡2J$dcf0fcfa-db67-4e52-9f07-13fdb8c1d8af
+‡
+java:S2147"DCombine this catch with the one at line 23, which has the same body.(”ı¾8Å€ˆÿ‡2J$48abf4c3-a553-4d65-b221-533021d02292
+n
+java:S1168F"+Return an empty collection instead of null.(¥¹ï8Ê€ˆÿ‡2J$79605075-4c77-425b-9f80-3f931dce4956
+	java:S100J"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(â¬‘+8Ê€ˆÿ‡2J$b04c1d0e-d1ba-4649-abad-b1731489288d
+n
+java:S1168O"+Return an empty collection instead of null.(¥¹ï8Ë€ˆÿ‡2J$2bd816ca-78ec-42f5-a49a-66de74c7baa5
+w
+java:S2209U"5Change this instance-reference to a static reference.(ıßú/8Ì€ˆÿ‡2J$278b5895-3b81-44eb-9a6d-120f0f493571

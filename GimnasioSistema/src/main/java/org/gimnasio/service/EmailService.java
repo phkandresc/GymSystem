@@ -14,6 +14,7 @@ import javax.mail.internet.MimeMultipart;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.sql.Date;
 import java.util.Properties;
 
 public class EmailService {
@@ -115,4 +116,27 @@ public class EmailService {
         }
     }
 
+    public static void enviarCorreoAlertaMembresiaPorCaducar(Membresia membresia)  {
+        String subject = "Tu membresía está por caducar";
+        String content = readHtmlFile("src/main/resources/templates/CorreoAlertaMembresiaPorCaducar.html");
+        content = content.replace("{nombre}", membresia.getSocio().getNombre());
+        content = content.replace("{apellido}", membresia.getSocio().getApellido());
+        content = content.replace("{tipo_membresia}", membresia.getTipoMembresia().getNombre());
+        content = content.replace("{fecha_expiracion}", membresia.getFechaFin().toString());
+        sendEmail(membresia.getSocio().getEmail(), subject, content);
+    }
+/*
+    public static void main(String[] args) {
+        TipoMembresia tipoMembresia = new TipoMembresia();
+        tipoMembresia.setNombre("Membresía básica");
+        Membresia membresia = new Membresia();
+        membresia.setSocio(new Socio.SocioBuilder()
+                .setNombre("Juan")
+                .setApellido("Pérez")
+                .setEmail("kacoraizaca@gmail.com")
+                .build());
+        membresia.setTipoMembresia(tipoMembresia);
+        membresia.setFechaFin(new Date(System.currentTimeMillis()));
+        enviarCorreoAlertaMembresiaPorCaducar(membresia);
+    }*/
 }

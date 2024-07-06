@@ -13,9 +13,11 @@ import java.util.logging.Logger;
 public class ClasesService {
     public static final Logger LOGGER = Logger.getLogger(ClasesService.class.getName());
     private ClaseDAO claseDAO;
+    private EntrenadoresDAO entrenadoresDAO;
 
     public ClasesService() {
         this.claseDAO = new ClaseDAO();
+        this.entrenadoresDAO = new EntrenadoresDAO();
     }
 
     public boolean agregarClase(Clase clase) {
@@ -75,17 +77,6 @@ public class ClasesService {
         return lista;
     }
 
-    public List<Instructor> obtenerListaDeInstructores(){
-        List<Instructor> lista = new ArrayList<>();
-        try {
-            lista = new InstructorDAO().obtenerListaDeDatos();
-        }catch (SQLException e){
-            LOGGER.severe(e.getMessage());
-            JOptionPane.showMessageDialog(null, "Error al obtener la lista de instructores: " + e.getMessage());
-        }
-        return lista;
-    }
-
     public List<Espacio> obtenerListaDeEspacios(){
         List<Espacio> lista = new ArrayList<>();
         try {
@@ -106,5 +97,27 @@ public class ClasesService {
             JOptionPane.showMessageDialog(null, "Error al obtener la lista de clases: " + e.getMessage());
         }
         return lista;
+    }
+
+    public List<Entrenador> obtenerListaDeEntrenadores(){
+        List<Entrenador> lista = null;
+        try {
+            lista = entrenadoresDAO.obtenerListaDeDatos();
+        }catch (SQLException e){
+            LOGGER.severe(e.getMessage());
+            JOptionPane.showMessageDialog(null, "Error al obtener la lista de entrenadores: " + e.getMessage());
+        }
+        return lista;
+    }
+
+    public Entrenador buscarEntrenadorPorCedula(String cedula){
+        Entrenador entrenador = null;
+        try {
+            entrenador = entrenadoresDAO.buscarDatoPorCedula(cedula);
+        }catch (SQLException e){
+            LOGGER.severe(e.getMessage());
+            JOptionPane.showMessageDialog(null, "Error al buscar el entrenador: " + e.getMessage());
+        }
+        return entrenador;
     }
 }

@@ -61,7 +61,7 @@ public class AdministrarSociosView extends javax.swing.JFrame {
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 90, -1, 30));
 
         cmbCriterioBusqueda.setFont(new java.awt.Font("Poppins Light", 0, 14)); // NOI18N
-        cmbCriterioBusqueda.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "ID", "Cedula", "Apellido" }));
+        cmbCriterioBusqueda.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "ID", "Cedula" }));
         jPanel1.add(cmbCriterioBusqueda, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 90, 90, 30));
 
         TextFieldBusqueda.setFont(new java.awt.Font("Poppins Light", 0, 14)); // NOI18N

@@ -71,6 +71,15 @@ public class SocioService {
         }
     }
 
+    public List<Socio> obtenerSociosPorAñoNacimiento(String año) throws Exception {
+        try {
+            return socioDAO.obtenerSociosPorAñoNacimiento(año);
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "Error al obtener los socios por año de nacimiento: " + e.getMessage());
+            return null;
+        }
+    }
+
     private void enviarEmailBienvenida(Socio socioNuevo) {
         EmailService emailService = new EmailService();
         emailService.enviarCorreoNuevoSocio(socioNuevo.getEmail(), socioNuevo.getNombre(), socioNuevo.getApellido(), String.valueOf(socioNuevo.getId()));

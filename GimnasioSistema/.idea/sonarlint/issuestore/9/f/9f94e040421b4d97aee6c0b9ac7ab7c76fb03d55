@@ -1,29 +1,24 @@
 
-Â
-java:S1186G"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¿˜œÔşÿÿÿÿJ$87809078-4385-49a5-9359-414d13936250
-½
-java:S1186L"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(›™¥…J$6e33f823-7a1f-4c98-98ea-0eb499bfeb82
-Â
-java:S1186Q"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ä ÏúüÿÿÿÿJ$f445115f-3399-4092-aef6-d022e1774790
-Â
-java:S1186V"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(®î’×üÿÿÿÿJ$bed3dfb2-f8d0-46ee-b327-21062eab8eab
-½
-java:S1186["€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ãÆĞÂJ$e5ec6a77-6632-4f9a-968f-bcfb0b8293cf
-Â
-java:S1186`"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ö„˜şúÿÿÿÿJ$0d71bc98-566c-417a-8847-b36b294a2eed
-Â
-java:S1186e"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•ßçùÿÿÿÿJ$34ae5bb2-2910-46c4-9bde-c18d1b43730a
-Õ
-java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(Ï‡š­J$7c06d3ef-679a-4c36-95c2-b1c723934414
-
-java:S1854<"LRemove this useless assignment to local variable "registroSociosController".(Ä–ü½ûÿÿÿÿJ$ed88a99f-d740-4591-85d6-23fb2360290c
-…
-java:S1854?"IRemove this useless assignment to local variable "listaSociosController".(—î«ÖJ$3ac1d614-238a-4459-a374-0710b09843c2
-‹
-java:S1854B"ORemove this useless assignment to local variable "registroMembresiaController".(×¯ÚJ$e7076903-4f85-4707-b545-955b08613124
-~
-java:S1481<"=Remove this unused "registroSociosController" local variable.(Ä–ü½ûÿÿÿÿJ$1feeb000-5aa3-4674-8990-704f81d518a0
-v
-java:S1481?":Remove this unused "listaSociosController" local variable.(—î«ÖJ$cc822e49-7562-4078-8543-aadf8111ac73
-|
-java:S1481B"@Remove this unused "registroMembresiaController" local variable.(×¯ÚJ$0d52f272-f3f8-402f-b610-824dcb041908
+£
+java:S1186U"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¿˜œÔşÿÿÿÿ8Ò©ìˆ2
+
+java:S1186Z"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(›™¥…8Û©ìˆ2
+£
+java:S1186_"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ä Ïúüÿÿÿÿ8Û©ìˆ2
+£
+java:S1186d"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(®î’×üÿÿÿÿ8Û©ìˆ2
+
+java:S1186i"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ãÆĞÂ8Û©ìˆ2
+£
+java:S1186n"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ö„˜şúÿÿÿÿ8Û©ìˆ2
+£
+java:S1186s"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•ßçùÿÿÿÿ8Û©ìˆ2
+¶
+java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(Ï‡š­8Ü©ìˆ2
+]
+java:S1128
+";Remove this unused import 'java.util.concurrent.Executors'.(äåÒÛÿÿÿÿÿ8è©ìˆ2
+l
+java:S1128"JRemove this unused import 'java.util.concurrent.ScheduledExecutorService'.(Êßˆÿÿÿÿÿ8è©ìˆ2
+W
+java:S1128":Remove this unused import 'java.util.concurrent.TimeUnit'.(Æ™ş8è©ìˆ2

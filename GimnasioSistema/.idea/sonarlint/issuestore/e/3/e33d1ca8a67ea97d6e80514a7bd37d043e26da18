@@ -1,17 +1,11 @@
 
-	java:S112n"FDefine and throw a dedicated exception instead of using a generic one.(¼ÿ¾¹ÿÿÿÿÿ8Êçş‡2J$9454a3b1-c520-4a53-a1a4-f0e85133dfce
+	java:S112a"FDefine and throw a dedicated exception instead of using a generic one.(¼ÿ¾¹ÿÿÿÿÿ8¤öÎ€ˆ2J$4c30780a-d0f9-4a6e-be42-b183ee05643b
 É
-java:S1186y"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(®î’×üÿÿÿÿ8‘Êçş‡2J$52effb23-4617-4d97-a5eb-2a50f64bbf84
+java:S1186l"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(®î’×üÿÿÿÿ8©öÎ€ˆ2J$07aa1a97-a21d-4983-808b-ba67f642784b
 Ä
-java:S1186~"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ãÆĞÂ8‘Êçş‡2J$67b0447b-d140-4abe-beb7-430c4303eab6
-Ê
-java:S1186ƒ"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ö„˜şúÿÿÿÿ8‘Êçş‡2J$5a2f5062-a74e-445a-8dad-a1bf3ec75975
-Ê
-java:S1186ˆ"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•ßçùÿÿÿÿ8‘Êçş‡2J$1ccd0176-b21d-4d2f-b9aa-e0f91cf5d87b
-{
-java:S1144Œ"2Remove this unused private "filtrarSocios" method.(È ïŞúÿÿÿÿ8“Êçş‡2J$c8aaf588-ae3a-4165-ad1a-a42e2e633385
-w
-java:S1144Â"3Remove this unused private "modificarSocio" method.(ıŞ‰ë8“Êçş‡2J$b66ed816-7ad0-4296-94bd-9bbd3040cf52
-~	java:S125J"<This block of commented-out lines of code should be removed.(½åÜ€8—Êçş‡2J$ea5aa509-32f0-4fc5-9e49-d88076c57eae
-	java:S125Ÿ"<This block of commented-out lines of code should be removed.(½‘Ñ³8›Êçş‡2J$ed1758f5-7282-46a8-91bb-5dcea0c04ca0
-j	java:S131Ì""Add a default case to this switch.(úê›Ïşÿÿÿÿ8¥Êçş‡2J$f58f1047-db9a-473e-b707-6a517e2de8d0
+java:S1186q"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ãÆĞÂ8©öÎ€ˆ2J$37dc7553-7279-4425-9485-ea47ad9183f2
+É
+java:S1186v"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ö„˜şúÿÿÿÿ8ªöÎ€ˆ2J$044e822c-2a86-445c-b85d-eee4e244e6a5
+É
+java:S1186{"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•ßçùÿÿÿÿ8ªöÎ€ˆ2J$68b3d113-e8c0-4c97-b6b4-7c16752feb7b
+j	java:S131«""Add a default case to this switch.(úê›Ïşÿÿÿÿ8ÎöÎ€ˆ2J$2bb0a5ea-2c8e-4239-8132-7f92fbde3f1e

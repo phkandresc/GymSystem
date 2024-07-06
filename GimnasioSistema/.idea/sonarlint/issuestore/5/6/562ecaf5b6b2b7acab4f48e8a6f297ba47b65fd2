@@ -1,31 +1,31 @@
 
 p
-java:S1604~"(Make this anonymous inner class a lambda(¨í¡§úÿÿÿÿ8˜ºõ®‡2J$6f4d2c93-becb-451a-b176-90bef5de2f30
+java:S1604"(Make this anonymous inner class a lambda(¨í¡§úÿÿÿÿ8˜ºõ®‡2J$814cc520-ff8a-466a-843d-38e0a04bfb98
 ›
-java:S1104‡"WMake cmbEspacios a static final constant or non-public and provide accessors if needed.(¸ÈÈ8»–ö®‡2J$1b7bc0cc-7780-40b6-bf25-939e09b2f802
+java:S1104ˆ"WMake cmbEspacios a static final constant or non-public and provide accessors if needed.(¸ÈÈ8»–ö®‡2J$5db05d6e-d2eb-4b8c-9264-9b791db36ff0
 š
-java:S1104Œ"VMake jtHorarios a static final constant or non-public and provide accessors if needed.(ñÙŒò8˜ºõ®‡2J$752ebafc-c44f-4187-b207-3978d0b7fa5f
+java:S1104"VMake jtHorarios a static final constant or non-public and provide accessors if needed.(ñÙŒò8˜ºõ®‡2J$0c0e1aa0-790f-4424-bd52-ae47293e5ce7
 
-java:S1192)"HDefine a constant instead of duplicating this literal "Poppins" 3 times.(¯†ˆöÿÿÿÿÿ8œºõ®‡2J$26c2e725-f7e7-4538-9782-961a2ce77572
+java:S1192*"HDefine a constant instead of duplicating this literal "Poppins" 3 times.(¯†ˆöÿÿÿÿÿ8œºõ®‡2J$3323158e-a854-48b2-870f-2adde95ea03a
 š
-java:S1450†"QRemove the "bg" field and declare it as a local variable in the relevant methods.(êÉú”øÿÿÿÿ8¡ºõ®‡2J$726997fc-89d0-4aab-9a35-9767ea1d2c83
+java:S1450‡"QRemove the "bg" field and declare it as a local variable in the relevant methods.(êÉú”øÿÿÿÿ8¡ºõ®‡2J$1beefb3b-51b6-486f-bc3b-983fe7980d57
 Ÿ
-java:S1450ˆ"VRemove the "jLabel1" field and declare it as a local variable in the relevant methods.(°ãÉ¸ÿÿÿÿÿ8¢ºõ®‡2J$8d7f7581-f923-4394-ac44-4a4bcac24b8b
+java:S1450‰"VRemove the "jLabel1" field and declare it as a local variable in the relevant methods.(°ãÉ¸ÿÿÿÿÿ8¢ºõ®‡2J$4fb4585e-d094-4021-9bd4-edaa48ef707d
  
-java:S1450‰"WRemove the "jLabel10" field and declare it as a local variable in the relevant methods.(¼õò†şÿÿÿÿ8¢ºõ®‡2J$6a909f7a-baae-4836-9f7e-5291089b791a
+java:S1450Š"WRemove the "jLabel10" field and declare it as a local variable in the relevant methods.(¼õò†şÿÿÿÿ8¢ºõ®‡2J$c96f9754-4c46-4ac6-8695-3ff62317192d
 Ÿ
-java:S1450Š"VRemove the "jLabel2" field and declare it as a local variable in the relevant methods.(™úòˆüÿÿÿÿ8¢ºõ®‡2J$cea03f3c-878c-4f6b-bae8-4bb228984164
+java:S1450‹"VRemove the "jLabel2" field and declare it as a local variable in the relevant methods.(™úòˆüÿÿÿÿ8¢ºõ®‡2J$6c1f023e-df98-4a71-bf40-f48bb7013793
 ¤
-java:S1450‹"[Remove the "jScrollPane1" field and declare it as a local variable in the relevant methods.(¤á×ÿÿÿÿÿ8£ºõ®‡2J$6aa1eb89-68a7-4e1d-b5cc-874dfd01e961
+java:S1450Œ"[Remove the "jScrollPane1" field and declare it as a local variable in the relevant methods.(¤á×ÿÿÿÿÿ8£ºõ®‡2J$ab422e51-9a8d-4cc3-bc5a-c20d96348bc8
 ‚
-java:S1161>":Add the "@Override" annotation above this method signature(ÍŸÏ†ùÿÿÿÿ8±ºõ®‡2J$158330c6-f92d-44da-afb4-3d5b0f06e990
+java:S1161?":Add the "@Override" annotation above this method signature(ÍŸÏ†ùÿÿÿÿ8±ºõ®‡2J$f48b429c-348e-455c-9771-beccc74043a7
 }
-java:S1161B":Add the "@Override" annotation above this method signature(®¸ù8±ºõ®‡2J$e5baf703-334f-4ff5-880a-34922f9d88d1
+java:S1161C":Add the "@Override" annotation above this method signature(®¸ù8±ºõ®‡2J$5badbade-10ac-4322-bb81-b88aa8c4d719
 r
-java:S1197e"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ8·ºõ®‡2J$d013d754-06fb-4662-8c7f-a34aa00f2d2f
+java:S1197f"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ8·ºõ®‡2J$cf0de1d2-c00a-4324-b4d9-0713b2029849
 ˆ
-java:S2147t"ECombine this catch with the one at line 114, which has the same body.(¨¦Š½8·ºõ®‡2J$0ad50f21-ec04-4df6-b9d0-529607ccc889
+java:S2147u"ECombine this catch with the one at line 115, which has the same body.(¨¦Š½8·ºõ®‡2J$0702604e-1926-4609-ac1b-680de7a031cc
 ˆ
-java:S2147v"ECombine this catch with the one at line 116, which has the same body.(ã€ 8¸ºõ®‡2J$b7a07d8f-5a2a-4448-ab2f-29dc6332c56b
+java:S2147w"ECombine this catch with the one at line 117, which has the same body.(ã€ 8¸ºõ®‡2J$3d03c29a-5292-4413-ab90-0b83ec5a7177
 ‡
-java:S2147x"ECombine this catch with the one at line 118, which has the same body.(ñÎ¯%8¸ºõ®‡2J$4b0c9410-5982-41c7-9b38-6384985d56bc
+java:S2147y"ECombine this catch with the one at line 119, which has the same body.(ñÎ¯%8¸ºõ®‡2J$aa27721f-30ee-45d4-85c7-b8543bd33262

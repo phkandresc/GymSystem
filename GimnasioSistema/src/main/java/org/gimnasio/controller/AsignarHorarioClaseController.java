@@ -5,7 +5,7 @@ import org.gimnasio.model.Horario;
 import org.gimnasio.service.ClasesService;
 import org.gimnasio.service.HorarioService;
 import org.gimnasio.view.AsignarHorarioClaseView;
-import org.gimnasio.view.MultiLineAndColorCellRenderer;
+import org.gimnasio.render.MultiLineAndColorCellRenderer;
 
 import javax.swing.table.DefaultTableModel;
 import java.awt.event.ActionEvent;

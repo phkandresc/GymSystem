@@ -4,7 +4,6 @@
  */
 package org.gimnasio.view;
 
-
 /**
  *
  * @author ASUS
@@ -16,6 +15,7 @@ public class RegistroSociosView extends javax.swing.JFrame {
      */
     public RegistroSociosView() {
         initComponents();
+        addWindowListener(new org.gimnasio.controller.WindowController());
     }
 
     /**

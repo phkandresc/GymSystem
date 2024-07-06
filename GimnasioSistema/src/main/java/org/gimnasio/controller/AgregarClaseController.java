@@ -2,11 +2,10 @@ package org.gimnasio.controller;
 
 import org.gimnasio.model.Clase;
 import org.gimnasio.model.Espacio;
-import org.gimnasio.model.Instructor;
 import org.gimnasio.model.TipoClase;
 import org.gimnasio.service.ClasesService;
 import org.gimnasio.view.AgregarClaseView;
-import org.gimnasio.view.MultiLineCellRenderer2;
+import org.gimnasio.render.MultiLineCellRenderer2;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
@@ -18,10 +17,10 @@ public class AgregarClaseController extends WindowController implements MouseLis
     private ClasesService clasesService;
     private AgregarClaseView view;
     private List<TipoClase> tipoClases;
-    private List<Instructor> instructores;
+
     private List<Espacio> espacios;
     private TipoClase tipoClaseSeleccionado;
-    private Instructor instructorSeleccionado;
+
     private Espacio espacioSeleccionado;
 
     public AgregarClaseController(){
@@ -76,11 +75,7 @@ public class AgregarClaseController extends WindowController implements MouseLis
     }
 
     private void cargarInstructores(){
-        view.cmbInstructor.removeAllItems();
-        instructores = clasesService.obtenerListaDeInstructores();
-        for (Instructor instructor : instructores) {
-            view.cmbInstructor.addItem(instructor.getNombre());
-        }
+
     }
 
     private void cargarEspacios(){
@@ -111,7 +106,6 @@ public class AgregarClaseController extends WindowController implements MouseLis
         if (e.getSource() == view.cmbTipoClase){
             tipoClaseSeleccionado = tipoClases.get(view.cmbTipoClase.getSelectedIndex());
         } else if (e.getSource() == view.cmbInstructor){
-            instructorSeleccionado = instructores.get(view.cmbInstructor.getSelectedIndex());
         } else if (e.getSource() == view.cmbEspacio){
             espacioSeleccionado = espacios.get(view.cmbEspacio.getSelectedIndex());
         }
@@ -136,7 +130,6 @@ public class AgregarClaseController extends WindowController implements MouseLis
         clase.setDescripcion(view.txtDescripcion.getText());
         clase.setCosto((double) view.jsCosto.getValue());
         clase.setCupos((int) view.jsCupos.getValue());
-        clase.setInstructor(instructorSeleccionado);
         clase.setEspacio(espacioSeleccionado);
         return clase;
     }

@@ -1,3 +1,8 @@
 
-	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òιόÿÿÿÿ8“λÒ†2J$6c827014-9d51-473a-b901-cda434f5c291
-M	java:S106›"+Replace this use of System.out by a logger.(±“ψÿÿÿÿ8¶¶φ†2
+	java:S112€"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òιόÿÿÿÿ8‚‡ ‹2J$606696b1-15c2-4530-89a4-f1e864b5e3cc
+o
+java:S1168Γ"+Return an empty collection instead of null.(¥Ήο8–‡ ‹2J$77ca2e9f-e8a3-49c2-a969-6bdf23d30b20
+o
+java:S1168Μ"+Return an empty collection instead of null.(¥Ήο8–‡ ‹2J$ebc773d6-45e5-4789-a8fb-9473209ea8fe
+{
+java:S1128"8Remove this unused import 'java.time.temporal.Temporal'.(Εƒ€φ8Òΰ2J$212e2a57-576b-4414-acdd-eeb5aeec4004

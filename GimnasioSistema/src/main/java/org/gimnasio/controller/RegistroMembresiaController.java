@@ -1,14 +1,12 @@
 package org.gimnasio.controller;
 
 import org.gimnasio.model.*;
-import org.gimnasio.service.EmailService;
 import org.gimnasio.service.MembresiaService;
 import org.gimnasio.service.SocioService;
 import org.gimnasio.view.RegistroMembresiaView;
 
 import javax.swing.*;
 import java.awt.event.*;
-import java.sql.Date;
 import java.sql.SQLException;
 import java.util.List;
 
@@ -25,13 +23,13 @@ public class RegistroMembresiaController extends WindowController implements Act
     private static final String MEMBRESIA_REGISTRADA_EXITO = "Membresía registrada con éxito";
     private static final String DEBE_SELECCIONAR_SOCIO = "Debe seleccionar un socio";
 
-
-
     public RegistroMembresiaController() {
+        System.out.println("RegistroMembresiaController");
+        Exception e = new Exception("Creando instancia de RegistroMembresiaController");
+        e.printStackTrace();
         this.view = new RegistroMembresiaView();
         this.serviceMembresia = new MembresiaService();
         this.serviceSocio = new SocioService();
-        PaginaPrincipalController paginaPrincipalController = PaginaPrincipalController.getInstance();
         this.tipoMembresiaSeleccionado = new TipoMembresia();
         view.btnBuscar.addActionListener(this);
         view.cmbTipoMembresia.addItemListener(this);

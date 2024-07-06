@@ -3,18 +3,14 @@ package org.gimnasio.controller;
 import org.gimnasio.model.Socio;
 import org.gimnasio.service.SocioService;
 import org.gimnasio.view.ListaSociosView;
-import org.gimnasio.view.MultiLineAndColorCellRenderer;
-import org.gimnasio.view.MultiLineCellRenderer2;
-import org.gimnasio.view.MultiLineTableCellRenderer;
+import org.gimnasio.render.MultiLineTableCellRenderer;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
-import javax.swing.table.TableColumnModel;
 import java.awt.event.*;
-import java.sql.SQLException;
 import java.util.List;
 
-public class ListaSociosController extends WindowController implements ActionListener, ItemListener, MouseListener, WindowListener {
+public class ListaSociosController extends WindowController implements ActionListener, ItemListener, MouseListener, WindowFocusListener {
     private final ListaSociosView view;
     private final SocioService socioService;
     private Socio socioSeleccionado;
@@ -29,6 +25,8 @@ public class ListaSociosController extends WindowController implements ActionLis
         view.ButtonEliminar.addActionListener(this);
         view.ButtonModificar.addActionListener(this);
         view.jPanel1.addMouseListener(this);
+        view.TextFieldBusqueda.addActionListener(this);
+        view.addWindowFocusListener(this);
         view.setVisible(true);
         cargarLista();
     }
@@ -38,6 +36,7 @@ public class ListaSociosController extends WindowController implements ActionLis
             List<Socio> listaSocios = socioService.obtenerTodosSocios();
             cargarDatosTabla(listaSocios);
         } catch (Exception e) {
+            System.out.println("Error al cargar los datos: " + e.getMessage());
             JOptionPane.showMessageDialog(null, "Error al cargar los datos: " + e.getMessage());
         }
     }
@@ -70,29 +69,17 @@ public class ListaSociosController extends WindowController implements ActionLis
     public void actionPerformed(ActionEvent e) {
         if(e.getSource() == view.ButtonEliminar) {
             eliminarSocio();
-        }
-        /*if (e.getSource() == view.ButtonBuscar) {
-            buscarSocio();
-        } else if (e.getSource() == view.ButtonEliminar) {
-            eliminarSocio();
-        } else if (e.getSource() == view.ButtonModificar){
-            if(socioSeleccionado == null){
+        } else if(e.getSource() == view.btnFiltrar) {
+            filtrarSocios();
+        }else if(e.getSource() == view.TextFieldBusqueda){
+            filtrarSocios();
+        }else if(e.getSource() == view.ButtonModificar){
+            if(socioSeleccionado != null){
+                new AdministrarSociosController(socioSeleccionado);
+            }else{
                 JOptionPane.showMessageDialog(null, "No se ha seleccionado ningún socio");
-                return;
             }
-            if(Validator.validarTextFields(new JTextField[]{view.txtCedula, view.txtNombre, view.txtApellido, view.txtEmail, view.txtTelefono, view.txtDireccion})) {
-                socioSeleccionado.setCedula(view.txtCedula.getText());
-                socioSeleccionado.setNombre(view.txtNombre.getText());
-                socioSeleccionado.setApellido(view.txtApellido.getText());
-                socioSeleccionado.setEmail(view.txtEmail.getText());
-                socioSeleccionado.setNumeroTelefono(view.txtTelefono.getText());
-                socioSeleccionado.setDireccion(view.txtDireccion.getText());
-                if(Validator.validarSocio(socioSeleccionado)){
-                    modificarSocio(socioSeleccionado);
-                }
-            }
-
-        }*/
+        }
 
     }
 
@@ -152,27 +139,14 @@ public class ListaSociosController extends WindowController implements ActionLis
                 //obtener socios por mes de registro
                 List<Socio> listaSocios = socioService.obtenerSociosPorMesRegistro(obtenerMesDeBusqueda());
                 cargarDatosTabla(listaSocios);
+            }else if (view.cmbCriterioBusqueda.getSelectedIndex() == 4) {
+                //obtener socios por año de nacimiento
+                List<Socio> listaSocios = socioService.obtenerSociosPorAñoNacimiento(view.TextFieldBusqueda.getText());
+                cargarDatosTabla(listaSocios);
             }
         } catch (Exception ex) {
             JOptionPane.showMessageDialog(null, "Error al filtrar los socios: " + ex.getMessage());
         }
-        /*try {
-            if (view.cmbCriterioBusqueda.getSelectedIndex() == 0) {
-                vaciarFormulario();
-                socioSeleccionado = socioService.buscarSocioPorId(Integer.parseInt(view.txtBusqueda.getText()));
-                cargarSocioEnFormulario(socioSeleccionado);
-            } else if (view.cmbCriterioBusqueda.getSelectedIndex() == 1) {
-                vaciarFormulario();
-                socioSeleccionado = socioService.buscarSocioPorCedula(view.txtBusqueda.getText());
-                cargarSocioEnFormulario(socioSeleccionado);
-            } else if (view.cmbCriterioBusqueda.getSelectedIndex() == 2) {
-                vaciarFormulario();
-                socioSeleccionado = socioService.buscarSocioPorApellido(view.txtBusqueda.getText());
-                cargarSocioEnFormulario(socioSeleccionado);
-            }
-        } catch (Exception ex) {
-            JOptionPane.showMessageDialog(null, "Error al buscar el socio: " + ex.getMessage());
-        }*/
     }
 
     private void eliminarSocio() {
@@ -191,13 +165,6 @@ public class ListaSociosController extends WindowController implements ActionLis
         }
     }
 
-    private void modificarSocio(Socio socioActualizado) {
-        int confirmacion = JOptionPane.showConfirmDialog(null, "¿Está seguro de modificar el socio?", "Modificar Socio", JOptionPane.YES_NO_OPTION);
-        if (confirmacion == JOptionPane.YES_OPTION) {
-            socioService.actualizarSocio(socioActualizado);
-            cargarLista();
-        }
-    }
 
     private String obtenerMesDeBusqueda() {
         String mes = "";
@@ -240,6 +207,11 @@ public class ListaSociosController extends WindowController implements ActionLis
                 break;
         }
         return mes;
+    }
+
+    @Override
+    public void windowGainedFocus(WindowEvent e) {
+        cargarLista();
     }
 
     public static void main(String[] args) {
