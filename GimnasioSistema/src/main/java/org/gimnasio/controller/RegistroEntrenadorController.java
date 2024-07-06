@@ -5,12 +5,15 @@ import org.gimnasio.render.MultiLineTableCellRenderer;
 import org.gimnasio.service.ClasesService;
 import org.gimnasio.view.RegistroEntrenadorView;
 
+import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.util.List;
 
-public class RegistroEntrenadorController implements MouseListener {
+public class RegistroEntrenadorController extends WindowController implements MouseListener, ActionListener {
     private RegistroEntrenadorView view;
     private ClasesService service;
     private Entrenador entrenadorSeleccionado;
@@ -23,6 +26,9 @@ public class RegistroEntrenadorController implements MouseListener {
         view.jtEntrenadores.addMouseListener(this);
         view.jtEntrenadores.setDefaultRenderer(String.class, new MultiLineTableCellRenderer());
         cargarEntrenadores();
+        view.btnCrear.addActionListener(this);
+        view.btnModificar.addActionListener(this);
+        view.btnEliminar.addActionListener(this);
         view.setVisible(true);
     }
 
@@ -57,6 +63,7 @@ public class RegistroEntrenadorController implements MouseListener {
                }
             }
         } else if(e.getSource() == view.jPanel1){
+            cargarEntrenadores();
             entrenadorSeleccionado = null;
             view.btnEliminar.setEnabled(false);
             view.btnModificar.setEnabled(false);
@@ -102,5 +109,70 @@ public class RegistroEntrenadorController implements MouseListener {
 
     public static void main(String[] args) {
         new RegistroEntrenadorController();
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        if(e.getSource() == view.btnCrear){
+            if(Validator.validarTextFields(new javax.swing.JTextField[]{view.txtCedula, view.txtNombre, view.txtApellido, view.txtEmail, view.txtDireccion, view.txtEspecialidad, view.txtTelefono})){
+                Entrenador entrenador = new Entrenador();
+                entrenador.setCedula(view.txtCedula.getText());
+                entrenador.setNombre(view.txtNombre.getText());
+                entrenador.setApellido(view.txtApellido.getText());
+                entrenador.setEmail(view.txtEmail.getText());
+                entrenador.setDireccion(view.txtDireccion.getText());
+                entrenador.setEspecialidad(view.txtEspecialidad.getText());
+                entrenador.setNumeroTelefono(view.txtTelefono.getText());
+                if(service.agregarEntrenador(entrenador)){
+                    cargarEntrenadores();
+                    vaciarFormulario();
+                }
+            }else {
+                JOptionPane.showMessageDialog(null, "Todos los campos son requeridos");
+            }
+
+        } else if(e.getSource() == view.btnModificar){
+            if (entrenadorSeleccionado == null){
+                JOptionPane.showMessageDialog(null, "Debe seleccionar un entrenador");
+                return;
+            }
+            if(Validator.validarTextFields(new javax.swing.JTextField[]{view.txtCedula, view.txtNombre, view.txtApellido, view.txtEmail, view.txtDireccion, view.txtEspecialidad, view.txtTelefono})){
+                entrenadorSeleccionado.setCedula(view.txtCedula.getText());
+                entrenadorSeleccionado.setNombre(view.txtNombre.getText());
+                entrenadorSeleccionado.setApellido(view.txtApellido.getText());
+                entrenadorSeleccionado.setEmail(view.txtEmail.getText());
+                entrenadorSeleccionado.setDireccion(view.txtDireccion.getText());
+                entrenadorSeleccionado.setEspecialidad(view.txtEspecialidad.getText());
+                entrenadorSeleccionado.setNumeroTelefono(view.txtTelefono.getText());
+                if(service.actualizarEntrenador(entrenadorSeleccionado)){
+                    cargarEntrenadores();
+                    vaciarFormulario();
+                    view.btnEliminar.setEnabled(false);
+                    view.btnModificar.setEnabled(false);
+                    view.btnCrear.setEnabled(true);
+                    entrenadorSeleccionado = null;
+                }
+            }
+
+        } else if(e.getSource() == view.btnEliminar){
+            if(service.eliminarEntrenador(entrenadorSeleccionado)){
+                cargarEntrenadores();
+                vaciarFormulario();
+                view.btnEliminar.setEnabled(false);
+                view.btnModificar.setEnabled(false);
+                view.btnCrear.setEnabled(true);
+                entrenadorSeleccionado = null;
+            }
+        }
+    }
+
+    private void vaciarFormulario(){
+        view.txtCedula.setText("");
+        view.txtNombre.setText("");
+        view.txtApellido.setText("");
+        view.txtEmail.setText("");
+        view.txtDireccion.setText("");
+        view.txtEspecialidad.setText("");
+        view.txtTelefono.setText("");
     }
 }

@@ -87,10 +87,6 @@ e
 .src/main/java/org/gimnasio/model/IBuilder.java,b\1\b1b531431db94a039434c28994e78310bf26c643
 `
 0src/main/java/org/gimnasio/daos/EspaciosDAO.java,a\4\a48b3d5f282516d97c99fc9c27c5dc1241bbf7f8
-`
-0src/main/java/org/gimnasio/model/Instructor.java,2\6\260432f3f245034625e5ecb7355a2cf9663377ff
-b
-2src/main/java/org/gimnasio/daos/InstructorDAO.java,8\3\832550653bacf85ceba3f70ed657c8adb47e9b4b
 e
 5src/main/java/org/gimnasio/view/AgregarClaseView.java,b\1\b1c31608cae885c4b3183e3733610e653475b246
 q
@@ -117,8 +113,6 @@ k
 ;src/main/java/org/gimnasio/view/RegistroEntrenadorView.java,5\0\50480ad6ae5a2b1c508d16dc518eff3e69b37e48
 d
 4src/main/java/org/gimnasio/daos/EntrenadoresDAO.java,1\7\179fac1e9812e2dec980b0fe1646290bf91e7ce8
-b
-2src/main/java/org/gimnasio/model/Entrenadores.java,f\5\f5f366b5529d51f06d421a984a12aeba1af0a583
 `
 0src/main/java/org/gimnasio/model/Entrenador.java,8\5\85e144b5d047dc705a3cc59e96714c8b2aba15c5
 w

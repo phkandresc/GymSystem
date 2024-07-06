@@ -120,4 +120,40 @@ public class ClasesService {
         }
         return entrenador;
     }
+
+    public boolean agregarEntrenador(Entrenador entrenador){
+        try {
+            entrenadoresDAO.agregarDato(entrenador);
+            JOptionPane.showMessageDialog(null, "Entrenador agregado correctamente");
+            return true;
+        }catch (SQLException e){
+            LOGGER.severe(e.getMessage());
+            JOptionPane.showMessageDialog(null, "Error al agregar el entrenador: " + e.getMessage());
+        }
+        return false;
+    }
+
+    public boolean actualizarEntrenador(Entrenador entrenador){
+        try {
+            entrenadoresDAO.actualizarDato(entrenador);
+            JOptionPane.showMessageDialog(null, "Entrenador actualizado correctamente");
+            return true;
+        }catch (SQLException e){
+            LOGGER.severe(e.getMessage());
+            JOptionPane.showMessageDialog(null, "Error al actualizar el entrenador: " + e.getMessage());
+        }
+        return false;
+    }
+
+    public boolean eliminarEntrenador(Entrenador entrenador){
+        try {
+            entrenadoresDAO.eliminarDato(entrenador);
+            JOptionPane.showMessageDialog(null, "Entrenador eliminado correctamente");
+            return true;
+        }catch (SQLException e){
+            LOGGER.severe(e.getMessage());
+            JOptionPane.showMessageDialog(null, "Error al eliminar el entrenador: " + e.getMessage());
+        }
+        return false;
+    }
 }
