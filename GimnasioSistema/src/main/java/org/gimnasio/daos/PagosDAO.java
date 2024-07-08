@@ -133,4 +133,36 @@ public class PagosDAO implements CRUD<Pago>{
         return pago;
     }
 
+    public Pago buscarPagoPorClase(int idClase) throws SQLException {
+        Pago pago = null;
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+        try {
+            ps = DBConexion.getConnection().prepareStatement("SELECT * FROM pagos WHERE id_clase = ?");
+            ps.setInt(1, idClase);
+            rs = ps.executeQuery();
+            if (rs.next()) {
+                pago = new Pago.Builder()
+                        .id(rs.getInt("id"))
+                        .socio(new SocioDAO().buscarDatoPorId(rs.getInt("id_socio")))
+                        .clase(new ClaseDAO().buscarDatoPorId(rs.getInt("id_clase")))
+                        .monto(rs.getDouble("monto"))
+                        .fechaPago(rs.getDate("fecha_pago"))
+                        .metodoPago(rs.getString("metodo_pago"))
+                        .tipoPago(rs.getString("tipo_pago"))
+                        .build();
+            }
+        } catch (SQLException e) {
+            LOGGER.severe(e.getMessage());
+        } finally {
+            if (rs != null) {
+                rs.close();
+            }
+            if (ps != null) {
+                ps.close();
+            }
+            DBConexion.closeConnection(DBConexion.getConnection());
+        }
+        return pago;
+    }
 }

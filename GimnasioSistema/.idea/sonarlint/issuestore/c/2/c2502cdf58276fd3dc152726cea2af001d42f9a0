@@ -9,6 +9,5 @@ java:S1186V"€Add a nested comment explaining why this method is empty, throw a
 java:S1186["€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ö„˜þúÿÿÿÿ8õ®±Ëˆ2J$5f2b98d1-6d67-4111-bd40-ea194ca86019
 É
 java:S1186`"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•ßçùÿÿÿÿ8õ®±Ëˆ2J$f10d231d-5728-4068-8c60-554539750904
-r	java:S106>"+Replace this use of System.out by a logger.(ßí”¡øÿÿÿÿ8”¯±Ëˆ2J$dbd3b54b-b24d-4aac-bf3d-9aea462f207e
 š
 java:S3776s"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(¼ Òþüÿÿÿÿ8¤¯±Ëˆ2J$09d00d0c-3513-4619-a512-a20353bed186

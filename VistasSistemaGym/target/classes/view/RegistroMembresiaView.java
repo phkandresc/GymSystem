@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package view;
 
 /**
@@ -160,6 +156,7 @@ public class RegistroMembresiaView extends javax.swing.JFrame {
         txtCedula.setEditable(false);
         txtCedula.setBackground(new java.awt.Color(255, 255, 255));
         txtCedula.setFont(new java.awt.Font("Poppins Light", 0, 14)); // NOI18N
+        txtCedula.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         txtCedula.setEnabled(false);
         txtCedula.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -173,12 +170,16 @@ public class RegistroMembresiaView extends javax.swing.JFrame {
         jPanel3.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, -1, -1));
 
         txtEmail.setEditable(false);
+        txtEmail.setBackground(new java.awt.Color(255, 255, 255));
         txtEmail.setFont(new java.awt.Font("Poppins Light", 0, 14)); // NOI18N
+        txtEmail.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         txtEmail.setEnabled(false);
         jPanel3.add(txtEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, 150, 27));
 
         txtTelefono.setEditable(false);
+        txtTelefono.setBackground(new java.awt.Color(255, 255, 255));
         txtTelefono.setFont(new java.awt.Font("Poppins Light", 0, 14)); // NOI18N
+        txtTelefono.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         txtTelefono.setEnabled(false);
         jPanel3.add(txtTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 240, 150, 27));
 
@@ -187,7 +188,9 @@ public class RegistroMembresiaView extends javax.swing.JFrame {
         jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 220, -1, -1));
 
         txtNombre.setEditable(false);
+        txtNombre.setBackground(new java.awt.Color(255, 255, 255));
         txtNombre.setFont(new java.awt.Font("Poppins Light", 0, 14)); // NOI18N
+        txtNombre.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         txtNombre.setEnabled(false);
         jPanel3.add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 180, 150, 27));
 
@@ -200,12 +203,16 @@ public class RegistroMembresiaView extends javax.swing.JFrame {
         jPanel3.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 160, -1, -1));
 
         txtApellido.setEditable(false);
+        txtApellido.setBackground(new java.awt.Color(255, 255, 255));
         txtApellido.setFont(new java.awt.Font("Poppins Light", 0, 14)); // NOI18N
+        txtApellido.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         txtApellido.setEnabled(false);
         jPanel3.add(txtApellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 180, 150, 27));
 
         txtDireccion.setEditable(false);
+        txtDireccion.setBackground(new java.awt.Color(255, 255, 255));
         txtDireccion.setFont(new java.awt.Font("Poppins Light", 0, 14)); // NOI18N
+        txtDireccion.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         txtDireccion.setEnabled(false);
         jPanel3.add(txtDireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 300, 310, 27));
 

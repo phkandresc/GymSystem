@@ -1,34 +1,57 @@
 
-	java:S112/"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8Á¾¶‹ˆ2J$698feb4f-254a-4df2-b4c1-c822585cd2d1
-	java:S112s"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8Â¾¶‹ˆ2J$2826a790-cb27-4ab6-bb3e-f2f21efd5674
+”	java:S117‡"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÈïªÛ8¤î‹ıˆ2J$b81214eb-a643-4c18-a287-c1d4d2fdf01f
+	java:S112/"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8¥î‹ıˆ2J$de37faf0-77ff-4f76-bede-d9ce6020147b
+	java:S112s"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8¥î‹ıˆ2J$45aa2e48-6b2b-4c64-92a5-6eb233282b80
+	java:S112³"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8¦î‹ıˆ2J$08e79b13-feb6-4487-bc9b-38d4f9641af9
+–
+java:S1192)"SDefine a constant instead of duplicating this literal "tuCorreo@gmail.com" 3 times.(Øøö˜8¦î‹ıˆ2J$35557a87-0189-4617-820e-54f98a5a3bff
+’
+java:S1192"ODefine a constant instead of duplicating this literal "mail.smtp.port" 3 times.(à‰îÆ8¦î‹ıˆ2J$c90e7ee9-d97e-487c-b033-e7e1eb29ed64
+¢
+java:S1192"ZDefine a constant instead of duplicating this literal "mail.smtp.starttls.enable" 3 times.(üıõ†ÿÿÿÿÿ8¦î‹ıˆ2J$bf6d4485-5165-415a-a1f5-d170603037aa
 Œ
-java:S1192A"IDefine a constant instead of duplicating this literal "{nombre}" 3 times.(Å·£ã8Â¾¶‹ˆ2J$4a057985-6710-407e-944a-86827079554b
+java:S1192A"IDefine a constant instead of duplicating this literal "{nombre}" 4 times.(Å·£ã8¦î‹ıˆ2J$c267fe18-9bfd-4e2b-a095-939e97702224
 œ
-java:S1192"TDefine a constant instead of duplicating this literal "ftbu wjjn ptpx odxx" 3 times.(·¬•øÿÿÿÿ8Â¾¶‹ˆ2J$9ac42b4d-5649-4ded-9626-3fa079e48017
+java:S1192"TDefine a constant instead of duplicating this literal "ftbu wjjn ptpx odxx" 4 times.(·¬•øÿÿÿÿ8¦î‹ıˆ2J$3052f676-d131-4f5f-8196-a74a733f473e
+—
+java:S1192"ODefine a constant instead of duplicating this literal "smtp.gmail.com" 3 times.(Ê¡­øùÿÿÿÿ8¦î‹ıˆ2J$53c8657e-7fe1-4fc9-a72b-b16dd52ab845
+’
+java:S1192"ODefine a constant instead of duplicating this literal "mail.smtp.auth" 3 times.(†™Â‘8¦î‹ıˆ2J$e79e1bca-540e-4b0b-9636-24fb6b0b0d4e
+—
+java:S1192"ODefine a constant instead of duplicating this literal "mail.smtp.host" 3 times.(Ê¡­øùÿÿÿÿ8¦î‹ıˆ2J$611ae48c-37b5-4ee0-b046-d4771ee3f91e
+’
+java:S1192,"JDefine a constant instead of duplicating this literal "text/html" 3 times.(Áó¥üÿÿÿÿ8¦î‹ıˆ2J$32e191f0-ac7a-46ae-91d6-5a49bf65a356
 
-java:S1192"VDefine a constant instead of duplicating this literal "kacoraizaca@gmail.com" 3 times.(âúÏêüÿÿÿÿ8Â¾¶‹ˆ2J$39fe1689-85f0-4210-af47-563ec30fbbe7
+java:S1192"VDefine a constant instead of duplicating this literal "kacoraizaca@gmail.com" 4 times.(âúÏêüÿÿÿÿ8§î‹ıˆ2J$74492b7e-1ed5-4868-9bc5-2b881e4693e3
 
-java:S1192B"KDefine a constant instead of duplicating this literal "{apellido}" 3 times.(ÍÆ·€8Â¾¶‹ˆ2J$60b3b344-33e5-4846-88ce-70827b42a338
+java:S1192B"KDefine a constant instead of duplicating this literal "{apellido}" 4 times.(ÍÆ·€8§î‹ıˆ2J$ec220100-b8ab-425c-a687-d47f124124e5
 i
-java:S1170"!Make this final field static too.(âúÏêüÿÿÿÿ8Ä¾¶‹ˆ2J$63bde8b2-87a6-4341-8316-26276cb42c83
+java:S1170"!Make this final field static too.(âúÏêüÿÿÿÿ8§î‹ıˆ2J$ddd0c3f2-c632-4359-9682-5064492a9911
 i
-java:S1170"!Make this final field static too.(·¬•øÿÿÿÿ8Ä¾¶‹ˆ2J$8ff15674-81cc-41e0-ba53-c04c7101ae5f
+java:S1170"!Make this final field static too.(·¬•øÿÿÿÿ8§î‹ıˆ2J$917ffed3-fb00-4643-8499-57cc6844102e
 }
-java:S1161"":Add the "@Override" annotation above this method signature(‡èú×8Ê¾¶‹ˆ2J$7ffc0f30-515b-4d6c-9300-b1f119f8d1ae
+java:S1161"":Add the "@Override" annotation above this method signature(‡èú×8¬î‹ıˆ2J$d2f1e11f-aa6c-4556-9168-73866fd8092e
 ~
-java:S6437#"6Revoke and change this password, as it is compromised.(ˆÙı½øÿÿÿÿ8Ê¾¶‹ˆ2J$492164f2-79c4-4bc4-b48e-5b3a6a95fa87
+java:S6437#"6Revoke and change this password, as it is compromised.(ˆÙı½øÿÿÿÿ8¬î‹ıˆ2J$f206f2f9-3e75-4943-89dc-b082e66b79ac
 }
-java:S1161Z":Add the "@Override" annotation above this method signature(‡èú×8Ñ¾¶‹ˆ2J$9dde33ad-05d9-47c9-994c-4215ba05b21e
+java:S1161Z":Add the "@Override" annotation above this method signature(‡èú×8³î‹ıˆ2J$8677bef5-2d99-48df-9f62-f655ecb5b2fc
 ~
-java:S6437["6Revoke and change this password, as it is compromised.(ˆÙı½øÿÿÿÿ8Ñ¾¶‹ˆ2J$4e4287f1-7d08-4568-93c6-abc8683e5f9f
-Y	java:S125"<This block of commented-out lines of code should be removed.(Çµí‘8ù¤º‹ˆ2
-|
-java:S1128"9Remove this unused import 'org.gimnasio.daos.FacturaDAO'.(÷ô¨È8Ö¾¶‹ˆ2J$ee6305eb-b964-43d5-b9c7-76d2f64be017
+java:S6437["6Revoke and change this password, as it is compromised.(ˆÙı½øÿÿÿÿ8³î‹ıˆ2J$b87ffbf1-7daa-4704-8785-accf4fd6d007
+n
+java:S1197‡"*Move the array designators [] to the type.(ÈïªÛ8¸î‹ıˆ2J$4c2960e6-a98f-46a9-938b-8e91a70efd48
+n
+java:S1197‹"*Move the array designators [] to the type.(çøì“8¹î‹ıˆ2J$14c24ef1-d178-407d-b557-dd0868ea1afe
+~
+java:S1161š":Add the "@Override" annotation above this method signature(‡èú×8»î‹ıˆ2J$3ac5caa4-0775-4469-a39a-93bf8f94c019
 
-java:S1128"7Remove this unused import 'org.gimnasio.model.Factura'.(ä±Èÿÿÿÿÿ8Ö¾¶‹ˆ2J$6bda4db5-2f5b-49a2-b947-cd4383a80cac
+java:S6437›"6Revoke and change this password, as it is compromised.(ˆÙı½øÿÿÿÿ8»î‹ıˆ2J$61e2405d-511d-412a-aea5-84b4e0814f61
+V
+java:S1128"9Remove this unused import 'org.gimnasio.daos.FacturaDAO'.(÷ô¨È8áûâıˆ2
 G
-java:S1128"*Remove this unused import 'java.sql.Date'.(ÙÀ½Ê8ù¤º‹ˆ2
+java:S1128"*Remove this unused import 'java.sql.Date'.(ÙÀ½Ê8áûâıˆ2
+M
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8áûâıˆ2
 t
-java:S1068",Remove this unused "username" private field.(âúÏêüÿÿÿÿ8Ö¾¶‹ˆ2J$e05fcd8c-8746-43b9-bdf3-3fa4bfa89b44
+java:S1068",Remove this unused "username" private field.(âúÏêüÿÿÿÿ8½î‹ıˆ2J$139de520-8c25-4ad9-a1ab-120c85de3516
 t
-java:S1068",Remove this unused "password" private field.(·¬•øÿÿÿÿ8Ö¾¶‹ˆ2J$02d4bcc6-9c8e-4efd-a5b3-cd13b45019f4
+java:S1068",Remove this unused "password" private field.(·¬•øÿÿÿÿ8½î‹ıˆ2J$77300556-b57c-4486-b1d4-74cf9e2ef517

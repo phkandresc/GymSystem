@@ -37,11 +37,15 @@ public class ListaSociosView extends javax.swing.JFrame {
         cmbCriterioBusqueda = new javax.swing.JComboBox<>();
         TextFieldBusqueda = new javax.swing.JTextField();
         btnFiltrar = new javax.swing.JButton();
+        lblRegistrosEncontrados = new javax.swing.JLabel();
+        ButtonModificar = new javax.swing.JButton();
+        ButtonEliminar = new javax.swing.JButton();
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/barraTitulo.png"))); // NOI18N
         jLabel1.setText("jLabel1");
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Lista de Socios");
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -50,11 +54,11 @@ public class ListaSociosView extends javax.swing.JFrame {
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel10.setText("Lista de Socios");
-        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 870, 40));
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 770, 40));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/barraTitulo.png"))); // NOI18N
         jLabel2.setText("jLabel1");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 890, 60));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 790, 60));
 
         jScrollPane1.setBorder(new javax.swing.border.MatteBorder(null));
 
@@ -92,31 +96,53 @@ public class ListaSociosView extends javax.swing.JFrame {
         jtSocios.setShowHorizontalLines(true);
         jScrollPane1.setViewportView(jtSocios);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 160, 730, 360));
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 150, 710, 330));
 
         jLabel3.setFont(new java.awt.Font("Poppins Medium", 0, 14)); // NOI18N
         jLabel3.setText("Filtrar socios por:");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 90, -1, 30));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 90, -1, 30));
 
         cmbCriterioBusqueda.setFont(new java.awt.Font("Poppins Light", 0, 14)); // NOI18N
         cmbCriterioBusqueda.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "ID", "Cedula", "Apellido", "Mes de registro", "Año de nacimiento" }));
-        jPanel1.add(cmbCriterioBusqueda, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 90, 90, 30));
+        jPanel1.add(cmbCriterioBusqueda, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 90, 140, 30));
 
         TextFieldBusqueda.setFont(new java.awt.Font("Poppins Light", 0, 14)); // NOI18N
-        jPanel1.add(TextFieldBusqueda, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 90, 160, 30));
+        jPanel1.add(TextFieldBusqueda, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 90, 160, 30));
 
         btnFiltrar.setBackground(new java.awt.Color(242, 98, 15));
         btnFiltrar.setFont(new java.awt.Font("Poppins Medium", 0, 14)); // NOI18N
         btnFiltrar.setForeground(new java.awt.Color(255, 255, 255));
         btnFiltrar.setText("Filtrar");
         btnFiltrar.setBorder(null);
-        jPanel1.add(btnFiltrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 90, 120, 30));
+        jPanel1.add(btnFiltrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 90, 120, 30));
+
+        lblRegistrosEncontrados.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
+        lblRegistrosEncontrados.setText("Registros encontrados: 0");
+        jPanel1.add(lblRegistrosEncontrados, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 490, -1, -1));
+
+        ButtonModificar.setBackground(new java.awt.Color(242, 98, 15));
+        ButtonModificar.setFont(new java.awt.Font("Poppins Medium", 0, 14)); // NOI18N
+        ButtonModificar.setForeground(new java.awt.Color(255, 255, 255));
+        ButtonModificar.setText("Modificar");
+        ButtonModificar.setBorder(null);
+        ButtonModificar.setEnabled(false);
+        jPanel1.add(ButtonModificar, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 500, 160, 30));
+
+        ButtonEliminar.setBackground(new java.awt.Color(242, 98, 15));
+        ButtonEliminar.setFont(new java.awt.Font("Poppins Medium", 0, 14)); // NOI18N
+        ButtonEliminar.setForeground(new java.awt.Color(255, 255, 255));
+        ButtonEliminar.setText("Eliminar");
+        ButtonEliminar.setBorder(null);
+        ButtonEliminar.setEnabled(false);
+        jPanel1.add(ButtonEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 500, 160, 30));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -124,6 +150,7 @@ public class ListaSociosView extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     /**
@@ -162,6 +189,8 @@ public class ListaSociosView extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JButton ButtonEliminar;
+    public javax.swing.JButton ButtonModificar;
     public javax.swing.JTextField TextFieldBusqueda;
     public javax.swing.JButton btnFiltrar;
     public javax.swing.JComboBox<String> cmbCriterioBusqueda;
@@ -169,8 +198,9 @@ public class ListaSociosView extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JPanel jPanel1;
+    public javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     public javax.swing.JTable jtSocios;
+    public javax.swing.JLabel lblRegistrosEncontrados;
     // End of variables declaration//GEN-END:variables
 }

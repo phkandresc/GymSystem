@@ -6,6 +6,7 @@ import org.gimnasio.model.Horario;
 
 import javax.swing.*;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Logger;
 
@@ -35,6 +36,56 @@ public class HorarioService {
             LOGGER.severe(e.getMessage());
         }
         return null;
+    }
+
+    public List<Horario> obtenerListaDeHorariosPorClase(int idClase) {
+        List<Horario> lista = new ArrayList<>();
+        try {
+            lista = new HorariosDAO().obtenerListaDeHorariosPorClase(idClase);
+            if (lista.isEmpty()) {
+                JOptionPane.showMessageDialog(null, "No hay horarios para la clase seleccionada");
+            }
+        } catch (SQLException e) {
+            LOGGER.severe(e.getMessage());
+            JOptionPane.showMessageDialog(null, "Error al obtener la lista de horarios de la clase: " + e.getMessage());
+        }
+        return lista;
+    }
+
+    public boolean agregarHorario(Horario horario){
+        try {
+            horarioDAO.agregarDato(horario);
+            JOptionPane.showMessageDialog(null, "Horario agregado correctamente");
+            return true;
+        }catch (SQLException e){
+            LOGGER.severe(e.getMessage());
+            JOptionPane.showMessageDialog(null, "Error al agregar el horario: " + e.getMessage());
+        }
+        return false;
+    }
+
+    public boolean modificarHorario(Horario horario){
+        try {
+            horarioDAO.actualizarDato(horario);
+            JOptionPane.showMessageDialog(null, "Horario actualizado correctamente");
+            return true;
+        }catch (SQLException e){
+            LOGGER.severe(e.getMessage());
+            JOptionPane.showMessageDialog(null, "Error al actualizar el horario: " + e.getMessage());
+        }
+        return false;
+    }
+
+    public boolean eliminarHorario(Horario horario){
+        try {
+            horarioDAO.eliminarDato(horario);
+            JOptionPane.showMessageDialog(null, "Horario eliminado correctamente");
+            return true;
+        }catch (SQLException e){
+            LOGGER.severe(e.getMessage());
+            JOptionPane.showMessageDialog(null, "Error al eliminar el horario: " + e.getMessage());
+        }
+        return false;
     }
 
 }

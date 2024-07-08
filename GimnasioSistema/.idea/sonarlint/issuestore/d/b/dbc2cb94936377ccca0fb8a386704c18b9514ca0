@@ -1,33 +1,41 @@
 
+z
+java:S2589+"7Remove this expression which always evaluates to "true"(¤òª£8©âÜˆ2J$02ec9e81-705f-442f-909f-d2b76975a35a
+z
+java:S2589J"7Remove this expression which always evaluates to "true"(¤òª£8ÍøôÙˆ2J$d370df46-2c79-4c30-9766-2d6db8408b7c
+{
+java:S2589Å"7Remove this expression which always evaluates to "true"(¤òª£8ÎøôÙˆ2J$59511e1d-454a-4328-9b5d-310961350a2a
+z
+java:S2589i"7Remove this expression which always evaluates to "true"(¤òª£8ÍøôÙˆ2J$ad5503fa-317e-429b-8a3a-0434813610cc
+{
+java:S2589"7Remove this expression which always evaluates to "true"(¤òª£8ÎøôÙˆ2J$c2b6a969-180f-4e4b-a971-c351848f4376
 U
-java:S2589½"7Remove this expression which always evaluates to "true"(¤òª£8»Ü­‡2
-T
-java:S2589J"7Remove this expression which always evaluates to "true"(¤òª£8»Ü­‡2
-T
-java:S2589+"7Remove this expression which always evaluates to "true"(¤òª£8»Ü­‡2
-T
-java:S2589u"7Remove this expression which always evaluates to "true"(¤òª£8»Ü­‡2
-U
-java:S2589˜"7Remove this expression which always evaluates to "true"(¤òª£8»Ü­‡2
-i
-java:S1192 "MDefine a constant instead of duplicating this literal "fecha_inicio" 4 times.(…úéL8ƒ»Ü­‡2
-g
-java:S1192!"JDefine a constant instead of duplicating this literal "fecha_fin" 4 times.(éº¿à8ƒ»Ü­‡2
-i
-java:S1192"LDefine a constant instead of duplicating this literal "hora_inicio" 4 times.(Éã‡8ƒ»Ü­‡2
-k
-java:S1192"IDefine a constant instead of duplicating this literal "hora_fin" 4 times.(•ÄŞĞøÿÿÿÿ8ƒ»Ü­‡2
+java:S2589ê"7Remove this expression which always evaluates to "true"(¤òª£8ìÎ–İˆ2
+{
+java:S2589"7Remove this expression which always evaluates to "true"(¤òª£8ÍøôÙˆ2J$99c2fe56-e775-4809-aaba-dac0df3ef6e1
+{
+java:S2589¢"7Remove this expression which always evaluates to "true"(¤òª£8ÍøôÙˆ2J$65698c84-d592-4cc4-b500-b3fa7d80a0b7
+
+java:S1192 "MDefine a constant instead of duplicating this literal "fecha_inicio" 5 times.(…úéL8ÏøôÙˆ2J$d80ff162-10b9-4586-8fac-c17cafe98eac
+
+java:S1192"LDefine a constant instead of duplicating this literal "hora_inicio" 5 times.(Éã‡8ĞøôÙˆ2J$834fed94-98c1-4d8f-a210-ef56a2eb5a99
+
+java:S1192!"JDefine a constant instead of duplicating this literal "fecha_fin" 5 times.(éº¿à8ĞøôÙˆ2J$ad21c57a-81df-4788-b7c4-37e6f7cacfbf
+‘
+java:S1192"IDefine a constant instead of duplicating this literal "hora_fin" 5 times.(•ÄŞĞøÿÿÿÿ8ĞøôÙˆ2J$5986565c-2c5c-4d28-8abd-994da34b41ce
+
+java:S1192"KDefine a constant instead of duplicating this literal "dia_semana" 5 times.(‹à¾û8ĞøôÙˆ2J$3690ae47-5bc8-4929-ba90-195606e83bc6
+œ
+java:S1192"TDefine a constant instead of duplicating this literal "id_clase_programada" 5 times.(Ó¶ˆüÿÿÿÿ8ĞøôÙˆ2J$f66d0feb-e14d-41de-a4c7-8348ad0cdf67
+a
+java:S6905"Don't use the query "SELECT *".(áÄı8ÓøôÙˆ2J$5ec414e1-2fb3-4032-8637-5d8b8346751f
+c
+java:S6905"Don't use the query "SELECT *".(ŞãÁ÷8×øôÙˆ2J$7fa8f08d-e92a-43f3-b193-98757234fb18
+b
+java:S6905°"Don't use the query "SELECT *".(Ñ¥¼x8ØøôÙˆ2J$eb333748-9b07-4588-ac3a-fd184af2d775
 h
-java:S1192"KDefine a constant instead of duplicating this literal "dia_semana" 4 times.(‹à¾û8ƒ»Ü­‡2
-v
-java:S1192"TDefine a constant instead of duplicating this literal "id_clase_programada" 4 times.(Ó¶ˆüÿÿÿÿ8ƒ»Ü­‡2
-;
-java:S6905"Don't use the query "SELECT *".(áÄı8‡»Ü­‡2
-<
-java:S6905b"Don't use the query "SELECT *".(ŞãÁ÷8‹»Ü­‡2
-<
-java:S6905ƒ"Don't use the query "SELECT *".(Ñ¥¼x8»Ü­‡2
-B
-java:S6905§"Don't use the query "SELECT *".(âô¹‡ùÿÿÿÿ8»Ü­‡2
-Y
-java:S1128"7Remove this unused import 'org.gimnasio.model.Espacio'.(–¾¥óøÿÿÿÿ8‘»Ü­‡2
+java:S6905Ô"Don't use the query "SELECT *".(âô¹‡ùÿÿÿÿ8ÚøôÙˆ2J$9a11c935-984f-4b40-a9a1-1ba388cb5a1d
+b
+java:S6905ø"Don't use the query "SELECT *".(ÓÊ™8ÜøôÙˆ2J$e7833a49-2268-46f5-ab5f-123ddcc9ddaa
+
+java:S1128"7Remove this unused import 'org.gimnasio.model.Espacio'.(–¾¥óøÿÿÿÿ8İøôÙˆ2J$046d7d0d-8953-40ec-a148-d5833d52e920

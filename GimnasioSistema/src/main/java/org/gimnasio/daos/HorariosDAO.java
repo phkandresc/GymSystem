@@ -34,10 +34,10 @@ public class HorariosDAO implements CRUD<Horario> {
                 listaHorarios.add(horario);
             }
 
-        }catch (SQLException e){
+        } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            if (ps != null){
+            if (ps != null) {
                 ps.close();
             }
             if (connection != null) {
@@ -64,11 +64,11 @@ public class HorariosDAO implements CRUD<Horario> {
             ps.setInt(7, dato.getEspacio().getId());
             ps.executeUpdate();
             return true;
-        } catch (SQLException e){
+        } catch (SQLException e) {
             e.printStackTrace();
             return false;
         } finally {
-            if (ps != null){
+            if (ps != null) {
                 ps.close();
             }
             if (connection != null) {
@@ -80,12 +80,57 @@ public class HorariosDAO implements CRUD<Horario> {
 
     @Override
     public boolean actualizarDato(Horario dato) throws SQLException {
-        return false;
+        PreparedStatement ps = null;
+        Connection connection = DBConexion.getConnection();
+        try {
+
+            ps = connection.prepareStatement("UPDATE horarios SET id_clase_programada = ?, dia_semana = ?, hora_inicio = ?, hora_fin = ?, fecha_inicio = ?, fecha_fin = ?, id_espacio = ? WHERE id = ?");
+            ps.setInt(1, dato.getClaseProgramada().getId());
+            ps.setString(2, dato.getDiaSemana());
+            ps.setTime(3, dato.getHoraInicio());
+            ps.setTime(4, dato.getHoraFin());
+            ps.setDate(5, dato.getFechaInicio());
+            ps.setDate(6, dato.getFechaFin());
+            ps.setInt(7, dato.getEspacio().getId());
+            ps.setInt(8, dato.getId());
+            ps.executeUpdate();
+            return true;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        } finally {
+            if (ps != null) {
+                ps.close();
+            }
+            if (connection != null) {
+                connection.close();
+            }
+            DBConexion.closeConnection(connection);
+        }
     }
 
     @Override
     public boolean eliminarDato(Horario dato) throws SQLException {
-        return false;
+        PreparedStatement ps = null;
+        Connection connection = DBConexion.getConnection();
+        try {
+
+            ps = connection.prepareStatement("DELETE FROM horarios WHERE id = ?");
+            ps.setInt(1, dato.getId());
+            ps.executeUpdate();
+            return true;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        } finally {
+            if (ps != null) {
+                ps.close();
+            }
+            if (connection != null) {
+                connection.close();
+            }
+            DBConexion.closeConnection(connection);
+        }
     }
 
     @Override
@@ -108,10 +153,10 @@ public class HorariosDAO implements CRUD<Horario> {
                 horario.setFechaInicio(rs.getDate("fecha_inicio"));
                 horario.setFechaFin(rs.getDate("fecha_fin"));
             }
-        } catch (SQLException e){
+        } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            if (ps != null){
+            if (ps != null) {
                 ps.close();
             }
             if (connection != null) {
@@ -143,10 +188,10 @@ public class HorariosDAO implements CRUD<Horario> {
                 listaHorarios.add(horario);
             }
 
-        }catch (SQLException e) {
+        } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            if (ps != null){
+            if (ps != null) {
                 ps.close();
             }
             if (connection != null) {
@@ -193,4 +238,41 @@ public class HorariosDAO implements CRUD<Horario> {
         }
         return listaHorarios;
     }
+
+    public List<Horario> obtenerListaDeHorariosPorClase(int idClase) throws SQLException {
+        PreparedStatement ps = null;
+        List<Horario> listaHorarios = new ArrayList<>();
+        Connection connection = DBConexion.getConnection();
+        try {
+
+            ps = connection.prepareStatement("SELECT * FROM horarios WHERE id_clase_programada = ?");
+            ps.setInt(1, idClase);
+            ResultSet rs = ps.executeQuery();
+            while (rs.next()) {
+                Horario horario = new Horario();
+                horario.setId(rs.getInt("id"));
+                horario.setClaseProgramada(new ClaseDAO().buscarDatoPorId(rs.getInt("id_clase_programada")));
+                horario.setDiaSemana(rs.getString("dia_semana"));
+                horario.setHoraInicio(rs.getTime("hora_inicio"));
+                horario.setHoraFin(rs.getTime("hora_fin"));
+                horario.setFechaInicio(rs.getDate("fecha_inicio"));
+                horario.setFechaFin(rs.getDate("fecha_fin"));
+                horario.setEspacio(new EspaciosDAO().buscarDatoPorId(rs.getInt("id_espacio")));
+                listaHorarios.add(horario);
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            if (ps != null) {
+                ps.close();
+            }
+            if (connection != null) {
+                connection.close();
+            }
+            DBConexion.closeConnection(connection);
+        }
+        return listaHorarios;
+    }
 }
+

@@ -117,3 +117,13 @@ d
 0src/main/java/org/gimnasio/model/Entrenador.java,8\5\85e144b5d047dc705a3cc59e96714c8b2aba15c5
 w
 Gsrc/main/java/org/gimnasio/controller/RegistroEntrenadorController.java,c\2\c2502cdf58276fd3dc152726cea2af001d42f9a0
+e
+5src/main/java/org/gimnasio/view/ReservaClaseView.java,e\4\e4479c0f3b51fc4badcd46ca4ba07e8ffe140346
+`
+0src/main/java/org/gimnasio/daos/ReservasDAo.java,8\5\85a4cf505595a3a3a66a125c4809865997c872fd
+`
+0src/main/java/org/gimnasio/daos/ReservasDAO.java,5\9\59a645b062d696202768795186ac3c0095ee8ff0
+]
+-src/main/java/org/gimnasio/model/Reserva.java,9\1\91419e72c4af50988a82e24e89e0451e9fe3099a
+q
+Asrc/main/java/org/gimnasio/controller/ReservaClaseController.java,3\4\34c962eadc8ef6e7c3210223908f8a4ba2465d74

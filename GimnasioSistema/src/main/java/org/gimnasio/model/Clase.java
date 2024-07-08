@@ -8,7 +8,6 @@ public class Clase {
     private Double costo;
     private int cupos;
     private Entrenador instructor;
-    private Espacio espacio;
 
     public int getId() {
         return id;
@@ -66,14 +65,6 @@ public class Clase {
         this.instructor = instructor;
     }
 
-    public Espacio getEspacio() {
-        return espacio;
-    }
-
-    public void setEspacio(Espacio espacio) {
-        this.espacio = espacio;
-    }
-
     @Override
     public String toString() {
         return "Clase{" +
@@ -84,7 +75,6 @@ public class Clase {
                 ", costo=" + costo +
                 ", cupos=" + cupos +
                 ", instructor=" + instructor +
-                ", espacio=" + espacio +
                 '}';
     }
 }

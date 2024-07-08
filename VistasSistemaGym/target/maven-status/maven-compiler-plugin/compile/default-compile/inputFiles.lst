@@ -1,11 +1,12 @@
 D:\GymSystem\VistasSistemaGym\src\main\java\view\ListaSociosView.java
 D:\GymSystem\VistasSistemaGym\src\main\java\view\TiposMembresiaView.java
-D:\GymSystem\VistasSistemaGym\src\main\java\view\SociosFilterApp.java
-D:\GymSystem\VistasSistemaGym\src\main\java\view\FacturarVista.java
 D:\GymSystem\VistasSistemaGym\src\main\java\view\AgregarClaseView.java
+D:\GymSystem\VistasSistemaGym\src\main\java\view\ListaMembresiasView.java
 D:\GymSystem\VistasSistemaGym\src\main\java\view\PaginaPrincipalView.java
+D:\GymSystem\VistasSistemaGym\src\main\java\view\RegistroEntrenadorView.java
 D:\GymSystem\VistasSistemaGym\src\main\java\view\AsignarHorarioClaseView.java
 D:\GymSystem\VistasSistemaGym\src\main\java\view\IniciarSesionView.java
 D:\GymSystem\VistasSistemaGym\src\main\java\view\RegistroMembresiaView.java
 D:\GymSystem\VistasSistemaGym\src\main\java\view\RegistroSociosView.java
 D:\GymSystem\VistasSistemaGym\src\main\java\view\AdministrarSociosView.java
+D:\GymSystem\VistasSistemaGym\src\main\java\view\ReservaClaseView.java

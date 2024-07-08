@@ -1,0 +1,97 @@
+
+p
+java:S1604K"(Make this anonymous inner class a lambda(•é˜‰ûÿÿÿÿ8‡Îïˆ2J$ac3ae116-933a-48be-8519-e809ea1da1d7
+l
+java:S1604Ÿ"(Make this anonymous inner class a lambda(öÃà8‡Îïˆ2J$2b7fcbb4-9e0e-4285-93c9-99d88373cd3d
+k
+java:S1604â"(Make this anonymous inner class a lambda(İ„Ó/8‡Îïˆ2J$0ec38552-b752-464f-bf2d-d51af0d2c733
+q
+java:S1604š"(Make this anonymous inner class a lambda(¨í¡§úÿÿÿÿ8‡Îïˆ2J$ce86548d-3082-4bd8-b0bc-295ed8263970
+
+java:S1104¢"UMake btnBuscar a static final constant or non-public and provide accessors if needed.(õ…ñøÿÿÿÿ8‡Îïˆ2J$66216c57-eef7-449c-962a-05faf7030d2d
+š
+java:S1104£"WMake btnReservar a static final constant or non-public and provide accessors if needed.(¦”8‡Îïˆ2J$82bbd6b6-3791-4846-b5d4-73d030a0485a
+
+java:S1104¤"UMake cmbClases a static final constant or non-public and provide accessors if needed.(ßæƒøøÿÿÿÿ8‡Îïˆ2J$b9b3ebc3-1933-4450-a8a6-6a7b5fce3346
+¨
+java:S1104¥"_Make cmbCriterioBusqueda a static final constant or non-public and provide accessors if needed.(ÏËÑûÿÿÿÿ8‡Îïˆ2J$26d7329d-bd3f-4c58-a5ca-e121f5117f9a
+£
+java:S1104·"ZMake lblDescripcion a static final constant or non-public and provide accessors if needed.(ËÏá¼ùÿÿÿÿ8‡Îïˆ2J$1f28ccf1-793a-437f-9bb0-df32ed3c62a2
+
+java:S1104¸"ZMake lblNombreClase a static final constant or non-public and provide accessors if needed.(§÷“„8‡Îïˆ2J$694e169a-59b2-40ee-833c-2bd8b8b8c691
+
+java:S1104¹"ZMake lblPrecioTotal a static final constant or non-public and provide accessors if needed.(Äñ¿ş8œ‡Îïˆ2J$85597637-b281-4ec4-9649-cf39d567afab
+ 
+java:S1104º"WMake txtApellido a static final constant or non-public and provide accessors if needed.(‚ÙûÚşÿÿÿÿ8œ‡Îïˆ2J$7afc6dd1-b2dc-4bfc-a317-db166e9c84f5
+›
+java:S1104»"WMake txtBusqueda a static final constant or non-public and provide accessors if needed.(Š•ˆ8œ‡Îïˆ2J$0e2113d9-d009-4681-8a5d-fa4ecd6b9a29
+
+java:S1104¼"UMake txtCedula a static final constant or non-public and provide accessors if needed.(À”¶øÿÿÿÿ8œ‡Îïˆ2J$4af191a9-782a-4e19-bf53-cbe5f3b463b2
+¡
+java:S1104½"XMake txtDireccion a static final constant or non-public and provide accessors if needed.(ÕåÈåùÿÿÿÿ8œ‡Îïˆ2J$79134d8f-d090-48b1-bfe3-d05940bfe74f
+
+java:S1104¾"TMake txtEmail a static final constant or non-public and provide accessors if needed.(£Ÿö¿ıÿÿÿÿ8œ‡Îïˆ2J$17f764c2-d338-4cac-906d-e13ccccf1577
+
+java:S1104¿"UMake txtNombre a static final constant or non-public and provide accessors if needed.(Û©”ûÿÿÿÿ8œ‡Îïˆ2J$f3231642-854a-4b5b-acd9-0a60f005349f
+ 
+java:S1104À"WMake txtTelefono a static final constant or non-public and provide accessors if needed.(àÏâ­şÿÿÿÿ8œ‡Îïˆ2J$0305fb89-e1a4-4275-a479-99229a626493
+–
+java:S1192I"NDefine a constant instead of duplicating this literal "Poppins Light" 9 times.(¢ÂêÆúÿÿÿÿ8œ‡Îïˆ2J$76a288b8-dd72-404e-894e-3c8abcd1ae94
+‹
+java:S1192X"HDefine a constant instead of duplicating this literal "Poppins" 3 times.(ªˆ¬8œ‡Îïˆ2J$ec20ef77-4489-47a3-a02d-42da5ce10166
+˜
+java:S1192E"PDefine a constant instead of duplicating this literal "Poppins Medium" 11 times.(‚ÇÉÓøÿÿÿÿ8œ‡Îïˆ2J$8a28c4bb-1ff3-4869-befc-03fd50135581
+Ÿ
+java:S1450¦"VRemove the "jLabel1" field and declare it as a local variable in the relevant methods.(°ãÉ¸ÿÿÿÿÿ8 ‡Îïˆ2J$81f8a17d-67fc-4d10-a7e7-5f81996d652b
+ 
+java:S1450§"WRemove the "jLabel10" field and declare it as a local variable in the relevant methods.(¼õò†şÿÿÿÿ8 ‡Îïˆ2J$43fb66a8-75fa-4a33-a19d-511e6cb63bdc
+ 
+java:S1450¨"WRemove the "jLabel11" field and declare it as a local variable in the relevant methods.(‰Ó‚©øÿÿÿÿ8 ‡Îïˆ2J$ce17cab8-5e2c-4164-a605-ae355d44a53e
+›
+java:S1450©"WRemove the "jLabel12" field and declare it as a local variable in the relevant methods.(¶“¡8 ‡Îïˆ2J$8d8144b4-cd26-4a41-a7b4-089db316caf1
+ 
+java:S1450ª"WRemove the "jLabel15" field and declare it as a local variable in the relevant methods.(³şâçøÿÿÿÿ8¡‡Îïˆ2J$06576afc-d075-4f6c-9348-6abac5ac66e9
+Ÿ
+java:S1450«"VRemove the "jLabel2" field and declare it as a local variable in the relevant methods.(™úòˆüÿÿÿÿ8¡‡Îïˆ2J$f6efdb05-493e-4989-adec-40ac065350d2
+Ÿ
+java:S1450¬"VRemove the "jLabel3" field and declare it as a local variable in the relevant methods.(Îä€øÿÿÿÿ8¡‡Îïˆ2J$7316cd6f-a39e-441d-9a1a-371d740f9e43
+š
+java:S1450­"VRemove the "jLabel4" field and declare it as a local variable in the relevant methods.(«¢•ã8¡‡Îïˆ2J$4b4b784f-1e6d-43e4-9229-a012b591f88c
+š
+java:S1450®"VRemove the "jLabel5" field and declare it as a local variable in the relevant methods.(ó Ù®8¢‡Îïˆ2J$82c8ebf8-eeec-450f-9c8f-f0e75913a497
+Ÿ
+java:S1450¯"VRemove the "jLabel6" field and declare it as a local variable in the relevant methods.(¸ôÂøÿÿÿÿ8¢‡Îïˆ2J$05bdbb26-730e-4511-b0e3-3f50d504f9aa
+š
+java:S1450°"VRemove the "jLabel7" field and declare it as a local variable in the relevant methods.(×ê˜Ÿ8¢‡Îïˆ2J$dc4754bc-961b-4605-bc13-febb09ff33de
+š
+java:S1450±"VRemove the "jLabel8" field and declare it as a local variable in the relevant methods.(å»«¢8£‡Îïˆ2J$e52efa7d-6a1b-410b-9523-289decf0074f
+Ÿ
+java:S1450²"VRemove the "jLabel9" field and declare it as a local variable in the relevant methods.(Ì’óĞşÿÿÿÿ8£‡Îïˆ2J$1d7f6227-92e9-4eff-af69-b1a641a5dde2
+Ÿ
+java:S1450³"VRemove the "jPanel1" field and declare it as a local variable in the relevant methods.(´œ½ÿÿÿÿÿ8£‡Îïˆ2J$c62f65d0-f9b1-4767-b665-03f743061875
+Ÿ
+java:S1450´"VRemove the "jPanel2" field and declare it as a local variable in the relevant methods.(õ òçüÿÿÿÿ8¤‡Îïˆ2J$b1546381-c904-4b1e-858d-6711cc3a8836
+š
+java:S1450µ"VRemove the "jPanel3" field and declare it as a local variable in the relevant methods.(Œ³èÈ8¤‡Îïˆ2J$58bc495d-18e5-4a19-ac2e-feb23295f5a7
+Ÿ
+java:S1450¶"VRemove the "jPanel4" field and declare it as a local variable in the relevant methods.(§É†¬şÿÿÿÿ8¤‡Îïˆ2J$b8dd13ce-68b7-443e-bd8c-950fc5580cd1
+s
+java:S1172ñ"*Remove this unused method parameter "evt".(ßßàÜúÿÿÿÿ8É‡Îïˆ2J$9d6e7319-4f74-4210-badd-7bd48d87adfe
+{
+java:S1135ò"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8É‡Îïˆ2J$319a1314-7824-400b-b2dd-336e156418a3
+s
+java:S1172õ"*Remove this unused method parameter "evt".(Ò¾Ëşÿÿÿÿ8É‡Îïˆ2J$bfa90ce3-0b92-45ed-a459-6f60e90a53b4
+{
+java:S1135ö"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8É‡Îïˆ2J$cc2d41ce-9d7b-43c6-a3bb-dddff1afb464
+n
+java:S1172ù"*Remove this unused method parameter "evt".(Ş öú8É‡Îïˆ2J$7ea965b0-d565-454d-a305-0ef3e66d76ed
+{
+java:S1135ú"2Complete the task associated to this TODO comment.(ÜÀ†áûÿÿÿÿ8É‡Îïˆ2J$b8ed4050-f71b-4c91-99e4-ea549710493f
+s
+java:S1197€"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ8Ê‡Îïˆ2J$cbdc7e32-4098-4cde-b4d7-d58ff665c14b
+‰
+java:S2147"ECombine this catch with the one at line 269, which has the same body.(¨¦Š½8Ê‡Îïˆ2J$81adc19c-4c75-4e0c-8506-073956b9a03d
+‰
+java:S2147‘"ECombine this catch with the one at line 271, which has the same body.(ã€ 8Ê‡Îïˆ2J$103147ad-b6c7-435f-af04-2887a951db96
+ˆ
+java:S2147“"ECombine this catch with the one at line 273, which has the same body.(ñÎ¯%8Ê‡Îïˆ2J$4a7a1bf0-a81b-40ce-9a02-bd6c47cd7aa0

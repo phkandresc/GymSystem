@@ -53,7 +53,6 @@ public class AgregarClaseController extends WindowController implements MouseLis
                         clase.getCosto(),
                         clase.getCupos(),
                         clase.getInstructor().getNombre(),
-                        clase.getEspacio().getNombre()
                 });
             }
 
@@ -130,7 +129,6 @@ public class AgregarClaseController extends WindowController implements MouseLis
         clase.setDescripcion(view.txtDescripcion.getText());
         clase.setCosto((double) view.jsCosto.getValue());
         clase.setCupos((int) view.jsCupos.getValue());
-        clase.setEspacio(espacioSeleccionado);
         return clase;
     }
 

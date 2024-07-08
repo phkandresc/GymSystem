@@ -1,6 +1,24 @@
 
-É
-java:S1186|"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¼ Òþüÿÿÿÿ8¶šºß‡2J$141835f9-2ce0-42f6-ba79-12080f28d03a
-ª
-java:S1450"bRemove the "espacioSeleccionado" field and declare it as a local variable in the relevant methods.(¤ì¾÷ÿÿÿÿÿ8·šºß‡2J$bfa21dfb-07d3-4c82-ba89-2a216f054df0
-~	java:S125K"<This block of commented-out lines of code should be removed.(îÖ«¬8Çšºß‡2J$5849d445-196b-4139-821c-75598c61b57e
+x
+java:S1066›"/Merge this if statement with the enclosing one.(Á¹¢äúÿÿÿÿ8å–“Ýˆ2J$ec8583ff-08f2-49d2-9a8a-702dea3fc8e3
+Ž	java:S112ø"FDefine and throw a dedicated exception instead of using a generic one.(¼ÿ¾¹ÿÿÿÿÿ8ç–“Ýˆ2J$be6915a0-b143-433e-97f7-b929457c0011
+Ê
+java:S1186ÿ"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(®î’×üÿÿÿÿ8è–“Ýˆ2J$d8a84a1d-b437-41f1-96e0-f709f7015351
+Å
+java:S1186„"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ãÆÐÂ8è–“Ýˆ2J$8f5ea815-2c96-4cc3-8280-4e7e0f1f0a7b
+Ê
+java:S1186‰"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ö„˜þúÿÿÿÿ8è–“Ýˆ2J$878aa042-48e0-438f-91f9-1a0af382e83a
+Ê
+java:S1186Ž"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•ßçùÿÿÿÿ8è–“Ýˆ2J$c2824a6b-b89a-40f0-8ef1-9c7e59327d4c
+†
+java:S1854"=Remove this useless assignment to local variable "idEspacio".(¬Òƒ©üÿÿÿÿ8ï–“Ýˆ2J$5b86e62f-70ea-4f41-9b7a-236a0ef73148
+w
+java:S1481".Remove this unused "idEspacio" local variable.(¬Òƒ©üÿÿÿÿ8ï–“Ýˆ2J$3b762843-c2e8-495c-8187-5fad1cb1b224
+–
+java:S1871–"MThis branch's code block is the same as the block for the branch on line 276.(Šü‹•øÿÿÿÿ8õ–“Ýˆ2J$7e71e4fd-07f8-4606-b491-e3e3a72f09b4
+–
+java:S1871¦"MThis branch's code block is the same as the block for the branch on line 290.(Þçã¯ùÿÿÿÿ8ö–“Ýˆ2J$634c2076-3727-46e3-90ee-d4c9ccc87e71
+–
+java:S1871¤"MThis branch's code block is the same as the block for the branch on line 290.(™•àýÿÿÿÿ8ö–“Ýˆ2J$7fb128b2-826e-4cc6-8e78-5142e9733fc2
+‘
+java:S1871¨"MThis branch's code block is the same as the block for the branch on line 290.(ì‹µ8ö–“Ýˆ2J$07787fe3-d7ef-45f6-b0e3-bafd397b184a

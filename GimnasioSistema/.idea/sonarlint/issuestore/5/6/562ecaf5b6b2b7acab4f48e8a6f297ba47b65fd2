@@ -1,31 +1,73 @@
 
-p
-java:S1604"(Make this anonymous inner class a lambda(¨í¡§úÿÿÿÿ8˜ºõ®‡2J$814cc520-ff8a-466a-843d-38e0a04bfb98
-›
-java:S1104ˆ"WMake cmbEspacios a static final constant or non-public and provide accessors if needed.(¸ÈÈ8»–ö®‡2J$5db05d6e-d2eb-4b8c-9264-9b791db36ff0
-š
-java:S1104"VMake jtHorarios a static final constant or non-public and provide accessors if needed.(ñÙŒò8˜ºõ®‡2J$0c0e1aa0-790f-4424-bd52-ae47293e5ce7
-
-java:S1192*"HDefine a constant instead of duplicating this literal "Poppins" 3 times.(¯†ˆöÿÿÿÿÿ8œºõ®‡2J$3323158e-a854-48b2-870f-2adde95ea03a
-š
-java:S1450‡"QRemove the "bg" field and declare it as a local variable in the relevant methods.(êÉú”øÿÿÿÿ8¡ºõ®‡2J$1beefb3b-51b6-486f-bc3b-983fe7980d57
-Ÿ
-java:S1450‰"VRemove the "jLabel1" field and declare it as a local variable in the relevant methods.(°ãÉ¸ÿÿÿÿÿ8¢ºõ®‡2J$4fb4585e-d094-4021-9bd4-edaa48ef707d
+q
+java:S1604†"(Make this anonymous inner class a lambda(¨í¡§úÿÿÿÿ8¦¼ÀÛˆ2J$88a68bef-965a-4847-984c-c08e17eb798a
  
-java:S1450Š"WRemove the "jLabel10" field and declare it as a local variable in the relevant methods.(¼õò†şÿÿÿÿ8¢ºõ®‡2J$c96f9754-4c46-4ac6-8695-3ff62317192d
+java:S1104"]Make btnAsignarHorario a static final constant or non-public and provide accessors if needed.(Úƒœ8§¼ÀÛˆ2J$b050c8f2-c612-475e-9b3a-8ba4dc083929
+¢
+java:S1104"^Make btnEliminarHorario a static final constant or non-public and provide accessors if needed.(œ´ù¿8§¼ÀÛˆ2J$d1a51f43-591d-4864-9189-f1bd89d85d87
+¨
+java:S1104‘"_Make btnModificarHorario a static final constant or non-public and provide accessors if needed.(íîöñüÿÿÿÿ8§¼ÀÛˆ2J$5c1945f8-4f50-4757-8642-5d85f7bebdfc
+˜
+java:S1104’"TMake cmbClase a static final constant or non-public and provide accessors if needed.(Ø¾¡8§¼ÀÛˆ2J$259067d9-4f24-4687-ba7e-9e4bb96488db
+–
+java:S1104“"RMake cmbDia a static final constant or non-public and provide accessors if needed.(Ïëä¤8§¼ÀÛˆ2J$7828ee1e-c8a6-482a-98d4-12969b53b697
 Ÿ
-java:S1450‹"VRemove the "jLabel2" field and declare it as a local variable in the relevant methods.(™úòˆüÿÿÿÿ8¢ºõ®‡2J$6c1f023e-df98-4a71-bf40-f48bb7013793
+java:S1104”"[Make cmbEspacioClase a static final constant or non-public and provide accessors if needed.(Äøù¦8§¼ÀÛˆ2J$797ae91a-0b6a-41ed-b3b9-8e71932c97ff
+›
+java:S1104•"WMake cmbEspacios a static final constant or non-public and provide accessors if needed.(¸ÈÈ8§¼ÀÛˆ2J$c17ec984-b9b3-445b-a919-660e355719c2
+Ÿ
+java:S1104¡"VMake jspHoraFin a static final constant or non-public and provide accessors if needed.(ŒÂ´§ùÿÿÿÿ8§¼ÀÛˆ2J$3a14d1ff-7ea6-416a-ba86-eaa1bc1467fd
+¢
+java:S1104¢"YMake jspHoraInicio a static final constant or non-public and provide accessors if needed.(ĞŠªÿÿÿÿÿ8§¼ÀÛˆ2J$94e958c0-3be8-40e2-be94-affdc140787c
+£
+java:S1104£"ZMake jtHorarioClase a static final constant or non-public and provide accessors if needed.(µÙÛíıÿÿÿÿ8§¼ÀÛˆ2J$06a20ba5-9875-4ed7-b5de-666d1c48c3e2
+š
+java:S1104¤"VMake jtHorarios a static final constant or non-public and provide accessors if needed.(ñÙŒò8§¼ÀÛˆ2J$b8182b97-8be7-48b5-a2ec-483a7e71c87b
+
+java:S1104¥"YMake txtInstructor a static final constant or non-public and provide accessors if needed.(¥ä´é8§¼ÀÛˆ2J$43fb6729-167a-4047-ad06-09d67d7c8217
+‘
+java:S1192H"IDefine a constant instead of duplicating this literal "Poppins" 10 times.(¯†ˆöÿÿÿÿÿ8ª¼ÀÛˆ2J$83c18a94-7cc0-4769-8e09-837b0d26f894
+“
+java:S1192B"PDefine a constant instead of duplicating this literal "Poppins Medium" 11 times.(¢ƒÆ8«¼ÀÛˆ2J$3147350f-fb81-423f-aafd-537b89bbb40a
+š
+java:S1450"QRemove the "bg" field and declare it as a local variable in the relevant methods.(êÉú”øÿÿÿÿ8­¼ÀÛˆ2J$832bd4ab-4276-4f62-a91a-6dc1f3cd9650
+Ÿ
+java:S1450–"VRemove the "jLabel1" field and declare it as a local variable in the relevant methods.(°ãÉ¸ÿÿÿÿÿ8®¼ÀÛˆ2J$c3a7fa6e-4ec8-4751-af5a-022cd38280d8
+ 
+java:S1450—"WRemove the "jLabel10" field and declare it as a local variable in the relevant methods.(¼õò†şÿÿÿÿ8®¼ÀÛˆ2J$bf1913bd-523d-4091-b166-55df6e739163
+Ÿ
+java:S1450˜"VRemove the "jLabel3" field and declare it as a local variable in the relevant methods.(Îä€øÿÿÿÿ8®¼ÀÛˆ2J$22c136d3-c75c-46ed-a299-357f6d54f303
+š
+java:S1450™"VRemove the "jLabel4" field and declare it as a local variable in the relevant methods.(«¢•ã8®¼ÀÛˆ2J$6b906619-e6d6-416c-9b8d-6e48dfb2b802
+š
+java:S1450š"VRemove the "jLabel5" field and declare it as a local variable in the relevant methods.(ó Ù®8®¼ÀÛˆ2J$8124d74a-8c41-4e23-a89d-afb16f3f4af0
+Ÿ
+java:S1450›"VRemove the "jLabel6" field and declare it as a local variable in the relevant methods.(¸ôÂøÿÿÿÿ8¯¼ÀÛˆ2J$e0923da9-82c0-40a6-8b17-fb21dd9b02d5
+š
+java:S1450œ"VRemove the "jLabel7" field and declare it as a local variable in the relevant methods.(×ê˜Ÿ8¯¼ÀÛˆ2J$47227e6b-a79f-4a16-b7e3-e8e7fa953940
+š
+java:S1450"VRemove the "jLabel8" field and declare it as a local variable in the relevant methods.(å»«¢8¯¼ÀÛˆ2J$31478ce4-da25-454b-9efc-09872ea20fe3
+Ÿ
+java:S1450"VRemove the "jLabel9" field and declare it as a local variable in the relevant methods.(Ì’óĞşÿÿÿÿ8¯¼ÀÛˆ2J$0b425492-ced1-47b6-9115-59efe8893a74
 ¤
-java:S1450Œ"[Remove the "jScrollPane1" field and declare it as a local variable in the relevant methods.(¤á×ÿÿÿÿÿ8£ºõ®‡2J$ab422e51-9a8d-4cc3-bc5a-c20d96348bc8
+java:S1450Ÿ"[Remove the "jScrollPane1" field and declare it as a local variable in the relevant methods.(¤á×ÿÿÿÿÿ8¯¼ÀÛˆ2J$60da8afa-b8a2-4ac3-ad6f-ff1b5cb7f75c
+¤
+java:S1450 "[Remove the "jScrollPane2" field and declare it as a local variable in the relevant methods.(ŠÌ«·şÿÿÿÿ8¯¼ÀÛˆ2J$d518cb1b-97eb-4b70-968f-76821b54aa7d
 ‚
-java:S1161?":Add the "@Override" annotation above this method signature(ÍŸÏ†ùÿÿÿÿ8±ºõ®‡2J$f48b429c-348e-455c-9771-beccc74043a7
+java:S1161]":Add the "@Override" annotation above this method signature(ÍŸÏ†ùÿÿÿÿ8¶¼ÀÛˆ2J$37c83cde-598e-484b-b991-7a9a232e671c
 }
-java:S1161C":Add the "@Override" annotation above this method signature(®¸ù8±ºõ®‡2J$5badbade-10ac-4322-bb81-b88aa8c4d719
-r
-java:S1197f"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ8·ºõ®‡2J$cf0de1d2-c00a-4324-b4d9-0713b2029849
+java:S1161a":Add the "@Override" annotation above this method signature(®¸ù8¶¼ÀÛˆ2J$52bf4c2e-80b6-4e22-9324-da9556fc998b
+‚
+java:S1117›"9Rename "model" which hides the field declared at line 13.(©™ÿúÿÿÿÿ8º¼ÀÛˆ2J$35ec7521-64f9-4271-acd3-7ac1d02c2d70
+ƒ
+java:S1161×":Add the "@Override" annotation above this method signature(ÍŸÏ†ùÿÿÿÿ8¼¼ÀÛˆ2J$f8ab2ed2-8a28-4f52-8000-4d0b441dcc25
+~
+java:S1161Û":Add the "@Override" annotation above this method signature(®¸ù8¼¼ÀÛˆ2J$3f5601d4-6eeb-4075-9fb1-b02dd42c14b1
+s
+java:S1197í"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ8¾¼ÀÛˆ2J$0bfa8021-63c9-44f9-ad6e-e522cce71ade
+‰
+java:S2147ü"ECombine this catch with the one at line 250, which has the same body.(¨¦Š½8¾¼ÀÛˆ2J$eb534974-0e9d-4e0f-ab4b-76624e7987d0
+‰
+java:S2147ş"ECombine this catch with the one at line 252, which has the same body.(ã€ 8¾¼ÀÛˆ2J$5f845a18-b77e-4f17-9a0c-822c94e0994c
 ˆ
-java:S2147u"ECombine this catch with the one at line 115, which has the same body.(¨¦Š½8·ºõ®‡2J$0702604e-1926-4609-ac1b-680de7a031cc
-ˆ
-java:S2147w"ECombine this catch with the one at line 117, which has the same body.(ã€ 8¸ºõ®‡2J$3d03c29a-5292-4413-ab90-0b83ec5a7177
-‡
-java:S2147y"ECombine this catch with the one at line 119, which has the same body.(ñÎ¯%8¸ºõ®‡2J$aa27721f-30ee-45d4-85c7-b8543bd33262
+java:S2147€"ECombine this catch with the one at line 254, which has the same body.(ñÎ¯%8¾¼ÀÛˆ2J$419be2d6-1072-43d7-bf3d-ee047c9989c2

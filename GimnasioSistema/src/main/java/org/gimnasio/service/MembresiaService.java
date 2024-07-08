@@ -153,7 +153,6 @@ public class MembresiaService {
     }
 
     private void enviarAlerta(Membresia membresiaPorCaducar) {
-        // Implementa el envío de la alerta por correo electrónico
         EmailService.enviarCorreoAlertaMembresiaPorCaducar(membresiaPorCaducar);
     }
 
