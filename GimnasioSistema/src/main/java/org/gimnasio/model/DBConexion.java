@@ -12,7 +12,7 @@ public class DBConexion {
     private static final String DATABASE_URL = "jdbc:mysql://localhost:3306/db_gimnasio";
     private static final String DATABASE_USER = "root";
     private static final String DATABASE_PASSWORD = "kevinandres123";
-    private static final String ACCESOREMOTO_URL = "jdbc:mysql://192.168.0.25:3306/db_gimnasio";
+    private static final String ACCESOREMOTO_URL = "jdbc:mysql://10.24.164.189:3306/db_gimnasio";
     private static final String ACCESOREMOTO_USER = "AccesoRemoto";
     private static final String ACCESOREMOTO_PASSWORD = "kevinandres123";
 
