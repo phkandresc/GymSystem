@@ -90,8 +90,6 @@ public class RegistroEspaciosView extends javax.swing.JFrame {
         TxtDescripcionEspacio.setRows(5);
         jScrollPane1.setViewportView(TxtDescripcionEspacio);
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-
         ButtonCancelar.setBackground(new java.awt.Color(242, 68, 5));
         ButtonCancelar.setFont(new java.awt.Font("Poppins Medium", 0, 15)); // NOI18N
         ButtonCancelar.setForeground(new java.awt.Color(255, 255, 255));
