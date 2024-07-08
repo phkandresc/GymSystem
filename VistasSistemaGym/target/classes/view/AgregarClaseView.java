@@ -38,8 +38,6 @@ public class AgregarClaseView extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        cmbEspacio = new javax.swing.JComboBox<>();
         cmbInstructor = new javax.swing.JComboBox<>();
         jsCupos = new javax.swing.JSpinner();
         jsCosto = new javax.swing.JSpinner();
@@ -61,29 +59,29 @@ public class AgregarClaseView extends javax.swing.JFrame {
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel10.setText("Clases");
-        bg.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(3, 10, 890, 40));
+        bg.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(3, 10, 870, 40));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/barraTitulo.png"))); // NOI18N
         jLabel1.setText("jLabel1");
-        bg.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 900, 60));
+        bg.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 880, 60));
 
         jtClases.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
         jtClases.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null}
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null}
             },
             new String [] {
-                "Tipo de Clase", "Nombre", "Descripcion", "Costo", "Cupos", "Instructor", "Espacio"
+                "Tipo de Clase", "Nombre", "Descripcion", "Costo", "Cupos", "Instructor"
             }
         ) {
             Class[] types = new Class [] {
-                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.Double.class, java.lang.Integer.class, java.lang.String.class, java.lang.String.class
+                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.Double.class, java.lang.Integer.class, java.lang.String.class
             };
             boolean[] canEdit = new boolean [] {
-                false, false, false, false, false, false, false
+                false, false, false, false, false, false
             };
 
             public Class getColumnClass(int columnIndex) {
@@ -96,58 +94,51 @@ public class AgregarClaseView extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(jtClases);
 
-        bg.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 80, 510, 320));
+        bg.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 80, 480, 320));
 
         jLabel2.setFont(new java.awt.Font("Poppins SemiBold", 0, 14)); // NOI18N
         jLabel2.setText("Tipo de clase:");
-        bg.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, 150, -1));
+        bg.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, 140, -1));
 
         jLabel3.setFont(new java.awt.Font("Poppins SemiBold", 0, 14)); // NOI18N
         jLabel3.setText("Nombre:");
-        bg.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, 150, -1));
+        bg.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, 140, -1));
 
         jLabel4.setFont(new java.awt.Font("Poppins SemiBold", 0, 14)); // NOI18N
         jLabel4.setText("Descripcion:");
-        bg.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 160, 200, -1));
+        bg.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 230, 190, -1));
 
         jLabel5.setFont(new java.awt.Font("Poppins SemiBold", 0, 14)); // NOI18N
         jLabel5.setText("Costo:");
-        bg.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, 150, -1));
+        bg.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 310, 140, -1));
 
         jLabel6.setFont(new java.awt.Font("Poppins SemiBold", 0, 14)); // NOI18N
         jLabel6.setText("Cupos:");
-        bg.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 240, 200, 20));
+        bg.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 310, 150, 20));
 
         jLabel7.setFont(new java.awt.Font("Poppins SemiBold", 0, 14)); // NOI18N
         jLabel7.setText("Instructor:");
-        bg.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 80, 150, -1));
-
-        jLabel8.setFont(new java.awt.Font("Poppins SemiBold", 0, 14)); // NOI18N
-        jLabel8.setText("Espacio:");
-        bg.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 320, 150, -1));
-
-        cmbEspacio.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
-        bg.add(cmbEspacio, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 350, 320, 27));
+        bg.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 90, 140, -1));
 
         cmbInstructor.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
-        bg.add(cmbInstructor, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 110, 150, 27));
+        bg.add(cmbInstructor, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 120, 140, 27));
 
         jsCupos.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
-        jsCupos.setModel(new javax.swing.SpinnerNumberModel(1, 1, null, 1));
-        bg.add(jsCupos, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 270, 150, 27));
+        jsCupos.setModel(new javax.swing.SpinnerNumberModel(1, 1, 60, 1));
+        bg.add(jsCupos, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 340, 140, 27));
 
         jsCosto.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
         jsCosto.setModel(new javax.swing.SpinnerNumberModel(0.0d, 0.0d, null, 0.5d));
-        bg.add(jsCosto, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 270, 150, 27));
+        bg.add(jsCosto, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 340, 140, 27));
 
         txtNombre.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
-        bg.add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 190, 150, 27));
+        bg.add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 190, 300, 27));
 
         txtDescripcion.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
-        bg.add(txtDescripcion, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 190, 150, 27));
+        bg.add(txtDescripcion, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, 300, 27));
 
         cmbTipoClase.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
-        bg.add(cmbTipoClase, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, 150, 27));
+        bg.add(cmbTipoClase, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, 140, 27));
 
         btnCrear.setBackground(new java.awt.Color(242, 98, 15));
         btnCrear.setFont(new java.awt.Font("Poppins Medium", 0, 14)); // NOI18N
@@ -170,7 +161,7 @@ public class AgregarClaseView extends javax.swing.JFrame {
         btnEliminar.setBorder(null);
         bg.add(btnEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 430, 150, 30));
 
-        getContentPane().add(bg, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 900, 490));
+        getContentPane().add(bg, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 850, 490));
 
         pack();
         setLocationRelativeTo(null);
@@ -212,11 +203,10 @@ public class AgregarClaseView extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel bg;
+    public javax.swing.JPanel bg;
     public javax.swing.JButton btnCrear;
     public javax.swing.JButton btnEliminar;
     public javax.swing.JButton btnModificar;
-    public javax.swing.JComboBox<String> cmbEspacio;
     public javax.swing.JComboBox<String> cmbInstructor;
     public javax.swing.JComboBox<String> cmbTipoClase;
     private javax.swing.JLabel jLabel1;
@@ -227,7 +217,6 @@ public class AgregarClaseView extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JScrollBar jScrollBar1;
     private javax.swing.JScrollPane jScrollPane1;
     public javax.swing.JSpinner jsCosto;

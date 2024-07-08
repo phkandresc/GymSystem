@@ -1,5 +1,6 @@
 package org.gimnasio.controller;
 
+import org.gimnasio.daos.MembresiaDAO;
 import org.gimnasio.model.Socio;
 import org.gimnasio.service.SocioService;
 import org.gimnasio.view.ListaSociosView;
@@ -153,6 +154,8 @@ public class ListaSociosController extends WindowController implements ActionLis
         try {
             int confirmacion = JOptionPane.showConfirmDialog(null, "¿Está seguro de eliminar el socio y su membresía asociada?", "Eliminar Socio", JOptionPane.YES_NO_OPTION);
             if (confirmacion == JOptionPane.YES_OPTION && socioSeleccionado != null) {
+                MembresiaDAO membresiaDAO = new MembresiaDAO();
+                membresiaDAO.eliminarMembresiasDeSocio(socioSeleccionado);
                 socioService.eliminarSocio(socioSeleccionado);
                 JOptionPane.showMessageDialog(null, "Socio eliminado correctamente");
             } else {

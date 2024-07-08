@@ -50,7 +50,7 @@ public class ClaseDAO implements CRUD<Clase> {
         Connection connection = DBConexion.getConnection();
         try {
 
-            ps = connection.prepareStatement("INSERT INTO clases (id_tipo_clase, nombre, descripcion, costo, cupos, id_instructor) VALUES (?, ?, ?, ?, ?, ?)");
+            ps = connection.prepareStatement("INSERT INTO clases (id_tipo_clase, nombre, descripcion, costo, cupos, id_entrenador) VALUES (?, ?, ?, ?, ?, ?)");
             ps.setInt(1, dato.getTipoClase().getId());
             ps.setString(2, dato.getNombre());
             ps.setString(3, dato.getDescripcion());
@@ -79,7 +79,7 @@ public class ClaseDAO implements CRUD<Clase> {
         Connection connection = DBConexion.getConnection();
         try {
 
-            ps = connection.prepareStatement("UPDATE clases SET id_tipo_clase = ?, nombre = ?, descripcion = ?, costo = ?, cupos = ?, id_instructor = ? WHERE id = ?");
+            ps = connection.prepareStatement("UPDATE clases SET id_tipo_clase = ?, nombre = ?, descripcion = ?, costo = ?, cupos = ?, id_entrenador = ? WHERE id = ?");
             ps.setInt(1, dato.getTipoClase().getId());
             ps.setString(2, dato.getNombre());
             ps.setString(3, dato.getDescripcion());
@@ -174,5 +174,29 @@ public class ClaseDAO implements CRUD<Clase> {
             e.printStackTrace();
         }
         return false;
+    }
+
+    public Clase buscarDatoPorNombre(String nombre) throws SQLException {
+        PreparedStatement ps = null;
+        Clase clase = null;
+        Connection connection = DBConexion.getConnection();
+        try {
+            ps = connection.prepareStatement("SELECT * FROM clases WHERE nombre = ?");
+            ps.setString(1, nombre);
+            ResultSet rs = ps.executeQuery();
+            if (rs.next()) {
+                clase = new Clase();
+                clase.setId(rs.getInt("id"));
+                clase.setTipoClase(new TipoClaseDAO().buscarDatoPorId(rs.getInt("id_tipo_clase")));
+                clase.setNombre(rs.getString("nombre"));
+                clase.setDescripcion(rs.getString("descripcion"));
+                clase.setCosto(rs.getDouble("costo"));
+                clase.setCupos(rs.getInt("cupos"));
+                clase.setInstructor(new EntrenadoresDAO().buscarDatoPorId(rs.getInt("id_entrenador")));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return clase;
     }
 }

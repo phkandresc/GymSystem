@@ -39,6 +39,40 @@ public class ClasesService {
         return false;
     }
 
+    public boolean actualizarClase(Clase clase) {
+        try {
+            claseDAO.actualizarDato(clase);
+            JOptionPane.showMessageDialog(null, "Clase actualizada correctamente");
+            return true;
+        } catch (SQLException e) {
+            LOGGER.severe(e.getMessage());
+            JOptionPane.showMessageDialog(null, "Error al actualizar la clase: " + e.getMessage());
+        }
+        return false;
+    }
+
+    public boolean eliminarClase(Clase clase) {
+        try {
+            claseDAO.eliminarDato(clase);
+            JOptionPane.showMessageDialog(null, "Clase eliminada correctamente");
+            return true;
+        } catch (SQLException e) {
+            LOGGER.severe(e.getMessage());
+            JOptionPane.showMessageDialog(null, "Error al eliminar la clase: " + e.getMessage());
+        }
+        return false;
+    }
+
+    public Clase buscarClasePorNombre(String nombre) {
+        Clase clase = null;
+        try {
+            clase = claseDAO.buscarDatoPorNombre(nombre);
+        } catch (SQLException e) {
+            LOGGER.severe(e.getMessage());
+            JOptionPane.showMessageDialog(null, "Error al buscar la clase: " + e.getMessage());
+        }
+        return clase;
+    }
 
     public boolean validarHora(Time horaInicio, Time horaFin){
         Time horaAperturaGimnasio;

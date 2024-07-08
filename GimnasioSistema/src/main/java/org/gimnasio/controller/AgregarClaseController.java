@@ -1,8 +1,10 @@
 package org.gimnasio.controller;
 
 import org.gimnasio.model.Clase;
+import org.gimnasio.model.Entrenador;
 import org.gimnasio.model.Espacio;
 import org.gimnasio.model.TipoClase;
+import org.gimnasio.render.MultiLineTableCellRenderer;
 import org.gimnasio.service.ClasesService;
 import org.gimnasio.view.AgregarClaseView;
 import org.gimnasio.render.MultiLineCellRenderer2;
@@ -17,25 +19,28 @@ public class AgregarClaseController extends WindowController implements MouseLis
     private ClasesService clasesService;
     private AgregarClaseView view;
     private List<TipoClase> tipoClases;
-
-    private List<Espacio> espacios;
+    private List<Entrenador> entrenadores;
     private TipoClase tipoClaseSeleccionado;
-
-    private Espacio espacioSeleccionado;
+    private Clase claseSeleccionada;
+    private Entrenador entrenadorSeleccionado;
 
     public AgregarClaseController(){
         clasesService = new ClasesService();
         view = new AgregarClaseView();
         view.cmbTipoClase.addItemListener(this);
         view.cmbInstructor.addItemListener(this);
-        view.cmbEspacio.addItemListener(this);
         view.btnCrear.addActionListener(this);
+        view.btnEliminar.addActionListener(this);
+        view.btnModificar.addActionListener(this);
+        view.jtClases.setDefaultRenderer(Object.class, new MultiLineTableCellRenderer());
         view.jtClases.addMouseListener(this);
         cargarClasesEnTabla();
         view.setVisible(true);
         cargarTiposDeClases();
         cargarInstructores();
-        cargarEspacios();
+        view.btnEliminar.setEnabled(false);
+        view.btnModificar.setEnabled(false);
+        view.bg.addMouseListener(this);
     }
 
     private void cargarClasesEnTabla(){
@@ -45,7 +50,6 @@ public class AgregarClaseController extends WindowController implements MouseLis
         try{
             listaClases = clasesService.obtenerListaDeClases();
             for (Clase clase : listaClases) {
-
                 model.addRow(new Object[]{
                         clase.getTipoClase().getNombre(),
                         clase.getNombre(),
@@ -56,11 +60,6 @@ public class AgregarClaseController extends WindowController implements MouseLis
                 });
             }
 
-            // Aplicar el TableCellRenderer personalizado
-            TableColumnModel columnModel = view.jtClases.getColumnModel();
-            for (int i = 0; i < columnModel.getColumnCount(); i++) {
-                columnModel.getColumn(i).setCellRenderer(new MultiLineCellRenderer2());
-            }
         }catch (Exception e){
             e.printStackTrace();
         }
@@ -74,26 +73,51 @@ public class AgregarClaseController extends WindowController implements MouseLis
     }
 
     private void cargarInstructores(){
-
-    }
-
-    private void cargarEspacios(){
-        view.cmbEspacio.removeAllItems();
-        espacios = clasesService.obtenerListaDeEspacios();
-        for (Espacio espacio : espacios) {
-            view.cmbEspacio.addItem(espacio.getNombre());
+        view.cmbInstructor.removeAllItems();
+        entrenadores = clasesService.obtenerListaDeEntrenadores();
+        for (Entrenador entrenador : entrenadores) {
+            view.cmbInstructor.addItem(entrenador.getNombre()+" "+entrenador.getApellido());
         }
     }
+
+
 
 
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == view.btnCrear){
-            if(clasesService.validarCuposDeClase((int) view.jsCupos.getValue(), espacioSeleccionado.getCapacidad())){
+            if(validarCampos()){
+                if(clasesService.agregarClase(crearClase())) {
+                    vaciarCampos();
+                    cargarClasesEnTabla();
+                }
+            }
+        } else if (e.getSource() == view.btnEliminar){
+            if(claseSeleccionada != null){
+                if(clasesService.eliminarClase(claseSeleccionada)){
+                    vaciarCampos();
+                    cargarClasesEnTabla();
+                    view.btnCrear.setEnabled(true);
+                    view.btnEliminar.setEnabled(false);
+                    view.btnModificar.setEnabled(false);
+                }
+            }
+        } else if (e.getSource() == view.btnModificar){
+            if(claseSeleccionada != null){
                 if(validarCampos()){
-                    if(clasesService.agregarClase(crearClase())){
+                    claseSeleccionada.setTipoClase(tipoClaseSeleccionado);
+                    claseSeleccionada.setNombre(view.txtNombre.getText());
+                    claseSeleccionada.setDescripcion(view.txtDescripcion.getText());
+                    claseSeleccionada.setCosto((double) view.jsCosto.getValue());
+                    claseSeleccionada.setCupos((int) view.jsCupos.getValue());
+                    claseSeleccionada.setInstructor(entrenadorSeleccionado);
+
+                    if(clasesService.actualizarClase(claseSeleccionada)){
                         vaciarCampos();
                         cargarClasesEnTabla();
+                        view.btnCrear.setEnabled(true);
+                        view.btnEliminar.setEnabled(false);
+                        view.btnModificar.setEnabled(false);
                     }
                 }
             }
@@ -105,8 +129,7 @@ public class AgregarClaseController extends WindowController implements MouseLis
         if (e.getSource() == view.cmbTipoClase){
             tipoClaseSeleccionado = tipoClases.get(view.cmbTipoClase.getSelectedIndex());
         } else if (e.getSource() == view.cmbInstructor){
-        } else if (e.getSource() == view.cmbEspacio){
-            espacioSeleccionado = espacios.get(view.cmbEspacio.getSelectedIndex());
+            entrenadorSeleccionado = entrenadores.get(view.cmbInstructor.getSelectedIndex());
         }
     }
 
@@ -129,6 +152,7 @@ public class AgregarClaseController extends WindowController implements MouseLis
         clase.setDescripcion(view.txtDescripcion.getText());
         clase.setCosto((double) view.jsCosto.getValue());
         clase.setCupos((int) view.jsCupos.getValue());
+        clase.setInstructor(entrenadorSeleccionado);
         return clase;
     }
 
@@ -139,8 +163,6 @@ public class AgregarClaseController extends WindowController implements MouseLis
     private void vaciarCampos(){
         view.txtNombre.setText("");
         view.txtDescripcion.setText("");
-        view.jsCosto.setValue(0.0);
-        view.jsCupos.setValue(0);
     }
 
     public static void main(String[] args) {
@@ -149,7 +171,29 @@ public class AgregarClaseController extends WindowController implements MouseLis
 
     @Override
     public void mouseClicked(MouseEvent e) {
-
+        if (e.getSource() == view.jtClases){
+            int filaSeleccionada = view.jtClases.getSelectedRow();
+            if (filaSeleccionada != -1){
+                claseSeleccionada = clasesService.buscarClasePorNombre(view.jtClases.getValueAt(filaSeleccionada, 1).toString());
+                if (claseSeleccionada != null){
+                    view.txtNombre.setText(claseSeleccionada.getNombre());
+                    view.txtDescripcion.setText(claseSeleccionada.getDescripcion());
+                    view.jsCosto.setValue(claseSeleccionada.getCosto());
+                    view.jsCupos.setValue(claseSeleccionada.getCupos());
+                    view.cmbTipoClase.setSelectedItem(claseSeleccionada.getTipoClase().getNombre());
+                    view.cmbInstructor.setSelectedItem(claseSeleccionada.getInstructor().getNombre()+" "+claseSeleccionada.getInstructor().getApellido());
+                    view.btnCrear.setEnabled(false);
+                    view.btnEliminar.setEnabled(true);
+                    view.btnModificar.setEnabled(true);
+                }
+            }
+        }else if(e.getSource() == view.bg){
+            vaciarCampos();
+            claseSeleccionada = null;
+            view.btnCrear.setEnabled(true);
+            view.btnEliminar.setEnabled(false);
+            view.btnModificar.setEnabled(false);
+        }
     }
 
     @Override

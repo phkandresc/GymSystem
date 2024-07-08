@@ -24,9 +24,6 @@ public class RegistroMembresiaController extends WindowController implements Act
     private static final String DEBE_SELECCIONAR_SOCIO = "Debe seleccionar un socio";
 
     public RegistroMembresiaController() {
-        System.out.println("RegistroMembresiaController");
-        Exception e = new Exception("Creando instancia de RegistroMembresiaController");
-        e.printStackTrace();
         this.view = new RegistroMembresiaView();
         this.serviceMembresia = new MembresiaService();
         this.serviceSocio = new SocioService();

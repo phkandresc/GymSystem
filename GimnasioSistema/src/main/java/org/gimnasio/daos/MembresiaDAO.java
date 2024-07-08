@@ -314,4 +314,27 @@ public class MembresiaDAO implements CRUD<Membresia>{
         }
         return false;
     }
+
+    public boolean eliminarMembresiasDeSocio(Socio socio) throws SQLException {
+        PreparedStatement ps = null;
+        Connection conexion = DBConexion.getConnection();
+        try {
+            ps = conexion.prepareStatement("DELETE FROM membresias WHERE id_socio = ?");
+            ps.setInt(1, socio.getId());
+            ps.executeUpdate();
+            return true;
+        } catch (SQLException e) {
+            LOGGER.severe(e.getMessage());
+        } finally {
+            if (ps != null) {
+                ps.close();
+            }
+
+            if (conexion != null) {
+                conexion.close();
+            }
+            DBConexion.closeConnection(conexion);
+        }
+        return false;
+    }
 }

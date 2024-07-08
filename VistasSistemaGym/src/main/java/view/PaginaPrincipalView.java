@@ -152,9 +152,6 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
         jpMaquinas = new javax.swing.JPanel();
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
-        jpInformes = new javax.swing.JPanel();
-        jLabel19 = new javax.swing.JLabel();
-        jLabel20 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Pagina Principal");
@@ -826,29 +823,6 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
 
         menuLateral.add(jpMaquinas, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 420, 270, 50));
 
-        jpInformes.setBackground(new java.awt.Color(242, 98, 15));
-        jpInformes.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jpInformesMouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jpInformesMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jpInformesMouseExited(evt);
-            }
-        });
-        jpInformes.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel19.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
-        jLabel19.setText("Informes y analisis");
-        jpInformes.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, -1, 30));
-
-        jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/iconoInformes.png"))); // NOI18N
-        jpInformes.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, -1, -1));
-
-        menuLateral.add(jpInformes, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 470, 270, 50));
-
         background.add(menuLateral, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 270, 680));
 
         getContentPane().add(background, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 680));
@@ -927,16 +901,6 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
         jpMaquinas.setBackground(naranja);
     }//GEN-LAST:event_jpMaquinasMouseExited
 
-    private void jpInformesMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jpInformesMouseEntered
-        // TODO add your handling code here:
-        jpInformes.setBackground(naranjaOscuro);
-    }//GEN-LAST:event_jpInformesMouseEntered
-
-    private void jpInformesMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jpInformesMouseExited
-        // TODO add your handling code here:
-        jpInformes.setBackground(naranja);
-    }//GEN-LAST:event_jpInformesMouseExited
-
     private void jpCerrarSesionMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jpCerrarSesionMouseEntered
         // TODO add your handling code here:
         jpCerrarSesion.setBackground(naranjaOscuro);
@@ -986,11 +950,6 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
         // TODO add your handling code here:
         GrupoDePaneles.setSelectedIndex(6);
     }//GEN-LAST:event_jpMaquinasMouseClicked
-
-    private void jpInformesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jpInformesMouseClicked
-        // TODO add your handling code here:
-        GrupoDePaneles.setSelectedIndex(7);
-    }//GEN-LAST:event_jpInformesMouseClicked
 
     private void btnRegistrarNuevoSocioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistrarNuevoSocioActionPerformed
         // TODO add your handling code here:
@@ -1112,9 +1071,7 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel24;
@@ -1181,7 +1138,6 @@ public class PaginaPrincipalView extends javax.swing.JFrame {
     private javax.swing.JPanel jpClases;
     private javax.swing.JPanel jpEntrenadores;
     private javax.swing.JPanel jpEspacios;
-    private javax.swing.JPanel jpInformes;
     private javax.swing.JPanel jpMaquinas;
     private javax.swing.JPanel jpPaginaPrincipal;
     private javax.swing.JPanel jpPagos;
