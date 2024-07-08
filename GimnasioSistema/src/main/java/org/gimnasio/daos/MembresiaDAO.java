@@ -2,6 +2,7 @@ package org.gimnasio.daos;
 
 import org.gimnasio.model.DBConexion;
 import org.gimnasio.model.Membresia;
+import org.gimnasio.model.Socio;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -288,5 +289,29 @@ public class MembresiaDAO implements CRUD<Membresia>{
             DBConexion.closeConnection(conexion);
         }
         return membresias;
+    }
+
+    public boolean verificarMembresiaActivaDeSocio(Socio socio) throws SQLException {
+        PreparedStatement ps = null;
+        Connection conexion = DBConexion.getConnection();
+        ResultSet rs = null;
+        try {
+            ps = conexion.prepareStatement("SELECT * FROM membresias WHERE id_socio = ? AND estado = 'activo'");
+            ps.setInt(1, socio.getId());
+            rs = ps.executeQuery();
+            return rs.next();
+        } catch (SQLException e) {
+            LOGGER.severe(e.getMessage());
+        } finally {
+            if (ps != null) {
+                ps.close();
+            }
+
+            if (conexion != null) {
+                conexion.close();
+            }
+            DBConexion.closeConnection(conexion);
+        }
+        return false;
     }
 }

@@ -10,6 +10,7 @@ public class RegistroEspaciosView extends javax.swing.JFrame {
      * Creates new form RegistroEspaciosView
      */
     public RegistroEspaciosView() {
+        addWindowListener(new org.gimnasio.controller.WindowController());
         initComponents();
     }
 

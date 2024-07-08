@@ -11,6 +11,7 @@ public class MantenimientoEquiposView extends javax.swing.JFrame {
      * Creates new form MantenimientoEquiposView
      */
     public MantenimientoEquiposView() {
+        addWindowListener(new org.gimnasio.controller.WindowController());
         initComponents();
     }
 

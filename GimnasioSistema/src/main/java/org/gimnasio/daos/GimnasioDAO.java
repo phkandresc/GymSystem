@@ -33,4 +33,76 @@ public class GimnasioDAO {
         DBConexion.closeConnection(connection);
         return gimnasio;
     }
+
+    public int numeroEquiposRegistrados() throws SQLException {
+        int numeroEquipos = 0;
+        String sql = "SELECT COUNT(*) FROM equipos";
+        Connection connection = DBConexion.getConnection();
+
+        try (PreparedStatement statement = connection.prepareStatement(sql)) {
+            try (ResultSet resultSet = statement.executeQuery()) {
+                if (resultSet.next()) {
+                    numeroEquipos = resultSet.getInt(1);
+                }
+            }
+        }
+        DBConexion.closeConnection(connection);
+        return numeroEquipos;
+    }
+
+    public int numeroEntrenadoresRegistrados() throws SQLException{
+        int numeroEntrenadores = 0;
+        String sql = "SELECT COUNT(*) FROM entrenadores";
+        Connection connection = DBConexion.getConnection();
+
+        try (PreparedStatement statement = connection.prepareStatement(sql)) {
+            try (ResultSet resultSet = statement.executeQuery()) {
+                if (resultSet.next()) {
+                    numeroEntrenadores = resultSet.getInt(1);
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        DBConexion.closeConnection(connection);
+        return numeroEntrenadores;
+    }
+
+    public int numeroClasesRegistradas() throws SQLException{
+        int numeroClases = 0;
+        String sql = "SELECT COUNT(*) FROM clases";
+        Connection connection = DBConexion.getConnection();
+
+        try (PreparedStatement statement = connection.prepareStatement(sql)) {
+            try (ResultSet resultSet = statement.executeQuery()) {
+                if (resultSet.next()) {
+                    numeroClases = resultSet.getInt(1);
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        DBConexion.closeConnection(connection);
+        return numeroClases;
+    }
+
+    public Double obtenerIngresosTotales() throws SQLException {
+        Double ingresos = 0.0;
+        String sql = "SELECT SUM(tm.precio) AS suma_total_precio_membresias " +
+                "FROM membresias m " +
+                "JOIN tipos_membresia tm ON m.id_tipomembresia = tm.id " +
+                "WHERE m.estado = 'activo';";
+        Connection connection = DBConexion.getConnection();
+
+        try (PreparedStatement statement = connection.prepareStatement(sql)) {
+            try (ResultSet resultSet = statement.executeQuery()) {
+                if (resultSet.next()) {
+                    ingresos = resultSet.getDouble("suma_total_precio_membresias");
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return ingresos;
+    }
 }

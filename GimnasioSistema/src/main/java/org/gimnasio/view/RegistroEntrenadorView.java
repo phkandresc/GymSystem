@@ -10,6 +10,7 @@ public class RegistroEntrenadorView extends javax.swing.JFrame {
      * Creates new form RegistroEntrenadorView
      */
     public RegistroEntrenadorView() {
+        addWindowListener(new org.gimnasio.controller.WindowController());
         initComponents();
     }
 

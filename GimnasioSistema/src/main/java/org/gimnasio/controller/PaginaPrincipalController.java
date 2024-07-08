@@ -7,25 +7,35 @@ import org.gimnasio.service.MembresiaService;
 import org.gimnasio.view.PaginaPrincipalView;
 
 import java.awt.event.*;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.TimeUnit;
 
 public class PaginaPrincipalController implements ActionListener, MouseListener, FocusListener {
-    private PaginaPrincipalView paginaPrincipalView = PaginaPrincipalView.getInstance();
+    private PaginaPrincipalView view = PaginaPrincipalView.getInstance();
     private static PaginaPrincipalController instance;
     private MembresiaService membresiaService;
 
     private PaginaPrincipalController() {
-        paginaPrincipalView.setLocationRelativeTo(null);
-        //Gestion de socios
-        paginaPrincipalView.btnRegistrarNuevoSocio.addActionListener(this);
-        paginaPrincipalView.btnVerSocios.addActionListener(this);
-        paginaPrincipalView.btnAdministrarSocios.addActionListener(this);
+        view.setLocationRelativeTo(null);
+        //Socios
+        view.btnRegistrarNuevoSocio.addActionListener(this);
+        view.btnVerSocios.addActionListener(this);
+        view.btnAdministrarSocios.addActionListener(this);
         //Gestion de membresias
-        paginaPrincipalView.btnRegistrarMembresia.addActionListener(this);
-        paginaPrincipalView.btnAgregarTipoMembresia.addActionListener(this);
-        paginaPrincipalView.btnListaMembresias.addActionListener(this);
+        view.btnRegistrarMembresia.addActionListener(this);
+        view.btnAgregarTipoMembresia.addActionListener(this);
+        view.btnListaMembresias.addActionListener(this);
+        //Clases
+        view.btnAgregarClase.addActionListener(this);
+        view.btnReservarClase.addActionListener(this);
+        view.btnProgramarHorarios.addActionListener(this);
+        //Equipos
+        view.btnMantenerEquipos.addActionListener(this);
+        view.btnAdministrarEquipos.addActionListener(this);
+        //Entrenador
+        view.btnRegistrarEntrenador.addActionListener(this);
+        //Espacios
+        view.btnAdministrarEspacios.addActionListener(this);
+        //ControlAcceso
+        view.btnControlAcceso.addActionListener(this);
         this.membresiaService = new MembresiaService();
         iniciarVerificacionDeMembresias();
     }
@@ -45,39 +55,84 @@ public class PaginaPrincipalController implements ActionListener, MouseListener,
         try {
             GimnasioDAO gimnasioDAO = new GimnasioDAO();
             Gimnasio gimnasio = gimnasioDAO.obtenerGimnasioPorId(1);
-            paginaPrincipalView.lblNombreGimnasio.setText(gimnasio.getNombre());
-            paginaPrincipalView.lblDireccion.setText("<html>"+ gimnasio.getDireccion()+"</html>");
-            paginaPrincipalView.lblTelefono.setText(gimnasio.getTelefono());
-            paginaPrincipalView.lblCorreoElectronico.setText(gimnasio.getEmail());
-            paginaPrincipalView.lblNumSocios.setText(String.valueOf(SocioDAO.obtenerNumeroSocios()));
-            paginaPrincipalView.lblNumMembresias.setText(String.valueOf(SocioDAO.obtenerNumeroSocios()));
+            view.lblNombreGimnasio.setText(gimnasio.getNombre());
+            view.lblDireccion.setText("<html>"+ gimnasio.getDireccion()+"</html>");
+            view.lblTelefono.setText(gimnasio.getTelefono());
+            view.lblCorreoElectronico.setText(gimnasio.getEmail());
+            view.lblNumSocios.setText(String.valueOf(SocioDAO.obtenerNumeroSocios()));
+            view.lblNumMembresias.setText(String.valueOf(SocioDAO.obtenerNumeroSocios()));
+            view.lblNumMaquinas.setText(String.valueOf(gimnasioDAO.numeroEquiposRegistrados()));
+            view.lblNumEntrenadores.setText(String.valueOf(gimnasioDAO.numeroEntrenadoresRegistrados()));
+            view.lblNumClases.setText(String.valueOf(gimnasioDAO.numeroClasesRegistradas()));
+            view.lblNumGanancias.setText(String.valueOf(gimnasioDAO.obtenerIngresosTotales())+"$");
 
         } catch (Exception e) {
             System.out.println("Error al obtener la informacion del gimnasio");
         }
     }
 
-
     @Override
     public void actionPerformed(ActionEvent e) {
-        if (e.getSource() == paginaPrincipalView.btnRegistrarNuevoSocio) {
-            paginaPrincipalView.dispose();
+        //Socios
+        if (e.getSource() == view.btnRegistrarNuevoSocio) {
+            view.dispose();
             new RegistroSociosController();
-        } else if (e.getSource() == paginaPrincipalView.btnVerSocios) {
-            paginaPrincipalView.dispose();
+        } else if (e.getSource() == view.btnVerSocios) {
+            view.dispose();
             new ListaSociosController();
-        }else if(e.getSource() == paginaPrincipalView.btnAdministrarSocios){
-            paginaPrincipalView.dispose();
+        }else if(e.getSource() == view.btnAdministrarSocios){
+            view.dispose();
             new AdministrarSociosController();
-        }else if(e.getSource() == paginaPrincipalView.btnAgregarTipoMembresia){
-            paginaPrincipalView.dispose();
+        }
+        //Membresias
+        if(e.getSource() == view.btnAgregarTipoMembresia){
+            view.dispose();
             new TiposMembresiaController();
-        }else if (e.getSource() == paginaPrincipalView.btnRegistrarMembresia) {
-            paginaPrincipalView.dispose();
+        }else if (e.getSource() == view.btnRegistrarMembresia) {
+            view.dispose();
             new RegistroMembresiaController();
-        } else if (e.getSource() == paginaPrincipalView.btnListaMembresias) {
-            paginaPrincipalView.dispose();
+        } else if (e.getSource() == view.btnListaMembresias) {
+            view.dispose();
             new ListaMembresiasController();
+        }
+
+        //Clases
+        if(e.getSource() == view.btnAgregarClase){
+            view.dispose();
+            new AgregarClaseController();
+        }else if(e.getSource() == view.btnReservarClase){
+            view.dispose();
+            new ReservaClaseController();
+        } else if (e.getSource() == view.btnProgramarHorarios) {
+            view.dispose();
+            new AsignarHorarioClaseController();
+        }
+
+        //Equipos
+        if(e.getSource() == view.btnMantenerEquipos) {
+            view.dispose();
+            new MantenimientoEquiposController();
+        }else if(e.getSource() == view.btnAdministrarEquipos){
+            view.dispose();
+            new RegistroEquiposController();
+        }
+
+        //Entrenador
+        if(e.getSource() == view.btnRegistrarEntrenador){
+            view.dispose();
+            new RegistroEntrenadorController();
+        }
+
+        //Espacios
+        if(e.getSource() == view.btnAdministrarEspacios){
+            view.dispose();
+            new RegistroEspaciosController();
+        }
+
+        //Control de acceso
+        if(e.getSource() == view.btnControlAcceso){
+            view.dispose();
+            new ControlAccesoController();
         }
     }
 
@@ -118,11 +173,11 @@ public class PaginaPrincipalController implements ActionListener, MouseListener,
 
     public void mostrarPaginaPrincipal() {
         setInformacionGimnasio();
-        paginaPrincipalView.setVisible(true);
+        view.setVisible(true);
     }
 
     public void cerrarPaginaPrincipal() {
-        paginaPrincipalView.setVisible(false);
+        view.setVisible(false);
     }
 
     public static void main(String[] args) {

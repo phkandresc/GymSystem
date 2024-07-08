@@ -18,7 +18,7 @@ import java.sql.Time;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-public class AsignarHorarioClaseController implements ActionListener, ItemListener, MouseListener, ChangeListener {
+public class AsignarHorarioClaseController extends WindowController implements ActionListener, ItemListener, MouseListener, ChangeListener {
     private AsignarHorarioClaseView view;
     private HorarioService horarioService;
     private ClasesService clasesService;

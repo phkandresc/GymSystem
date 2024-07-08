@@ -11,6 +11,7 @@ public class RegistroEquiposView extends javax.swing.JFrame {
      * Creates new form RegistroEquiposView
      */
     public RegistroEquiposView() {
+        addWindowListener(new org.gimnasio.controller.WindowController());
         initComponents();
     }
 

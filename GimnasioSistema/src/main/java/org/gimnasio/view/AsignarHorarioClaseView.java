@@ -16,9 +16,8 @@ public class AsignarHorarioClaseView extends javax.swing.JFrame {
      * Creates new form AsignarHorarioClaseView
      */
     public AsignarHorarioClaseView() {
+        addWindowListener(new org.gimnasio.controller.WindowController());
         initComponents();
-
-
     }
 
     /**
