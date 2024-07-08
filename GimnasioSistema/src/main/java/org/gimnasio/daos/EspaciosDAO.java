@@ -56,7 +56,7 @@ public class EspaciosDAO implements CRUD<Espacio>{
             ps.setString(2, dato.getDescripcion());
             ps.setInt(3, dato.getCapacidad());
             ps.setString(4, dato.getUbicacion());
-            ps.setInt(5, dato.getGimnasio().getId());
+            ps.setInt(5, 1);
             ps.executeUpdate();
             return true;
         } catch (SQLException e){
@@ -75,12 +75,54 @@ public class EspaciosDAO implements CRUD<Espacio>{
 
     @Override
     public boolean actualizarDato(Espacio dato) throws SQLException {
-        return false;
+        PreparedStatement ps = null;
+        Connection connection = DBConexion.getConnection();
+        try {
+
+            ps = connection.prepareStatement("UPDATE espacios SET nombre = ?, descripcion = ?, capacidad = ?, ubicacion = ?, id_gimnasio = ? WHERE id = ?");
+            ps.setString(1, dato.getNombre());
+            ps.setString(2, dato.getDescripcion());
+            ps.setInt(3, dato.getCapacidad());
+            ps.setString(4, dato.getUbicacion());
+            ps.setInt(5, 1);
+            ps.setInt(6, dato.getId());
+            ps.executeUpdate();
+            return true;
+        } catch (SQLException e){
+            e.printStackTrace();
+            return false;
+        } finally {
+            if (ps != null){
+                ps.close();
+            }
+            if(connection != null){
+                connection.close();
+            }
+            DBConexion.closeConnection(connection);
+        }
     }
 
     @Override
     public boolean eliminarDato(Espacio dato) throws SQLException {
-        return false;
+        PreparedStatement ps = null;
+        Connection connection = DBConexion.getConnection();
+        try {
+            ps = connection.prepareStatement("DELETE FROM espacios WHERE id = ?");
+            ps.setInt(1, dato.getId());
+            ps.executeUpdate();
+            return true;
+        } catch (SQLException e){
+            e.printStackTrace();
+            return false;
+        } finally {
+            if (ps != null){
+                ps.close();
+            }
+            if(connection != null){
+                connection.close();
+            }
+            DBConexion.closeConnection(connection);
+        }
     }
 
     @Override

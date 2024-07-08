@@ -5,103 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1a29e02-6545-4c69-8e18-d6e4b42e89d0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/controller/ReservaClaseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/daos/ReservasDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/model/Reserva.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/view/ReservaClaseView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/CorreoReservaClase.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/b/0b27832d156a75740b0550dec87dd87c7443ca99" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/b/0b27832d156a75740b0550dec87dd87c7443ca99" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/8/38db3fee0ffe37d3a7b4804203246dc76df315e3" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/8/38db3fee0ffe37d3a7b4804203246dc76df315e3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/6/562ecaf5b6b2b7acab4f48e8a6f297ba47b65fd2" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/6/562ecaf5b6b2b7acab4f48e8a6f297ba47b65fd2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/9/5935240d9778f93dbb43d67bb4a09ec7801bc2f7" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/9/5935240d9778f93dbb43d67bb4a09ec7801bc2f7" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/7/6708aa9284f84c7f6867e4e9f69e11d815d30916" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/7/6708aa9284f84c7f6867e4e9f69e11d815d30916" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/d/7da9d36f6def1315864af38444a0267ae97b8dfe" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/d/7da9d36f6def1315864af38444a0267ae97b8dfe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/c/8c418d665709cbe066a18247fde8d03b5ef3150e" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/c/8c418d665709cbe066a18247fde8d03b5ef3150e" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/4/a48b3d5f282516d97c99fc9c27c5dc1241bbf7f8" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/4/a48b3d5f282516d97c99fc9c27c5dc1241bbf7f8" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/9/a9bf9eff7f30e230d736946833b0e5d8cc35607f" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/9/a9bf9eff7f30e230d736946833b0e5d8cc35607f" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/3/b3a575f7ec492f7a0d2d562c401b5ec7f5acf49e" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/3/b3a575f7ec492f7a0d2d562c401b5ec7f5acf49e" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/2/c2502cdf58276fd3dc152726cea2af001d42f9a0" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/2/c2502cdf58276fd3dc152726cea2af001d42f9a0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/7/d7b7430dc3365a25326303d3d101fa606a96b17e" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/7/d7b7430dc3365a25326303d3d101fa606a96b17e" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/a/da12ca0e502252f5e4a0c41da624534e46254b79" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/a/da12ca0e502252f5e4a0c41da624534e46254b79" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/b/dbc2cb94936377ccca0fb8a386704c18b9514ca0" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/b/dbc2cb94936377ccca0fb8a386704c18b9514ca0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/controller/MantenimientoEquiposController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/controller/RegistroEquiposController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/controller/RegistroEspaciosController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/daos/EquiposDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/daos/MantenimientosDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/daos/ReparacionesDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/model/Equipo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/model/Mantenimiento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/model/Reparacion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/service/MantenimientoEquiposService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/view/MantenimientoEquiposView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/view/RegistroEquiposView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/view/RegistroEspaciosView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/gimnasio/controller/AgregarClaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/controller/AgregarClaseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/gimnasio/controller/AsignarHorarioClaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/controller/AsignarHorarioClaseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/gimnasio/daos/ClaseDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/daos/ClaseDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/gimnasio/daos/HorariosDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/daos/HorariosDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/gimnasio/daos/PagosDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/daos/PagosDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/gimnasio/model/Clase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/model/Clase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/gimnasio/service/ClasesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/service/ClasesService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/gimnasio/service/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/service/EmailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/gimnasio/service/HorarioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/service/HorarioService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/gimnasio/service/MembresiaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/service/MembresiaService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/gimnasio/view/AsignarHorarioClaseView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/view/AsignarHorarioClaseView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/d.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/gimnasio/controller/AgregarClaseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/gimnasio/controller/AgregarClaseController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/gimnasio/controller/AsignarHorarioClaseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/gimnasio/controller/AsignarHorarioClaseController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/gimnasio/daos/ClaseDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/gimnasio/daos/ClaseDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/gimnasio/daos/HorariosDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/gimnasio/daos/HorariosDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/gimnasio/daos/PagosDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/gimnasio/daos/PagosDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/gimnasio/model/Clase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/gimnasio/model/Clase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/gimnasio/service/ClasesService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/gimnasio/service/ClasesService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/gimnasio/service/EmailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/gimnasio/service/EmailService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/gimnasio/service/HorarioService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/gimnasio/service/HorarioService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/gimnasio/service/MembresiaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/gimnasio/service/MembresiaService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/gimnasio/view/AsignarHorarioClaseView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/gimnasio/view/AsignarHorarioClaseView$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/gimnasio/view/AsignarHorarioClaseView$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/gimnasio/view/AsignarHorarioClaseView$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/gimnasio/view/AsignarHorarioClaseView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/gimnasio/view/AsignarHorarioClaseView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/d.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VistasSistemaGym/src/main/java/view/AsignarHorarioClaseView.form" beforeDir="false" afterPath="$PROJECT_DIR$/../VistasSistemaGym/src/main/java/view/AsignarHorarioClaseView.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VistasSistemaGym/src/main/java/view/AsignarHorarioClaseView.java" beforeDir="false" afterPath="$PROJECT_DIR$/../VistasSistemaGym/src/main/java/view/AsignarHorarioClaseView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VistasSistemaGym/src/main/java/view/RegistroMembresiaView.form" beforeDir="false" afterPath="$PROJECT_DIR$/../VistasSistemaGym/src/main/java/view/RegistroMembresiaView.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/AdministrarSociosView.class" beforeDir="false" afterPath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/AdministrarSociosView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/AdministrarSociosView.form" beforeDir="false" afterPath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/AdministrarSociosView.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/AdministrarSociosView.java" beforeDir="false" afterPath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/AdministrarSociosView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/AsignarHorarioClaseView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/AsignarHorarioClaseView$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/AsignarHorarioClaseView$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/AsignarHorarioClaseView$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/AsignarHorarioClaseView.class" beforeDir="false" afterPath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/AsignarHorarioClaseView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/AsignarHorarioClaseView.form" beforeDir="false" afterPath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/AsignarHorarioClaseView.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/AsignarHorarioClaseView.java" beforeDir="false" afterPath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/AsignarHorarioClaseView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/FacturarVista$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/FacturarVista$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/FacturarVista.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/ListaSociosView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/ListaSociosView$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/ListaSociosView$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/ListaSociosView$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/ListaSociosView.class" beforeDir="false" afterPath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/ListaSociosView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/ListaSociosView.form" beforeDir="false" afterPath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/ListaSociosView.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/ListaSociosView.java" beforeDir="false" afterPath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/ListaSociosView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/PaginaPrincipalView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/PaginaPrincipalView$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/PaginaPrincipalView$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/PaginaPrincipalView$10.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/PaginaPrincipalView$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/PaginaPrincipalView$11.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/PaginaPrincipalView$12.class" beforeDir="false" afterPath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/PaginaPrincipalView$12.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/PaginaPrincipalView$13.class" beforeDir="false" afterPath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/PaginaPrincipalView$13.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/PaginaPrincipalView$14.class" beforeDir="false" afterPath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/PaginaPrincipalView$14.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/PaginaPrincipalView$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/PaginaPrincipalView$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/PaginaPrincipalView$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/PaginaPrincipalView$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/PaginaPrincipalView$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/PaginaPrincipalView$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/PaginaPrincipalView$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/PaginaPrincipalView$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/PaginaPrincipalView$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/PaginaPrincipalView$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/PaginaPrincipalView$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/PaginaPrincipalView$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/PaginaPrincipalView$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/PaginaPrincipalView$8.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/PaginaPrincipalView$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/PaginaPrincipalView$9.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/PaginaPrincipalView.class" beforeDir="false" afterPath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/PaginaPrincipalView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/PaginaPrincipalView.form" beforeDir="false" afterPath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/PaginaPrincipalView.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/PaginaPrincipalView.java" beforeDir="false" afterPath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/PaginaPrincipalView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/RegistroMembresiaView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/RegistroMembresiaView$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/RegistroMembresiaView$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/RegistroMembresiaView$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/RegistroMembresiaView$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/RegistroMembresiaView$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/RegistroMembresiaView$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/RegistroMembresiaView$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/RegistroMembresiaView.class" beforeDir="false" afterPath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/RegistroMembresiaView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/RegistroMembresiaView.java" beforeDir="false" afterPath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/RegistroMembresiaView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/RegistroSociosView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/RegistroSociosView$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/RegistroSociosView$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/RegistroSociosView$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/RegistroSociosView.class" beforeDir="false" afterPath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/RegistroSociosView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/RegistroSociosView.java" beforeDir="false" afterPath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/RegistroSociosView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VistasSistemaGym/target/classes/view/SociosFilterApp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VistasSistemaGym/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../VistasSistemaGym/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VistasSistemaGym/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../VistasSistemaGym/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/gimnasio/daos/EspaciosDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/daos/EspaciosDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/gimnasio/daos/EspaciosDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/gimnasio/daos/EspaciosDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VistasSistemaGym/src/main/java/view/MantenimientoEquiposView.form" beforeDir="false" afterPath="$PROJECT_DIR$/../VistasSistemaGym/src/main/java/view/MantenimientoEquiposView.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VistasSistemaGym/src/main/java/view/MantenimientoEquiposView.java" beforeDir="false" afterPath="$PROJECT_DIR$/../VistasSistemaGym/src/main/java/view/MantenimientoEquiposView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VistasSistemaGym/src/main/java/view/RegistroEquiposView.form" beforeDir="false" afterPath="$PROJECT_DIR$/../VistasSistemaGym/src/main/java/view/RegistroEquiposView.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VistasSistemaGym/src/main/java/view/RegistroEquiposView.java" beforeDir="false" afterPath="$PROJECT_DIR$/../VistasSistemaGym/src/main/java/view/RegistroEquiposView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VistasSistemaGym/src/main/java/view/RegistroEspaciosView.form" beforeDir="false" afterPath="$PROJECT_DIR$/../VistasSistemaGym/src/main/java/view/RegistroEspaciosView.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VistasSistemaGym/src/main/java/view/RegistroEspaciosView.java" beforeDir="false" afterPath="$PROJECT_DIR$/../VistasSistemaGym/src/main/java/view/RegistroEspaciosView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,51 +63,54 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.AdministrarSociosController.executor&quot;: &quot;Run&quot;,
-    &quot;Application.AgregarClaseController.executor&quot;: &quot;Run&quot;,
-    &quot;Application.AsignarHorarioClaseController.executor&quot;: &quot;Run&quot;,
-    &quot;Application.EmailService.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ListaMembresiasController.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ListaSociosController.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.PaginaPrincipalController.executor&quot;: &quot;Run&quot;,
-    &quot;Application.PaginaPrincipalView.executor&quot;: &quot;Run&quot;,
-    &quot;Application.PdfGenerator.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ProfilePictureForm.executor&quot;: &quot;Run&quot;,
-    &quot;Application.RegistroEntrenadorController.executor&quot;: &quot;Run&quot;,
-    &quot;Application.RegistroEntrenadorView.executor&quot;: &quot;Run&quot;,
-    &quot;Application.RegistroMembresiaController.executor&quot;: &quot;Run&quot;,
-    &quot;Application.RegistroSociosController.executor&quot;: &quot;Run&quot;,
-    &quot;Application.RegistroSociosView.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ReservaClaseController.executor&quot;: &quot;Run&quot;,
-    &quot;Application.TiposMembresiaController.executor&quot;: &quot;Run&quot;,
-    &quot;Application.TiposMembresiaView.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;ramaKevin&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/GymSystem/GimnasioSistema/src/main/java/org/gimnasio/view&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.updates&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.AdministrarSociosController.executor": "Run",
+    "Application.AgregarClaseController.executor": "Run",
+    "Application.AsignarHorarioClaseController.executor": "Run",
+    "Application.EmailService.executor": "Run",
+    "Application.ListaMembresiasController.executor": "Run",
+    "Application.ListaSociosController.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.MantenimientoEquiposController.executor": "Run",
+    "Application.PaginaPrincipalController.executor": "Run",
+    "Application.PaginaPrincipalView.executor": "Run",
+    "Application.PdfGenerator.executor": "Run",
+    "Application.ProfilePictureForm.executor": "Run",
+    "Application.RegistroEntrenadorController.executor": "Run",
+    "Application.RegistroEntrenadorView.executor": "Run",
+    "Application.RegistroEquiposController.executor": "Run",
+    "Application.RegistroEspaciosController.executor": "Run",
+    "Application.RegistroMembresiaController.executor": "Run",
+    "Application.RegistroSociosController.executor": "Run",
+    "Application.RegistroSociosView.executor": "Run",
+    "Application.ReservaClaseController.executor": "Run",
+    "Application.TiposMembresiaController.executor": "Run",
+    "Application.TiposMembresiaView.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "full.screen.before.presentation.mode": "false",
+    "git-widget-placeholder": "ramaKevin",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/GymSystem/GimnasioSistema/src/main/java/org/gimnasio/view",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.updates",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\GymSystem\GimnasioSistema\src\main\java\org\gimnasio\view" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.EmailService">
+  <component name="RunManager">
     <configuration name="EmailService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.gimnasio.service.EmailService" />
       <module name="GimnasioSistema" />
@@ -310,6 +238,8 @@
       <workItem from="1720376045496" duration="598000" />
       <workItem from="1720393527619" duration="5175000" />
       <workItem from="1720398774376" duration="69000" />
+      <workItem from="1720401691418" duration="6300000" />
+      <workItem from="1720411986237" duration="3489000" />
     </task>
     <servers />
   </component>
