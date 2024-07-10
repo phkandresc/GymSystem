@@ -21,9 +21,9 @@ public class DBConexion {
     private static final Logger LOGGER = Logger.getLogger(DBConexion.class.getName());
 
     static {
-        config.setJdbcUrl(ACCESOREMOTO_URL);
-        config.setUsername(ACCESOREMOTO_USER);
-        config.setPassword(ACCESOREMOTO_PASSWORD);
+        config.setJdbcUrl(DATABASE_URL);
+        config.setUsername(DATABASE_USER);
+        config.setPassword(DATABASE_PASSWORD);
         config.setMaximumPoolSize(20);
         config.addDataSourceProperty("cachePrepStmts", "true");
         config.addDataSourceProperty("prepStmtCacheSize", "250");
