@@ -6,21 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="e1a29e02-6545-4c69-8e18-d6e4b42e89d0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/gimnasio/daos/MembresiaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/daos/MembresiaDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/gimnasio/model/DBConexion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/model/DBConexion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/gimnasio/view/PaginaPrincipalView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/gimnasio/view/PaginaPrincipalView$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/gimnasio/view/PaginaPrincipalView$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/gimnasio/view/PaginaPrincipalView$10.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/gimnasio/view/PaginaPrincipalView$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/gimnasio/view/PaginaPrincipalView$11.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/gimnasio/view/PaginaPrincipalView$12.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/gimnasio/view/PaginaPrincipalView$12.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/gimnasio/view/PaginaPrincipalView$13.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/gimnasio/view/PaginaPrincipalView$13.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/gimnasio/view/PaginaPrincipalView$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/gimnasio/view/PaginaPrincipalView$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/gimnasio/view/PaginaPrincipalView$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/gimnasio/view/PaginaPrincipalView$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/gimnasio/view/PaginaPrincipalView$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/gimnasio/view/PaginaPrincipalView$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/gimnasio/view/PaginaPrincipalView$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/gimnasio/view/PaginaPrincipalView$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/gimnasio/view/PaginaPrincipalView$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/gimnasio/view/PaginaPrincipalView$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/gimnasio/view/PaginaPrincipalView$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/gimnasio/view/PaginaPrincipalView$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/gimnasio/view/PaginaPrincipalView$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/gimnasio/view/PaginaPrincipalView$8.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/gimnasio/view/PaginaPrincipalView$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/gimnasio/view/PaginaPrincipalView$9.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/gimnasio/view/PaginaPrincipalView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/gimnasio/view/PaginaPrincipalView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/gimnasio/model/Membresia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/model/Membresia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/gimnasio/model/TipoMembresia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/model/TipoMembresia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/gimnasio/service/MembresiaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gimnasio/service/MembresiaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/gimnasio/model/DBConexion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/gimnasio/model/DBConexion.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,54 +48,54 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.AdministrarSociosController.executor&quot;: &quot;Run&quot;,
-    &quot;Application.AgregarClaseController.executor&quot;: &quot;Run&quot;,
-    &quot;Application.AsignarHorarioClaseController.executor&quot;: &quot;Run&quot;,
-    &quot;Application.EmailService.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ListaMembresiasController.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ListaSociosController.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MantenimientoEquiposController.executor&quot;: &quot;Run&quot;,
-    &quot;Application.PaginaPrincipalController.executor&quot;: &quot;Run&quot;,
-    &quot;Application.PaginaPrincipalView.executor&quot;: &quot;Run&quot;,
-    &quot;Application.PdfGenerator.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ProfilePictureForm.executor&quot;: &quot;Run&quot;,
-    &quot;Application.RegistroEntrenadorController.executor&quot;: &quot;Run&quot;,
-    &quot;Application.RegistroEntrenadorView.executor&quot;: &quot;Run&quot;,
-    &quot;Application.RegistroEquiposController.executor&quot;: &quot;Run&quot;,
-    &quot;Application.RegistroEspaciosController.executor&quot;: &quot;Run&quot;,
-    &quot;Application.RegistroMembresiaController.executor&quot;: &quot;Run&quot;,
-    &quot;Application.RegistroSociosController.executor&quot;: &quot;Run&quot;,
-    &quot;Application.RegistroSociosView.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ReservaClaseController.executor&quot;: &quot;Run&quot;,
-    &quot;Application.TiposMembresiaController.executor&quot;: &quot;Run&quot;,
-    &quot;Application.TiposMembresiaView.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;ramaKevin&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/GymSystem/GimnasioSistema/src/main/java/org/gimnasio/view&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.updates&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.AdministrarSociosController.executor": "Run",
+    "Application.AgregarClaseController.executor": "Run",
+    "Application.AsignarHorarioClaseController.executor": "Run",
+    "Application.EmailService.executor": "Run",
+    "Application.ListaMembresiasController.executor": "Run",
+    "Application.ListaSociosController.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.MantenimientoEquiposController.executor": "Run",
+    "Application.PaginaPrincipalController.executor": "Run",
+    "Application.PaginaPrincipalView.executor": "Run",
+    "Application.PdfGenerator.executor": "Run",
+    "Application.ProfilePictureForm.executor": "Run",
+    "Application.RegistroEntrenadorController.executor": "Run",
+    "Application.RegistroEntrenadorView.executor": "Run",
+    "Application.RegistroEquiposController.executor": "Run",
+    "Application.RegistroEspaciosController.executor": "Run",
+    "Application.RegistroMembresiaController.executor": "Run",
+    "Application.RegistroSociosController.executor": "Run",
+    "Application.RegistroSociosView.executor": "Run",
+    "Application.ReservaClaseController.executor": "Run",
+    "Application.TiposMembresiaController.executor": "Run",
+    "Application.TiposMembresiaView.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "full.screen.before.presentation.mode": "false",
+    "git-widget-placeholder": "ramaKevin",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/GymSystem/GimnasioSistema/src/main/java/org/gimnasio/view",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.updates",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\GymSystem\GimnasioSistema\src\main\java\org\gimnasio\view" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.PaginaPrincipalController">
     <configuration name="EmailService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.gimnasio.service.EmailService" />
       <module name="GimnasioSistema" />
@@ -183,8 +174,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17011.79" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17011.79" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
       </set>
     </attachedChunks>
   </component>
@@ -240,11 +231,23 @@
       <workItem from="1720429233289" duration="86000" />
       <workItem from="1720429934149" duration="171000" />
       <workItem from="1720449343056" duration="2055000" />
+      <workItem from="1720581316902" duration="589000" />
+      <workItem from="1720581936484" duration="1754000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

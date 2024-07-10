@@ -135,6 +135,7 @@ public class MembresiaService {
             LocalDate today = LocalDate.now();
 
             for (Membresia membresia : membresias) {
+                System.out.println(membresia.toString());
                 long daysUntilExpiry = ChronoUnit.DAYS.between(today, membresia.getFechaFin().toLocalDate());
 
                 if (daysUntilExpiry <= 7 && daysUntilExpiry >= 0) {

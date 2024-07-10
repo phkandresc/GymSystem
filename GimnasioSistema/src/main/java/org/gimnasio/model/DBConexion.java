@@ -12,7 +12,7 @@ public class DBConexion {
     private static final String DATABASE_URL = "jdbc:mysql://localhost:3306/db_gimnasio";
     private static final String DATABASE_USER = "root";
     private static final String DATABASE_PASSWORD = "kevinandres123";
-    private static final String ACCESOREMOTO_URL = "jdbc:mysql://10.24.164.189:3306/db_gimnasio";
+    private static final String ACCESOREMOTO_URL = "jdbc:mysql://192.168.0.101:3306/db_gimnasio";
     private static final String ACCESOREMOTO_USER = "AccesoRemoto";
     private static final String ACCESOREMOTO_PASSWORD = "kevinandres123";
 
@@ -21,9 +21,9 @@ public class DBConexion {
     private static final Logger LOGGER = Logger.getLogger(DBConexion.class.getName());
 
     static {
-        config.setJdbcUrl(DATABASE_URL);
-        config.setUsername(DATABASE_USER);
-        config.setPassword(DATABASE_PASSWORD);
+        config.setJdbcUrl(ACCESOREMOTO_URL);
+        config.setUsername(ACCESOREMOTO_USER);
+        config.setPassword(ACCESOREMOTO_PASSWORD);
         config.setMaximumPoolSize(20);
         config.addDataSourceProperty("cachePrepStmts", "true");
         config.addDataSourceProperty("prepStmtCacheSize", "250");

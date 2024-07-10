@@ -123,6 +123,19 @@ public class Membresia {
             return membresia;
         }
     }
+
+    @Override
+    public String toString() {
+        return "Membresia{" +
+                "id=" + id +
+                ", socio=" + socio +
+                ", tipoMembresia=" + tipoMembresia.toString() +
+                ", idGimnasio=" + idGimnasio +
+                ", fechaInicio=" + fechaInicio +
+                ", fechaFin=" + fechaFin +
+                ", estado='" + estado + '\'' +
+                '}';
+    }
 }
 
 

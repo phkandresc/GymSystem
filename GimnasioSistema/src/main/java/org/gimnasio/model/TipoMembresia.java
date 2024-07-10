@@ -46,4 +46,15 @@ public class TipoMembresia {
     public void setPrecio(double precio) {
         this.precio = precio;
     }
+
+    @Override
+    public String toString() {
+        return "TipoMembresia{" +
+                "id=" + id +
+                ", nombre='" + nombre + '\'' +
+                ", descripcion='" + descripcion + '\'' +
+                ", duracion=" + duracion +
+                ", precio=" + precio +
+                '}';
+    }
 }

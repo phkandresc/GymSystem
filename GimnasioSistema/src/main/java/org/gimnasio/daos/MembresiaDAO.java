@@ -18,7 +18,7 @@ public class MembresiaDAO implements CRUD<Membresia>{
     private final String ELIMINAR_MEMBRESIA = "DELETE FROM membresias WHERE id = ?";
     private final String OBTENER_MEMBRESIAS = "SELECT * FROM membresias";
     private final String OBTENERMEMBRESIA_PORSOCIO = "SELECT * FROM membresias WHERE id_socio = ?";
-    private final String REVISAR_ESTADO_MEMBRESIAS = "SELECT id, id_socio, fecha_fin FROM membresias WHERE estado = 'activo'";
+    private final String REVISAR_ESTADO_MEMBRESIAS = "SELECT id, id_socio, id_tipomembresia, id_gimnasio, fecha_inicio, fecha_fin, estado FROM membresias WHERE estado = 'activo'";
     private final String ACTUALIZAR_ESTADO_MEMBRESIA = "UPDATE membresias SET estado = ? WHERE id = ?";
     public List<Membresia> obtenerMembresiasPorIdSocio(int idSocio) throws SQLException {
         List<Membresia> membresias = new ArrayList<>();
@@ -214,7 +214,11 @@ public class MembresiaDAO implements CRUD<Membresia>{
                 Membresia membresia = new Membresia.Builder()
                         .id(rs.getInt("id"))
                         .socio(new SocioDAO().buscarDatoPorId(rs.getInt("id_socio")))
+                        .tipoMembresia(new TipoMembresiaDAO().buscarDatoPorId(rs.getInt("id_tipomembresia")))
+                        .idGimnasio(rs.getInt("id_gimnasio"))
+                        .fechaInicio(rs.getDate("fecha_inicio"))
                         .fechaFin(rs.getDate("fecha_fin"))
+                        .estado(rs.getString("estado"))
                         .build();
                 membresiasActivas.add(membresia);
             }
